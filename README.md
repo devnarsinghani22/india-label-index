@@ -16,7 +16,7 @@ From 3,798 Indian packaged foods with an ingredient list (plain staples like att
 
 ### Warning labels
 
-- **FSSAI's proposed limits** (ICMR-NIN 2024, as cited to the Supreme Court, 28 Aug 2026), 665 foods with full nutrition: **41%** would get a warning under Phase I (2 or more of added sugar, added fat, salt high) and **71%** under Phase II (any 1 high). Soft drinks: 69% are high in added sugar, but only 3% would be warned in Phase I. [Page](https://devnarsinghani22.github.io/india-label-index/fssai-warning-labels/), `fssai.py`, [`out/fssai.json`](out/fssai.json).
+- **FSSAI's proposed limits** (ICMR-NIN 2024, as cited to the Supreme Court, 28 Aug 2026), 665 foods with full nutrition: **71%** would carry a warning under FSSAI's current plan (any 1 of added sugar, added fat, salt high; affidavit of 23 Sep 2026), against **41%** under the 2-or-more plan it dropped. Soft drinks: 69% are high in added sugar, but only 3% would have been warned under the dropped plan. [Page](https://devnarsinghani22.github.io/india-label-index/fssai-warning-labels/), `fssai.py`, [`out/fssai.json`](out/fssai.json).
 - **Chile's 2019 limits**, 687 foods: 69% would carry at least one warning. [Page](https://devnarsinghani22.github.io/india-label-index/warning-labels/), `warnings.py`, [`out/warnings.json`](out/warnings.json).
 
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
