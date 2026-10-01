@@ -1,0 +1,139 @@
+{
+ "rules": "ICMR-NIN DGI 2024 Table 15.1 thresholds as cited by FSSAI (affidavit 28 Aug 2026); Phase I = 2+ high, Phase II = any 1 high",
+ "thresholds": {
+  "solid_per_100g": {
+   "sugar": 3,
+   "fat": 4.2,
+   "salt_mg": 625
+  },
+  "liquid_per_100ml": {
+   "sugar": 2,
+   "fat": 1.5,
+   "salt_mg": 175
+  }
+ },
+ "overall": {
+  "tested": 733,
+  "pct_phase2_any": 68.6,
+  "pct_phase1_2plus": 38.2,
+  "pct_all3": 7.5,
+  "pct_by_nutrient": {
+   "sugar": 41.2,
+   "fat": 41.6,
+   "salt": 31.5
+  }
+ },
+ "non_staple": {
+  "tested": 665,
+  "pct_phase2_any": 71.3,
+  "pct_phase1_2plus": 40.9,
+  "pct_all3": 8.3,
+  "pct_by_nutrient": {
+   "sugar": 44.8,
+   "fat": 42.9,
+   "salt": 32.8
+  }
+ },
+ "declared_added_sugar_only": {
+  "tested": 616,
+  "pct_phase2_any": 69.8,
+  "pct_phase1_2plus": 39.6,
+  "pct_all3": 7.6,
+  "pct_by_nutrient": {
+   "sugar": 42.2,
+   "fat": 42.0,
+   "salt": 32.8
+  }
+ },
+ "products_with_declared_added_sugar": 682,
+ "categories": {
+  "Yoghurt and curd": {
+   "tested": 90,
+   "pct_phase2_any": 37.8,
+   "pct_phase1_2plus": 3.3,
+   "pct_all3": 0.0,
+   "pct_by_nutrient": {
+    "sugar": 24.4,
+    "fat": 4.4,
+    "salt": 12.2
+   }
+  },
+  "Sauces, ketchup and spreads": {
+   "tested": 67,
+   "pct_phase2_any": 76.1,
+   "pct_phase1_2plus": 32.8,
+   "pct_all3": 6.0,
+   "pct_by_nutrient": {
+    "sugar": 44.8,
+    "fat": 34.3,
+    "salt": 35.8
+   }
+  },
+  "Biscuits and cookies": {
+   "tested": 55,
+   "pct_phase2_any": 98.2,
+   "pct_phase1_2plus": 92.7,
+   "pct_all3": 41.8,
+   "pct_by_nutrient": {
+    "sugar": 90.9,
+    "fat": 96.4,
+    "salt": 45.5
+   }
+  },
+  "Chocolate and confectionery": {
+   "tested": 48,
+   "pct_phase2_any": 95.8,
+   "pct_phase1_2plus": 79.2,
+   "pct_all3": 0.0,
+   "pct_by_nutrient": {
+    "sugar": 83.3,
+    "fat": 83.3,
+    "salt": 8.3
+   }
+  },
+  "Breakfast cereals and muesli": {
+   "tested": 41,
+   "pct_phase2_any": 61.0,
+   "pct_phase1_2plus": 31.7,
+   "pct_all3": 7.3,
+   "pct_by_nutrient": {
+    "sugar": 34.1,
+    "fat": 39.0,
+    "salt": 26.8
+   }
+  },
+  "Chips and crisps": {
+   "tested": 34,
+   "pct_phase2_any": 94.1,
+   "pct_phase1_2plus": 91.2,
+   "pct_all3": 20.6,
+   "pct_by_nutrient": {
+    "sugar": 23.5,
+    "fat": 94.1,
+    "salt": 88.2
+   }
+  },
+  "Flours, grains and pulses": {
+   "tested": 32,
+   "pct_phase2_any": 21.9,
+   "pct_phase1_2plus": 15.6,
+   "pct_all3": 0.0,
+   "pct_by_nutrient": {
+    "sugar": 3.1,
+    "fat": 18.8,
+    "salt": 15.6
+   }
+  },
+  "Soft drinks and energy drinks": {
+   "tested": 32,
+   "pct_phase2_any": 68.8,
+   "pct_phase1_2plus": 3.1,
+   "pct_all3": 0.0,
+   "pct_by_nutrient": {
+    "sugar": 68.8,
+    "fat": 0.0,
+    "salt": 3.1
+   }
+  }
+ }
+}

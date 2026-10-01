@@ -14,6 +14,11 @@ From 3,798 Indian packaged foods with an ingredient list (plain staples like att
 - **2 in 3** are ultra-processed (NOVA group 4, 68%).
 - Instant noodles and pasta have a median of **2.5 g of salt in 100 g**, half of the 5 g a day WHO sets for adults.
 
+### Warning labels
+
+- **FSSAI's proposed limits** (ICMR-NIN 2024, as cited to the Supreme Court, 28 Aug 2026), 665 foods with full nutrition: **41%** would get a warning under Phase I (2 or more of added sugar, added fat, salt high) and **71%** under Phase II (any 1 high). Soft drinks: 69% are high in added sugar, but only 3% would be warned in Phase I. [Page](https://devnarsinghani22.github.io/india-label-index/fssai-warning-labels/), `fssai.py`, [`out/fssai.json`](out/fssai.json).
+- **Chile's 2019 limits**, 687 foods: 69% would carry at least one warning. [Page](https://devnarsinghani22.github.io/india-label-index/warning-labels/), `warnings.py`, [`out/warnings.json`](out/warnings.json).
+
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
 
 ## Data
@@ -38,6 +43,8 @@ python pull_csv.py     # streams the Open Food Facts CSV export, keeps India (ab
 python sugar.py        # matcher self-test
 python analyse.py      # writes out/results.json and out/category_table.csv
 python audit.py        # every matched sugar phrase with context
+python warnings.py     # Chile-rule warning labels -> out/warnings.json
+python fssai.py        # FSSAI proposed limits, Phase I vs II -> out/fssai.json
 ```
 
 ## Licence
