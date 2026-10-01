@@ -1,0 +1,256 @@
+[
+ {
+  "name": "Sugar, sucrose",
+  "description": "Plain white sugar. FSSAI lets a pack write just 'Sugar' for sucrose {1}. Cane sugar is the same sugar. Sugar syrup is sugar melted in water.",
+  "patterns": [
+   "sugars?",
+   "sucrose",
+   "refined sugar",
+   "white sugar",
+   "plantation white sugar",
+   "icing sugar",
+   "caster sugar",
+   "powdered sugar",
+   "cane sugar",
+   "sugar syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Brown sugar, raw cane sugar",
+  "description": "Sugar with some molasses left in or added back.",
+  "patterns": [
+   "brown sugar",
+   "raw sugar",
+   "raw cane sugar",
+   "demerara sugar"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Cane juice, sugarcane juice",
+  "description": "Juice pressed from sugarcane, dried or boiled down.",
+  "patterns": [
+   "(?:evaporated )?(?:sugar[\\s-]*)?cane juice(?: solids)?"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Khandsari, khaand, bura, misri",
+  "description": "Traditional Indian sugars. FSSAI has a standard for khandsari, bura and misri {3}.",
+  "patterns": [
+   "khandsari(?: sugar)?",
+   "desi khaa?nd",
+   "khaa?nd(?: sugar)?",
+   "bura(?: sugar)?",
+   "misri",
+   "mishri"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Jaggery, gur, gud, shakkar",
+  "description": "Cane or palm juice boiled down into a block or powder {3}. FSSAI has a standard for it {3}. ICMR-NIN lists jaggery as an added sugar {5}.",
+  "patterns": [
+   "jaggery",
+   "gur",
+   "gud",
+   "shakkar",
+   "panela",
+   "palm jaggery",
+   "date jaggery",
+   "jaggery powder"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Coconut sugar, palm sugar",
+  "description": "Sugar made from palm sap.",
+  "patterns": [
+   "coconut sugar",
+   "palm sugar",
+   "coconut palm sugar"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Dextrose, glucose",
+  "description": "A simple sugar. FSSAI lets a pack write 'Dextrose' or 'Glucose' for it {1}.",
+  "patterns": [
+   "dextrose",
+   "dextrose monohydrate",
+   "anhydrous dextrose",
+   "glucose"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Trehalose",
+  "description": "A sugar made of two glucose units. It counts as a sugar under FSSAI's definition {1}.",
+  "patterns": [
+   "trehalose"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Liquid glucose, glucose syrup",
+  "description": "A sweet syrup. FSSAI's rules for sweets list liquid glucose as a sweetener {4}.",
+  "patterns": [
+   "liquid glucose",
+   "glucose syrup",
+   "glucose\\s*-?\\s*fructose syrup",
+   "fructose\\s*-?\\s*glucose syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Dried glucose syrup, glucose syrup solids",
+  "description": "Glucose syrup dried into a powder. FSSAI has a standard for it {3}.",
+  "patterns": [
+   "dried glucose syrup",
+   "glucose syrup solids",
+   "glucose solids"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Invert sugar, invert syrup, golden syrup",
+  "description": "Sugar split into glucose and fructose. FSSAI defines golden syrup as sugar syrup that has been split this way {3}.",
+  "patterns": [
+   "invert sugar(?: syrup)?",
+   "invert syrup",
+   "inverted sugar(?: syrup)?",
+   "golden syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Fructose, fruit sugar",
+  "description": "A simple sugar. ICMR-NIN names fructose as a hidden sugar {5}.",
+  "patterns": [
+   "fructose(?!\\s*-?\\s*oligo)",
+   "fruit sugar"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Corn syrup, high-fructose corn syrup",
+  "description": "Syrups made from corn starch. ICMR-NIN names corn syrup as a hidden sugar {5}.",
+  "patterns": [
+   "high[\\s-]+fructose corn syrup",
+   "hfcs",
+   "corn syrup(?: solids)?",
+   "maize syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Rice syrup, maple syrup, agave",
+  "description": "Sweet syrups. WHO counts the sugars in syrups as free sugars (sugar added to food, plus honey, syrups and juice) {7}.",
+  "patterns": [
+   "(?:brown )?rice syrup",
+   "maple syrup",
+   "agave(?: syrup| nectar)?",
+   "(?:coconut|palm) nectar",
+   "fruit syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Maltose, malt extract, malt syrup",
+  "description": "Maltose counts as a sugar under FSSAI's definition {1}. Malt extract is a sweet syrup or powder made from malted grain.",
+  "patterns": [
+   "maltose",
+   "malt sugar",
+   "(?:barley )?malt extract",
+   "malt syrup"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Lactose",
+  "description": "Milk sugar. It counts as a sugar under FSSAI's definition {1}, and FSSAI's rules for sweets list it as a sweetener {4}.",
+  "patterns": [
+   "lactose"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Honey",
+  "description": "WHO counts the sugar in honey as free sugar {7}.",
+  "patterns": [
+   "honey"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Molasses",
+  "description": "The dark syrup left over when sugar is made. ICMR-NIN names it as a hidden sugar {5}.",
+  "patterns": [
+   "(?:edible |cane |sugar[\\s-]*cane )?molasses",
+   "treacle"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Fruit juice concentrate",
+  "description": "Juice with the water taken out. WHO counts it as free sugar {7}. A 'no added sugar' food cannot use it in place of sugar {2}. Plain fruit juice also counts as free sugar for WHO {7}. Lemon and lime juice concentrate are used for sourness, so the checker does not count them.",
+  "patterns": [
+   "(?<!lemon |lime |carrot |beetroot |beet |tomato )(?:(?!and |or |with |of |lemon |lime |carrot |beetroot |beet |tomato )[a-z]+ )?juice concentrates?",
+   "concentrated (?:(?!and |or |with |of |lemon |lime |carrot |beetroot |beet |tomato )[a-z]+ )?juice",
+   "(?<!lemon |lime |carrot |beetroot |beet |tomato )(?:(?!and |or |with |of |lemon |lime |carrot |beetroot |beet |tomato )[a-z]+ )?juice from concentrates?",
+   "(?:apple|orange|grape|mango|pineapple|pomegranate|pear|peach|guava|litchi|lychee|berry|strawberry|cranberry|plum|cherry|apricot|banana|kiwi|watermelon|muskmelon|passion fruit)(?= (?:and|&) (?:lemon|lime) juice (?:from )?concentrates?)"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Date paste, date syrup, dried fruit paste",
+  "description": "Fruit cooked down into a paste or syrup. A 'no added sugar' food cannot use dried fruit paste in place of sugar {2}.",
+  "patterns": [
+   "date paste",
+   "dates? syrup",
+   "dried fruit paste",
+   "fruit paste"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Jam, jelly, sweetened chocolate, sweetened fruit pieces",
+  "description": "Sugary ingredients. A 'no added sugar' food cannot contain them {2}.",
+  "patterns": [
+   "jam",
+   "jelly",
+   "sweetened (?:[a-z]+ )?pieces",
+   "candied (?:[a-z]+ )?(?:peel|fruit|pieces)",
+   "tutti[\\s-]*frutti",
+   "sweetened (?:milk |compound )?chocolate",
+   "compound chocolate"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Sweetened condensed milk",
+  "description": "Milk boiled down with a lot of sugar added. Unsweetened condensed milk is not counted.",
+  "patterns": [
+   "(?<!unsweetened )(?:sweetened )?condensed (?:(?:partly )?skim(?:med)? )?milk(?! \\(?unsweetened)"
+  ],
+  "kind": "sugar"
+ },
+ {
+  "name": "Maltodextrin",
+  "description": "Maltodextrin is made from starch, as chains of glucose. Most of it is not a sugar in FSSAI's legal definition {1}, so most of it shows in the carbohydrate line, not the sugar line.",
+  "patterns": [
+   "maltodextrins?"
+  ],
+  "kind": "starch"
+ },
+ {
+  "name": "Maltitol, sorbitol",
+  "description": "Sweeteners made from sugar, with fewer calories. They are not sugars in law, so the tool does not count them. ICMR-NIN says to watch for maltitol in sugar free foods {5}.",
+  "patterns": [
+   "maltitol",
+   "sorbitol"
+  ],
+  "kind": "polyol"
+ }
+]

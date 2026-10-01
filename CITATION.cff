@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use these numbers, please cite them like this."
+title: "India Label Index 2026: What 3,798 Indian food labels say about sugar and salt"
+type: dataset
+authors:
+  - family-names: Narsinghani
+    given-names: Dev
+    website: "https://devnarsinghani22.github.io/"
+date-released: 2026-10-01
+url: "https://devnarsinghani22.github.io/india-label-index/"
+repository-code: "https://github.com/devnarsinghani22/india-label-index"
+license: ODbL-1.0
+keywords:
+  - food labels
+  - India
+  - added sugar
+  - salt
+  - FSSAI
+  - Open Food Facts
+references:
+  - type: database
+    title: "Open Food Facts"
+    url: "https://world.openfoodfacts.org/"
