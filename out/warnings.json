@@ -1,0 +1,158 @@
+{
+ "rules": "Chile Law 20.606, final 2019 thresholds; warning only where the nutrient was added (ingredient list)",
+ "thresholds": {
+  "solid_per_100g": {
+   "kcal": 275,
+   "sodium_mg": 400,
+   "sugar": 10,
+   "satfat": 4
+  },
+  "liquid_per_100ml": {
+   "kcal": 70,
+   "sodium_mg": 100,
+   "sugar": 5,
+   "satfat": 3
+  }
+ },
+ "overall": {
+  "tested": 687,
+  "pct_any_warning": 68.9,
+  "pct_2plus": 52.7,
+  "pct_by_warning": {
+   "sugar": 38.9,
+   "sodium": 24.5,
+   "satfat": 35.4,
+   "calories": 54.0
+  },
+  "count_distribution": {
+   "0": 214,
+   "1": 111,
+   "2": 160,
+   "3": 190,
+   "4": 12
+  }
+ },
+ "liquids_tested": 94,
+ "categories": {
+  "Yoghurt and curd": {
+   "tested": 87,
+   "pct_any_warning": 33.3,
+   "pct_2plus": 17.2,
+   "pct_by_warning": {
+    "sugar": 20.7,
+    "sodium": 10.3,
+    "satfat": 3.4,
+    "calories": 16.1
+   },
+   "count_distribution": {
+    "0": 58,
+    "1": 14,
+    "2": 15
+   }
+  },
+  "Sauces, ketchup and spreads": {
+   "tested": 62,
+   "pct_any_warning": 74.2,
+   "pct_2plus": 51.6,
+   "pct_by_warning": {
+    "sugar": 43.5,
+    "sodium": 24.2,
+    "satfat": 27.4,
+    "calories": 50.0
+   },
+   "count_distribution": {
+    "0": 16,
+    "1": 14,
+    "2": 21,
+    "3": 10,
+    "4": 1
+   }
+  },
+  "Biscuits and cookies": {
+   "tested": 53,
+   "pct_any_warning": 98.1,
+   "pct_2plus": 96.2,
+   "pct_by_warning": {
+    "sugar": 90.6,
+    "sodium": 17.0,
+    "satfat": 90.6,
+    "calories": 96.2
+   },
+   "count_distribution": {
+    "0": 1,
+    "1": 1,
+    "2": 5,
+    "3": 39,
+    "4": 7
+   }
+  },
+  "Chocolate and confectionery": {
+   "tested": 48,
+   "pct_any_warning": 95.8,
+   "pct_2plus": 93.8,
+   "pct_by_warning": {
+    "sugar": 85.4,
+    "sodium": 8.3,
+    "satfat": 83.3,
+    "calories": 91.7
+   },
+   "count_distribution": {
+    "0": 2,
+    "1": 1,
+    "2": 7,
+    "3": 38
+   }
+  },
+  "Breakfast cereals and muesli": {
+   "tested": 41,
+   "pct_any_warning": 75.6,
+   "pct_2plus": 48.8,
+   "pct_by_warning": {
+    "sugar": 31.7,
+    "sodium": 22.0,
+    "satfat": 12.2,
+    "calories": 75.6
+   },
+   "count_distribution": {
+    "0": 10,
+    "1": 11,
+    "2": 14,
+    "3": 5,
+    "4": 1
+   }
+  },
+  "Chips and crisps": {
+   "tested": 34,
+   "pct_any_warning": 94.1,
+   "pct_2plus": 94.1,
+   "pct_by_warning": {
+    "sugar": 2.9,
+    "sodium": 82.4,
+    "satfat": 91.2,
+    "calories": 94.1
+   },
+   "count_distribution": {
+    "0": 2,
+    "2": 4,
+    "3": 28
+   }
+  },
+  "Flours, grains and pulses": {
+   "tested": 30,
+   "pct_any_warning": 26.7,
+   "pct_2plus": 23.3,
+   "pct_by_warning": {
+    "sugar": 3.3,
+    "sodium": 13.3,
+    "satfat": 16.7,
+    "calories": 26.7
+   },
+   "count_distribution": {
+    "0": 22,
+    "1": 1,
+    "2": 4,
+    "3": 3
+   }
+  }
+ }
+}
