@@ -3,3 +3,4 @@ __pycache__/
 out/audit.txt
 out/run.txt
 check_site.py
+check_fetch.py
