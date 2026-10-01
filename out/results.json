@@ -37,7 +37,39 @@
    "median_salt_g_per_100g": 0.57,
    "median_salt_pct_of_5g": 11,
    "with_nova": 365,
-   "pct_nova4": 94.2
+   "pct_nova4": 94.2,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     310,
+     90.1
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     170,
+     49.4
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     76,
+     22.1
+    ],
+    [
+     "Dextrose, glucose",
+     62,
+     18.0
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     29,
+     8.4
+    ],
+    [
+     "Sweetened condensed milk",
+     23,
+     6.7
+    ]
+   ]
   },
   "Sauces, ketchup and spreads": {
    "products": 719,
@@ -54,7 +86,39 @@
    "median_salt_g_per_100g": 0.34,
    "median_salt_pct_of_5g": 7,
    "with_nova": 435,
-   "pct_nova4": 46.4
+   "pct_nova4": 46.4,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     184,
+     54.6
+    ],
+    [
+     "Honey",
+     25,
+     7.4
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     14,
+     4.2
+    ],
+    [
+     "Brown sugar, raw cane sugar",
+     9,
+     2.7
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     6,
+     1.8
+    ],
+    [
+     "Khandsari, khaand, bura, misri",
+     2,
+     0.6
+    ]
+   ]
   },
   "Flours, grains and pulses": {
    "products": 623,
@@ -71,7 +135,39 @@
    "median_salt_g_per_100g": 0.06,
    "median_salt_pct_of_5g": 1,
    "with_nova": 302,
-   "pct_nova4": 13.2
+   "pct_nova4": 13.2,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     23,
+     7.6
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     4,
+     1.3
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     2,
+     0.7
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     2,
+     0.7
+    ],
+    [
+     "Brown sugar, raw cane sugar",
+     1,
+     0.3
+    ],
+    [
+     "Honey",
+     1,
+     0.3
+    ]
+   ]
   },
   "Chocolate and confectionery": {
    "products": 496,
@@ -88,7 +184,39 @@
    "median_salt_g_per_100g": 0.24,
    "median_salt_pct_of_5g": 5,
    "with_nova": 235,
-   "pct_nova4": 92.8
+   "pct_nova4": 92.8,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     199,
+     84.3
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     58,
+     24.6
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     18,
+     7.6
+    ],
+    [
+     "Dextrose, glucose",
+     15,
+     6.4
+    ],
+    [
+     "Lactose",
+     14,
+     5.9
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     6,
+     2.5
+    ]
+   ]
   },
   "Spices and masalas": {
    "products": 446,
@@ -105,7 +233,29 @@
    "median_salt_g_per_100g": 1.62,
    "median_salt_pct_of_5g": 32,
    "with_nova": 203,
-   "pct_nova4": 17.2
+   "pct_nova4": 17.2,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     19,
+     9.5
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     4,
+     2.0
+    ],
+    [
+     "Dextrose, glucose",
+     2,
+     1.0
+    ],
+    [
+     "Honey",
+     1,
+     0.5
+    ]
+   ]
   },
   "Cakes and bakery": {
    "products": 333,
@@ -122,7 +272,39 @@
    "median_salt_g_per_100g": 1.07,
    "median_salt_pct_of_5g": 21,
    "with_nova": 169,
-   "pct_nova4": 76.3
+   "pct_nova4": 76.3,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     139,
+     83.7
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     7,
+     4.2
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     6,
+     3.6
+    ],
+    [
+     "Dextrose, glucose",
+     5,
+     3.0
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     2,
+     1.2
+    ],
+    [
+     "Sweetened condensed milk",
+     2,
+     1.2
+    ]
+   ]
   },
   "Chips and crisps": {
    "products": 308,
@@ -139,7 +321,39 @@
    "median_salt_g_per_100g": 1.69,
    "median_salt_pct_of_5g": 34,
    "with_nova": 165,
-   "pct_nova4": 71.5
+   "pct_nova4": 71.5,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     105,
+     64.4
+    ],
+    [
+     "Dextrose, glucose",
+     11,
+     6.7
+    ],
+    [
+     "Lactose",
+     4,
+     2.5
+    ],
+    [
+     "Fructose, fruit sugar",
+     3,
+     1.8
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     1,
+     0.6
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     1,
+     0.6
+    ]
+   ]
   },
   "Yoghurt and curd": {
    "products": 293,
@@ -156,7 +370,39 @@
    "median_salt_g_per_100g": 0.13,
    "median_salt_pct_of_5g": 3,
    "with_nova": 159,
-   "pct_nova4": 42.1
+   "pct_nova4": 42.1,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     33,
+     18.5
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     2,
+     1.1
+    ],
+    [
+     "Honey",
+     2,
+     1.1
+    ],
+    [
+     "Dextrose, glucose",
+     2,
+     1.1
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     1,
+     0.6
+    ],
+    [
+     "Lactose",
+     1,
+     0.6
+    ]
+   ]
   },
   "Dairy (milk, paneer, cheese)": {
    "products": 290,
@@ -173,7 +419,39 @@
    "median_salt_g_per_100g": 0.11,
    "median_salt_pct_of_5g": 2,
    "with_nova": 172,
-   "pct_nova4": 23.3
+   "pct_nova4": 23.3,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     34,
+     22.1
+    ],
+    [
+     "Dextrose, glucose",
+     3,
+     1.9
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     2,
+     1.3
+    ],
+    [
+     "Sweetened condensed milk",
+     1,
+     0.6
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     1,
+     0.6
+    ],
+    [
+     "Khandsari, khaand, bura, misri",
+     1,
+     0.6
+    ]
+   ]
   },
   "Tea and coffee": {
    "products": 273,
@@ -190,7 +468,29 @@
    "median_salt_g_per_100g": 0.0,
    "median_salt_pct_of_5g": 0,
    "with_nova": 83,
-   "pct_nova4": 25.3
+   "pct_nova4": 25.3,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     9,
+     13.6
+    ],
+    [
+     "Honey",
+     2,
+     3.0
+    ],
+    [
+     "Corn syrup, high-fructose corn syrup",
+     1,
+     1.5
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     1,
+     1.5
+    ]
+   ]
   },
   "Breakfast cereals and muesli": {
    "products": 256,
@@ -207,7 +507,39 @@
    "median_salt_g_per_100g": 0.25,
    "median_salt_pct_of_5g": 5,
    "with_nova": 148,
-   "pct_nova4": 56.8
+   "pct_nova4": 56.8,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     80,
+     53.3
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     27,
+     18.0
+    ],
+    [
+     "Honey",
+     24,
+     16.0
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     17,
+     11.3
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     14,
+     9.3
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     11,
+     7.3
+    ]
+   ]
   },
   "Instant noodles and pasta": {
    "products": 251,
@@ -224,7 +556,29 @@
    "median_salt_g_per_100g": 2.5,
    "median_salt_pct_of_5g": 50,
    "with_nova": 131,
-   "pct_nova4": 87.0
+   "pct_nova4": 87.0,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     76,
+     65.5
+    ],
+    [
+     "Dextrose, glucose",
+     5,
+     4.3
+    ],
+    [
+     "Lactose",
+     1,
+     0.9
+    ],
+    [
+     "Khandsari, khaand, bura, misri",
+     1,
+     0.9
+    ]
+   ]
   },
   "Soft drinks and energy drinks": {
    "products": 241,
@@ -241,7 +595,29 @@
    "median_salt_g_per_100g": 0.02,
    "median_salt_pct_of_5g": 0,
    "with_nova": 141,
-   "pct_nova4": 93.6
+   "pct_nova4": 93.6,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     96,
+     73.8
+    ],
+    [
+     "Dextrose, glucose",
+     11,
+     8.5
+    ],
+    [
+     "Fruit juice concentrate",
+     6,
+     4.6
+    ],
+    [
+     "Fructose, fruit sugar",
+     1,
+     0.8
+    ]
+   ]
   },
   "Edible oils and ghee": {
    "products": 235,
@@ -258,7 +634,19 @@
    "median_salt_g_per_100g": 0.0,
    "median_salt_pct_of_5g": 0,
    "with_nova": 205,
-   "pct_nova4": 8.8
+   "pct_nova4": 8.8,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     1,
+     0.9
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     1,
+     0.9
+    ]
+   ]
   },
   "Milk drinks and health drink powders": {
    "products": 193,
@@ -275,7 +663,39 @@
    "median_salt_g_per_100g": 0.14,
    "median_salt_pct_of_5g": 3,
    "with_nova": 105,
-   "pct_nova4": 60.0
+   "pct_nova4": 60.0,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     59,
+     52.7
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     6,
+     5.4
+    ],
+    [
+     "Dextrose, glucose",
+     5,
+     4.5
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     4,
+     3.6
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     1,
+     0.9
+    ],
+    [
+     "Lactose",
+     1,
+     0.9
+    ]
+   ]
   },
   "Ice cream and frozen desserts": {
    "products": 178,
@@ -292,7 +712,39 @@
    "median_salt_g_per_100g": 0.12,
    "median_salt_pct_of_5g": 2,
    "with_nova": 104,
-   "pct_nova4": 95.2
+   "pct_nova4": 95.2,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     92,
+     86.8
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     36,
+     34.0
+    ],
+    [
+     "Dextrose, glucose",
+     11,
+     10.4
+    ],
+    [
+     "Sweetened condensed milk",
+     5,
+     4.7
+    ],
+    [
+     "Jam, jelly, sweetened chocolate, sweetened fruit pieces",
+     4,
+     3.8
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     2,
+     1.9
+    ]
+   ]
   },
   "Namkeen and savoury snacks": {
    "products": 173,
@@ -309,7 +761,39 @@
    "median_salt_g_per_100g": 1.42,
    "median_salt_pct_of_5g": 28,
    "with_nova": 101,
-   "pct_nova4": 47.5
+   "pct_nova4": 47.5,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     53,
+     50.5
+    ],
+    [
+     "Dextrose, glucose",
+     3,
+     2.9
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     2,
+     1.9
+    ],
+    [
+     "Fructose, fruit sugar",
+     2,
+     1.9
+    ],
+    [
+     "Corn syrup, high-fructose corn syrup",
+     1,
+     1.0
+    ],
+    [
+     "Lactose",
+     1,
+     1.0
+    ]
+   ]
   },
   "Fruit juices and juice drinks": {
    "products": 152,
@@ -326,7 +810,39 @@
    "median_salt_g_per_100g": 0.05,
    "median_salt_pct_of_5g": 1,
    "with_nova": 91,
-   "pct_nova4": 84.6
+   "pct_nova4": 84.6,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     68,
+     74.7
+    ],
+    [
+     "Fruit juice concentrate",
+     29,
+     31.9
+    ],
+    [
+     "Fructose, fruit sugar",
+     4,
+     4.4
+    ],
+    [
+     "Cane juice, sugarcane juice",
+     4,
+     4.4
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     2,
+     2.2
+    ],
+    [
+     "Dextrose, glucose",
+     1,
+     1.1
+    ]
+   ]
   },
   "Ready meals and instant mixes": {
    "products": 78,
@@ -343,7 +859,29 @@
    "median_salt_g_per_100g": 1.2,
    "median_salt_pct_of_5g": 24,
    "with_nova": 32,
-   "pct_nova4": 78.1
+   "pct_nova4": 78.1,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     16,
+     59.3
+    ],
+    [
+     "Dried glucose syrup, glucose syrup solids",
+     4,
+     14.8
+    ],
+    [
+     "Brown sugar, raw cane sugar",
+     2,
+     7.4
+    ],
+    [
+     "Jaggery, gur, gud, shakkar",
+     1,
+     3.7
+    ]
+   ]
   },
   "Protein and snack bars": {
    "products": 6,
@@ -360,7 +898,19 @@
    "median_salt_g_per_100g": 0.65,
    "median_salt_pct_of_5g": 13,
    "with_nova": 3,
-   "pct_nova4": 100.0
+   "pct_nova4": 100.0,
+   "sugar_names": [
+    [
+     "Brown sugar, raw cane sugar",
+     1,
+     100.0
+    ],
+    [
+     "Honey",
+     1,
+     100.0
+    ]
+   ]
   }
  },
  "sugar_names_frequency": [

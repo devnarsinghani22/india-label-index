@@ -139,6 +139,11 @@ def main():
         if p["bucket"] and p["bucket"] != "excluded_baby":
             by[p["bucket"]].append(p)
     cats = {k: summarise(v) for k, v in by.items()}
+    # which sugar names show up in each category (share of that category's ingredient lists)
+    for k, v in by.items():
+        ing = [p for p in v if p["ing"]]
+        c = Counter(NAMES[g] for p in ing for g in p["a"]["sugar_groups"])
+        cats[k]["sugar_names"] = [(n, cnt, round(100 * cnt / len(ing), 1)) for n, cnt in c.most_common(6)] if ing else []
 
     alias_counter = Counter()
     for p in sugar_relevant:
@@ -168,7 +173,7 @@ def main():
     }
     (OUT / "results.json").write_text(json.dumps(res, indent=1, ensure_ascii=False), encoding="utf-8")
     with (OUT / "category_table.csv").open("w", encoding="utf-8", newline="") as f:
-        cols = list(next(iter(cats.values())).keys())
+        cols = [c for c in next(iter(cats.values())).keys() if c != "sugar_names"]
         w = csv.writer(f)
         w.writerow(["category"] + cols)
         for k, v in res["categories"].items():
