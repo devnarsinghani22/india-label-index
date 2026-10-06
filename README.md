@@ -19,6 +19,10 @@ From 3,798 Indian packaged foods with an ingredient list (plain staples like att
 - **FSSAI's proposed limits** (ICMR-NIN 2024, as cited to the Supreme Court, 28 Aug 2026), 665 foods with full nutrition: **71%** would carry a warning under FSSAI's current plan (any 1 of added sugar, added fat, salt high; affidavit of 23 Sep 2026), against **41%** under the 2-or-more plan it dropped. Soft drinks: 69% are high in added sugar, but only 3% would have been warned under the dropped plan. [Page](https://devnarsinghani22.github.io/india-label-index/fssai-warning-labels/), `fssai.py`, [`out/fssai.json`](out/fssai.json).
 - **Chile's 2019 limits**, 687 foods: 69% would carry at least one warning. [Page](https://devnarsinghani22.github.io/india-label-index/warning-labels/), `warnings.py`, [`out/warnings.json`](out/warnings.json).
 
+### Which fat is in the pack (6 Oct 2026)
+
+- Of **1,917** Indian packaged foods whose ingredient list names a fat or oil (staples left out), **51%** name palm oil (palm oil, palmolein, palm kernel or palm fat). Instant noodles **88%**, biscuits **81%**, chips **77%**, namkeen **66%**. **15%** list a hydrogenated, interesterified or shortening fat (chocolate 36%, biscuits 28%). **7.5%** say only "vegetable oil" and never name the plant. [Page](https://devnarsinghani22.github.io/india-label-index/palm-oil/), `fats.py`, [`out/fats.json`](out/fats.json).
+
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
 
 ## Data
@@ -45,7 +49,11 @@ python analyse.py      # writes out/results.json and out/category_table.csv
 python audit.py        # every matched sugar phrase with context
 python warnings.py     # Chile-rule warning labels -> out/warnings.json
 python fssai.py        # FSSAI proposed limits, Phase I vs II -> out/fssai.json
+python fats.py         # which fat the list names: palm, other plant oil, dairy, unnamed -> out/fats.json
+python -I pull_multi.py   # slim multi-country extract for cross-country comparisons (data/off_multi.tsv, 20-40 min)
 ```
+
+Run the two `pull_*` scripts with `python -I`: this folder has a `warnings.py`, which shadows the standard-library module that `requests` needs.
 
 ## Licence
 

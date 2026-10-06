@@ -1,0 +1,197 @@
+{
+ "lists_total": 4473,
+ "note": "Share of ingredient lists that name any fat or oil. Palm = palm oil, palmolein, palm kernel, palm stearin or palm fat anywhere in the list. 'Unnamed vegetable oil' = the list says only vegetable/edible/refined oil or fat (or hydrogenated oil / vanaspati / shortening) and never names a plant or dairy fat. Staples (oils, ghee, flours, spices, tea) left out of the headline.",
+ "overall_all": {
+  "with_fat": 2100,
+  "pct_palm": 48.0,
+  "pct_named_other_only": 25.6,
+  "pct_dairy_only": 15.8,
+  "pct_unnamed_vegetable_oil": 7.0,
+  "pct_hydrogenated_or_vanaspati": 13.9,
+  "named_oils": {
+   "sunflower": 10.0,
+   "rice bran": 9.9,
+   "cottonseed": 5.6,
+   "soybean": 4.9,
+   "coconut": 3.6,
+   "corn": 2.7,
+   "groundnut": 2.6,
+   "sesame": 1.6
+  }
+ },
+ "overall_non_staple": {
+  "with_fat": 1917,
+  "pct_palm": 51.0,
+  "pct_named_other_only": 22.0,
+  "pct_dairy_only": 16.3,
+  "pct_unnamed_vegetable_oil": 7.5,
+  "pct_hydrogenated_or_vanaspati": 15.0,
+  "named_oils": {
+   "rice bran": 9.6,
+   "sunflower": 9.2,
+   "cottonseed": 5.6,
+   "soybean": 4.6,
+   "coconut": 3.1,
+   "corn": 2.8,
+   "groundnut": 2.5,
+   "sesame": 1.4
+  }
+ },
+ "categories": {
+  "Biscuits and cookies": {
+   "with_fat": 331,
+   "pct_palm": 81.3,
+   "pct_named_other_only": 3.9,
+   "pct_dairy_only": 9.4,
+   "pct_unnamed_vegetable_oil": 4.8,
+   "pct_hydrogenated_or_vanaspati": 27.8,
+   "named_oils": {
+    "sunflower": 4.5,
+    "rice bran": 2.1,
+    "coconut": 1.5,
+    "sesame": 1.5,
+    "canola": 0.3,
+    "corn": 0.3,
+    "soy": 0.3
+   }
+  },
+  "Breakfast cereals and muesli": {
+   "with_fat": 60,
+   "pct_palm": 36.7,
+   "pct_named_other_only": 53.3,
+   "pct_dairy_only": 8.3,
+   "pct_unnamed_vegetable_oil": 1.7,
+   "pct_hydrogenated_or_vanaspati": 5.0,
+   "named_oils": {
+    "rice bran": 50.0,
+    "sunflower": 6.7,
+    "soybean": 3.3,
+    "canola": 1.7,
+    "coconut": 1.7,
+    "cottonseed": 1.7,
+    "corn": 1.7
+   }
+  },
+  "Cakes and bakery": {
+   "with_fat": 161,
+   "pct_palm": 45.3,
+   "pct_named_other_only": 27.3,
+   "pct_dairy_only": 7.5,
+   "pct_unnamed_vegetable_oil": 18.6,
+   "pct_hydrogenated_or_vanaspati": 12.4,
+   "named_oils": {
+    "sunflower": 15.5,
+    "rice bran": 9.3,
+    "soybean": 8.7,
+    "groundnut": 3.1,
+    "sesame": 1.9,
+    "coconut": 1.2,
+    "olive": 0.6,
+    "cottonseed": 0.6
+   }
+  },
+  "Chips and crisps": {
+   "with_fat": 157,
+   "pct_palm": 77.1,
+   "pct_named_other_only": 17.2,
+   "pct_dairy_only": 0.6,
+   "pct_unnamed_vegetable_oil": 4.5,
+   "pct_hydrogenated_or_vanaspati": 1.3,
+   "named_oils": {
+    "rice bran": 20.4,
+    "sunflower": 15.9,
+    "cottonseed": 7.6,
+    "coconut": 7.0,
+    "corn": 6.4,
+    "groundnut": 4.5,
+    "canola": 2.5,
+    "sesame": 2.5
+   }
+  },
+  "Chocolate and confectionery": {
+   "with_fat": 180,
+   "pct_palm": 27.2,
+   "pct_named_other_only": 5.6,
+   "pct_dairy_only": 60.0,
+   "pct_unnamed_vegetable_oil": 3.9,
+   "pct_hydrogenated_or_vanaspati": 35.6,
+   "named_oils": {
+    "sunflower": 3.3,
+    "coconut": 2.2,
+    "sesame": 1.1,
+    "canola": 0.6,
+    "soybean": 0.6
+   }
+  },
+  "Ice cream and frozen desserts": {
+   "with_fat": 65,
+   "pct_palm": 44.6,
+   "pct_named_other_only": 24.6,
+   "pct_dairy_only": 29.2,
+   "pct_unnamed_vegetable_oil": 0.0,
+   "pct_hydrogenated_or_vanaspati": 9.2,
+   "named_oils": {
+    "coconut": 32.3,
+    "soybean": 4.6,
+    "canola": 3.1,
+    "cottonseed": 3.1,
+    "almond": 1.5,
+    "sunflower": 1.5
+   }
+  },
+  "Instant noodles and pasta": {
+   "with_fat": 88,
+   "pct_palm": 87.5,
+   "pct_named_other_only": 5.7,
+   "pct_dairy_only": 1.1,
+   "pct_unnamed_vegetable_oil": 4.5,
+   "pct_hydrogenated_or_vanaspati": 1.1,
+   "named_oils": {
+    "corn": 10.2,
+    "sunflower": 8.0,
+    "rice bran": 5.7,
+    "soybean": 4.5,
+    "coconut": 3.4,
+    "soy": 2.3,
+    "soya bean": 2.3,
+    "soy bean": 1.1
+   }
+  },
+  "Namkeen and savoury snacks": {
+   "with_fat": 96,
+   "pct_palm": 65.6,
+   "pct_named_other_only": 21.9,
+   "pct_dairy_only": 2.1,
+   "pct_unnamed_vegetable_oil": 8.3,
+   "pct_hydrogenated_or_vanaspati": 5.2,
+   "named_oils": {
+    "rice bran": 21.9,
+    "cottonseed": 20.8,
+    "corn": 11.5,
+    "sunflower": 9.4,
+    "groundnut": 5.2,
+    "sesame": 2.1,
+    "canola": 1.0,
+    "soya bean": 1.0
+   }
+  },
+  "Sauces, ketchup and spreads": {
+   "with_fat": 160,
+   "pct_palm": 8.1,
+   "pct_named_other_only": 55.6,
+   "pct_dairy_only": 26.9,
+   "pct_unnamed_vegetable_oil": 6.9,
+   "pct_hydrogenated_or_vanaspati": 11.9,
+   "named_oils": {
+    "soybean": 26.9,
+    "rice bran": 6.9,
+    "sunflower": 5.6,
+    "groundnut": 5.6,
+    "cottonseed": 4.4,
+    "sesame": 3.1,
+    "mustard": 2.5,
+    "olive": 1.9
+   }
+  }
+ }
+}
