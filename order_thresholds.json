@@ -1,0 +1,9 @@
+{
+ "_comment": "ORDER DAY: edit this file to match the Supreme Court's front-of-pack order, then run `python -I fssai.py --court`. The values below are TODAY'S (8 Oct 2026): ICMR-NIN DGI 2024 Table 15.1 limits as cited in FSSAI's 28 Aug 2026 affidavit, with FSSAI's 23 Sep single-phase trigger (any 1 of 3 high). Limits are per 100 g (solid) and per 100 ml (liquid). Salt is in mg; if the order gives sodium, write sodium_mg instead of salt_mg and it is converted (x 2.5). Rewrite label too, e.g. 'Limits and trigger in the Supreme Court's order of 21 Oct 2026; ...'. If the order adds a nutrient (saturated fat, energy) or uses total sugar or total fat, fssai.py needs a code change, not just this file.",
+ "label": "ICMR-NIN DGI 2024 Table 15.1 thresholds as cited by FSSAI (affidavit 28 Aug 2026); warning when any 1 of added sugar, added fat, salt is high (FSSAI's 23 Sep 2026 single-phase plan); supplements left out by name",
+ "solid_per_100g": {"sugar": 3, "fat": 4.2, "salt_mg": 625},
+ "liquid_per_100ml": {"sugar": 2, "fat": 1.5, "salt_mg": 175},
+ "trigger": {"type": "any", "n": 1},
+ "_trigger_examples": "{\"type\": \"any\", \"n\": 2} = warning when 2 or more are high. {\"type\": \"weighted\", \"weights\": {\"sugar\": 2, \"fat\": 1, \"salt\": 1}, \"cutoff\": 2} = high sugar alone triggers, fat or salt only together.",
+ "exclude_supplements": true
+}
