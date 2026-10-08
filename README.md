@@ -36,6 +36,18 @@ The same foods in Open Food Facts, India against 15 other countries (one downloa
 - Other countries are shown only with at least 100 products; India uses the Index rules (50 lists for a share, 30 values for a median).
 - Corrected 8 Oct 2026, the day it went up: the all-foods additive figure first covered only analyse.py's 22 food groups (23%, 3,421 packs); the English-list, palm fruit oil and oil-run fixes above apply here too; INS numbers written "INS-330", "INS:330" or "INS.330" are now found (1,228 Indian lists, was 1,197); shares are stored with their counts so pages round once (the UK noodles figure is 67%, not 68%; Indian noodles with 5+ additives 82%, not 83%).
 
+### The Diwali box (9 Oct 2026)
+
+What the labels on packaged mithai and namkeen say, before Diwali (8 Nov 2026). `diwali.py`, [`out/diwali.json`](out/diwali.json), [`out/diwali_table.csv`](out/diwali_table.csv) (every number with its count). [Page](https://devnarsinghani22.github.io/india-label-index/diwali/).
+
+- **Which products:** Open Food Facts tags only 1 Indian product as an Indian sweet, so the sets were built: [`festive_labels.csv`](festive_labels.csv) (barcode, type, the local model's answer), 40 mithai and 294 namkeen ingredient lists, every one read and sorted by hand. A local model (qwen3:14b) sorted 1,918 lists first, but a blind 50-row hand check found 39 of 50 right (78%), under the 90% bar, so its sort was not used ([`festive_model.csv`](festive_model.csv) keeps its answers and the check).
+- **Mithai, sugar:** sugar, sugar syrup or jaggery is the first ingredient in **19 of 40** (48%), first or second in **34 of 40** (85%). Items are split at commas, semicolons, "&" and "and" outside brackets ("milk solids & sugar" puts sugar second). 7 of 40 name 2 or more sugars.
+- **Mithai, fat:** 21 of 40 name a fat or oil. Of those, 12 of 21 name palm oil, 7 of 21 a hydrogenated, vanaspati or interesterified fat, 9 of 21 ghee, and 6 of 21 ghee with no other fat (one list writes "Sun Flower oil", counted as a plant oil in diwali.py; fats.py, which the palm study uses, reads only "sunflower").
+- **Mithai, colours:** 6 of 40 add a colour, all synthetic (INS 110 in 5, INS 102 in 4, INS 122 in 1).
+- **Namkeen:** palm oil is named in **172 of 283** lists that name a fat (61%); hydrogenated or vanaspati 16 of 283. The largest brand is 67 of 294 lists; without it, palm is 120 of 218 (55%). The palm oil study's namkeen row (66%, 99 lists) used Open Food Facts' category tags instead.
+- **FSSAI's proposed warning** (fssai.py logic, any 1 of added sugar, added fat, salt high; supplements out): **39 of 40** namkeen packs with a full nutrition table (high fat 38, salt 34); 17 of the 40 are one brand, and the other 23 are all warned. Only 4 mithai have a full nutrition table (all 4 warned, for added sugar).
+- **INS numbers:** namkeen INS 330 in 86 of 294, INS 551 in 35, INS 627 and 631 in 25 each; mithai INS 202 (potassium sorbate) in 6 of 40. A dye named in words counts as its INS number.
+
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
 
 ## Data
@@ -65,6 +77,7 @@ python fssai.py        # FSSAI proposed limits, Phase I vs II -> out/fssai.json
 python fats.py         # which fat the list names: palm, other plant oil, dairy, unnamed -> out/fats.json (self-test first)
 python -I pull_multi.py   # slim multi-country extract for cross-country comparisons (data/off_multi.tsv, 20-40 min)
 python world.py        # India vs the world: chips (crisps), instant noodles, additives -> out/world.json, out/world_table.csv (self-test first)
+python -I diwali.py    # the Diwali box: mithai and namkeen (reads festive_labels.csv) -> out/diwali.json, out/diwali_table.csv (self-test first)
 ```
 
 Run the two `pull_*` scripts with `python -I`: this folder has a `warnings.py`, which shadows the standard-library module that `requests` needs.
@@ -75,4 +88,6 @@ Code: MIT. Data: derived from Open Food Facts under the [Open Database License (
 
 ## Cite
 
-Narsinghani, D. (2026). India Label Index 2026: What 3,798 Indian food labels say about sugar and salt. https://devnarsinghani22.github.io/india-label-index/. Data from Open Food Facts (ODbL).
+Narsinghani, D. (2026). India Label Index 2026: What 3,798 Indian food labels say about sugar and salt. https://devnarsinghani22.github.io/india-label-index/. Data from Open Food Facts (ODbL). https://doi.org/10.5281/zenodo.23245062
+
+DOI: [10.5281/zenodo.23245062](https://doi.org/10.5281/zenodo.23245062) (Zenodo, release v1.1).
