@@ -12,7 +12,8 @@ Category-level only.
 Measures
   1. Crisps (Open Food Facts tags crisps, potato crisps/chips, corn chips, extruded snacks, tortilla chips):
      a. palm oil named in the ingredient list, among lists that name a fat or oil. Same matcher as fats.py
-        (palm fruit oil counts; palm sugar, palm jaggery, palmyra, palmitate and the palm fruit itself do not).
+        (palm fruit oil counts; palm sugar, palm jaggery, palmyra, palmitate or a misspelling of it such as
+        "palmate", and the palm fruit itself do not).
         English-label countries only, because the matcher reads English words. A list counts as English by
         fats.english_list (a stray accent or a second language printed alongside does not drop it).
      b. Open Food Facts' own palm-oil tag (ingredients_analysis_tags en:palm-oil vs en:palm-oil-free; "maybe" and
@@ -95,7 +96,8 @@ def selftest():
            "Potatoes, Palm Fruit Oil, Sea Salt", "organic palm fruit oil"]
     no = ["Potato, Sunflower Oil, Salt", "Palm Sugar, Rice Flour, Rice Bran Oil", "Palm Jaggery, Groundnut Oil",
           "Palmyra Sprout Flour, Coconut Oil", "Vitamin A Palmitate, Milk Fat", "Ascorbyl palmitate, sunflower oil",
-          "Corn, Canola Oil, Salt", "Palm fruit (ice apple), sugar, sunflower oil"]
+          "Corn, Canola Oil, Salt", "Palm fruit (ice apple), sugar, sunflower oil",
+          "white corn, canola oil, sunflower oil (contains ascorbyl palmate), salt, calcium hydroxide"]
     for s in yes:
         assert PALM_RE.search(s), s
     for s in no:

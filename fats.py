@@ -21,7 +21,9 @@ csv.field_size_limit(2**31 - 1)
 
 # "palm sugar", "palm jaggery", "palmyra", "palmitate" (vitamin A), "palm hearts" and the fruit itself ("palm fruit",
 # e.g. ice apple) are not palm oil. "Palm fruit oil" IS palm oil (a common US label name for it).
-PALM_RE = re.compile(r"\bpalm(?!it|yra|\s*(?:sugar|jaggery|candy|nectar|syrup|heart|date)|\s*fruit(?!\s*(?:oil|fat|olein|shortening)))"
+# Misspelt palmitate is not palm oil either: "ascorbyl palmate", "vitamin A palminate / palmtate / palmiate / palmatate"
+# (palm + up to 4 of a i y n l t + "at" + ending). "Palmfat" still counts: the f is not in that set.
+PALM_RE = re.compile(r"\bpalm(?!it|yra|[aiíīynlt]{0,4}at(?:e|es|el|o|a)?\b|\s*(?:sugar|jaggery|candy|nectar|syrup|heart|date)|\s*fruit(?!\s*(?:oil|fat|olein|shortening)))"
                      r"(?:olein|\s*fruit\s*oil|\s*kernel|\s*oil|\s*fat|\s*stearin|\s*shortening|\s*olein)?\w*", re.I)
 PLANTS = (r"sunflower|rice ?bran|soya?(?: ?bean)?|mustard|groundnut|peanut|coconut|olive|cotton ?seed|canola|rapeseed|corn|maize|sesame|"
           r"gingelly|safflower|kardi|linseed|flaxseed|almond|walnut|avocado")
@@ -104,10 +106,14 @@ def classify(ing):
 def selftest():
     palm_yes = ["Potato, Edible Vegetable Oil (Palmolein), Salt", "palm oil", "Palm Kernel Oil", "vegetable oil (palm)",
                 "Refined Palm Oil, Spices", "PALMOLEIN OIL", "palm fat", "Palm Stearin", "fully hydrogenated palm kernel oil",
-                "Potatoes, Palm Fruit Oil, Salt", "organic red palm fruit oil", "palm fruit shortening"]
+                "Potatoes, Palm Fruit Oil, Salt", "organic red palm fruit oil", "palm fruit shortening",
+                "Wheat flour, palmfat, sugar", "Vegetable oil (canola, cottonseed, palmi, sed starch", "Palmolien, salt"]
     palm_no = ["Potato, Sunflower Oil, Salt", "Palm Sugar, Rice Flour, Rice Bran Oil", "Palm Jaggery, Groundnut Oil",
                "Palmyra Sprout Flour, Coconut Oil", "Vitamin A Palmitate, Milk Fat", "Ascorbyl palmitate, sunflower oil",
-               "Corn, Canola Oil, Salt", "Palm fruit (ice apple) 40%, sugar, sunflower oil", "palm fruit jelly, coconut oil"]
+               "Corn, Canola Oil, Salt", "Palm fruit (ice apple) 40%, sugar, sunflower oil", "palm fruit jelly, coconut oil",
+               "white corn, canola oil, sunflower oil (contains ascorbyl palmate), salt, calcium hydroxide",
+               "Milk, vitamin A palminate, vitamin D3", "Fat free milk, vitamin a palmtate", "VITAMIN A PALMIATE, REDUCED IRON",
+               "vitamin A palmatate, sunflower oil", "Vitamin A palmítate, canola oil"]
     for s in palm_yes:
         assert PALM_RE.search(s), s
     for s in palm_no:
