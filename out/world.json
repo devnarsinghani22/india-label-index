@@ -1,0 +1,1163 @@
+{
+ "source": "Open Food Facts (https://world.openfoodfacts.org/), ODbL. off_multi.tsv read 6 Oct 2026; off_india.csv read 1 Oct 2026.",
+ "rows_read": 3592460,
+ "min_n_other_countries": 100,
+ "min_n_india": {
+  "share": 50,
+  "median": 30
+ },
+ "note": "Open Food Facts is filled in by volunteers, so no country's numbers are a random sample of its shops. India = every product tagged as sold in India (some are also sold elsewhere); India-only = tagged India and nowhere else.",
+ "measures": {
+  "add5": {
+   "all_foods": {
+    "France": {
+     "n": 219481,
+     "pct": 11.5,
+     "shown": true
+    },
+    "US": {
+     "n": 190296,
+     "pct": 23.8,
+     "shown": true
+    },
+    "Germany": {
+     "n": 74649,
+     "pct": 9.5,
+     "shown": true
+    },
+    "Spain": {
+     "n": 32518,
+     "pct": 14.1,
+     "shown": true
+    },
+    "UK": {
+     "n": 32252,
+     "pct": 13.2,
+     "shown": true
+    },
+    "Italy": {
+     "n": 23582,
+     "pct": 5.6,
+     "shown": true
+    },
+    "Canada": {
+     "n": 10399,
+     "pct": 17.3,
+     "shown": true
+    },
+    "Australia": {
+     "n": 6840,
+     "pct": 17.9,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 5324,
+     "pct": 22.1,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 3428,
+     "pct": 6.0,
+     "shown": true
+    },
+    "India": {
+     "n": 3421,
+     "pct": 23.1,
+     "shown": true
+    },
+    "India-only": {
+     "n": 3149,
+     "pct": 22.9,
+     "shown": true
+    },
+    "Chile": {
+     "n": 1075,
+     "pct": 26.2,
+     "shown": true
+    },
+    "Singapore": {
+     "n": 763,
+     "pct": 17.7,
+     "shown": true
+    },
+    "South Africa": {
+     "n": 690,
+     "pct": 23.0,
+     "shown": true
+    },
+    "UAE": {
+     "n": 435,
+     "pct": 18.4,
+     "shown": true
+    },
+    "Indonesia": {
+     "n": 381,
+     "pct": 10.2,
+     "shown": true
+    }
+   },
+   "biscuits": {
+    "France": {
+     "n": 13535,
+     "pct": 17.7,
+     "shown": true
+    },
+    "US": {
+     "n": 11231,
+     "pct": 32.5,
+     "shown": true
+    },
+    "Germany": {
+     "n": 2903,
+     "pct": 11.6,
+     "shown": true
+    },
+    "Spain": {
+     "n": 2183,
+     "pct": 21.2,
+     "shown": true
+    },
+    "Italy": {
+     "n": 2068,
+     "pct": 9.0,
+     "shown": true
+    },
+    "UK": {
+     "n": 1612,
+     "pct": 20.9,
+     "shown": true
+    },
+    "Canada": {
+     "n": 507,
+     "pct": 20.7,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 420,
+     "pct": 37.4,
+     "shown": true
+    },
+    "India": {
+     "n": 350,
+     "pct": 45.1,
+     "shown": true
+    },
+    "India-only": {
+     "n": 314,
+     "pct": 44.9,
+     "shown": true
+    },
+    "Australia": {
+     "n": 285,
+     "pct": 31.2,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 253,
+     "pct": 12.3,
+     "shown": true
+    },
+    "Chile": {
+     "n": 133,
+     "pct": 39.8,
+     "shown": true
+    },
+    "Indonesia": {
+     "n": 40,
+     "pct": 17.5,
+     "shown": false
+    },
+    "UAE": {
+     "n": 34,
+     "pct": 23.5,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 33,
+     "pct": 27.3,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 28,
+     "pct": 39.3,
+     "shown": false
+    }
+   },
+   "crisps": {
+    "France": {
+     "n": 3945,
+     "pct": 8.8,
+     "shown": true
+    },
+    "US": {
+     "n": 2930,
+     "pct": 14.5,
+     "shown": true
+    },
+    "UK": {
+     "n": 1568,
+     "pct": 12.9,
+     "shown": true
+    },
+    "Germany": {
+     "n": 1528,
+     "pct": 8.6,
+     "shown": true
+    },
+    "Spain": {
+     "n": 962,
+     "pct": 13.5,
+     "shown": true
+    },
+    "Canada": {
+     "n": 432,
+     "pct": 25.9,
+     "shown": true
+    },
+    "Italy": {
+     "n": 401,
+     "pct": 6.2,
+     "shown": true
+    },
+    "Australia": {
+     "n": 239,
+     "pct": 25.5,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 202,
+     "pct": 50.5,
+     "shown": true
+    },
+    "India": {
+     "n": 167,
+     "pct": 25.7,
+     "shown": true
+    },
+    "India-only": {
+     "n": 145,
+     "pct": 26.9,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 65,
+     "pct": 6.2,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 44,
+     "pct": 65.9,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 34,
+     "pct": 35.3,
+     "shown": false
+    },
+    "Chile": {
+     "n": 23,
+     "pct": 39.1,
+     "shown": false
+    },
+    "UAE": {
+     "n": 21,
+     "pct": 33.3,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 17,
+     "pct": 5.9,
+     "shown": false
+    }
+   },
+   "instant_noodles": {
+    "France": {
+     "n": 905,
+     "pct": 59.8,
+     "shown": true
+    },
+    "Germany": {
+     "n": 401,
+     "pct": 61.8,
+     "shown": true
+    },
+    "US": {
+     "n": 229,
+     "pct": 63.8,
+     "shown": true
+    },
+    "UK": {
+     "n": 227,
+     "pct": 46.7,
+     "shown": true
+    },
+    "India": {
+     "n": 97,
+     "pct": 82.5,
+     "shown": true
+    },
+    "Spain": {
+     "n": 96,
+     "pct": 62.5,
+     "shown": false
+    },
+    "Australia": {
+     "n": 80,
+     "pct": 60.0,
+     "shown": false
+    },
+    "India-only": {
+     "n": 71,
+     "pct": 81.7,
+     "shown": true
+    },
+    "Canada": {
+     "n": 62,
+     "pct": 59.7,
+     "shown": false
+    },
+    "Italy": {
+     "n": 38,
+     "pct": 42.1,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 37,
+     "pct": 48.6,
+     "shown": false
+    },
+    "Brazil": {
+     "n": 23,
+     "pct": 47.8,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 18,
+     "pct": 66.7,
+     "shown": false
+    },
+    "Mexico": {
+     "n": 14,
+     "pct": 57.1,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 8,
+     "pct": 62.5,
+     "shown": false
+    },
+    "UAE": {
+     "n": 5,
+     "pct": 100.0,
+     "shown": false
+    },
+    "Chile": {
+     "n": 3,
+     "pct": 66.7,
+     "shown": false
+    }
+   }
+  },
+  "palm_tag": {
+   "biscuits": {
+    "France": {
+     "n": 11788,
+     "pct": 38.6,
+     "shown": true
+    },
+    "US": {
+     "n": 10191,
+     "pct": 66.0,
+     "shown": true
+    },
+    "Germany": {
+     "n": 2674,
+     "pct": 63.9,
+     "shown": true
+    },
+    "Italy": {
+     "n": 1780,
+     "pct": 25.1,
+     "shown": true
+    },
+    "Spain": {
+     "n": 1773,
+     "pct": 47.0,
+     "shown": true
+    },
+    "UK": {
+     "n": 1468,
+     "pct": 64.7,
+     "shown": true
+    },
+    "Canada": {
+     "n": 432,
+     "pct": 67.8,
+     "shown": true
+    },
+    "India": {
+     "n": 278,
+     "pct": 92.1,
+     "shown": true
+    },
+    "India-only": {
+     "n": 246,
+     "pct": 91.9,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 157,
+     "pct": 38.2,
+     "shown": true
+    },
+    "Australia": {
+     "n": 146,
+     "pct": 54.1,
+     "shown": true
+    },
+    "Chile": {
+     "n": 106,
+     "pct": 53.8,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 92,
+     "pct": 59.8,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 25,
+     "pct": 72.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 23,
+     "pct": 56.5,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 15,
+     "pct": 66.7,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 10,
+     "pct": 60.0,
+     "shown": false
+    }
+   },
+   "crisps": {
+    "France": {
+     "n": 3062,
+     "pct": 6.7,
+     "shown": true
+    },
+    "US": {
+     "n": 2033,
+     "pct": 9.2,
+     "shown": true
+    },
+    "UK": {
+     "n": 1280,
+     "pct": 3.1,
+     "shown": true
+    },
+    "Germany": {
+     "n": 1186,
+     "pct": 9.5,
+     "shown": true
+    },
+    "Spain": {
+     "n": 712,
+     "pct": 5.5,
+     "shown": true
+    },
+    "Italy": {
+     "n": 328,
+     "pct": 20.7,
+     "shown": true
+    },
+    "Canada": {
+     "n": 162,
+     "pct": 13.6,
+     "shown": true
+    },
+    "India": {
+     "n": 136,
+     "pct": 83.1,
+     "shown": true
+    },
+    "India-only": {
+     "n": 118,
+     "pct": 83.9,
+     "shown": true
+    },
+    "Australia": {
+     "n": 115,
+     "pct": 11.3,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 43,
+     "pct": 11.6,
+     "shown": false
+    },
+    "Brazil": {
+     "n": 31,
+     "pct": 51.6,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 24,
+     "pct": 8.3,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 23,
+     "pct": 60.9,
+     "shown": false
+    },
+    "UAE": {
+     "n": 17,
+     "pct": 70.6,
+     "shown": false
+    },
+    "Chile": {
+     "n": 9,
+     "pct": 22.2,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 3,
+     "pct": 100.0,
+     "shown": false
+    }
+   },
+   "instant_noodles": {
+    "France": {
+     "n": 760,
+     "pct": 77.8,
+     "shown": true
+    },
+    "Germany": {
+     "n": 362,
+     "pct": 76.5,
+     "shown": true
+    },
+    "UK": {
+     "n": 203,
+     "pct": 67.5,
+     "shown": true
+    },
+    "US": {
+     "n": 193,
+     "pct": 75.6,
+     "shown": true
+    },
+    "India": {
+     "n": 85,
+     "pct": 95.3,
+     "shown": true
+    },
+    "Spain": {
+     "n": 81,
+     "pct": 66.7,
+     "shown": false
+    },
+    "India-only": {
+     "n": 63,
+     "pct": 93.7,
+     "shown": true
+    },
+    "Australia": {
+     "n": 50,
+     "pct": 70.0,
+     "shown": false
+    },
+    "Canada": {
+     "n": 47,
+     "pct": 93.6,
+     "shown": false
+    },
+    "Italy": {
+     "n": 33,
+     "pct": 72.7,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 14,
+     "pct": 92.9,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 13,
+     "pct": 100.0,
+     "shown": false
+    },
+    "Mexico": {
+     "n": 10,
+     "pct": 40.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 4,
+     "pct": 100.0,
+     "shown": false
+    },
+    "Brazil": {
+     "n": 4,
+     "pct": 0.0,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 3,
+     "pct": 66.7,
+     "shown": false
+    },
+    "Chile": {
+     "n": 2,
+     "pct": 100.0,
+     "shown": false
+    }
+   }
+  },
+  "palm_text": {
+   "biscuits": {
+    "US": {
+     "n": 10675,
+     "pct": 65.0,
+     "shown": true
+    },
+    "UK": {
+     "n": 1222,
+     "pct": 66.0,
+     "shown": true
+    },
+    "India": {
+     "n": 303,
+     "pct": 82.2,
+     "shown": true
+    },
+    "Canada": {
+     "n": 279,
+     "pct": 69.9,
+     "shown": true
+    },
+    "India-only": {
+     "n": 276,
+     "pct": 80.8,
+     "shown": true
+    },
+    "Australia": {
+     "n": 205,
+     "pct": 34.1,
+     "shown": true
+    },
+    "Singapore": {
+     "n": 30,
+     "pct": 60.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 26,
+     "pct": 42.3,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 13,
+     "pct": 46.2,
+     "shown": false
+    }
+   },
+   "crisps": {
+    "US": {
+     "n": 2626,
+     "pct": 7.6,
+     "shown": true
+    },
+    "UK": {
+     "n": 1311,
+     "pct": 3.3,
+     "shown": true
+    },
+    "Canada": {
+     "n": 283,
+     "pct": 7.4,
+     "shown": true
+    },
+    "Australia": {
+     "n": 204,
+     "pct": 7.4,
+     "shown": true
+    },
+    "India": {
+     "n": 152,
+     "pct": 77.6,
+     "shown": true
+    },
+    "India-only": {
+     "n": 135,
+     "pct": 77.8,
+     "shown": true
+    },
+    "South Africa": {
+     "n": 28,
+     "pct": 10.7,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 25,
+     "pct": 44.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 13,
+     "pct": 76.9,
+     "shown": false
+    }
+   },
+   "instant_noodles": {
+    "US": {
+     "n": 183,
+     "pct": 77.6,
+     "shown": true
+    },
+    "UK": {
+     "n": 164,
+     "pct": 73.8,
+     "shown": true
+    },
+    "India": {
+     "n": 79,
+     "pct": 88.6,
+     "shown": true
+    },
+    "Australia": {
+     "n": 62,
+     "pct": 48.4,
+     "shown": false
+    },
+    "India-only": {
+     "n": 58,
+     "pct": 89.7,
+     "shown": true
+    },
+    "Canada": {
+     "n": 39,
+     "pct": 92.3,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 16,
+     "pct": 81.2,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 5,
+     "pct": 60.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 4,
+     "pct": 100.0,
+     "shown": false
+    }
+   }
+  },
+  "satfat": {
+   "biscuits": {
+    "France": {
+     "n": 18555,
+     "median_g_100g": 11.0,
+     "shown": true
+    },
+    "Italy": {
+     "n": 4644,
+     "median_g_100g": 5.6,
+     "shown": true
+    },
+    "Spain": {
+     "n": 3946,
+     "median_g_100g": 8.3,
+     "shown": true
+    },
+    "Germany": {
+     "n": 3313,
+     "median_g_100g": 12.0,
+     "shown": true
+    },
+    "UK": {
+     "n": 1983,
+     "median_g_100g": 11.0,
+     "shown": true
+    },
+    "US": {
+     "n": 1326,
+     "median_g_100g": 6.7,
+     "shown": true
+    },
+    "Canada": {
+     "n": 691,
+     "median_g_100g": 7.9,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 427,
+     "median_g_100g": 5.3,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 287,
+     "median_g_100g": 5.3,
+     "shown": true
+    },
+    "Australia": {
+     "n": 170,
+     "median_g_100g": 10.9,
+     "shown": true
+    },
+    "Chile": {
+     "n": 150,
+     "median_g_100g": 6.9,
+     "shown": true
+    },
+    "India": {
+     "n": 87,
+     "median_g_100g": 10.2,
+     "shown": true
+    },
+    "India-only": {
+     "n": 57,
+     "median_g_100g": 10.0,
+     "shown": true
+    },
+    "UAE": {
+     "n": 19,
+     "median_g_100g": 12.4,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 17,
+     "median_g_100g": 13.0,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 15,
+     "median_g_100g": 10.0,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 10,
+     "median_g_100g": 8.9,
+     "shown": false
+    }
+   },
+   "crisps": {
+    "France": {
+     "n": 5628,
+     "median_g_100g": 2.8,
+     "shown": true
+    },
+    "Spain": {
+     "n": 1838,
+     "median_g_100g": 3.5,
+     "shown": true
+    },
+    "Germany": {
+     "n": 1826,
+     "median_g_100g": 2.6,
+     "shown": true
+    },
+    "UK": {
+     "n": 1773,
+     "median_g_100g": 2.4,
+     "shown": true
+    },
+    "US": {
+     "n": 1023,
+     "median_g_100g": 3.6,
+     "shown": true
+    },
+    "Canada": {
+     "n": 691,
+     "median_g_100g": 3.0,
+     "shown": true
+    },
+    "Italy": {
+     "n": 625,
+     "median_g_100g": 2.9,
+     "shown": true
+    },
+    "Mexico": {
+     "n": 205,
+     "median_g_100g": 5.7,
+     "shown": true
+    },
+    "Australia": {
+     "n": 116,
+     "median_g_100g": 2.5,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 66,
+     "median_g_100g": 10.2,
+     "shown": false
+    },
+    "India": {
+     "n": 58,
+     "median_g_100g": 13.8,
+     "shown": true
+    },
+    "India-only": {
+     "n": 35,
+     "median_g_100g": 14.0,
+     "shown": true
+    },
+    "South Africa": {
+     "n": 28,
+     "median_g_100g": 11.5,
+     "shown": false
+    },
+    "Chile": {
+     "n": 20,
+     "median_g_100g": 3.6,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 18,
+     "median_g_100g": 9.0,
+     "shown": false
+    },
+    "UAE": {
+     "n": 7,
+     "median_g_100g": 3.8,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 3,
+     "median_g_100g": 12.1,
+     "shown": false
+    }
+   },
+   "instant_noodles": {
+    "France": {
+     "n": 1186,
+     "median_g_100g": 2.8,
+     "shown": true
+    },
+    "Germany": {
+     "n": 459,
+     "median_g_100g": 1.9,
+     "shown": true
+    },
+    "UK": {
+     "n": 266,
+     "median_g_100g": 2.0,
+     "shown": true
+    },
+    "Spain": {
+     "n": 139,
+     "median_g_100g": 2.4,
+     "shown": true
+    },
+    "US": {
+     "n": 115,
+     "median_g_100g": 7.3,
+     "shown": true
+    },
+    "Canada": {
+     "n": 86,
+     "median_g_100g": 7.8,
+     "shown": false
+    },
+    "Australia": {
+     "n": 54,
+     "median_g_100g": 4.0,
+     "shown": false
+    },
+    "Italy": {
+     "n": 50,
+     "median_g_100g": 2.9,
+     "shown": false
+    },
+    "India": {
+     "n": 32,
+     "median_g_100g": 8.2,
+     "shown": true
+    },
+    "Brazil": {
+     "n": 24,
+     "median_g_100g": 7.5,
+     "shown": false
+    },
+    "Indonesia": {
+     "n": 22,
+     "median_g_100g": 9.0,
+     "shown": false
+    },
+    "India-only": {
+     "n": 16,
+     "median_g_100g": 8.2,
+     "shown": false
+    },
+    "Mexico": {
+     "n": 12,
+     "median_g_100g": 1.4,
+     "shown": false
+    },
+    "Chile": {
+     "n": 6,
+     "median_g_100g": 4.9,
+     "shown": false
+    },
+    "South Africa": {
+     "n": 5,
+     "median_g_100g": 6.4,
+     "shown": false
+    },
+    "UAE": {
+     "n": 4,
+     "median_g_100g": 7.8,
+     "shown": false
+    },
+    "Singapore": {
+     "n": 4,
+     "median_g_100g": 5.6,
+     "shown": false
+    }
+   }
+  }
+ },
+ "crisps_named_oils": {
+  "UK": {
+   "n": 1311,
+   "pct": {
+    "sunflower": 71.9,
+    "canola": 47.0,
+    "corn": 2.7,
+    "coconut": 1.4,
+    "olive": 1.0,
+    "rice bran": 0.5,
+    "soybean": 0.4,
+    "cottonseed": 0.2,
+    "flaxseed": 0.2,
+    "groundnut": 0.1,
+    "safflower": 0.1,
+    "avocado": 0.1,
+    "mustard": 0.1,
+    "sesame": 0.1,
+    "soy": 0.1
+   }
+  },
+  "US": {
+   "n": 2626,
+   "pct": {
+    "sunflower": 66.7,
+    "canola": 49.6,
+    "corn": 43.6,
+    "safflower": 23.4,
+    "cottonseed": 17.6,
+    "soybean": 17.6,
+    "avocado": 5.0,
+    "coconut": 2.9,
+    "olive": 1.6,
+    "groundnut": 1.4,
+    "rice bran": 0.8,
+    "mustard": 0.5,
+    "soy": 0.3,
+    "sesame": 0.2,
+    "soy bean": 0.0
+   }
+  },
+  "Canada": {
+   "n": 283,
+   "pct": {
+    "sunflower": 30.0,
+    "canola": 25.1,
+    "corn": 8.1,
+    "safflower": 2.8,
+    "avocado": 2.8,
+    "coconut": 2.5,
+    "soybean": 2.1,
+    "cottonseed": 1.4,
+    "mustard": 0.4,
+    "olive": 0.4,
+    "rice bran": 0.4
+   }
+  },
+  "India": {
+   "n": 152,
+   "pct": {
+    "rice bran": 21.1,
+    "sunflower": 15.1,
+    "cottonseed": 7.2,
+    "coconut": 6.6,
+    "corn": 5.9,
+    "groundnut": 3.9,
+    "canola": 3.3,
+    "sesame": 2.6,
+    "soybean": 1.3
+   }
+  },
+  "Australia": {
+   "n": 204,
+   "pct": {
+    "sunflower": 35.8,
+    "canola": 35.8,
+    "rice bran": 4.9,
+    "safflower": 2.5,
+    "corn": 1.0,
+    "coconut": 1.0,
+    "soy": 1.0,
+    "avocado": 0.5,
+    "soybean": 0.5,
+    "cottonseed": 0.5
+   }
+  }
+ },
+ "india_ins_check": {
+  "lists_with_ins": 1197,
+  "counted_under_half": 9,
+  "note": "Indian lists that write additives as INS numbers, and how many of them Open Food Facts counted fewer than half of (additives_n < half the INS numbers in the text)."
+ },
+ "india_crisps_checks": {
+  "lists_matched_in_off_india": 152,
+  "lists_without_brand_tag": 11,
+  "distinct_named_brands": 75,
+  "largest_brand_share_pct": 11.8,
+  "largest_3_brands_share_pct": 25.0,
+  "pct_palm_without_largest_brand": 77.6,
+  "off_india_1oct_snapshot": {
+   "n": 152,
+   "pct": 77.6
+  }
+ },
+ "headline": {
+  "crisps_palm_india": {
+   "n": 152,
+   "pct": 77.6,
+   "shown": true
+  },
+  "crisps_palm_uk": {
+   "n": 1311,
+   "pct": 3.3,
+   "shown": true
+  },
+  "crisps_palm_us": {
+   "n": 2626,
+   "pct": 7.6,
+   "shown": true
+  },
+  "crisps_palm_ratio_india_uk": 23.5,
+  "crisps_satfat_india": {
+   "n": 58,
+   "median_g_100g": 13.8,
+   "shown": true
+  },
+  "crisps_satfat_uk": {
+   "n": 1773,
+   "median_g_100g": 2.4,
+   "shown": true
+  }
+ }
+}

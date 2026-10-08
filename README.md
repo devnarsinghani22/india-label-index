@@ -23,6 +23,16 @@ From 3,798 Indian packaged foods with an ingredient list (plain staples like att
 
 - Of **1,917** Indian packaged foods whose ingredient list names a fat or oil (staples left out), **51%** name palm oil (palm oil, palmolein, palm kernel or palm fat). Instant noodles **88%**, biscuits **81%**, chips **77%**, namkeen **66%**. **15%** list a hydrogenated, interesterified or shortening fat (chocolate 36%, biscuits 28%). **7.5%** say only "vegetable oil" and never name the plant. [Page](https://devnarsinghani22.github.io/india-label-index/palm-oil/), `fats.py`, [`out/fats.json`](out/fats.json).
 
+### India vs the world (8 Oct 2026)
+
+The same foods in Open Food Facts, India against 15 other countries (one download, 6 Oct 2026; `world.py`, [`out/world.json`](out/world.json), [`out/world_table.csv`](out/world_table.csv)). [Page](https://devnarsinghani22.github.io/india-label-index/india-vs-world/).
+
+- **Crisps:** of 152 Indian crisp lists in English that name a fat or oil, **78%** name palm oil. UK **3.3%** (1,311), US **7.6%** (2,626), Canada 7.4%, Australia 7.4%: about **24 times** the UK rate. Open Food Facts' own palm-oil tag (any language) agrees: India 83% (136) vs 3.1% to 21% in 8 other countries. The 152 lists come from at least 75 brands; the biggest is 12% of them, and without it the share is still 78%.
+- **Saturated fat in crisps:** median **13.8 g** per 100 g in India (58 packs) vs **2.4 g** in the UK (1,773) and 3.6 g in the US.
+- **Instant noodles only** (no dry pasta): palm oil tag in **95%** of Indian packs (85) vs 68% UK, 76% US, 78% France, 77% Germany.
+- **5 or more additives:** **23%** of Indian packs (3,421) vs 13% UK, 12% France, 9.5% Germany, 24% US. Biscuits: India **45%** (350), the most of 12 countries with enough data (UK 21%, US 33%).
+- Other countries are shown only with at least 100 products; India uses the Index rules (50 lists for a share, 30 values for a median).
+
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
 
 ## Data
@@ -51,6 +61,7 @@ python warnings.py     # Chile-rule warning labels -> out/warnings.json
 python fssai.py        # FSSAI proposed limits, Phase I vs II -> out/fssai.json
 python fats.py         # which fat the list names: palm, other plant oil, dairy, unnamed -> out/fats.json
 python -I pull_multi.py   # slim multi-country extract for cross-country comparisons (data/off_multi.tsv, 20-40 min)
+python world.py        # India vs the world: crisps, instant noodles, additives -> out/world.json, out/world_table.csv (self-test first)
 ```
 
 Run the two `pull_*` scripts with `python -I`: this folder has a `warnings.py`, which shadows the standard-library module that `requests` needs.
