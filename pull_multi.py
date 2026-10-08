@@ -16,7 +16,7 @@ H = {"User-Agent": "IndiaLabelIndex/1.0 (dev.narsinghani@gmail.com)"}
 COUNTRIES = ["en:india", "en:united-kingdom", "en:united-states", "en:france", "en:germany", "en:australia",
              "en:brazil", "en:mexico", "en:chile", "en:south-africa", "en:indonesia", "en:united-arab-emirates",
              "en:singapore", "en:canada", "en:spain", "en:italy"]
-KEEP = ["code", "countries_tags", "categories_tags", "ingredients_text", "ingredients_analysis_tags", "additives_n",
+KEEP = ["code", "countries_tags", "categories_tags", "ingredients_text", "ingredients_tags", "ingredients_analysis_tags", "additives_n",
         "additives_tags", "nova_group", "labels_tags", "serving_size", "serving_quantity", "product_quantity",
         "energy-kcal_100g", "fat_100g", "saturated-fat_100g", "sugars_100g", "added-sugars_100g", "salt_100g",
         "sodium_100g", "fiber_100g", "proteins_100g", "nutriscore_grade", "completeness", "last_modified_t"]
