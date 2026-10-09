@@ -26,12 +26,12 @@ csv.field_size_limit(2**31 - 1)
 OUT = HERE / "out"
 
 GROUPS = {
-    "grain": r"multi[- ]?grains?|whole[- ]?(?:wheat|grains?)|wholewheat|atta|oats?|oatmeal|millets?|multi[- ]?millets?|ragi|nachni|"
+    "grain": r"multi[\s-]*grains?|whole[\s-]*(?:wheat|grains?)|wholewheat|atta|oats?|oatmeal|millets?|multi[\s-]*millets?|ragi|nachni|"
              r"jowar|bajra|quinoa|brown rice|foxtail",
-    "less": r"diet|lite|light|low[- ](?:fat|sugar|sodium|salt|cal(?:orie)?s?)|less sugar|reduced (?:sugar|fat|salt)|"
-            r"sugar[- ]?free|no added sugar|no sugar|zero sugar|zero|unsweetened",
-    "good": r"healthy|health|nutri\w*|high[- ]fib(?:re|er)|fib(?:re|er)|protein|digestive|baked|natural|organic|fit|"
-            r"wellness|immunity|superfood|keto|gluten[- ]free|wholesome",
+    "less": r"diet|lite|light|low[\s-]+(?:fat|sugar|sodium|salt|cal(?:orie)?s?)|less sugar|reduced (?:sugar|fat|salt)|"
+            r"sugar[\s-]*free|no added sugar|no sugar|zero sugar|zero|unsweetened",
+    "good": r"healthy|health|nutri\w*|high[\s-]+fib(?:re|er)|fib(?:re|er)|protein|digestive|baked|natural|organic|fit|"
+            r"wellness|immunity|superfood|keto|gluten[\s-]+free|wholesome",
 }
 GROUP_RE = {g: re.compile(r"(?<![\w-])(" + p + r")(?![\w-])", re.I) for g, p in GROUPS.items()}
 NAME_FIELDS = ("product_name", "abbreviated_product_name", "generic_name")
@@ -55,7 +55,7 @@ def health_words(name):
 
 
 def selftest():
-    yes = {"Multigrain Biscuits": "grain", "Whole Wheat Bread": "grain", "Atta Noodles": "grain", "Ragi Cookies": "grain",
+    yes = {"Multigrain Biscuits": "grain", "Multi -Millet Mix": "grain", "Multi - Grain Bread": "grain", "Whole Wheat Bread": "grain", "Atta Noodles": "grain", "Ragi Cookies": "grain",
            "Diet Chivda": "less", "Sugar Free Cookies": "less", "Low-fat Dahi": "less", "No Added Sugar Juice": "less",
            "Digestive Biscuits": "good", "Baked Chips": "good", "High Fibre Muesli": "good", "Protein Bar": "good",
            "Nutri Choice Crackers": "good", "Organic Jaggery Cookies": "good"}
