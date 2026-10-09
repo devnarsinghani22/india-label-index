@@ -210,12 +210,12 @@ named_oil,crisps,safflower,UK,2,1380,0.1,%,True
 named_oil,crisps,flaxseed,UK,2,1380,0.1,%,True
 named_oil,crisps,avocado,UK,1,1380,0.1,%,True
 named_oil,crisps,sesame,UK,1,1380,0.1,%,True
-named_oil,crisps,sunflower,US,2000,2779,72.0,%,True
+named_oil,crisps,sunflower,US,2002,2779,72.0,%,True
 named_oil,crisps,canola,US,1450,2779,52.2,%,True
 named_oil,crisps,corn,US,1241,2779,44.7,%,True
 named_oil,crisps,safflower,US,720,2779,25.9,%,True
-named_oil,crisps,cottonseed,US,496,2779,17.8,%,True
 named_oil,crisps,soybean,US,496,2779,17.8,%,True
+named_oil,crisps,cottonseed,US,496,2779,17.8,%,True
 named_oil,crisps,avocado,US,152,2779,5.5,%,True
 named_oil,crisps,coconut,US,77,2779,2.8,%,True
 named_oil,crisps,olive,US,44,2779,1.6,%,True

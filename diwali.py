@@ -47,8 +47,8 @@ OUT = HERE / "out"
 SETS = ("mithai", "namkeen")
 
 # fats.py reads "sunflower" as one word; one mithai list writes "Refined Sun Flower oil" (found by the verifier, 9 Oct 2026).
-# Counted here as a plant oil so that list is not "ghee only". fats.py is left as published (the same spelling moves study 4's
-# sunflower share by 1 list, 10.3% to 10.4%, and study 5's US crisps sunflower count by 2 lists, 72.0% either way).
+# Counted here as a plant oil so that list is not "ghee only". fats.py reads it too since 9 Oct 2026 (study 4 sunflower
+# 10.3% -> 10.4%, study 5 US crisps sunflower 2,000 -> 2,002 of 2,779, 72.0% either way; correction lines on both pages).
 SUN_FLOWER_RE = re.compile(r"\bsun\s+flower\s*(?:seed\s*)?oils?\b", re.I)
 GHEE_RE = re.compile(r"\b(?:desi\s+)?ghee\b|clarified\s+butter|butter\s*oil|\bbutterfat\b|anhydrous\s+milk\s+fat|\bamf\b", re.I)
 

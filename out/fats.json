@@ -9,7 +9,7 @@
   "pct_unnamed_vegetable_oil": 6.8,
   "pct_hydrogenated_or_vanaspati": 14.3,
   "named_oils": {
-   "sunflower": 10.3,
+   "sunflower": 10.4,
    "rice bran": 9.5,
    "soybean": 5.5,
    "cottonseed": 5.4,
@@ -20,12 +20,12 @@
   },
   "counts": {
    "palm": 1083,
-   "named_other_only": 550,
-   "dairy_only": 339,
+   "named_other_only": 551,
+   "dairy_only": 338,
    "unnamed_vegetable_oil": 150,
    "hydrogenated_or_vanaspati": 314,
    "named_oils": {
-    "sunflower": 227,
+    "sunflower": 228,
     "rice bran": 209,
     "soybean": 122,
     "cottonseed": 118,
@@ -39,7 +39,7 @@
  "overall_non_staple": {
   "with_fat": 2015,
   "pct_palm": 52.2,
-  "pct_named_other_only": 21.3,
+  "pct_named_other_only": 21.4,
   "pct_dairy_only": 15.8,
   "pct_unnamed_vegetable_oil": 7.2,
   "pct_hydrogenated_or_vanaspati": 15.3,
@@ -55,12 +55,12 @@
   },
   "counts": {
    "palm": 1051,
-   "named_other_only": 430,
-   "dairy_only": 319,
+   "named_other_only": 431,
+   "dairy_only": 318,
    "unnamed_vegetable_oil": 145,
    "hydrogenated_or_vanaspati": 309,
    "named_oils": {
-    "sunflower": 193,
+    "sunflower": 194,
     "rice bran": 185,
     "cottonseed": 108,
     "soybean": 106,

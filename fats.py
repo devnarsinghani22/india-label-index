@@ -25,14 +25,14 @@ csv.field_size_limit(2**31 - 1)
 # (palm + up to 4 of a i y n l t + "at" + ending). "Palmfat" still counts: the f is not in that set.
 PALM_RE = re.compile(r"\bpalm(?!it|yra|[aiíīynlt]{0,4}at(?:e|es|el|o|a)?\b|\s*(?:sugar|jaggery|candy|nectar|syrup|heart|date)|\s*fruit(?!\s*(?:oil|fat|olein|shortening)))"
                      r"(?:olein|\s*fruit\s*oil|\s*kernel|\s*oil|\s*fat|\s*stearin|\s*shortening|\s*olein)?\w*", re.I)
-PLANTS = (r"sunflower|rice ?bran|soya?(?: ?bean)?|mustard|groundnut|peanut|coconut|olive|cotton ?seed|canola|rapeseed|corn|maize|sesame|"
+PLANTS = (r"sun ?flower|rice ?bran|soya?(?: ?bean)?|mustard|groundnut|peanut|coconut|olive|cotton ?seed|canola|rapeseed|corn|maize|sesame|"
           r"gingelly|safflower|kardi|linseed|flaxseed|almond|walnut|avocado")
 NAMED_RE = re.compile(r"\b(" + PLANTS + r")\s*(?:seed\s*)?oil\b", re.I)
 DAIRY_RE = re.compile(r"\b(butter|ghee|cream|milk fat|milk solids|butterfat|dairy fat|anhydrous milk fat|amf)\b", re.I)
 FAT_RE = re.compile(r"\b(oil|oils|fat|fats|ghee|butter|shortening|margarine|vanaspati|palmolein)\b", re.I)
 HYDRO_RE = re.compile(r"hydrogenated|vanaspati|shortening|interesterified|inter-esterified", re.I)
 VEGONLY_RE = re.compile(r"(edible\s+)?(refined\s+)?(vegetable|veg\.?|cooking|edible|refined)\s+(oil|fat)s?\b", re.I)
-NAMES = {"sunflower": "sunflower", "rice bran": "rice bran", "ricebran": "rice bran", "soyabean": "soybean", "soybean": "soybean",
+NAMES = {"sunflower": "sunflower", "sun flower": "sunflower", "rice bran": "rice bran", "ricebran": "rice bran", "soyabean": "soybean", "soybean": "soybean",
          "soya": "soybean", "soy": "soybean", "soya bean": "soybean", "soy bean": "soybean", "mustard": "mustard", "groundnut": "groundnut", "peanut": "groundnut", "coconut": "coconut",
          "olive": "olive", "cottonseed": "cottonseed", "cotton seed": "cottonseed", "canola": "canola", "rapeseed": "canola",
          "corn": "corn", "maize": "corn", "sesame": "sesame", "gingelly": "sesame", "safflower": "safflower", "kardi": "safflower",
@@ -129,7 +129,11 @@ def selftest():
              "Rice Bran & Sunflower Oil": {"rice bran", "sunflower"}, "Soy bean oil, Soy oil, Soya Bean Oil": {"soybean"},
              "Edible Vegetable Oil (Palmolein, Rice Bran Oil)": {"rice bran"}, "Corn, Canola Oil, Salt": {"canola"},
              "Whole grain corn, sunflower oil, salt": {"sunflower"}, "Peanuts, sunflower oil": {"sunflower"},
-             "Sesame seeds and sunflower oil": {"sunflower"}}
+             "Sesame seeds and sunflower oil": {"sunflower"},
+             # two-word spelling on some Indian packs (worker, 9 Oct 2026; first seen by the study 7 verifier)
+             "Gram Dhal Flour, Ghee, Dry Fruits, Sugar, Elachi, Refined Sun Flower oil.": {"sunflower"},
+             "Edible Vegetable Oil (Sun Flower, Rice Bran)": {"sunflower", "rice bran"},
+             "Sun flower seeds, sun dried flower petals, coconut oil": {"coconut"}}
     for s, want in named.items():
         got = classify(s)[2]
         assert got == want, (s, got)
