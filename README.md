@@ -90,4 +90,4 @@ Code: MIT. Data: derived from Open Food Facts under the [Open Database License (
 
 Narsinghani, D. (2026). India Label Index 2026: What 3,798 Indian food labels say about sugar and salt. https://devnarsinghani22.github.io/india-label-index/. Data from Open Food Facts (ODbL). https://doi.org/10.5281/zenodo.23245062
 
-DOI: [10.5281/zenodo.23245062](https://doi.org/10.5281/zenodo.23245062) (Zenodo, release v1.1).
+DOI: [10.5281/zenodo.23245928](https://doi.org/10.5281/zenodo.23245928) (Zenodo, release v1.2). All versions: [10.5281/zenodo.23245061](https://doi.org/10.5281/zenodo.23245061).
