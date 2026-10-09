@@ -2,7 +2,9 @@
 Base = the FSSAI study's foods (fssai.score), current plan as in order_thresholds.json (any 1 of added sugar,
 added fat, salt high; supplements left out by name), staples left out like the headline.
 A "health word" is matched on the product name with the brand's own words removed first, so a brand called
-"Natural ..." or "Fit ..." never counts. Words are grouped: grain (multigrain, oats, millet, atta...),
+"Natural ..." or "Fit ..." never counts.
+Product-line names inside a company brand DO count ("Nutri Choice" under Britannia, "B Natural" under ITC): they are
+printed on the front as the product's name, which is what a shopper reads. Checked by hand on 9 Oct 2026. Words are grouped: grain (multigrain, oats, millet, atta...),
 less (diet, lite, sugar free, low fat...), good (healthy, protein, digestive, baked, organic, natural...).
 Output: out/names.json (counts k of n, category level, no brands). out/names_audit.tsv lists every matched
 name for a hand check; it carries brand names, so it is gitignored and never published.
