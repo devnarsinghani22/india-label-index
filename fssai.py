@@ -140,6 +140,39 @@ def config(a):
     return solid, liquid, trig, drop, label, out, legacy
 
 
+def score(r, SOL, LIQ, trig, drop):
+    """One Open Food Facts row -> {"cat", "high", "src", "warned"}; None when it can't be tested; "dropped" when
+    drop is set and it is a supplement by name. Shared with names.py (study 6)."""
+    ing = (r.get("ingredients_text") or "").strip()
+    if len(ing) < 8 or not ing.isascii():
+        return None
+    b = bucket(r.get("categories_tags", ""))
+    if b in ("excluded_baby", "excluded_supplements"):
+        return None
+    sug, fat, salt = num(r.get("sugars_100g")), num(r.get("fat_100g")), num(r.get("salt_100g"))
+    if salt is None and num(r.get("sodium_100g")) is not None:
+        salt = num(r.get("sodium_100g")) * 2.5
+    if None in (sug, fat, salt) or not (0 <= sug <= 100 and 0 <= fat <= 100 and 0 <= salt <= 100):
+        return None
+    if drop and is_supplement(r):
+        return "dropped"
+    add_sug = num(r.get("added-sugars_100g"))
+    has_sugar = any(KINDS[i] == "sugar" for _, _, i in find_sugars(ing))
+    if add_sug is not None and 0 <= add_sug <= sug + 0.5:
+        sugar_val, src = add_sug, "declared"
+    else:
+        sugar_val, src = (sug if has_sugar else 0.0), "estimate"
+    th = LIQ if is_liquid(r.get("categories_tags", "")) else SOL
+    high = []
+    if sugar_val >= th["sugar"]:
+        high.append("sugar")
+    if FAT_RE.search(ing) and fat >= th["fat"]:
+        high.append("fat")
+    if SALT_RE.search(ing) and salt * 1000 >= th["salt_mg"]:
+        high.append("salt")
+    return {"cat": b, "high": high, "src": src, "warned": warned(high, trig)}
+
+
 def main(argv=None):
     a = parse_args(sys.argv[1:] if argv is None else argv)
     SOL, LIQ, trig, drop, label, out_path, legacy = config(a)
@@ -148,36 +181,14 @@ def main(argv=None):
     declared = 0
     dropped = Counter()
     for r in rows:
-        ing = (r.get("ingredients_text") or "").strip()
-        if len(ing) < 8 or not ing.isascii():
+        p = score(r, SOL, LIQ, trig, drop)
+        if p is None:
             continue
-        b = bucket(r.get("categories_tags", ""))
-        if b in ("excluded_baby", "excluded_supplements"):
+        if p == "dropped":
+            dropped["non_staple" if bucket(r.get("categories_tags", "")) not in ADDED_SUGAR_RELEVANT_EXCLUDE else "staple"] += 1
             continue
-        sug, fat, salt = num(r.get("sugars_100g")), num(r.get("fat_100g")), num(r.get("salt_100g"))
-        if salt is None and num(r.get("sodium_100g")) is not None:
-            salt = num(r.get("sodium_100g")) * 2.5
-        if None in (sug, fat, salt) or not (0 <= sug <= 100 and 0 <= fat <= 100 and 0 <= salt <= 100):
-            continue
-        if drop and is_supplement(r):
-            dropped["non_staple" if b not in ADDED_SUGAR_RELEVANT_EXCLUDE else "staple"] += 1
-            continue
-        add_sug = num(r.get("added-sugars_100g"))
-        has_sugar = any(KINDS[i] == "sugar" for _, _, i in find_sugars(ing))
-        if add_sug is not None and 0 <= add_sug <= sug + 0.5:
-            declared += 1
-            sugar_val, src = add_sug, "declared"
-        else:
-            sugar_val, src = (sug if has_sugar else 0.0), "estimate"
-        th = LIQ if is_liquid(r.get("categories_tags", "")) else SOL
-        high = []
-        if sugar_val >= th["sugar"]:
-            high.append("sugar")
-        if FAT_RE.search(ing) and fat >= th["fat"]:
-            high.append("fat")
-        if SALT_RE.search(ing) and salt * 1000 >= th["salt_mg"]:
-            high.append("salt")
-        p = {"cat": b, "high": high, "src": src, "warned": warned(high, trig)}
+        b = p["cat"]
+        declared += p["src"] == "declared"
         tested.append(p)
         if b and not b.startswith("excluded"):
             by_cat[b].append(p)

@@ -1,0 +1,108 @@
+{
+ "rules": "ICMR-NIN DGI 2024 Table 15.1 thresholds as cited by FSSAI (affidavit 28 Aug 2026); warning when any 1 of added sugar, added fat, salt is high (FSSAI's 23 Sep 2026 single-phase plan); supplements left out by name",
+ "base": "non-staple foods in the FSSAI study, supplements out by name",
+ "foods": 549,
+ "health_word": {
+  "k": 41,
+  "n": 66,
+  "pct": 62.1
+ },
+ "no_health_word": {
+  "k": 403,
+  "n": 483,
+  "pct": 83.4
+ },
+ "by_group": {
+  "grain": {
+   "k": 21,
+   "n": 26,
+   "pct": 80.8
+  },
+  "less": {
+   "k": 8,
+   "n": 15,
+   "pct": 53.3
+  },
+  "good": {
+   "k": 17,
+   "n": 33,
+   "pct": 51.5
+  }
+ },
+ "by_word": {
+  "protein": {
+   "k": 13,
+   "n": 28,
+   "pct": 46.4
+  },
+  "oats": {
+   "k": 7,
+   "n": 11,
+   "pct": 63.6
+  },
+  "zero": {
+   "k": 5,
+   "n": 6,
+   "pct": 83.3
+  },
+  "whole wheat": {
+   "k": 5,
+   "n": 5,
+   "pct": 100.0
+  }
+ },
+ "by_nutrient_health_word": {
+  "sugar": 16,
+  "fat": 28,
+  "salt": 24
+ },
+ "categories": {
+  "Yoghurt and curd": {
+   "health_word": {
+    "k": 0,
+    "n": 11,
+    "pct": 0.0
+   },
+   "no_health_word": {
+    "k": 31,
+    "n": 60,
+    "pct": 51.7
+   }
+  },
+  "Breakfast cereals and muesli": {
+   "health_word": {
+    "k": 9,
+    "n": 13,
+    "pct": 69.2
+   },
+   "no_health_word": {
+    "k": 15,
+    "n": 20,
+    "pct": 75.0
+   }
+  },
+  "Cakes and bakery": {
+   "health_word": {
+    "k": 11,
+    "n": 11,
+    "pct": 100.0
+   },
+   "no_health_word": {
+    "k": 13,
+    "n": 15,
+    "pct": 86.7
+   }
+  }
+ },
+ "single_ingredient_left_out": 106,
+ "health_word_without_protein": {
+  "k": 28,
+  "n": 38,
+  "pct": 73.7
+ },
+ "category_adjusted": {
+  "n": 55,
+  "warned": 33,
+  "expected_at_own_category_rate": 43.0
+ }
+}
