@@ -50,6 +50,17 @@ What the labels on packaged mithai and namkeen say, before Diwali (8 Nov 2026). 
 
 Per-category numbers: [`out/category_table.csv`](out/category_table.csv). Everything: [`out/results.json`](out/results.json).
 
+### Grain words in the name vs FSSAI's warning (10 Oct 2026)
+This study checks if grain words in food names (like 'whole wheat') go with fewer FSSAI proposed warning labels. It uses the script names.py and outputs to out/names.json. The study is based on 549 Indian packaged foods.
+
+- 21 of 27 packs with grain words would carry the proposed warning (78%).
+- 403 of 482 packs with no healthy-sounding word in the name would carry the proposed warning (84%).
+- In bread and bakery, all 7 grain-word packs would be warned, all 7 for salt.
+- In breakfast cereals, 7 of 12 grain-word packs would be warned.
+- Of the 23 grain-word packs with a food category, 18 would be warned, against 19.1 expected at the rate of the plain packs in their own category. This shows grain words make no real difference.
+
+The lists come from Open Food Facts, entered by volunteers, not a random sample. FSSAI's warning is a proposal, not yet law, and the Supreme Court has not ruled. The fat count is an upper estimate. The numbers are small, so read the shares as rough. No brands are named. See the full study: https://devnarsinghani22.github.io/india-label-index/healthy-names/
+
 ## Data
 
 [Open Food Facts](https://world.openfoodfacts.org/), every product tagged as sold in India (21,189 products, read 1 October 2026). 4,656 have an English ingredient list. Baby food and supplements are left out. Open Food Facts is filled in by volunteers, so this is not a random sample of every pack in India.
@@ -78,6 +89,7 @@ python fats.py         # which fat the list names: palm, other plant oil, dairy,
 python -I pull_multi.py   # slim multi-country extract for cross-country comparisons (data/off_multi.tsv, 20-40 min)
 python world.py        # India vs the world: chips (crisps), instant noodles, additives -> out/world.json, out/world_table.csv (self-test first)
 python -I diwali.py    # the Diwali box: mithai and namkeen (reads festive_labels.csv) -> out/diwali.json, out/diwali_table.csv (self-test first)
+python -I names.py     # checks grain words in names vs fssai warnings, outputs out/names.json
 ```
 
 Run the two `pull_*` scripts with `python -I`: this folder has a `warnings.py`, which shadows the standard-library module that `requests` needs.
