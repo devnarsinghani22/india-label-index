@@ -140,6 +140,21 @@ def main():
     adj = [p for p in hw if p["cat"] in rate and rate[p["cat"]]["n"]]
     res["category_adjusted"] = {"n": len(adj), "warned": sum(p["warned"] for p in adj),
                                 "expected_at_own_category_rate": round(sum(rate[p["cat"]]["k"] / rate[p["cat"]]["n"] for p in adj), 1)}
+
+    def adjusted(ps):
+        a = [p for p in ps if p["cat"] in rate and rate[p["cat"]]["n"]]
+        return {"n": len(a), "warned": sum(p["warned"] for p in a),
+                "expected_at_own_category_rate": round(sum(rate[p["cat"]]["k"] / rate[p["cat"]]["n"] for p in a), 1)}
+    res["health_word_without_protein_adjusted"] = adjusted([p for p in hw if not any("protein" in ws for ws in p["words"].values())])
+    # grain words lead the page (no protein angle: worker 9 Oct): own share, category-adjusted, why they are warned
+    grain = [p for p in hw if "grain" in p["words"]]
+    gcat = defaultdict(list)
+    for p in grain:
+        gcat[p["cat"] or "no category"].append(p)
+    res["grain"] = {"all": share(grain), "category_adjusted": adjusted(grain),
+                    "high_among_warned": dict(Counter(x for p in grain if p["warned"] for x in p["high"])),
+                    "categories": {c: {**share(ps), "salt_high": sum("salt" in p["high"] for p in ps)}
+                                   for c, ps in sorted(gcat.items(), key=lambda kv: (-len(kv[1]), kv[0]))}}
     OUT.mkdir(exist_ok=True)
     (OUT / "names.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
     with (OUT / "names_audit.tsv").open("w", encoding="utf-8", newline="") as f:

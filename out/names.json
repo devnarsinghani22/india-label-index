@@ -4,19 +4,19 @@
  "foods": 549,
  "health_word": {
   "k": 41,
-  "n": 66,
-  "pct": 62.1
+  "n": 67,
+  "pct": 61.2
  },
  "no_health_word": {
   "k": 403,
-  "n": 483,
-  "pct": 83.4
+  "n": 482,
+  "pct": 83.6
  },
  "by_group": {
   "grain": {
    "k": 21,
-   "n": 26,
-   "pct": 80.8
+   "n": 27,
+   "pct": 77.8
   },
   "less": {
    "k": 8,
@@ -72,13 +72,13 @@
   "Breakfast cereals and muesli": {
    "health_word": {
     "k": 9,
-    "n": 13,
-    "pct": 69.2
+    "n": 14,
+    "pct": 64.3
    },
    "no_health_word": {
     "k": 15,
-    "n": 20,
-    "pct": 75.0
+    "n": 19,
+    "pct": 78.9
    }
   },
   "Cakes and bakery": {
@@ -97,12 +97,72 @@
  "single_ingredient_left_out": 106,
  "health_word_without_protein": {
   "k": 28,
-  "n": 38,
-  "pct": 73.7
+  "n": 39,
+  "pct": 71.8
  },
  "category_adjusted": {
-  "n": 55,
+  "n": 56,
   "warned": 33,
-  "expected_at_own_category_rate": 43.0
+  "expected_at_own_category_rate": 44.3
+ },
+ "health_word_without_protein_adjusted": {
+  "n": 33,
+  "warned": 24,
+  "expected_at_own_category_rate": 27.4
+ },
+ "grain": {
+  "all": {
+   "k": 21,
+   "n": 27,
+   "pct": 77.8
+  },
+  "category_adjusted": {
+   "n": 23,
+   "warned": 18,
+   "expected_at_own_category_rate": 19.1
+  },
+  "high_among_warned": {
+   "sugar": 8,
+   "fat": 15,
+   "salt": 13
+  },
+  "categories": {
+   "Breakfast cereals and muesli": {
+    "k": 7,
+    "n": 12,
+    "pct": 58.3,
+    "salt_high": 1
+   },
+   "Cakes and bakery": {
+    "k": 7,
+    "n": 7,
+    "pct": 100.0,
+    "salt_high": 7
+   },
+   "no category": {
+    "k": 3,
+    "n": 4,
+    "pct": 75.0,
+    "salt_high": 1
+   },
+   "Instant noodles and pasta": {
+    "k": 2,
+    "n": 2,
+    "pct": 100.0,
+    "salt_high": 2
+   },
+   "Biscuits and cookies": {
+    "k": 1,
+    "n": 1,
+    "pct": 100.0,
+    "salt_high": 1
+   },
+   "Chips and crisps": {
+    "k": 1,
+    "n": 1,
+    "pct": 100.0,
+    "salt_high": 1
+   }
+  }
  }
 }
