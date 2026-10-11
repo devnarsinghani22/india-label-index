@@ -1,0 +1,28 @@
+{
+  "source": "Open Food Facts, India-tagged products (data/off_india.csv, pulled 1 Oct 2026); ODbL",
+  "ready_to_drink_sweet_milk_drinks": {
+    "products": 65,
+    "with_english_list": 40,
+    "list_names_added_sugar": 40,
+    "sugar_in_first_3": 39,
+    "with_sugar_value": 9,
+    "median_total_sugar_g_per_100": 16.1,
+    "sugar_values_min_max": [
+      8.5,
+      21.0
+    ]
+  },
+  "plain_milk_no_sugar_named": {
+    "products": 70,
+    "with_english_list": 70,
+    "list_names_added_sugar": 0,
+    "sugar_in_first_3": 0,
+    "with_sugar_value": 10,
+    "median_total_sugar_g_per_100": 4.8,
+    "sugar_values_min_max": [
+      4.2,
+      5.0
+    ]
+  },
+  "note": "Total sugar per 100 g or ml as entered on Open Food Facts; plain milk's sugar is its own lactose. Small samples: say k of n. Category level only."
+}
