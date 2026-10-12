@@ -1,0 +1,846 @@
+measure,group,item,country,count,n,value,unit,shown
+text_intense,all_foods,,US,24086,438275,5.5,%,True
+text_polyol,all_foods,,US,9775,438275,2.2,%,True
+text_any,all_foods,,US,29395,438275,6.7,%,True
+text_added_sugar,all_foods,,US,247411,438275,56.5,%,True
+text_both_sugar_and_intense,all_foods,,US,11834,438275,2.7,%,True
+text_both_among_intense,all_foods,,US,11834,24086,49.1,%,True
+text_which_intense,all_foods,sucralose,US,11057,438275,2.5,%,True
+text_which_intense,all_foods,acesulfame K,US,8220,438275,1.9,%,True
+text_which_intense,all_foods,steviol glycosides,US,7562,438275,1.7,%,True
+text_which_intense,all_foods,aspartame,US,3978,438275,0.9,%,True
+text_which_intense,all_foods,monk fruit,US,2727,438275,0.6,%,True
+text_which_intense,all_foods,unnamed artificial sweetener,US,328,438275,0.1,%,True
+text_which_intense,all_foods,neotame,US,232,438275,0.1,%,True
+text_which_intense,all_foods,saccharin,US,204,438275,0.0,%,True
+text_which_intense,all_foods,thaumatin,US,16,438275,0.0,%,True
+text_which_intense,all_foods,cyclamate,US,13,438275,0.0,%,True
+text_which_intense,all_foods,neohesperidine DC,US,5,438275,0.0,%,True
+text_which_intense,all_foods,advantame,US,2,438275,0.0,%,True
+text_which_intense,all_foods,aspartame-acesulfame salt,US,1,438275,0.0,%,True
+tag_intense,all_foods,,US,18514,444382,4.2,%,True
+tag_polyol,all_foods,,US,9493,444382,2.1,%,True
+tag_which_intense,all_foods,sucralose,US,10911,444382,2.5,%,True
+tag_which_intense,all_foods,acesulfame K,US,7917,444382,1.8,%,True
+tag_which_intense,all_foods,aspartame,US,3831,444382,0.9,%,True
+tag_which_intense,all_foods,steviol glycosides,US,3707,444382,0.8,%,True
+tag_which_intense,all_foods,neotame,US,227,444382,0.1,%,True
+tag_which_intense,all_foods,saccharin,US,205,444382,0.0,%,True
+tag_which_intense,all_foods,aspartame-acesulfame salt,US,72,444382,0.0,%,True
+tag_which_intense,all_foods,cyclamate,US,18,444382,0.0,%,True
+tag_which_intense,all_foods,thaumatin,US,16,444382,0.0,%,True
+tag_which_intense,all_foods,neohesperidine DC,US,7,444382,0.0,%,True
+tag_which_intense,all_foods,advantame,US,2,444382,0.0,%,True
+text_intense,all_foods,,France,3059,185306,1.7,%,True
+text_polyol,all_foods,,France,2216,185306,1.2,%,True
+text_any,all_foods,,France,4493,185306,2.4,%,True
+text_added_sugar,all_foods,,France,32095,185306,17.3,%,True
+text_both_sugar_and_intense,all_foods,,France,848,185306,0.5,%,True
+text_both_among_intense,all_foods,,France,848,3059,27.7,%,True
+text_which_intense,all_foods,sucralose,France,1633,185306,0.9,%,True
+text_which_intense,all_foods,acesulfame K,France,1113,185306,0.6,%,True
+text_which_intense,all_foods,aspartame,France,728,185306,0.4,%,True
+text_which_intense,all_foods,steviol glycosides,France,673,185306,0.4,%,True
+text_which_intense,all_foods,saccharin,France,193,185306,0.1,%,True
+text_which_intense,all_foods,cyclamate,France,123,185306,0.1,%,True
+text_which_intense,all_foods,monk fruit,France,32,185306,0.0,%,True
+text_which_intense,all_foods,unnamed artificial sweetener,France,32,185306,0.0,%,True
+text_which_intense,all_foods,neotame,France,14,185306,0.0,%,True
+text_which_intense,all_foods,thaumatin,France,10,185306,0.0,%,True
+text_which_intense,all_foods,neohesperidine DC,France,9,185306,0.0,%,True
+tag_intense,all_foods,,France,7846,363227,2.2,%,True
+tag_polyol,all_foods,,France,8424,363227,2.3,%,True
+tag_which_intense,all_foods,sucralose,France,3933,363227,1.1,%,True
+tag_which_intense,all_foods,acesulfame K,France,3800,363227,1.0,%,True
+tag_which_intense,all_foods,aspartame,France,1885,363227,0.5,%,True
+tag_which_intense,all_foods,steviol glycosides,France,1779,363227,0.5,%,True
+tag_which_intense,all_foods,saccharin,France,395,363227,0.1,%,True
+tag_which_intense,all_foods,cyclamate,France,384,363227,0.1,%,True
+tag_which_intense,all_foods,neohesperidine DC,France,58,363227,0.0,%,True
+tag_which_intense,all_foods,thaumatin,France,37,363227,0.0,%,True
+tag_which_intense,all_foods,aspartame-acesulfame salt,France,30,363227,0.0,%,True
+tag_which_intense,all_foods,neotame,France,18,363227,0.0,%,True
+text_intense,all_foods,,UK,2815,58197,4.8,%,True
+text_polyol,all_foods,,UK,1117,58197,1.9,%,True
+text_any,all_foods,,UK,3536,58197,6.1,%,True
+text_added_sugar,all_foods,,UK,33476,58197,57.5,%,True
+text_both_sugar_and_intense,all_foods,,UK,1364,58197,2.3,%,True
+text_both_among_intense,all_foods,,UK,1364,2815,48.5,%,True
+text_which_intense,all_foods,sucralose,UK,1596,58197,2.7,%,True
+text_which_intense,all_foods,acesulfame K,UK,1272,58197,2.2,%,True
+text_which_intense,all_foods,aspartame,UK,576,58197,1.0,%,True
+text_which_intense,all_foods,steviol glycosides,UK,501,58197,0.9,%,True
+text_which_intense,all_foods,saccharin,UK,214,58197,0.4,%,True
+text_which_intense,all_foods,cyclamate,UK,37,58197,0.1,%,True
+text_which_intense,all_foods,unnamed artificial sweetener,UK,10,58197,0.0,%,True
+text_which_intense,all_foods,monk fruit,UK,7,58197,0.0,%,True
+text_which_intense,all_foods,neotame,UK,5,58197,0.0,%,True
+text_which_intense,all_foods,thaumatin,UK,4,58197,0.0,%,True
+text_which_intense,all_foods,neohesperidine DC,UK,3,58197,0.0,%,True
+tag_intense,all_foods,,UK,2727,61585,4.4,%,True
+tag_polyol,all_foods,,UK,1157,61585,1.9,%,True
+tag_which_intense,all_foods,sucralose,UK,1578,61585,2.6,%,True
+tag_which_intense,all_foods,acesulfame K,UK,1197,61585,1.9,%,True
+tag_which_intense,all_foods,aspartame,UK,571,61585,0.9,%,True
+tag_which_intense,all_foods,steviol glycosides,UK,415,61585,0.7,%,True
+tag_which_intense,all_foods,saccharin,UK,206,61585,0.3,%,True
+tag_which_intense,all_foods,cyclamate,UK,34,61585,0.1,%,True
+tag_which_intense,all_foods,neotame,UK,6,61585,0.0,%,True
+tag_which_intense,all_foods,aspartame-acesulfame salt,UK,5,61585,0.0,%,True
+tag_which_intense,all_foods,thaumatin,UK,4,61585,0.0,%,True
+tag_which_intense,all_foods,neohesperidine DC,UK,2,61585,0.0,%,True
+text_intense,all_foods,,India,181,4647,3.9,%,True
+text_polyol,all_foods,,India,121,4647,2.6,%,True
+text_any,all_foods,,India,255,4647,5.5,%,True
+text_added_sugar,all_foods,,India,2441,4647,52.5,%,True
+text_both_sugar_and_intense,all_foods,,India,68,4647,1.5,%,True
+text_both_among_intense,all_foods,,India,68,181,37.6,%,True
+text_which_intense,all_foods,steviol glycosides,India,79,4647,1.7,%,True
+text_which_intense,all_foods,sucralose,India,73,4647,1.6,%,True
+text_which_intense,all_foods,acesulfame K,India,40,4647,0.9,%,True
+text_which_intense,all_foods,aspartame,India,21,4647,0.5,%,True
+text_which_intense,all_foods,unnamed artificial sweetener,India,21,4647,0.5,%,True
+text_which_intense,all_foods,monk fruit,India,11,4647,0.2,%,True
+text_which_intense,all_foods,saccharin,India,2,4647,0.0,%,True
+text_which_intense,all_foods,thaumatin,India,1,4647,0.0,%,True
+tag_intense,all_foods,,India,156,5170,3.0,%,True
+tag_polyol,all_foods,,India,122,5170,2.4,%,True
+tag_which_intense,all_foods,sucralose,India,68,5170,1.3,%,True
+tag_which_intense,all_foods,steviol glycosides,India,67,5170,1.3,%,True
+tag_which_intense,all_foods,acesulfame K,India,39,5170,0.8,%,True
+tag_which_intense,all_foods,aspartame,India,21,5170,0.4,%,True
+tag_which_intense,all_foods,saccharin,India,1,5170,0.0,%,True
+tag_which_intense,all_foods,thaumatin,India,1,5170,0.0,%,True
+text_intense,soft_drinks,,US,2490,6941,35.9,%,True
+text_polyol,soft_drinks,,US,250,6941,3.6,%,True
+text_any,soft_drinks,,US,2504,6941,36.1,%,True
+text_added_sugar,soft_drinks,,US,5120,6941,73.8,%,True
+text_both_sugar_and_intense,soft_drinks,,US,1058,6941,15.2,%,True
+text_both_among_intense,soft_drinks,,US,1058,2490,42.5,%,True
+text_which_intense,soft_drinks,sucralose,US,1101,6941,15.9,%,True
+text_which_intense,soft_drinks,acesulfame K,US,1049,6941,15.1,%,True
+text_which_intense,soft_drinks,aspartame,US,790,6941,11.4,%,True
+text_which_intense,soft_drinks,steviol glycosides,US,597,6941,8.6,%,True
+text_which_intense,soft_drinks,monk fruit,US,76,6941,1.1,%,True
+text_which_intense,soft_drinks,neotame,US,10,6941,0.1,%,True
+text_which_intense,soft_drinks,saccharin,US,9,6941,0.1,%,True
+text_which_intense,soft_drinks,unnamed artificial sweetener,US,5,6941,0.1,%,True
+text_which_intense,soft_drinks,cyclamate,US,2,6941,0.0,%,True
+tag_intense,soft_drinks,,US,2212,6994,31.6,%,True
+tag_polyol,soft_drinks,,US,245,6994,3.5,%,True
+tag_which_intense,soft_drinks,sucralose,US,1100,6994,15.7,%,True
+tag_which_intense,soft_drinks,acesulfame K,US,1013,6994,14.5,%,True
+tag_which_intense,soft_drinks,aspartame,US,785,6994,11.2,%,True
+tag_which_intense,soft_drinks,steviol glycosides,US,344,6994,4.9,%,True
+tag_which_intense,soft_drinks,neotame,US,10,6994,0.1,%,True
+tag_which_intense,soft_drinks,saccharin,US,9,6994,0.1,%,True
+tag_which_intense,soft_drinks,cyclamate,US,4,6994,0.1,%,True
+tag_which_intense,soft_drinks,neohesperidine DC,US,1,6994,0.0,%,True
+text_intense,soft_drinks,,France,433,2203,19.7,%,True
+text_polyol,soft_drinks,,France,19,2203,0.9,%,True
+text_any,soft_drinks,,France,434,2203,19.7,%,True
+text_added_sugar,soft_drinks,,France,539,2203,24.5,%,True
+text_both_sugar_and_intense,soft_drinks,,France,144,2203,6.5,%,True
+text_both_among_intense,soft_drinks,,France,144,433,33.3,%,True
+text_which_intense,soft_drinks,acesulfame K,France,273,2203,12.4,%,True
+text_which_intense,soft_drinks,sucralose,France,211,2203,9.6,%,True
+text_which_intense,soft_drinks,aspartame,France,168,2203,7.6,%,True
+text_which_intense,soft_drinks,steviol glycosides,France,42,2203,1.9,%,True
+text_which_intense,soft_drinks,saccharin,France,28,2203,1.3,%,True
+text_which_intense,soft_drinks,cyclamate,France,25,2203,1.1,%,True
+text_which_intense,soft_drinks,neohesperidine DC,France,5,2203,0.2,%,True
+text_which_intense,soft_drinks,unnamed artificial sweetener,France,3,2203,0.1,%,True
+text_which_intense,soft_drinks,monk fruit,France,1,2203,0.0,%,True
+tag_intense,soft_drinks,,France,1484,4623,32.1,%,True
+tag_polyol,soft_drinks,,France,55,4623,1.2,%,True
+tag_which_intense,soft_drinks,acesulfame K,France,994,4623,21.5,%,True
+tag_which_intense,soft_drinks,sucralose,France,720,4623,15.6,%,True
+tag_which_intense,soft_drinks,aspartame,France,483,4623,10.4,%,True
+tag_which_intense,soft_drinks,steviol glycosides,France,224,4623,4.8,%,True
+tag_which_intense,soft_drinks,cyclamate,France,120,4623,2.6,%,True
+tag_which_intense,soft_drinks,saccharin,France,80,4623,1.7,%,True
+tag_which_intense,soft_drinks,neohesperidine DC,France,11,4623,0.2,%,True
+tag_which_intense,soft_drinks,aspartame-acesulfame salt,France,5,4623,0.1,%,True
+tag_which_intense,soft_drinks,thaumatin,France,5,4623,0.1,%,True
+text_intense,soft_drinks,,UK,591,927,63.8,%,True
+text_polyol,soft_drinks,,UK,39,927,4.2,%,True
+text_any,soft_drinks,,UK,592,927,63.9,%,True
+text_added_sugar,soft_drinks,,UK,492,927,53.1,%,True
+text_both_sugar_and_intense,soft_drinks,,UK,291,927,31.4,%,True
+text_both_among_intense,soft_drinks,,UK,291,591,49.2,%,True
+text_which_intense,soft_drinks,acesulfame K,UK,390,927,42.1,%,True
+text_which_intense,soft_drinks,sucralose,UK,287,927,31.0,%,True
+text_which_intense,soft_drinks,aspartame,UK,225,927,24.3,%,True
+text_which_intense,soft_drinks,steviol glycosides,UK,81,927,8.7,%,True
+text_which_intense,soft_drinks,saccharin,UK,44,927,4.7,%,True
+text_which_intense,soft_drinks,cyclamate,UK,8,927,0.9,%,True
+text_which_intense,soft_drinks,neohesperidine DC,UK,3,927,0.3,%,True
+text_which_intense,soft_drinks,thaumatin,UK,2,927,0.2,%,True
+text_which_intense,soft_drinks,unnamed artificial sweetener,UK,1,927,0.1,%,True
+tag_intense,soft_drinks,,UK,597,1001,59.6,%,True
+tag_polyol,soft_drinks,,UK,42,1001,4.2,%,True
+tag_which_intense,soft_drinks,acesulfame K,UK,380,1001,38.0,%,True
+tag_which_intense,soft_drinks,sucralose,UK,292,1001,29.2,%,True
+tag_which_intense,soft_drinks,aspartame,UK,229,1001,22.9,%,True
+tag_which_intense,soft_drinks,steviol glycosides,UK,72,1001,7.2,%,True
+tag_which_intense,soft_drinks,saccharin,UK,40,1001,4.0,%,True
+tag_which_intense,soft_drinks,cyclamate,UK,9,1001,0.9,%,True
+tag_which_intense,soft_drinks,neohesperidine DC,UK,2,1001,0.2,%,True
+tag_which_intense,soft_drinks,thaumatin,UK,2,1001,0.2,%,True
+text_intense,soft_drinks,,India,44,139,31.7,%,True
+text_polyol,soft_drinks,,India,7,139,5.0,%,True
+text_any,soft_drinks,,India,44,139,31.7,%,True
+text_added_sugar,soft_drinks,,India,104,139,74.8,%,True
+text_both_sugar_and_intense,soft_drinks,,India,20,139,14.4,%,True
+text_both_among_intense,soft_drinks,,India,20,44,45.5,%,False
+text_which_intense,soft_drinks,sucralose,India,27,139,19.4,%,True
+text_which_intense,soft_drinks,acesulfame K,India,18,139,12.9,%,True
+text_which_intense,soft_drinks,steviol glycosides,India,15,139,10.8,%,True
+text_which_intense,soft_drinks,aspartame,India,5,139,3.6,%,True
+text_which_intense,soft_drinks,unnamed artificial sweetener,India,4,139,2.9,%,True
+tag_intense,soft_drinks,,India,47,147,32.0,%,True
+tag_polyol,soft_drinks,,India,7,147,4.8,%,True
+tag_which_intense,soft_drinks,sucralose,India,27,147,18.4,%,True
+tag_which_intense,soft_drinks,acesulfame K,India,19,147,12.9,%,True
+tag_which_intense,soft_drinks,steviol glycosides,India,16,147,10.9,%,True
+tag_which_intense,soft_drinks,aspartame,India,6,147,4.1,%,True
+text_intense,juices,,France,205,6957,2.9,%,True
+text_polyol,juices,,France,4,6957,0.1,%,True
+text_any,juices,,France,206,6957,3.0,%,True
+text_added_sugar,juices,,France,441,6957,6.3,%,True
+text_both_sugar_and_intense,juices,,France,95,6957,1.4,%,True
+text_both_among_intense,juices,,France,95,205,46.3,%,True
+text_which_intense,juices,sucralose,France,136,6957,2.0,%,True
+text_which_intense,juices,acesulfame K,France,88,6957,1.3,%,True
+text_which_intense,juices,aspartame,France,32,6957,0.5,%,True
+text_which_intense,juices,steviol glycosides,France,25,6957,0.4,%,True
+text_which_intense,juices,saccharin,France,17,6957,0.2,%,True
+text_which_intense,juices,cyclamate,France,14,6957,0.2,%,True
+text_which_intense,juices,unnamed artificial sweetener,France,2,6957,0.0,%,True
+text_which_intense,juices,neohesperidine DC,France,2,6957,0.0,%,True
+tag_intense,juices,,France,668,9423,7.1,%,True
+tag_polyol,juices,,France,6,9423,0.1,%,True
+tag_which_intense,juices,sucralose,France,395,9423,4.2,%,True
+tag_which_intense,juices,acesulfame K,France,343,9423,3.6,%,True
+tag_which_intense,juices,steviol glycosides,France,138,9423,1.5,%,True
+tag_which_intense,juices,aspartame,France,98,9423,1.0,%,True
+tag_which_intense,juices,cyclamate,France,59,9423,0.6,%,True
+tag_which_intense,juices,saccharin,France,47,9423,0.5,%,True
+tag_which_intense,juices,neohesperidine DC,France,9,9423,0.1,%,True
+text_intense,juices,,US,234,1761,13.3,%,True
+text_polyol,juices,,US,12,1761,0.7,%,True
+text_any,juices,,US,234,1761,13.3,%,True
+text_added_sugar,juices,,US,1119,1761,63.5,%,True
+text_both_sugar_and_intense,juices,,US,184,1761,10.4,%,True
+text_both_among_intense,juices,,US,184,234,78.6,%,True
+text_which_intense,juices,sucralose,US,123,1761,7.0,%,True
+text_which_intense,juices,steviol glycosides,US,85,1761,4.8,%,True
+text_which_intense,juices,acesulfame K,US,46,1761,2.6,%,True
+text_which_intense,juices,monk fruit,US,20,1761,1.1,%,True
+text_which_intense,juices,aspartame,US,12,1761,0.7,%,True
+text_which_intense,juices,neotame,US,6,1761,0.3,%,True
+text_which_intense,juices,saccharin,US,2,1761,0.1,%,True
+tag_intense,juices,,US,174,1784,9.8,%,True
+tag_polyol,juices,,US,12,1784,0.7,%,True
+tag_which_intense,juices,sucralose,US,123,1784,6.9,%,True
+tag_which_intense,juices,acesulfame K,US,50,1784,2.8,%,True
+tag_which_intense,juices,steviol glycosides,US,34,1784,1.9,%,True
+tag_which_intense,juices,aspartame,US,12,1784,0.7,%,True
+tag_which_intense,juices,neotame,US,6,1784,0.3,%,True
+tag_which_intense,juices,saccharin,US,3,1784,0.2,%,True
+text_intense,juices,,UK,238,807,29.5,%,True
+text_polyol,juices,,UK,0,807,0.0,%,True
+text_any,juices,,UK,238,807,29.5,%,True
+text_added_sugar,juices,,UK,347,807,43.0,%,True
+text_both_sugar_and_intense,juices,,UK,159,807,19.7,%,True
+text_both_among_intense,juices,,UK,159,238,66.8,%,True
+text_which_intense,juices,sucralose,UK,174,807,21.6,%,True
+text_which_intense,juices,acesulfame K,UK,134,807,16.6,%,True
+text_which_intense,juices,aspartame,UK,34,807,4.2,%,True
+text_which_intense,juices,steviol glycosides,UK,26,807,3.2,%,True
+text_which_intense,juices,saccharin,UK,13,807,1.6,%,True
+text_which_intense,juices,cyclamate,UK,2,807,0.2,%,True
+text_which_intense,juices,neohesperidine DC,UK,2,807,0.2,%,True
+text_which_intense,juices,neotame,UK,1,807,0.1,%,True
+text_which_intense,juices,unnamed artificial sweetener,UK,1,807,0.1,%,True
+tag_intense,juices,,UK,245,849,28.9,%,True
+tag_polyol,juices,,UK,0,849,0.0,%,True
+tag_which_intense,juices,sucralose,UK,179,849,21.1,%,True
+tag_which_intense,juices,acesulfame K,UK,128,849,15.1,%,True
+tag_which_intense,juices,aspartame,UK,32,849,3.8,%,True
+tag_which_intense,juices,steviol glycosides,UK,26,849,3.1,%,True
+tag_which_intense,juices,saccharin,UK,13,849,1.5,%,True
+tag_which_intense,juices,cyclamate,UK,2,849,0.2,%,True
+tag_which_intense,juices,neotame,UK,1,849,0.1,%,True
+tag_which_intense,juices,neohesperidine DC,UK,1,849,0.1,%,True
+text_intense,juices,,India,11,107,10.3,%,True
+text_polyol,juices,,India,1,107,0.9,%,True
+text_any,juices,,India,11,107,10.3,%,True
+text_added_sugar,juices,,India,92,107,86.0,%,True
+text_both_sugar_and_intense,juices,,India,10,107,9.3,%,True
+text_both_among_intense,juices,,India,10,11,90.9,%,False
+text_which_intense,juices,steviol glycosides,India,9,107,8.4,%,True
+text_which_intense,juices,acesulfame K,India,2,107,1.9,%,True
+text_which_intense,juices,sucralose,India,2,107,1.9,%,True
+tag_intense,juices,,India,10,109,9.2,%,True
+tag_polyol,juices,,India,1,109,0.9,%,True
+tag_which_intense,juices,steviol glycosides,India,8,109,7.3,%,True
+tag_which_intense,juices,acesulfame K,India,2,109,1.8,%,True
+tag_which_intense,juices,sucralose,India,2,109,1.8,%,True
+text_intense,milk_drinks,,France,49,1173,4.2,%,True
+text_polyol,milk_drinks,,France,1,1173,0.1,%,True
+text_any,milk_drinks,,France,49,1173,4.2,%,True
+text_added_sugar,milk_drinks,,France,222,1173,18.9,%,True
+text_both_sugar_and_intense,milk_drinks,,France,17,1173,1.4,%,True
+text_both_among_intense,milk_drinks,,France,17,49,34.7,%,False
+text_which_intense,milk_drinks,sucralose,France,34,1173,2.9,%,True
+text_which_intense,milk_drinks,acesulfame K,France,24,1173,2.0,%,True
+text_which_intense,milk_drinks,aspartame,France,7,1173,0.6,%,True
+text_which_intense,milk_drinks,steviol glycosides,France,4,1173,0.3,%,True
+text_which_intense,milk_drinks,monk fruit,France,2,1173,0.2,%,True
+text_which_intense,milk_drinks,saccharin,France,2,1173,0.2,%,True
+text_which_intense,milk_drinks,cyclamate,France,1,1173,0.1,%,True
+tag_intense,milk_drinks,,France,143,2746,5.2,%,True
+tag_polyol,milk_drinks,,France,4,2746,0.1,%,True
+tag_which_intense,milk_drinks,sucralose,France,99,2746,3.6,%,True
+tag_which_intense,milk_drinks,acesulfame K,France,81,2746,2.9,%,True
+tag_which_intense,milk_drinks,aspartame,France,22,2746,0.8,%,True
+tag_which_intense,milk_drinks,steviol glycosides,France,7,2746,0.3,%,True
+tag_which_intense,milk_drinks,cyclamate,France,5,2746,0.2,%,True
+tag_which_intense,milk_drinks,saccharin,France,4,2746,0.1,%,True
+text_intense,milk_drinks,,US,96,597,16.1,%,True
+text_polyol,milk_drinks,,US,8,597,1.3,%,True
+text_any,milk_drinks,,US,97,597,16.2,%,True
+text_added_sugar,milk_drinks,,US,420,597,70.4,%,True
+text_both_sugar_and_intense,milk_drinks,,US,54,597,9.0,%,True
+text_both_among_intense,milk_drinks,,US,54,96,56.2,%,False
+text_which_intense,milk_drinks,steviol glycosides,US,54,597,9.0,%,True
+text_which_intense,milk_drinks,monk fruit,US,32,597,5.4,%,True
+text_which_intense,milk_drinks,sucralose,US,31,597,5.2,%,True
+text_which_intense,milk_drinks,acesulfame K,US,21,597,3.5,%,True
+text_which_intense,milk_drinks,unnamed artificial sweetener,US,1,597,0.2,%,True
+text_which_intense,milk_drinks,neotame,US,1,597,0.2,%,True
+tag_intense,milk_drinks,,US,50,624,8.0,%,True
+tag_polyol,milk_drinks,,US,8,624,1.3,%,True
+tag_which_intense,milk_drinks,sucralose,US,31,624,5.0,%,True
+tag_which_intense,milk_drinks,acesulfame K,US,20,624,3.2,%,True
+tag_which_intense,milk_drinks,steviol glycosides,US,17,624,2.7,%,True
+tag_which_intense,milk_drinks,neotame,US,1,624,0.2,%,True
+text_intense,milk_drinks,,UK,67,484,13.8,%,True
+text_polyol,milk_drinks,,UK,4,484,0.8,%,True
+text_any,milk_drinks,,UK,68,484,14.0,%,True
+text_added_sugar,milk_drinks,,UK,302,484,62.4,%,True
+text_both_sugar_and_intense,milk_drinks,,UK,39,484,8.1,%,True
+text_both_among_intense,milk_drinks,,UK,39,67,58.2,%,False
+text_which_intense,milk_drinks,sucralose,UK,47,484,9.7,%,True
+text_which_intense,milk_drinks,acesulfame K,UK,26,484,5.4,%,True
+text_which_intense,milk_drinks,steviol glycosides,UK,8,484,1.7,%,True
+text_which_intense,milk_drinks,aspartame,UK,4,484,0.8,%,True
+text_which_intense,milk_drinks,saccharin,UK,3,484,0.6,%,True
+text_which_intense,milk_drinks,unnamed artificial sweetener,UK,1,484,0.2,%,True
+tag_intense,milk_drinks,,UK,63,497,12.7,%,True
+tag_polyol,milk_drinks,,UK,4,497,0.8,%,True
+tag_which_intense,milk_drinks,sucralose,UK,46,497,9.3,%,True
+tag_which_intense,milk_drinks,acesulfame K,UK,24,497,4.8,%,True
+tag_which_intense,milk_drinks,steviol glycosides,UK,6,497,1.2,%,True
+tag_which_intense,milk_drinks,aspartame,UK,4,497,0.8,%,True
+tag_which_intense,milk_drinks,saccharin,UK,3,497,0.6,%,True
+text_intense,milk_drinks,,India,7,102,6.9,%,True
+text_polyol,milk_drinks,,India,5,102,4.9,%,True
+text_any,milk_drinks,,India,8,102,7.8,%,True
+text_added_sugar,milk_drinks,,India,83,102,81.4,%,True
+text_both_sugar_and_intense,milk_drinks,,India,2,102,2.0,%,True
+text_both_among_intense,milk_drinks,,India,2,7,28.6,%,False
+text_which_intense,milk_drinks,steviol glycosides,India,5,102,4.9,%,True
+text_which_intense,milk_drinks,monk fruit,India,1,102,1.0,%,True
+text_which_intense,milk_drinks,sucralose,India,1,102,1.0,%,True
+tag_intense,milk_drinks,,India,6,103,5.8,%,True
+tag_polyol,milk_drinks,,India,5,103,4.9,%,True
+tag_which_intense,milk_drinks,steviol glycosides,India,5,103,4.9,%,True
+tag_which_intense,milk_drinks,sucralose,India,1,103,1.0,%,True
+text_intense,biscuits,,France,9,3441,0.3,%,True
+text_polyol,biscuits,,France,158,3441,4.6,%,True
+text_any,biscuits,,France,160,3441,4.6,%,True
+text_added_sugar,biscuits,,France,1603,3441,46.6,%,True
+text_both_sugar_and_intense,biscuits,,France,3,3441,0.1,%,True
+text_both_among_intense,biscuits,,France,3,9,33.3,%,False
+text_which_intense,biscuits,steviol glycosides,France,4,3441,0.1,%,True
+text_which_intense,biscuits,sucralose,France,3,3441,0.1,%,True
+text_which_intense,biscuits,acesulfame K,France,3,3441,0.1,%,True
+text_which_intense,biscuits,unnamed artificial sweetener,France,1,3441,0.0,%,True
+text_which_intense,biscuits,aspartame,France,1,3441,0.0,%,True
+tag_intense,biscuits,,France,58,13464,0.4,%,True
+tag_polyol,biscuits,,France,705,13464,5.2,%,True
+tag_which_intense,biscuits,sucralose,France,36,13464,0.3,%,True
+tag_which_intense,biscuits,steviol glycosides,France,12,13464,0.1,%,True
+tag_which_intense,biscuits,acesulfame K,France,10,13464,0.1,%,True
+tag_which_intense,biscuits,aspartame,France,2,13464,0.0,%,True
+tag_which_intense,biscuits,cyclamate,France,1,13464,0.0,%,True
+tag_which_intense,biscuits,saccharin,France,1,13464,0.0,%,True
+text_intense,biscuits,,US,197,11133,1.8,%,True
+text_polyol,biscuits,,US,350,11133,3.1,%,True
+text_any,biscuits,,US,433,11133,3.9,%,True
+text_added_sugar,biscuits,,US,10627,11133,95.5,%,True
+text_both_sugar_and_intense,biscuits,,US,79,11133,0.7,%,True
+text_both_among_intense,biscuits,,US,79,197,40.1,%,True
+text_which_intense,biscuits,steviol glycosides,US,76,11133,0.7,%,True
+text_which_intense,biscuits,sucralose,US,59,11133,0.5,%,True
+text_which_intense,biscuits,monk fruit,US,58,11133,0.5,%,True
+text_which_intense,biscuits,acesulfame K,US,42,11133,0.4,%,True
+text_which_intense,biscuits,aspartame,US,18,11133,0.2,%,True
+text_which_intense,biscuits,unnamed artificial sweetener,US,1,11133,0.0,%,True
+tag_intense,biscuits,,US,124,11216,1.1,%,True
+tag_polyol,biscuits,,US,344,11216,3.1,%,True
+tag_which_intense,biscuits,sucralose,US,59,11216,0.5,%,True
+tag_which_intense,biscuits,acesulfame K,US,42,11216,0.4,%,True
+tag_which_intense,biscuits,steviol glycosides,US,38,11216,0.3,%,True
+tag_which_intense,biscuits,aspartame,US,18,11216,0.2,%,True
+text_intense,biscuits,,UK,4,1429,0.3,%,True
+text_polyol,biscuits,,UK,62,1429,4.3,%,True
+text_any,biscuits,,UK,65,1429,4.5,%,True
+text_added_sugar,biscuits,,UK,1300,1429,91.0,%,True
+text_both_sugar_and_intense,biscuits,,UK,2,1429,0.1,%,True
+text_both_among_intense,biscuits,,UK,2,4,50.0,%,False
+text_which_intense,biscuits,sucralose,UK,4,1429,0.3,%,True
+tag_intense,biscuits,,UK,4,1593,0.3,%,True
+tag_polyol,biscuits,,UK,70,1593,4.4,%,True
+tag_which_intense,biscuits,sucralose,UK,4,1593,0.3,%,True
+text_intense,biscuits,,India,3,338,0.9,%,True
+text_polyol,biscuits,,India,13,338,3.8,%,True
+text_any,biscuits,,India,14,338,4.1,%,True
+text_added_sugar,biscuits,,India,313,338,92.6,%,True
+text_both_sugar_and_intense,biscuits,,India,0,338,0.0,%,True
+text_both_among_intense,biscuits,,India,0,3,0.0,%,False
+text_which_intense,biscuits,sucralose,India,2,338,0.6,%,True
+text_which_intense,biscuits,steviol glycosides,India,1,338,0.3,%,True
+tag_intense,biscuits,,India,3,348,0.9,%,True
+tag_polyol,biscuits,,India,13,348,3.7,%,True
+tag_which_intense,biscuits,sucralose,India,2,348,0.6,%,True
+tag_which_intense,biscuits,steviol glycosides,India,1,348,0.3,%,True
+text_intense,chocolate,,France,31,4582,0.7,%,True
+text_polyol,chocolate,,France,146,4582,3.2,%,True
+text_any,chocolate,,France,153,4582,3.3,%,True
+text_added_sugar,chocolate,,France,1738,4582,37.9,%,True
+text_both_sugar_and_intense,chocolate,,France,4,4582,0.1,%,True
+text_both_among_intense,chocolate,,France,4,31,12.9,%,False
+text_which_intense,chocolate,steviol glycosides,France,21,4582,0.5,%,True
+text_which_intense,chocolate,sucralose,France,9,4582,0.2,%,True
+text_which_intense,chocolate,acesulfame K,France,2,4582,0.0,%,True
+text_which_intense,chocolate,aspartame,France,2,4582,0.0,%,True
+text_which_intense,chocolate,unnamed artificial sweetener,France,1,4582,0.0,%,True
+tag_intense,chocolate,,France,68,13941,0.5,%,True
+tag_polyol,chocolate,,France,953,13941,6.8,%,True
+tag_which_intense,chocolate,steviol glycosides,France,44,13941,0.3,%,True
+tag_which_intense,chocolate,acesulfame K,France,16,13941,0.1,%,True
+tag_which_intense,chocolate,sucralose,France,12,13941,0.1,%,True
+tag_which_intense,chocolate,aspartame,France,9,13941,0.1,%,True
+text_intense,chocolate,,US,175,7682,2.3,%,True
+text_polyol,chocolate,,US,672,7682,8.7,%,True
+text_any,chocolate,,US,715,7682,9.3,%,True
+text_added_sugar,chocolate,,US,7365,7682,95.9,%,True
+text_both_sugar_and_intense,chocolate,,US,31,7682,0.4,%,True
+text_both_among_intense,chocolate,,US,31,175,17.7,%,True
+text_which_intense,chocolate,steviol glycosides,US,100,7682,1.3,%,True
+text_which_intense,chocolate,sucralose,US,40,7682,0.5,%,True
+text_which_intense,chocolate,monk fruit,US,39,7682,0.5,%,True
+text_which_intense,chocolate,acesulfame K,US,7,7682,0.1,%,True
+text_which_intense,chocolate,aspartame,US,1,7682,0.0,%,True
+text_which_intense,chocolate,unnamed artificial sweetener,US,1,7682,0.0,%,True
+tag_intense,chocolate,,US,67,7747,0.9,%,True
+tag_polyol,chocolate,,US,668,7747,8.6,%,True
+tag_which_intense,chocolate,sucralose,US,40,7747,0.5,%,True
+tag_which_intense,chocolate,steviol glycosides,US,22,7747,0.3,%,True
+tag_which_intense,chocolate,acesulfame K,US,6,7747,0.1,%,True
+tag_which_intense,chocolate,aspartame,US,1,7747,0.0,%,True
+text_intense,chocolate,,UK,12,1823,0.7,%,True
+text_polyol,chocolate,,UK,75,1823,4.1,%,True
+text_any,chocolate,,UK,80,1823,4.4,%,True
+text_added_sugar,chocolate,,UK,1685,1823,92.4,%,True
+text_both_sugar_and_intense,chocolate,,UK,4,1823,0.2,%,True
+text_both_among_intense,chocolate,,UK,4,12,33.3,%,False
+text_which_intense,chocolate,acesulfame K,UK,6,1823,0.3,%,True
+text_which_intense,chocolate,sucralose,UK,5,1823,0.3,%,True
+text_which_intense,chocolate,aspartame,UK,4,1823,0.2,%,True
+text_which_intense,chocolate,steviol glycosides,UK,3,1823,0.2,%,True
+tag_intense,chocolate,,UK,10,1961,0.5,%,True
+tag_polyol,chocolate,,UK,82,1961,4.2,%,True
+tag_which_intense,chocolate,acesulfame K,UK,6,1961,0.3,%,True
+tag_which_intense,chocolate,sucralose,UK,4,1961,0.2,%,True
+tag_which_intense,chocolate,aspartame,UK,4,1961,0.2,%,True
+tag_which_intense,chocolate,steviol glycosides,UK,2,1961,0.1,%,True
+text_intense,chocolate,,India,1,158,0.6,%,True
+text_polyol,chocolate,,India,6,158,3.8,%,True
+text_any,chocolate,,India,6,158,3.8,%,True
+text_added_sugar,chocolate,,India,139,158,88.0,%,True
+text_both_sugar_and_intense,chocolate,,India,0,158,0.0,%,True
+text_both_among_intense,chocolate,,India,0,1,0.0,%,False
+text_which_intense,chocolate,monk fruit,India,1,158,0.6,%,True
+tag_intense,chocolate,,India,0,160,0.0,%,True
+tag_polyol,chocolate,,India,6,160,3.8,%,True
+text_intense,ice_cream,,US,699,10391,6.7,%,True
+text_polyol,ice_cream,,US,595,10391,5.7,%,True
+text_any,ice_cream,,US,815,10391,7.8,%,True
+text_added_sugar,ice_cream,,US,10065,10391,96.9,%,True
+text_both_sugar_and_intense,ice_cream,,US,468,10391,4.5,%,True
+text_both_among_intense,ice_cream,,US,468,699,67.0,%,True
+text_which_intense,ice_cream,sucralose,US,242,10391,2.3,%,True
+text_which_intense,ice_cream,monk fruit,US,226,10391,2.2,%,True
+text_which_intense,ice_cream,steviol glycosides,US,225,10391,2.2,%,True
+text_which_intense,ice_cream,acesulfame K,US,134,10391,1.3,%,True
+text_which_intense,ice_cream,aspartame,US,55,10391,0.5,%,True
+text_which_intense,ice_cream,unnamed artificial sweetener,US,2,10391,0.0,%,True
+text_which_intense,ice_cream,neotame,US,2,10391,0.0,%,True
+text_which_intense,ice_cream,saccharin,US,1,10391,0.0,%,True
+tag_intense,ice_cream,,US,450,10414,4.3,%,True
+tag_polyol,ice_cream,,US,594,10414,5.7,%,True
+tag_which_intense,ice_cream,sucralose,US,238,10414,2.3,%,True
+tag_which_intense,ice_cream,steviol glycosides,US,156,10414,1.5,%,True
+tag_which_intense,ice_cream,acesulfame K,US,134,10414,1.3,%,True
+tag_which_intense,ice_cream,aspartame,US,55,10414,0.5,%,True
+tag_which_intense,ice_cream,neotame,US,2,10414,0.0,%,True
+tag_which_intense,ice_cream,saccharin,US,1,10414,0.0,%,True
+text_intense,ice_cream,,France,27,924,2.9,%,True
+text_polyol,ice_cream,,France,27,924,2.9,%,True
+text_any,ice_cream,,France,33,924,3.6,%,True
+text_added_sugar,ice_cream,,France,619,924,67.0,%,True
+text_both_sugar_and_intense,ice_cream,,France,18,924,1.9,%,True
+text_both_among_intense,ice_cream,,France,18,27,66.7,%,False
+text_which_intense,ice_cream,steviol glycosides,France,19,924,2.1,%,True
+text_which_intense,ice_cream,sucralose,France,5,924,0.5,%,True
+text_which_intense,ice_cream,aspartame,France,4,924,0.4,%,True
+text_which_intense,ice_cream,acesulfame K,France,4,924,0.4,%,True
+text_which_intense,ice_cream,monk fruit,France,1,924,0.1,%,True
+text_which_intense,ice_cream,cyclamate,France,1,924,0.1,%,True
+text_which_intense,ice_cream,saccharin,France,1,924,0.1,%,True
+text_which_intense,ice_cream,unnamed artificial sweetener,France,1,924,0.1,%,True
+tag_intense,ice_cream,,France,45,5455,0.8,%,True
+tag_polyol,ice_cream,,France,138,5455,2.5,%,True
+tag_which_intense,ice_cream,steviol glycosides,France,30,5455,0.5,%,True
+tag_which_intense,ice_cream,sucralose,France,11,5455,0.2,%,True
+tag_which_intense,ice_cream,acesulfame K,France,7,5455,0.1,%,True
+tag_which_intense,ice_cream,aspartame,France,4,5455,0.1,%,True
+tag_which_intense,ice_cream,cyclamate,France,1,5455,0.0,%,True
+tag_which_intense,ice_cream,saccharin,France,1,5455,0.0,%,True
+text_intense,ice_cream,,UK,29,491,5.9,%,True
+text_polyol,ice_cream,,UK,29,491,5.9,%,True
+text_any,ice_cream,,UK,38,491,7.7,%,True
+text_added_sugar,ice_cream,,UK,456,491,92.9,%,True
+text_both_sugar_and_intense,ice_cream,,UK,22,491,4.5,%,True
+text_both_among_intense,ice_cream,,UK,22,29,75.9,%,False
+text_which_intense,ice_cream,steviol glycosides,UK,20,491,4.1,%,True
+text_which_intense,ice_cream,sucralose,UK,4,491,0.8,%,True
+text_which_intense,ice_cream,saccharin,UK,4,491,0.8,%,True
+text_which_intense,ice_cream,acesulfame K,UK,1,491,0.2,%,True
+text_which_intense,ice_cream,aspartame,UK,1,491,0.2,%,True
+tag_intense,ice_cream,,UK,31,563,5.5,%,True
+tag_polyol,ice_cream,,UK,32,563,5.7,%,True
+tag_which_intense,ice_cream,steviol glycosides,UK,22,563,3.9,%,True
+tag_which_intense,ice_cream,sucralose,UK,4,563,0.7,%,True
+tag_which_intense,ice_cream,saccharin,UK,4,563,0.7,%,True
+tag_which_intense,ice_cream,acesulfame K,UK,1,563,0.2,%,True
+tag_which_intense,ice_cream,aspartame,UK,1,563,0.2,%,True
+text_intense,ice_cream,,India,9,109,8.3,%,True
+text_polyol,ice_cream,,India,11,109,10.1,%,True
+text_any,ice_cream,,India,13,109,11.9,%,True
+text_added_sugar,ice_cream,,India,95,109,87.2,%,True
+text_both_sugar_and_intense,ice_cream,,India,1,109,0.9,%,True
+text_both_among_intense,ice_cream,,India,1,9,11.1,%,False
+text_which_intense,ice_cream,steviol glycosides,India,8,109,7.3,%,True
+text_which_intense,ice_cream,sucralose,India,3,109,2.8,%,True
+tag_intense,ice_cream,,India,5,109,4.6,%,True
+tag_polyol,ice_cream,,India,11,109,10.1,%,True
+tag_which_intense,ice_cream,sucralose,India,3,109,2.8,%,True
+tag_which_intense,ice_cream,steviol glycosides,India,2,109,1.8,%,True
+text_intense,yoghurt,,France,89,12861,0.7,%,True
+text_polyol,yoghurt,,France,3,12861,0.0,%,True
+text_any,yoghurt,,France,90,12861,0.7,%,True
+text_added_sugar,yoghurt,,France,493,12861,3.8,%,True
+text_both_sugar_and_intense,yoghurt,,France,23,12861,0.2,%,True
+text_both_among_intense,yoghurt,,France,23,89,25.8,%,False
+text_which_intense,yoghurt,sucralose,France,57,12861,0.4,%,True
+text_which_intense,yoghurt,acesulfame K,France,53,12861,0.4,%,True
+text_which_intense,yoghurt,steviol glycosides,France,16,12861,0.1,%,True
+text_which_intense,yoghurt,aspartame,France,14,12861,0.1,%,True
+tag_intense,yoghurt,,France,497,22876,2.2,%,True
+tag_polyol,yoghurt,,France,10,22876,0.0,%,True
+tag_which_intense,yoghurt,acesulfame K,France,413,22876,1.8,%,True
+tag_which_intense,yoghurt,sucralose,France,301,22876,1.3,%,True
+tag_which_intense,yoghurt,aspartame,France,144,22876,0.6,%,True
+tag_which_intense,yoghurt,steviol glycosides,France,40,22876,0.2,%,True
+tag_which_intense,yoghurt,cyclamate,France,9,22876,0.0,%,True
+tag_which_intense,yoghurt,neohesperidine DC,France,4,22876,0.0,%,True
+text_intense,yoghurt,,US,1197,18073,6.6,%,True
+text_polyol,yoghurt,,US,57,18073,0.3,%,True
+text_any,yoghurt,,US,1208,18073,6.7,%,True
+text_added_sugar,yoghurt,,US,6240,18073,34.5,%,True
+text_both_sugar_and_intense,yoghurt,,US,933,18073,5.2,%,True
+text_both_among_intense,yoghurt,,US,933,1197,77.9,%,True
+text_which_intense,yoghurt,sucralose,US,586,18073,3.2,%,True
+text_which_intense,yoghurt,steviol glycosides,US,501,18073,2.8,%,True
+text_which_intense,yoghurt,acesulfame K,US,496,18073,2.7,%,True
+text_which_intense,yoghurt,monk fruit,US,107,18073,0.6,%,True
+text_which_intense,yoghurt,aspartame,US,77,18073,0.4,%,True
+text_which_intense,yoghurt,neotame,US,26,18073,0.1,%,True
+text_which_intense,yoghurt,unnamed artificial sweetener,US,9,18073,0.0,%,True
+tag_intense,yoghurt,,US,949,18160,5.2,%,True
+tag_polyol,yoghurt,,US,57,18160,0.3,%,True
+tag_which_intense,yoghurt,sucralose,US,591,18160,3.3,%,True
+tag_which_intense,yoghurt,acesulfame K,US,489,18160,2.7,%,True
+tag_which_intense,yoghurt,steviol glycosides,US,276,18160,1.5,%,True
+tag_which_intense,yoghurt,aspartame,US,77,18160,0.4,%,True
+tag_which_intense,yoghurt,neotame,US,26,18160,0.1,%,True
+tag_which_intense,yoghurt,saccharin,US,1,18160,0.0,%,True
+text_intense,yoghurt,,UK,153,2393,6.4,%,True
+text_polyol,yoghurt,,UK,10,2393,0.4,%,True
+text_any,yoghurt,,UK,153,2393,6.4,%,True
+text_added_sugar,yoghurt,,UK,807,2393,33.7,%,True
+text_both_sugar_and_intense,yoghurt,,UK,59,2393,2.5,%,True
+text_both_among_intense,yoghurt,,UK,59,153,38.6,%,True
+text_which_intense,yoghurt,sucralose,UK,94,2393,3.9,%,True
+text_which_intense,yoghurt,acesulfame K,UK,81,2393,3.4,%,True
+text_which_intense,yoghurt,aspartame,UK,38,2393,1.6,%,True
+text_which_intense,yoghurt,steviol glycosides,UK,16,2393,0.7,%,True
+tag_intense,yoghurt,,UK,156,2596,6.0,%,True
+tag_polyol,yoghurt,,UK,12,2596,0.5,%,True
+tag_which_intense,yoghurt,sucralose,UK,98,2596,3.8,%,True
+tag_which_intense,yoghurt,acesulfame K,UK,84,2596,3.2,%,True
+tag_which_intense,yoghurt,aspartame,UK,39,2596,1.5,%,True
+tag_which_intense,yoghurt,steviol glycosides,UK,17,2596,0.7,%,True
+text_intense,yoghurt,,India,5,180,2.8,%,True
+text_polyol,yoghurt,,India,3,180,1.7,%,True
+text_any,yoghurt,,India,5,180,2.8,%,True
+text_added_sugar,yoghurt,,India,35,180,19.4,%,True
+text_both_sugar_and_intense,yoghurt,,India,2,180,1.1,%,True
+text_both_among_intense,yoghurt,,India,2,5,40.0,%,False
+text_which_intense,yoghurt,steviol glycosides,India,5,180,2.8,%,True
+tag_intense,yoghurt,,India,5,184,2.7,%,True
+tag_polyol,yoghurt,,India,3,184,1.6,%,True
+tag_which_intense,yoghurt,steviol glycosides,India,5,184,2.7,%,True
+text_intense,gum_confectionery,,US,1259,22849,5.5,%,True
+text_polyol,gum_confectionery,,US,2847,22849,12.5,%,True
+text_any,gum_confectionery,,US,3078,22849,13.5,%,True
+text_added_sugar,gum_confectionery,,US,21321,22849,93.3,%,True
+text_both_sugar_and_intense,gum_confectionery,,US,235,22849,1.0,%,True
+text_both_among_intense,gum_confectionery,,US,235,1259,18.7,%,True
+text_which_intense,gum_confectionery,acesulfame K,US,758,22849,3.3,%,True
+text_which_intense,gum_confectionery,aspartame,US,730,22849,3.2,%,True
+text_which_intense,gum_confectionery,sucralose,US,536,22849,2.3,%,True
+text_which_intense,gum_confectionery,steviol glycosides,US,208,22849,0.9,%,True
+text_which_intense,gum_confectionery,monk fruit,US,66,22849,0.3,%,True
+text_which_intense,gum_confectionery,neotame,US,64,22849,0.3,%,True
+text_which_intense,gum_confectionery,unnamed artificial sweetener,US,18,22849,0.1,%,True
+text_which_intense,gum_confectionery,saccharin,US,2,22849,0.0,%,True
+text_which_intense,gum_confectionery,neohesperidine DC,US,1,22849,0.0,%,True
+tag_intense,gum_confectionery,,US,1082,22969,4.7,%,True
+tag_polyol,gum_confectionery,,US,2805,22969,12.2,%,True
+tag_which_intense,gum_confectionery,acesulfame K,US,715,22969,3.1,%,True
+tag_which_intense,gum_confectionery,aspartame,US,700,22969,3.0,%,True
+tag_which_intense,gum_confectionery,sucralose,US,502,22969,2.2,%,True
+tag_which_intense,gum_confectionery,steviol glycosides,US,72,22969,0.3,%,True
+tag_which_intense,gum_confectionery,aspartame-acesulfame salt,US,68,22969,0.3,%,True
+tag_which_intense,gum_confectionery,neotame,US,61,22969,0.3,%,True
+tag_which_intense,gum_confectionery,neohesperidine DC,US,3,22969,0.0,%,True
+tag_which_intense,gum_confectionery,saccharin,US,2,22969,0.0,%,True
+text_intense,gum_confectionery,,France,476,6700,7.1,%,True
+text_polyol,gum_confectionery,,France,928,6700,13.9,%,True
+text_any,gum_confectionery,,France,968,6700,14.4,%,True
+text_added_sugar,gum_confectionery,,France,4125,6700,61.6,%,True
+text_both_sugar_and_intense,gum_confectionery,,France,43,6700,0.6,%,True
+text_both_among_intense,gum_confectionery,,France,43,476,9.0,%,True
+text_which_intense,gum_confectionery,acesulfame K,France,266,6700,4.0,%,True
+text_which_intense,gum_confectionery,aspartame,France,266,6700,4.0,%,True
+text_which_intense,gum_confectionery,sucralose,France,225,6700,3.4,%,True
+text_which_intense,gum_confectionery,steviol glycosides,France,54,6700,0.8,%,True
+text_which_intense,gum_confectionery,unnamed artificial sweetener,France,2,6700,0.0,%,True
+text_which_intense,gum_confectionery,neohesperidine DC,France,2,6700,0.0,%,True
+text_which_intense,gum_confectionery,neotame,France,1,6700,0.0,%,True
+text_which_intense,gum_confectionery,thaumatin,France,1,6700,0.0,%,True
+text_which_intense,gum_confectionery,saccharin,France,1,6700,0.0,%,True
+tag_intense,gum_confectionery,,France,1213,15844,7.7,%,True
+tag_polyol,gum_confectionery,,France,2642,15844,16.7,%,True
+tag_which_intense,gum_confectionery,acesulfame K,France,780,15844,4.9,%,True
+tag_which_intense,gum_confectionery,aspartame,France,668,15844,4.2,%,True
+tag_which_intense,gum_confectionery,sucralose,France,482,15844,3.0,%,True
+tag_which_intense,gum_confectionery,steviol glycosides,France,189,15844,1.2,%,True
+tag_which_intense,gum_confectionery,aspartame-acesulfame salt,France,23,15844,0.1,%,True
+tag_which_intense,gum_confectionery,thaumatin,France,15,15844,0.1,%,True
+tag_which_intense,gum_confectionery,neohesperidine DC,France,14,15844,0.1,%,True
+tag_which_intense,gum_confectionery,saccharin,France,6,15844,0.0,%,True
+tag_which_intense,gum_confectionery,neotame,France,4,15844,0.0,%,True
+text_intense,gum_confectionery,,UK,126,2513,5.0,%,True
+text_polyol,gum_confectionery,,UK,280,2513,11.1,%,True
+text_any,gum_confectionery,,UK,293,2513,11.7,%,True
+text_added_sugar,gum_confectionery,,UK,2168,2513,86.3,%,True
+text_both_sugar_and_intense,gum_confectionery,,UK,30,2513,1.2,%,True
+text_both_among_intense,gum_confectionery,,UK,30,126,23.8,%,True
+text_which_intense,gum_confectionery,acesulfame K,UK,58,2513,2.3,%,True
+text_which_intense,gum_confectionery,aspartame,UK,56,2513,2.2,%,True
+text_which_intense,gum_confectionery,sucralose,UK,46,2513,1.8,%,True
+text_which_intense,gum_confectionery,steviol glycosides,UK,34,2513,1.4,%,True
+text_which_intense,gum_confectionery,saccharin,UK,4,2513,0.2,%,True
+text_which_intense,gum_confectionery,cyclamate,UK,2,2513,0.1,%,True
+text_which_intense,gum_confectionery,unnamed artificial sweetener,UK,1,2513,0.0,%,True
+tag_intense,gum_confectionery,,UK,116,2700,4.3,%,True
+tag_polyol,gum_confectionery,,UK,294,2700,10.9,%,True
+tag_which_intense,gum_confectionery,aspartame,UK,56,2700,2.1,%,True
+tag_which_intense,gum_confectionery,acesulfame K,UK,55,2700,2.0,%,True
+tag_which_intense,gum_confectionery,sucralose,UK,45,2700,1.7,%,True
+tag_which_intense,gum_confectionery,steviol glycosides,UK,23,2700,0.9,%,True
+tag_which_intense,gum_confectionery,saccharin,UK,4,2700,0.1,%,True
+tag_which_intense,gum_confectionery,aspartame-acesulfame salt,UK,3,2700,0.1,%,True
+tag_which_intense,gum_confectionery,cyclamate,UK,2,2700,0.1,%,True
+tag_which_intense,gum_confectionery,neotame,UK,1,2700,0.0,%,True
+text_intense,gum_confectionery,,India,15,175,8.6,%,True
+text_polyol,gum_confectionery,,India,19,175,10.9,%,True
+text_any,gum_confectionery,,India,23,175,13.1,%,True
+text_added_sugar,gum_confectionery,,India,152,175,86.9,%,True
+text_both_sugar_and_intense,gum_confectionery,,India,4,175,2.3,%,True
+text_both_among_intense,gum_confectionery,,India,4,15,26.7,%,False
+text_which_intense,gum_confectionery,aspartame,India,13,175,7.4,%,True
+text_which_intense,gum_confectionery,acesulfame K,India,5,175,2.9,%,True
+text_which_intense,gum_confectionery,steviol glycosides,India,2,175,1.1,%,True
+text_which_intense,gum_confectionery,unnamed artificial sweetener,India,1,175,0.6,%,True
+text_which_intense,gum_confectionery,sucralose,India,1,175,0.6,%,True
+tag_intense,gum_confectionery,,India,14,179,7.8,%,True
+tag_polyol,gum_confectionery,,India,18,179,10.1,%,True
+tag_which_intense,gum_confectionery,aspartame,India,12,179,6.7,%,True
+tag_which_intense,gum_confectionery,acesulfame K,India,4,179,2.2,%,True
+tag_which_intense,gum_confectionery,steviol glycosides,India,2,179,1.1,%,True
+tag_which_intense,gum_confectionery,sucralose,India,1,179,0.6,%,True
+text_intense,cereals,,France,14,2245,0.6,%,True
+text_polyol,cereals,,France,13,2245,0.6,%,True
+text_any,cereals,,France,24,2245,1.1,%,True
+text_added_sugar,cereals,,France,818,2245,36.4,%,True
+text_both_sugar_and_intense,cereals,,France,8,2245,0.4,%,True
+text_both_among_intense,cereals,,France,8,14,57.1,%,False
+text_which_intense,cereals,sucralose,France,11,2245,0.5,%,True
+text_which_intense,cereals,steviol glycosides,France,4,2245,0.2,%,True
+text_which_intense,cereals,monk fruit,France,1,2245,0.0,%,True
+text_which_intense,cereals,acesulfame K,France,1,2245,0.0,%,True
+tag_intense,cereals,,France,38,5369,0.7,%,True
+tag_polyol,cereals,,France,49,5369,0.9,%,True
+tag_which_intense,cereals,sucralose,France,21,5369,0.4,%,True
+tag_which_intense,cereals,steviol glycosides,France,20,5369,0.4,%,True
+tag_which_intense,cereals,acesulfame K,France,2,5369,0.0,%,True
+tag_which_intense,cereals,cyclamate,France,1,5369,0.0,%,True
+text_intense,cereals,,US,162,2544,6.4,%,True
+text_polyol,cereals,,US,35,2544,1.4,%,True
+text_any,cereals,,US,173,2544,6.8,%,True
+text_added_sugar,cereals,,US,2100,2544,82.5,%,True
+text_both_sugar_and_intense,cereals,,US,95,2544,3.7,%,True
+text_both_among_intense,cereals,,US,95,162,58.6,%,True
+text_which_intense,cereals,monk fruit,US,122,2544,4.8,%,True
+text_which_intense,cereals,steviol glycosides,US,38,2544,1.5,%,True
+text_which_intense,cereals,sucralose,US,21,2544,0.8,%,True
+text_which_intense,cereals,acesulfame K,US,6,2544,0.2,%,True
+text_which_intense,cereals,aspartame,US,3,2544,0.1,%,True
+tag_intense,cereals,,US,36,2587,1.4,%,True
+tag_polyol,cereals,,US,38,2587,1.5,%,True
+tag_which_intense,cereals,sucralose,US,23,2587,0.9,%,True
+tag_which_intense,cereals,steviol glycosides,US,13,2587,0.5,%,True
+tag_which_intense,cereals,acesulfame K,US,6,2587,0.2,%,True
+tag_which_intense,cereals,aspartame,US,3,2587,0.1,%,True
+text_intense,cereals,,UK,15,1402,1.1,%,True
+text_polyol,cereals,,UK,16,1402,1.1,%,True
+text_any,cereals,,UK,21,1402,1.5,%,True
+text_added_sugar,cereals,,UK,998,1402,71.2,%,True
+text_both_sugar_and_intense,cereals,,UK,4,1402,0.3,%,True
+text_both_among_intense,cereals,,UK,4,15,26.7,%,False
+text_which_intense,cereals,steviol glycosides,UK,8,1402,0.6,%,True
+text_which_intense,cereals,sucralose,UK,6,1402,0.4,%,True
+text_which_intense,cereals,acesulfame K,UK,2,1402,0.1,%,True
+text_which_intense,cereals,monk fruit,UK,1,1402,0.1,%,True
+text_which_intense,cereals,aspartame,UK,1,1402,0.1,%,True
+tag_intense,cereals,,UK,9,1465,0.6,%,True
+tag_polyol,cereals,,UK,16,1465,1.1,%,True
+tag_which_intense,cereals,sucralose,UK,5,1465,0.3,%,True
+tag_which_intense,cereals,steviol glycosides,UK,4,1465,0.3,%,True
+tag_which_intense,cereals,acesulfame K,UK,2,1465,0.1,%,True
+tag_which_intense,cereals,aspartame,UK,1,1465,0.1,%,True
+text_intense,cereals,,India,4,153,2.6,%,True
+text_polyol,cereals,,India,0,153,0.0,%,True
+text_any,cereals,,India,4,153,2.6,%,True
+text_added_sugar,cereals,,India,98,153,64.1,%,True
+text_both_sugar_and_intense,cereals,,India,0,153,0.0,%,True
+text_both_among_intense,cereals,,India,0,4,0.0,%,False
+text_which_intense,cereals,steviol glycosides,India,2,153,1.3,%,True
+text_which_intense,cereals,monk fruit,India,2,153,1.3,%,True
+tag_intense,cereals,,India,2,164,1.2,%,True
+tag_polyol,cereals,,India,0,164,0.0,%,True
+tag_which_intense,cereals,steviol glycosides,India,2,164,1.2,%,True
+text_intense,sauces_spreads,,France,122,18928,0.6,%,True
+text_polyol,sauces_spreads,,France,88,18928,0.5,%,True
+text_any,sauces_spreads,,France,185,18928,1.0,%,True
+text_added_sugar,sauces_spreads,,France,2544,18928,13.4,%,True
+text_both_sugar_and_intense,sauces_spreads,,France,25,18928,0.1,%,True
+text_both_among_intense,sauces_spreads,,France,25,122,20.5,%,True
+text_which_intense,sauces_spreads,sucralose,France,71,18928,0.4,%,True
+text_which_intense,sauces_spreads,steviol glycosides,France,40,18928,0.2,%,True
+text_which_intense,sauces_spreads,acesulfame K,France,11,18928,0.1,%,True
+text_which_intense,sauces_spreads,saccharin,France,8,18928,0.0,%,True
+text_which_intense,sauces_spreads,unnamed artificial sweetener,France,4,18928,0.0,%,True
+text_which_intense,sauces_spreads,monk fruit,France,3,18928,0.0,%,True
+text_which_intense,sauces_spreads,aspartame,France,3,18928,0.0,%,True
+text_which_intense,sauces_spreads,cyclamate,France,1,18928,0.0,%,True
+tag_intense,sauces_spreads,,France,249,31733,0.8,%,True
+tag_polyol,sauces_spreads,,France,202,31733,0.6,%,True
+tag_which_intense,sauces_spreads,sucralose,France,125,31733,0.4,%,True
+tag_which_intense,sauces_spreads,steviol glycosides,France,91,31733,0.3,%,True
+tag_which_intense,sauces_spreads,acesulfame K,France,23,31733,0.1,%,True
+tag_which_intense,sauces_spreads,saccharin,France,19,31733,0.1,%,True
+tag_which_intense,sauces_spreads,aspartame,France,11,31733,0.0,%,True
+tag_which_intense,sauces_spreads,cyclamate,France,2,31733,0.0,%,True
+text_intense,sauces_spreads,,US,301,28730,1.0,%,True
+text_polyol,sauces_spreads,,US,103,28730,0.4,%,True
+text_any,sauces_spreads,,US,366,28730,1.3,%,True
+text_added_sugar,sauces_spreads,,US,19177,28730,66.7,%,True
+text_both_sugar_and_intense,sauces_spreads,,US,113,28730,0.4,%,True
+text_both_among_intense,sauces_spreads,,US,113,301,37.5,%,True
+text_which_intense,sauces_spreads,sucralose,US,166,28730,0.6,%,True
+text_which_intense,sauces_spreads,steviol glycosides,US,79,28730,0.3,%,True
+text_which_intense,sauces_spreads,monk fruit,US,37,28730,0.1,%,True
+text_which_intense,sauces_spreads,acesulfame K,US,25,28730,0.1,%,True
+text_which_intense,sauces_spreads,unnamed artificial sweetener,US,19,28730,0.1,%,True
+text_which_intense,sauces_spreads,aspartame,US,13,28730,0.0,%,True
+tag_intense,sauces_spreads,,US,208,29419,0.7,%,True
+tag_polyol,sauces_spreads,,US,105,29419,0.4,%,True
+tag_which_intense,sauces_spreads,sucralose,US,162,29419,0.6,%,True
+tag_which_intense,sauces_spreads,acesulfame K,US,24,29419,0.1,%,True
+tag_which_intense,sauces_spreads,steviol glycosides,US,23,29419,0.1,%,True
+tag_which_intense,sauces_spreads,aspartame,US,12,29419,0.0,%,True
+tag_which_intense,sauces_spreads,saccharin,US,2,29419,0.0,%,True
+text_intense,sauces_spreads,,UK,81,4651,1.7,%,True
+text_polyol,sauces_spreads,,UK,21,4651,0.5,%,True
+text_any,sauces_spreads,,UK,93,4651,2.0,%,True
+text_added_sugar,sauces_spreads,,UK,2949,4651,63.4,%,True
+text_both_sugar_and_intense,sauces_spreads,,UK,58,4651,1.2,%,True
+text_both_among_intense,sauces_spreads,,UK,58,81,71.6,%,False
+text_which_intense,sauces_spreads,steviol glycosides,UK,29,4651,0.6,%,True
+text_which_intense,sauces_spreads,sucralose,UK,28,4651,0.6,%,True
+text_which_intense,sauces_spreads,acesulfame K,UK,15,4651,0.3,%,True
+text_which_intense,sauces_spreads,saccharin,UK,11,4651,0.2,%,True
+text_which_intense,sauces_spreads,aspartame,UK,6,4651,0.1,%,True
+tag_intense,sauces_spreads,,UK,83,4918,1.7,%,True
+tag_polyol,sauces_spreads,,UK,22,4918,0.4,%,True
+tag_which_intense,sauces_spreads,sucralose,UK,30,4918,0.6,%,True
+tag_which_intense,sauces_spreads,steviol glycosides,UK,30,4918,0.6,%,True
+tag_which_intense,sauces_spreads,acesulfame K,UK,13,4918,0.3,%,True
+tag_which_intense,sauces_spreads,saccharin,UK,11,4918,0.2,%,True
+tag_which_intense,sauces_spreads,aspartame,UK,6,4918,0.1,%,True
+text_intense,sauces_spreads,,India,3,333,0.9,%,True
+text_polyol,sauces_spreads,,India,2,333,0.6,%,True
+text_any,sauces_spreads,,India,3,333,0.9,%,True
+text_added_sugar,sauces_spreads,,India,238,333,71.5,%,True
+text_both_sugar_and_intense,sauces_spreads,,India,1,333,0.3,%,True
+text_both_among_intense,sauces_spreads,,India,1,3,33.3,%,False
+text_which_intense,sauces_spreads,steviol glycosides,India,3,333,0.9,%,True
+tag_intense,sauces_spreads,,India,2,358,0.6,%,True
+tag_polyol,sauces_spreads,,India,2,358,0.6,%,True
+tag_which_intense,sauces_spreads,steviol glycosides,India,2,358,0.6,%,True
+named_diet_intense,diet_zero_sugar_free_names,,India,21,72,29.2,%,True
+named_diet_polyol_only,diet_zero_sugar_free_names,,India,4,72,5.6,%,True
+named_diet_no_sweetener_found,diet_zero_sugar_free_names,,India,47,72,65.3,%,True
+named_diet_names_an_added_sugar,diet_zero_sugar_free_names,,India,21,72,29.2,%,True
+warning_warning_in_labels_tags,lists_with_intense,,India,3,181,1.7,%,True
+warning_warning_sentence_in_ingredient_text,lists_with_intense,,India,15,181,8.3,%,True
+warning_either,lists_with_intense,,India,18,181,9.9,%,True

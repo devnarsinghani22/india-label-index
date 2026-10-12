@@ -1,0 +1,1411 @@
+{
+ "source": "Open Food Facts (https://world.openfoodfacts.org/), ODbL. off_india.csv read 1 Oct 2026 (India); off_multi.tsv read 6 Oct 2026 (UK, US, France).",
+ "note": "Declared serving = the serving the pack (or the contributor) typed into Open Food Facts, parsed by Open Food Facts to g or ml. Volunteers fill the database, so no country's packs are a random sample. Servings that read exactly 100 g / 100 ml are dropped as placeholders (see 'dropped'); medians with them kept are under 'sensitivity'. Shares: k of n, pct = 100*k/n.",
+ "rules": {
+  "placeholder_100": "serving text is exactly 100 g or 100 ml, with or without '1 portion ()'",
+  "tiny": "under 3 g or ml",
+  "over_pack": "serving more than 5% above the net quantity",
+  "huge": "over 500 g or ml",
+  "single_serve_pack": "net quantity under 60 g"
+ },
+ "min_n": {
+  "other_countries": 100,
+  "india_share": 50,
+  "india_median": 30
+ },
+ "india_all_foods_serving_fields": {
+  "no_serving": 15927,
+  "placeholder_100": 964,
+  "kept": 3761,
+  "tiny": 105,
+  "huge": 29,
+  "over_pack": 34
+ },
+ "categories": {
+  "biscuits": {
+   "US": {
+    "n": 10988,
+    "unit": "g",
+    "median_serving": 30.0,
+    "q1_serving": 28.0,
+    "q3_serving": 36.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 4649,
+     "n": 10988,
+     "pct": 42.3,
+     "shown": true
+    },
+    "sugar": {
+     "n": 1190,
+     "median_per_100": 28.4,
+     "median_per_serving": 9.0,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 1196,
+     "median_per_100": 307.0,
+     "median_per_serving": 97.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 5780,
+    "unit": "g",
+    "median_serving": 25.0,
+    "q1_serving": 15.6,
+    "q3_serving": 33.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 3752,
+     "n": 5780,
+     "pct": 64.9,
+     "shown": true
+    },
+    "sugar": {
+     "n": 5578,
+     "median_per_100": 30.0,
+     "median_per_serving": 7.1,
+     "median_factor_100_over_serving": 4.0,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 5548,
+     "median_per_100": 220.0,
+     "median_per_serving": 47.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 915,
+    "unit": "g",
+    "median_serving": 20.0,
+    "q1_serving": 14.7,
+    "q3_serving": 30.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 664,
+     "n": 915,
+     "pct": 72.6,
+     "shown": true
+    },
+    "sugar": {
+     "n": 903,
+     "median_per_100": 29.2,
+     "median_per_serving": 5.8,
+     "median_factor_100_over_serving": 5.0,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 870,
+     "median_per_100": 232.0,
+     "median_per_serving": 44.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 159,
+    "unit": "g",
+    "median_serving": 20.0,
+    "q1_serving": 14.0,
+    "q3_serving": 30.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 107,
+     "n": 159,
+     "pct": 67.3,
+     "shown": true
+    },
+    "sugar": {
+     "n": 48,
+     "median_per_100": 25.3,
+     "median_per_serving": 5.3,
+     "median_factor_100_over_serving": 5.4,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 47,
+     "median_per_100": 263.0,
+     "median_per_serving": 47.0,
+     "shown": true
+    }
+   }
+  },
+  "chips": {
+   "US": {
+    "n": 2510,
+    "unit": "g",
+    "median_serving": 28.0,
+    "q1_serving": 28.0,
+    "q3_serving": 28.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 2110,
+     "n": 2510,
+     "pct": 84.1,
+     "shown": true
+    },
+    "sugar": {
+     "n": 810,
+     "median_per_100": 3.2,
+     "median_per_serving": 1.0,
+     "median_factor_100_over_serving": 3.6,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 828,
+     "median_per_100": 536.0,
+     "median_per_serving": 160.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 2128,
+    "unit": "g",
+    "median_serving": 30.0,
+    "q1_serving": 25.0,
+    "q3_serving": 30.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 675,
+     "n": 2128,
+     "pct": 31.7,
+     "shown": true
+    },
+    "sugar": {
+     "n": 2051,
+     "median_per_100": 2.0,
+     "median_per_serving": 0.6,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 2051,
+     "median_per_100": 520.0,
+     "median_per_serving": 156.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 852,
+    "unit": "g",
+    "median_serving": 30.0,
+    "q1_serving": 25.0,
+    "q3_serving": 35.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 403,
+     "n": 852,
+     "pct": 47.3,
+     "shown": true
+    },
+    "sugar": {
+     "n": 834,
+     "median_per_100": 2.4,
+     "median_per_serving": 0.7,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 816,
+     "median_per_100": 480.0,
+     "median_per_serving": 142.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 96,
+    "unit": "g",
+    "median_serving": 28.0,
+    "q1_serving": 20.0,
+    "q3_serving": 31.2,
+    "shown_median": true,
+    "under_30g": {
+     "k": 58,
+     "n": 96,
+     "pct": 60.4,
+     "shown": true
+    },
+    "sugar": {
+     "n": 28,
+     "median_per_100": 2.4,
+     "median_per_serving": 0.5,
+     "median_factor_100_over_serving": 4.0,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 28,
+     "median_per_100": 684.0,
+     "median_per_serving": 183.0,
+     "shown": false
+    }
+   }
+  },
+  "chocolate": {
+   "US": {
+    "n": 7494,
+    "unit": "g",
+    "median_serving": 36.0,
+    "q1_serving": 29.0,
+    "q3_serving": 42.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 1890,
+     "n": 7494,
+     "pct": 25.2,
+     "shown": true
+    },
+    "sugar": {
+     "n": 885,
+     "median_per_100": 45.7,
+     "median_per_serving": 13.5,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 881,
+     "median_per_100": 75.0,
+     "median_per_serving": 25.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 4232,
+    "unit": "g",
+    "median_serving": 21.5,
+    "q1_serving": 15.0,
+    "q3_serving": 33.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 2896,
+     "n": 4232,
+     "pct": 68.4,
+     "shown": true
+    },
+    "sugar": {
+     "n": 4093,
+     "median_per_100": 48.0,
+     "median_per_serving": 10.1,
+     "median_factor_100_over_serving": 4.6,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 4058,
+     "median_per_100": 72.0,
+     "median_per_serving": 15.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 998,
+    "unit": "g",
+    "median_serving": 25.0,
+    "q1_serving": 20.0,
+    "q3_serving": 37.5,
+    "shown_median": true,
+    "under_30g": {
+     "k": 579,
+     "n": 998,
+     "pct": 58.0,
+     "shown": true
+    },
+    "sugar": {
+     "n": 979,
+     "median_per_100": 48.0,
+     "median_per_serving": 11.3,
+     "median_factor_100_over_serving": 4.0,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 954,
+     "median_per_100": 84.0,
+     "median_per_serving": 21.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 92,
+    "unit": "g",
+    "median_serving": 20.0,
+    "q1_serving": 10.0,
+    "q3_serving": 24.5,
+    "shown_median": true,
+    "under_30g": {
+     "k": 74,
+     "n": 92,
+     "pct": 80.4,
+     "shown": true
+    },
+    "sugar": {
+     "n": 34,
+     "median_per_100": 45.0,
+     "median_per_serving": 8.4,
+     "median_factor_100_over_serving": 5.0,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 33,
+     "median_per_100": 94.0,
+     "median_per_serving": 11.0,
+     "shown": true
+    }
+   }
+  },
+  "soft_drinks": {
+   "US": {
+    "n": 6150,
+    "unit": "ml",
+    "median_serving": 355.0,
+    "q1_serving": 240.0,
+    "q3_serving": 355.0,
+    "shown_median": true,
+    "at_most_200ml": {
+     "k": 199,
+     "n": 6150,
+     "pct": 3.2,
+     "shown": true
+    },
+    "sugar": {
+     "n": 587,
+     "median_per_100": 1.4,
+     "median_per_serving": 5.0,
+     "median_factor_100_over_serving": 0.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 624,
+     "median_per_100": 8.0,
+     "median_per_serving": 30.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 1934,
+    "unit": "ml",
+    "median_serving": 250.0,
+    "q1_serving": 240.0,
+    "q3_serving": 330.0,
+    "shown_median": true,
+    "at_most_200ml": {
+     "k": 453,
+     "n": 1934,
+     "pct": 23.4,
+     "shown": true
+    },
+    "sugar": {
+     "n": 1850,
+     "median_per_100": 6.6,
+     "median_per_serving": 15.6,
+     "median_factor_100_over_serving": 0.4,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 1830,
+     "median_per_100": 4.0,
+     "median_per_serving": 10.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 595,
+    "unit": "ml",
+    "median_serving": 330.0,
+    "q1_serving": 250.0,
+    "q3_serving": 355.0,
+    "shown_median": true,
+    "at_most_200ml": {
+     "k": 58,
+     "n": 595,
+     "pct": 9.7,
+     "shown": true
+    },
+    "sugar": {
+     "n": 549,
+     "median_per_100": 3.9,
+     "median_per_serving": 8.1,
+     "median_factor_100_over_serving": 0.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 521,
+     "median_per_100": 6.0,
+     "median_per_serving": 18.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 76,
+    "unit": "ml",
+    "median_serving": 200.0,
+    "q1_serving": 200.0,
+    "q3_serving": 250.0,
+    "shown_median": true,
+    "at_most_200ml": {
+     "k": 49,
+     "n": 76,
+     "pct": 64.5,
+     "shown": true
+    },
+    "sugar": {
+     "n": 29,
+     "median_per_100": 10.6,
+     "median_per_serving": 23.0,
+     "median_factor_100_over_serving": 0.5,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 31,
+     "median_per_100": 15.0,
+     "median_per_serving": 40.0,
+     "shown": true
+    }
+   }
+  },
+  "cereals": {
+   "France": {
+    "n": 2661,
+    "unit": "g",
+    "median_serving": 40.0,
+    "q1_serving": 30.0,
+    "q3_serving": 45.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 139,
+     "n": 2661,
+     "pct": 5.2,
+     "shown": true
+    },
+    "sugar": {
+     "n": 2536,
+     "median_per_100": 19.0,
+     "median_per_serving": 7.3,
+     "median_factor_100_over_serving": 2.5,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 2505,
+     "median_per_100": 120.0,
+     "median_per_serving": 45.0,
+     "shown": true
+    }
+   },
+   "US": {
+    "n": 2235,
+    "unit": "g",
+    "median_serving": 40.0,
+    "q1_serving": 33.0,
+    "q3_serving": 55.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 271,
+     "n": 2235,
+     "pct": 12.1,
+     "shown": true
+    },
+    "sugar": {
+     "n": 2201,
+     "median_per_100": 20.0,
+     "median_per_serving": 9.0,
+     "median_factor_100_over_serving": 2.5,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 2157,
+     "median_per_100": 327.0,
+     "median_per_serving": 130.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 784,
+    "unit": "g",
+    "median_serving": 40.0,
+    "q1_serving": 30.0,
+    "q3_serving": 45.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 32,
+     "n": 784,
+     "pct": 4.1,
+     "shown": true
+    },
+    "sugar": {
+     "n": 773,
+     "median_per_100": 14.8,
+     "median_per_serving": 6.0,
+     "median_factor_100_over_serving": 2.5,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 747,
+     "median_per_100": 68.0,
+     "median_per_serving": 32.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 98,
+    "unit": "g",
+    "median_serving": 40.0,
+    "q1_serving": 30.0,
+    "q3_serving": 40.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 8,
+     "n": 98,
+     "pct": 8.2,
+     "shown": true
+    },
+    "sugar": {
+     "n": 31,
+     "median_per_100": 9.2,
+     "median_per_serving": 3.4,
+     "median_factor_100_over_serving": 2.5,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 31,
+     "median_per_100": 130.0,
+     "median_per_serving": 53.0,
+     "shown": true
+    }
+   }
+  },
+  "instant_noodles": {
+   "France": {
+    "n": 372,
+    "unit": "g",
+    "median_serving": 85.0,
+    "q1_serving": 65.0,
+    "q3_serving": 120.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 6,
+     "n": 372,
+     "pct": 1.6,
+     "shown": true
+    },
+    "sugar": {
+     "n": 360,
+     "median_per_100": 2.6,
+     "median_per_serving": 2.5,
+     "median_factor_100_over_serving": 1.2,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 364,
+     "median_per_100": 920.0,
+     "median_per_serving": 964.0,
+     "shown": true
+    }
+   },
+   "US": {
+    "n": 196,
+    "unit": "g",
+    "median_serving": 85.0,
+    "q1_serving": 64.0,
+    "q3_serving": 110.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 2,
+     "n": 196,
+     "pct": 1.0,
+     "shown": true
+    },
+    "sugar": {
+     "n": 93,
+     "median_per_100": 3.1,
+     "median_per_serving": 3.0,
+     "median_factor_100_over_serving": 1.2,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 92,
+     "median_per_100": 1303.0,
+     "median_per_serving": 1139.0,
+     "shown": false
+    }
+   },
+   "UK": {
+    "n": 97,
+    "unit": "g",
+    "median_serving": 87.0,
+    "q1_serving": 70.5,
+    "q3_serving": 142.5,
+    "shown_median": false,
+    "under_30g": {
+     "k": 1,
+     "n": 97,
+     "pct": 1.0,
+     "shown": false
+    },
+    "sugar": {
+     "n": 91,
+     "median_per_100": 1.9,
+     "median_per_serving": 1.9,
+     "median_factor_100_over_serving": 1.1,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 93,
+     "median_per_100": 452.0,
+     "median_per_serving": 573.0,
+     "shown": false
+    }
+   },
+   "India": {
+    "n": 52,
+    "unit": "g",
+    "median_serving": 70.0,
+    "q1_serving": 62.0,
+    "q3_serving": 72.5,
+    "shown_median": true,
+    "under_30g": {
+     "k": 1,
+     "n": 52,
+     "pct": 1.9,
+     "shown": true
+    },
+    "sugar": {
+     "n": 20,
+     "median_per_100": 2.1,
+     "median_per_serving": 1.3,
+     "median_factor_100_over_serving": 1.4,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 18,
+     "median_per_100": 1028.0,
+     "median_per_serving": 720.0,
+     "shown": false
+    }
+   }
+  },
+  "ice_cream": {
+   "US": {
+    "n": 10237,
+    "unit": "g",
+    "median_serving": 84.0,
+    "q1_serving": 66.0,
+    "q3_serving": 98.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 76,
+     "n": 10237,
+     "pct": 0.7,
+     "shown": true
+    },
+    "sugar": {
+     "n": 607,
+     "median_per_100": 22.0,
+     "median_per_serving": 19.0,
+     "median_factor_100_over_serving": 1.1,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 606,
+     "median_per_100": 80.0,
+     "median_per_serving": 70.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 2124,
+    "unit": "g",
+    "median_serving": 67.0,
+    "q1_serving": 53.0,
+    "q3_serving": 78.5,
+    "shown_median": true,
+    "under_30g": {
+     "k": 64,
+     "n": 2124,
+     "pct": 3.0,
+     "shown": true
+    },
+    "sugar": {
+     "n": 2053,
+     "median_per_100": 24.2,
+     "median_per_serving": 15.8,
+     "median_factor_100_over_serving": 1.5,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 2028,
+     "median_per_100": 52.0,
+     "median_per_serving": 34.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 317,
+    "unit": "g",
+    "median_serving": 71.0,
+    "q1_serving": 50.3,
+    "q3_serving": 87.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 10,
+     "n": 317,
+     "pct": 3.2,
+     "shown": true
+    },
+    "sugar": {
+     "n": 313,
+     "median_per_100": 21.7,
+     "median_per_serving": 15.3,
+     "median_factor_100_over_serving": 1.4,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 301,
+     "median_per_100": 52.0,
+     "median_per_serving": 35.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 72,
+    "unit": "g",
+    "median_serving": 62.5,
+    "q1_serving": 53.0,
+    "q3_serving": 76.5,
+    "shown_median": true,
+    "under_30g": {
+     "k": 4,
+     "n": 72,
+     "pct": 5.6,
+     "shown": true
+    },
+    "sugar": {
+     "n": 16,
+     "median_per_100": 23.3,
+     "median_per_serving": 15.9,
+     "median_factor_100_over_serving": 1.5,
+     "shown": false
+    },
+    "sodium_mg": {
+     "n": 15,
+     "median_per_100": 68.0,
+     "median_per_serving": 43.0,
+     "shown": false
+    }
+   }
+  },
+  "namkeen": {
+   "US": {
+    "n": 4750,
+    "unit": "g",
+    "median_serving": 28.0,
+    "q1_serving": 28.0,
+    "q3_serving": 30.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 3258,
+     "n": 4750,
+     "pct": 68.6,
+     "shown": true
+    },
+    "sugar": {
+     "n": 1533,
+     "median_per_100": 3.5,
+     "median_per_serving": 1.0,
+     "median_factor_100_over_serving": 3.6,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 1568,
+     "median_per_100": 607.0,
+     "median_per_serving": 170.0,
+     "shown": true
+    }
+   },
+   "France": {
+    "n": 4645,
+    "unit": "g",
+    "median_serving": 30.0,
+    "q1_serving": 25.0,
+    "q3_serving": 30.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 1739,
+     "n": 4645,
+     "pct": 37.4,
+     "shown": true
+    },
+    "sugar": {
+     "n": 4431,
+     "median_per_100": 2.7,
+     "median_per_serving": 0.8,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 4422,
+     "median_per_100": 560.0,
+     "median_per_serving": 168.0,
+     "shown": true
+    }
+   },
+   "UK": {
+    "n": 1371,
+    "unit": "g",
+    "median_serving": 30.0,
+    "q1_serving": 23.0,
+    "q3_serving": 40.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 668,
+     "n": 1371,
+     "pct": 48.7,
+     "shown": true
+    },
+    "sugar": {
+     "n": 1342,
+     "median_per_100": 2.7,
+     "median_per_serving": 0.7,
+     "median_factor_100_over_serving": 3.3,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 1311,
+     "median_per_100": 480.0,
+     "median_per_serving": 140.0,
+     "shown": true
+    }
+   },
+   "India": {
+    "n": 152,
+    "unit": "g",
+    "median_serving": 28.0,
+    "q1_serving": 20.0,
+    "q3_serving": 36.0,
+    "shown_median": true,
+    "under_30g": {
+     "k": 85,
+     "n": 152,
+     "pct": 55.9,
+     "shown": true
+    },
+    "sugar": {
+     "n": 42,
+     "median_per_100": 2.4,
+     "median_per_serving": 0.5,
+     "median_factor_100_over_serving": 4.0,
+     "shown": true
+    },
+    "sodium_mg": {
+     "n": 41,
+     "median_per_100": 643.0,
+     "median_per_serving": 165.0,
+     "shown": true
+    }
+   }
+  }
+ },
+ "sensitivity_with_placeholders": {
+  "biscuits": {
+   "India": {
+    "n": 189,
+    "median_serving": 25.0
+   },
+   "France": {
+    "n": 6403,
+    "median_serving": 25.0
+   },
+   "US": {
+    "n": 11037,
+    "median_serving": 30.0
+   },
+   "UK": {
+    "n": 1009,
+    "median_serving": 22.0
+   }
+  },
+  "chips": {
+   "India": {
+    "n": 112,
+    "median_serving": 28.0
+   },
+   "UK": {
+    "n": 987,
+    "median_serving": 30.0
+   },
+   "US": {
+    "n": 2540,
+    "median_serving": 28.0
+   },
+   "France": {
+    "n": 2309,
+    "median_serving": 30.0
+   }
+  },
+  "chocolate": {
+   "India": {
+    "n": 113,
+    "median_serving": 20.0
+   },
+   "US": {
+    "n": 7582,
+    "median_serving": 36.0
+   },
+   "France": {
+    "n": 4848,
+    "median_serving": 25.0
+   },
+   "UK": {
+    "n": 1187,
+    "median_serving": 30.0
+   }
+  },
+  "soft_drinks": {
+   "India": {
+    "n": 91,
+    "median_serving": 200.0
+   },
+   "US": {
+    "n": 6171,
+    "median_serving": 355.0
+   },
+   "France": {
+    "n": 2196,
+    "median_serving": 250.0
+   },
+   "UK": {
+    "n": 652,
+    "median_serving": 275.0
+   }
+  },
+  "cereals": {
+   "India": {
+    "n": 116,
+    "median_serving": 40.0
+   },
+   "France": {
+    "n": 3018,
+    "median_serving": 40.0
+   },
+   "US": {
+    "n": 2252,
+    "median_serving": 40.0
+   },
+   "UK": {
+    "n": 923,
+    "median_serving": 45.0
+   }
+  },
+  "instant_noodles": {
+   "India": {
+    "n": 58,
+    "median_serving": 70.0
+   },
+   "US": {
+    "n": 204,
+    "median_serving": 85.0
+   },
+   "UK": {
+    "n": 109,
+    "median_serving": 90.0
+   },
+   "France": {
+    "n": 426,
+    "median_serving": 85.0
+   }
+  },
+  "ice_cream": {
+   "India": {
+    "n": 87,
+    "median_serving": 69.0
+   },
+   "US": {
+    "n": 10263,
+    "median_serving": 85.0
+   },
+   "France": {
+    "n": 2424,
+    "median_serving": 70.0
+   },
+   "UK": {
+    "n": 399,
+    "median_serving": 79.0
+   }
+  },
+  "namkeen": {
+   "India": {
+    "n": 179,
+    "median_serving": 30.0
+   },
+   "UK": {
+    "n": 1615,
+    "median_serving": 30.0
+   },
+   "France": {
+    "n": 5292,
+    "median_serving": 30.0
+   },
+   "US": {
+    "n": 4800,
+    "median_serving": 28.0
+   }
+  }
+ },
+ "dropped": {
+  "biscuits": {
+   "India": {
+    "no_serving": 518,
+    "kept": 159,
+    "placeholder_100": 30,
+    "over_pack": 3,
+    "huge": 1
+   },
+   "France": {
+    "no_serving": 13637,
+    "kept": 5780,
+    "placeholder_100": 623,
+    "tiny": 15,
+    "over_pack": 15
+   },
+   "US": {
+    "kept": 10988,
+    "no_serving": 1044,
+    "tiny": 12,
+    "placeholder_100": 49,
+    "over_pack": 28
+   },
+   "UK": {
+    "no_serving": 1143,
+    "kept": 915,
+    "placeholder_100": 94,
+    "over_pack": 6,
+    "tiny": 5
+   }
+  },
+  "chips": {
+   "India": {
+    "kept": 96,
+    "no_serving": 177,
+    "over_pack": 7,
+    "placeholder_100": 16
+   },
+   "US": {
+    "no_serving": 1666,
+    "kept": 2510,
+    "over_pack": 12,
+    "tiny": 9,
+    "placeholder_100": 30
+   },
+   "UK": {
+    "no_serving": 962,
+    "placeholder_100": 135,
+    "kept": 852,
+    "over_pack": 5,
+    "tiny": 4
+   },
+   "France": {
+    "no_serving": 3643,
+    "kept": 2128,
+    "placeholder_100": 181,
+    "over_pack": 13,
+    "tiny": 4,
+    "huge": 1
+   }
+  },
+  "chocolate": {
+   "India": {
+    "no_serving": 184,
+    "placeholder_100": 21,
+    "kept": 92,
+    "huge": 1,
+    "over_pack": 3
+   },
+   "France": {
+    "no_serving": 16046,
+    "kept": 4232,
+    "over_pack": 15,
+    "placeholder_100": 616,
+    "tiny": 30,
+    "huge": 3
+   },
+   "US": {
+    "kept": 7494,
+    "no_serving": 771,
+    "tiny": 11,
+    "over_pack": 18,
+    "placeholder_100": 88
+   },
+   "UK": {
+    "no_serving": 1362,
+    "kept": 998,
+    "placeholder_100": 189,
+    "tiny": 4,
+    "over_pack": 7,
+    "huge": 1
+   }
+  },
+  "soft_drinks": {
+   "India": {
+    "no_serving": 140,
+    "kept": 76,
+    "placeholder_100": 15,
+    "over_pack": 3,
+    "huge": 6,
+    "tiny": 1
+   },
+   "France": {
+    "no_serving": 4189,
+    "kept": 1934,
+    "over_pack": 63,
+    "huge": 177,
+    "tiny": 10,
+    "placeholder_100": 262
+   },
+   "US": {
+    "no_serving": 943,
+    "kept": 6150,
+    "huge": 246,
+    "over_pack": 82,
+    "tiny": 28,
+    "placeholder_100": 21
+   },
+   "UK": {
+    "no_serving": 727,
+    "kept": 595,
+    "over_pack": 7,
+    "placeholder_100": 57,
+    "huge": 15,
+    "tiny": 1
+   }
+  },
+  "cereals": {
+   "India": {
+    "placeholder_100": 18,
+    "tiny": 1,
+    "no_serving": 142,
+    "kept": 98
+   },
+   "France": {
+    "kept": 2661,
+    "no_serving": 4355,
+    "placeholder_100": 357,
+    "over_pack": 15,
+    "tiny": 3,
+    "huge": 1
+   },
+   "US": {
+    "kept": 2235,
+    "no_serving": 1377,
+    "tiny": 5,
+    "over_pack": 17,
+    "placeholder_100": 17,
+    "huge": 2
+   },
+   "UK": {
+    "no_serving": 910,
+    "placeholder_100": 139,
+    "kept": 784,
+    "over_pack": 11,
+    "tiny": 1
+   }
+  },
+  "instant_noodles": {
+   "India": {
+    "no_serving": 81,
+    "kept": 52,
+    "huge": 1,
+    "placeholder_100": 6
+   },
+   "France": {
+    "no_serving": 670,
+    "kept": 372,
+    "placeholder_100": 54,
+    "over_pack": 151,
+    "huge": 1
+   },
+   "US": {
+    "kept": 196,
+    "no_serving": 61,
+    "over_pack": 6,
+    "placeholder_100": 8
+   },
+   "UK": {
+    "no_serving": 129,
+    "kept": 97,
+    "over_pack": 52,
+    "placeholder_100": 12
+   }
+  },
+  "ice_cream": {
+   "India": {
+    "no_serving": 90,
+    "placeholder_100": 15,
+    "kept": 72,
+    "huge": 1
+   },
+   "France": {
+    "no_serving": 6887,
+    "kept": 2124,
+    "placeholder_100": 300,
+    "huge": 5,
+    "tiny": 7,
+    "over_pack": 32
+   },
+   "US": {
+    "kept": 10237,
+    "no_serving": 796,
+    "over_pack": 126,
+    "placeholder_100": 26,
+    "tiny": 5,
+    "huge": 7
+   },
+   "UK": {
+    "no_serving": 491,
+    "kept": 317,
+    "placeholder_100": 82,
+    "over_pack": 5,
+    "tiny": 1
+   }
+  },
+  "namkeen": {
+   "India": {
+    "no_serving": 291,
+    "kept": 152,
+    "over_pack": 9,
+    "placeholder_100": 27
+   },
+   "US": {
+    "no_serving": 2673,
+    "kept": 4750,
+    "over_pack": 36,
+    "tiny": 16,
+    "placeholder_100": 50,
+    "huge": 1
+   },
+   "France": {
+    "no_serving": 10359,
+    "placeholder_100": 647,
+    "kept": 4645,
+    "over_pack": 23,
+    "tiny": 19,
+    "huge": 7
+   },
+   "UK": {
+    "no_serving": 1635,
+    "placeholder_100": 244,
+    "kept": 1371,
+    "over_pack": 8,
+    "tiny": 6
+   }
+  }
+ },
+ "single_serve_india": {
+  "all_foods": {
+   "n": 262,
+   "serving_smaller_than_pack": {
+    "k": 108,
+    "n": 262,
+    "pct": 41.2,
+    "shown": true
+   },
+   "serving_is_the_pack": {
+    "k": 154,
+    "n": 262,
+    "pct": 58.8,
+    "shown": true
+   }
+  },
+  "biscuits": {
+   "n": 37,
+   "serving_smaller_than_pack": {
+    "k": 24,
+    "n": 37,
+    "pct": 64.9,
+    "shown": false
+   },
+   "serving_is_the_pack": {
+    "k": 13,
+    "n": 37,
+    "pct": 35.1,
+    "shown": false
+   }
+  },
+  "chocolate": {
+   "n": 25,
+   "serving_smaller_than_pack": {
+    "k": 8,
+    "n": 25,
+    "pct": 32.0,
+    "shown": false
+   },
+   "serving_is_the_pack": {
+    "k": 17,
+    "n": 25,
+    "pct": 68.0,
+    "shown": false
+   }
+  },
+  "chips": {
+   "n": 27,
+   "serving_smaller_than_pack": {
+    "k": 18,
+    "n": 27,
+    "pct": 66.7,
+    "shown": false
+   },
+   "serving_is_the_pack": {
+    "k": 9,
+    "n": 27,
+    "pct": 33.3,
+    "shown": false
+   }
+  },
+  "namkeen": {
+   "n": 41,
+   "serving_smaller_than_pack": {
+    "k": 24,
+    "n": 41,
+    "pct": 58.5,
+    "shown": false
+   },
+   "serving_is_the_pack": {
+    "k": 17,
+    "n": 41,
+    "pct": 41.5,
+    "shown": false
+   }
+  }
+ },
+ "india_multi_snapshot_median": {
+  "biscuits": {
+   "n": 159,
+   "median_serving": 20.0
+  },
+  "chips": {
+   "n": 96,
+   "median_serving": 28.0
+  },
+  "chocolate": {
+   "n": 92,
+   "median_serving": 20.0
+  },
+  "soft_drinks": {
+   "n": 76,
+   "median_serving": 200.0
+  },
+  "cereals": {
+   "n": 98,
+   "median_serving": 40.0
+  },
+  "instant_noodles": {
+   "n": 52,
+   "median_serving": 70.0
+  },
+  "ice_cream": {
+   "n": 72,
+   "median_serving": 62.5
+  },
+  "namkeen": {
+   "n": 152,
+   "median_serving": 28.0
+  }
+ }
+}

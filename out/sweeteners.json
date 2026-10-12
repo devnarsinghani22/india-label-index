@@ -1,0 +1,3304 @@
+{
+ "source": "Open Food Facts (https://world.openfoodfacts.org/), ODbL. off_india.csv read 1 Oct 2026 (India); off_multi.tsv read 6 Oct 2026 (UK, US, France).",
+ "note": "text = this script's matcher on English ingredient lists (n = English lists in the group, baby food and supplements out). tag = Open Food Facts' additives_tags (any language; n = products with a list or a tag). intense = the WHO's non-sugar sweeteners (acesulfame K, aspartame, sucralose, saccharin, steviol glycosides, neotame, cyclamate, thaumatin and the rest); polyol = sorbitol, maltitol, xylitol, erythritol, isomalt, mannitol, lactitol. Volunteers fill Open Food Facts, so no country's packs are a random sample. Shares: k of n, pct = 100*k/n.",
+ "min_n": {
+  "other_countries": 100,
+  "india_share": 50
+ },
+ "categories": {
+  "all_foods": {
+   "US": {
+    "text": {
+     "n": 438275,
+     "shown": true,
+     "intense": {
+      "k": 24086,
+      "n": 438275,
+      "pct": 5.5
+     },
+     "polyol": {
+      "k": 9775,
+      "n": 438275,
+      "pct": 2.2
+     },
+     "any": {
+      "k": 29395,
+      "n": 438275,
+      "pct": 6.7
+     },
+     "added_sugar": {
+      "k": 247411,
+      "n": 438275,
+      "pct": 56.5
+     },
+     "both_sugar_and_intense": {
+      "k": 11834,
+      "n": 438275,
+      "pct": 2.7
+     },
+     "both_among_intense": {
+      "k": 11834,
+      "n": 24086,
+      "pct": 49.1
+     },
+     "which_intense": {
+      "sucralose": 11057,
+      "acesulfame K": 8220,
+      "steviol glycosides": 7562,
+      "aspartame": 3978,
+      "monk fruit": 2727,
+      "unnamed artificial sweetener": 328,
+      "neotame": 232,
+      "saccharin": 204,
+      "thaumatin": 16,
+      "cyclamate": 13,
+      "neohesperidine DC": 5,
+      "advantame": 2,
+      "aspartame-acesulfame salt": 1
+     },
+     "which_polyol": {
+      "sorbitol": 5583,
+      "erythritol": 2410,
+      "maltitol": 1809,
+      "xylitol": 962,
+      "mannitol": 587,
+      "polyglycitol": 391,
+      "isomalt": 266,
+      "lactitol": 77
+     }
+    },
+    "tag": {
+     "n": 444382,
+     "shown": true,
+     "intense": {
+      "k": 18514,
+      "n": 444382,
+      "pct": 4.2
+     },
+     "polyol": {
+      "k": 9493,
+      "n": 444382,
+      "pct": 2.1
+     },
+     "which_intense": {
+      "sucralose": 10911,
+      "acesulfame K": 7917,
+      "aspartame": 3831,
+      "steviol glycosides": 3707,
+      "neotame": 227,
+      "saccharin": 205,
+      "aspartame-acesulfame salt": 72,
+      "cyclamate": 18,
+      "thaumatin": 16,
+      "neohesperidine DC": 7,
+      "advantame": 2
+     }
+    }
+   },
+   "France": {
+    "text": {
+     "n": 185306,
+     "shown": true,
+     "intense": {
+      "k": 3059,
+      "n": 185306,
+      "pct": 1.7
+     },
+     "polyol": {
+      "k": 2216,
+      "n": 185306,
+      "pct": 1.2
+     },
+     "any": {
+      "k": 4493,
+      "n": 185306,
+      "pct": 2.4
+     },
+     "added_sugar": {
+      "k": 32095,
+      "n": 185306,
+      "pct": 17.3
+     },
+     "both_sugar_and_intense": {
+      "k": 848,
+      "n": 185306,
+      "pct": 0.5
+     },
+     "both_among_intense": {
+      "k": 848,
+      "n": 3059,
+      "pct": 27.7
+     },
+     "which_intense": {
+      "sucralose": 1633,
+      "acesulfame K": 1113,
+      "aspartame": 728,
+      "steviol glycosides": 673,
+      "saccharin": 193,
+      "cyclamate": 123,
+      "monk fruit": 32,
+      "unnamed artificial sweetener": 32,
+      "neotame": 14,
+      "thaumatin": 10,
+      "neohesperidine DC": 9
+     },
+     "which_polyol": {
+      "sorbitol": 1431,
+      "maltitol": 657,
+      "xylitol": 296,
+      "isomalt": 220,
+      "erythritol": 188,
+      "mannitol": 164,
+      "polyglycitol": 15,
+      "lactitol": 10
+     }
+    },
+    "tag": {
+     "n": 363227,
+     "shown": true,
+     "intense": {
+      "k": 7846,
+      "n": 363227,
+      "pct": 2.2
+     },
+     "polyol": {
+      "k": 8424,
+      "n": 363227,
+      "pct": 2.3
+     },
+     "which_intense": {
+      "sucralose": 3933,
+      "acesulfame K": 3800,
+      "aspartame": 1885,
+      "steviol glycosides": 1779,
+      "saccharin": 395,
+      "cyclamate": 384,
+      "neohesperidine DC": 58,
+      "thaumatin": 37,
+      "aspartame-acesulfame salt": 30,
+      "neotame": 18
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 58197,
+     "shown": true,
+     "intense": {
+      "k": 2815,
+      "n": 58197,
+      "pct": 4.8
+     },
+     "polyol": {
+      "k": 1117,
+      "n": 58197,
+      "pct": 1.9
+     },
+     "any": {
+      "k": 3536,
+      "n": 58197,
+      "pct": 6.1
+     },
+     "added_sugar": {
+      "k": 33476,
+      "n": 58197,
+      "pct": 57.5
+     },
+     "both_sugar_and_intense": {
+      "k": 1364,
+      "n": 58197,
+      "pct": 2.3
+     },
+     "both_among_intense": {
+      "k": 1364,
+      "n": 2815,
+      "pct": 48.5
+     },
+     "which_intense": {
+      "sucralose": 1596,
+      "acesulfame K": 1272,
+      "aspartame": 576,
+      "steviol glycosides": 501,
+      "saccharin": 214,
+      "cyclamate": 37,
+      "unnamed artificial sweetener": 10,
+      "monk fruit": 7,
+      "neotame": 5,
+      "thaumatin": 4,
+      "neohesperidine DC": 3
+     },
+     "which_polyol": {
+      "sorbitol": 659,
+      "maltitol": 209,
+      "erythritol": 200,
+      "xylitol": 115,
+      "isomalt": 80,
+      "mannitol": 68,
+      "lactitol": 6
+     }
+    },
+    "tag": {
+     "n": 61585,
+     "shown": true,
+     "intense": {
+      "k": 2727,
+      "n": 61585,
+      "pct": 4.4
+     },
+     "polyol": {
+      "k": 1157,
+      "n": 61585,
+      "pct": 1.9
+     },
+     "which_intense": {
+      "sucralose": 1578,
+      "acesulfame K": 1197,
+      "aspartame": 571,
+      "steviol glycosides": 415,
+      "saccharin": 206,
+      "cyclamate": 34,
+      "neotame": 6,
+      "aspartame-acesulfame salt": 5,
+      "thaumatin": 4,
+      "neohesperidine DC": 2
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 4647,
+     "shown": true,
+     "intense": {
+      "k": 181,
+      "n": 4647,
+      "pct": 3.9
+     },
+     "polyol": {
+      "k": 121,
+      "n": 4647,
+      "pct": 2.6
+     },
+     "any": {
+      "k": 255,
+      "n": 4647,
+      "pct": 5.5
+     },
+     "added_sugar": {
+      "k": 2441,
+      "n": 4647,
+      "pct": 52.5
+     },
+     "both_sugar_and_intense": {
+      "k": 68,
+      "n": 4647,
+      "pct": 1.5
+     },
+     "both_among_intense": {
+      "k": 68,
+      "n": 181,
+      "pct": 37.6
+     },
+     "which_intense": {
+      "steviol glycosides": 79,
+      "sucralose": 73,
+      "acesulfame K": 40,
+      "aspartame": 21,
+      "unnamed artificial sweetener": 21,
+      "monk fruit": 11,
+      "saccharin": 2,
+      "thaumatin": 1
+     },
+     "which_polyol": {
+      "sorbitol": 72,
+      "maltitol": 39,
+      "erythritol": 24,
+      "isomalt": 5,
+      "xylitol": 5,
+      "mannitol": 2
+     }
+    },
+    "tag": {
+     "n": 5170,
+     "shown": true,
+     "intense": {
+      "k": 156,
+      "n": 5170,
+      "pct": 3.0
+     },
+     "polyol": {
+      "k": 122,
+      "n": 5170,
+      "pct": 2.4
+     },
+     "which_intense": {
+      "sucralose": 68,
+      "steviol glycosides": 67,
+      "acesulfame K": 39,
+      "aspartame": 21,
+      "saccharin": 1,
+      "thaumatin": 1
+     }
+    }
+   }
+  },
+  "soft_drinks": {
+   "US": {
+    "text": {
+     "n": 6941,
+     "shown": true,
+     "intense": {
+      "k": 2490,
+      "n": 6941,
+      "pct": 35.9
+     },
+     "polyol": {
+      "k": 250,
+      "n": 6941,
+      "pct": 3.6
+     },
+     "any": {
+      "k": 2504,
+      "n": 6941,
+      "pct": 36.1
+     },
+     "added_sugar": {
+      "k": 5120,
+      "n": 6941,
+      "pct": 73.8
+     },
+     "both_sugar_and_intense": {
+      "k": 1058,
+      "n": 6941,
+      "pct": 15.2
+     },
+     "both_among_intense": {
+      "k": 1058,
+      "n": 2490,
+      "pct": 42.5
+     },
+     "which_intense": {
+      "sucralose": 1101,
+      "acesulfame K": 1049,
+      "aspartame": 790,
+      "steviol glycosides": 597,
+      "monk fruit": 76,
+      "neotame": 10,
+      "saccharin": 9,
+      "unnamed artificial sweetener": 5,
+      "cyclamate": 2
+     },
+     "which_polyol": {
+      "erythritol": 244,
+      "sorbitol": 3,
+      "xylitol": 2,
+      "maltitol": 1,
+      "mannitol": 1
+     }
+    },
+    "tag": {
+     "n": 6994,
+     "shown": true,
+     "intense": {
+      "k": 2212,
+      "n": 6994,
+      "pct": 31.6
+     },
+     "polyol": {
+      "k": 245,
+      "n": 6994,
+      "pct": 3.5
+     },
+     "which_intense": {
+      "sucralose": 1100,
+      "acesulfame K": 1013,
+      "aspartame": 785,
+      "steviol glycosides": 344,
+      "neotame": 10,
+      "saccharin": 9,
+      "cyclamate": 4,
+      "neohesperidine DC": 1
+     }
+    }
+   },
+   "France": {
+    "text": {
+     "n": 2203,
+     "shown": true,
+     "intense": {
+      "k": 433,
+      "n": 2203,
+      "pct": 19.7
+     },
+     "polyol": {
+      "k": 19,
+      "n": 2203,
+      "pct": 0.9
+     },
+     "any": {
+      "k": 434,
+      "n": 2203,
+      "pct": 19.7
+     },
+     "added_sugar": {
+      "k": 539,
+      "n": 2203,
+      "pct": 24.5
+     },
+     "both_sugar_and_intense": {
+      "k": 144,
+      "n": 2203,
+      "pct": 6.5
+     },
+     "both_among_intense": {
+      "k": 144,
+      "n": 433,
+      "pct": 33.3
+     },
+     "which_intense": {
+      "acesulfame K": 273,
+      "sucralose": 211,
+      "aspartame": 168,
+      "steviol glycosides": 42,
+      "saccharin": 28,
+      "cyclamate": 25,
+      "neohesperidine DC": 5,
+      "unnamed artificial sweetener": 3,
+      "monk fruit": 1
+     },
+     "which_polyol": {
+      "erythritol": 18,
+      "sorbitol": 1
+     }
+    },
+    "tag": {
+     "n": 4623,
+     "shown": true,
+     "intense": {
+      "k": 1484,
+      "n": 4623,
+      "pct": 32.1
+     },
+     "polyol": {
+      "k": 55,
+      "n": 4623,
+      "pct": 1.2
+     },
+     "which_intense": {
+      "acesulfame K": 994,
+      "sucralose": 720,
+      "aspartame": 483,
+      "steviol glycosides": 224,
+      "cyclamate": 120,
+      "saccharin": 80,
+      "neohesperidine DC": 11,
+      "aspartame-acesulfame salt": 5,
+      "thaumatin": 5
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 927,
+     "shown": true,
+     "intense": {
+      "k": 591,
+      "n": 927,
+      "pct": 63.8
+     },
+     "polyol": {
+      "k": 39,
+      "n": 927,
+      "pct": 4.2
+     },
+     "any": {
+      "k": 592,
+      "n": 927,
+      "pct": 63.9
+     },
+     "added_sugar": {
+      "k": 492,
+      "n": 927,
+      "pct": 53.1
+     },
+     "both_sugar_and_intense": {
+      "k": 291,
+      "n": 927,
+      "pct": 31.4
+     },
+     "both_among_intense": {
+      "k": 291,
+      "n": 591,
+      "pct": 49.2
+     },
+     "which_intense": {
+      "acesulfame K": 390,
+      "sucralose": 287,
+      "aspartame": 225,
+      "steviol glycosides": 81,
+      "saccharin": 44,
+      "cyclamate": 8,
+      "neohesperidine DC": 3,
+      "thaumatin": 2,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "erythritol": 39
+     }
+    },
+    "tag": {
+     "n": 1001,
+     "shown": true,
+     "intense": {
+      "k": 597,
+      "n": 1001,
+      "pct": 59.6
+     },
+     "polyol": {
+      "k": 42,
+      "n": 1001,
+      "pct": 4.2
+     },
+     "which_intense": {
+      "acesulfame K": 380,
+      "sucralose": 292,
+      "aspartame": 229,
+      "steviol glycosides": 72,
+      "saccharin": 40,
+      "cyclamate": 9,
+      "neohesperidine DC": 2,
+      "thaumatin": 2
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 139,
+     "shown": true,
+     "intense": {
+      "k": 44,
+      "n": 139,
+      "pct": 31.7
+     },
+     "polyol": {
+      "k": 7,
+      "n": 139,
+      "pct": 5.0
+     },
+     "any": {
+      "k": 44,
+      "n": 139,
+      "pct": 31.7
+     },
+     "added_sugar": {
+      "k": 104,
+      "n": 139,
+      "pct": 74.8
+     },
+     "both_sugar_and_intense": {
+      "k": 20,
+      "n": 139,
+      "pct": 14.4
+     },
+     "both_among_intense": {
+      "k": 20,
+      "n": 44,
+      "pct": 45.5
+     },
+     "which_intense": {
+      "sucralose": 27,
+      "acesulfame K": 18,
+      "steviol glycosides": 15,
+      "aspartame": 5,
+      "unnamed artificial sweetener": 4
+     },
+     "which_polyol": {
+      "erythritol": 7
+     }
+    },
+    "tag": {
+     "n": 147,
+     "shown": true,
+     "intense": {
+      "k": 47,
+      "n": 147,
+      "pct": 32.0
+     },
+     "polyol": {
+      "k": 7,
+      "n": 147,
+      "pct": 4.8
+     },
+     "which_intense": {
+      "sucralose": 27,
+      "acesulfame K": 19,
+      "steviol glycosides": 16,
+      "aspartame": 6
+     }
+    }
+   }
+  },
+  "juices": {
+   "France": {
+    "text": {
+     "n": 6957,
+     "shown": true,
+     "intense": {
+      "k": 205,
+      "n": 6957,
+      "pct": 2.9
+     },
+     "polyol": {
+      "k": 4,
+      "n": 6957,
+      "pct": 0.1
+     },
+     "any": {
+      "k": 206,
+      "n": 6957,
+      "pct": 3.0
+     },
+     "added_sugar": {
+      "k": 441,
+      "n": 6957,
+      "pct": 6.3
+     },
+     "both_sugar_and_intense": {
+      "k": 95,
+      "n": 6957,
+      "pct": 1.4
+     },
+     "both_among_intense": {
+      "k": 95,
+      "n": 205,
+      "pct": 46.3
+     },
+     "which_intense": {
+      "sucralose": 136,
+      "acesulfame K": 88,
+      "aspartame": 32,
+      "steviol glycosides": 25,
+      "saccharin": 17,
+      "cyclamate": 14,
+      "unnamed artificial sweetener": 2,
+      "neohesperidine DC": 2
+     },
+     "which_polyol": {
+      "erythritol": 2,
+      "sorbitol": 2
+     }
+    },
+    "tag": {
+     "n": 9423,
+     "shown": true,
+     "intense": {
+      "k": 668,
+      "n": 9423,
+      "pct": 7.1
+     },
+     "polyol": {
+      "k": 6,
+      "n": 9423,
+      "pct": 0.1
+     },
+     "which_intense": {
+      "sucralose": 395,
+      "acesulfame K": 343,
+      "steviol glycosides": 138,
+      "aspartame": 98,
+      "cyclamate": 59,
+      "saccharin": 47,
+      "neohesperidine DC": 9
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 1761,
+     "shown": true,
+     "intense": {
+      "k": 234,
+      "n": 1761,
+      "pct": 13.3
+     },
+     "polyol": {
+      "k": 12,
+      "n": 1761,
+      "pct": 0.7
+     },
+     "any": {
+      "k": 234,
+      "n": 1761,
+      "pct": 13.3
+     },
+     "added_sugar": {
+      "k": 1119,
+      "n": 1761,
+      "pct": 63.5
+     },
+     "both_sugar_and_intense": {
+      "k": 184,
+      "n": 1761,
+      "pct": 10.4
+     },
+     "both_among_intense": {
+      "k": 184,
+      "n": 234,
+      "pct": 78.6
+     },
+     "which_intense": {
+      "sucralose": 123,
+      "steviol glycosides": 85,
+      "acesulfame K": 46,
+      "monk fruit": 20,
+      "aspartame": 12,
+      "neotame": 6,
+      "saccharin": 2
+     },
+     "which_polyol": {
+      "erythritol": 11,
+      "maltitol": 1
+     }
+    },
+    "tag": {
+     "n": 1784,
+     "shown": true,
+     "intense": {
+      "k": 174,
+      "n": 1784,
+      "pct": 9.8
+     },
+     "polyol": {
+      "k": 12,
+      "n": 1784,
+      "pct": 0.7
+     },
+     "which_intense": {
+      "sucralose": 123,
+      "acesulfame K": 50,
+      "steviol glycosides": 34,
+      "aspartame": 12,
+      "neotame": 6,
+      "saccharin": 3
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 807,
+     "shown": true,
+     "intense": {
+      "k": 238,
+      "n": 807,
+      "pct": 29.5
+     },
+     "polyol": {
+      "k": 0,
+      "n": 807,
+      "pct": 0.0
+     },
+     "any": {
+      "k": 238,
+      "n": 807,
+      "pct": 29.5
+     },
+     "added_sugar": {
+      "k": 347,
+      "n": 807,
+      "pct": 43.0
+     },
+     "both_sugar_and_intense": {
+      "k": 159,
+      "n": 807,
+      "pct": 19.7
+     },
+     "both_among_intense": {
+      "k": 159,
+      "n": 238,
+      "pct": 66.8
+     },
+     "which_intense": {
+      "sucralose": 174,
+      "acesulfame K": 134,
+      "aspartame": 34,
+      "steviol glycosides": 26,
+      "saccharin": 13,
+      "cyclamate": 2,
+      "neohesperidine DC": 2,
+      "neotame": 1,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {}
+    },
+    "tag": {
+     "n": 849,
+     "shown": true,
+     "intense": {
+      "k": 245,
+      "n": 849,
+      "pct": 28.9
+     },
+     "polyol": {
+      "k": 0,
+      "n": 849,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "sucralose": 179,
+      "acesulfame K": 128,
+      "aspartame": 32,
+      "steviol glycosides": 26,
+      "saccharin": 13,
+      "cyclamate": 2,
+      "neotame": 1,
+      "neohesperidine DC": 1
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 107,
+     "shown": true,
+     "intense": {
+      "k": 11,
+      "n": 107,
+      "pct": 10.3
+     },
+     "polyol": {
+      "k": 1,
+      "n": 107,
+      "pct": 0.9
+     },
+     "any": {
+      "k": 11,
+      "n": 107,
+      "pct": 10.3
+     },
+     "added_sugar": {
+      "k": 92,
+      "n": 107,
+      "pct": 86.0
+     },
+     "both_sugar_and_intense": {
+      "k": 10,
+      "n": 107,
+      "pct": 9.3
+     },
+     "both_among_intense": {
+      "k": 10,
+      "n": 11,
+      "pct": 90.9
+     },
+     "which_intense": {
+      "steviol glycosides": 9,
+      "acesulfame K": 2,
+      "sucralose": 2
+     },
+     "which_polyol": {
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 109,
+     "shown": true,
+     "intense": {
+      "k": 10,
+      "n": 109,
+      "pct": 9.2
+     },
+     "polyol": {
+      "k": 1,
+      "n": 109,
+      "pct": 0.9
+     },
+     "which_intense": {
+      "steviol glycosides": 8,
+      "acesulfame K": 2,
+      "sucralose": 2
+     }
+    }
+   }
+  },
+  "milk_drinks": {
+   "France": {
+    "text": {
+     "n": 1173,
+     "shown": true,
+     "intense": {
+      "k": 49,
+      "n": 1173,
+      "pct": 4.2
+     },
+     "polyol": {
+      "k": 1,
+      "n": 1173,
+      "pct": 0.1
+     },
+     "any": {
+      "k": 49,
+      "n": 1173,
+      "pct": 4.2
+     },
+     "added_sugar": {
+      "k": 222,
+      "n": 1173,
+      "pct": 18.9
+     },
+     "both_sugar_and_intense": {
+      "k": 17,
+      "n": 1173,
+      "pct": 1.4
+     },
+     "both_among_intense": {
+      "k": 17,
+      "n": 49,
+      "pct": 34.7
+     },
+     "which_intense": {
+      "sucralose": 34,
+      "acesulfame K": 24,
+      "aspartame": 7,
+      "steviol glycosides": 4,
+      "monk fruit": 2,
+      "saccharin": 2,
+      "cyclamate": 1
+     },
+     "which_polyol": {
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 2746,
+     "shown": true,
+     "intense": {
+      "k": 143,
+      "n": 2746,
+      "pct": 5.2
+     },
+     "polyol": {
+      "k": 4,
+      "n": 2746,
+      "pct": 0.1
+     },
+     "which_intense": {
+      "sucralose": 99,
+      "acesulfame K": 81,
+      "aspartame": 22,
+      "steviol glycosides": 7,
+      "cyclamate": 5,
+      "saccharin": 4
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 597,
+     "shown": true,
+     "intense": {
+      "k": 96,
+      "n": 597,
+      "pct": 16.1
+     },
+     "polyol": {
+      "k": 8,
+      "n": 597,
+      "pct": 1.3
+     },
+     "any": {
+      "k": 97,
+      "n": 597,
+      "pct": 16.2
+     },
+     "added_sugar": {
+      "k": 420,
+      "n": 597,
+      "pct": 70.4
+     },
+     "both_sugar_and_intense": {
+      "k": 54,
+      "n": 597,
+      "pct": 9.0
+     },
+     "both_among_intense": {
+      "k": 54,
+      "n": 96,
+      "pct": 56.2
+     },
+     "which_intense": {
+      "steviol glycosides": 54,
+      "monk fruit": 32,
+      "sucralose": 31,
+      "acesulfame K": 21,
+      "unnamed artificial sweetener": 1,
+      "neotame": 1
+     },
+     "which_polyol": {
+      "erythritol": 4,
+      "maltitol": 3,
+      "sorbitol": 1
+     }
+    },
+    "tag": {
+     "n": 624,
+     "shown": true,
+     "intense": {
+      "k": 50,
+      "n": 624,
+      "pct": 8.0
+     },
+     "polyol": {
+      "k": 8,
+      "n": 624,
+      "pct": 1.3
+     },
+     "which_intense": {
+      "sucralose": 31,
+      "acesulfame K": 20,
+      "steviol glycosides": 17,
+      "neotame": 1
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 484,
+     "shown": true,
+     "intense": {
+      "k": 67,
+      "n": 484,
+      "pct": 13.8
+     },
+     "polyol": {
+      "k": 4,
+      "n": 484,
+      "pct": 0.8
+     },
+     "any": {
+      "k": 68,
+      "n": 484,
+      "pct": 14.0
+     },
+     "added_sugar": {
+      "k": 302,
+      "n": 484,
+      "pct": 62.4
+     },
+     "both_sugar_and_intense": {
+      "k": 39,
+      "n": 484,
+      "pct": 8.1
+     },
+     "both_among_intense": {
+      "k": 39,
+      "n": 67,
+      "pct": 58.2
+     },
+     "which_intense": {
+      "sucralose": 47,
+      "acesulfame K": 26,
+      "steviol glycosides": 8,
+      "aspartame": 4,
+      "saccharin": 3,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "maltitol": 2,
+      "sorbitol": 1,
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 497,
+     "shown": true,
+     "intense": {
+      "k": 63,
+      "n": 497,
+      "pct": 12.7
+     },
+     "polyol": {
+      "k": 4,
+      "n": 497,
+      "pct": 0.8
+     },
+     "which_intense": {
+      "sucralose": 46,
+      "acesulfame K": 24,
+      "steviol glycosides": 6,
+      "aspartame": 4,
+      "saccharin": 3
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 102,
+     "shown": true,
+     "intense": {
+      "k": 7,
+      "n": 102,
+      "pct": 6.9
+     },
+     "polyol": {
+      "k": 5,
+      "n": 102,
+      "pct": 4.9
+     },
+     "any": {
+      "k": 8,
+      "n": 102,
+      "pct": 7.8
+     },
+     "added_sugar": {
+      "k": 83,
+      "n": 102,
+      "pct": 81.4
+     },
+     "both_sugar_and_intense": {
+      "k": 2,
+      "n": 102,
+      "pct": 2.0
+     },
+     "both_among_intense": {
+      "k": 2,
+      "n": 7,
+      "pct": 28.6
+     },
+     "which_intense": {
+      "steviol glycosides": 5,
+      "monk fruit": 1,
+      "sucralose": 1
+     },
+     "which_polyol": {
+      "maltitol": 3,
+      "sorbitol": 1,
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 103,
+     "shown": true,
+     "intense": {
+      "k": 6,
+      "n": 103,
+      "pct": 5.8
+     },
+     "polyol": {
+      "k": 5,
+      "n": 103,
+      "pct": 4.9
+     },
+     "which_intense": {
+      "steviol glycosides": 5,
+      "sucralose": 1
+     }
+    }
+   }
+  },
+  "biscuits": {
+   "France": {
+    "text": {
+     "n": 3441,
+     "shown": true,
+     "intense": {
+      "k": 9,
+      "n": 3441,
+      "pct": 0.3
+     },
+     "polyol": {
+      "k": 158,
+      "n": 3441,
+      "pct": 4.6
+     },
+     "any": {
+      "k": 160,
+      "n": 3441,
+      "pct": 4.6
+     },
+     "added_sugar": {
+      "k": 1603,
+      "n": 3441,
+      "pct": 46.6
+     },
+     "both_sugar_and_intense": {
+      "k": 3,
+      "n": 3441,
+      "pct": 0.1
+     },
+     "both_among_intense": {
+      "k": 3,
+      "n": 9,
+      "pct": 33.3
+     },
+     "which_intense": {
+      "steviol glycosides": 4,
+      "sucralose": 3,
+      "acesulfame K": 3,
+      "unnamed artificial sweetener": 1,
+      "aspartame": 1
+     },
+     "which_polyol": {
+      "maltitol": 99,
+      "sorbitol": 54,
+      "isomalt": 11,
+      "xylitol": 3,
+      "erythritol": 3
+     }
+    },
+    "tag": {
+     "n": 13464,
+     "shown": true,
+     "intense": {
+      "k": 58,
+      "n": 13464,
+      "pct": 0.4
+     },
+     "polyol": {
+      "k": 705,
+      "n": 13464,
+      "pct": 5.2
+     },
+     "which_intense": {
+      "sucralose": 36,
+      "steviol glycosides": 12,
+      "acesulfame K": 10,
+      "aspartame": 2,
+      "cyclamate": 1,
+      "saccharin": 1
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 11133,
+     "shown": true,
+     "intense": {
+      "k": 197,
+      "n": 11133,
+      "pct": 1.8
+     },
+     "polyol": {
+      "k": 350,
+      "n": 11133,
+      "pct": 3.1
+     },
+     "any": {
+      "k": 433,
+      "n": 11133,
+      "pct": 3.9
+     },
+     "added_sugar": {
+      "k": 10627,
+      "n": 11133,
+      "pct": 95.5
+     },
+     "both_sugar_and_intense": {
+      "k": 79,
+      "n": 11133,
+      "pct": 0.7
+     },
+     "both_among_intense": {
+      "k": 79,
+      "n": 197,
+      "pct": 40.1
+     },
+     "which_intense": {
+      "steviol glycosides": 76,
+      "sucralose": 59,
+      "monk fruit": 58,
+      "acesulfame K": 42,
+      "aspartame": 18,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "sorbitol": 233,
+      "maltitol": 94,
+      "erythritol": 52,
+      "isomalt": 4,
+      "lactitol": 2,
+      "xylitol": 2
+     }
+    },
+    "tag": {
+     "n": 11216,
+     "shown": true,
+     "intense": {
+      "k": 124,
+      "n": 11216,
+      "pct": 1.1
+     },
+     "polyol": {
+      "k": 344,
+      "n": 11216,
+      "pct": 3.1
+     },
+     "which_intense": {
+      "sucralose": 59,
+      "acesulfame K": 42,
+      "steviol glycosides": 38,
+      "aspartame": 18
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 1429,
+     "shown": true,
+     "intense": {
+      "k": 4,
+      "n": 1429,
+      "pct": 0.3
+     },
+     "polyol": {
+      "k": 62,
+      "n": 1429,
+      "pct": 4.3
+     },
+     "any": {
+      "k": 65,
+      "n": 1429,
+      "pct": 4.5
+     },
+     "added_sugar": {
+      "k": 1300,
+      "n": 1429,
+      "pct": 91.0
+     },
+     "both_sugar_and_intense": {
+      "k": 2,
+      "n": 1429,
+      "pct": 0.1
+     },
+     "both_among_intense": {
+      "k": 2,
+      "n": 4,
+      "pct": 50.0
+     },
+     "which_intense": {
+      "sucralose": 4
+     },
+     "which_polyol": {
+      "maltitol": 42,
+      "sorbitol": 20,
+      "isomalt": 2,
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 1593,
+     "shown": true,
+     "intense": {
+      "k": 4,
+      "n": 1593,
+      "pct": 0.3
+     },
+     "polyol": {
+      "k": 70,
+      "n": 1593,
+      "pct": 4.4
+     },
+     "which_intense": {
+      "sucralose": 4
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 338,
+     "shown": true,
+     "intense": {
+      "k": 3,
+      "n": 338,
+      "pct": 0.9
+     },
+     "polyol": {
+      "k": 13,
+      "n": 338,
+      "pct": 3.8
+     },
+     "any": {
+      "k": 14,
+      "n": 338,
+      "pct": 4.1
+     },
+     "added_sugar": {
+      "k": 313,
+      "n": 338,
+      "pct": 92.6
+     },
+     "both_sugar_and_intense": {
+      "k": 0,
+      "n": 338,
+      "pct": 0.0
+     },
+     "both_among_intense": {
+      "k": 0,
+      "n": 3,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "sucralose": 2,
+      "steviol glycosides": 1
+     },
+     "which_polyol": {
+      "maltitol": 7,
+      "sorbitol": 6
+     }
+    },
+    "tag": {
+     "n": 348,
+     "shown": true,
+     "intense": {
+      "k": 3,
+      "n": 348,
+      "pct": 0.9
+     },
+     "polyol": {
+      "k": 13,
+      "n": 348,
+      "pct": 3.7
+     },
+     "which_intense": {
+      "sucralose": 2,
+      "steviol glycosides": 1
+     }
+    }
+   }
+  },
+  "chocolate": {
+   "France": {
+    "text": {
+     "n": 4582,
+     "shown": true,
+     "intense": {
+      "k": 31,
+      "n": 4582,
+      "pct": 0.7
+     },
+     "polyol": {
+      "k": 146,
+      "n": 4582,
+      "pct": 3.2
+     },
+     "any": {
+      "k": 153,
+      "n": 4582,
+      "pct": 3.3
+     },
+     "added_sugar": {
+      "k": 1738,
+      "n": 4582,
+      "pct": 37.9
+     },
+     "both_sugar_and_intense": {
+      "k": 4,
+      "n": 4582,
+      "pct": 0.1
+     },
+     "both_among_intense": {
+      "k": 4,
+      "n": 31,
+      "pct": 12.9
+     },
+     "which_intense": {
+      "steviol glycosides": 21,
+      "sucralose": 9,
+      "acesulfame K": 2,
+      "aspartame": 2,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "sorbitol": 71,
+      "maltitol": 60,
+      "xylitol": 6,
+      "erythritol": 6,
+      "lactitol": 5,
+      "isomalt": 5
+     }
+    },
+    "tag": {
+     "n": 13941,
+     "shown": true,
+     "intense": {
+      "k": 68,
+      "n": 13941,
+      "pct": 0.5
+     },
+     "polyol": {
+      "k": 953,
+      "n": 13941,
+      "pct": 6.8
+     },
+     "which_intense": {
+      "steviol glycosides": 44,
+      "acesulfame K": 16,
+      "sucralose": 12,
+      "aspartame": 9
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 7682,
+     "shown": true,
+     "intense": {
+      "k": 175,
+      "n": 7682,
+      "pct": 2.3
+     },
+     "polyol": {
+      "k": 672,
+      "n": 7682,
+      "pct": 8.7
+     },
+     "any": {
+      "k": 715,
+      "n": 7682,
+      "pct": 9.3
+     },
+     "added_sugar": {
+      "k": 7365,
+      "n": 7682,
+      "pct": 95.9
+     },
+     "both_sugar_and_intense": {
+      "k": 31,
+      "n": 7682,
+      "pct": 0.4
+     },
+     "both_among_intense": {
+      "k": 31,
+      "n": 175,
+      "pct": 17.7
+     },
+     "which_intense": {
+      "steviol glycosides": 100,
+      "sucralose": 40,
+      "monk fruit": 39,
+      "acesulfame K": 7,
+      "aspartame": 1,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "sorbitol": 512,
+      "erythritol": 94,
+      "maltitol": 78,
+      "xylitol": 21,
+      "isomalt": 8,
+      "lactitol": 5,
+      "polyglycitol": 2
+     }
+    },
+    "tag": {
+     "n": 7747,
+     "shown": true,
+     "intense": {
+      "k": 67,
+      "n": 7747,
+      "pct": 0.9
+     },
+     "polyol": {
+      "k": 668,
+      "n": 7747,
+      "pct": 8.6
+     },
+     "which_intense": {
+      "sucralose": 40,
+      "steviol glycosides": 22,
+      "acesulfame K": 6,
+      "aspartame": 1
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 1823,
+     "shown": true,
+     "intense": {
+      "k": 12,
+      "n": 1823,
+      "pct": 0.7
+     },
+     "polyol": {
+      "k": 75,
+      "n": 1823,
+      "pct": 4.1
+     },
+     "any": {
+      "k": 80,
+      "n": 1823,
+      "pct": 4.4
+     },
+     "added_sugar": {
+      "k": 1685,
+      "n": 1823,
+      "pct": 92.4
+     },
+     "both_sugar_and_intense": {
+      "k": 4,
+      "n": 1823,
+      "pct": 0.2
+     },
+     "both_among_intense": {
+      "k": 4,
+      "n": 12,
+      "pct": 33.3
+     },
+     "which_intense": {
+      "acesulfame K": 6,
+      "sucralose": 5,
+      "aspartame": 4,
+      "steviol glycosides": 3
+     },
+     "which_polyol": {
+      "sorbitol": 61,
+      "maltitol": 10,
+      "isomalt": 4,
+      "erythritol": 3,
+      "lactitol": 3
+     }
+    },
+    "tag": {
+     "n": 1961,
+     "shown": true,
+     "intense": {
+      "k": 10,
+      "n": 1961,
+      "pct": 0.5
+     },
+     "polyol": {
+      "k": 82,
+      "n": 1961,
+      "pct": 4.2
+     },
+     "which_intense": {
+      "acesulfame K": 6,
+      "sucralose": 4,
+      "aspartame": 4,
+      "steviol glycosides": 2
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 158,
+     "shown": true,
+     "intense": {
+      "k": 1,
+      "n": 158,
+      "pct": 0.6
+     },
+     "polyol": {
+      "k": 6,
+      "n": 158,
+      "pct": 3.8
+     },
+     "any": {
+      "k": 6,
+      "n": 158,
+      "pct": 3.8
+     },
+     "added_sugar": {
+      "k": 139,
+      "n": 158,
+      "pct": 88.0
+     },
+     "both_sugar_and_intense": {
+      "k": 0,
+      "n": 158,
+      "pct": 0.0
+     },
+     "both_among_intense": {
+      "k": 0,
+      "n": 1,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "monk fruit": 1
+     },
+     "which_polyol": {
+      "maltitol": 4,
+      "sorbitol": 2,
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 160,
+     "shown": true,
+     "intense": {
+      "k": 0,
+      "n": 160,
+      "pct": 0.0
+     },
+     "polyol": {
+      "k": 6,
+      "n": 160,
+      "pct": 3.8
+     },
+     "which_intense": {}
+    }
+   }
+  },
+  "ice_cream": {
+   "US": {
+    "text": {
+     "n": 10391,
+     "shown": true,
+     "intense": {
+      "k": 699,
+      "n": 10391,
+      "pct": 6.7
+     },
+     "polyol": {
+      "k": 595,
+      "n": 10391,
+      "pct": 5.7
+     },
+     "any": {
+      "k": 815,
+      "n": 10391,
+      "pct": 7.8
+     },
+     "added_sugar": {
+      "k": 10065,
+      "n": 10391,
+      "pct": 96.9
+     },
+     "both_sugar_and_intense": {
+      "k": 468,
+      "n": 10391,
+      "pct": 4.5
+     },
+     "both_among_intense": {
+      "k": 468,
+      "n": 699,
+      "pct": 67.0
+     },
+     "which_intense": {
+      "sucralose": 242,
+      "monk fruit": 226,
+      "steviol glycosides": 225,
+      "acesulfame K": 134,
+      "aspartame": 55,
+      "unnamed artificial sweetener": 2,
+      "neotame": 2,
+      "saccharin": 1
+     },
+     "which_polyol": {
+      "erythritol": 324,
+      "sorbitol": 181,
+      "maltitol": 122,
+      "xylitol": 29,
+      "lactitol": 25,
+      "isomalt": 23,
+      "mannitol": 1,
+      "polyglycitol": 1
+     }
+    },
+    "tag": {
+     "n": 10414,
+     "shown": true,
+     "intense": {
+      "k": 450,
+      "n": 10414,
+      "pct": 4.3
+     },
+     "polyol": {
+      "k": 594,
+      "n": 10414,
+      "pct": 5.7
+     },
+     "which_intense": {
+      "sucralose": 238,
+      "steviol glycosides": 156,
+      "acesulfame K": 134,
+      "aspartame": 55,
+      "neotame": 2,
+      "saccharin": 1
+     }
+    }
+   },
+   "France": {
+    "text": {
+     "n": 924,
+     "shown": true,
+     "intense": {
+      "k": 27,
+      "n": 924,
+      "pct": 2.9
+     },
+     "polyol": {
+      "k": 27,
+      "n": 924,
+      "pct": 2.9
+     },
+     "any": {
+      "k": 33,
+      "n": 924,
+      "pct": 3.6
+     },
+     "added_sugar": {
+      "k": 619,
+      "n": 924,
+      "pct": 67.0
+     },
+     "both_sugar_and_intense": {
+      "k": 18,
+      "n": 924,
+      "pct": 1.9
+     },
+     "both_among_intense": {
+      "k": 18,
+      "n": 27,
+      "pct": 66.7
+     },
+     "which_intense": {
+      "steviol glycosides": 19,
+      "sucralose": 5,
+      "aspartame": 4,
+      "acesulfame K": 4,
+      "monk fruit": 1,
+      "cyclamate": 1,
+      "saccharin": 1,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "erythritol": 16,
+      "sorbitol": 9,
+      "maltitol": 5,
+      "isomalt": 1,
+      "xylitol": 1,
+      "mannitol": 1
+     }
+    },
+    "tag": {
+     "n": 5455,
+     "shown": true,
+     "intense": {
+      "k": 45,
+      "n": 5455,
+      "pct": 0.8
+     },
+     "polyol": {
+      "k": 138,
+      "n": 5455,
+      "pct": 2.5
+     },
+     "which_intense": {
+      "steviol glycosides": 30,
+      "sucralose": 11,
+      "acesulfame K": 7,
+      "aspartame": 4,
+      "cyclamate": 1,
+      "saccharin": 1
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 491,
+     "shown": true,
+     "intense": {
+      "k": 29,
+      "n": 491,
+      "pct": 5.9
+     },
+     "polyol": {
+      "k": 29,
+      "n": 491,
+      "pct": 5.9
+     },
+     "any": {
+      "k": 38,
+      "n": 491,
+      "pct": 7.7
+     },
+     "added_sugar": {
+      "k": 456,
+      "n": 491,
+      "pct": 92.9
+     },
+     "both_sugar_and_intense": {
+      "k": 22,
+      "n": 491,
+      "pct": 4.5
+     },
+     "both_among_intense": {
+      "k": 22,
+      "n": 29,
+      "pct": 75.9
+     },
+     "which_intense": {
+      "steviol glycosides": 20,
+      "sucralose": 4,
+      "saccharin": 4,
+      "acesulfame K": 1,
+      "aspartame": 1
+     },
+     "which_polyol": {
+      "erythritol": 22,
+      "xylitol": 5,
+      "maltitol": 5,
+      "sorbitol": 3
+     }
+    },
+    "tag": {
+     "n": 563,
+     "shown": true,
+     "intense": {
+      "k": 31,
+      "n": 563,
+      "pct": 5.5
+     },
+     "polyol": {
+      "k": 32,
+      "n": 563,
+      "pct": 5.7
+     },
+     "which_intense": {
+      "steviol glycosides": 22,
+      "sucralose": 4,
+      "saccharin": 4,
+      "acesulfame K": 1,
+      "aspartame": 1
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 109,
+     "shown": true,
+     "intense": {
+      "k": 9,
+      "n": 109,
+      "pct": 8.3
+     },
+     "polyol": {
+      "k": 11,
+      "n": 109,
+      "pct": 10.1
+     },
+     "any": {
+      "k": 13,
+      "n": 109,
+      "pct": 11.9
+     },
+     "added_sugar": {
+      "k": 95,
+      "n": 109,
+      "pct": 87.2
+     },
+     "both_sugar_and_intense": {
+      "k": 1,
+      "n": 109,
+      "pct": 0.9
+     },
+     "both_among_intense": {
+      "k": 1,
+      "n": 9,
+      "pct": 11.1
+     },
+     "which_intense": {
+      "steviol glycosides": 8,
+      "sucralose": 3
+     },
+     "which_polyol": {
+      "maltitol": 10,
+      "erythritol": 3,
+      "sorbitol": 2
+     }
+    },
+    "tag": {
+     "n": 109,
+     "shown": true,
+     "intense": {
+      "k": 5,
+      "n": 109,
+      "pct": 4.6
+     },
+     "polyol": {
+      "k": 11,
+      "n": 109,
+      "pct": 10.1
+     },
+     "which_intense": {
+      "sucralose": 3,
+      "steviol glycosides": 2
+     }
+    }
+   }
+  },
+  "yoghurt": {
+   "France": {
+    "text": {
+     "n": 12861,
+     "shown": true,
+     "intense": {
+      "k": 89,
+      "n": 12861,
+      "pct": 0.7
+     },
+     "polyol": {
+      "k": 3,
+      "n": 12861,
+      "pct": 0.0
+     },
+     "any": {
+      "k": 90,
+      "n": 12861,
+      "pct": 0.7
+     },
+     "added_sugar": {
+      "k": 493,
+      "n": 12861,
+      "pct": 3.8
+     },
+     "both_sugar_and_intense": {
+      "k": 23,
+      "n": 12861,
+      "pct": 0.2
+     },
+     "both_among_intense": {
+      "k": 23,
+      "n": 89,
+      "pct": 25.8
+     },
+     "which_intense": {
+      "sucralose": 57,
+      "acesulfame K": 53,
+      "steviol glycosides": 16,
+      "aspartame": 14
+     },
+     "which_polyol": {
+      "erythritol": 2,
+      "sorbitol": 1
+     }
+    },
+    "tag": {
+     "n": 22876,
+     "shown": true,
+     "intense": {
+      "k": 497,
+      "n": 22876,
+      "pct": 2.2
+     },
+     "polyol": {
+      "k": 10,
+      "n": 22876,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "acesulfame K": 413,
+      "sucralose": 301,
+      "aspartame": 144,
+      "steviol glycosides": 40,
+      "cyclamate": 9,
+      "neohesperidine DC": 4
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 18073,
+     "shown": true,
+     "intense": {
+      "k": 1197,
+      "n": 18073,
+      "pct": 6.6
+     },
+     "polyol": {
+      "k": 57,
+      "n": 18073,
+      "pct": 0.3
+     },
+     "any": {
+      "k": 1208,
+      "n": 18073,
+      "pct": 6.7
+     },
+     "added_sugar": {
+      "k": 6240,
+      "n": 18073,
+      "pct": 34.5
+     },
+     "both_sugar_and_intense": {
+      "k": 933,
+      "n": 18073,
+      "pct": 5.2
+     },
+     "both_among_intense": {
+      "k": 933,
+      "n": 1197,
+      "pct": 77.9
+     },
+     "which_intense": {
+      "sucralose": 586,
+      "steviol glycosides": 501,
+      "acesulfame K": 496,
+      "monk fruit": 107,
+      "aspartame": 77,
+      "neotame": 26,
+      "unnamed artificial sweetener": 9
+     },
+     "which_polyol": {
+      "erythritol": 40,
+      "sorbitol": 13,
+      "maltitol": 7,
+      "lactitol": 2
+     }
+    },
+    "tag": {
+     "n": 18160,
+     "shown": true,
+     "intense": {
+      "k": 949,
+      "n": 18160,
+      "pct": 5.2
+     },
+     "polyol": {
+      "k": 57,
+      "n": 18160,
+      "pct": 0.3
+     },
+     "which_intense": {
+      "sucralose": 591,
+      "acesulfame K": 489,
+      "steviol glycosides": 276,
+      "aspartame": 77,
+      "neotame": 26,
+      "saccharin": 1
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 2393,
+     "shown": true,
+     "intense": {
+      "k": 153,
+      "n": 2393,
+      "pct": 6.4
+     },
+     "polyol": {
+      "k": 10,
+      "n": 2393,
+      "pct": 0.4
+     },
+     "any": {
+      "k": 153,
+      "n": 2393,
+      "pct": 6.4
+     },
+     "added_sugar": {
+      "k": 807,
+      "n": 2393,
+      "pct": 33.7
+     },
+     "both_sugar_and_intense": {
+      "k": 59,
+      "n": 2393,
+      "pct": 2.5
+     },
+     "both_among_intense": {
+      "k": 59,
+      "n": 153,
+      "pct": 38.6
+     },
+     "which_intense": {
+      "sucralose": 94,
+      "acesulfame K": 81,
+      "aspartame": 38,
+      "steviol glycosides": 16
+     },
+     "which_polyol": {
+      "maltitol": 5,
+      "erythritol": 5
+     }
+    },
+    "tag": {
+     "n": 2596,
+     "shown": true,
+     "intense": {
+      "k": 156,
+      "n": 2596,
+      "pct": 6.0
+     },
+     "polyol": {
+      "k": 12,
+      "n": 2596,
+      "pct": 0.5
+     },
+     "which_intense": {
+      "sucralose": 98,
+      "acesulfame K": 84,
+      "aspartame": 39,
+      "steviol glycosides": 17
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 180,
+     "shown": true,
+     "intense": {
+      "k": 5,
+      "n": 180,
+      "pct": 2.8
+     },
+     "polyol": {
+      "k": 3,
+      "n": 180,
+      "pct": 1.7
+     },
+     "any": {
+      "k": 5,
+      "n": 180,
+      "pct": 2.8
+     },
+     "added_sugar": {
+      "k": 35,
+      "n": 180,
+      "pct": 19.4
+     },
+     "both_sugar_and_intense": {
+      "k": 2,
+      "n": 180,
+      "pct": 1.1
+     },
+     "both_among_intense": {
+      "k": 2,
+      "n": 5,
+      "pct": 40.0
+     },
+     "which_intense": {
+      "steviol glycosides": 5
+     },
+     "which_polyol": {
+      "maltitol": 3
+     }
+    },
+    "tag": {
+     "n": 184,
+     "shown": true,
+     "intense": {
+      "k": 5,
+      "n": 184,
+      "pct": 2.7
+     },
+     "polyol": {
+      "k": 3,
+      "n": 184,
+      "pct": 1.6
+     },
+     "which_intense": {
+      "steviol glycosides": 5
+     }
+    }
+   }
+  },
+  "gum_confectionery": {
+   "US": {
+    "text": {
+     "n": 22849,
+     "shown": true,
+     "intense": {
+      "k": 1259,
+      "n": 22849,
+      "pct": 5.5
+     },
+     "polyol": {
+      "k": 2847,
+      "n": 22849,
+      "pct": 12.5
+     },
+     "any": {
+      "k": 3078,
+      "n": 22849,
+      "pct": 13.5
+     },
+     "added_sugar": {
+      "k": 21321,
+      "n": 22849,
+      "pct": 93.3
+     },
+     "both_sugar_and_intense": {
+      "k": 235,
+      "n": 22849,
+      "pct": 1.0
+     },
+     "both_among_intense": {
+      "k": 235,
+      "n": 1259,
+      "pct": 18.7
+     },
+     "which_intense": {
+      "acesulfame K": 758,
+      "aspartame": 730,
+      "sucralose": 536,
+      "steviol glycosides": 208,
+      "monk fruit": 66,
+      "neotame": 64,
+      "unnamed artificial sweetener": 18,
+      "saccharin": 2,
+      "neohesperidine DC": 1
+     },
+     "which_polyol": {
+      "sorbitol": 2343,
+      "xylitol": 551,
+      "maltitol": 527,
+      "mannitol": 452,
+      "polyglycitol": 186,
+      "isomalt": 134,
+      "erythritol": 132,
+      "lactitol": 11
+     }
+    },
+    "tag": {
+     "n": 22969,
+     "shown": true,
+     "intense": {
+      "k": 1082,
+      "n": 22969,
+      "pct": 4.7
+     },
+     "polyol": {
+      "k": 2805,
+      "n": 22969,
+      "pct": 12.2
+     },
+     "which_intense": {
+      "acesulfame K": 715,
+      "aspartame": 700,
+      "sucralose": 502,
+      "steviol glycosides": 72,
+      "aspartame-acesulfame salt": 68,
+      "neotame": 61,
+      "neohesperidine DC": 3,
+      "saccharin": 2
+     }
+    }
+   },
+   "France": {
+    "text": {
+     "n": 6700,
+     "shown": true,
+     "intense": {
+      "k": 476,
+      "n": 6700,
+      "pct": 7.1
+     },
+     "polyol": {
+      "k": 928,
+      "n": 6700,
+      "pct": 13.9
+     },
+     "any": {
+      "k": 968,
+      "n": 6700,
+      "pct": 14.4
+     },
+     "added_sugar": {
+      "k": 4125,
+      "n": 6700,
+      "pct": 61.6
+     },
+     "both_sugar_and_intense": {
+      "k": 43,
+      "n": 6700,
+      "pct": 0.6
+     },
+     "both_among_intense": {
+      "k": 43,
+      "n": 476,
+      "pct": 9.0
+     },
+     "which_intense": {
+      "acesulfame K": 266,
+      "aspartame": 266,
+      "sucralose": 225,
+      "steviol glycosides": 54,
+      "unnamed artificial sweetener": 2,
+      "neohesperidine DC": 2,
+      "neotame": 1,
+      "thaumatin": 1,
+      "saccharin": 1
+     },
+     "which_polyol": {
+      "sorbitol": 730,
+      "maltitol": 282,
+      "xylitol": 194,
+      "isomalt": 153,
+      "mannitol": 131,
+      "erythritol": 15,
+      "polyglycitol": 10,
+      "lactitol": 4
+     }
+    },
+    "tag": {
+     "n": 15844,
+     "shown": true,
+     "intense": {
+      "k": 1213,
+      "n": 15844,
+      "pct": 7.7
+     },
+     "polyol": {
+      "k": 2642,
+      "n": 15844,
+      "pct": 16.7
+     },
+     "which_intense": {
+      "acesulfame K": 780,
+      "aspartame": 668,
+      "sucralose": 482,
+      "steviol glycosides": 189,
+      "aspartame-acesulfame salt": 23,
+      "thaumatin": 15,
+      "neohesperidine DC": 14,
+      "saccharin": 6,
+      "neotame": 4
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 2513,
+     "shown": true,
+     "intense": {
+      "k": 126,
+      "n": 2513,
+      "pct": 5.0
+     },
+     "polyol": {
+      "k": 280,
+      "n": 2513,
+      "pct": 11.1
+     },
+     "any": {
+      "k": 293,
+      "n": 2513,
+      "pct": 11.7
+     },
+     "added_sugar": {
+      "k": 2168,
+      "n": 2513,
+      "pct": 86.3
+     },
+     "both_sugar_and_intense": {
+      "k": 30,
+      "n": 2513,
+      "pct": 1.2
+     },
+     "both_among_intense": {
+      "k": 30,
+      "n": 126,
+      "pct": 23.8
+     },
+     "which_intense": {
+      "acesulfame K": 58,
+      "aspartame": 56,
+      "sucralose": 46,
+      "steviol glycosides": 34,
+      "saccharin": 4,
+      "cyclamate": 2,
+      "unnamed artificial sweetener": 1
+     },
+     "which_polyol": {
+      "sorbitol": 215,
+      "xylitol": 50,
+      "maltitol": 44,
+      "isomalt": 37,
+      "mannitol": 34,
+      "erythritol": 10
+     }
+    },
+    "tag": {
+     "n": 2700,
+     "shown": true,
+     "intense": {
+      "k": 116,
+      "n": 2700,
+      "pct": 4.3
+     },
+     "polyol": {
+      "k": 294,
+      "n": 2700,
+      "pct": 10.9
+     },
+     "which_intense": {
+      "aspartame": 56,
+      "acesulfame K": 55,
+      "sucralose": 45,
+      "steviol glycosides": 23,
+      "saccharin": 4,
+      "aspartame-acesulfame salt": 3,
+      "cyclamate": 2,
+      "neotame": 1
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 175,
+     "shown": true,
+     "intense": {
+      "k": 15,
+      "n": 175,
+      "pct": 8.6
+     },
+     "polyol": {
+      "k": 19,
+      "n": 175,
+      "pct": 10.9
+     },
+     "any": {
+      "k": 23,
+      "n": 175,
+      "pct": 13.1
+     },
+     "added_sugar": {
+      "k": 152,
+      "n": 175,
+      "pct": 86.9
+     },
+     "both_sugar_and_intense": {
+      "k": 4,
+      "n": 175,
+      "pct": 2.3
+     },
+     "both_among_intense": {
+      "k": 4,
+      "n": 15,
+      "pct": 26.7
+     },
+     "which_intense": {
+      "aspartame": 13,
+      "acesulfame K": 5,
+      "steviol glycosides": 2,
+      "unnamed artificial sweetener": 1,
+      "sucralose": 1
+     },
+     "which_polyol": {
+      "sorbitol": 16,
+      "maltitol": 11,
+      "xylitol": 4,
+      "mannitol": 2,
+      "isomalt": 2,
+      "erythritol": 1
+     }
+    },
+    "tag": {
+     "n": 179,
+     "shown": true,
+     "intense": {
+      "k": 14,
+      "n": 179,
+      "pct": 7.8
+     },
+     "polyol": {
+      "k": 18,
+      "n": 179,
+      "pct": 10.1
+     },
+     "which_intense": {
+      "aspartame": 12,
+      "acesulfame K": 4,
+      "steviol glycosides": 2,
+      "sucralose": 1
+     }
+    }
+   }
+  },
+  "cereals": {
+   "France": {
+    "text": {
+     "n": 2245,
+     "shown": true,
+     "intense": {
+      "k": 14,
+      "n": 2245,
+      "pct": 0.6
+     },
+     "polyol": {
+      "k": 13,
+      "n": 2245,
+      "pct": 0.6
+     },
+     "any": {
+      "k": 24,
+      "n": 2245,
+      "pct": 1.1
+     },
+     "added_sugar": {
+      "k": 818,
+      "n": 2245,
+      "pct": 36.4
+     },
+     "both_sugar_and_intense": {
+      "k": 8,
+      "n": 2245,
+      "pct": 0.4
+     },
+     "both_among_intense": {
+      "k": 8,
+      "n": 14,
+      "pct": 57.1
+     },
+     "which_intense": {
+      "sucralose": 11,
+      "steviol glycosides": 4,
+      "monk fruit": 1,
+      "acesulfame K": 1
+     },
+     "which_polyol": {
+      "maltitol": 6,
+      "sorbitol": 3,
+      "erythritol": 2,
+      "isomalt": 2,
+      "xylitol": 1
+     }
+    },
+    "tag": {
+     "n": 5369,
+     "shown": true,
+     "intense": {
+      "k": 38,
+      "n": 5369,
+      "pct": 0.7
+     },
+     "polyol": {
+      "k": 49,
+      "n": 5369,
+      "pct": 0.9
+     },
+     "which_intense": {
+      "sucralose": 21,
+      "steviol glycosides": 20,
+      "acesulfame K": 2,
+      "cyclamate": 1
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 2544,
+     "shown": true,
+     "intense": {
+      "k": 162,
+      "n": 2544,
+      "pct": 6.4
+     },
+     "polyol": {
+      "k": 35,
+      "n": 2544,
+      "pct": 1.4
+     },
+     "any": {
+      "k": 173,
+      "n": 2544,
+      "pct": 6.8
+     },
+     "added_sugar": {
+      "k": 2100,
+      "n": 2544,
+      "pct": 82.5
+     },
+     "both_sugar_and_intense": {
+      "k": 95,
+      "n": 2544,
+      "pct": 3.7
+     },
+     "both_among_intense": {
+      "k": 95,
+      "n": 162,
+      "pct": 58.6
+     },
+     "which_intense": {
+      "monk fruit": 122,
+      "steviol glycosides": 38,
+      "sucralose": 21,
+      "acesulfame K": 6,
+      "aspartame": 3
+     },
+     "which_polyol": {
+      "erythritol": 24,
+      "sorbitol": 7,
+      "maltitol": 4,
+      "isomalt": 1
+     }
+    },
+    "tag": {
+     "n": 2587,
+     "shown": true,
+     "intense": {
+      "k": 36,
+      "n": 2587,
+      "pct": 1.4
+     },
+     "polyol": {
+      "k": 38,
+      "n": 2587,
+      "pct": 1.5
+     },
+     "which_intense": {
+      "sucralose": 23,
+      "steviol glycosides": 13,
+      "acesulfame K": 6,
+      "aspartame": 3
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 1402,
+     "shown": true,
+     "intense": {
+      "k": 15,
+      "n": 1402,
+      "pct": 1.1
+     },
+     "polyol": {
+      "k": 16,
+      "n": 1402,
+      "pct": 1.1
+     },
+     "any": {
+      "k": 21,
+      "n": 1402,
+      "pct": 1.5
+     },
+     "added_sugar": {
+      "k": 998,
+      "n": 1402,
+      "pct": 71.2
+     },
+     "both_sugar_and_intense": {
+      "k": 4,
+      "n": 1402,
+      "pct": 0.3
+     },
+     "both_among_intense": {
+      "k": 4,
+      "n": 15,
+      "pct": 26.7
+     },
+     "which_intense": {
+      "steviol glycosides": 8,
+      "sucralose": 6,
+      "acesulfame K": 2,
+      "monk fruit": 1,
+      "aspartame": 1
+     },
+     "which_polyol": {
+      "erythritol": 8,
+      "maltitol": 6,
+      "sorbitol": 2,
+      "xylitol": 1
+     }
+    },
+    "tag": {
+     "n": 1465,
+     "shown": true,
+     "intense": {
+      "k": 9,
+      "n": 1465,
+      "pct": 0.6
+     },
+     "polyol": {
+      "k": 16,
+      "n": 1465,
+      "pct": 1.1
+     },
+     "which_intense": {
+      "sucralose": 5,
+      "steviol glycosides": 4,
+      "acesulfame K": 2,
+      "aspartame": 1
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 153,
+     "shown": true,
+     "intense": {
+      "k": 4,
+      "n": 153,
+      "pct": 2.6
+     },
+     "polyol": {
+      "k": 0,
+      "n": 153,
+      "pct": 0.0
+     },
+     "any": {
+      "k": 4,
+      "n": 153,
+      "pct": 2.6
+     },
+     "added_sugar": {
+      "k": 98,
+      "n": 153,
+      "pct": 64.1
+     },
+     "both_sugar_and_intense": {
+      "k": 0,
+      "n": 153,
+      "pct": 0.0
+     },
+     "both_among_intense": {
+      "k": 0,
+      "n": 4,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "steviol glycosides": 2,
+      "monk fruit": 2
+     },
+     "which_polyol": {}
+    },
+    "tag": {
+     "n": 164,
+     "shown": true,
+     "intense": {
+      "k": 2,
+      "n": 164,
+      "pct": 1.2
+     },
+     "polyol": {
+      "k": 0,
+      "n": 164,
+      "pct": 0.0
+     },
+     "which_intense": {
+      "steviol glycosides": 2
+     }
+    }
+   }
+  },
+  "sauces_spreads": {
+   "France": {
+    "text": {
+     "n": 18928,
+     "shown": true,
+     "intense": {
+      "k": 122,
+      "n": 18928,
+      "pct": 0.6
+     },
+     "polyol": {
+      "k": 88,
+      "n": 18928,
+      "pct": 0.5
+     },
+     "any": {
+      "k": 185,
+      "n": 18928,
+      "pct": 1.0
+     },
+     "added_sugar": {
+      "k": 2544,
+      "n": 18928,
+      "pct": 13.4
+     },
+     "both_sugar_and_intense": {
+      "k": 25,
+      "n": 18928,
+      "pct": 0.1
+     },
+     "both_among_intense": {
+      "k": 25,
+      "n": 122,
+      "pct": 20.5
+     },
+     "which_intense": {
+      "sucralose": 71,
+      "steviol glycosides": 40,
+      "acesulfame K": 11,
+      "saccharin": 8,
+      "unnamed artificial sweetener": 4,
+      "monk fruit": 3,
+      "aspartame": 3,
+      "cyclamate": 1
+     },
+     "which_polyol": {
+      "sorbitol": 41,
+      "maltitol": 40,
+      "erythritol": 9,
+      "xylitol": 2,
+      "mannitol": 1
+     }
+    },
+    "tag": {
+     "n": 31733,
+     "shown": true,
+     "intense": {
+      "k": 249,
+      "n": 31733,
+      "pct": 0.8
+     },
+     "polyol": {
+      "k": 202,
+      "n": 31733,
+      "pct": 0.6
+     },
+     "which_intense": {
+      "sucralose": 125,
+      "steviol glycosides": 91,
+      "acesulfame K": 23,
+      "saccharin": 19,
+      "aspartame": 11,
+      "cyclamate": 2
+     }
+    }
+   },
+   "US": {
+    "text": {
+     "n": 28730,
+     "shown": true,
+     "intense": {
+      "k": 301,
+      "n": 28730,
+      "pct": 1.0
+     },
+     "polyol": {
+      "k": 103,
+      "n": 28730,
+      "pct": 0.4
+     },
+     "any": {
+      "k": 366,
+      "n": 28730,
+      "pct": 1.3
+     },
+     "added_sugar": {
+      "k": 19177,
+      "n": 28730,
+      "pct": 66.7
+     },
+     "both_sugar_and_intense": {
+      "k": 113,
+      "n": 28730,
+      "pct": 0.4
+     },
+     "both_among_intense": {
+      "k": 113,
+      "n": 301,
+      "pct": 37.5
+     },
+     "which_intense": {
+      "sucralose": 166,
+      "steviol glycosides": 79,
+      "monk fruit": 37,
+      "acesulfame K": 25,
+      "unnamed artificial sweetener": 19,
+      "aspartame": 13
+     },
+     "which_polyol": {
+      "sorbitol": 57,
+      "erythritol": 19,
+      "xylitol": 16,
+      "maltitol": 12,
+      "isomalt": 1
+     }
+    },
+    "tag": {
+     "n": 29419,
+     "shown": true,
+     "intense": {
+      "k": 208,
+      "n": 29419,
+      "pct": 0.7
+     },
+     "polyol": {
+      "k": 105,
+      "n": 29419,
+      "pct": 0.4
+     },
+     "which_intense": {
+      "sucralose": 162,
+      "acesulfame K": 24,
+      "steviol glycosides": 23,
+      "aspartame": 12,
+      "saccharin": 2
+     }
+    }
+   },
+   "UK": {
+    "text": {
+     "n": 4651,
+     "shown": true,
+     "intense": {
+      "k": 81,
+      "n": 4651,
+      "pct": 1.7
+     },
+     "polyol": {
+      "k": 21,
+      "n": 4651,
+      "pct": 0.5
+     },
+     "any": {
+      "k": 93,
+      "n": 4651,
+      "pct": 2.0
+     },
+     "added_sugar": {
+      "k": 2949,
+      "n": 4651,
+      "pct": 63.4
+     },
+     "both_sugar_and_intense": {
+      "k": 58,
+      "n": 4651,
+      "pct": 1.2
+     },
+     "both_among_intense": {
+      "k": 58,
+      "n": 81,
+      "pct": 71.6
+     },
+     "which_intense": {
+      "steviol glycosides": 29,
+      "sucralose": 28,
+      "acesulfame K": 15,
+      "saccharin": 11,
+      "aspartame": 6
+     },
+     "which_polyol": {
+      "maltitol": 11,
+      "sorbitol": 6,
+      "erythritol": 4
+     }
+    },
+    "tag": {
+     "n": 4918,
+     "shown": true,
+     "intense": {
+      "k": 83,
+      "n": 4918,
+      "pct": 1.7
+     },
+     "polyol": {
+      "k": 22,
+      "n": 4918,
+      "pct": 0.4
+     },
+     "which_intense": {
+      "sucralose": 30,
+      "steviol glycosides": 30,
+      "acesulfame K": 13,
+      "saccharin": 11,
+      "aspartame": 6
+     }
+    }
+   },
+   "India": {
+    "text": {
+     "n": 333,
+     "shown": true,
+     "intense": {
+      "k": 3,
+      "n": 333,
+      "pct": 0.9
+     },
+     "polyol": {
+      "k": 2,
+      "n": 333,
+      "pct": 0.6
+     },
+     "any": {
+      "k": 3,
+      "n": 333,
+      "pct": 0.9
+     },
+     "added_sugar": {
+      "k": 238,
+      "n": 333,
+      "pct": 71.5
+     },
+     "both_sugar_and_intense": {
+      "k": 1,
+      "n": 333,
+      "pct": 0.3
+     },
+     "both_among_intense": {
+      "k": 1,
+      "n": 3,
+      "pct": 33.3
+     },
+     "which_intense": {
+      "steviol glycosides": 3
+     },
+     "which_polyol": {
+      "erythritol": 2,
+      "isomalt": 1,
+      "sorbitol": 1
+     }
+    },
+    "tag": {
+     "n": 358,
+     "shown": true,
+     "intense": {
+      "k": 2,
+      "n": 358,
+      "pct": 0.6
+     },
+     "polyol": {
+      "k": 2,
+      "n": 358,
+      "pct": 0.6
+     },
+     "which_intense": {
+      "steviol glycosides": 2
+     }
+    }
+   }
+  }
+ },
+ "india_multi_snapshot": {
+  "all_foods": {
+   "n": 4647,
+   "intense": {
+    "k": 181,
+    "n": 4647,
+    "pct": 3.9
+   }
+  },
+  "soft_drinks": {
+   "n": 139,
+   "intense": {
+    "k": 44,
+    "n": 139,
+    "pct": 31.7
+   }
+  },
+  "juices": {
+   "n": 107,
+   "intense": {
+    "k": 11,
+    "n": 107,
+    "pct": 10.3
+   }
+  },
+  "milk_drinks": {
+   "n": 102,
+   "intense": {
+    "k": 7,
+    "n": 102,
+    "pct": 6.9
+   }
+  },
+  "biscuits": {
+   "n": 338,
+   "intense": {
+    "k": 3,
+    "n": 338,
+    "pct": 0.9
+   }
+  },
+  "chocolate": {
+   "n": 158,
+   "intense": {
+    "k": 1,
+    "n": 158,
+    "pct": 0.6
+   }
+  },
+  "ice_cream": {
+   "n": 109,
+   "intense": {
+    "k": 9,
+    "n": 109,
+    "pct": 8.3
+   }
+  },
+  "yoghurt": {
+   "n": 180,
+   "intense": {
+    "k": 5,
+    "n": 180,
+    "pct": 2.8
+   }
+  },
+  "gum_confectionery": {
+   "n": 175,
+   "intense": {
+    "k": 15,
+    "n": 175,
+    "pct": 8.6
+   }
+  },
+  "cereals": {
+   "n": 153,
+   "intense": {
+    "k": 4,
+    "n": 153,
+    "pct": 2.6
+   }
+  },
+  "sauces_spreads": {
+   "n": 333,
+   "intense": {
+    "k": 3,
+    "n": 333,
+    "pct": 0.9
+   }
+  }
+ },
+ "india_named_diet_zero_sugar_free": {
+  "n": 72,
+  "shown": true,
+  "intense": {
+   "k": 21,
+   "n": 72,
+   "pct": 29.2
+  },
+  "polyol_only": {
+   "k": 4,
+   "n": 72,
+   "pct": 5.6
+  },
+  "no_sweetener_found": {
+   "k": 47,
+   "n": 72,
+   "pct": 65.3
+  },
+  "names_an_added_sugar": {
+   "k": 21,
+   "n": 72,
+   "pct": 29.2
+  },
+  "which_intense": {
+   "acesulfame K": 9,
+   "sucralose": 9,
+   "steviol glycosides": 4,
+   "aspartame": 4,
+   "unnamed artificial sweetener": 4,
+   "monk fruit": 2
+  },
+  "name_words": "diet, sugar free, zero, no sugar, no added sugar, lite, light, unsweetened, keto (product name, any brand words included)"
+ },
+ "india_warning_check": {
+  "n_lists_with_intense": 181,
+  "warning_in_labels_tags": {
+   "k": 3,
+   "n": 181,
+   "pct": 1.7
+  },
+  "warning_sentence_in_ingredient_text": {
+   "k": 15,
+   "n": 181,
+   "pct": 8.3
+  },
+  "either": {
+   "k": 18,
+   "n": 181,
+   "pct": 9.9
+  },
+  "note": "Open Food Facts has no field for FSSAI's sweetener statements. labels_tags carries one only when a volunteer typed it; the ingredient text carries one only when the volunteer pasted the whole back of the pack. So this is a floor on how many packs print the statement, not a measure of it."
+ },
+ "india_text_vs_tag": {
+  "intense_by_text": 181,
+  "also_tagged_by_off": 151,
+  "note": "Indian English lists where the matcher finds an intense sweetener, and how many of those Open Food Facts also tagged (additives_tags)."
+ }
+}

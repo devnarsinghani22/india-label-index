@@ -1,0 +1,433 @@
+measure,group,country,count,n,value,unit,shown
+median_serving,biscuits,US,,10988,30.0,g (median),True
+under_30g,biscuits,US,4649,10988,42.3,%,True
+sugar_median_per_100,biscuits,US,,1190,28.4,g (median),True
+sugar_median_per_serving,biscuits,US,,1190,9.0,g (median),True
+sodium_mg_median_per_100,biscuits,US,,1196,307.0,mg (median),True
+sodium_mg_median_per_serving,biscuits,US,,1196,97.0,mg (median),True
+factor_100_over_serving,biscuits,US,,1190,3.3,times (median),True
+median_serving,biscuits,France,,5780,25.0,g (median),True
+under_30g,biscuits,France,3752,5780,64.9,%,True
+sugar_median_per_100,biscuits,France,,5578,30.0,g (median),True
+sugar_median_per_serving,biscuits,France,,5578,7.1,g (median),True
+sodium_mg_median_per_100,biscuits,France,,5548,220.0,mg (median),True
+sodium_mg_median_per_serving,biscuits,France,,5548,47.0,mg (median),True
+factor_100_over_serving,biscuits,France,,5578,4.0,times (median),True
+median_serving,biscuits,UK,,915,20.0,g (median),True
+under_30g,biscuits,UK,664,915,72.6,%,True
+sugar_median_per_100,biscuits,UK,,903,29.2,g (median),True
+sugar_median_per_serving,biscuits,UK,,903,5.8,g (median),True
+sodium_mg_median_per_100,biscuits,UK,,870,232.0,mg (median),True
+sodium_mg_median_per_serving,biscuits,UK,,870,44.0,mg (median),True
+factor_100_over_serving,biscuits,UK,,903,5.0,times (median),True
+median_serving,biscuits,India,,159,20.0,g (median),True
+under_30g,biscuits,India,107,159,67.3,%,True
+sugar_median_per_100,biscuits,India,,48,25.3,g (median),True
+sugar_median_per_serving,biscuits,India,,48,5.3,g (median),True
+sodium_mg_median_per_100,biscuits,India,,47,263.0,mg (median),True
+sodium_mg_median_per_serving,biscuits,India,,47,47.0,mg (median),True
+factor_100_over_serving,biscuits,India,,48,5.4,times (median),True
+median_serving_with_placeholders,biscuits,India,,189,25.0,g or ml (median),True
+median_serving_with_placeholders,biscuits,France,,6403,25.0,g or ml (median),True
+median_serving_with_placeholders,biscuits,US,,11037,30.0,g or ml (median),True
+median_serving_with_placeholders,biscuits,UK,,1009,22.0,g or ml (median),True
+dropped_no_serving,biscuits,India,518,711,,packs,True
+dropped_kept,biscuits,India,159,711,,packs,True
+dropped_placeholder_100,biscuits,India,30,711,,packs,True
+dropped_over_pack,biscuits,India,3,711,,packs,True
+dropped_huge,biscuits,India,1,711,,packs,True
+dropped_no_serving,biscuits,France,13637,20070,,packs,True
+dropped_kept,biscuits,France,5780,20070,,packs,True
+dropped_placeholder_100,biscuits,France,623,20070,,packs,True
+dropped_tiny,biscuits,France,15,20070,,packs,True
+dropped_over_pack,biscuits,France,15,20070,,packs,True
+dropped_kept,biscuits,US,10988,12121,,packs,True
+dropped_no_serving,biscuits,US,1044,12121,,packs,True
+dropped_tiny,biscuits,US,12,12121,,packs,True
+dropped_placeholder_100,biscuits,US,49,12121,,packs,True
+dropped_over_pack,biscuits,US,28,12121,,packs,True
+dropped_no_serving,biscuits,UK,1143,2163,,packs,True
+dropped_kept,biscuits,UK,915,2163,,packs,True
+dropped_placeholder_100,biscuits,UK,94,2163,,packs,True
+dropped_over_pack,biscuits,UK,6,2163,,packs,True
+dropped_tiny,biscuits,UK,5,2163,,packs,True
+median_serving,chips,US,,2510,28.0,g (median),True
+under_30g,chips,US,2110,2510,84.1,%,True
+sugar_median_per_100,chips,US,,810,3.2,g (median),True
+sugar_median_per_serving,chips,US,,810,1.0,g (median),True
+sodium_mg_median_per_100,chips,US,,828,536.0,mg (median),True
+sodium_mg_median_per_serving,chips,US,,828,160.0,mg (median),True
+factor_100_over_serving,chips,US,,810,3.6,times (median),True
+median_serving,chips,France,,2128,30.0,g (median),True
+under_30g,chips,France,675,2128,31.7,%,True
+sugar_median_per_100,chips,France,,2051,2.0,g (median),True
+sugar_median_per_serving,chips,France,,2051,0.6,g (median),True
+sodium_mg_median_per_100,chips,France,,2051,520.0,mg (median),True
+sodium_mg_median_per_serving,chips,France,,2051,156.0,mg (median),True
+factor_100_over_serving,chips,France,,2051,3.3,times (median),True
+median_serving,chips,UK,,852,30.0,g (median),True
+under_30g,chips,UK,403,852,47.3,%,True
+sugar_median_per_100,chips,UK,,834,2.4,g (median),True
+sugar_median_per_serving,chips,UK,,834,0.7,g (median),True
+sodium_mg_median_per_100,chips,UK,,816,480.0,mg (median),True
+sodium_mg_median_per_serving,chips,UK,,816,142.0,mg (median),True
+factor_100_over_serving,chips,UK,,834,3.3,times (median),True
+median_serving,chips,India,,96,28.0,g (median),True
+under_30g,chips,India,58,96,60.4,%,True
+sugar_median_per_100,chips,India,,28,2.4,g (median),False
+sugar_median_per_serving,chips,India,,28,0.5,g (median),False
+sodium_mg_median_per_100,chips,India,,28,684.0,mg (median),False
+sodium_mg_median_per_serving,chips,India,,28,183.0,mg (median),False
+factor_100_over_serving,chips,India,,28,4.0,times (median),False
+median_serving_with_placeholders,chips,India,,112,28.0,g or ml (median),True
+median_serving_with_placeholders,chips,UK,,987,30.0,g or ml (median),True
+median_serving_with_placeholders,chips,US,,2540,28.0,g or ml (median),True
+median_serving_with_placeholders,chips,France,,2309,30.0,g or ml (median),True
+dropped_kept,chips,India,96,296,,packs,True
+dropped_no_serving,chips,India,177,296,,packs,True
+dropped_over_pack,chips,India,7,296,,packs,True
+dropped_placeholder_100,chips,India,16,296,,packs,True
+dropped_no_serving,chips,US,1666,4227,,packs,True
+dropped_kept,chips,US,2510,4227,,packs,True
+dropped_over_pack,chips,US,12,4227,,packs,True
+dropped_tiny,chips,US,9,4227,,packs,True
+dropped_placeholder_100,chips,US,30,4227,,packs,True
+dropped_no_serving,chips,UK,962,1958,,packs,True
+dropped_placeholder_100,chips,UK,135,1958,,packs,True
+dropped_kept,chips,UK,852,1958,,packs,True
+dropped_over_pack,chips,UK,5,1958,,packs,True
+dropped_tiny,chips,UK,4,1958,,packs,True
+dropped_no_serving,chips,France,3643,5970,,packs,True
+dropped_kept,chips,France,2128,5970,,packs,True
+dropped_placeholder_100,chips,France,181,5970,,packs,True
+dropped_over_pack,chips,France,13,5970,,packs,True
+dropped_tiny,chips,France,4,5970,,packs,True
+dropped_huge,chips,France,1,5970,,packs,True
+median_serving,chocolate,US,,7494,36.0,g (median),True
+under_30g,chocolate,US,1890,7494,25.2,%,True
+sugar_median_per_100,chocolate,US,,885,45.7,g (median),True
+sugar_median_per_serving,chocolate,US,,885,13.5,g (median),True
+sodium_mg_median_per_100,chocolate,US,,881,75.0,mg (median),True
+sodium_mg_median_per_serving,chocolate,US,,881,25.0,mg (median),True
+factor_100_over_serving,chocolate,US,,885,3.3,times (median),True
+median_serving,chocolate,France,,4232,21.5,g (median),True
+under_30g,chocolate,France,2896,4232,68.4,%,True
+sugar_median_per_100,chocolate,France,,4093,48.0,g (median),True
+sugar_median_per_serving,chocolate,France,,4093,10.1,g (median),True
+sodium_mg_median_per_100,chocolate,France,,4058,72.0,mg (median),True
+sodium_mg_median_per_serving,chocolate,France,,4058,15.0,mg (median),True
+factor_100_over_serving,chocolate,France,,4093,4.6,times (median),True
+median_serving,chocolate,UK,,998,25.0,g (median),True
+under_30g,chocolate,UK,579,998,58.0,%,True
+sugar_median_per_100,chocolate,UK,,979,48.0,g (median),True
+sugar_median_per_serving,chocolate,UK,,979,11.3,g (median),True
+sodium_mg_median_per_100,chocolate,UK,,954,84.0,mg (median),True
+sodium_mg_median_per_serving,chocolate,UK,,954,21.0,mg (median),True
+factor_100_over_serving,chocolate,UK,,979,4.0,times (median),True
+median_serving,chocolate,India,,92,20.0,g (median),True
+under_30g,chocolate,India,74,92,80.4,%,True
+sugar_median_per_100,chocolate,India,,34,45.0,g (median),True
+sugar_median_per_serving,chocolate,India,,34,8.4,g (median),True
+sodium_mg_median_per_100,chocolate,India,,33,94.0,mg (median),True
+sodium_mg_median_per_serving,chocolate,India,,33,11.0,mg (median),True
+factor_100_over_serving,chocolate,India,,34,5.0,times (median),True
+median_serving_with_placeholders,chocolate,India,,113,20.0,g or ml (median),True
+median_serving_with_placeholders,chocolate,US,,7582,36.0,g or ml (median),True
+median_serving_with_placeholders,chocolate,France,,4848,25.0,g or ml (median),True
+median_serving_with_placeholders,chocolate,UK,,1187,30.0,g or ml (median),True
+dropped_no_serving,chocolate,India,184,301,,packs,True
+dropped_placeholder_100,chocolate,India,21,301,,packs,True
+dropped_kept,chocolate,India,92,301,,packs,True
+dropped_huge,chocolate,India,1,301,,packs,True
+dropped_over_pack,chocolate,India,3,301,,packs,True
+dropped_no_serving,chocolate,France,16046,20942,,packs,True
+dropped_kept,chocolate,France,4232,20942,,packs,True
+dropped_over_pack,chocolate,France,15,20942,,packs,True
+dropped_placeholder_100,chocolate,France,616,20942,,packs,True
+dropped_tiny,chocolate,France,30,20942,,packs,True
+dropped_huge,chocolate,France,3,20942,,packs,True
+dropped_kept,chocolate,US,7494,8382,,packs,True
+dropped_no_serving,chocolate,US,771,8382,,packs,True
+dropped_tiny,chocolate,US,11,8382,,packs,True
+dropped_over_pack,chocolate,US,18,8382,,packs,True
+dropped_placeholder_100,chocolate,US,88,8382,,packs,True
+dropped_no_serving,chocolate,UK,1362,2561,,packs,True
+dropped_kept,chocolate,UK,998,2561,,packs,True
+dropped_placeholder_100,chocolate,UK,189,2561,,packs,True
+dropped_tiny,chocolate,UK,4,2561,,packs,True
+dropped_over_pack,chocolate,UK,7,2561,,packs,True
+dropped_huge,chocolate,UK,1,2561,,packs,True
+median_serving,soft_drinks,US,,6150,355.0,ml (median),True
+at_most_200ml,soft_drinks,US,199,6150,3.2,%,True
+sugar_median_per_100,soft_drinks,US,,587,1.4,g (median),True
+sugar_median_per_serving,soft_drinks,US,,587,5.0,g (median),True
+sodium_mg_median_per_100,soft_drinks,US,,624,8.0,mg (median),True
+sodium_mg_median_per_serving,soft_drinks,US,,624,30.0,mg (median),True
+factor_100_over_serving,soft_drinks,US,,587,0.3,times (median),True
+median_serving,soft_drinks,France,,1934,250.0,ml (median),True
+at_most_200ml,soft_drinks,France,453,1934,23.4,%,True
+sugar_median_per_100,soft_drinks,France,,1850,6.6,g (median),True
+sugar_median_per_serving,soft_drinks,France,,1850,15.6,g (median),True
+sodium_mg_median_per_100,soft_drinks,France,,1830,4.0,mg (median),True
+sodium_mg_median_per_serving,soft_drinks,France,,1830,10.0,mg (median),True
+factor_100_over_serving,soft_drinks,France,,1850,0.4,times (median),True
+median_serving,soft_drinks,UK,,595,330.0,ml (median),True
+at_most_200ml,soft_drinks,UK,58,595,9.7,%,True
+sugar_median_per_100,soft_drinks,UK,,549,3.9,g (median),True
+sugar_median_per_serving,soft_drinks,UK,,549,8.1,g (median),True
+sodium_mg_median_per_100,soft_drinks,UK,,521,6.0,mg (median),True
+sodium_mg_median_per_serving,soft_drinks,UK,,521,18.0,mg (median),True
+factor_100_over_serving,soft_drinks,UK,,549,0.3,times (median),True
+median_serving,soft_drinks,India,,76,200.0,ml (median),True
+at_most_200ml,soft_drinks,India,49,76,64.5,%,True
+sugar_median_per_100,soft_drinks,India,,29,10.6,g (median),False
+sugar_median_per_serving,soft_drinks,India,,29,23.0,g (median),False
+sodium_mg_median_per_100,soft_drinks,India,,31,15.0,mg (median),True
+sodium_mg_median_per_serving,soft_drinks,India,,31,40.0,mg (median),True
+factor_100_over_serving,soft_drinks,India,,29,0.5,times (median),False
+median_serving_with_placeholders,soft_drinks,India,,91,200.0,g or ml (median),True
+median_serving_with_placeholders,soft_drinks,US,,6171,355.0,g or ml (median),True
+median_serving_with_placeholders,soft_drinks,France,,2196,250.0,g or ml (median),True
+median_serving_with_placeholders,soft_drinks,UK,,652,275.0,g or ml (median),True
+dropped_no_serving,soft_drinks,India,140,241,,packs,True
+dropped_kept,soft_drinks,India,76,241,,packs,True
+dropped_placeholder_100,soft_drinks,India,15,241,,packs,True
+dropped_over_pack,soft_drinks,India,3,241,,packs,True
+dropped_huge,soft_drinks,India,6,241,,packs,True
+dropped_tiny,soft_drinks,India,1,241,,packs,True
+dropped_no_serving,soft_drinks,France,4189,6635,,packs,True
+dropped_kept,soft_drinks,France,1934,6635,,packs,True
+dropped_over_pack,soft_drinks,France,63,6635,,packs,True
+dropped_huge,soft_drinks,France,177,6635,,packs,True
+dropped_tiny,soft_drinks,France,10,6635,,packs,True
+dropped_placeholder_100,soft_drinks,France,262,6635,,packs,True
+dropped_no_serving,soft_drinks,US,943,7470,,packs,True
+dropped_kept,soft_drinks,US,6150,7470,,packs,True
+dropped_huge,soft_drinks,US,246,7470,,packs,True
+dropped_over_pack,soft_drinks,US,82,7470,,packs,True
+dropped_tiny,soft_drinks,US,28,7470,,packs,True
+dropped_placeholder_100,soft_drinks,US,21,7470,,packs,True
+dropped_no_serving,soft_drinks,UK,727,1402,,packs,True
+dropped_kept,soft_drinks,UK,595,1402,,packs,True
+dropped_over_pack,soft_drinks,UK,7,1402,,packs,True
+dropped_placeholder_100,soft_drinks,UK,57,1402,,packs,True
+dropped_huge,soft_drinks,UK,15,1402,,packs,True
+dropped_tiny,soft_drinks,UK,1,1402,,packs,True
+median_serving,cereals,France,,2661,40.0,g (median),True
+under_30g,cereals,France,139,2661,5.2,%,True
+sugar_median_per_100,cereals,France,,2536,19.0,g (median),True
+sugar_median_per_serving,cereals,France,,2536,7.3,g (median),True
+sodium_mg_median_per_100,cereals,France,,2505,120.0,mg (median),True
+sodium_mg_median_per_serving,cereals,France,,2505,45.0,mg (median),True
+factor_100_over_serving,cereals,France,,2536,2.5,times (median),True
+median_serving,cereals,US,,2235,40.0,g (median),True
+under_30g,cereals,US,271,2235,12.1,%,True
+sugar_median_per_100,cereals,US,,2201,20.0,g (median),True
+sugar_median_per_serving,cereals,US,,2201,9.0,g (median),True
+sodium_mg_median_per_100,cereals,US,,2157,327.0,mg (median),True
+sodium_mg_median_per_serving,cereals,US,,2157,130.0,mg (median),True
+factor_100_over_serving,cereals,US,,2201,2.5,times (median),True
+median_serving,cereals,UK,,784,40.0,g (median),True
+under_30g,cereals,UK,32,784,4.1,%,True
+sugar_median_per_100,cereals,UK,,773,14.8,g (median),True
+sugar_median_per_serving,cereals,UK,,773,6.0,g (median),True
+sodium_mg_median_per_100,cereals,UK,,747,68.0,mg (median),True
+sodium_mg_median_per_serving,cereals,UK,,747,32.0,mg (median),True
+factor_100_over_serving,cereals,UK,,773,2.5,times (median),True
+median_serving,cereals,India,,98,40.0,g (median),True
+under_30g,cereals,India,8,98,8.2,%,True
+sugar_median_per_100,cereals,India,,31,9.2,g (median),True
+sugar_median_per_serving,cereals,India,,31,3.4,g (median),True
+sodium_mg_median_per_100,cereals,India,,31,130.0,mg (median),True
+sodium_mg_median_per_serving,cereals,India,,31,53.0,mg (median),True
+factor_100_over_serving,cereals,India,,31,2.5,times (median),True
+median_serving_with_placeholders,cereals,India,,116,40.0,g or ml (median),True
+median_serving_with_placeholders,cereals,France,,3018,40.0,g or ml (median),True
+median_serving_with_placeholders,cereals,US,,2252,40.0,g or ml (median),True
+median_serving_with_placeholders,cereals,UK,,923,45.0,g or ml (median),True
+dropped_placeholder_100,cereals,India,18,259,,packs,True
+dropped_tiny,cereals,India,1,259,,packs,True
+dropped_no_serving,cereals,India,142,259,,packs,True
+dropped_kept,cereals,India,98,259,,packs,True
+dropped_kept,cereals,France,2661,7392,,packs,True
+dropped_no_serving,cereals,France,4355,7392,,packs,True
+dropped_placeholder_100,cereals,France,357,7392,,packs,True
+dropped_over_pack,cereals,France,15,7392,,packs,True
+dropped_tiny,cereals,France,3,7392,,packs,True
+dropped_huge,cereals,France,1,7392,,packs,True
+dropped_kept,cereals,US,2235,3653,,packs,True
+dropped_no_serving,cereals,US,1377,3653,,packs,True
+dropped_tiny,cereals,US,5,3653,,packs,True
+dropped_over_pack,cereals,US,17,3653,,packs,True
+dropped_placeholder_100,cereals,US,17,3653,,packs,True
+dropped_huge,cereals,US,2,3653,,packs,True
+dropped_no_serving,cereals,UK,910,1845,,packs,True
+dropped_placeholder_100,cereals,UK,139,1845,,packs,True
+dropped_kept,cereals,UK,784,1845,,packs,True
+dropped_over_pack,cereals,UK,11,1845,,packs,True
+dropped_tiny,cereals,UK,1,1845,,packs,True
+median_serving,instant_noodles,France,,372,85.0,g (median),True
+under_30g,instant_noodles,France,6,372,1.6,%,True
+sugar_median_per_100,instant_noodles,France,,360,2.6,g (median),True
+sugar_median_per_serving,instant_noodles,France,,360,2.5,g (median),True
+sodium_mg_median_per_100,instant_noodles,France,,364,920.0,mg (median),True
+sodium_mg_median_per_serving,instant_noodles,France,,364,964.0,mg (median),True
+factor_100_over_serving,instant_noodles,France,,360,1.2,times (median),True
+median_serving,instant_noodles,US,,196,85.0,g (median),True
+under_30g,instant_noodles,US,2,196,1.0,%,True
+sugar_median_per_100,instant_noodles,US,,93,3.1,g (median),False
+sugar_median_per_serving,instant_noodles,US,,93,3.0,g (median),False
+sodium_mg_median_per_100,instant_noodles,US,,92,1303.0,mg (median),False
+sodium_mg_median_per_serving,instant_noodles,US,,92,1139.0,mg (median),False
+factor_100_over_serving,instant_noodles,US,,93,1.2,times (median),False
+median_serving,instant_noodles,UK,,97,87.0,g (median),False
+under_30g,instant_noodles,UK,1,97,1.0,%,False
+sugar_median_per_100,instant_noodles,UK,,91,1.9,g (median),False
+sugar_median_per_serving,instant_noodles,UK,,91,1.9,g (median),False
+sodium_mg_median_per_100,instant_noodles,UK,,93,452.0,mg (median),False
+sodium_mg_median_per_serving,instant_noodles,UK,,93,573.0,mg (median),False
+factor_100_over_serving,instant_noodles,UK,,91,1.1,times (median),False
+median_serving,instant_noodles,India,,52,70.0,g (median),True
+under_30g,instant_noodles,India,1,52,1.9,%,True
+sugar_median_per_100,instant_noodles,India,,20,2.1,g (median),False
+sugar_median_per_serving,instant_noodles,India,,20,1.3,g (median),False
+sodium_mg_median_per_100,instant_noodles,India,,18,1028.0,mg (median),False
+sodium_mg_median_per_serving,instant_noodles,India,,18,720.0,mg (median),False
+factor_100_over_serving,instant_noodles,India,,20,1.4,times (median),False
+median_serving_with_placeholders,instant_noodles,India,,58,70.0,g or ml (median),True
+median_serving_with_placeholders,instant_noodles,US,,204,85.0,g or ml (median),True
+median_serving_with_placeholders,instant_noodles,UK,,109,90.0,g or ml (median),True
+median_serving_with_placeholders,instant_noodles,France,,426,85.0,g or ml (median),True
+dropped_no_serving,instant_noodles,India,81,140,,packs,True
+dropped_kept,instant_noodles,India,52,140,,packs,True
+dropped_huge,instant_noodles,India,1,140,,packs,True
+dropped_placeholder_100,instant_noodles,India,6,140,,packs,True
+dropped_no_serving,instant_noodles,France,670,1248,,packs,True
+dropped_kept,instant_noodles,France,372,1248,,packs,True
+dropped_placeholder_100,instant_noodles,France,54,1248,,packs,True
+dropped_over_pack,instant_noodles,France,151,1248,,packs,True
+dropped_huge,instant_noodles,France,1,1248,,packs,True
+dropped_kept,instant_noodles,US,196,271,,packs,True
+dropped_no_serving,instant_noodles,US,61,271,,packs,True
+dropped_over_pack,instant_noodles,US,6,271,,packs,True
+dropped_placeholder_100,instant_noodles,US,8,271,,packs,True
+dropped_no_serving,instant_noodles,UK,129,290,,packs,True
+dropped_kept,instant_noodles,UK,97,290,,packs,True
+dropped_over_pack,instant_noodles,UK,52,290,,packs,True
+dropped_placeholder_100,instant_noodles,UK,12,290,,packs,True
+median_serving,ice_cream,US,,10237,84.0,g (median),True
+under_30g,ice_cream,US,76,10237,0.7,%,True
+sugar_median_per_100,ice_cream,US,,607,22.0,g (median),True
+sugar_median_per_serving,ice_cream,US,,607,19.0,g (median),True
+sodium_mg_median_per_100,ice_cream,US,,606,80.0,mg (median),True
+sodium_mg_median_per_serving,ice_cream,US,,606,70.0,mg (median),True
+factor_100_over_serving,ice_cream,US,,607,1.1,times (median),True
+median_serving,ice_cream,France,,2124,67.0,g (median),True
+under_30g,ice_cream,France,64,2124,3.0,%,True
+sugar_median_per_100,ice_cream,France,,2053,24.2,g (median),True
+sugar_median_per_serving,ice_cream,France,,2053,15.8,g (median),True
+sodium_mg_median_per_100,ice_cream,France,,2028,52.0,mg (median),True
+sodium_mg_median_per_serving,ice_cream,France,,2028,34.0,mg (median),True
+factor_100_over_serving,ice_cream,France,,2053,1.5,times (median),True
+median_serving,ice_cream,UK,,317,71.0,g (median),True
+under_30g,ice_cream,UK,10,317,3.2,%,True
+sugar_median_per_100,ice_cream,UK,,313,21.7,g (median),True
+sugar_median_per_serving,ice_cream,UK,,313,15.3,g (median),True
+sodium_mg_median_per_100,ice_cream,UK,,301,52.0,mg (median),True
+sodium_mg_median_per_serving,ice_cream,UK,,301,35.0,mg (median),True
+factor_100_over_serving,ice_cream,UK,,313,1.4,times (median),True
+median_serving,ice_cream,India,,72,62.5,g (median),True
+under_30g,ice_cream,India,4,72,5.6,%,True
+sugar_median_per_100,ice_cream,India,,16,23.3,g (median),False
+sugar_median_per_serving,ice_cream,India,,16,15.9,g (median),False
+sodium_mg_median_per_100,ice_cream,India,,15,68.0,mg (median),False
+sodium_mg_median_per_serving,ice_cream,India,,15,43.0,mg (median),False
+factor_100_over_serving,ice_cream,India,,16,1.5,times (median),False
+median_serving_with_placeholders,ice_cream,India,,87,69.0,g or ml (median),True
+median_serving_with_placeholders,ice_cream,US,,10263,85.0,g or ml (median),True
+median_serving_with_placeholders,ice_cream,France,,2424,70.0,g or ml (median),True
+median_serving_with_placeholders,ice_cream,UK,,399,79.0,g or ml (median),True
+dropped_no_serving,ice_cream,India,90,178,,packs,True
+dropped_placeholder_100,ice_cream,India,15,178,,packs,True
+dropped_kept,ice_cream,India,72,178,,packs,True
+dropped_huge,ice_cream,India,1,178,,packs,True
+dropped_no_serving,ice_cream,France,6887,9355,,packs,True
+dropped_kept,ice_cream,France,2124,9355,,packs,True
+dropped_placeholder_100,ice_cream,France,300,9355,,packs,True
+dropped_huge,ice_cream,France,5,9355,,packs,True
+dropped_tiny,ice_cream,France,7,9355,,packs,True
+dropped_over_pack,ice_cream,France,32,9355,,packs,True
+dropped_kept,ice_cream,US,10237,11197,,packs,True
+dropped_no_serving,ice_cream,US,796,11197,,packs,True
+dropped_over_pack,ice_cream,US,126,11197,,packs,True
+dropped_placeholder_100,ice_cream,US,26,11197,,packs,True
+dropped_tiny,ice_cream,US,5,11197,,packs,True
+dropped_huge,ice_cream,US,7,11197,,packs,True
+dropped_no_serving,ice_cream,UK,491,896,,packs,True
+dropped_kept,ice_cream,UK,317,896,,packs,True
+dropped_placeholder_100,ice_cream,UK,82,896,,packs,True
+dropped_over_pack,ice_cream,UK,5,896,,packs,True
+dropped_tiny,ice_cream,UK,1,896,,packs,True
+median_serving,namkeen,US,,4750,28.0,g (median),True
+under_30g,namkeen,US,3258,4750,68.6,%,True
+sugar_median_per_100,namkeen,US,,1533,3.5,g (median),True
+sugar_median_per_serving,namkeen,US,,1533,1.0,g (median),True
+sodium_mg_median_per_100,namkeen,US,,1568,607.0,mg (median),True
+sodium_mg_median_per_serving,namkeen,US,,1568,170.0,mg (median),True
+factor_100_over_serving,namkeen,US,,1533,3.6,times (median),True
+median_serving,namkeen,France,,4645,30.0,g (median),True
+under_30g,namkeen,France,1739,4645,37.4,%,True
+sugar_median_per_100,namkeen,France,,4431,2.7,g (median),True
+sugar_median_per_serving,namkeen,France,,4431,0.8,g (median),True
+sodium_mg_median_per_100,namkeen,France,,4422,560.0,mg (median),True
+sodium_mg_median_per_serving,namkeen,France,,4422,168.0,mg (median),True
+factor_100_over_serving,namkeen,France,,4431,3.3,times (median),True
+median_serving,namkeen,UK,,1371,30.0,g (median),True
+under_30g,namkeen,UK,668,1371,48.7,%,True
+sugar_median_per_100,namkeen,UK,,1342,2.7,g (median),True
+sugar_median_per_serving,namkeen,UK,,1342,0.7,g (median),True
+sodium_mg_median_per_100,namkeen,UK,,1311,480.0,mg (median),True
+sodium_mg_median_per_serving,namkeen,UK,,1311,140.0,mg (median),True
+factor_100_over_serving,namkeen,UK,,1342,3.3,times (median),True
+median_serving,namkeen,India,,152,28.0,g (median),True
+under_30g,namkeen,India,85,152,55.9,%,True
+sugar_median_per_100,namkeen,India,,42,2.4,g (median),True
+sugar_median_per_serving,namkeen,India,,42,0.5,g (median),True
+sodium_mg_median_per_100,namkeen,India,,41,643.0,mg (median),True
+sodium_mg_median_per_serving,namkeen,India,,41,165.0,mg (median),True
+factor_100_over_serving,namkeen,India,,42,4.0,times (median),True
+median_serving_with_placeholders,namkeen,India,,179,30.0,g or ml (median),True
+median_serving_with_placeholders,namkeen,UK,,1615,30.0,g or ml (median),True
+median_serving_with_placeholders,namkeen,France,,5292,30.0,g or ml (median),True
+median_serving_with_placeholders,namkeen,US,,4800,28.0,g or ml (median),True
+dropped_no_serving,namkeen,India,291,479,,packs,True
+dropped_kept,namkeen,India,152,479,,packs,True
+dropped_over_pack,namkeen,India,9,479,,packs,True
+dropped_placeholder_100,namkeen,India,27,479,,packs,True
+dropped_no_serving,namkeen,US,2673,7526,,packs,True
+dropped_kept,namkeen,US,4750,7526,,packs,True
+dropped_over_pack,namkeen,US,36,7526,,packs,True
+dropped_tiny,namkeen,US,16,7526,,packs,True
+dropped_placeholder_100,namkeen,US,50,7526,,packs,True
+dropped_huge,namkeen,US,1,7526,,packs,True
+dropped_no_serving,namkeen,France,10359,15700,,packs,True
+dropped_placeholder_100,namkeen,France,647,15700,,packs,True
+dropped_kept,namkeen,France,4645,15700,,packs,True
+dropped_over_pack,namkeen,France,23,15700,,packs,True
+dropped_tiny,namkeen,France,19,15700,,packs,True
+dropped_huge,namkeen,France,7,15700,,packs,True
+dropped_no_serving,namkeen,UK,1635,3264,,packs,True
+dropped_placeholder_100,namkeen,UK,244,3264,,packs,True
+dropped_kept,namkeen,UK,1371,3264,,packs,True
+dropped_over_pack,namkeen,UK,8,3264,,packs,True
+dropped_tiny,namkeen,UK,6,3264,,packs,True
+single_serve_serving_smaller_than_pack,all_foods,India,108,262,41.2,%,True
+single_serve_serving_is_the_pack,all_foods,India,154,262,58.8,%,True
+single_serve_serving_smaller_than_pack,biscuits,India,24,37,64.9,%,False
+single_serve_serving_is_the_pack,biscuits,India,13,37,35.1,%,False
+single_serve_serving_smaller_than_pack,chocolate,India,8,25,32.0,%,False
+single_serve_serving_is_the_pack,chocolate,India,17,25,68.0,%,False
+single_serve_serving_smaller_than_pack,chips,India,18,27,66.7,%,False
+single_serve_serving_is_the_pack,chips,India,9,27,33.3,%,False
+single_serve_serving_smaller_than_pack,namkeen,India,24,41,58.5,%,False
+single_serve_serving_is_the_pack,namkeen,India,17,41,41.5,%,False
