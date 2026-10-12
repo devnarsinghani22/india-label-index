@@ -1,0 +1,6110 @@
+{
+ "source": "Open Food Facts (https://world.openfoodfacts.org/), ODbL. off_multi.tsv read 6 Oct 2026 (16 countries, one snapshot); brand tags for the India check from off_india.csv read 1 Oct 2026.",
+ "note": "Open Food Facts is filled in by volunteers, so no country's numbers are a random sample of its shops. A product tagged as sold in two countries counts in both. Medians: k = packs with a usable value, n = every pack in the category; shares: k of n lists, pct = 100*k/n rounded once. ok=False means fewer than MIN_K packs behind the cell: not for headlines. Drinks are per 100 ml as entered on Open Food Facts. English-list measures cover English-label countries only.",
+ "rows_read": 3592460,
+ "duplicate_codes_skipped": 53,
+ "baby_and_supplement_rows_skipped": 29378,
+ "min_k": 20,
+ "english_countries": [
+  "Australia",
+  "Canada",
+  "India",
+  "Singapore",
+  "South Africa",
+  "UAE",
+  "UK",
+  "US"
+ ],
+ "countries": [
+  "Australia",
+  "Brazil",
+  "Canada",
+  "Chile",
+  "France",
+  "Germany",
+  "India",
+  "Indonesia",
+  "Italy",
+  "Mexico",
+  "Singapore",
+  "South Africa",
+  "Spain",
+  "UAE",
+  "UK",
+  "US"
+ ],
+ "categories": {
+  "biscuits": {
+   "label": "Biscuits",
+   "tags": [
+    "en:biscuits",
+    "en:cookies"
+   ],
+   "drop_tags": [
+    "en:candies",
+    "en:meringues"
+   ],
+   "sugar_cap": 80,
+   "salt_cap": 10,
+   "per": "100 g"
+  },
+  "breakfast_cereals": {
+   "label": "Breakfast cereals",
+   "tags": [
+    "en:breakfast-cereals"
+   ],
+   "drop_tags": [
+    "en:bars",
+    "en:cereal-bars",
+    "en:chocolates",
+    "en:syrups"
+   ],
+   "sugar_cap": 75,
+   "salt_cap": 10,
+   "per": "100 g"
+  },
+  "chocolate": {
+   "label": "Chocolate",
+   "tags": [
+    "en:chocolates"
+   ],
+   "drop_tags": [
+    "en:beverage-preparations",
+    "en:beverages-and-beverages-preparations",
+    "en:biscuits",
+    "en:breakfast-cereals",
+    "en:chocolate-powders",
+    "en:cocoa-and-chocolate-powders",
+    "en:cooking-helpers",
+    "en:dairy-drinks",
+    "en:dehydrated-beverages",
+    "en:dried-products",
+    "en:dried-products-to-be-rehydrated",
+    "en:food-decorations",
+    "en:instant-beverages",
+    "en:powdered-drinks",
+    "en:spreads",
+    "en:sprinkles",
+    "en:sweet-spreads",
+    "en:sweeteners"
+   ],
+   "sugar_cap": 80,
+   "salt_cap": null,
+   "per": "100 g"
+  },
+  "soft_drinks": {
+   "label": "Soft drinks",
+   "tags": [
+    "en:sodas"
+   ],
+   "drop_tags": [
+    "en:alcoholic-beverages",
+    "en:beverage-preparations",
+    "en:candies",
+    "en:carbonated-waters",
+    "en:chocolate-powders",
+    "en:cocoa-and-chocolate-powders",
+    "en:concentrates",
+    "en:dehydrated-beverages",
+    "en:dried-products",
+    "en:dried-products-to-be-rehydrated",
+    "en:flavoured-syrups",
+    "en:instant-beverages",
+    "en:powdered-drinks",
+    "en:syrups",
+    "en:waters"
+   ],
+   "sugar_cap": 25,
+   "salt_cap": null,
+   "per": "100 ml"
+  },
+  "flavoured_milk": {
+   "label": "Flavoured milk",
+   "tags": [
+    "en:flavoured-milks"
+   ],
+   "drop_tags": [
+    "en:beverage-preparations",
+    "en:bodybuilding-supplements",
+    "en:chocolate-candies",
+    "en:chocolate-powders",
+    "en:chocolates",
+    "en:cocoa-and-chocolate-powders",
+    "en:dehydrated-beverages",
+    "en:dietary-supplements",
+    "en:dried-products",
+    "en:dried-products-to-be-rehydrated",
+    "en:instant-beverages",
+    "en:meal-replacements",
+    "en:milk-powders",
+    "en:powdered-drinks",
+    "en:sugars",
+    "en:sweeteners",
+    "en:weight-loss-milkshakes"
+   ],
+   "sugar_cap": 30,
+   "salt_cap": null,
+   "per": "100 ml"
+  },
+  "ketchup": {
+   "label": "Ketchup",
+   "tags": [
+    "en:ketchup",
+    "en:tomato-ketchup"
+   ],
+   "drop_tags": [],
+   "sugar_cap": 50,
+   "salt_cap": 10,
+   "per": "100 g"
+  },
+  "sauces": {
+   "label": "Sauces (all kinds)",
+   "tags": [
+    "en:sauces"
+   ],
+   "drop_tags": [
+    "en:candies",
+    "en:dehydrated-sauces",
+    "en:dried-products",
+    "en:dried-products-to-be-rehydrated",
+    "en:food-additives",
+    "en:fruit-and-vegetable-preserves",
+    "en:jams",
+    "en:maple-syrups",
+    "en:marmalades",
+    "en:sauce-mixes",
+    "en:soup-base",
+    "en:spice-mix",
+    "en:spices",
+    "en:sweet-spreads",
+    "en:syrups"
+   ],
+   "sugar_cap": 90,
+   "salt_cap": 25,
+   "per": "100 g"
+  },
+  "yoghurt": {
+   "label": "Yoghurt",
+   "tags": [
+    "en:yogurts"
+   ],
+   "drop_tags": [
+    "en:biscuits",
+    "en:butters",
+    "en:candies",
+    "en:cheeses",
+    "en:confectioneries",
+    "en:dehydrated-beverages",
+    "en:dried-products",
+    "en:fats",
+    "en:margarines",
+    "en:meats-and-their-products",
+    "en:non-food-products"
+   ],
+   "sugar_cap": 30,
+   "salt_cap": null,
+   "per": "100 g"
+  },
+  "cakes": {
+   "label": "Cakes",
+   "tags": [
+    "en:cakes"
+   ],
+   "drop_tags": [
+    "en:baking-mixes",
+    "en:bodybuilding-supplements",
+    "en:cake-mixes",
+    "en:candies",
+    "en:cooking-helpers",
+    "en:dessert-mixes",
+    "en:dietary-supplements",
+    "en:marshmallows",
+    "en:meal-replacements",
+    "en:pastry-helpers",
+    "en:weight-loss-milkshakes"
+   ],
+   "sugar_cap": 80,
+   "salt_cap": null,
+   "per": "100 g"
+  },
+  "ice_cream": {
+   "label": "Ice cream",
+   "tags": [
+    "en:ice-creams"
+   ],
+   "drop_tags": [
+    "en:candies",
+    "en:caramels",
+    "en:dehydrated-beverages",
+    "en:dried-products",
+    "en:ice-cream-cones",
+    "en:ice-cream-mix",
+    "en:mochi",
+    "en:pastries"
+   ],
+   "sugar_cap": 60,
+   "salt_cap": null,
+   "per": "100 g"
+  },
+  "chips": {
+   "label": "Chips",
+   "tags": [
+    "en:corn-chips",
+    "en:crisps",
+    "en:extruded-snacks",
+    "en:potato-chips",
+    "en:potato-crisps",
+    "en:tortilla-chips"
+   ],
+   "drop_tags": [
+    "en:biscuits",
+    "en:candies",
+    "en:dried-fruits",
+    "en:popcorn",
+    "en:spice-mix",
+    "en:spices"
+   ],
+   "sugar_cap": 40,
+   "salt_cap": 10,
+   "per": "100 g"
+  },
+  "namkeen": {
+   "label": "Namkeen",
+   "tags": [
+    "en:bhujia",
+    "en:indian-snacks",
+    "en:namkeen"
+   ],
+   "drop_tags": [
+    "en:biscuits",
+    "en:breads"
+   ],
+   "sugar_cap": 40,
+   "salt_cap": 10,
+   "per": "100 g"
+  },
+  "instant_noodles": {
+   "label": "Instant noodles",
+   "tags": [
+    "en:instant-noodles"
+   ],
+   "drop_tags": [],
+   "sugar_cap": 40,
+   "salt_cap": 20,
+   "per": "100 g"
+  }
+ },
+ "sugar": {
+  "biscuits": {
+   "France": {
+    "k": 18448,
+    "n": 20051,
+    "median": 29.0,
+    "ok": true,
+    "q1": 23.0,
+    "q3": 35.7
+   },
+   "Italy": {
+    "k": 4609,
+    "n": 4789,
+    "median": 24.0,
+    "ok": true,
+    "q1": 20.0,
+    "q3": 30.0
+   },
+   "Spain": {
+    "k": 3917,
+    "n": 4211,
+    "median": 25.0,
+    "ok": true,
+    "q1": 19.0,
+    "q3": 33.0
+   },
+   "Germany": {
+    "k": 3302,
+    "n": 3443,
+    "median": 31.0,
+    "ok": true,
+    "q1": 24.3,
+    "q3": 37.0
+   },
+   "UK": {
+    "k": 1972,
+    "n": 2162,
+    "median": 28.0,
+    "ok": true,
+    "q1": 19.0,
+    "q3": 35.2
+   },
+   "US": {
+    "k": 1311,
+    "n": 12105,
+    "median": 28.0,
+    "ok": true,
+    "q1": 17.0,
+    "q3": 35.7
+   },
+   "Canada": {
+    "k": 690,
+    "n": 733,
+    "median": 30.0,
+    "ok": true,
+    "q1": 22.0,
+    "q3": 37.2
+   },
+   "Mexico": {
+    "k": 426,
+    "n": 480,
+    "median": 26.7,
+    "ok": true,
+    "q1": 10.1,
+    "q3": 34.0
+   },
+   "Brazil": {
+    "k": 226,
+    "n": 440,
+    "median": 26.0,
+    "ok": true,
+    "q1": 10.0,
+    "q3": 36.0
+   },
+   "Australia": {
+    "k": 169,
+    "n": 427,
+    "median": 32.5,
+    "ok": true,
+    "q1": 20.3,
+    "q3": 40.0
+   },
+   "Chile": {
+    "k": 151,
+    "n": 171,
+    "median": 28.3,
+    "ok": true,
+    "q1": 7.6,
+    "q3": 34.0
+   },
+   "India": {
+    "k": 87,
+    "n": 711,
+    "median": 25.0,
+    "ok": true,
+    "q1": 20.5,
+    "q3": 35.1
+   },
+   "UAE": {
+    "k": 20,
+    "n": 66,
+    "median": 22.5,
+    "ok": true,
+    "q1": 4.8,
+    "q3": 30.4
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 57,
+    "median": 29.6,
+    "ok": false,
+    "q1": 15.9,
+    "q3": 38.2
+   },
+   "Indonesia": {
+    "k": 15,
+    "n": 72,
+    "median": 32.0,
+    "ok": false,
+    "q1": 25.0,
+    "q3": 36.5
+   },
+   "South Africa": {
+    "k": 10,
+    "n": 39,
+    "median": 27.9,
+    "ok": false,
+    "q1": 23.1,
+    "q3": 40.6
+   }
+  },
+  "breakfast_cereals": {
+   "France": {
+    "k": 6749,
+    "n": 7303,
+    "median": 17.0,
+    "ok": true,
+    "q1": 8.9,
+    "q3": 23.0
+   },
+   "US": {
+    "k": 3399,
+    "n": 3632,
+    "median": 20.0,
+    "ok": true,
+    "q1": 10.0,
+    "q3": 28.1
+   },
+   "Germany": {
+    "k": 3241,
+    "n": 3363,
+    "median": 14.0,
+    "ok": true,
+    "q1": 5.3,
+    "q3": 20.0
+   },
+   "Spain": {
+    "k": 2112,
+    "n": 2270,
+    "median": 15.0,
+    "ok": true,
+    "q1": 3.0,
+    "q3": 23.0
+   },
+   "Italy": {
+    "k": 1732,
+    "n": 1788,
+    "median": 15.0,
+    "ok": true,
+    "q1": 5.0,
+    "q3": 22.0
+   },
+   "UK": {
+    "k": 1690,
+    "n": 1826,
+    "median": 14.2,
+    "ok": true,
+    "q1": 6.6,
+    "q3": 19.6
+   },
+   "Canada": {
+    "k": 592,
+    "n": 636,
+    "median": 17.7,
+    "ok": true,
+    "q1": 7.1,
+    "q3": 25.0
+   },
+   "Mexico": {
+    "k": 302,
+    "n": 327,
+    "median": 17.6,
+    "ok": true,
+    "q1": 8.0,
+    "q3": 29.3
+   },
+   "Australia": {
+    "k": 157,
+    "n": 504,
+    "median": 14.7,
+    "ok": true,
+    "q1": 6.8,
+    "q3": 20.1
+   },
+   "Brazil": {
+    "k": 148,
+    "n": 183,
+    "median": 1.7,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 15.0
+   },
+   "Chile": {
+    "k": 93,
+    "n": 105,
+    "median": 4.8,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 17.4
+   },
+   "India": {
+    "k": 57,
+    "n": 254,
+    "median": 10.5,
+    "ok": true,
+    "q1": 4.4,
+    "q3": 20.2
+   },
+   "South Africa": {
+    "k": 12,
+    "n": 57,
+    "median": 15.2,
+    "ok": false,
+    "q1": 1.9,
+    "q3": 20.2
+   },
+   "Singapore": {
+    "k": 9,
+    "n": 50,
+    "median": 16.9,
+    "ok": false,
+    "q1": 8.6,
+    "q3": 24.2
+   },
+   "UAE": {
+    "k": 8,
+    "n": 36,
+    "median": 17.0,
+    "ok": false,
+    "q1": 9.2,
+    "q3": 33.0
+   },
+   "Indonesia": {
+    "k": 7,
+    "n": 12,
+    "median": 22.0,
+    "ok": false,
+    "q1": 15.6,
+    "q3": 27.0
+   }
+  },
+  "chocolate": {
+   "France": {
+    "k": 12604,
+    "n": 13590,
+    "median": 44.4,
+    "ok": true,
+    "q1": 30.0,
+    "q3": 51.5
+   },
+   "Germany": {
+    "k": 3753,
+    "n": 3921,
+    "median": 47.0,
+    "ok": true,
+    "q1": 38.0,
+    "q3": 52.0
+   },
+   "Spain": {
+    "k": 2567,
+    "n": 2695,
+    "median": 39.2,
+    "ok": true,
+    "q1": 21.0,
+    "q3": 50.0
+   },
+   "Italy": {
+    "k": 2255,
+    "n": 2349,
+    "median": 41.0,
+    "ok": true,
+    "q1": 27.0,
+    "q3": 49.9
+   },
+   "UK": {
+    "k": 1446,
+    "n": 1579,
+    "median": 45.0,
+    "ok": true,
+    "q1": 30.9,
+    "q3": 53.5
+   },
+   "Canada": {
+    "k": 597,
+    "n": 630,
+    "median": 44.4,
+    "ok": true,
+    "q1": 27.5,
+    "q3": 52.5
+   },
+   "US": {
+    "k": 463,
+    "n": 1402,
+    "median": 43.5,
+    "ok": true,
+    "q1": 26.7,
+    "q3": 53.3
+   },
+   "Brazil": {
+    "k": 174,
+    "n": 228,
+    "median": 48.0,
+    "ok": true,
+    "q1": 26.0,
+    "q3": 53.4
+   },
+   "Australia": {
+    "k": 169,
+    "n": 412,
+    "median": 48.0,
+    "ok": true,
+    "q1": 35.8,
+    "q3": 54.4
+   },
+   "Mexico": {
+    "k": 87,
+    "n": 105,
+    "median": 41.8,
+    "ok": true,
+    "q1": 12.4,
+    "q3": 53.5
+   },
+   "Chile": {
+    "k": 55,
+    "n": 68,
+    "median": 45.0,
+    "ok": true,
+    "q1": 17.0,
+    "q3": 55.0
+   },
+   "India": {
+    "k": 36,
+    "n": 197,
+    "median": 43.6,
+    "ok": true,
+    "q1": 30.6,
+    "q3": 52.0
+   },
+   "UAE": {
+    "k": 11,
+    "n": 33,
+    "median": 42.0,
+    "ok": false,
+    "q1": 29.0,
+    "q3": 54.0
+   },
+   "Singapore": {
+    "k": 9,
+    "n": 18,
+    "median": 40.1,
+    "ok": false,
+    "q1": 17.9,
+    "q3": 49.3
+   },
+   "South Africa": {
+    "k": 6,
+    "n": 21,
+    "median": 54.0,
+    "ok": false,
+    "q1": 43.9,
+    "q3": 58.3
+   },
+   "Indonesia": {
+    "k": 0,
+    "n": 10,
+    "median": null,
+    "ok": false
+   }
+  },
+  "soft_drinks": {
+   "France": {
+    "k": 3790,
+    "n": 4246,
+    "median": 7.4,
+    "ok": true,
+    "q1": 3.4,
+    "q3": 9.8
+   },
+   "Germany": {
+    "k": 2123,
+    "n": 2311,
+    "median": 7.0,
+    "ok": true,
+    "q1": 3.2,
+    "q3": 9.2
+   },
+   "UK": {
+    "k": 718,
+    "n": 818,
+    "median": 3.9,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 4.9
+   },
+   "Spain": {
+    "k": 706,
+    "n": 789,
+    "median": 4.2,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 7.7
+   },
+   "US": {
+    "k": 443,
+    "n": 6165,
+    "median": 8.8,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 11.0
+   },
+   "Italy": {
+    "k": 414,
+    "n": 443,
+    "median": 8.6,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 10.9
+   },
+   "Canada": {
+    "k": 371,
+    "n": 410,
+    "median": 9.2,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 11.3
+   },
+   "Mexico": {
+    "k": 109,
+    "n": 135,
+    "median": 7.5,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 8.7
+   },
+   "Australia": {
+    "k": 48,
+    "n": 240,
+    "median": 7.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 9.5
+   },
+   "Brazil": {
+    "k": 43,
+    "n": 105,
+    "median": 9.0,
+    "ok": true,
+    "q1": 3.3,
+    "q3": 10.5
+   },
+   "India": {
+    "k": 38,
+    "n": 144,
+    "median": 10.6,
+    "ok": true,
+    "q1": 9.7,
+    "q3": 11.5
+   },
+   "Chile": {
+    "k": 23,
+    "n": 32,
+    "median": 7.8,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 10.6
+   },
+   "South Africa": {
+    "k": 13,
+    "n": 55,
+    "median": 9.2,
+    "ok": false,
+    "q1": 5.2,
+    "q3": 10.8
+   },
+   "Singapore": {
+    "k": 7,
+    "n": 27,
+    "median": 4.9,
+    "ok": false,
+    "q1": 4.6,
+    "q3": 10.6
+   },
+   "UAE": {
+    "k": 6,
+    "n": 25,
+    "median": 3.8,
+    "ok": false,
+    "q1": 0.0,
+    "q3": 11.0
+   },
+   "Indonesia": {
+    "k": 2,
+    "n": 16,
+    "median": 0.0,
+    "ok": false
+   }
+  },
+  "flavoured_milk": {
+   "France": {
+    "k": 428,
+    "n": 464,
+    "median": 10.0,
+    "ok": true,
+    "q1": 8.5,
+    "q3": 11.0
+   },
+   "Spain": {
+    "k": 251,
+    "n": 263,
+    "median": 10.5,
+    "ok": true,
+    "q1": 8.4,
+    "q3": 11.0
+   },
+   "Germany": {
+    "k": 152,
+    "n": 157,
+    "median": 9.1,
+    "ok": true,
+    "q1": 7.8,
+    "q3": 9.9
+   },
+   "UK": {
+    "k": 148,
+    "n": 161,
+    "median": 8.7,
+    "ok": true,
+    "q1": 6.7,
+    "q3": 9.8
+   },
+   "Canada": {
+    "k": 57,
+    "n": 59,
+    "median": 10.4,
+    "ok": true,
+    "q1": 9.3,
+    "q3": 11.0
+   },
+   "US": {
+    "k": 41,
+    "n": 454,
+    "median": 9.2,
+    "ok": true,
+    "q1": 4.9,
+    "q3": 10.0
+   },
+   "Italy": {
+    "k": 36,
+    "n": 39,
+    "median": 9.8,
+    "ok": true,
+    "q1": 7.2,
+    "q3": 11.5
+   },
+   "Australia": {
+    "k": 29,
+    "n": 158,
+    "median": 6.4,
+    "ok": true,
+    "q1": 6.1,
+    "q3": 9.6
+   },
+   "Mexico": {
+    "k": 28,
+    "n": 29,
+    "median": 7.2,
+    "ok": true,
+    "q1": 5.1,
+    "q3": 10.5
+   },
+   "India": {
+    "k": 14,
+    "n": 66,
+    "median": 16.1,
+    "ok": false,
+    "q1": 13.7,
+    "q3": 17.0
+   },
+   "Brazil": {
+    "k": 12,
+    "n": 18,
+    "median": 11.2,
+    "ok": false,
+    "q1": 7.2,
+    "q3": 12.0
+   },
+   "Chile": {
+    "k": 6,
+    "n": 6,
+    "median": 4.8,
+    "ok": false,
+    "q1": 3.4,
+    "q3": 4.9
+   },
+   "UAE": {
+    "k": 4,
+    "n": 10,
+    "median": 11.9,
+    "ok": false,
+    "q1": 6.0,
+    "q3": 15.8
+   },
+   "Singapore": {
+    "k": 2,
+    "n": 18,
+    "median": 9.1,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 0,
+    "n": 1,
+    "median": null,
+    "ok": false
+   },
+   "Indonesia": {
+    "k": 0,
+    "n": 11,
+    "median": null,
+    "ok": false
+   }
+  },
+  "ketchup": {
+   "France": {
+    "k": 1144,
+    "n": 1291,
+    "median": 20.8,
+    "ok": true,
+    "q1": 16.0,
+    "q3": 23.0
+   },
+   "Germany": {
+    "k": 631,
+    "n": 706,
+    "median": 18.4,
+    "ok": true,
+    "q1": 14.0,
+    "q3": 22.8
+   },
+   "Spain": {
+    "k": 374,
+    "n": 440,
+    "median": 17.0,
+    "ok": true,
+    "q1": 13.9,
+    "q3": 21.0
+   },
+   "UK": {
+    "k": 244,
+    "n": 262,
+    "median": 19.9,
+    "ok": true,
+    "q1": 13.0,
+    "q3": 22.8
+   },
+   "Italy": {
+    "k": 162,
+    "n": 172,
+    "median": 19.0,
+    "ok": true,
+    "q1": 17.9,
+    "q3": 21.0
+   },
+   "Canada": {
+    "k": 107,
+    "n": 122,
+    "median": 26.7,
+    "ok": true,
+    "q1": 13.3,
+    "q3": 26.7
+   },
+   "US": {
+    "k": 91,
+    "n": 688,
+    "median": 23.5,
+    "ok": true,
+    "q1": 15.4,
+    "q3": 23.5
+   },
+   "Brazil": {
+    "k": 32,
+    "n": 48,
+    "median": 16.8,
+    "ok": true,
+    "q1": 4.0,
+    "q3": 21.7
+   },
+   "Mexico": {
+    "k": 20,
+    "n": 24,
+    "median": 21.5,
+    "ok": true,
+    "q1": 18.7,
+    "q3": 23.6
+   },
+   "Chile": {
+    "k": 12,
+    "n": 19,
+    "median": 20.5,
+    "ok": false,
+    "q1": 13.0,
+    "q3": 22.2
+   },
+   "India": {
+    "k": 8,
+    "n": 78,
+    "median": 20.2,
+    "ok": false,
+    "q1": 16.5,
+    "q3": 23.5
+   },
+   "Australia": {
+    "k": 3,
+    "n": 15,
+    "median": 25.8,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 1,
+    "n": 2,
+    "median": 27.0,
+    "ok": false
+   },
+   "Indonesia": {
+    "k": 0,
+    "n": 1,
+    "median": null,
+    "ok": false
+   },
+   "UAE": {
+    "k": 0,
+    "n": 6,
+    "median": null,
+    "ok": false
+   }
+  },
+  "sauces": {
+   "France": {
+    "k": 21094,
+    "n": 23316,
+    "median": 3.9,
+    "ok": true,
+    "q1": 1.6,
+    "q3": 7.8
+   },
+   "Germany": {
+    "k": 7384,
+    "n": 8130,
+    "median": 5.4,
+    "ok": true,
+    "q1": 2.7,
+    "q3": 13.0
+   },
+   "Spain": {
+    "k": 4298,
+    "n": 4701,
+    "median": 4.0,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 8.0
+   },
+   "UK": {
+    "k": 3807,
+    "n": 4183,
+    "median": 5.0,
+    "ok": true,
+    "q1": 2.3,
+    "q3": 12.0
+   },
+   "Italy": {
+    "k": 3537,
+    "n": 3686,
+    "median": 3.4,
+    "ok": true,
+    "q1": 1.4,
+    "q3": 5.3
+   },
+   "US": {
+    "k": 2128,
+    "n": 26145,
+    "median": 3.6,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 11.1
+   },
+   "Canada": {
+    "k": 1767,
+    "n": 1924,
+    "median": 4.0,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 13.3
+   },
+   "Mexico": {
+    "k": 402,
+    "n": 446,
+    "median": 3.0,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 6.3
+   },
+   "Australia": {
+    "k": 391,
+    "n": 1197,
+    "median": 5.0,
+    "ok": true,
+    "q1": 2.7,
+    "q3": 11.3
+   },
+   "Brazil": {
+    "k": 190,
+    "n": 264,
+    "median": 3.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 6.2
+   },
+   "Chile": {
+    "k": 80,
+    "n": 98,
+    "median": 3.6,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 8.9
+   },
+   "India": {
+    "k": 32,
+    "n": 247,
+    "median": 14.1,
+    "ok": true,
+    "q1": 3.7,
+    "q3": 23.1
+   },
+   "Singapore": {
+    "k": 14,
+    "n": 52,
+    "median": 11.1,
+    "ok": false,
+    "q1": 2.5,
+    "q3": 21.8
+   },
+   "South Africa": {
+    "k": 10,
+    "n": 55,
+    "median": 10.5,
+    "ok": false,
+    "q1": 4.4,
+    "q3": 30.0
+   },
+   "UAE": {
+    "k": 4,
+    "n": 42,
+    "median": 3.2,
+    "ok": false,
+    "q1": 1.9,
+    "q3": 10.6
+   },
+   "Indonesia": {
+    "k": 3,
+    "n": 31,
+    "median": 20.0,
+    "ok": false
+   }
+  },
+  "yoghurt": {
+   "France": {
+    "k": 8477,
+    "n": 9519,
+    "median": 11.0,
+    "ok": true,
+    "q1": 5.7,
+    "q3": 13.0
+   },
+   "US": {
+    "k": 6011,
+    "n": 6197,
+    "median": 9.4,
+    "ok": true,
+    "q1": 6.0,
+    "q3": 12.2
+   },
+   "Germany": {
+    "k": 2864,
+    "n": 3038,
+    "median": 11.3,
+    "ok": true,
+    "q1": 5.3,
+    "q3": 13.0
+   },
+   "Italy": {
+    "k": 2709,
+    "n": 2847,
+    "median": 12.0,
+    "ok": true,
+    "q1": 5.1,
+    "q3": 13.0
+   },
+   "Spain": {
+    "k": 2566,
+    "n": 2773,
+    "median": 10.0,
+    "ok": true,
+    "q1": 4.8,
+    "q3": 12.1
+   },
+   "UK": {
+    "k": 1296,
+    "n": 1432,
+    "median": 8.0,
+    "ok": true,
+    "q1": 5.0,
+    "q3": 11.9
+   },
+   "Australia": {
+    "k": 418,
+    "n": 446,
+    "median": 6.7,
+    "ok": true,
+    "q1": 3.9,
+    "q3": 10.9
+   },
+   "Mexico": {
+    "k": 400,
+    "n": 420,
+    "median": 10.4,
+    "ok": true,
+    "q1": 6.3,
+    "q3": 14.1
+   },
+   "Canada": {
+    "k": 370,
+    "n": 414,
+    "median": 7.4,
+    "ok": true,
+    "q1": 3.5,
+    "q3": 10.9
+   },
+   "Brazil": {
+    "k": 160,
+    "n": 234,
+    "median": 5.7,
+    "ok": true,
+    "q1": 4.4,
+    "q3": 10.2
+   },
+   "India": {
+    "k": 88,
+    "n": 135,
+    "median": 5.2,
+    "ok": true,
+    "q1": 4.0,
+    "q3": 12.9
+   },
+   "Chile": {
+    "k": 63,
+    "n": 69,
+    "median": 7.8,
+    "ok": true,
+    "q1": 5.2,
+    "q3": 9.9
+   },
+   "Singapore": {
+    "k": 48,
+    "n": 53,
+    "median": 8.0,
+    "ok": true,
+    "q1": 4.8,
+    "q3": 12.7
+   },
+   "UAE": {
+    "k": 39,
+    "n": 47,
+    "median": 6.9,
+    "ok": true,
+    "q1": 3.6,
+    "q3": 12.7
+   },
+   "South Africa": {
+    "k": 36,
+    "n": 60,
+    "median": 5.8,
+    "ok": true,
+    "q1": 3.4,
+    "q3": 10.5
+   },
+   "Indonesia": {
+    "k": 20,
+    "n": 22,
+    "median": 10.9,
+    "ok": true,
+    "q1": 8.9,
+    "q3": 12.9
+   }
+  },
+  "cakes": {
+   "France": {
+    "k": 10975,
+    "n": 12046,
+    "median": 28.0,
+    "ok": true,
+    "q1": 23.0,
+    "q3": 33.0
+   },
+   "Spain": {
+    "k": 1982,
+    "n": 2166,
+    "median": 25.0,
+    "ok": true,
+    "q1": 20.0,
+    "q3": 29.0
+   },
+   "Germany": {
+    "k": 1204,
+    "n": 1315,
+    "median": 29.0,
+    "ok": true,
+    "q1": 21.0,
+    "q3": 34.0
+   },
+   "Italy": {
+    "k": 966,
+    "n": 1009,
+    "median": 29.0,
+    "ok": true,
+    "q1": 25.0,
+    "q3": 33.0
+   },
+   "UK": {
+    "k": 923,
+    "n": 1042,
+    "median": 29.9,
+    "ok": true,
+    "q1": 21.6,
+    "q3": 37.8
+   },
+   "US": {
+    "k": 411,
+    "n": 6946,
+    "median": 30.0,
+    "ok": true,
+    "q1": 21.5,
+    "q3": 36.8
+   },
+   "Canada": {
+    "k": 344,
+    "n": 381,
+    "median": 29.5,
+    "ok": true,
+    "q1": 24.0,
+    "q3": 36.9
+   },
+   "Mexico": {
+    "k": 53,
+    "n": 56,
+    "median": 25.9,
+    "ok": true,
+    "q1": 23.1,
+    "q3": 34.9
+   },
+   "Australia": {
+    "k": 49,
+    "n": 206,
+    "median": 33.1,
+    "ok": true,
+    "q1": 22.5,
+    "q3": 39.5
+   },
+   "Chile": {
+    "k": 12,
+    "n": 14,
+    "median": 32.0,
+    "ok": false,
+    "q1": 24.5,
+    "q3": 41.3
+   },
+   "Brazil": {
+    "k": 10,
+    "n": 32,
+    "median": 29.3,
+    "ok": false,
+    "q1": 1.3,
+    "q3": 40.0
+   },
+   "India": {
+    "k": 9,
+    "n": 99,
+    "median": 25.5,
+    "ok": false,
+    "q1": 24.4,
+    "q3": 33.2
+   },
+   "Singapore": {
+    "k": 3,
+    "n": 16,
+    "median": 40.3,
+    "ok": false
+   },
+   "UAE": {
+    "k": 3,
+    "n": 15,
+    "median": 33.0,
+    "ok": false
+   },
+   "Indonesia": {
+    "k": 2,
+    "n": 8,
+    "median": 10.4,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 0,
+    "n": 14,
+    "median": null,
+    "ok": false
+   }
+  },
+  "ice_cream": {
+   "France": {
+    "k": 4609,
+    "n": 5071,
+    "median": 23.0,
+    "ok": true,
+    "q1": 20.0,
+    "q3": 26.0
+   },
+   "Germany": {
+    "k": 1782,
+    "n": 1878,
+    "median": 23.3,
+    "ok": true,
+    "q1": 20.0,
+    "q3": 26.2
+   },
+   "Italy": {
+    "k": 1350,
+    "n": 1380,
+    "median": 24.2,
+    "ok": true,
+    "q1": 22.0,
+    "q3": 27.0
+   },
+   "Spain": {
+    "k": 1134,
+    "n": 1190,
+    "median": 24.3,
+    "ok": true,
+    "q1": 21.0,
+    "q3": 28.0
+   },
+   "UK": {
+    "k": 523,
+    "n": 578,
+    "median": 21.0,
+    "ok": true,
+    "q1": 16.9,
+    "q3": 24.6
+   },
+   "Canada": {
+    "k": 291,
+    "n": 299,
+    "median": 14.7,
+    "ok": true,
+    "q1": 11.7,
+    "q3": 19.1
+   },
+   "US": {
+    "k": 222,
+    "n": 1419,
+    "median": 22.1,
+    "ok": true,
+    "q1": 17.6,
+    "q3": 25.2
+   },
+   "Mexico": {
+    "k": 66,
+    "n": 73,
+    "median": 20.3,
+    "ok": true,
+    "q1": 16.2,
+    "q3": 24.2
+   },
+   "Australia": {
+    "k": 57,
+    "n": 273,
+    "median": 21.8,
+    "ok": true,
+    "q1": 14.0,
+    "q3": 24.1
+   },
+   "Brazil": {
+    "k": 26,
+    "n": 54,
+    "median": 22.5,
+    "ok": true,
+    "q1": 17.0,
+    "q3": 25.1
+   },
+   "India": {
+    "k": 19,
+    "n": 146,
+    "median": 22.6,
+    "ok": false,
+    "q1": 20.7,
+    "q3": 25.9
+   },
+   "Chile": {
+    "k": 7,
+    "n": 15,
+    "median": 18.6,
+    "ok": false,
+    "q1": 10.2,
+    "q3": 23.0
+   },
+   "Singapore": {
+    "k": 6,
+    "n": 17,
+    "median": 22.0,
+    "ok": false,
+    "q1": 18.6,
+    "q3": 24.8
+   },
+   "UAE": {
+    "k": 1,
+    "n": 6,
+    "median": 21.0,
+    "ok": false
+   },
+   "Indonesia": {
+    "k": 1,
+    "n": 6,
+    "median": 11.1,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 0,
+    "n": 9,
+    "median": null,
+    "ok": false
+   }
+  },
+  "chips": {
+   "France": {
+    "k": 5555,
+    "n": 5929,
+    "median": 1.7,
+    "ok": true,
+    "q1": 0.6,
+    "q3": 3.3
+   },
+   "Spain": {
+    "k": 1818,
+    "n": 1928,
+    "median": 1.0,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 2.3
+   },
+   "Germany": {
+    "k": 1808,
+    "n": 1922,
+    "median": 2.5,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 3.8
+   },
+   "UK": {
+    "k": 1758,
+    "n": 1950,
+    "median": 2.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 3.7
+   },
+   "US": {
+    "k": 991,
+    "n": 4221,
+    "median": 3.3,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 3.6
+   },
+   "Canada": {
+    "k": 681,
+    "n": 729,
+    "median": 2.0,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 4.0
+   },
+   "Italy": {
+    "k": 621,
+    "n": 635,
+    "median": 1.0,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 2.6
+   },
+   "Mexico": {
+    "k": 197,
+    "n": 232,
+    "median": 1.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 2.7
+   },
+   "Australia": {
+    "k": 113,
+    "n": 344,
+    "median": 2.6,
+    "ok": true,
+    "q1": 1.1,
+    "q3": 4.0
+   },
+   "Brazil": {
+    "k": 61,
+    "n": 103,
+    "median": 0.8,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 2.5
+   },
+   "India": {
+    "k": 55,
+    "n": 286,
+    "median": 3.2,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 5.0
+   },
+   "South Africa": {
+    "k": 29,
+    "n": 84,
+    "median": 0.8,
+    "ok": true,
+    "q1": 0.7,
+    "q3": 2.7
+   },
+   "Chile": {
+    "k": 20,
+    "n": 30,
+    "median": 2.4,
+    "ok": true,
+    "q1": 0.6,
+    "q3": 3.5
+   },
+   "Singapore": {
+    "k": 19,
+    "n": 53,
+    "median": 3.6,
+    "ok": false,
+    "q1": 2.2,
+    "q3": 5.7
+   },
+   "UAE": {
+    "k": 8,
+    "n": 34,
+    "median": 1.9,
+    "ok": false,
+    "q1": 1.3,
+    "q3": 5.2
+   },
+   "Indonesia": {
+    "k": 2,
+    "n": 23,
+    "median": 3.2,
+    "ok": false
+   }
+  },
+  "namkeen": {
+   "India": {
+    "k": 15,
+    "n": 62,
+    "median": 4.3,
+    "ok": false,
+    "q1": 3.1,
+    "q3": 9.4
+   },
+   "France": {
+    "k": 5,
+    "n": 6,
+    "median": 2.2,
+    "ok": false,
+    "q1": 0.0,
+    "q3": 9.2
+   },
+   "UK": {
+    "k": 4,
+    "n": 7,
+    "median": 3.0,
+    "ok": false,
+    "q1": 0.7,
+    "q3": 3.7
+   },
+   "UAE": {
+    "k": 3,
+    "n": 3,
+    "median": 3.6,
+    "ok": false
+   },
+   "Canada": {
+    "k": 2,
+    "n": 2,
+    "median": 8.1,
+    "ok": false
+   },
+   "Spain": {
+    "k": 2,
+    "n": 2,
+    "median": 1.4,
+    "ok": false
+   },
+   "Italy": {
+    "k": 1,
+    "n": 1,
+    "median": 3.6,
+    "ok": false
+   },
+   "US": {
+    "k": 1,
+    "n": 11,
+    "median": 3.1,
+    "ok": false
+   }
+  },
+  "instant_noodles": {
+   "France": {
+    "k": 1185,
+    "n": 1248,
+    "median": 1.8,
+    "ok": true,
+    "q1": 0.7,
+    "q3": 3.9
+   },
+   "Germany": {
+    "k": 460,
+    "n": 488,
+    "median": 1.7,
+    "ok": true,
+    "q1": 0.7,
+    "q3": 3.6
+   },
+   "UK": {
+    "k": 268,
+    "n": 290,
+    "median": 1.4,
+    "ok": true,
+    "q1": 0.6,
+    "q3": 2.8
+   },
+   "Spain": {
+    "k": 142,
+    "n": 147,
+    "median": 1.4,
+    "ok": true,
+    "q1": 0.6,
+    "q3": 3.6
+   },
+   "US": {
+    "k": 116,
+    "n": 271,
+    "median": 3.1,
+    "ok": true,
+    "q1": 2.0,
+    "q3": 5.1
+   },
+   "Canada": {
+    "k": 87,
+    "n": 87,
+    "median": 3.0,
+    "ok": true,
+    "q1": 1.6,
+    "q3": 4.7
+   },
+   "Australia": {
+    "k": 55,
+    "n": 125,
+    "median": 1.8,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 4.4
+   },
+   "Italy": {
+    "k": 49,
+    "n": 51,
+    "median": 2.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 3.8
+   },
+   "India": {
+    "k": 36,
+    "n": 140,
+    "median": 2.3,
+    "ok": true,
+    "q1": 1.8,
+    "q3": 3.2
+   },
+   "Indonesia": {
+    "k": 23,
+    "n": 47,
+    "median": 6.6,
+    "ok": true,
+    "q1": 5.5,
+    "q3": 7.7
+   },
+   "Brazil": {
+    "k": 16,
+    "n": 36,
+    "median": 1.5,
+    "ok": false,
+    "q1": 0.3,
+    "q3": 2.0
+   },
+   "Mexico": {
+    "k": 12,
+    "n": 16,
+    "median": 0.5,
+    "ok": false,
+    "q1": 0.0,
+    "q3": 0.6
+   },
+   "Chile": {
+    "k": 6,
+    "n": 7,
+    "median": 2.1,
+    "ok": false,
+    "q1": 0.5,
+    "q3": 7.5
+   },
+   "South Africa": {
+    "k": 5,
+    "n": 15,
+    "median": 3.5,
+    "ok": false,
+    "q1": 1.7,
+    "q3": 7.7
+   },
+   "Singapore": {
+    "k": 4,
+    "n": 25,
+    "median": 4.7,
+    "ok": false,
+    "q1": 2.4,
+    "q3": 6.4
+   },
+   "UAE": {
+    "k": 3,
+    "n": 8,
+    "median": 4.0,
+    "ok": false
+   }
+  }
+ },
+ "salt": {
+  "biscuits": {
+   "France": {
+    "k": 18276,
+    "n": 20051,
+    "median": 0.5,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.8
+   },
+   "Italy": {
+    "k": 4451,
+    "n": 4789,
+    "median": 0.5,
+    "ok": true,
+    "q1": 0.2,
+    "q3": 0.7
+   },
+   "Spain": {
+    "k": 3858,
+    "n": 4211,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.8
+   },
+   "Germany": {
+    "k": 3251,
+    "n": 3443,
+    "median": 0.4,
+    "ok": true,
+    "q1": 0.2,
+    "q3": 0.7
+   },
+   "UK": {
+    "k": 1929,
+    "n": 2162,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.4,
+    "q3": 0.8
+   },
+   "US": {
+    "k": 1316,
+    "n": 12105,
+    "median": 0.8,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 1.0
+   },
+   "Canada": {
+    "k": 683,
+    "n": 733,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.4,
+    "q3": 0.9
+   },
+   "Mexico": {
+    "k": 408,
+    "n": 480,
+    "median": 0.5,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.9
+   },
+   "Brazil": {
+    "k": 276,
+    "n": 440,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.8
+   },
+   "Australia": {
+    "k": 167,
+    "n": 427,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.9
+   },
+   "Chile": {
+    "k": 148,
+    "n": 171,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.4,
+    "q3": 0.8
+   },
+   "India": {
+    "k": 83,
+    "n": 711,
+    "median": 0.5,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 0.9
+   },
+   "UAE": {
+    "k": 19,
+    "n": 66,
+    "median": 0.8,
+    "ok": false,
+    "q1": 0.3,
+    "q3": 1.1
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 57,
+    "median": 0.8,
+    "ok": false,
+    "q1": 0.5,
+    "q3": 1.3
+   },
+   "Indonesia": {
+    "k": 15,
+    "n": 72,
+    "median": 0.3,
+    "ok": false,
+    "q1": 0.2,
+    "q3": 0.7
+   },
+   "South Africa": {
+    "k": 9,
+    "n": 39,
+    "median": 0.6,
+    "ok": false,
+    "q1": 0.4,
+    "q3": 0.9
+   }
+  },
+  "breakfast_cereals": {
+   "France": {
+    "k": 6557,
+    "n": 7303,
+    "median": 0.2,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.6
+   },
+   "US": {
+    "k": 3279,
+    "n": 3632,
+    "median": 0.8,
+    "ok": true,
+    "q1": 0.2,
+    "q3": 1.2
+   },
+   "Germany": {
+    "k": 3105,
+    "n": 3363,
+    "median": 0.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.3
+   },
+   "Spain": {
+    "k": 2021,
+    "n": 2270,
+    "median": 0.3,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.8
+   },
+   "Italy": {
+    "k": 1647,
+    "n": 1788,
+    "median": 0.3,
+    "ok": true,
+    "q1": 0.1,
+    "q3": 0.8
+   },
+   "UK": {
+    "k": 1619,
+    "n": 1826,
+    "median": 0.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.5
+   },
+   "Canada": {
+    "k": 578,
+    "n": 636,
+    "median": 0.5,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 1.1
+   },
+   "Mexico": {
+    "k": 291,
+    "n": 327,
+    "median": 0.6,
+    "ok": true,
+    "q1": 0.1,
+    "q3": 0.9
+   },
+   "Australia": {
+    "k": 151,
+    "n": 504,
+    "median": 0.2,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.7
+   },
+   "Brazil": {
+    "k": 142,
+    "n": 183,
+    "median": 0.1,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.3
+   },
+   "Chile": {
+    "k": 92,
+    "n": 105,
+    "median": 0.3,
+    "ok": true,
+    "q1": 0.1,
+    "q3": 0.7
+   },
+   "India": {
+    "k": 55,
+    "n": 254,
+    "median": 0.2,
+    "ok": true,
+    "q1": 0.0,
+    "q3": 0.6
+   },
+   "South Africa": {
+    "k": 12,
+    "n": 57,
+    "median": 0.3,
+    "ok": false,
+    "q1": 0.0,
+    "q3": 0.8
+   },
+   "Singapore": {
+    "k": 8,
+    "n": 50,
+    "median": 0.8,
+    "ok": false,
+    "q1": 0.1,
+    "q3": 1.0
+   },
+   "UAE": {
+    "k": 8,
+    "n": 36,
+    "median": 0.7,
+    "ok": false,
+    "q1": 0.5,
+    "q3": 1.1
+   },
+   "Indonesia": {
+    "k": 7,
+    "n": 12,
+    "median": 0.3,
+    "ok": false,
+    "q1": 0.1,
+    "q3": 0.3
+   }
+  },
+  "ketchup": {
+   "France": {
+    "k": 1140,
+    "n": 1291,
+    "median": 1.8,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 2.4
+   },
+   "Germany": {
+    "k": 613,
+    "n": 706,
+    "median": 1.9,
+    "ok": true,
+    "q1": 1.6,
+    "q3": 2.3
+   },
+   "Spain": {
+    "k": 369,
+    "n": 440,
+    "median": 2.0,
+    "ok": true,
+    "q1": 1.7,
+    "q3": 2.3
+   },
+   "UK": {
+    "k": 235,
+    "n": 262,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 1.8
+   },
+   "Italy": {
+    "k": 158,
+    "n": 172,
+    "median": 2.1,
+    "ok": true,
+    "q1": 1.8,
+    "q3": 2.6
+   },
+   "Canada": {
+    "k": 107,
+    "n": 122,
+    "median": 2.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 2.5
+   },
+   "US": {
+    "k": 92,
+    "n": 688,
+    "median": 2.4,
+    "ok": true,
+    "q1": 2.0,
+    "q3": 2.6
+   },
+   "Brazil": {
+    "k": 34,
+    "n": 48,
+    "median": 1.5,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 2.1
+   },
+   "Mexico": {
+    "k": 20,
+    "n": 24,
+    "median": 2.2,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 2.8
+   },
+   "Chile": {
+    "k": 11,
+    "n": 19,
+    "median": 1.9,
+    "ok": false,
+    "q1": 0.8,
+    "q3": 2.5
+   },
+   "India": {
+    "k": 5,
+    "n": 78,
+    "median": 2.0,
+    "ok": false,
+    "q1": 0.9,
+    "q3": 2.6
+   },
+   "Australia": {
+    "k": 3,
+    "n": 15,
+    "median": 2.0,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 1,
+    "n": 2,
+    "median": 1.2,
+    "ok": false
+   }
+  },
+  "sauces": {
+   "France": {
+    "k": 20915,
+    "n": 23316,
+    "median": 1.6,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 3.0
+   },
+   "Germany": {
+    "k": 7227,
+    "n": 8130,
+    "median": 1.6,
+    "ok": true,
+    "q1": 1.1,
+    "q3": 2.7
+   },
+   "Spain": {
+    "k": 4282,
+    "n": 4701,
+    "median": 1.3,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 2.0
+   },
+   "UK": {
+    "k": 3713,
+    "n": 4183,
+    "median": 1.1,
+    "ok": true,
+    "q1": 0.7,
+    "q3": 1.8
+   },
+   "Italy": {
+    "k": 3438,
+    "n": 3686,
+    "median": 1.4,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 2.4
+   },
+   "US": {
+    "k": 2233,
+    "n": 26145,
+    "median": 1.7,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 2.8
+   },
+   "Canada": {
+    "k": 1797,
+    "n": 1924,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 2.6
+   },
+   "Australia": {
+    "k": 392,
+    "n": 1197,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 4.1
+   },
+   "Mexico": {
+    "k": 390,
+    "n": 446,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 2.9
+   },
+   "Brazil": {
+    "k": 208,
+    "n": 264,
+    "median": 1.2,
+    "ok": true,
+    "q1": 0.3,
+    "q3": 2.1
+   },
+   "Chile": {
+    "k": 79,
+    "n": 98,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 2.5
+   },
+   "India": {
+    "k": 30,
+    "n": 247,
+    "median": 1.9,
+    "ok": true,
+    "q1": 0.4,
+    "q3": 3.3
+   },
+   "Singapore": {
+    "k": 15,
+    "n": 52,
+    "median": 4.0,
+    "ok": false,
+    "q1": 1.2,
+    "q3": 7.5
+   },
+   "South Africa": {
+    "k": 9,
+    "n": 55,
+    "median": 1.1,
+    "ok": false,
+    "q1": 0.7,
+    "q3": 2.6
+   },
+   "Indonesia": {
+    "k": 5,
+    "n": 31,
+    "median": 2.0,
+    "ok": false,
+    "q1": 1.0,
+    "q3": 6.8
+   },
+   "UAE": {
+    "k": 4,
+    "n": 42,
+    "median": 2.0,
+    "ok": false,
+    "q1": 0.4,
+    "q3": 4.7
+   }
+  },
+  "chips": {
+   "France": {
+    "k": 5545,
+    "n": 5929,
+    "median": 1.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 1.6
+   },
+   "Spain": {
+    "k": 1797,
+    "n": 1928,
+    "median": 1.2,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 1.6
+   },
+   "Germany": {
+    "k": 1789,
+    "n": 1922,
+    "median": 1.5,
+    "ok": true,
+    "q1": 1.2,
+    "q3": 1.9
+   },
+   "UK": {
+    "k": 1714,
+    "n": 1950,
+    "median": 1.2,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 1.7
+   },
+   "US": {
+    "k": 1006,
+    "n": 4221,
+    "median": 1.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 1.8
+   },
+   "Canada": {
+    "k": 683,
+    "n": 729,
+    "median": 1.4,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 1.9
+   },
+   "Italy": {
+    "k": 615,
+    "n": 635,
+    "median": 1.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 1.7
+   },
+   "Mexico": {
+    "k": 203,
+    "n": 232,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 2.0
+   },
+   "Australia": {
+    "k": 111,
+    "n": 344,
+    "median": 1.1,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 1.4
+   },
+   "Brazil": {
+    "k": 61,
+    "n": 103,
+    "median": 1.1,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 1.5
+   },
+   "India": {
+    "k": 54,
+    "n": 286,
+    "median": 1.7,
+    "ok": true,
+    "q1": 1.5,
+    "q3": 2.1
+   },
+   "South Africa": {
+    "k": 24,
+    "n": 84,
+    "median": 1.3,
+    "ok": true,
+    "q1": 0.9,
+    "q3": 1.5
+   },
+   "Singapore": {
+    "k": 20,
+    "n": 53,
+    "median": 1.5,
+    "ok": true,
+    "q1": 1.3,
+    "q3": 2.0
+   },
+   "Chile": {
+    "k": 18,
+    "n": 30,
+    "median": 1.0,
+    "ok": false,
+    "q1": 0.9,
+    "q3": 1.4
+   },
+   "UAE": {
+    "k": 8,
+    "n": 34,
+    "median": 1.5,
+    "ok": false,
+    "q1": 0.1,
+    "q3": 3.0
+   },
+   "Indonesia": {
+    "k": 3,
+    "n": 23,
+    "median": 1.4,
+    "ok": false
+   }
+  },
+  "namkeen": {
+   "India": {
+    "k": 13,
+    "n": 62,
+    "median": 1.4,
+    "ok": false,
+    "q1": 0.6,
+    "q3": 2.1
+   },
+   "France": {
+    "k": 5,
+    "n": 6,
+    "median": 0.9,
+    "ok": false,
+    "q1": 0.6,
+    "q3": 1.5
+   },
+   "UAE": {
+    "k": 3,
+    "n": 3,
+    "median": 0.7,
+    "ok": false
+   },
+   "UK": {
+    "k": 3,
+    "n": 7,
+    "median": 1.1,
+    "ok": false
+   },
+   "Canada": {
+    "k": 2,
+    "n": 2,
+    "median": 1.4,
+    "ok": false
+   },
+   "Spain": {
+    "k": 2,
+    "n": 2,
+    "median": 2.1,
+    "ok": false
+   }
+  },
+  "instant_noodles": {
+   "France": {
+    "k": 1181,
+    "n": 1248,
+    "median": 1.4,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 4.1
+   },
+   "Germany": {
+    "k": 456,
+    "n": 488,
+    "median": 1.1,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 3.5
+   },
+   "UK": {
+    "k": 264,
+    "n": 290,
+    "median": 0.7,
+    "ok": true,
+    "q1": 0.5,
+    "q3": 1.3
+   },
+   "Spain": {
+    "k": 141,
+    "n": 147,
+    "median": 1.3,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 3.2
+   },
+   "US": {
+    "k": 115,
+    "n": 271,
+    "median": 2.9,
+    "ok": true,
+    "q1": 1.6,
+    "q3": 4.3
+   },
+   "Canada": {
+    "k": 87,
+    "n": 87,
+    "median": 3.5,
+    "ok": true,
+    "q1": 2.8,
+    "q3": 4.3
+   },
+   "Australia": {
+    "k": 55,
+    "n": 125,
+    "median": 1.3,
+    "ok": true,
+    "q1": 0.7,
+    "q3": 3.8
+   },
+   "Italy": {
+    "k": 50,
+    "n": 51,
+    "median": 1.6,
+    "ok": true,
+    "q1": 0.8,
+    "q3": 4.4
+   },
+   "India": {
+    "k": 32,
+    "n": 140,
+    "median": 2.6,
+    "ok": true,
+    "q1": 2.0,
+    "q3": 3.6
+   },
+   "Brazil": {
+    "k": 24,
+    "n": 36,
+    "median": 3.4,
+    "ok": true,
+    "q1": 2.6,
+    "q3": 4.1
+   },
+   "Indonesia": {
+    "k": 23,
+    "n": 47,
+    "median": 2.3,
+    "ok": true,
+    "q1": 1.0,
+    "q3": 3.0
+   },
+   "Mexico": {
+    "k": 11,
+    "n": 16,
+    "median": 0.7,
+    "ok": false,
+    "q1": 0.3,
+    "q3": 0.8
+   },
+   "Chile": {
+    "k": 6,
+    "n": 7,
+    "median": 4.0,
+    "ok": false,
+    "q1": 0.7,
+    "q3": 8.4
+   },
+   "South Africa": {
+    "k": 4,
+    "n": 15,
+    "median": 2.8,
+    "ok": false,
+    "q1": 2.0,
+    "q3": 9.2
+   },
+   "Singapore": {
+    "k": 4,
+    "n": 25,
+    "median": 2.7,
+    "ok": false,
+    "q1": 1.5,
+    "q3": 4.0
+   },
+   "UAE": {
+    "k": 3,
+    "n": 8,
+    "median": 1.0,
+    "ok": false
+   }
+  }
+ },
+ "sugar_top3": {
+  "biscuits": {
+   "US": {
+    "k": 8602,
+    "n": 11119,
+    "pct": 77.4,
+    "ok": true
+   },
+   "UK": {
+    "k": 908,
+    "n": 1428,
+    "pct": 63.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 271,
+    "n": 357,
+    "pct": 75.9,
+    "ok": true
+   },
+   "India": {
+    "k": 266,
+    "n": 338,
+    "pct": 78.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 163,
+    "n": 245,
+    "pct": 66.5,
+    "ok": true
+   },
+   "UAE": {
+    "k": 13,
+    "n": 33,
+    "pct": 39.4,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 26,
+    "n": 31,
+    "pct": 83.9,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 11,
+    "n": 21,
+    "pct": 52.4,
+    "ok": true
+   }
+  },
+  "breakfast_cereals": {
+   "US": {
+    "k": 1764,
+    "n": 2524,
+    "pct": 69.9,
+    "ok": true
+   },
+   "UK": {
+    "k": 729,
+    "n": 1385,
+    "pct": 52.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 252,
+    "n": 387,
+    "pct": 65.1,
+    "ok": true
+   },
+   "Australia": {
+    "k": 180,
+    "n": 324,
+    "pct": 55.6,
+    "ok": true
+   },
+   "India": {
+    "k": 49,
+    "n": 148,
+    "pct": 33.1,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 24,
+    "n": 40,
+    "pct": 60.0,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 30,
+    "pct": 56.7,
+    "ok": true
+   },
+   "UAE": {
+    "k": 10,
+    "n": 17,
+    "pct": 58.8,
+    "ok": false
+   }
+  },
+  "chocolate": {
+   "UK": {
+    "k": 926,
+    "n": 1133,
+    "pct": 81.7,
+    "ok": true
+   },
+   "US": {
+    "k": 681,
+    "n": 1078,
+    "pct": 63.2,
+    "ok": true
+   },
+   "Canada": {
+    "k": 309,
+    "n": 477,
+    "pct": 64.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 208,
+    "n": 277,
+    "pct": 75.1,
+    "ok": true
+   },
+   "India": {
+    "k": 78,
+    "n": 101,
+    "pct": 77.2,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 7,
+    "n": 15,
+    "pct": 46.7,
+    "ok": false
+   },
+   "UAE": {
+    "k": 7,
+    "n": 15,
+    "pct": 46.7,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 7,
+    "n": 12,
+    "pct": 58.3,
+    "ok": false
+   }
+  },
+  "soft_drinks": {
+   "US": {
+    "k": 4604,
+    "n": 5862,
+    "pct": 78.5,
+    "ok": true
+   },
+   "UK": {
+    "k": 282,
+    "n": 560,
+    "pct": 50.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 211,
+    "n": 331,
+    "pct": 63.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 93,
+    "n": 159,
+    "pct": 58.5,
+    "ok": true
+   },
+   "India": {
+    "k": 62,
+    "n": 81,
+    "pct": 76.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 18,
+    "n": 23,
+    "pct": 78.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 12,
+    "n": 17,
+    "pct": 70.6,
+    "ok": false
+   },
+   "UAE": {
+    "k": 4,
+    "n": 9,
+    "pct": 44.4,
+    "ok": false
+   }
+  },
+  "flavoured_milk": {
+   "US": {
+    "k": 176,
+    "n": 200,
+    "pct": 88.0,
+    "ok": true
+   },
+   "UK": {
+    "k": 87,
+    "n": 116,
+    "pct": 75.0,
+    "ok": true
+   },
+   "Australia": {
+    "k": 54,
+    "n": 81,
+    "pct": 66.7,
+    "ok": true
+   },
+   "India": {
+    "k": 42,
+    "n": 44,
+    "pct": 95.5,
+    "ok": true
+   },
+   "Canada": {
+    "k": 32,
+    "n": 36,
+    "pct": 88.9,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 11,
+    "n": 11,
+    "pct": 100.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 5,
+    "n": 6,
+    "pct": 83.3,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 1,
+    "n": 1,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "ketchup": {
+   "US": {
+    "k": 356,
+    "n": 427,
+    "pct": 83.4,
+    "ok": true
+   },
+   "UK": {
+    "k": 139,
+    "n": 174,
+    "pct": 79.9,
+    "ok": true
+   },
+   "Canada": {
+    "k": 29,
+    "n": 43,
+    "pct": 67.4,
+    "ok": true
+   },
+   "India": {
+    "k": 34,
+    "n": 42,
+    "pct": 81.0,
+    "ok": true
+   },
+   "Australia": {
+    "k": 10,
+    "n": 10,
+    "pct": 100.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 2,
+    "n": 2,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "sauces": {
+   "US": {
+    "k": 6708,
+    "n": 22972,
+    "pct": 29.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 843,
+    "n": 2884,
+    "pct": 29.2,
+    "ok": true
+   },
+   "Canada": {
+    "k": 203,
+    "n": 789,
+    "pct": 25.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 228,
+    "n": 734,
+    "pct": 31.1,
+    "ok": true
+   },
+   "India": {
+    "k": 82,
+    "n": 128,
+    "pct": 64.1,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 18,
+    "n": 41,
+    "pct": 43.9,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 15,
+    "n": 33,
+    "pct": 45.5,
+    "ok": true
+   },
+   "UAE": {
+    "k": 8,
+    "n": 15,
+    "pct": 53.3,
+    "ok": false
+   }
+  },
+  "yoghurt": {
+   "US": {
+    "k": 3381,
+    "n": 5805,
+    "pct": 58.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 454,
+    "n": 981,
+    "pct": 46.3,
+    "ok": true
+   },
+   "Australia": {
+    "k": 67,
+    "n": 296,
+    "pct": 22.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 52,
+    "n": 197,
+    "pct": 26.4,
+    "ok": true
+   },
+   "India": {
+    "k": 17,
+    "n": 77,
+    "pct": 22.1,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 13,
+    "n": 37,
+    "pct": 35.1,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 9,
+    "n": 33,
+    "pct": 27.3,
+    "ok": true
+   },
+   "UAE": {
+    "k": 5,
+    "n": 19,
+    "pct": 26.3,
+    "ok": false
+   }
+  },
+  "cakes": {
+   "US": {
+    "k": 4883,
+    "n": 6357,
+    "pct": 76.8,
+    "ok": true
+   },
+   "UK": {
+    "k": 388,
+    "n": 597,
+    "pct": 65.0,
+    "ok": true
+   },
+   "Canada": {
+    "k": 107,
+    "n": 147,
+    "pct": 72.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 52,
+    "n": 87,
+    "pct": 59.8,
+    "ok": true
+   },
+   "India": {
+    "k": 43,
+    "n": 53,
+    "pct": 81.1,
+    "ok": true
+   },
+   "UAE": {
+    "k": 3,
+    "n": 13,
+    "pct": 23.1,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 5,
+    "n": 12,
+    "pct": 41.7,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 3,
+    "n": 6,
+    "pct": 50.0,
+    "ok": false
+   }
+  },
+  "ice_cream": {
+   "US": {
+    "k": 747,
+    "n": 1102,
+    "pct": 67.8,
+    "ok": true
+   },
+   "UK": {
+    "k": 252,
+    "n": 343,
+    "pct": 73.5,
+    "ok": true
+   },
+   "Canada": {
+    "k": 170,
+    "n": 214,
+    "pct": 79.4,
+    "ok": true
+   },
+   "Australia": {
+    "k": 100,
+    "n": 141,
+    "pct": 70.9,
+    "ok": true
+   },
+   "India": {
+    "k": 67,
+    "n": 93,
+    "pct": 72.0,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 7,
+    "n": 8,
+    "pct": 87.5,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 6,
+    "n": 6,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "chips": {
+   "US": {
+    "k": 238,
+    "n": 2871,
+    "pct": 8.3,
+    "ok": true
+   },
+   "UK": {
+    "k": 115,
+    "n": 1482,
+    "pct": 7.8,
+    "ok": true
+   },
+   "Canada": {
+    "k": 38,
+    "n": 394,
+    "pct": 9.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 35,
+    "n": 232,
+    "pct": 15.1,
+    "ok": true
+   },
+   "India": {
+    "k": 26,
+    "n": 157,
+    "pct": 16.6,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 9,
+    "n": 42,
+    "pct": 21.4,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 5,
+    "n": 30,
+    "pct": 16.7,
+    "ok": true
+   },
+   "UAE": {
+    "k": 0,
+    "n": 16,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "namkeen": {
+   "India": {
+    "k": 6,
+    "n": 42,
+    "pct": 14.3,
+    "ok": true
+   },
+   "US": {
+    "k": 1,
+    "n": 4,
+    "pct": 25.0,
+    "ok": false
+   },
+   "UK": {
+    "k": 1,
+    "n": 4,
+    "pct": 25.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 2,
+    "n": 3,
+    "pct": 66.7,
+    "ok": false
+   },
+   "Canada": {
+    "k": 0,
+    "n": 2,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "instant_noodles": {
+   "US": {
+    "k": 14,
+    "n": 215,
+    "pct": 6.5,
+    "ok": true
+   },
+   "UK": {
+    "k": 20,
+    "n": 207,
+    "pct": 9.7,
+    "ok": true
+   },
+   "India": {
+    "k": 4,
+    "n": 97,
+    "pct": 4.1,
+    "ok": true
+   },
+   "Australia": {
+    "k": 4,
+    "n": 74,
+    "pct": 5.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 2,
+    "n": 53,
+    "pct": 3.8,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 2,
+    "n": 17,
+    "pct": 11.8,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 0,
+    "n": 7,
+    "pct": 0.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 0,
+    "n": 4,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "all_foods": {
+   "US": {
+    "k": 140163,
+    "n": 410549,
+    "pct": 34.1,
+    "ok": true
+   },
+   "UK": {
+    "k": 16463,
+    "n": 54616,
+    "pct": 30.1,
+    "ok": true
+   },
+   "Canada": {
+    "k": 6147,
+    "n": 17636,
+    "pct": 34.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 4266,
+    "n": 12977,
+    "pct": 32.9,
+    "ok": true
+   },
+   "India": {
+    "k": 1679,
+    "n": 3964,
+    "pct": 42.4,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 496,
+    "n": 1541,
+    "pct": 32.2,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 410,
+    "n": 1048,
+    "pct": 39.1,
+    "ok": true
+   },
+   "UAE": {
+    "k": 190,
+    "n": 653,
+    "pct": 29.1,
+    "ok": true
+   }
+  }
+ },
+ "names_2plus": {
+  "biscuits": {
+   "US": {
+    "k": 7828,
+    "n": 11119,
+    "pct": 70.4,
+    "ok": true
+   },
+   "UK": {
+    "k": 932,
+    "n": 1428,
+    "pct": 65.3,
+    "ok": true
+   },
+   "Canada": {
+    "k": 232,
+    "n": 357,
+    "pct": 65.0,
+    "ok": true
+   },
+   "India": {
+    "k": 237,
+    "n": 338,
+    "pct": 70.1,
+    "ok": true
+   },
+   "Australia": {
+    "k": 163,
+    "n": 245,
+    "pct": 66.5,
+    "ok": true
+   },
+   "UAE": {
+    "k": 16,
+    "n": 33,
+    "pct": 48.5,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 31,
+    "pct": 54.8,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 13,
+    "n": 21,
+    "pct": 61.9,
+    "ok": true
+   }
+  },
+  "breakfast_cereals": {
+   "US": {
+    "k": 1365,
+    "n": 2524,
+    "pct": 54.1,
+    "ok": true
+   },
+   "UK": {
+    "k": 624,
+    "n": 1385,
+    "pct": 45.1,
+    "ok": true
+   },
+   "Canada": {
+    "k": 231,
+    "n": 387,
+    "pct": 59.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 190,
+    "n": 324,
+    "pct": 58.6,
+    "ok": true
+   },
+   "India": {
+    "k": 53,
+    "n": 148,
+    "pct": 35.8,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 18,
+    "n": 40,
+    "pct": 45.0,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 30,
+    "pct": 56.7,
+    "ok": true
+   },
+   "UAE": {
+    "k": 11,
+    "n": 17,
+    "pct": 64.7,
+    "ok": false
+   }
+  },
+  "chocolate": {
+   "UK": {
+    "k": 345,
+    "n": 1133,
+    "pct": 30.5,
+    "ok": true
+   },
+   "US": {
+    "k": 309,
+    "n": 1078,
+    "pct": 28.7,
+    "ok": true
+   },
+   "Canada": {
+    "k": 126,
+    "n": 477,
+    "pct": 26.4,
+    "ok": true
+   },
+   "Australia": {
+    "k": 98,
+    "n": 277,
+    "pct": 35.4,
+    "ok": true
+   },
+   "India": {
+    "k": 21,
+    "n": 101,
+    "pct": 20.8,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 5,
+    "n": 15,
+    "pct": 33.3,
+    "ok": false
+   },
+   "UAE": {
+    "k": 5,
+    "n": 15,
+    "pct": 33.3,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 4,
+    "n": 12,
+    "pct": 33.3,
+    "ok": false
+   }
+  },
+  "soft_drinks": {
+   "US": {
+    "k": 1030,
+    "n": 5862,
+    "pct": 17.6,
+    "ok": true
+   },
+   "UK": {
+    "k": 58,
+    "n": 560,
+    "pct": 10.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 139,
+    "n": 331,
+    "pct": 42.0,
+    "ok": true
+   },
+   "Australia": {
+    "k": 9,
+    "n": 159,
+    "pct": 5.7,
+    "ok": true
+   },
+   "India": {
+    "k": 6,
+    "n": 81,
+    "pct": 7.4,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 1,
+    "n": 23,
+    "pct": 4.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 6,
+    "n": 17,
+    "pct": 35.3,
+    "ok": false
+   },
+   "UAE": {
+    "k": 0,
+    "n": 9,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "flavoured_milk": {
+   "US": {
+    "k": 36,
+    "n": 200,
+    "pct": 18.0,
+    "ok": true
+   },
+   "UK": {
+    "k": 31,
+    "n": 116,
+    "pct": 26.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 11,
+    "n": 81,
+    "pct": 13.6,
+    "ok": true
+   },
+   "India": {
+    "k": 6,
+    "n": 44,
+    "pct": 13.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 10,
+    "n": 36,
+    "pct": 27.8,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 2,
+    "n": 11,
+    "pct": 18.2,
+    "ok": false
+   },
+   "UAE": {
+    "k": 1,
+    "n": 6,
+    "pct": 16.7,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 0,
+    "n": 1,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "ketchup": {
+   "US": {
+    "k": 27,
+    "n": 427,
+    "pct": 6.3,
+    "ok": true
+   },
+   "UK": {
+    "k": 9,
+    "n": 174,
+    "pct": 5.2,
+    "ok": true
+   },
+   "Canada": {
+    "k": 5,
+    "n": 43,
+    "pct": 11.6,
+    "ok": true
+   },
+   "India": {
+    "k": 5,
+    "n": 42,
+    "pct": 11.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 0,
+    "n": 10,
+    "pct": 0.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 0,
+    "n": 2,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "sauces": {
+   "US": {
+    "k": 5074,
+    "n": 22972,
+    "pct": 22.1,
+    "ok": true
+   },
+   "UK": {
+    "k": 434,
+    "n": 2884,
+    "pct": 15.0,
+    "ok": true
+   },
+   "Canada": {
+    "k": 139,
+    "n": 789,
+    "pct": 17.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 101,
+    "n": 734,
+    "pct": 13.8,
+    "ok": true
+   },
+   "India": {
+    "k": 16,
+    "n": 128,
+    "pct": 12.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 7,
+    "n": 41,
+    "pct": 17.1,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 4,
+    "n": 33,
+    "pct": 12.1,
+    "ok": true
+   },
+   "UAE": {
+    "k": 5,
+    "n": 15,
+    "pct": 33.3,
+    "ok": false
+   }
+  },
+  "yoghurt": {
+   "US": {
+    "k": 1713,
+    "n": 5805,
+    "pct": 29.5,
+    "ok": true
+   },
+   "UK": {
+    "k": 214,
+    "n": 981,
+    "pct": 21.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 15,
+    "n": 296,
+    "pct": 5.1,
+    "ok": true
+   },
+   "Canada": {
+    "k": 28,
+    "n": 197,
+    "pct": 14.2,
+    "ok": true
+   },
+   "India": {
+    "k": 5,
+    "n": 77,
+    "pct": 6.5,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 7,
+    "n": 37,
+    "pct": 18.9,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 3,
+    "n": 33,
+    "pct": 9.1,
+    "ok": true
+   },
+   "UAE": {
+    "k": 0,
+    "n": 19,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "cakes": {
+   "US": {
+    "k": 5216,
+    "n": 6357,
+    "pct": 82.1,
+    "ok": true
+   },
+   "UK": {
+    "k": 469,
+    "n": 597,
+    "pct": 78.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 114,
+    "n": 147,
+    "pct": 77.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 49,
+    "n": 87,
+    "pct": 56.3,
+    "ok": true
+   },
+   "India": {
+    "k": 38,
+    "n": 53,
+    "pct": 71.7,
+    "ok": true
+   },
+   "UAE": {
+    "k": 6,
+    "n": 13,
+    "pct": 46.2,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 7,
+    "n": 12,
+    "pct": 58.3,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 2,
+    "n": 6,
+    "pct": 33.3,
+    "ok": false
+   }
+  },
+  "ice_cream": {
+   "US": {
+    "k": 778,
+    "n": 1102,
+    "pct": 70.6,
+    "ok": true
+   },
+   "UK": {
+    "k": 281,
+    "n": 343,
+    "pct": 81.9,
+    "ok": true
+   },
+   "Canada": {
+    "k": 162,
+    "n": 214,
+    "pct": 75.7,
+    "ok": true
+   },
+   "Australia": {
+    "k": 107,
+    "n": 141,
+    "pct": 75.9,
+    "ok": true
+   },
+   "India": {
+    "k": 40,
+    "n": 93,
+    "pct": 43.0,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 8,
+    "n": 8,
+    "pct": 100.0,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 4,
+    "n": 6,
+    "pct": 66.7,
+    "ok": false
+   }
+  },
+  "chips": {
+   "US": {
+    "k": 610,
+    "n": 2871,
+    "pct": 21.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 273,
+    "n": 1482,
+    "pct": 18.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 123,
+    "n": 394,
+    "pct": 31.2,
+    "ok": true
+   },
+   "Australia": {
+    "k": 36,
+    "n": 232,
+    "pct": 15.5,
+    "ok": true
+   },
+   "India": {
+    "k": 17,
+    "n": 157,
+    "pct": 10.8,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 3,
+    "n": 42,
+    "pct": 7.1,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 6,
+    "n": 30,
+    "pct": 20.0,
+    "ok": true
+   },
+   "UAE": {
+    "k": 2,
+    "n": 16,
+    "pct": 12.5,
+    "ok": false
+   }
+  },
+  "namkeen": {
+   "India": {
+    "k": 3,
+    "n": 42,
+    "pct": 7.1,
+    "ok": true
+   },
+   "US": {
+    "k": 0,
+    "n": 4,
+    "pct": 0.0,
+    "ok": false
+   },
+   "UK": {
+    "k": 0,
+    "n": 4,
+    "pct": 0.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 1,
+    "n": 3,
+    "pct": 33.3,
+    "ok": false
+   },
+   "Canada": {
+    "k": 0,
+    "n": 2,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "instant_noodles": {
+   "US": {
+    "k": 95,
+    "n": 215,
+    "pct": 44.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 52,
+    "n": 207,
+    "pct": 25.1,
+    "ok": true
+   },
+   "India": {
+    "k": 4,
+    "n": 97,
+    "pct": 4.1,
+    "ok": true
+   },
+   "Australia": {
+    "k": 16,
+    "n": 74,
+    "pct": 21.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 16,
+    "n": 53,
+    "pct": 30.2,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 6,
+    "n": 17,
+    "pct": 35.3,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 1,
+    "n": 7,
+    "pct": 14.3,
+    "ok": false
+   },
+   "UAE": {
+    "k": 0,
+    "n": 4,
+    "pct": 0.0,
+    "ok": false
+   }
+  },
+  "all_foods": {
+   "US": {
+    "k": 116103,
+    "n": 410549,
+    "pct": 28.3,
+    "ok": true
+   },
+   "UK": {
+    "k": 14517,
+    "n": 54616,
+    "pct": 26.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 5279,
+    "n": 17636,
+    "pct": 29.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 2985,
+    "n": 12977,
+    "pct": 23.0,
+    "ok": true
+   },
+   "India": {
+    "k": 772,
+    "n": 3964,
+    "pct": 19.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 328,
+    "n": 1541,
+    "pct": 21.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 253,
+    "n": 1048,
+    "pct": 24.1,
+    "ok": true
+   },
+   "UAE": {
+    "k": 118,
+    "n": 653,
+    "pct": 18.1,
+    "ok": true
+   }
+  }
+ },
+ "any_sugar": {
+  "biscuits": {
+   "US": {
+    "k": 10613,
+    "n": 11119,
+    "pct": 95.4,
+    "ok": true
+   },
+   "UK": {
+    "k": 1299,
+    "n": 1428,
+    "pct": 91.0,
+    "ok": true
+   },
+   "Canada": {
+    "k": 325,
+    "n": 357,
+    "pct": 91.0,
+    "ok": true
+   },
+   "India": {
+    "k": 313,
+    "n": 338,
+    "pct": 92.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 216,
+    "n": 245,
+    "pct": 88.2,
+    "ok": true
+   },
+   "UAE": {
+    "k": 25,
+    "n": 33,
+    "pct": 75.8,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 29,
+    "n": 31,
+    "pct": 93.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 18,
+    "n": 21,
+    "pct": 85.7,
+    "ok": true
+   }
+  },
+  "breakfast_cereals": {
+   "US": {
+    "k": 2081,
+    "n": 2524,
+    "pct": 82.4,
+    "ok": true
+   },
+   "UK": {
+    "k": 982,
+    "n": 1385,
+    "pct": 70.9,
+    "ok": true
+   },
+   "Canada": {
+    "k": 300,
+    "n": 387,
+    "pct": 77.5,
+    "ok": true
+   },
+   "Australia": {
+    "k": 262,
+    "n": 324,
+    "pct": 80.9,
+    "ok": true
+   },
+   "India": {
+    "k": 94,
+    "n": 148,
+    "pct": 63.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 28,
+    "n": 40,
+    "pct": 70.0,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 21,
+    "n": 30,
+    "pct": 70.0,
+    "ok": true
+   },
+   "UAE": {
+    "k": 13,
+    "n": 17,
+    "pct": 76.5,
+    "ok": false
+   }
+  },
+  "chocolate": {
+   "UK": {
+    "k": 1034,
+    "n": 1133,
+    "pct": 91.3,
+    "ok": true
+   },
+   "US": {
+    "k": 978,
+    "n": 1078,
+    "pct": 90.7,
+    "ok": true
+   },
+   "Canada": {
+    "k": 432,
+    "n": 477,
+    "pct": 90.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 246,
+    "n": 277,
+    "pct": 88.8,
+    "ok": true
+   },
+   "India": {
+    "k": 86,
+    "n": 101,
+    "pct": 85.1,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 11,
+    "n": 15,
+    "pct": 73.3,
+    "ok": false
+   },
+   "UAE": {
+    "k": 9,
+    "n": 15,
+    "pct": 60.0,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 10,
+    "n": 12,
+    "pct": 83.3,
+    "ok": false
+   }
+  },
+  "soft_drinks": {
+   "US": {
+    "k": 4762,
+    "n": 5862,
+    "pct": 81.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 310,
+    "n": 560,
+    "pct": 55.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 221,
+    "n": 331,
+    "pct": 66.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 99,
+    "n": 159,
+    "pct": 62.3,
+    "ok": true
+   },
+   "India": {
+    "k": 63,
+    "n": 81,
+    "pct": 77.8,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 18,
+    "n": 23,
+    "pct": 78.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 12,
+    "n": 17,
+    "pct": 70.6,
+    "ok": false
+   },
+   "UAE": {
+    "k": 5,
+    "n": 9,
+    "pct": 55.6,
+    "ok": false
+   }
+  },
+  "flavoured_milk": {
+   "US": {
+    "k": 182,
+    "n": 200,
+    "pct": 91.0,
+    "ok": true
+   },
+   "UK": {
+    "k": 100,
+    "n": 116,
+    "pct": 86.2,
+    "ok": true
+   },
+   "Australia": {
+    "k": 66,
+    "n": 81,
+    "pct": 81.5,
+    "ok": true
+   },
+   "India": {
+    "k": 43,
+    "n": 44,
+    "pct": 97.7,
+    "ok": true
+   },
+   "Canada": {
+    "k": 33,
+    "n": 36,
+    "pct": 91.7,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 11,
+    "n": 11,
+    "pct": 100.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 5,
+    "n": 6,
+    "pct": 83.3,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 1,
+    "n": 1,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "ketchup": {
+   "US": {
+    "k": 396,
+    "n": 427,
+    "pct": 92.7,
+    "ok": true
+   },
+   "UK": {
+    "k": 151,
+    "n": 174,
+    "pct": 86.8,
+    "ok": true
+   },
+   "Canada": {
+    "k": 34,
+    "n": 43,
+    "pct": 79.1,
+    "ok": true
+   },
+   "India": {
+    "k": 39,
+    "n": 42,
+    "pct": 92.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 10,
+    "n": 10,
+    "pct": 100.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 2,
+    "n": 2,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "sauces": {
+   "US": {
+    "k": 14694,
+    "n": 22972,
+    "pct": 64.0,
+    "ok": true
+   },
+   "UK": {
+    "k": 2031,
+    "n": 2884,
+    "pct": 70.4,
+    "ok": true
+   },
+   "Canada": {
+    "k": 409,
+    "n": 789,
+    "pct": 51.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 493,
+    "n": 734,
+    "pct": 67.2,
+    "ok": true
+   },
+   "India": {
+    "k": 105,
+    "n": 128,
+    "pct": 82.0,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 31,
+    "n": 41,
+    "pct": 75.6,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 25,
+    "n": 33,
+    "pct": 75.8,
+    "ok": true
+   },
+   "UAE": {
+    "k": 11,
+    "n": 15,
+    "pct": 73.3,
+    "ok": false
+   }
+  },
+  "yoghurt": {
+   "US": {
+    "k": 4736,
+    "n": 5805,
+    "pct": 81.6,
+    "ok": true
+   },
+   "UK": {
+    "k": 611,
+    "n": 981,
+    "pct": 62.3,
+    "ok": true
+   },
+   "Australia": {
+    "k": 143,
+    "n": 296,
+    "pct": 48.3,
+    "ok": true
+   },
+   "Canada": {
+    "k": 92,
+    "n": 197,
+    "pct": 46.7,
+    "ok": true
+   },
+   "India": {
+    "k": 24,
+    "n": 77,
+    "pct": 31.2,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 22,
+    "n": 37,
+    "pct": 59.5,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 20,
+    "n": 33,
+    "pct": 60.6,
+    "ok": true
+   },
+   "UAE": {
+    "k": 10,
+    "n": 19,
+    "pct": 52.6,
+    "ok": false
+   }
+  },
+  "cakes": {
+   "US": {
+    "k": 6226,
+    "n": 6357,
+    "pct": 97.9,
+    "ok": true
+   },
+   "UK": {
+    "k": 569,
+    "n": 597,
+    "pct": 95.3,
+    "ok": true
+   },
+   "Canada": {
+    "k": 138,
+    "n": 147,
+    "pct": 93.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 82,
+    "n": 87,
+    "pct": 94.3,
+    "ok": true
+   },
+   "India": {
+    "k": 50,
+    "n": 53,
+    "pct": 94.3,
+    "ok": true
+   },
+   "UAE": {
+    "k": 8,
+    "n": 13,
+    "pct": 61.5,
+    "ok": false
+   },
+   "Singapore": {
+    "k": 10,
+    "n": 12,
+    "pct": 83.3,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 3,
+    "n": 6,
+    "pct": 50.0,
+    "ok": false
+   }
+  },
+  "ice_cream": {
+   "US": {
+    "k": 1038,
+    "n": 1102,
+    "pct": 94.2,
+    "ok": true
+   },
+   "UK": {
+    "k": 328,
+    "n": 343,
+    "pct": 95.6,
+    "ok": true
+   },
+   "Canada": {
+    "k": 205,
+    "n": 214,
+    "pct": 95.8,
+    "ok": true
+   },
+   "Australia": {
+    "k": 132,
+    "n": 141,
+    "pct": 93.6,
+    "ok": true
+   },
+   "India": {
+    "k": 81,
+    "n": 93,
+    "pct": 87.1,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 8,
+    "n": 8,
+    "pct": 100.0,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 6,
+    "n": 6,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "chips": {
+   "US": {
+    "k": 1363,
+    "n": 2871,
+    "pct": 47.5,
+    "ok": true
+   },
+   "UK": {
+    "k": 902,
+    "n": 1482,
+    "pct": 60.9,
+    "ok": true
+   },
+   "Canada": {
+    "k": 244,
+    "n": 394,
+    "pct": 61.9,
+    "ok": true
+   },
+   "Australia": {
+    "k": 139,
+    "n": 232,
+    "pct": 59.9,
+    "ok": true
+   },
+   "India": {
+    "k": 107,
+    "n": 157,
+    "pct": 68.2,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 27,
+    "n": 42,
+    "pct": 64.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 21,
+    "n": 30,
+    "pct": 70.0,
+    "ok": true
+   },
+   "UAE": {
+    "k": 8,
+    "n": 16,
+    "pct": 50.0,
+    "ok": false
+   }
+  },
+  "namkeen": {
+   "India": {
+    "k": 27,
+    "n": 42,
+    "pct": 64.3,
+    "ok": true
+   },
+   "US": {
+    "k": 3,
+    "n": 4,
+    "pct": 75.0,
+    "ok": false
+   },
+   "UK": {
+    "k": 2,
+    "n": 4,
+    "pct": 50.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 3,
+    "n": 3,
+    "pct": 100.0,
+    "ok": false
+   },
+   "Canada": {
+    "k": 2,
+    "n": 2,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "instant_noodles": {
+   "US": {
+    "k": 187,
+    "n": 215,
+    "pct": 87.0,
+    "ok": true
+   },
+   "UK": {
+    "k": 188,
+    "n": 207,
+    "pct": 90.8,
+    "ok": true
+   },
+   "India": {
+    "k": 85,
+    "n": 97,
+    "pct": 87.6,
+    "ok": true
+   },
+   "Australia": {
+    "k": 62,
+    "n": 74,
+    "pct": 83.8,
+    "ok": true
+   },
+   "Canada": {
+    "k": 46,
+    "n": 53,
+    "pct": 86.8,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 17,
+    "n": 17,
+    "pct": 100.0,
+    "ok": false
+   },
+   "South Africa": {
+    "k": 7,
+    "n": 7,
+    "pct": 100.0,
+    "ok": false
+   },
+   "UAE": {
+    "k": 4,
+    "n": 4,
+    "pct": 100.0,
+    "ok": false
+   }
+  },
+  "all_foods": {
+   "US": {
+    "k": 236310,
+    "n": 410549,
+    "pct": 57.6,
+    "ok": true
+   },
+   "UK": {
+    "k": 32738,
+    "n": 54616,
+    "pct": 59.9,
+    "ok": true
+   },
+   "Canada": {
+    "k": 10071,
+    "n": 17636,
+    "pct": 57.1,
+    "ok": true
+   },
+   "Australia": {
+    "k": 7695,
+    "n": 12977,
+    "pct": 59.3,
+    "ok": true
+   },
+   "India": {
+    "k": 2378,
+    "n": 3964,
+    "pct": 60.0,
+    "ok": true
+   },
+   "South Africa": {
+    "k": 837,
+    "n": 1541,
+    "pct": 54.3,
+    "ok": true
+   },
+   "Singapore": {
+    "k": 641,
+    "n": 1048,
+    "pct": 61.2,
+    "ok": true
+   },
+   "UAE": {
+    "k": 317,
+    "n": 653,
+    "pct": 48.5,
+    "ok": true
+   }
+  }
+ },
+ "soft_drinks_split": {
+  "France": {
+   "zero_sugar": {
+    "k": 731,
+    "n": 3790,
+    "pct": 19.3,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 3059,
+    "median": 8.2,
+    "ok": true
+   }
+  },
+  "Germany": {
+   "zero_sugar": {
+    "k": 383,
+    "n": 2123,
+    "pct": 18.0,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 1740,
+    "median": 7.9,
+    "ok": true
+   }
+  },
+  "UK": {
+   "zero_sugar": {
+    "k": 252,
+    "n": 718,
+    "pct": 35.1,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 466,
+    "median": 4.6,
+    "ok": true
+   }
+  },
+  "US": {
+   "zero_sugar": {
+    "k": 102,
+    "n": 443,
+    "pct": 23.0,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 341,
+    "median": 10.3,
+    "ok": true
+   }
+  },
+  "UAE": {
+   "zero_sugar": {
+    "k": 3,
+    "n": 6,
+    "pct": 50.0,
+    "ok": false
+   },
+   "median_sweetened": {
+    "k": 3,
+    "median": 11.0,
+    "ok": false
+   }
+  },
+  "Canada": {
+   "zero_sugar": {
+    "k": 121,
+    "n": 371,
+    "pct": 32.6,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 250,
+    "median": 10.7,
+    "ok": true
+   }
+  },
+  "Mexico": {
+   "zero_sugar": {
+    "k": 27,
+    "n": 109,
+    "pct": 24.8,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 82,
+    "median": 7.5,
+    "ok": true
+   }
+  },
+  "Spain": {
+   "zero_sugar": {
+    "k": 277,
+    "n": 706,
+    "pct": 39.2,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 429,
+    "median": 7.2,
+    "ok": true
+   }
+  },
+  "Italy": {
+   "zero_sugar": {
+    "k": 99,
+    "n": 414,
+    "pct": 23.9,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 315,
+    "median": 10.0,
+    "ok": true
+   }
+  },
+  "Brazil": {
+   "zero_sugar": {
+    "k": 8,
+    "n": 43,
+    "pct": 18.6,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 35,
+    "median": 10.0,
+    "ok": true
+   }
+  },
+  "India": {
+   "zero_sugar": {
+    "k": 4,
+    "n": 38,
+    "pct": 10.5,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 34,
+    "median": 10.6,
+    "ok": true
+   }
+  },
+  "Singapore": {
+   "zero_sugar": {
+    "k": 1,
+    "n": 7,
+    "pct": 14.3,
+    "ok": false
+   },
+   "median_sweetened": {
+    "k": 6,
+    "median": 6.4,
+    "ok": false
+   }
+  },
+  "Australia": {
+   "zero_sugar": {
+    "k": 13,
+    "n": 48,
+    "pct": 27.1,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 35,
+    "median": 7.8,
+    "ok": true
+   }
+  },
+  "South Africa": {
+   "zero_sugar": {
+    "k": 1,
+    "n": 13,
+    "pct": 7.7,
+    "ok": false
+   },
+   "median_sweetened": {
+    "k": 12,
+    "median": 9.9,
+    "ok": false
+   }
+  },
+  "Chile": {
+   "zero_sugar": {
+    "k": 8,
+    "n": 23,
+    "pct": 34.8,
+    "ok": true
+   },
+   "median_sweetened": {
+    "k": 15,
+    "median": 10.2,
+    "ok": false
+   }
+  },
+  "Indonesia": {
+   "zero_sugar": {
+    "k": 2,
+    "n": 2,
+    "pct": 100.0,
+    "ok": false
+   },
+   "median_sweetened": {
+    "k": 0,
+    "median": null,
+    "ok": false
+   }
+  }
+ },
+ "exclusions": {
+  "salt:biscuits": {
+   "Australia:missing": 260,
+   "Brazil:above_cap": 10,
+   "Brazil:missing": 154,
+   "Canada:above_cap": 3,
+   "Canada:missing": 47,
+   "Chile:above_cap": 2,
+   "Chile:missing": 21,
+   "France:above_cap": 15,
+   "France:missing": 1760,
+   "Germany:above_cap": 2,
+   "Germany:missing": 190,
+   "India:above_cap": 4,
+   "India:missing": 624,
+   "Indonesia:above_cap": 1,
+   "Indonesia:missing": 56,
+   "Italy:above_cap": 5,
+   "Italy:missing": 332,
+   "Italy:out_of_range": 1,
+   "Mexico:above_cap": 7,
+   "Mexico:missing": 65,
+   "Singapore:missing": 40,
+   "South Africa:missing": 30,
+   "Spain:above_cap": 6,
+   "Spain:missing": 347,
+   "UAE:missing": 47,
+   "UK:above_cap": 2,
+   "UK:missing": 231,
+   "US:above_cap": 3,
+   "US:missing": 10786
+  },
+  "salt:breakfast_cereals": {
+   "Australia:above_cap": 2,
+   "Australia:missing": 351,
+   "Brazil:above_cap": 2,
+   "Brazil:missing": 39,
+   "Canada:missing": 57,
+   "Canada:out_of_range": 1,
+   "Chile:above_cap": 3,
+   "Chile:missing": 10,
+   "France:above_cap": 8,
+   "France:missing": 738,
+   "Germany:above_cap": 2,
+   "Germany:missing": 256,
+   "India:above_cap": 1,
+   "India:missing": 198,
+   "Indonesia:missing": 5,
+   "Italy:above_cap": 1,
+   "Italy:missing": 140,
+   "Mexico:above_cap": 5,
+   "Mexico:missing": 31,
+   "Singapore:missing": 42,
+   "South Africa:missing": 45,
+   "Spain:above_cap": 1,
+   "Spain:missing": 248,
+   "UAE:missing": 28,
+   "UK:above_cap": 4,
+   "UK:missing": 203,
+   "US:above_cap": 8,
+   "US:missing": 345
+  },
+  "salt:chips": {
+   "Australia:above_cap": 2,
+   "Australia:missing": 231,
+   "Brazil:above_cap": 2,
+   "Brazil:missing": 40,
+   "Canada:above_cap": 5,
+   "Canada:missing": 41,
+   "Chile:above_cap": 1,
+   "Chile:missing": 11,
+   "France:above_cap": 17,
+   "France:missing": 367,
+   "Germany:above_cap": 6,
+   "Germany:missing": 127,
+   "India:missing": 232,
+   "Indonesia:missing": 20,
+   "Italy:above_cap": 1,
+   "Italy:missing": 19,
+   "Mexico:missing": 29,
+   "Singapore:missing": 33,
+   "South Africa:above_cap": 1,
+   "South Africa:missing": 59,
+   "Spain:above_cap": 11,
+   "Spain:missing": 120,
+   "UAE:missing": 26,
+   "UK:above_cap": 13,
+   "UK:missing": 223,
+   "US:above_cap": 8,
+   "US:missing": 3207
+  },
+  "salt:instant_noodles": {
+   "Australia:above_cap": 1,
+   "Australia:missing": 69,
+   "Brazil:missing": 12,
+   "Chile:missing": 1,
+   "France:above_cap": 1,
+   "France:missing": 66,
+   "Germany:above_cap": 1,
+   "Germany:missing": 31,
+   "India:above_cap": 2,
+   "India:missing": 106,
+   "Indonesia:missing": 24,
+   "Italy:missing": 1,
+   "Mexico:above_cap": 1,
+   "Mexico:missing": 4,
+   "Singapore:missing": 21,
+   "South Africa:missing": 11,
+   "Spain:missing": 6,
+   "UAE:missing": 5,
+   "UK:missing": 26,
+   "US:missing": 156
+  },
+  "salt:ketchup": {
+   "Australia:missing": 12,
+   "Brazil:above_cap": 1,
+   "Brazil:missing": 13,
+   "Canada:above_cap": 1,
+   "Canada:missing": 14,
+   "Chile:above_cap": 1,
+   "Chile:missing": 7,
+   "France:above_cap": 2,
+   "France:missing": 149,
+   "Germany:above_cap": 3,
+   "Germany:missing": 90,
+   "India:above_cap": 3,
+   "India:missing": 70,
+   "Indonesia:missing": 1,
+   "Italy:above_cap": 1,
+   "Italy:missing": 13,
+   "Mexico:missing": 4,
+   "Singapore:missing": 1,
+   "Spain:above_cap": 7,
+   "Spain:missing": 64,
+   "UAE:missing": 6,
+   "UK:above_cap": 4,
+   "UK:missing": 23,
+   "US:above_cap": 1,
+   "US:missing": 595
+  },
+  "salt:namkeen": {
+   "France:missing": 1,
+   "India:above_cap": 2,
+   "India:missing": 47,
+   "Italy:missing": 1,
+   "UK:missing": 4,
+   "US:above_cap": 1,
+   "US:missing": 10
+  },
+  "salt:sauces": {
+   "Australia:above_cap": 4,
+   "Australia:missing": 801,
+   "Brazil:above_cap": 2,
+   "Brazil:missing": 54,
+   "Canada:above_cap": 7,
+   "Canada:missing": 120,
+   "Chile:above_cap": 4,
+   "Chile:missing": 15,
+   "France:above_cap": 51,
+   "France:missing": 2350,
+   "Germany:above_cap": 16,
+   "Germany:missing": 887,
+   "India:above_cap": 3,
+   "India:missing": 214,
+   "Indonesia:missing": 26,
+   "Italy:above_cap": 3,
+   "Italy:missing": 245,
+   "Mexico:above_cap": 6,
+   "Mexico:missing": 50,
+   "Singapore:missing": 37,
+   "South Africa:above_cap": 1,
+   "South Africa:missing": 45,
+   "Spain:above_cap": 6,
+   "Spain:missing": 413,
+   "UAE:missing": 38,
+   "UK:above_cap": 14,
+   "UK:missing": 456,
+   "US:above_cap": 17,
+   "US:missing": 23895
+  },
+  "sugar:biscuits": {
+   "Australia:missing": 258,
+   "Brazil:exceeds_energy": 3,
+   "Brazil:missing": 211,
+   "Canada:exceeds_energy": 3,
+   "Canada:missing": 40,
+   "Chile:missing": 20,
+   "France:above_cap": 3,
+   "France:exceeds_energy": 28,
+   "France:missing": 1570,
+   "France:out_of_range": 2,
+   "Germany:above_cap": 1,
+   "Germany:exceeds_energy": 1,
+   "Germany:missing": 139,
+   "India:exceeds_energy": 1,
+   "India:missing": 622,
+   "India:out_of_range": 1,
+   "Indonesia:missing": 57,
+   "Italy:above_cap": 2,
+   "Italy:exceeds_energy": 8,
+   "Italy:missing": 170,
+   "Mexico:exceeds_energy": 2,
+   "Mexico:missing": 52,
+   "Singapore:missing": 40,
+   "South Africa:missing": 29,
+   "Spain:exceeds_energy": 5,
+   "Spain:missing": 289,
+   "UAE:missing": 46,
+   "UK:exceeds_energy": 5,
+   "UK:missing": 183,
+   "UK:out_of_range": 2,
+   "US:exceeds_energy": 5,
+   "US:missing": 10786,
+   "US:out_of_range": 3
+  },
+  "sugar:breakfast_cereals": {
+   "Australia:exceeds_energy": 1,
+   "Australia:missing": 346,
+   "Brazil:missing": 35,
+   "Canada:exceeds_energy": 8,
+   "Canada:missing": 36,
+   "Chile:missing": 12,
+   "France:above_cap": 1,
+   "France:exceeds_energy": 6,
+   "France:missing": 546,
+   "France:out_of_range": 1,
+   "Germany:missing": 122,
+   "India:missing": 197,
+   "Indonesia:missing": 5,
+   "Italy:above_cap": 1,
+   "Italy:exceeds_energy": 3,
+   "Italy:missing": 52,
+   "Mexico:missing": 24,
+   "Mexico:out_of_range": 1,
+   "Singapore:missing": 41,
+   "South Africa:missing": 45,
+   "Spain:missing": 158,
+   "UAE:missing": 28,
+   "UK:missing": 136,
+   "US:above_cap": 1,
+   "US:exceeds_energy": 15,
+   "US:missing": 216,
+   "US:out_of_range": 1
+  },
+  "sugar:cakes": {
+   "Australia:exceeds_energy": 1,
+   "Australia:missing": 156,
+   "Brazil:missing": 22,
+   "Canada:exceeds_energy": 3,
+   "Canada:missing": 34,
+   "Chile:missing": 2,
+   "France:above_cap": 4,
+   "France:exceeds_energy": 31,
+   "France:missing": 1036,
+   "Germany:above_cap": 2,
+   "Germany:exceeds_energy": 1,
+   "Germany:missing": 108,
+   "India:missing": 90,
+   "Indonesia:missing": 6,
+   "Italy:exceeds_energy": 6,
+   "Italy:missing": 37,
+   "Mexico:missing": 3,
+   "Singapore:missing": 13,
+   "South Africa:missing": 14,
+   "Spain:above_cap": 1,
+   "Spain:exceeds_energy": 5,
+   "Spain:missing": 178,
+   "UAE:exceeds_energy": 1,
+   "UAE:missing": 11,
+   "UK:missing": 118,
+   "UK:out_of_range": 1,
+   "US:missing": 6535
+  },
+  "sugar:chips": {
+   "Australia:missing": 231,
+   "Brazil:missing": 42,
+   "Canada:above_cap": 1,
+   "Canada:exceeds_energy": 1,
+   "Canada:missing": 46,
+   "Chile:missing": 10,
+   "France:above_cap": 20,
+   "France:exceeds_energy": 3,
+   "France:missing": 351,
+   "Germany:above_cap": 6,
+   "Germany:missing": 108,
+   "India:missing": 231,
+   "Indonesia:above_cap": 1,
+   "Indonesia:missing": 20,
+   "Italy:above_cap": 1,
+   "Italy:missing": 13,
+   "Mexico:missing": 35,
+   "Singapore:missing": 34,
+   "South Africa:missing": 55,
+   "Spain:above_cap": 3,
+   "Spain:exceeds_energy": 1,
+   "Spain:missing": 106,
+   "UAE:missing": 26,
+   "UK:above_cap": 7,
+   "UK:exceeds_energy": 1,
+   "UK:missing": 184,
+   "US:above_cap": 1,
+   "US:missing": 3229
+  },
+  "sugar:chocolate": {
+   "Australia:exceeds_energy": 1,
+   "Australia:missing": 242,
+   "Brazil:exceeds_energy": 1,
+   "Brazil:missing": 53,
+   "Canada:exceeds_energy": 4,
+   "Canada:missing": 28,
+   "Canada:out_of_range": 1,
+   "Chile:missing": 13,
+   "France:above_cap": 4,
+   "France:exceeds_energy": 15,
+   "France:missing": 966,
+   "France:out_of_range": 1,
+   "Germany:exceeds_energy": 1,
+   "Germany:missing": 167,
+   "India:missing": 161,
+   "Indonesia:missing": 10,
+   "Italy:exceeds_energy": 6,
+   "Italy:missing": 88,
+   "Mexico:above_cap": 2,
+   "Mexico:missing": 16,
+   "Singapore:missing": 9,
+   "South Africa:missing": 15,
+   "Spain:exceeds_energy": 13,
+   "Spain:missing": 115,
+   "UAE:missing": 22,
+   "UK:above_cap": 1,
+   "UK:exceeds_energy": 5,
+   "UK:missing": 126,
+   "UK:out_of_range": 1,
+   "US:above_cap": 1,
+   "US:exceeds_energy": 1,
+   "US:missing": 936,
+   "US:out_of_range": 1
+  },
+  "sugar:flavoured_milk": {
+   "Australia:above_cap": 5,
+   "Australia:missing": 124,
+   "Brazil:exceeds_energy": 1,
+   "Brazil:missing": 5,
+   "Canada:missing": 2,
+   "France:above_cap": 5,
+   "France:exceeds_energy": 4,
+   "France:missing": 26,
+   "France:out_of_range": 1,
+   "Germany:above_cap": 1,
+   "Germany:missing": 4,
+   "India:above_cap": 1,
+   "India:missing": 51,
+   "Indonesia:above_cap": 1,
+   "Indonesia:missing": 10,
+   "Italy:missing": 3,
+   "Mexico:missing": 1,
+   "Singapore:missing": 16,
+   "South Africa:above_cap": 1,
+   "Spain:above_cap": 3,
+   "Spain:exceeds_energy": 1,
+   "Spain:missing": 8,
+   "UAE:missing": 6,
+   "UK:above_cap": 1,
+   "UK:missing": 12,
+   "US:above_cap": 4,
+   "US:missing": 409
+  },
+  "sugar:ice_cream": {
+   "Australia:missing": 216,
+   "Brazil:missing": 28,
+   "Canada:above_cap": 1,
+   "Canada:missing": 7,
+   "Chile:missing": 8,
+   "France:above_cap": 4,
+   "France:exceeds_energy": 9,
+   "France:missing": 449,
+   "Germany:above_cap": 1,
+   "Germany:exceeds_energy": 2,
+   "Germany:missing": 93,
+   "India:missing": 127,
+   "Indonesia:missing": 5,
+   "Italy:exceeds_energy": 3,
+   "Italy:missing": 27,
+   "Mexico:missing": 7,
+   "Singapore:missing": 11,
+   "South Africa:missing": 9,
+   "Spain:exceeds_energy": 6,
+   "Spain:missing": 50,
+   "UAE:missing": 5,
+   "UK:exceeds_energy": 4,
+   "UK:missing": 51,
+   "US:exceeds_energy": 3,
+   "US:missing": 1194
+  },
+  "sugar:instant_noodles": {
+   "Australia:above_cap": 1,
+   "Australia:missing": 69,
+   "Brazil:missing": 20,
+   "Chile:missing": 1,
+   "France:above_cap": 2,
+   "France:missing": 61,
+   "Germany:above_cap": 1,
+   "Germany:missing": 27,
+   "India:missing": 104,
+   "Indonesia:missing": 24,
+   "Italy:exceeds_energy": 1,
+   "Italy:missing": 1,
+   "Mexico:missing": 4,
+   "Singapore:missing": 21,
+   "South Africa:missing": 10,
+   "Spain:missing": 5,
+   "UAE:missing": 5,
+   "UK:missing": 22,
+   "US:missing": 155
+  },
+  "sugar:ketchup": {
+   "Australia:missing": 12,
+   "Brazil:exceeds_energy": 1,
+   "Brazil:missing": 15,
+   "Canada:exceeds_energy": 4,
+   "Canada:missing": 11,
+   "Chile:missing": 7,
+   "France:above_cap": 3,
+   "France:exceeds_energy": 5,
+   "France:missing": 139,
+   "Germany:exceeds_energy": 1,
+   "Germany:missing": 74,
+   "India:missing": 70,
+   "Indonesia:missing": 1,
+   "Italy:missing": 10,
+   "Mexico:missing": 4,
+   "Singapore:missing": 1,
+   "Spain:above_cap": 3,
+   "Spain:exceeds_energy": 3,
+   "Spain:missing": 60,
+   "UAE:missing": 6,
+   "UK:exceeds_energy": 1,
+   "UK:missing": 17,
+   "US:exceeds_energy": 1,
+   "US:missing": 596
+  },
+  "sugar:namkeen": {
+   "France:missing": 1,
+   "India:missing": 47,
+   "UK:missing": 3,
+   "US:missing": 10
+  },
+  "sugar:sauces": {
+   "Australia:exceeds_energy": 7,
+   "Australia:missing": 799,
+   "Brazil:exceeds_energy": 3,
+   "Brazil:missing": 70,
+   "Brazil:out_of_range": 1,
+   "Canada:exceeds_energy": 19,
+   "Canada:missing": 137,
+   "Canada:out_of_range": 1,
+   "Chile:exceeds_energy": 1,
+   "Chile:missing": 17,
+   "France:above_cap": 2,
+   "France:exceeds_energy": 61,
+   "France:missing": 2155,
+   "France:out_of_range": 4,
+   "Germany:above_cap": 2,
+   "Germany:exceeds_energy": 11,
+   "Germany:missing": 732,
+   "Germany:out_of_range": 1,
+   "India:missing": 215,
+   "Indonesia:exceeds_energy": 1,
+   "Indonesia:missing": 27,
+   "Italy:exceeds_energy": 11,
+   "Italy:missing": 138,
+   "Mexico:missing": 42,
+   "Mexico:out_of_range": 2,
+   "Singapore:missing": 38,
+   "South Africa:missing": 45,
+   "Spain:exceeds_energy": 14,
+   "Spain:missing": 389,
+   "UAE:missing": 38,
+   "UK:exceeds_energy": 3,
+   "UK:missing": 373,
+   "US:exceeds_energy": 28,
+   "US:missing": 23984,
+   "US:out_of_range": 5
+  },
+  "sugar:soft_drinks": {
+   "Australia:exceeds_energy": 1,
+   "Australia:missing": 191,
+   "Brazil:above_cap": 1,
+   "Brazil:missing": 61,
+   "Canada:above_cap": 8,
+   "Canada:exceeds_energy": 8,
+   "Canada:missing": 23,
+   "Chile:missing": 9,
+   "France:above_cap": 30,
+   "France:exceeds_energy": 34,
+   "France:missing": 390,
+   "France:out_of_range": 2,
+   "Germany:above_cap": 3,
+   "Germany:exceeds_energy": 10,
+   "Germany:missing": 175,
+   "India:above_cap": 1,
+   "India:missing": 105,
+   "Indonesia:above_cap": 2,
+   "Indonesia:missing": 12,
+   "Italy:above_cap": 5,
+   "Italy:exceeds_energy": 2,
+   "Italy:missing": 22,
+   "Mexico:exceeds_energy": 3,
+   "Mexico:missing": 23,
+   "Singapore:missing": 20,
+   "South Africa:exceeds_energy": 1,
+   "South Africa:missing": 41,
+   "Spain:above_cap": 2,
+   "Spain:exceeds_energy": 7,
+   "Spain:missing": 74,
+   "UAE:missing": 19,
+   "UK:above_cap": 2,
+   "UK:exceeds_energy": 6,
+   "UK:missing": 92,
+   "US:above_cap": 12,
+   "US:exceeds_energy": 9,
+   "US:missing": 5699,
+   "US:out_of_range": 2
+  },
+  "sugar:yoghurt": {
+   "Australia:exceeds_energy": 4,
+   "Australia:missing": 24,
+   "Brazil:missing": 74,
+   "Canada:above_cap": 1,
+   "Canada:exceeds_energy": 2,
+   "Canada:missing": 41,
+   "Chile:missing": 6,
+   "France:above_cap": 3,
+   "France:exceeds_energy": 17,
+   "France:missing": 1022,
+   "Germany:above_cap": 1,
+   "Germany:exceeds_energy": 3,
+   "Germany:missing": 170,
+   "India:above_cap": 1,
+   "India:missing": 46,
+   "Indonesia:exceeds_energy": 1,
+   "Indonesia:missing": 1,
+   "Italy:exceeds_energy": 6,
+   "Italy:missing": 132,
+   "Mexico:above_cap": 1,
+   "Mexico:missing": 19,
+   "Singapore:exceeds_energy": 1,
+   "Singapore:missing": 4,
+   "South Africa:exceeds_energy": 2,
+   "South Africa:missing": 22,
+   "Spain:above_cap": 1,
+   "Spain:exceeds_energy": 11,
+   "Spain:missing": 195,
+   "UAE:exceeds_energy": 1,
+   "UAE:missing": 7,
+   "UK:above_cap": 4,
+   "UK:exceeds_energy": 3,
+   "UK:missing": 129,
+   "US:above_cap": 17,
+   "US:exceeds_energy": 3,
+   "US:missing": 166
+  }
+ },
+ "dropped_by_tag": {
+  "cakes": {
+   "US": 2361,
+   "Canada": 30,
+   "France": 360,
+   "UK": 43,
+   "Germany": 181,
+   "Mexico": 14,
+   "Spain": 25,
+   "UAE": 2,
+   "Australia": 27,
+   "Italy": 18,
+   "South Africa": 1,
+   "India": 2,
+   "Brazil": 2,
+   "Singapore": 1,
+   "Indonesia": 1
+  },
+  "sauces": {
+   "US": 571,
+   "Mexico": 18,
+   "Germany": 248,
+   "France": 470,
+   "UK": 145,
+   "Canada": 31,
+   "Australia": 20,
+   "Indonesia": 1,
+   "Spain": 28,
+   "Italy": 14,
+   "Brazil": 4,
+   "India": 2,
+   "UAE": 1,
+   "Singapore": 1
+  },
+  "soft_drinks": {
+   "US": 121,
+   "Canada": 22,
+   "France": 95,
+   "Mexico": 14,
+   "Italy": 6,
+   "Germany": 98,
+   "Spain": 14,
+   "UK": 20,
+   "India": 16,
+   "Australia": 15,
+   "UAE": 2,
+   "South Africa": 1,
+   "Chile": 3,
+   "Brazil": 4,
+   "Indonesia": 2
+  },
+  "breakfast_cereals": {
+   "Germany": 23,
+   "Brazil": 2,
+   "France": 88,
+   "US": 21,
+   "Mexico": 14,
+   "Canada": 9,
+   "UK": 19,
+   "India": 5,
+   "Italy": 6,
+   "Spain": 15,
+   "South Africa": 1,
+   "Australia": 4,
+   "UAE": 2,
+   "Chile": 2
+  },
+  "chocolate": {
+   "Germany": 110,
+   "US": 35,
+   "Mexico": 25,
+   "Canada": 6,
+   "France": 200,
+   "UAE": 2,
+   "UK": 42,
+   "Spain": 54,
+   "Italy": 22,
+   "South Africa": 5,
+   "India": 11,
+   "Chile": 4,
+   "Brazil": 19,
+   "Australia": 9,
+   "Indonesia": 1
+  },
+  "biscuits": {
+   "Canada": 1,
+   "US": 16,
+   "France": 18,
+   "Germany": 5,
+   "Spain": 4,
+   "Mexico": 4,
+   "UK": 1,
+   "Chile": 1,
+   "Italy": 14
+  },
+  "flavoured_milk": {
+   "US": 15,
+   "France": 33,
+   "Germany": 9,
+   "UK": 6,
+   "Italy": 4,
+   "South Africa": 1,
+   "Mexico": 4,
+   "Spain": 10,
+   "Brazil": 1,
+   "Australia": 7
+  },
+  "yoghurt": {
+   "US": 13,
+   "France": 115,
+   "Canada": 5,
+   "Spain": 16,
+   "Germany": 28,
+   "UK": 17,
+   "Italy": 7,
+   "Mexico": 4,
+   "Brazil": 1
+  },
+  "ice_cream": {
+   "US": 35,
+   "UK": 52,
+   "Canada": 12,
+   "France": 558,
+   "Germany": 121,
+   "Spain": 152,
+   "Italy": 96,
+   "Mexico": 1,
+   "India": 7,
+   "UAE": 1,
+   "Chile": 1,
+   "Brazil": 1,
+   "Australia": 8,
+   "Singapore": 1
+  },
+  "chips": {
+   "US": 6,
+   "Germany": 9,
+   "Mexico": 3,
+   "France": 41,
+   "Spain": 12,
+   "Chile": 1,
+   "UK": 8,
+   "India": 10,
+   "Italy": 3,
+   "Australia": 7,
+   "Brazil": 1,
+   "Indonesia": 1
+  },
+  "namkeen": {
+   "Canada": 2,
+   "India": 3,
+   "UK": 1
+  }
+ },
+ "india_brand_check": {
+  "breakfast_cereals": {
+   "packs": 254,
+   "packs_with_brand_tag": 237,
+   "brands_spellings_merged": 73,
+   "largest_brand": {
+    "k": 55,
+    "n": 254,
+    "pct": 21.7
+   },
+   "sugar_median_all": {
+    "k": 57,
+    "median": 10.5
+   },
+   "sugar_median_without_largest": {
+    "k": 44,
+    "median": 6.7
+   },
+   "sugar_top3_all": {
+    "k": 49,
+    "n": 148,
+    "pct": 33.1
+   },
+   "sugar_top3_without_largest": {
+    "k": 32,
+    "n": 117,
+    "pct": 27.4
+   },
+   "salt_median_all": {
+    "k": 55,
+    "median": 0.2
+   },
+   "salt_median_without_largest": {
+    "k": 42,
+    "median": 0.2
+   }
+  },
+  "chocolate": {
+   "packs": 197,
+   "packs_with_brand_tag": 149,
+   "brands_spellings_merged": 42,
+   "largest_brand": {
+    "k": 61,
+    "n": 197,
+    "pct": 31.0
+   },
+   "sugar_median_all": {
+    "k": 36,
+    "median": 43.6
+   },
+   "sugar_median_without_largest": {
+    "k": 25,
+    "median": 40.9
+   },
+   "sugar_top3_all": {
+    "k": 78,
+    "n": 101,
+    "pct": 77.2
+   },
+   "sugar_top3_without_largest": {
+    "k": 50,
+    "n": 68,
+    "pct": 73.5
+   }
+  },
+  "biscuits": {
+   "packs": 711,
+   "packs_with_brand_tag": 619,
+   "brands_spellings_merged": 118,
+   "largest_brand": {
+    "k": 152,
+    "n": 711,
+    "pct": 21.4
+   },
+   "sugar_median_all": {
+    "k": 87,
+    "median": 25.0
+   },
+   "sugar_median_without_largest": {
+    "k": 69,
+    "median": 27.4
+   },
+   "sugar_top3_all": {
+    "k": 266,
+    "n": 338,
+    "pct": 78.7
+   },
+   "sugar_top3_without_largest": {
+    "k": 198,
+    "n": 256,
+    "pct": 77.3
+   },
+   "salt_median_all": {
+    "k": 83,
+    "median": 0.5
+   },
+   "salt_median_without_largest": {
+    "k": 65,
+    "median": 0.5
+   }
+  },
+  "sauces": {
+   "packs": 247,
+   "packs_with_brand_tag": 203,
+   "brands_spellings_merged": 85,
+   "largest_brand": {
+    "k": 22,
+    "n": 247,
+    "pct": 8.9
+   },
+   "sugar_median_all": {
+    "k": 32,
+    "median": 14.1
+   },
+   "sugar_median_without_largest": {
+    "k": 30,
+    "median": 13.6
+   },
+   "sugar_top3_all": {
+    "k": 82,
+    "n": 128,
+    "pct": 64.1
+   },
+   "sugar_top3_without_largest": {
+    "k": 78,
+    "n": 118,
+    "pct": 66.1
+   },
+   "salt_median_all": {
+    "k": 30,
+    "median": 1.9
+   },
+   "salt_median_without_largest": {
+    "k": 28,
+    "median": 1.9
+   }
+  },
+  "chips": {
+   "packs": 286,
+   "packs_with_brand_tag": 236,
+   "brands_spellings_merged": 84,
+   "largest_brand": {
+    "k": 46,
+    "n": 286,
+    "pct": 16.1
+   },
+   "sugar_median_all": {
+    "k": 55,
+    "median": 3.2
+   },
+   "sugar_median_without_largest": {
+    "k": 48,
+    "median": 3.2
+   },
+   "sugar_top3_all": {
+    "k": 26,
+    "n": 157,
+    "pct": 16.6
+   },
+   "sugar_top3_without_largest": {
+    "k": 22,
+    "n": 131,
+    "pct": 16.8
+   },
+   "salt_median_all": {
+    "k": 54,
+    "median": 1.7
+   },
+   "salt_median_without_largest": {
+    "k": 47,
+    "median": 1.7
+   }
+  },
+  "ice_cream": {
+   "packs": 146,
+   "packs_with_brand_tag": 125,
+   "brands_spellings_merged": 39,
+   "largest_brand": {
+    "k": 36,
+    "n": 146,
+    "pct": 24.7
+   },
+   "sugar_median_all": {
+    "k": 19,
+    "median": 22.6
+   },
+   "sugar_median_without_largest": {
+    "k": 12,
+    "median": 22.6
+   },
+   "sugar_top3_all": {
+    "k": 67,
+    "n": 93,
+    "pct": 72.0
+   },
+   "sugar_top3_without_largest": {
+    "k": 42,
+    "n": 67,
+    "pct": 62.7
+   }
+  },
+  "yoghurt": {
+   "packs": 135,
+   "packs_with_brand_tag": 125,
+   "brands_spellings_merged": 50,
+   "largest_brand": {
+    "k": 19,
+    "n": 135,
+    "pct": 14.1
+   },
+   "sugar_median_all": {
+    "k": 88,
+    "median": 5.2
+   },
+   "sugar_median_without_largest": {
+    "k": 73,
+    "median": 5.3
+   },
+   "sugar_top3_all": {
+    "k": 17,
+    "n": 77,
+    "pct": 22.1
+   },
+   "sugar_top3_without_largest": {
+    "k": 14,
+    "n": 63,
+    "pct": 22.2
+   }
+  },
+  "ketchup": {
+   "packs": 78,
+   "packs_with_brand_tag": 61,
+   "brands_spellings_merged": 24,
+   "largest_brand": {
+    "k": 13,
+    "n": 78,
+    "pct": 16.7
+   },
+   "sugar_median_all": {
+    "k": 8,
+    "median": 20.2
+   },
+   "sugar_median_without_largest": {
+    "k": 8,
+    "median": 20.2
+   },
+   "sugar_top3_all": {
+    "k": 34,
+    "n": 42,
+    "pct": 81.0
+   },
+   "sugar_top3_without_largest": {
+    "k": 29,
+    "n": 35,
+    "pct": 82.9
+   },
+   "salt_median_all": {
+    "k": 5,
+    "median": 2.0
+   },
+   "salt_median_without_largest": {
+    "k": 5,
+    "median": 2.0
+   }
+  },
+  "cakes": {
+   "packs": 99,
+   "packs_with_brand_tag": 81,
+   "brands_spellings_merged": 43,
+   "largest_brand": {
+    "k": 18,
+    "n": 99,
+    "pct": 18.2
+   },
+   "sugar_median_all": {
+    "k": 9,
+    "median": 25.5
+   },
+   "sugar_median_without_largest": {
+    "k": 6,
+    "median": 30.7
+   },
+   "sugar_top3_all": {
+    "k": 43,
+    "n": 53,
+    "pct": 81.1
+   },
+   "sugar_top3_without_largest": {
+    "k": 33,
+    "n": 42,
+    "pct": 78.6
+   }
+  },
+  "instant_noodles": {
+   "packs": 140,
+   "packs_with_brand_tag": 134,
+   "brands_spellings_merged": 38,
+   "largest_brand": {
+    "k": 35,
+    "n": 140,
+    "pct": 25.0
+   },
+   "sugar_median_all": {
+    "k": 36,
+    "median": 2.3
+   },
+   "sugar_median_without_largest": {
+    "k": 24,
+    "median": 2.2
+   },
+   "sugar_top3_all": {
+    "k": 4,
+    "n": 97,
+    "pct": 4.1
+   },
+   "sugar_top3_without_largest": {
+    "k": 0,
+    "n": 73,
+    "pct": 0.0
+   },
+   "salt_median_all": {
+    "k": 32,
+    "median": 2.6
+   },
+   "salt_median_without_largest": {
+    "k": 22,
+    "median": 2.8
+   }
+  },
+  "soft_drinks": {
+   "packs": 144,
+   "packs_with_brand_tag": 118,
+   "brands_spellings_merged": 32,
+   "largest_brand": {
+    "k": 39,
+    "n": 144,
+    "pct": 27.1
+   },
+   "sugar_median_all": {
+    "k": 38,
+    "median": 10.6
+   },
+   "sugar_median_without_largest": {
+    "k": 21,
+    "median": 10.9
+   },
+   "sugar_top3_all": {
+    "k": 62,
+    "n": 81,
+    "pct": 76.5
+   },
+   "sugar_top3_without_largest": {
+    "k": 44,
+    "n": 58,
+    "pct": 75.9
+   }
+  },
+  "namkeen": {
+   "packs": 62,
+   "packs_with_brand_tag": 53,
+   "brands_spellings_merged": 25,
+   "largest_brand": {
+    "k": 15,
+    "n": 62,
+    "pct": 24.2
+   },
+   "sugar_median_all": {
+    "k": 15,
+    "median": 4.3
+   },
+   "sugar_median_without_largest": {
+    "k": 12,
+    "median": 4.0
+   },
+   "sugar_top3_all": {
+    "k": 6,
+    "n": 42,
+    "pct": 14.3
+   },
+   "sugar_top3_without_largest": {
+    "k": 6,
+    "n": 32,
+    "pct": 18.8
+   },
+   "salt_median_all": {
+    "k": 13,
+    "median": 1.4
+   },
+   "salt_median_without_largest": {
+    "k": 10,
+    "median": 2.0
+   }
+  },
+  "flavoured_milk": {
+   "packs": 66,
+   "packs_with_brand_tag": 62,
+   "brands_spellings_merged": 37,
+   "largest_brand": {
+    "k": 7,
+    "n": 66,
+    "pct": 10.6
+   },
+   "sugar_median_all": {
+    "k": 14,
+    "median": 16.1
+   },
+   "sugar_median_without_largest": {
+    "k": 13,
+    "median": 16.1
+   },
+   "sugar_top3_all": {
+    "k": 42,
+    "n": 44,
+    "pct": 95.5
+   },
+   "sugar_top3_without_largest": {
+    "k": 36,
+    "n": 38,
+    "pct": 94.7
+   }
+  }
+ },
+ "gaps_sugar_g": {
+  "biscuits": {
+   "UK": -3.0,
+   "US": -3.0,
+   "France": -4.0,
+   "Germany": -6.0,
+   "Australia": -7.5
+  },
+  "breakfast_cereals": {
+   "UK": -3.7,
+   "US": -9.5,
+   "France": -6.5,
+   "Germany": -3.5,
+   "Australia": -4.2
+  },
+  "chocolate": {
+   "UK": -1.4,
+   "US": 0.1,
+   "France": -0.8,
+   "Germany": -3.4,
+   "Australia": -4.4
+  },
+  "soft_drinks": {
+   "UK": 6.7,
+   "US": 1.8,
+   "France": 3.2,
+   "Germany": 3.6,
+   "Australia": 3.5
+  },
+  "flavoured_milk": {},
+  "ketchup": {},
+  "sauces": {
+   "UK": 9.1,
+   "US": 10.5,
+   "France": 10.2,
+   "Germany": 8.7,
+   "Australia": 9.1
+  },
+  "yoghurt": {
+   "UK": -2.8,
+   "US": -4.2,
+   "France": -5.8,
+   "Germany": -6.1,
+   "Australia": -1.5
+  },
+  "cakes": {},
+  "ice_cream": {},
+  "chips": {
+   "UK": 0.9,
+   "US": -0.1,
+   "France": 1.5,
+   "Germany": 0.7,
+   "Australia": 0.6
+  },
+  "namkeen": {},
+  "instant_noodles": {
+   "UK": 0.9,
+   "US": -0.8,
+   "France": 0.5,
+   "Germany": 0.6,
+   "Australia": 0.5
+  }
+ },
+ "gaps_salt_g": {
+  "chips": {
+   "UK": 0.5,
+   "US": 0.4,
+   "France": 0.4,
+   "Germany": 0.2,
+   "Australia": 0.6
+  },
+  "instant_noodles": {
+   "UK": 1.9,
+   "US": -0.3,
+   "France": 1.2,
+   "Germany": 1.5,
+   "Australia": 1.3
+  },
+  "biscuits": {
+   "UK": -0.1,
+   "US": -0.3,
+   "France": 0.0,
+   "Germany": 0.1,
+   "Australia": -0.1
+  },
+  "sauces": {
+   "UK": 0.8,
+   "US": 0.2,
+   "France": 0.3,
+   "Germany": 0.3,
+   "Australia": 0.3
+  },
+  "ketchup": {},
+  "breakfast_cereals": {
+   "UK": 0.1,
+   "US": -0.6,
+   "France": 0.0,
+   "Germany": 0.1,
+   "Australia": 0.0
+  },
+  "namkeen": {}
+ }
+}

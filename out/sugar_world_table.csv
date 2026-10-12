@@ -1,0 +1,682 @@
+measure,group,country,count,n,value,unit,ok
+sugar,biscuits,France,18448,20051,29.0,g sugar (median) per 100 g,True
+sugar,biscuits,Italy,4609,4789,24.0,g sugar (median) per 100 g,True
+sugar,biscuits,Spain,3917,4211,25.0,g sugar (median) per 100 g,True
+sugar,biscuits,Germany,3302,3443,31.0,g sugar (median) per 100 g,True
+sugar,biscuits,UK,1972,2162,28.0,g sugar (median) per 100 g,True
+sugar,biscuits,US,1311,12105,28.0,g sugar (median) per 100 g,True
+sugar,biscuits,Canada,690,733,30.0,g sugar (median) per 100 g,True
+sugar,biscuits,Mexico,426,480,26.7,g sugar (median) per 100 g,True
+sugar,biscuits,Brazil,226,440,26.0,g sugar (median) per 100 g,True
+sugar,biscuits,Australia,169,427,32.5,g sugar (median) per 100 g,True
+sugar,biscuits,Chile,151,171,28.3,g sugar (median) per 100 g,True
+sugar,biscuits,India,87,711,25.0,g sugar (median) per 100 g,True
+sugar,biscuits,UAE,20,66,22.5,g sugar (median) per 100 g,True
+sugar,biscuits,Singapore,17,57,29.6,g sugar (median) per 100 g,False
+sugar,biscuits,Indonesia,15,72,32.0,g sugar (median) per 100 g,False
+sugar,biscuits,South Africa,10,39,27.9,g sugar (median) per 100 g,False
+sugar,breakfast_cereals,France,6749,7303,17.0,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,US,3399,3632,20.0,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Germany,3241,3363,14.0,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Spain,2112,2270,15.0,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Italy,1732,1788,15.0,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,UK,1690,1826,14.2,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Canada,592,636,17.7,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Mexico,302,327,17.6,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Australia,157,504,14.7,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Brazil,148,183,1.7,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,Chile,93,105,4.8,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,India,57,254,10.5,g sugar (median) per 100 g,True
+sugar,breakfast_cereals,South Africa,12,57,15.2,g sugar (median) per 100 g,False
+sugar,breakfast_cereals,Singapore,9,50,16.9,g sugar (median) per 100 g,False
+sugar,breakfast_cereals,UAE,8,36,17.0,g sugar (median) per 100 g,False
+sugar,breakfast_cereals,Indonesia,7,12,22.0,g sugar (median) per 100 g,False
+sugar,chocolate,France,12604,13590,44.4,g sugar (median) per 100 g,True
+sugar,chocolate,Germany,3753,3921,47.0,g sugar (median) per 100 g,True
+sugar,chocolate,Spain,2567,2695,39.2,g sugar (median) per 100 g,True
+sugar,chocolate,Italy,2255,2349,41.0,g sugar (median) per 100 g,True
+sugar,chocolate,UK,1446,1579,45.0,g sugar (median) per 100 g,True
+sugar,chocolate,Canada,597,630,44.4,g sugar (median) per 100 g,True
+sugar,chocolate,US,463,1402,43.5,g sugar (median) per 100 g,True
+sugar,chocolate,Brazil,174,228,48.0,g sugar (median) per 100 g,True
+sugar,chocolate,Australia,169,412,48.0,g sugar (median) per 100 g,True
+sugar,chocolate,Mexico,87,105,41.8,g sugar (median) per 100 g,True
+sugar,chocolate,Chile,55,68,45.0,g sugar (median) per 100 g,True
+sugar,chocolate,India,36,197,43.6,g sugar (median) per 100 g,True
+sugar,chocolate,UAE,11,33,42.0,g sugar (median) per 100 g,False
+sugar,chocolate,Singapore,9,18,40.1,g sugar (median) per 100 g,False
+sugar,chocolate,South Africa,6,21,54.0,g sugar (median) per 100 g,False
+sugar,chocolate,Indonesia,0,10,,g sugar (median) per 100 g,False
+sugar,soft_drinks,France,3790,4246,7.4,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Germany,2123,2311,7.0,g sugar (median) per 100 ml,True
+sugar,soft_drinks,UK,718,818,3.9,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Spain,706,789,4.2,g sugar (median) per 100 ml,True
+sugar,soft_drinks,US,443,6165,8.8,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Italy,414,443,8.6,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Canada,371,410,9.2,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Mexico,109,135,7.5,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Australia,48,240,7.1,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Brazil,43,105,9.0,g sugar (median) per 100 ml,True
+sugar,soft_drinks,India,38,144,10.6,g sugar (median) per 100 ml,True
+sugar,soft_drinks,Chile,23,32,7.8,g sugar (median) per 100 ml,True
+sugar,soft_drinks,South Africa,13,55,9.2,g sugar (median) per 100 ml,False
+sugar,soft_drinks,Singapore,7,27,4.9,g sugar (median) per 100 ml,False
+sugar,soft_drinks,UAE,6,25,3.8,g sugar (median) per 100 ml,False
+sugar,soft_drinks,Indonesia,2,16,0.0,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,France,428,464,10.0,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Spain,251,263,10.5,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Germany,152,157,9.1,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,UK,148,161,8.7,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Canada,57,59,10.4,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,US,41,454,9.2,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Italy,36,39,9.8,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Australia,29,158,6.4,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,Mexico,28,29,7.2,g sugar (median) per 100 ml,True
+sugar,flavoured_milk,India,14,66,16.1,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,Brazil,12,18,11.2,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,Chile,6,6,4.8,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,UAE,4,10,11.9,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,Singapore,2,18,9.1,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,South Africa,0,1,,g sugar (median) per 100 ml,False
+sugar,flavoured_milk,Indonesia,0,11,,g sugar (median) per 100 ml,False
+sugar,ketchup,France,1144,1291,20.8,g sugar (median) per 100 g,True
+sugar,ketchup,Germany,631,706,18.4,g sugar (median) per 100 g,True
+sugar,ketchup,Spain,374,440,17.0,g sugar (median) per 100 g,True
+sugar,ketchup,UK,244,262,19.9,g sugar (median) per 100 g,True
+sugar,ketchup,Italy,162,172,19.0,g sugar (median) per 100 g,True
+sugar,ketchup,Canada,107,122,26.7,g sugar (median) per 100 g,True
+sugar,ketchup,US,91,688,23.5,g sugar (median) per 100 g,True
+sugar,ketchup,Brazil,32,48,16.8,g sugar (median) per 100 g,True
+sugar,ketchup,Mexico,20,24,21.5,g sugar (median) per 100 g,True
+sugar,ketchup,Chile,12,19,20.5,g sugar (median) per 100 g,False
+sugar,ketchup,India,8,78,20.2,g sugar (median) per 100 g,False
+sugar,ketchup,Australia,3,15,25.8,g sugar (median) per 100 g,False
+sugar,ketchup,Singapore,1,2,27.0,g sugar (median) per 100 g,False
+sugar,ketchup,Indonesia,0,1,,g sugar (median) per 100 g,False
+sugar,ketchup,UAE,0,6,,g sugar (median) per 100 g,False
+sugar,sauces,France,21094,23316,3.9,g sugar (median) per 100 g,True
+sugar,sauces,Germany,7384,8130,5.4,g sugar (median) per 100 g,True
+sugar,sauces,Spain,4298,4701,4.0,g sugar (median) per 100 g,True
+sugar,sauces,UK,3807,4183,5.0,g sugar (median) per 100 g,True
+sugar,sauces,Italy,3537,3686,3.4,g sugar (median) per 100 g,True
+sugar,sauces,US,2128,26145,3.6,g sugar (median) per 100 g,True
+sugar,sauces,Canada,1767,1924,4.0,g sugar (median) per 100 g,True
+sugar,sauces,Mexico,402,446,3.0,g sugar (median) per 100 g,True
+sugar,sauces,Australia,391,1197,5.0,g sugar (median) per 100 g,True
+sugar,sauces,Brazil,190,264,3.1,g sugar (median) per 100 g,True
+sugar,sauces,Chile,80,98,3.6,g sugar (median) per 100 g,True
+sugar,sauces,India,32,247,14.1,g sugar (median) per 100 g,True
+sugar,sauces,Singapore,14,52,11.1,g sugar (median) per 100 g,False
+sugar,sauces,South Africa,10,55,10.5,g sugar (median) per 100 g,False
+sugar,sauces,UAE,4,42,3.2,g sugar (median) per 100 g,False
+sugar,sauces,Indonesia,3,31,20.0,g sugar (median) per 100 g,False
+sugar,yoghurt,France,8477,9519,11.0,g sugar (median) per 100 g,True
+sugar,yoghurt,US,6011,6197,9.4,g sugar (median) per 100 g,True
+sugar,yoghurt,Germany,2864,3038,11.3,g sugar (median) per 100 g,True
+sugar,yoghurt,Italy,2709,2847,12.0,g sugar (median) per 100 g,True
+sugar,yoghurt,Spain,2566,2773,10.0,g sugar (median) per 100 g,True
+sugar,yoghurt,UK,1296,1432,8.0,g sugar (median) per 100 g,True
+sugar,yoghurt,Australia,418,446,6.7,g sugar (median) per 100 g,True
+sugar,yoghurt,Mexico,400,420,10.4,g sugar (median) per 100 g,True
+sugar,yoghurt,Canada,370,414,7.4,g sugar (median) per 100 g,True
+sugar,yoghurt,Brazil,160,234,5.7,g sugar (median) per 100 g,True
+sugar,yoghurt,India,88,135,5.2,g sugar (median) per 100 g,True
+sugar,yoghurt,Chile,63,69,7.8,g sugar (median) per 100 g,True
+sugar,yoghurt,Singapore,48,53,8.0,g sugar (median) per 100 g,True
+sugar,yoghurt,UAE,39,47,6.9,g sugar (median) per 100 g,True
+sugar,yoghurt,South Africa,36,60,5.8,g sugar (median) per 100 g,True
+sugar,yoghurt,Indonesia,20,22,10.9,g sugar (median) per 100 g,True
+sugar,cakes,France,10975,12046,28.0,g sugar (median) per 100 g,True
+sugar,cakes,Spain,1982,2166,25.0,g sugar (median) per 100 g,True
+sugar,cakes,Germany,1204,1315,29.0,g sugar (median) per 100 g,True
+sugar,cakes,Italy,966,1009,29.0,g sugar (median) per 100 g,True
+sugar,cakes,UK,923,1042,29.9,g sugar (median) per 100 g,True
+sugar,cakes,US,411,6946,30.0,g sugar (median) per 100 g,True
+sugar,cakes,Canada,344,381,29.5,g sugar (median) per 100 g,True
+sugar,cakes,Mexico,53,56,25.9,g sugar (median) per 100 g,True
+sugar,cakes,Australia,49,206,33.1,g sugar (median) per 100 g,True
+sugar,cakes,Chile,12,14,32.0,g sugar (median) per 100 g,False
+sugar,cakes,Brazil,10,32,29.3,g sugar (median) per 100 g,False
+sugar,cakes,India,9,99,25.5,g sugar (median) per 100 g,False
+sugar,cakes,Singapore,3,16,40.3,g sugar (median) per 100 g,False
+sugar,cakes,UAE,3,15,33.0,g sugar (median) per 100 g,False
+sugar,cakes,Indonesia,2,8,10.4,g sugar (median) per 100 g,False
+sugar,cakes,South Africa,0,14,,g sugar (median) per 100 g,False
+sugar,ice_cream,France,4609,5071,23.0,g sugar (median) per 100 g,True
+sugar,ice_cream,Germany,1782,1878,23.3,g sugar (median) per 100 g,True
+sugar,ice_cream,Italy,1350,1380,24.2,g sugar (median) per 100 g,True
+sugar,ice_cream,Spain,1134,1190,24.3,g sugar (median) per 100 g,True
+sugar,ice_cream,UK,523,578,21.0,g sugar (median) per 100 g,True
+sugar,ice_cream,Canada,291,299,14.7,g sugar (median) per 100 g,True
+sugar,ice_cream,US,222,1419,22.1,g sugar (median) per 100 g,True
+sugar,ice_cream,Mexico,66,73,20.3,g sugar (median) per 100 g,True
+sugar,ice_cream,Australia,57,273,21.8,g sugar (median) per 100 g,True
+sugar,ice_cream,Brazil,26,54,22.5,g sugar (median) per 100 g,True
+sugar,ice_cream,India,19,146,22.6,g sugar (median) per 100 g,False
+sugar,ice_cream,Chile,7,15,18.6,g sugar (median) per 100 g,False
+sugar,ice_cream,Singapore,6,17,22.0,g sugar (median) per 100 g,False
+sugar,ice_cream,UAE,1,6,21.0,g sugar (median) per 100 g,False
+sugar,ice_cream,Indonesia,1,6,11.1,g sugar (median) per 100 g,False
+sugar,ice_cream,South Africa,0,9,,g sugar (median) per 100 g,False
+sugar,chips,France,5555,5929,1.7,g sugar (median) per 100 g,True
+sugar,chips,Spain,1818,1928,1.0,g sugar (median) per 100 g,True
+sugar,chips,Germany,1808,1922,2.5,g sugar (median) per 100 g,True
+sugar,chips,UK,1758,1950,2.3,g sugar (median) per 100 g,True
+sugar,chips,US,991,4221,3.3,g sugar (median) per 100 g,True
+sugar,chips,Canada,681,729,2.0,g sugar (median) per 100 g,True
+sugar,chips,Italy,621,635,1.0,g sugar (median) per 100 g,True
+sugar,chips,Mexico,197,232,1.1,g sugar (median) per 100 g,True
+sugar,chips,Australia,113,344,2.6,g sugar (median) per 100 g,True
+sugar,chips,Brazil,61,103,0.8,g sugar (median) per 100 g,True
+sugar,chips,India,55,286,3.2,g sugar (median) per 100 g,True
+sugar,chips,South Africa,29,84,0.8,g sugar (median) per 100 g,True
+sugar,chips,Chile,20,30,2.4,g sugar (median) per 100 g,True
+sugar,chips,Singapore,19,53,3.6,g sugar (median) per 100 g,False
+sugar,chips,UAE,8,34,1.9,g sugar (median) per 100 g,False
+sugar,chips,Indonesia,2,23,3.2,g sugar (median) per 100 g,False
+sugar,namkeen,India,15,62,4.3,g sugar (median) per 100 g,False
+sugar,namkeen,France,5,6,2.2,g sugar (median) per 100 g,False
+sugar,namkeen,UK,4,7,3.0,g sugar (median) per 100 g,False
+sugar,namkeen,UAE,3,3,3.6,g sugar (median) per 100 g,False
+sugar,namkeen,Canada,2,2,8.1,g sugar (median) per 100 g,False
+sugar,namkeen,Spain,2,2,1.4,g sugar (median) per 100 g,False
+sugar,namkeen,Italy,1,1,3.6,g sugar (median) per 100 g,False
+sugar,namkeen,US,1,11,3.1,g sugar (median) per 100 g,False
+sugar,instant_noodles,France,1185,1248,1.8,g sugar (median) per 100 g,True
+sugar,instant_noodles,Germany,460,488,1.7,g sugar (median) per 100 g,True
+sugar,instant_noodles,UK,268,290,1.4,g sugar (median) per 100 g,True
+sugar,instant_noodles,Spain,142,147,1.4,g sugar (median) per 100 g,True
+sugar,instant_noodles,US,116,271,3.1,g sugar (median) per 100 g,True
+sugar,instant_noodles,Canada,87,87,3.0,g sugar (median) per 100 g,True
+sugar,instant_noodles,Australia,55,125,1.8,g sugar (median) per 100 g,True
+sugar,instant_noodles,Italy,49,51,2.3,g sugar (median) per 100 g,True
+sugar,instant_noodles,India,36,140,2.3,g sugar (median) per 100 g,True
+sugar,instant_noodles,Indonesia,23,47,6.6,g sugar (median) per 100 g,True
+sugar,instant_noodles,Brazil,16,36,1.5,g sugar (median) per 100 g,False
+sugar,instant_noodles,Mexico,12,16,0.5,g sugar (median) per 100 g,False
+sugar,instant_noodles,Chile,6,7,2.1,g sugar (median) per 100 g,False
+sugar,instant_noodles,South Africa,5,15,3.5,g sugar (median) per 100 g,False
+sugar,instant_noodles,Singapore,4,25,4.7,g sugar (median) per 100 g,False
+sugar,instant_noodles,UAE,3,8,4.0,g sugar (median) per 100 g,False
+salt,biscuits,France,18276,20051,0.5,g salt (median) per 100 g,True
+salt,biscuits,Italy,4451,4789,0.5,g salt (median) per 100 g,True
+salt,biscuits,Spain,3858,4211,0.6,g salt (median) per 100 g,True
+salt,biscuits,Germany,3251,3443,0.4,g salt (median) per 100 g,True
+salt,biscuits,UK,1929,2162,0.6,g salt (median) per 100 g,True
+salt,biscuits,US,1316,12105,0.8,g salt (median) per 100 g,True
+salt,biscuits,Canada,683,733,0.6,g salt (median) per 100 g,True
+salt,biscuits,Mexico,408,480,0.5,g salt (median) per 100 g,True
+salt,biscuits,Brazil,276,440,0.6,g salt (median) per 100 g,True
+salt,biscuits,Australia,167,427,0.6,g salt (median) per 100 g,True
+salt,biscuits,Chile,148,171,0.6,g salt (median) per 100 g,True
+salt,biscuits,India,83,711,0.5,g salt (median) per 100 g,True
+salt,biscuits,UAE,19,66,0.8,g salt (median) per 100 g,False
+salt,biscuits,Singapore,17,57,0.8,g salt (median) per 100 g,False
+salt,biscuits,Indonesia,15,72,0.3,g salt (median) per 100 g,False
+salt,biscuits,South Africa,9,39,0.6,g salt (median) per 100 g,False
+salt,breakfast_cereals,France,6557,7303,0.2,g salt (median) per 100 g,True
+salt,breakfast_cereals,US,3279,3632,0.8,g salt (median) per 100 g,True
+salt,breakfast_cereals,Germany,3105,3363,0.1,g salt (median) per 100 g,True
+salt,breakfast_cereals,Spain,2021,2270,0.3,g salt (median) per 100 g,True
+salt,breakfast_cereals,Italy,1647,1788,0.3,g salt (median) per 100 g,True
+salt,breakfast_cereals,UK,1619,1826,0.1,g salt (median) per 100 g,True
+salt,breakfast_cereals,Canada,578,636,0.5,g salt (median) per 100 g,True
+salt,breakfast_cereals,Mexico,291,327,0.6,g salt (median) per 100 g,True
+salt,breakfast_cereals,Australia,151,504,0.2,g salt (median) per 100 g,True
+salt,breakfast_cereals,Brazil,142,183,0.1,g salt (median) per 100 g,True
+salt,breakfast_cereals,Chile,92,105,0.3,g salt (median) per 100 g,True
+salt,breakfast_cereals,India,55,254,0.2,g salt (median) per 100 g,True
+salt,breakfast_cereals,South Africa,12,57,0.3,g salt (median) per 100 g,False
+salt,breakfast_cereals,Singapore,8,50,0.8,g salt (median) per 100 g,False
+salt,breakfast_cereals,UAE,8,36,0.7,g salt (median) per 100 g,False
+salt,breakfast_cereals,Indonesia,7,12,0.3,g salt (median) per 100 g,False
+salt,ketchup,France,1140,1291,1.8,g salt (median) per 100 g,True
+salt,ketchup,Germany,613,706,1.9,g salt (median) per 100 g,True
+salt,ketchup,Spain,369,440,2.0,g salt (median) per 100 g,True
+salt,ketchup,UK,235,262,1.6,g salt (median) per 100 g,True
+salt,ketchup,Italy,158,172,2.1,g salt (median) per 100 g,True
+salt,ketchup,Canada,107,122,2.3,g salt (median) per 100 g,True
+salt,ketchup,US,92,688,2.4,g salt (median) per 100 g,True
+salt,ketchup,Brazil,34,48,1.5,g salt (median) per 100 g,True
+salt,ketchup,Mexico,20,24,2.2,g salt (median) per 100 g,True
+salt,ketchup,Chile,11,19,1.9,g salt (median) per 100 g,False
+salt,ketchup,India,5,78,2.0,g salt (median) per 100 g,False
+salt,ketchup,Australia,3,15,2.0,g salt (median) per 100 g,False
+salt,ketchup,Singapore,1,2,1.2,g salt (median) per 100 g,False
+salt,sauces,France,20915,23316,1.6,g salt (median) per 100 g,True
+salt,sauces,Germany,7227,8130,1.6,g salt (median) per 100 g,True
+salt,sauces,Spain,4282,4701,1.3,g salt (median) per 100 g,True
+salt,sauces,UK,3713,4183,1.1,g salt (median) per 100 g,True
+salt,sauces,Italy,3438,3686,1.4,g salt (median) per 100 g,True
+salt,sauces,US,2233,26145,1.7,g salt (median) per 100 g,True
+salt,sauces,Canada,1797,1924,1.6,g salt (median) per 100 g,True
+salt,sauces,Australia,392,1197,1.6,g salt (median) per 100 g,True
+salt,sauces,Mexico,390,446,1.6,g salt (median) per 100 g,True
+salt,sauces,Brazil,208,264,1.2,g salt (median) per 100 g,True
+salt,sauces,Chile,79,98,1.6,g salt (median) per 100 g,True
+salt,sauces,India,30,247,1.9,g salt (median) per 100 g,True
+salt,sauces,Singapore,15,52,4.0,g salt (median) per 100 g,False
+salt,sauces,South Africa,9,55,1.1,g salt (median) per 100 g,False
+salt,sauces,Indonesia,5,31,2.0,g salt (median) per 100 g,False
+salt,sauces,UAE,4,42,2.0,g salt (median) per 100 g,False
+salt,chips,France,5545,5929,1.3,g salt (median) per 100 g,True
+salt,chips,Spain,1797,1928,1.2,g salt (median) per 100 g,True
+salt,chips,Germany,1789,1922,1.5,g salt (median) per 100 g,True
+salt,chips,UK,1714,1950,1.2,g salt (median) per 100 g,True
+salt,chips,US,1006,4221,1.3,g salt (median) per 100 g,True
+salt,chips,Canada,683,729,1.4,g salt (median) per 100 g,True
+salt,chips,Italy,615,635,1.3,g salt (median) per 100 g,True
+salt,chips,Mexico,203,232,1.6,g salt (median) per 100 g,True
+salt,chips,Australia,111,344,1.1,g salt (median) per 100 g,True
+salt,chips,Brazil,61,103,1.1,g salt (median) per 100 g,True
+salt,chips,India,54,286,1.7,g salt (median) per 100 g,True
+salt,chips,South Africa,24,84,1.3,g salt (median) per 100 g,True
+salt,chips,Singapore,20,53,1.5,g salt (median) per 100 g,True
+salt,chips,Chile,18,30,1.0,g salt (median) per 100 g,False
+salt,chips,UAE,8,34,1.5,g salt (median) per 100 g,False
+salt,chips,Indonesia,3,23,1.4,g salt (median) per 100 g,False
+salt,namkeen,India,13,62,1.4,g salt (median) per 100 g,False
+salt,namkeen,France,5,6,0.9,g salt (median) per 100 g,False
+salt,namkeen,UAE,3,3,0.7,g salt (median) per 100 g,False
+salt,namkeen,UK,3,7,1.1,g salt (median) per 100 g,False
+salt,namkeen,Canada,2,2,1.4,g salt (median) per 100 g,False
+salt,namkeen,Spain,2,2,2.1,g salt (median) per 100 g,False
+salt,instant_noodles,France,1181,1248,1.4,g salt (median) per 100 g,True
+salt,instant_noodles,Germany,456,488,1.1,g salt (median) per 100 g,True
+salt,instant_noodles,UK,264,290,0.7,g salt (median) per 100 g,True
+salt,instant_noodles,Spain,141,147,1.3,g salt (median) per 100 g,True
+salt,instant_noodles,US,115,271,2.9,g salt (median) per 100 g,True
+salt,instant_noodles,Canada,87,87,3.5,g salt (median) per 100 g,True
+salt,instant_noodles,Australia,55,125,1.3,g salt (median) per 100 g,True
+salt,instant_noodles,Italy,50,51,1.6,g salt (median) per 100 g,True
+salt,instant_noodles,India,32,140,2.6,g salt (median) per 100 g,True
+salt,instant_noodles,Brazil,24,36,3.4,g salt (median) per 100 g,True
+salt,instant_noodles,Indonesia,23,47,2.3,g salt (median) per 100 g,True
+salt,instant_noodles,Mexico,11,16,0.7,g salt (median) per 100 g,False
+salt,instant_noodles,Chile,6,7,4.0,g salt (median) per 100 g,False
+salt,instant_noodles,South Africa,4,15,2.8,g salt (median) per 100 g,False
+salt,instant_noodles,Singapore,4,25,2.7,g salt (median) per 100 g,False
+salt,instant_noodles,UAE,3,8,1.0,g salt (median) per 100 g,False
+sugar_top3,biscuits,US,8602,11119,77.4,% of English lists,True
+sugar_top3,biscuits,UK,908,1428,63.6,% of English lists,True
+sugar_top3,biscuits,Canada,271,357,75.9,% of English lists,True
+sugar_top3,biscuits,India,266,338,78.7,% of English lists,True
+sugar_top3,biscuits,Australia,163,245,66.5,% of English lists,True
+sugar_top3,biscuits,UAE,13,33,39.4,% of English lists,True
+sugar_top3,biscuits,Singapore,26,31,83.9,% of English lists,True
+sugar_top3,biscuits,South Africa,11,21,52.4,% of English lists,True
+sugar_top3,breakfast_cereals,US,1764,2524,69.9,% of English lists,True
+sugar_top3,breakfast_cereals,UK,729,1385,52.6,% of English lists,True
+sugar_top3,breakfast_cereals,Canada,252,387,65.1,% of English lists,True
+sugar_top3,breakfast_cereals,Australia,180,324,55.6,% of English lists,True
+sugar_top3,breakfast_cereals,India,49,148,33.1,% of English lists,True
+sugar_top3,breakfast_cereals,South Africa,24,40,60.0,% of English lists,True
+sugar_top3,breakfast_cereals,Singapore,17,30,56.7,% of English lists,True
+sugar_top3,breakfast_cereals,UAE,10,17,58.8,% of English lists,False
+sugar_top3,chocolate,UK,926,1133,81.7,% of English lists,True
+sugar_top3,chocolate,US,681,1078,63.2,% of English lists,True
+sugar_top3,chocolate,Canada,309,477,64.8,% of English lists,True
+sugar_top3,chocolate,Australia,208,277,75.1,% of English lists,True
+sugar_top3,chocolate,India,78,101,77.2,% of English lists,True
+sugar_top3,chocolate,South Africa,7,15,46.7,% of English lists,False
+sugar_top3,chocolate,UAE,7,15,46.7,% of English lists,False
+sugar_top3,chocolate,Singapore,7,12,58.3,% of English lists,False
+sugar_top3,soft_drinks,US,4604,5862,78.5,% of English lists,True
+sugar_top3,soft_drinks,UK,282,560,50.4,% of English lists,True
+sugar_top3,soft_drinks,Canada,211,331,63.7,% of English lists,True
+sugar_top3,soft_drinks,Australia,93,159,58.5,% of English lists,True
+sugar_top3,soft_drinks,India,62,81,76.5,% of English lists,True
+sugar_top3,soft_drinks,South Africa,18,23,78.3,% of English lists,True
+sugar_top3,soft_drinks,Singapore,12,17,70.6,% of English lists,False
+sugar_top3,soft_drinks,UAE,4,9,44.4,% of English lists,False
+sugar_top3,flavoured_milk,US,176,200,88.0,% of English lists,True
+sugar_top3,flavoured_milk,UK,87,116,75.0,% of English lists,True
+sugar_top3,flavoured_milk,Australia,54,81,66.7,% of English lists,True
+sugar_top3,flavoured_milk,India,42,44,95.5,% of English lists,True
+sugar_top3,flavoured_milk,Canada,32,36,88.9,% of English lists,True
+sugar_top3,flavoured_milk,Singapore,11,11,100.0,% of English lists,False
+sugar_top3,flavoured_milk,UAE,5,6,83.3,% of English lists,False
+sugar_top3,flavoured_milk,South Africa,1,1,100.0,% of English lists,False
+sugar_top3,ketchup,US,356,427,83.4,% of English lists,True
+sugar_top3,ketchup,UK,139,174,79.9,% of English lists,True
+sugar_top3,ketchup,Canada,29,43,67.4,% of English lists,True
+sugar_top3,ketchup,India,34,42,81.0,% of English lists,True
+sugar_top3,ketchup,Australia,10,10,100.0,% of English lists,False
+sugar_top3,ketchup,UAE,2,2,100.0,% of English lists,False
+sugar_top3,sauces,US,6708,22972,29.2,% of English lists,True
+sugar_top3,sauces,UK,843,2884,29.2,% of English lists,True
+sugar_top3,sauces,Canada,203,789,25.7,% of English lists,True
+sugar_top3,sauces,Australia,228,734,31.1,% of English lists,True
+sugar_top3,sauces,India,82,128,64.1,% of English lists,True
+sugar_top3,sauces,South Africa,18,41,43.9,% of English lists,True
+sugar_top3,sauces,Singapore,15,33,45.5,% of English lists,True
+sugar_top3,sauces,UAE,8,15,53.3,% of English lists,False
+sugar_top3,yoghurt,US,3381,5805,58.2,% of English lists,True
+sugar_top3,yoghurt,UK,454,981,46.3,% of English lists,True
+sugar_top3,yoghurt,Australia,67,296,22.6,% of English lists,True
+sugar_top3,yoghurt,Canada,52,197,26.4,% of English lists,True
+sugar_top3,yoghurt,India,17,77,22.1,% of English lists,True
+sugar_top3,yoghurt,Singapore,13,37,35.1,% of English lists,True
+sugar_top3,yoghurt,South Africa,9,33,27.3,% of English lists,True
+sugar_top3,yoghurt,UAE,5,19,26.3,% of English lists,False
+sugar_top3,cakes,US,4883,6357,76.8,% of English lists,True
+sugar_top3,cakes,UK,388,597,65.0,% of English lists,True
+sugar_top3,cakes,Canada,107,147,72.8,% of English lists,True
+sugar_top3,cakes,Australia,52,87,59.8,% of English lists,True
+sugar_top3,cakes,India,43,53,81.1,% of English lists,True
+sugar_top3,cakes,UAE,3,13,23.1,% of English lists,False
+sugar_top3,cakes,Singapore,5,12,41.7,% of English lists,False
+sugar_top3,cakes,South Africa,3,6,50.0,% of English lists,False
+sugar_top3,ice_cream,US,747,1102,67.8,% of English lists,True
+sugar_top3,ice_cream,UK,252,343,73.5,% of English lists,True
+sugar_top3,ice_cream,Canada,170,214,79.4,% of English lists,True
+sugar_top3,ice_cream,Australia,100,141,70.9,% of English lists,True
+sugar_top3,ice_cream,India,67,93,72.0,% of English lists,True
+sugar_top3,ice_cream,Singapore,7,8,87.5,% of English lists,False
+sugar_top3,ice_cream,South Africa,6,6,100.0,% of English lists,False
+sugar_top3,chips,US,238,2871,8.3,% of English lists,True
+sugar_top3,chips,UK,115,1482,7.8,% of English lists,True
+sugar_top3,chips,Canada,38,394,9.6,% of English lists,True
+sugar_top3,chips,Australia,35,232,15.1,% of English lists,True
+sugar_top3,chips,India,26,157,16.6,% of English lists,True
+sugar_top3,chips,South Africa,9,42,21.4,% of English lists,True
+sugar_top3,chips,Singapore,5,30,16.7,% of English lists,True
+sugar_top3,chips,UAE,0,16,0.0,% of English lists,False
+sugar_top3,namkeen,India,6,42,14.3,% of English lists,True
+sugar_top3,namkeen,US,1,4,25.0,% of English lists,False
+sugar_top3,namkeen,UK,1,4,25.0,% of English lists,False
+sugar_top3,namkeen,UAE,2,3,66.7,% of English lists,False
+sugar_top3,namkeen,Canada,0,2,0.0,% of English lists,False
+sugar_top3,instant_noodles,US,14,215,6.5,% of English lists,True
+sugar_top3,instant_noodles,UK,20,207,9.7,% of English lists,True
+sugar_top3,instant_noodles,India,4,97,4.1,% of English lists,True
+sugar_top3,instant_noodles,Australia,4,74,5.4,% of English lists,True
+sugar_top3,instant_noodles,Canada,2,53,3.8,% of English lists,True
+sugar_top3,instant_noodles,Singapore,2,17,11.8,% of English lists,False
+sugar_top3,instant_noodles,South Africa,0,7,0.0,% of English lists,False
+sugar_top3,instant_noodles,UAE,0,4,0.0,% of English lists,False
+sugar_top3,all_foods,US,140163,410549,34.1,% of English lists,True
+sugar_top3,all_foods,UK,16463,54616,30.1,% of English lists,True
+sugar_top3,all_foods,Canada,6147,17636,34.9,% of English lists,True
+sugar_top3,all_foods,Australia,4266,12977,32.9,% of English lists,True
+sugar_top3,all_foods,India,1679,3964,42.4,% of English lists,True
+sugar_top3,all_foods,South Africa,496,1541,32.2,% of English lists,True
+sugar_top3,all_foods,Singapore,410,1048,39.1,% of English lists,True
+sugar_top3,all_foods,UAE,190,653,29.1,% of English lists,True
+names_2plus,biscuits,US,7828,11119,70.4,% of English lists,True
+names_2plus,biscuits,UK,932,1428,65.3,% of English lists,True
+names_2plus,biscuits,Canada,232,357,65.0,% of English lists,True
+names_2plus,biscuits,India,237,338,70.1,% of English lists,True
+names_2plus,biscuits,Australia,163,245,66.5,% of English lists,True
+names_2plus,biscuits,UAE,16,33,48.5,% of English lists,True
+names_2plus,biscuits,Singapore,17,31,54.8,% of English lists,True
+names_2plus,biscuits,South Africa,13,21,61.9,% of English lists,True
+names_2plus,breakfast_cereals,US,1365,2524,54.1,% of English lists,True
+names_2plus,breakfast_cereals,UK,624,1385,45.1,% of English lists,True
+names_2plus,breakfast_cereals,Canada,231,387,59.7,% of English lists,True
+names_2plus,breakfast_cereals,Australia,190,324,58.6,% of English lists,True
+names_2plus,breakfast_cereals,India,53,148,35.8,% of English lists,True
+names_2plus,breakfast_cereals,South Africa,18,40,45.0,% of English lists,True
+names_2plus,breakfast_cereals,Singapore,17,30,56.7,% of English lists,True
+names_2plus,breakfast_cereals,UAE,11,17,64.7,% of English lists,False
+names_2plus,chocolate,UK,345,1133,30.5,% of English lists,True
+names_2plus,chocolate,US,309,1078,28.7,% of English lists,True
+names_2plus,chocolate,Canada,126,477,26.4,% of English lists,True
+names_2plus,chocolate,Australia,98,277,35.4,% of English lists,True
+names_2plus,chocolate,India,21,101,20.8,% of English lists,True
+names_2plus,chocolate,South Africa,5,15,33.3,% of English lists,False
+names_2plus,chocolate,UAE,5,15,33.3,% of English lists,False
+names_2plus,chocolate,Singapore,4,12,33.3,% of English lists,False
+names_2plus,soft_drinks,US,1030,5862,17.6,% of English lists,True
+names_2plus,soft_drinks,UK,58,560,10.4,% of English lists,True
+names_2plus,soft_drinks,Canada,139,331,42.0,% of English lists,True
+names_2plus,soft_drinks,Australia,9,159,5.7,% of English lists,True
+names_2plus,soft_drinks,India,6,81,7.4,% of English lists,True
+names_2plus,soft_drinks,South Africa,1,23,4.3,% of English lists,True
+names_2plus,soft_drinks,Singapore,6,17,35.3,% of English lists,False
+names_2plus,soft_drinks,UAE,0,9,0.0,% of English lists,False
+names_2plus,flavoured_milk,US,36,200,18.0,% of English lists,True
+names_2plus,flavoured_milk,UK,31,116,26.7,% of English lists,True
+names_2plus,flavoured_milk,Australia,11,81,13.6,% of English lists,True
+names_2plus,flavoured_milk,India,6,44,13.6,% of English lists,True
+names_2plus,flavoured_milk,Canada,10,36,27.8,% of English lists,True
+names_2plus,flavoured_milk,Singapore,2,11,18.2,% of English lists,False
+names_2plus,flavoured_milk,UAE,1,6,16.7,% of English lists,False
+names_2plus,flavoured_milk,South Africa,0,1,0.0,% of English lists,False
+names_2plus,ketchup,US,27,427,6.3,% of English lists,True
+names_2plus,ketchup,UK,9,174,5.2,% of English lists,True
+names_2plus,ketchup,Canada,5,43,11.6,% of English lists,True
+names_2plus,ketchup,India,5,42,11.9,% of English lists,True
+names_2plus,ketchup,Australia,0,10,0.0,% of English lists,False
+names_2plus,ketchup,UAE,0,2,0.0,% of English lists,False
+names_2plus,sauces,US,5074,22972,22.1,% of English lists,True
+names_2plus,sauces,UK,434,2884,15.0,% of English lists,True
+names_2plus,sauces,Canada,139,789,17.6,% of English lists,True
+names_2plus,sauces,Australia,101,734,13.8,% of English lists,True
+names_2plus,sauces,India,16,128,12.5,% of English lists,True
+names_2plus,sauces,South Africa,7,41,17.1,% of English lists,True
+names_2plus,sauces,Singapore,4,33,12.1,% of English lists,True
+names_2plus,sauces,UAE,5,15,33.3,% of English lists,False
+names_2plus,yoghurt,US,1713,5805,29.5,% of English lists,True
+names_2plus,yoghurt,UK,214,981,21.8,% of English lists,True
+names_2plus,yoghurt,Australia,15,296,5.1,% of English lists,True
+names_2plus,yoghurt,Canada,28,197,14.2,% of English lists,True
+names_2plus,yoghurt,India,5,77,6.5,% of English lists,True
+names_2plus,yoghurt,Singapore,7,37,18.9,% of English lists,True
+names_2plus,yoghurt,South Africa,3,33,9.1,% of English lists,True
+names_2plus,yoghurt,UAE,0,19,0.0,% of English lists,False
+names_2plus,cakes,US,5216,6357,82.1,% of English lists,True
+names_2plus,cakes,UK,469,597,78.6,% of English lists,True
+names_2plus,cakes,Canada,114,147,77.6,% of English lists,True
+names_2plus,cakes,Australia,49,87,56.3,% of English lists,True
+names_2plus,cakes,India,38,53,71.7,% of English lists,True
+names_2plus,cakes,UAE,6,13,46.2,% of English lists,False
+names_2plus,cakes,Singapore,7,12,58.3,% of English lists,False
+names_2plus,cakes,South Africa,2,6,33.3,% of English lists,False
+names_2plus,ice_cream,US,778,1102,70.6,% of English lists,True
+names_2plus,ice_cream,UK,281,343,81.9,% of English lists,True
+names_2plus,ice_cream,Canada,162,214,75.7,% of English lists,True
+names_2plus,ice_cream,Australia,107,141,75.9,% of English lists,True
+names_2plus,ice_cream,India,40,93,43.0,% of English lists,True
+names_2plus,ice_cream,Singapore,8,8,100.0,% of English lists,False
+names_2plus,ice_cream,South Africa,4,6,66.7,% of English lists,False
+names_2plus,chips,US,610,2871,21.2,% of English lists,True
+names_2plus,chips,UK,273,1482,18.4,% of English lists,True
+names_2plus,chips,Canada,123,394,31.2,% of English lists,True
+names_2plus,chips,Australia,36,232,15.5,% of English lists,True
+names_2plus,chips,India,17,157,10.8,% of English lists,True
+names_2plus,chips,South Africa,3,42,7.1,% of English lists,True
+names_2plus,chips,Singapore,6,30,20.0,% of English lists,True
+names_2plus,chips,UAE,2,16,12.5,% of English lists,False
+names_2plus,namkeen,India,3,42,7.1,% of English lists,True
+names_2plus,namkeen,US,0,4,0.0,% of English lists,False
+names_2plus,namkeen,UK,0,4,0.0,% of English lists,False
+names_2plus,namkeen,UAE,1,3,33.3,% of English lists,False
+names_2plus,namkeen,Canada,0,2,0.0,% of English lists,False
+names_2plus,instant_noodles,US,95,215,44.2,% of English lists,True
+names_2plus,instant_noodles,UK,52,207,25.1,% of English lists,True
+names_2plus,instant_noodles,India,4,97,4.1,% of English lists,True
+names_2plus,instant_noodles,Australia,16,74,21.6,% of English lists,True
+names_2plus,instant_noodles,Canada,16,53,30.2,% of English lists,True
+names_2plus,instant_noodles,Singapore,6,17,35.3,% of English lists,False
+names_2plus,instant_noodles,South Africa,1,7,14.3,% of English lists,False
+names_2plus,instant_noodles,UAE,0,4,0.0,% of English lists,False
+names_2plus,all_foods,US,116103,410549,28.3,% of English lists,True
+names_2plus,all_foods,UK,14517,54616,26.6,% of English lists,True
+names_2plus,all_foods,Canada,5279,17636,29.9,% of English lists,True
+names_2plus,all_foods,Australia,2985,12977,23.0,% of English lists,True
+names_2plus,all_foods,India,772,3964,19.5,% of English lists,True
+names_2plus,all_foods,South Africa,328,1541,21.3,% of English lists,True
+names_2plus,all_foods,Singapore,253,1048,24.1,% of English lists,True
+names_2plus,all_foods,UAE,118,653,18.1,% of English lists,True
+any_sugar,biscuits,US,10613,11119,95.4,% of English lists,True
+any_sugar,biscuits,UK,1299,1428,91.0,% of English lists,True
+any_sugar,biscuits,Canada,325,357,91.0,% of English lists,True
+any_sugar,biscuits,India,313,338,92.6,% of English lists,True
+any_sugar,biscuits,Australia,216,245,88.2,% of English lists,True
+any_sugar,biscuits,UAE,25,33,75.8,% of English lists,True
+any_sugar,biscuits,Singapore,29,31,93.5,% of English lists,True
+any_sugar,biscuits,South Africa,18,21,85.7,% of English lists,True
+any_sugar,breakfast_cereals,US,2081,2524,82.4,% of English lists,True
+any_sugar,breakfast_cereals,UK,982,1385,70.9,% of English lists,True
+any_sugar,breakfast_cereals,Canada,300,387,77.5,% of English lists,True
+any_sugar,breakfast_cereals,Australia,262,324,80.9,% of English lists,True
+any_sugar,breakfast_cereals,India,94,148,63.5,% of English lists,True
+any_sugar,breakfast_cereals,South Africa,28,40,70.0,% of English lists,True
+any_sugar,breakfast_cereals,Singapore,21,30,70.0,% of English lists,True
+any_sugar,breakfast_cereals,UAE,13,17,76.5,% of English lists,False
+any_sugar,chocolate,UK,1034,1133,91.3,% of English lists,True
+any_sugar,chocolate,US,978,1078,90.7,% of English lists,True
+any_sugar,chocolate,Canada,432,477,90.6,% of English lists,True
+any_sugar,chocolate,Australia,246,277,88.8,% of English lists,True
+any_sugar,chocolate,India,86,101,85.1,% of English lists,True
+any_sugar,chocolate,South Africa,11,15,73.3,% of English lists,False
+any_sugar,chocolate,UAE,9,15,60.0,% of English lists,False
+any_sugar,chocolate,Singapore,10,12,83.3,% of English lists,False
+any_sugar,soft_drinks,US,4762,5862,81.2,% of English lists,True
+any_sugar,soft_drinks,UK,310,560,55.4,% of English lists,True
+any_sugar,soft_drinks,Canada,221,331,66.8,% of English lists,True
+any_sugar,soft_drinks,Australia,99,159,62.3,% of English lists,True
+any_sugar,soft_drinks,India,63,81,77.8,% of English lists,True
+any_sugar,soft_drinks,South Africa,18,23,78.3,% of English lists,True
+any_sugar,soft_drinks,Singapore,12,17,70.6,% of English lists,False
+any_sugar,soft_drinks,UAE,5,9,55.6,% of English lists,False
+any_sugar,flavoured_milk,US,182,200,91.0,% of English lists,True
+any_sugar,flavoured_milk,UK,100,116,86.2,% of English lists,True
+any_sugar,flavoured_milk,Australia,66,81,81.5,% of English lists,True
+any_sugar,flavoured_milk,India,43,44,97.7,% of English lists,True
+any_sugar,flavoured_milk,Canada,33,36,91.7,% of English lists,True
+any_sugar,flavoured_milk,Singapore,11,11,100.0,% of English lists,False
+any_sugar,flavoured_milk,UAE,5,6,83.3,% of English lists,False
+any_sugar,flavoured_milk,South Africa,1,1,100.0,% of English lists,False
+any_sugar,ketchup,US,396,427,92.7,% of English lists,True
+any_sugar,ketchup,UK,151,174,86.8,% of English lists,True
+any_sugar,ketchup,Canada,34,43,79.1,% of English lists,True
+any_sugar,ketchup,India,39,42,92.9,% of English lists,True
+any_sugar,ketchup,Australia,10,10,100.0,% of English lists,False
+any_sugar,ketchup,UAE,2,2,100.0,% of English lists,False
+any_sugar,sauces,US,14694,22972,64.0,% of English lists,True
+any_sugar,sauces,UK,2031,2884,70.4,% of English lists,True
+any_sugar,sauces,Canada,409,789,51.8,% of English lists,True
+any_sugar,sauces,Australia,493,734,67.2,% of English lists,True
+any_sugar,sauces,India,105,128,82.0,% of English lists,True
+any_sugar,sauces,South Africa,31,41,75.6,% of English lists,True
+any_sugar,sauces,Singapore,25,33,75.8,% of English lists,True
+any_sugar,sauces,UAE,11,15,73.3,% of English lists,False
+any_sugar,yoghurt,US,4736,5805,81.6,% of English lists,True
+any_sugar,yoghurt,UK,611,981,62.3,% of English lists,True
+any_sugar,yoghurt,Australia,143,296,48.3,% of English lists,True
+any_sugar,yoghurt,Canada,92,197,46.7,% of English lists,True
+any_sugar,yoghurt,India,24,77,31.2,% of English lists,True
+any_sugar,yoghurt,Singapore,22,37,59.5,% of English lists,True
+any_sugar,yoghurt,South Africa,20,33,60.6,% of English lists,True
+any_sugar,yoghurt,UAE,10,19,52.6,% of English lists,False
+any_sugar,cakes,US,6226,6357,97.9,% of English lists,True
+any_sugar,cakes,UK,569,597,95.3,% of English lists,True
+any_sugar,cakes,Canada,138,147,93.9,% of English lists,True
+any_sugar,cakes,Australia,82,87,94.3,% of English lists,True
+any_sugar,cakes,India,50,53,94.3,% of English lists,True
+any_sugar,cakes,UAE,8,13,61.5,% of English lists,False
+any_sugar,cakes,Singapore,10,12,83.3,% of English lists,False
+any_sugar,cakes,South Africa,3,6,50.0,% of English lists,False
+any_sugar,ice_cream,US,1038,1102,94.2,% of English lists,True
+any_sugar,ice_cream,UK,328,343,95.6,% of English lists,True
+any_sugar,ice_cream,Canada,205,214,95.8,% of English lists,True
+any_sugar,ice_cream,Australia,132,141,93.6,% of English lists,True
+any_sugar,ice_cream,India,81,93,87.1,% of English lists,True
+any_sugar,ice_cream,Singapore,8,8,100.0,% of English lists,False
+any_sugar,ice_cream,South Africa,6,6,100.0,% of English lists,False
+any_sugar,chips,US,1363,2871,47.5,% of English lists,True
+any_sugar,chips,UK,902,1482,60.9,% of English lists,True
+any_sugar,chips,Canada,244,394,61.9,% of English lists,True
+any_sugar,chips,Australia,139,232,59.9,% of English lists,True
+any_sugar,chips,India,107,157,68.2,% of English lists,True
+any_sugar,chips,South Africa,27,42,64.3,% of English lists,True
+any_sugar,chips,Singapore,21,30,70.0,% of English lists,True
+any_sugar,chips,UAE,8,16,50.0,% of English lists,False
+any_sugar,namkeen,India,27,42,64.3,% of English lists,True
+any_sugar,namkeen,US,3,4,75.0,% of English lists,False
+any_sugar,namkeen,UK,2,4,50.0,% of English lists,False
+any_sugar,namkeen,UAE,3,3,100.0,% of English lists,False
+any_sugar,namkeen,Canada,2,2,100.0,% of English lists,False
+any_sugar,instant_noodles,US,187,215,87.0,% of English lists,True
+any_sugar,instant_noodles,UK,188,207,90.8,% of English lists,True
+any_sugar,instant_noodles,India,85,97,87.6,% of English lists,True
+any_sugar,instant_noodles,Australia,62,74,83.8,% of English lists,True
+any_sugar,instant_noodles,Canada,46,53,86.8,% of English lists,True
+any_sugar,instant_noodles,Singapore,17,17,100.0,% of English lists,False
+any_sugar,instant_noodles,South Africa,7,7,100.0,% of English lists,False
+any_sugar,instant_noodles,UAE,4,4,100.0,% of English lists,False
+any_sugar,all_foods,US,236310,410549,57.6,% of English lists,True
+any_sugar,all_foods,UK,32738,54616,59.9,% of English lists,True
+any_sugar,all_foods,Canada,10071,17636,57.1,% of English lists,True
+any_sugar,all_foods,Australia,7695,12977,59.3,% of English lists,True
+any_sugar,all_foods,India,2378,3964,60.0,% of English lists,True
+any_sugar,all_foods,South Africa,837,1541,54.3,% of English lists,True
+any_sugar,all_foods,Singapore,641,1048,61.2,% of English lists,True
+any_sugar,all_foods,UAE,317,653,48.5,% of English lists,True
+zero_sugar_share,soft_drinks,France,731,3790,19.3,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,France,3059,,8.2,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Germany,383,2123,18.0,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Germany,1740,,7.9,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,UK,252,718,35.1,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,UK,466,,4.6,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,US,102,443,23.0,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,US,341,,10.3,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,UAE,3,6,50.0,% of packs with a value,False
+sugar_sweetened_only,soft_drinks,UAE,3,,11.0,"g sugar (median) per 100 ml, packs with 0.5 g or more",False
+zero_sugar_share,soft_drinks,Canada,121,371,32.6,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Canada,250,,10.7,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Mexico,27,109,24.8,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Mexico,82,,7.5,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Spain,277,706,39.2,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Spain,429,,7.2,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Italy,99,414,23.9,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Italy,315,,10.0,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Brazil,8,43,18.6,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Brazil,35,,10.0,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,India,4,38,10.5,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,India,34,,10.6,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,Singapore,1,7,14.3,% of packs with a value,False
+sugar_sweetened_only,soft_drinks,Singapore,6,,6.4,"g sugar (median) per 100 ml, packs with 0.5 g or more",False
+zero_sugar_share,soft_drinks,Australia,13,48,27.1,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Australia,35,,7.8,"g sugar (median) per 100 ml, packs with 0.5 g or more",True
+zero_sugar_share,soft_drinks,South Africa,1,13,7.7,% of packs with a value,False
+sugar_sweetened_only,soft_drinks,South Africa,12,,9.9,"g sugar (median) per 100 ml, packs with 0.5 g or more",False
+zero_sugar_share,soft_drinks,Chile,8,23,34.8,% of packs with a value,True
+sugar_sweetened_only,soft_drinks,Chile,15,,10.2,"g sugar (median) per 100 ml, packs with 0.5 g or more",False
+zero_sugar_share,soft_drinks,Indonesia,2,2,100.0,% of packs with a value,False
+sugar_sweetened_only,soft_drinks,Indonesia,0,,,"g sugar (median) per 100 ml, packs with 0.5 g or more",False
+india_without_largest_brand,breakfast_cereals,India,44,254,6.7,g sugar (median),True
+india_largest_brand_share,breakfast_cereals,India,55,254,21.7,% of packs,True
+india_salt_without_largest_brand,breakfast_cereals,India,42,254,0.2,g salt (median),True
+india_without_largest_brand,chocolate,India,25,197,40.9,g sugar (median),True
+india_largest_brand_share,chocolate,India,61,197,31.0,% of packs,True
+india_without_largest_brand,biscuits,India,69,711,27.4,g sugar (median),True
+india_largest_brand_share,biscuits,India,152,711,21.4,% of packs,True
+india_salt_without_largest_brand,biscuits,India,65,711,0.5,g salt (median),True
+india_without_largest_brand,sauces,India,30,247,13.6,g sugar (median),True
+india_largest_brand_share,sauces,India,22,247,8.9,% of packs,True
+india_salt_without_largest_brand,sauces,India,28,247,1.9,g salt (median),True
+india_without_largest_brand,chips,India,48,286,3.2,g sugar (median),True
+india_largest_brand_share,chips,India,46,286,16.1,% of packs,True
+india_salt_without_largest_brand,chips,India,47,286,1.7,g salt (median),True
+india_without_largest_brand,ice_cream,India,12,146,22.6,g sugar (median),False
+india_largest_brand_share,ice_cream,India,36,146,24.7,% of packs,True
+india_without_largest_brand,yoghurt,India,73,135,5.3,g sugar (median),True
+india_largest_brand_share,yoghurt,India,19,135,14.1,% of packs,True
+india_without_largest_brand,ketchup,India,8,78,20.2,g sugar (median),False
+india_largest_brand_share,ketchup,India,13,78,16.7,% of packs,True
+india_salt_without_largest_brand,ketchup,India,5,78,2.0,g salt (median),False
+india_without_largest_brand,cakes,India,6,99,30.7,g sugar (median),False
+india_largest_brand_share,cakes,India,18,99,18.2,% of packs,True
+india_without_largest_brand,instant_noodles,India,24,140,2.2,g sugar (median),True
+india_largest_brand_share,instant_noodles,India,35,140,25.0,% of packs,True
+india_salt_without_largest_brand,instant_noodles,India,22,140,2.8,g salt (median),True
+india_without_largest_brand,soft_drinks,India,21,144,10.9,g sugar (median),True
+india_largest_brand_share,soft_drinks,India,39,144,27.1,% of packs,True
+india_without_largest_brand,namkeen,India,12,62,4.0,g sugar (median),False
+india_largest_brand_share,namkeen,India,15,62,24.2,% of packs,True
+india_salt_without_largest_brand,namkeen,India,10,62,2.0,g salt (median),False
+india_without_largest_brand,flavoured_milk,India,13,66,16.1,g sugar (median),False
+india_largest_brand_share,flavoured_milk,India,7,66,10.6,% of packs,True

@@ -1,0 +1,592 @@
+sugar_world.py audit (study 9: sugar and salt across borders). Open Food Facts snapshot of 6 Oct 2026, 16 countries.
+rows read 3,592,460; duplicate barcodes skipped 53; baby food and supplement rows skipped 29,378.
+
+RULES
+- a cell needs 20 packs (k) to be used in a headline; smaller cells are output with ok=False.
+- sugar value kept when 0 <= g <= 100, sugar x 4 kcal <= the pack's own energy + 10 (when energy is given) and g <= the category cap.
+- salt = salt_100g, else sodium x 2.5; kept when 0 <= g <= the category cap (values in the hundreds or thousands are mg typed as g).
+- products carrying one of the category's drop tags are not in the category at all (powders, syrups, mixes, coatings, candy, dried fruit).
+- rows with the same barcode are counted once; baby food and supplements are out everywhere.
+- the 30 highest raw values per category are listed below with what happened to each (kept, or the exclusion reason).
+
+CATEGORY DEFINITIONS
+- biscuits: tags ['en:biscuits', 'en:cookies']; drop ['en:candies', 'en:meringues']; sugar cap 80 g; salt cap 10 g
+- breakfast_cereals: tags ['en:breakfast-cereals']; drop ['en:bars', 'en:cereal-bars', 'en:chocolates', 'en:syrups']; sugar cap 75 g; salt cap 10 g
+- chocolate: tags ['en:chocolates']; drop ['en:beverage-preparations', 'en:beverages-and-beverages-preparations', 'en:biscuits', 'en:breakfast-cereals', 'en:chocolate-powders', 'en:cocoa-and-chocolate-powders', 'en:cooking-helpers', 'en:dairy-drinks', 'en:dehydrated-beverages', 'en:dried-products', 'en:dried-products-to-be-rehydrated', 'en:food-decorations', 'en:instant-beverages', 'en:powdered-drinks', 'en:spreads', 'en:sprinkles', 'en:sweet-spreads', 'en:sweeteners']; sugar cap 80 g; salt not measured
+- soft_drinks: tags ['en:sodas']; drop ['en:alcoholic-beverages', 'en:beverage-preparations', 'en:candies', 'en:carbonated-waters', 'en:chocolate-powders', 'en:cocoa-and-chocolate-powders', 'en:concentrates', 'en:dehydrated-beverages', 'en:dried-products', 'en:dried-products-to-be-rehydrated', 'en:flavoured-syrups', 'en:instant-beverages', 'en:powdered-drinks', 'en:syrups', 'en:waters']; sugar cap 25 g; salt not measured; per 100 ml
+- flavoured_milk: tags ['en:flavoured-milks']; drop ['en:beverage-preparations', 'en:bodybuilding-supplements', 'en:chocolate-candies', 'en:chocolate-powders', 'en:chocolates', 'en:cocoa-and-chocolate-powders', 'en:dehydrated-beverages', 'en:dietary-supplements', 'en:dried-products', 'en:dried-products-to-be-rehydrated', 'en:instant-beverages', 'en:meal-replacements', 'en:milk-powders', 'en:powdered-drinks', 'en:sugars', 'en:sweeteners', 'en:weight-loss-milkshakes']; sugar cap 30 g; salt not measured; per 100 ml
+- ketchup: tags ['en:ketchup', 'en:tomato-ketchup']; drop []; sugar cap 50 g; salt cap 10 g
+- sauces: tags ['en:sauces']; drop ['en:candies', 'en:dehydrated-sauces', 'en:dried-products', 'en:dried-products-to-be-rehydrated', 'en:food-additives', 'en:fruit-and-vegetable-preserves', 'en:jams', 'en:maple-syrups', 'en:marmalades', 'en:sauce-mixes', 'en:soup-base', 'en:spice-mix', 'en:spices', 'en:sweet-spreads', 'en:syrups']; sugar cap 90 g; salt cap 25 g
+- yoghurt: tags ['en:yogurts']; drop ['en:biscuits', 'en:butters', 'en:candies', 'en:cheeses', 'en:confectioneries', 'en:dehydrated-beverages', 'en:dried-products', 'en:fats', 'en:margarines', 'en:meats-and-their-products', 'en:non-food-products']; sugar cap 30 g; salt not measured
+- cakes: tags ['en:cakes']; drop ['en:baking-mixes', 'en:bodybuilding-supplements', 'en:cake-mixes', 'en:candies', 'en:cooking-helpers', 'en:dessert-mixes', 'en:dietary-supplements', 'en:marshmallows', 'en:meal-replacements', 'en:pastry-helpers', 'en:weight-loss-milkshakes']; sugar cap 80 g; salt not measured
+- ice_cream: tags ['en:ice-creams']; drop ['en:candies', 'en:caramels', 'en:dehydrated-beverages', 'en:dried-products', 'en:ice-cream-cones', 'en:ice-cream-mix', 'en:mochi', 'en:pastries']; sugar cap 60 g; salt not measured
+- chips: tags ['en:corn-chips', 'en:crisps', 'en:extruded-snacks', 'en:potato-chips', 'en:potato-crisps', 'en:tortilla-chips']; drop ['en:biscuits', 'en:candies', 'en:dried-fruits', 'en:popcorn', 'en:spice-mix', 'en:spices']; sugar cap 40 g; salt cap 10 g
+- namkeen: tags ['en:bhujia', 'en:indian-snacks', 'en:namkeen']; drop ['en:biscuits', 'en:breads']; sugar cap 40 g; salt cap 10 g
+- instant_noodles: tags ['en:instant-noodles']; drop []; sugar cap 40 g; salt cap 20 g
+
+PULLED OUT BY A DROP TAG (products that carried a category tag and a drop tag), by country
+- biscuits: total 64; France 18, US 16, Italy 14, Germany 5, Spain 4, Mexico 4, Canada 1, UK 1, Chile 1
+- breakfast_cereals: total 211; France 88, Germany 23, US 21, UK 19, Spain 15, Mexico 14, Canada 9, Italy 6, India 5, Australia 4, Brazil 2, UAE 2, Chile 2, South Africa 1
+- chocolate: total 545; France 200, Germany 110, Spain 54, UK 42, US 35, Mexico 25, Italy 22, Brazil 19, India 11, Australia 9, Canada 6, South Africa 5, Chile 4, UAE 2, Indonesia 1
+- soft_drinks: total 433; US 121, Germany 98, France 95, Canada 22, UK 20, India 16, Australia 15, Mexico 14, Spain 14, Italy 6, Brazil 4, Chile 3, UAE 2, Indonesia 2, South Africa 1
+- flavoured_milk: total 90; France 33, US 15, Spain 10, Germany 9, Australia 7, UK 6, Italy 4, Mexico 4, South Africa 1, Brazil 1
+- sauces: total 1554; US 571, France 470, Germany 248, UK 145, Canada 31, Spain 28, Australia 20, Mexico 18, Italy 14, Brazil 4, India 2, Indonesia 1, UAE 1, Singapore 1
+- yoghurt: total 206; France 115, Germany 28, UK 17, Spain 16, US 13, Italy 7, Canada 5, Mexico 4, Brazil 1
+- cakes: total 3068; US 2361, France 360, Germany 181, UK 43, Canada 30, Australia 27, Spain 25, Italy 18, Mexico 14, UAE 2, India 2, Brazil 2, South Africa 1, Singapore 1, Indonesia 1
+- ice_cream: total 1046; France 558, Spain 152, Germany 121, Italy 96, UK 52, US 35, Canada 12, Australia 8, India 7, Mexico 1, UAE 1, Chile 1, Brazil 1, Singapore 1
+- chips: total 102; France 41, Spain 12, India 10, Germany 9, UK 8, Australia 7, US 6, Mexico 3, Italy 3, Chile 1, Brazil 1, Indonesia 1
+- namkeen: total 6; India 3, Canada 2, UK 1
+
+EXCLUDED VALUES BY REASON (all countries together, then India and UK)
+- salt biscuits: kept 34906; missing 14990, above_cap 60, out_of_range 1 | India: above_cap 4, missing 624 | UK: above_cap 2, missing 231
+- salt breakfast_cereals: kept 19572; missing 2736, above_cap 37, out_of_range 1 | India: above_cap 1, missing 198 | UK: above_cap 4, missing 203
+- salt chips: kept 13651; missing 4785, above_cap 67 | India: missing 232 | UK: above_cap 13, missing 223
+- salt instant_noodles: kept 2456; missing 539, above_cap 6 | India: above_cap 2, missing 106 | UK: missing 26
+- salt ketchup: kept 2788; missing 1062, above_cap 24 | India: above_cap 3, missing 70 | UK: above_cap 4, missing 23
+- salt namkeen: kept 28; missing 63, above_cap 3 | India: above_cap 2, missing 47 | UK: missing 4
+- salt sauces: kept 44737; missing 29646, above_cap 134 | India: above_cap 3, missing 214 | UK: above_cap 14, missing 456
+- sugar biscuits: kept 35370; missing 14512, exceeds_energy 61, out_of_range 8, above_cap 6 | India: exceeds_energy 1, missing 622, out_of_range 1 | UK: exceeds_energy 5, missing 183, out_of_range 2
+- sugar breakfast_cereals: kept 20308; missing 1999, exceeds_energy 33, out_of_range 3, above_cap 3 | India: missing 197 | UK: missing 136
+- sugar cakes: kept 16946; missing 8363, exceeds_energy 48, above_cap 7, out_of_range 1 | India: missing 90 | UK: missing 118, out_of_range 1
+- sugar chips: kept 13736; missing 4721, above_cap 40, exceeds_energy 6 | India: missing 231 | UK: above_cap 7, exceeds_energy 1, missing 184
+- sugar chocolate: kept 24232; missing 2967, exceeds_energy 47, above_cap 8, out_of_range 4 | India: missing 161 | UK: above_cap 1, exceeds_energy 5, missing 126, out_of_range 1
+- sugar flavoured_milk: kept 1208; missing 677, above_cap 22, exceeds_energy 6, out_of_range 1 | India: above_cap 1, missing 51 | UK: above_cap 1, missing 12
+- sugar ice_cream: kept 10094; missing 2287, exceeds_energy 27, above_cap 6 | India: missing 127 | UK: exceeds_energy 4, missing 51
+- sugar instant_noodles: kept 2467; missing 529, above_cap 4, exceeds_energy 1 | India: missing 104 | UK: missing 22
+- sugar ketchup: kept 2829; missing 1023, exceeds_energy 16, above_cap 6 | India: missing 70 | UK: exceeds_energy 1, missing 17
+- sugar namkeen: kept 33; missing 61 | India: missing 47 | UK: missing 3
+- sugar sauces: kept 45141; missing 29199, exceeds_energy 159, out_of_range 14, above_cap 4 | India: missing 215 | UK: exceeds_energy 3, missing 373
+- sugar soft_drinks: kept 8854; missing 6956, exceeds_energy 81, above_cap 66, out_of_range 4 | India: above_cap 1, missing 105 | UK: above_cap 2, exceeds_energy 6, missing 92
+- sugar yoghurt: kept 25565; missing 2058, exceeds_energy 54, above_cap 29 | India: above_cap 1, missing 46 | UK: above_cap 4, exceeds_energy 3, missing 129
+
+TOP 30 RAW VALUES PER CATEGORY (value, what happened, countries, barcode, kcal, tags, start of the ingredient list)
+--- salt biscuits (cap 10 g)
+     2905.00  above_cap      Spain            7090810730702   kcal=458.0 | biscuits,variety-packs,biscuits-or-cookies-variety-packs | 
+     1490.00  above_cap      Brazil           7896005030356   kcal=480.0 | biscuits | 
+     1485.00  above_cap      India            8908022408588   kcal=502.0 | biscuits,biscuit-cookie-vitamins-and-chemical-elements-content-guaranteed,roasted-biscuits | Protein
+     1483.33  above_cap      Brazil           7896003738636   kcal=423.333333333333 | biscuits,wafers,crackers-appetizers | FARINHA DE TRIGO ENRIQUECIDA COM FERRO E ACIDO FOLICO, GORDURA VEGETAL
+     1199.60  above_cap      Mexico           7501000615605   kcal=425.042589437819 | biscuits | Harina de trigo, azúcar, jarabe de maíz de alta fructosa, grasa vegeta
+     1150.00  above_cap      India            8908022676260   kcal=482.5 | biscuits,baked-bar | Multigrain Flour (41%) (Whole Wheat Flour, Oats, Bengal Gram (Chana) F
+     1125.00  above_cap      Canada           0059749986649   kcal=466.666666666667 | biscuits,brownie-style-cookies | Flour, Sugar, Palm oil, Chocolate chips (sugar, chocolate liquor, coco
+     1091.67  above_cap      Brazil           7896003737417   kcal=416.666666666667 | biscuits,filled-biscuits | AÇÚCAR, FARINHA DE TRIGO ENRIQUECIDA COM FERRO E ÁCIDO FÓLICO, FARINHA
+      791.67  above_cap      Mexico           7501030452805   kcal=483.333333333333 | biscuits | 
+      775.86  above_cap      US               0078742125961   kcal=440.0 | biscuits | ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRAT
+      772.00  above_cap      UK               8901063162631   kcal=451.0 | biscuits | 
+      692.50  above_cap      Spain            7798144941336   kcal=134.0 | biscuits | Almidón de maíz, harina de arroz, fécula de mandioca, aceite de giraso
+      596.00  above_cap      Brazil           7891152802054   kcal=478.0 | biscuits,wafers | 
+      550.00  above_cap      Brazil           7891000304839   kcal=461.0 | biscuits | farinha de trigo integral, acucar, tarinha de trigo enriquecida com fe
+      532.50  above_cap      India            0200449312355   kcal=507.0 | biscuits | Refined Wheat Flour Maida), Hydrogenated Vegetable Oil, Sugar, Semolin
+      500.00  above_cap      Mexico           0603554044218   kcal=1846.0 | biscuits,chocolate-candies,chocolate-biscuits | Azúcares añadidos (azúcar), harina de trigo, aceite vegetal, cacao en 
+      498.25  above_cap      India            8904132913325   kcal=473.1 | biscuits | REFINED WHEAT FLOUR (MAIDA), SUGAR, REFINED PALM OIL, INTERESTERIFIED 
+      458.33  above_cap      Canada           0671372301059   kcal=533.333333333333 | biscuits | Flours (enriched wheat, whole wheat and organic sprouted wheat), Sugar
+      395.00  above_cap      Brazil           7896085087257   kcal=135.0 | biscuits | 
+      385.17  above_cap      Mexico           7443011627065   kcal=419.035714285714 | biscuits | No visible
+      377.50  above_cap      Brazil           7897318200023   kcal=411.0 | biscuits | Fécula de mandioca, gordura vegetal de palma, ovo pasteurizado desidra
+      275.00  above_cap      Chile            7804000002896   kcal=345.0 | biscuits | Cacao (36%) (licor de cacao, maltitol, polidextrosa, lecitina de soya,
+      262.50  above_cap      Brazil           7891203058225   kcal=130.0 | biscuits | Farinha de trigo enriquecida com ferro e ácido fólico, açúcar, gordura
+      250.00  above_cap      US               8413403012044   kcal=0.1 | biscuits | Wheat Flour (Enriched with Iron, Thiamine, Riboflavin, Niacin and Foli
+      250.00  above_cap      Indonesia        8991102374309   kcal=500.0 | biscuits | Tepung Terigu, Gula, Minyak Nabati (Mengandung Antioksidan TBHQ), Lema
+      213.00  above_cap      France           8412438019295   kcal=531.0 | biscuits | Farine de blé, pistaches (20%), saindoux (graisse de porc ibérique, an
+      151.79  above_cap      US               0760295004281   kcal=32142.8571428571 | biscuits,crackers-appetizers,pretzel | Cassava Flour, Chickpea Flour, Potato Starch, Modified Tapioca Resista
+      150.00  above_cap      Canada           0628176262482   kcal=535.71429 | biscuits,allergy-free | GLUTEN-FREE OAT FLOUR SUGARS (BROWN SUGAR*, MAPLE SYRUP, INVERT SUGAR*
+       84.00  above_cap      Italy            6020000002501   kcal=446.0 | biscuits | 
+       75.00  above_cap      Brazil/France    7898916991016   kcal=117.0 | biscuits | Polvilho Gordura Vegetal; Leite, Ovos e Sal. NAO CONTÉM GLUTEN
+--- salt breakfast_cereals (cap 10 g)
+     1357.14  above_cap      US               0013130060530   kcal=485.714285714286 | breakfast-cereals,porridge | WHEAT FARINA, SUGAR, CALCIUM CARBONATE, NATURAL FLAVORS, GUAR GUM, SAL
+     1219.51  above_cap      US               0884912377296   kcal=439.024390243902 | breakfast-cereals | 
+     1062.50  above_cap      US               0053000221012   kcal=400.0 | breakfast-cereals | Khorasan wheat flour*, wheat bran*, whole wheat meal*, cane sugar*, wh
+      991.67  above_cap      Chile            7613287833495   kcal=276.666666666667 | breakfast-cereals | 
+      747.50  above_cap      Mexico           7501008057346   kcal=385.0 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes | Maíz, azúcares añadidos (azúcar), malta, sal yodada, hierro, vitaminas
+      702.70  above_cap      US               0038000273384   kcal=540.540540540541 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes | Milled corn, sugar, malt flavor, salt, vegetable juice for color, natu
+      575.00  above_cap      US               0030000569856   kcal=120.0 | breakfast-cereals,flakes,cereal-flakes,rolled-flakes,rolled-oats | Whole grain oats, dried apples, sugar, salt, cinnamon, monk fruit extr
+      375.00  above_cap      Australia        9300605132887   kcal=364.483747609942 | breakfast-cereals | 
+      366.00  above_cap      India            8901058003970   kcal=279.0 | breakfast-cereals,nestle | 
+      166.67  above_cap      US               0884623486195   kcal=433.333333333333 | breakfast-cereals,mueslis | Whole grain oats, maple syrup, praline pecans (_pecans_, sugar, tapioc
+      135.00  above_cap      Chile            7800120168917   kcal=346.66667 | seeds,breakfast-cereals,cereal-grains,mueslis | 
+       95.00  above_cap      Mexico           7500463387173   kcal=804.0 | breakfast-cereals,mueslis | 
+       75.00  above_cap      Brazil           7896283006715   kcal=419.0 | breakfast-cereals,cereals-with-fruits,mueslis,diet-breakfast-cereals,mueslis-with-fruits,c | Flocos de aveia integral, amendoim, fibra de trigo, amêndoas, flocos d
+       41.67  above_cap      US               4099100038811   kcal=350.0 | breakfast-cereals | WHOLE GRAIN WHEAT, SUGAR, DRIED BLUEBERRIES, GELATIN, VEGETABLE JUICE 
+       38.00  above_cap      France           5902884466857   kcal=380.0 | breakfast-cereals,porridge | 
+       26.25  above_cap      Brazil           7896496995219   kcal=412.5 | breakfast-cereals | Aveia, flocos de milho, açúcar mascavo, cacau nibs, castanhas-do-pará,
+       25.00  above_cap      Mexico           0094331412205   kcal=401.5 | breakfast-cereals | azúcares añadidos GRANOLA GOURMET CHOCOLATE, COCO & QUINUA 350 g Ingre
+       23.50  above_cap      Mexico           7501761882391   kcal=388.0 | seeds,breakfast-cereals,cereal-grains,oat | Hojuelas de avena de grano entero, hojuelas de trigo, azúcar, aceite v
+       21.00  above_cap      France           8717973293538   kcal=434.0 | breakfast-cereals,puffed-cereal-cakes,puffed-corn-cakes | 
+       20.00  above_cap      Mexico           0094331600817   kcal=396.1 | breakfast-cereals,mueslis | hojuelas de avena, salvado de trigo, hojuelas de trigo, azúcar, cacahu
+       20.00  above_cap      Australia        9326847001804   kcal=440.0 | breakfast-cereals,mueslis | Oats, Honey, Rolled barley, Oat bran, Macadamia oil, Macadamias (7%), 
+       16.30  above_cap      France           2607967001446   kcal=118.166666666667 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes,plain- | Semoule de maïs*, sucre de canne*, sel Traces éventuelles de fruits à 
+       15.38  above_cap      US               0051497115388   kcal=358.97435897436 | seeds,breakfast-cereals,cereal-grains,corn,corn-grain | DEGERMED CORN, NIACIN, REDUCED IRON, THIAMIN, MONONITRATE, RIBOFLAVIN,
+       13.30  above_cap      Germany          5053827215190   kcal=383.0 | breakfast-cereals | Getreidemehle (Reis 54%, _Vollkornhafer_ 28%, Mais 5.5%), Zucker, Gluc
+       12.90  above_cap      Germany          4260519490327   kcal=455.0 | breakfast-cereals,mueslis,crunchy-mueslis | 
+       12.62  above_cap      UK               8904320006433   kcal=398.02 | breakfast-cereals,flakes,cereal-flakes | 
+       12.00  above_cap      France           3760149754307   kcal=347.0 | breakfast-cereals,flakes,cereal-flakes,rolled-flakes,rolled-oats | 
+       12.00  above_cap      UK               4088600157344   kcal=422.5 | breakfast-cereals,extruded-cereals | Wheat Flour, Sugar, Wholegrain Wheat Flour, Wholegrain Maize Flour, Pa
+       12.00  above_cap      France/Spain     8480017371997   kcal=386.0 | breakfast-cereals | 
+       11.80  above_cap      Italy            5059319035543   kcal=386.0 | breakfast-cereals | Farine di cereali 79% (frumento, avena, mais), zucchero, sciroppo di g
+--- salt chips (cap 10 g)
+     3125.00  above_cap      US               0856875006056   kcal=535.714285714286 | crisps,potato-crisps | POTATOES, VEGETABLE OIL (CANOLA, SAFFLOWER, SUNFLOWER), SALT & VINEGAR
+     1600.00  above_cap      Canada           0825851010035   kcal=520.0 | crisps,potatoes-and-their-products,potato-crisps,chips | 
+     1600.00  above_cap      Canada           0829515310035   kcal=520.0 | crisps,potatoes-and-their-products,potato-crisps,crisps-made-from-reconstituted-potato,chi | Dried potatoes, Sunflower oil, Seasoning (salt, dehydrated onion, dext
+     1552.50  above_cap      Chile            7802420005046   kcal=482.0 | crisps | 
+     1145.00  above_cap      Australia        9310015247798   kcal=547.942780256355 | crisps | potatoes, canola oil, sunflower oil, salt, antioxidants(tocopherols, a
+     1111.00  above_cap      US               0038000258749   kcal=517.0 | crisps | INGREDIENTES: Papas deshidratadas, aceite vegetal, harina de maíz desg
+     1107.50  above_cap      Brazil           7892840822309   kcal=500.0 | crisps,corn-chips | 
+     1072.50  above_cap      Germany          6009710721551   kcal=527.0 | crisps,potato-crisps,corn-chips | Maize, vegetable oil (palm fruit and/or maize germ or sunflo.ver seed)
+     1071.43  above_cap      US               0708163260933   kcal=535.714285714286 | crisps,potato-crisps | POTATOES, AVOCADO OIL, SEA SALT
+      925.00  above_cap      Canada           0774223326451   kcal=260.0 | crisps,potato-crisps | 
+      745.00  above_cap      Spain            7750481340135   kcal=563.0 | crisps,potatoes-and-their-products,potato-crisps | Papa orgánica, aceite vegetal (de girasol alto oleico) y Sazonador (ha
+      650.00  above_cap      US               0822486237110   kcal=None | crisps,potatoes-and-their-products,potato-crisps,kettle-chips | 
+      400.00  above_cap      US               4061461282394   kcal=535.714285714286 | crisps,potato-crisps | POTATOES, VEGETABLE OIL (CONTAINS ONE OR MORE OF THE FOLLOWING: COTTON
+      357.50  above_cap      Australia        9317224400518   kcal=493.478260869565 | crisps,corn-chips | Yellow Corn Flour (76%), Vegetable Oil, Water, Salt.
+      307.50  above_cap      South Africa     6006323632786   kcal=147.1 | crisps,potatoes-and-their-products,potato-crisps | 
+      140.00  above_cap      US               0078742006246   kcal=160.0 | crisps,corn-chips | ground corn. vegetable oil (contains one or more of the following: cor
+       94.30  above_cap      France           3017490112295   kcal=0.0 | crisps,potato-crisps | Sea salt chips
+       76.20  above_cap      France           6111092000299   kcal=None | crisps | Totas
+       51.00  above_cap      Italy            8019730012964   kcal=519.0 | crisps,potato-crisps | 
+       50.00  above_cap      Canada/US        0084114902801   kcal=500.0 | crisps,potato-crisps | Potatoes, Vegetable oil
+       35.00  above_cap      Spain            8411276221532   kcal=549.0 | crisps | 
+       21.00  above_cap      France           4770140195404   kcal=330.0 | crisps,potato-crisps | flocons de pomme de terre 47%, farine de riz, fécule de pomme de terre
+       20.00  above_cap      Spain            8437001038428   kcal=569.0 | crisps | 
+       19.67  above_cap      Germany          9000159161448   kcal=419.0 | crisps | 83-1546757 670g ne reine Portion = 30g)/ The pack contains-2 portions 
+       18.00  above_cap      France           29036363        kcal=384.0 | crisps,potato-crisps | Dried Potatoes (45%) Rice Flour Rapeseed Oil Potato Starch Cornflour. 
+       17.05  above_cap      UK               4056489895114   kcal=440.0 | crisps | 30% lentil flour, potato starch, vegetable oils in varying proportions
+       16.34  above_cap      France           3325410644482   kcal=203.833333333333 | crisps,potato-crisps | Pommes de terre, huile de tournesol oléique, sel.
+       16.34  above_cap      France           3336970446416   kcal=203.833333333333 | crisps,potato-crisps,potato-crisps-in-sunflower-oil | Pomme de Terre, huile de tournesol, sel
+       16.34  above_cap      France           3760236090103   kcal=203.833333333333 | potatoes-and-their-products,crisps,salty-snacks-made-from-potato,potato-crisps,potato-cris | Pommes de terre, huile de tournesol, sel
+       16.34  above_cap      UK               5010052105672   kcal=203.833333333333 | crisps,potato-crisps,flavoured-potato-crisps | potatoes, sunflower oil, salt
+--- salt instant_noodles (cap 20 g)
+     4800.00  above_cap      India            8906090575546   kcal=438.0 | instant-noodles | 
+     2500.00  above_cap      India            8901058023787   kcal=269.0 | herbs-and-spices,instant-noodles,tastemaker | Noodles: Refined wheat flour (Maida), Palm oil, lodized salt, Iron (mg
+      909.72  above_cap      Australia        9310182300067   kcal=55.0 | soups,instant-noodles,instant-noodle-soups | Noodles 82% (rice, modified starch (1414), tapioca starch, water), Fla
+      740.00  above_cap      Mexico           0041789001956   kcal=77.8 | soups,dried-meals,instant-noodles,dehydrated-soups,instant-noodle-soups | HARINA DE TRIGO ENRIQUECIDA (HARINA DE TRIGO, NIACINA, HIERRO REDUCIDO
+      119.98  above_cap      France           4056489637721   kcal=82.0 | dried-meals,instant-noodles | 90% Nudeln asiatischer Art (Weizenmehl, Palmöl, Speisesalz, Geschmacks
+       23.00  above_cap      Germany          8809296880745   kcal=369.0 | instant-noodles,pflanzliche-lebensmittel-und-getranke | 
+       18.00  kept           France           0079551730148   kcal=180.0 | instant-noodles | nouilles dans deux tasses(500ml) d'eau bouillante et laisser mijoter p
+       16.50  kept           France           3379145045724   kcal=400.0 | instant-noodles | 
+       16.50  kept           France           8857056005099   kcal=230.0 | instant-noodles | 
+       15.00  kept           France           8858598040647   kcal=250.0 | instant-noodles | 
+--- salt ketchup (cap 10 g)
+     3000.00  above_cap      India            8904288603613   kcal=135.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | Water, Tomato Paste&quot; - 28%, Sugar, lodised Salt, Thickeners (INS 
+     3000.00  above_cap      India            8906057206254   kcal=92.5 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | WATER, SUGAR, TOMATO PASTE (18%), LIQUID GLUCOSE, EDIBLE COMMON SALT, 
+     2812.50  above_cap      Brazil           7896025803688   kcal=17.5 | sauces,tomato-sauces,ketchup | 
+     2330.25  above_cap      India            8901246005373   kcal=109.8 | sauces,tomato-sauces,ketchup | 
+     2102.50  above_cap      Chile            7802420005831   kcal=129.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | Agua, concentrado de tomate, azúcar, vinagre de alcohol, sal, almidón 
+     1890.00  above_cap      Spain            7802640600090   kcal=99.0 | sauces,tomato-sauces,ketchup | Agua, concentrado de tomates, azucar, vinagre de alcohol, sal,cloruro 
+       98.35  above_cap      France           4335619105737   kcal=91.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | 
+       34.00  above_cap      Spain            8436006916939   kcal=99.0 | sauces,tomato-sauces,ketchup | 
+       25.00  above_cap      Germany          6251136018191   kcal=107.0 | sauces,tomato-sauces,ketchup | 
+       22.80  above_cap      France           8575700404318   kcal=102.0 | sauces,tomato-sauces,ketchup | 
+       22.00  above_cap      UK               4027400188110   kcal=137.0 | sauces,tomato-sauces,ketchup | 
+       22.00  above_cap      UK               5060127814398   kcal=97.0 | sauces,tomato-sauces,ketchup | 
+       21.00  above_cap      Germany/US       4027400070453   kcal=135.0 | sauces,tomato-sauces,ketchup | Tomatensaft, Zucker, Dextrose, Kochsalz, Curry Senfmehl, Pfeffer, Papr
+       19.00  above_cap      Spain            8410741111101   kcal=96.0 | sauces,tomato-sauces,ketchup | 
+       18.33  above_cap      UK               0604565349453   kcal=45.0 | sauces,tomato-sauces,ketchup | 
+       18.00  above_cap      Spain            04568599        kcal=102.0 | sauces,tomato-sauces,ketchup | 
+       15.00  above_cap      Italy            8034063246299   kcal=112.0 | sauces,tomato-sauces,ketchup | 
+       14.00  above_cap      Germany          4027400170535   kcal=55.0 | sauces,tomato-sauces,ketchup | 
+       13.33  above_cap      Canada           0056200010127   kcal=66.6666666666667 | sauces,tomato-sauces,ketchup | Tomato paste (tomatoes), White vinegar, Water, Salt, Stevia extract, S
+       13.00  above_cap      Spain            8410118046982   kcal=38.0 | sauces,tomato-sauces,ketchup | 
+       12.00  above_cap      Spain            8413080069324   kcal=80.0 | sauces,tomato-sauces,ketchup | Tomate (152 g de tomate para elaborar 100 g de este producto), vinagre
+       11.71  above_cap      Spain            0066200019259   kcal=316.455696202532 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | 
+       10.82  above_cap      UK               5063089281857   kcal=103.2504779952 | sauces,tomato-sauces,ketchup | Tomatoes (148g per 100g of Ketchup), Spirit Vinegar, Sugar, Modified M
+       10.00  kept           Italy            8003100845597   kcal=92.0 | sauces,tomato-sauces,ketchup | 
+        9.33  kept           Canada           0057000063085   kcal=133.0 | sauces,tomato-sauces,ketchup,tomato-ketchup | paste tomato (made of ripe tomatoes well fresh), liquid sugar, white v
+        9.00  kept           UK               5057753939205   kcal=98.0 | sauces,tomato-sauces,ketchup | 
+        8.00  kept           UK               50453443        kcal=102.0 | sauces,tomato-sauces,ketchup,tomato-ketchup | 
+--- salt namkeen (cap 10 g)
+     2830.50  above_cap      India            8909081005619   kcal=536.0 | namkeen | CEREALS AND PULSE MIX {RICE GRITS, DEGERMED CORN GRITS, BENGAL GRAM GR
+     2772.50  above_cap      India/US         8906010500863   kcal=616.0 | bhujia,shing-bhujiq | 
+--- salt sauces (cap 25 g)
+    10740.00  above_cap      US               0649498837981   kcal=45.0 | sauces | Hidratos de carbono disponibles 10.6g Azúcares 2.90 Azúcares añadidos 
+     5075.00  above_cap      Mexico           0009733900005   kcal=30.0 | sauces,hot-sauces | 
+     3000.00  above_cap      India            8904288603613   kcal=135.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | Water, Tomato Paste&quot; - 28%, Sugar, lodised Salt, Thickeners (INS 
+     3000.00  above_cap      India            8906057206254   kcal=92.5 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | WATER, SUGAR, TOMATO PASTE (18%), LIQUID GLUCOSE, EDIBLE COMMON SALT, 
+     2812.50  above_cap      Brazil           7896025803688   kcal=17.5 | sauces,tomato-sauces,ketchup | 
+     2330.25  above_cap      India            8901246005373   kcal=109.8 | sauces,tomato-sauces,ketchup | 
+     2195.00  above_cap      Australia        4088700012383   kcal=358.0 | sauces,alfredo-sauces | 
+     2102.50  above_cap      Chile            7802420005831   kcal=129.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | Agua, concentrado de tomate, azúcar, vinagre de alcohol, sal, almidón 
+     1890.00  above_cap      Spain            7802640600090   kcal=99.0 | sauces,tomato-sauces,ketchup | Agua, concentrado de tomates, azucar, vinagre de alcohol, sal,cloruro 
+     1875.00  above_cap      Australia        9300830083237   kcal=624.829281617044 | sauces,mayonnaises | 
+     1872.50  above_cap      Chile            7805000324629   kcal=307.0 | sauces | Agua, aceites vegetales (soya, maravilla), huevo pasteurizado, almidón
+     1750.00  above_cap      US               0035826102485   kcal=333.333333333333 | sauces,mayonnaises,light-mayonnaises | 
+     1720.00  above_cap      Australia        4905132611505   kcal=738.7 | sauces,mayonnaises | 
+     1515.00  above_cap      Chile            7805000321550   kcal=701.0 | sauces,mayonnaises | ACEITES VEGETALES (SOYA, MARAVILLA), AGUA, HUEVO PASTEURIZADO, VINAGRE
+     1183.33  above_cap      South Africa     6001069602062   kcal=1793.33333333333 | sauces,mayonnaises | Sunflower Seed Oil, Water, Pasteurised Egg Yolk, Spirit Vinegar, Sugar
+     1172.31  above_cap      Mexico           7501006582918   kcal=56.9230769230769 | sauces,tomato-sauces | 
+     1020.00  above_cap      US               0072095032044   kcal=48.0 | sauces,pasta-sauces | 
+      900.00  above_cap      Chile            7801800101002   kcal=43.0 | sauces,tomato-sauces | 
+      866.50  above_cap      Mexico           7501791612678   kcal=216.9 | plant-based-spreads,salted-spreads,sauces,dips,hummus | 
+      700.00  above_cap      Canada           8005360000105   kcal=46.0 | sauces,tomato-sauces | TOMATOES, MIXED VEGETABLES IN VARIABLE PROPORTION CARROT, ONION, CELER
+      397.73  above_cap      UK               0081319840105   kcal=68.1818181818182 | sauces,pasta-sauces,tomato-sauces,arrabbiata-sauces | 
+      267.50  above_cap      Spain            7707316781106   kcal=151.0 | plant-based-spreads,sauces,dips,guacamoles | Pulpa de aguacate, cilantro, zumo de limón, vinagre, sal, antioxidante
+      179.98  above_cap      UK               5000354927249   kcal=104.0 | sauces,curry-sauces | Water, Tomatoes (14%), Apple Purée, Onion, Sunflower Oil, Sugar, White
+      175.00  above_cap      US               0850015308024   kcal=5.0 | sauces,spice-paste | Organic Garlic; Organic Brown Sugar; Mix of Organic & Non GMO Chili; O
+      172.50  above_cap      Italy            8076809570374   kcal=56.0 | sauces,pestos,green-pestos,green-sauces,condimenti,sacche-scrotali-di-maiale,salse,salse-a | Basilico, noci, spacchio, mandorle, pomodorini, spinaci, torcione, raz
+      170.00  above_cap      US               4099100126129   kcal=0.0 | sauces,hot-sauces | AGED RED CAYENNE PEPPERS, DISTILLED VINEGAR, SALT, XANTHAN GUM, GARLIC
+      169.16  above_cap      UK               5063089461808   kcal=69.0 | sauces,salad-dressings | Water, Red Wine Vinegar (9%) [Water, Red Wine Vinegar], Sugar, Dijon M
+      120.00  above_cap      US               0011110810885   kcal=100.0 | sauces,mustards,dijon-mustards | WATER, MUSTARD SEED, VINEGAR, SALT, WHITE WINE, CITRIC ACID, TURMERIC,
+      116.84  above_cap      US               0011110887399   kcal=0.0 | sauces,mustards,dijon-mustards | water, organic mustard seeds, organic vinegar, salt, organic turmeric,
+      115.00  above_cap      US               0041500000992   kcal=100.0 | sauces,mustards,dijon-mustards | Distilled Vinegar, Water, #1 Grade Mustard Seed, Salt, Chardonnay Wine
+--- sugar biscuits (cap 80 g)
+      150.89  out_of_range   France/UK        00747103        kcal=502.958579881657 | biscuits,chocolate-biscuits,dark-chocolate-biscuits,biscuits-cookies-shelf-stable | Farine de blé contient Gluten (avec Farine de blé, Carbonate de calciu
+      135.33  out_of_range   India            8901063093690   kcal=506.666666666667 | biscuits | 
+      127.55  out_of_range   US               0027800063943   kcal=700.0 | biscuits,chocolate-biscuits,drop-cookies,chocolate-chip-cookies,cookies-with-chocolate-and | sugar, enriched flour (wheat flour, niacin, reduced iron, vitamin b₁ [
+      126.67  out_of_range   France/UK        20319618        kcal=473.333333333333 | biscuits | 42% Oat Flakes, Wholemeal Wheat Flour, Palm Oil, Sugar, Invert Sugar S
+      112.00  out_of_range   US               0009800560202   kcal=480.0 | biscuits | WHEAT FLOUR, SUGAR, BUTTEROIL, VEGETABLE OILS (PALM, SHEANUT), WHEAT S
+      110.80  out_of_range   US               0194346617739   kcal=1108.03323684211 | biscuits | Ingredient declaration as it should appear on package SUGAR, ENRICHED 
+       94.44  above_cap      France           7591016871065   kcal=1388.88888888889 | biscuits | harina de Triqo azúcar Grasa Vegetal siguientes: Aceite•de Soya, Ajonj
+       93.00  above_cap      France           3415300000785   kcal=393.0 | biscuits | 
+       91.00  above_cap      Italy            8008560006540   kcal=394.0 | biscuits | 
+       88.00  above_cap      Italy            8008560000043   kcal=392.0 | biscuits | 
+       86.10  above_cap      France           4901313067505   kcal=386.0 | biscuits | 
+       81.00  above_cap      Germany          20840143        kcal=460.0 | biscuits,fruit-a-coque | sucre 80% noisette hachées 20%
+       77.80  kept           UK               8901063140066   kcal=493.0 | biscuits | REFINED WHEAT FLOUR (MAIDA), SUGAR, REFINED PALM OIL & HYDROGENATED VE
+       77.00  kept           Italy            8000965153232   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           France           8001120200815   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           France           8001300800682   kcal=432.0 | biscuits,amaretti | zucchero, mandorie di albicocca 20%, aibume d'uovo, agenti lievitanti 
+       77.00  kept           Italy            8002720152320   kcal=432.0 | biscuits,amaretti | Zucchero, mandorle d'albicocca 20%, albume d'uovo (da allevamento a te
+       77.00  kept           France           8003100915771   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           Italy            8004348127827   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           France           8008620000594   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           Italy            8023797466936   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           Italy            8029513117182   kcal=432.0 | biscuits,amaretti | 
+       77.00  kept           Italy            8030582009896   kcal=432.0 | biscuits,amaretti | 
+       76.50  kept           France           5975958374532   kcal=432.0 | biscuits,amaretti | 
+       76.50  kept           France/Italy     8002720004100   kcal=432.0 | biscuits,amaretti | Zucchero, mandorle d'albicocca 20%, albume d'uovo, agenti lievitanti (
+       76.50  kept           Spain            8002720004186   kcal=432.0 | biscuits,amaretti | 
+       76.50  kept           France           8002720005008   kcal=432.0 | biscuits,amaretti | sucre, amandes de noyaux d'abricot 20%, blanc d'ceuf, poudres à lever 
+       76.50  kept           Italy            8002895065425   kcal=432.0 | biscuits,amaretti | 
+       76.50  kept           Italy            8004905590538   kcal=432.0 | biscuits,amaretti | 
+       76.50  kept           Italy            8007465000837   kcal=454.0 | biscuits | 
+--- sugar breakfast_cereals (cap 75 g)
+      141.67  out_of_range   Mexico           7501008023525   kcal=1250.0 | breakfast-cereals | Maíz, azúcar, glucosa, sal yodada, colorantes (curcuma, annato), melaz
+      111.10  out_of_range   US               0042400189046   kcal=1455.46666666667 | breakfast-cereals,undefined | CORN MEAL, WHOLE GRAIN WHEAT, SUGAR, MOLASSES, CANOLA OIL AND/OR PARTI
+      109.40  out_of_range   France           0004443654059   kcal=360.5 | breakfast-cereals,cereals-with-fruits,mueslis,crunchy-mueslis,mueslis-with-fruits,crunchy- | 
+       80.35  above_cap      US               0016000185173   kcal=1022.64426588751 | breakfast-cereals,extruded-cereals | Whole Grain Oats, Sugar, Corn Syrup, Banana Puree, Corn Starch, Strawb
+       80.00  above_cap      Italy            8003712010727   kcal=380.0 | breakfast-cereals,extruded-cereals | farine di cereali* (65%) (avena* (25%), grano tenero*, mais*), zuccher
+       80.00  above_cap      France           8801566000006   kcal=400.0 | breakfast-cereals,puffed-grains,puffed-cereals,puffed-rice | Riz, sucre, sirop de maïs, eau, gélatine, margarine, assaisonnement de
+       71.00  kept           Australia/France 26083520        kcal=456.0 | breakfast-cereals,mueslis | Oat Flakes (39%), Sultanas (19%) (Contains Sultanas (99.5%), Vegetable
+       68.75  kept           US               00896931        kcal=375.0 | breakfast-cereals | organic rolled oats, organic cane sugar, organic flaxseed, sea salt.
+       68.75  exceeds_energy US               4099100077551   kcal=254.237288135593 | breakfast-cereals | organic rolled oats, organic cane sugar, organic flaxseed, sea salt,
+       67.10  kept           Germany          8710624355395   kcal=467.0 | breakfast-cereals,chocolate-cereals | 
+       66.67  kept           US               0037000741343   kcal=333.333333333333 | breakfast-cereals | Sucrose, psyllium husk, citric acid, natural and artificial orange fla
+       63.33  kept           US               69368257        kcal=366.66666666667 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes | 
+       63.16  kept           US               0042400293965   kcal=394.736842105263 | breakfast-cereals | Sugar, wheat, corn syrup, salt, honey, caramel color, thiamin mononitr
+       63.00  kept           UK               5057172152162   kcal=277.0 | breakfast-cereals,cereals-with-fruits,mueslis,bircher-style-mueslis,mueslis-with-fruits,bi | RAISINS AND DICED APRICOTS SNACK BOX (40): [Raisins (75%). Apricots [A
+       62.80  kept           France           3760014421556   kcal=396.0 | breakfast-cereals,cereals-with-fruits,mueslis,mueslis-with-fruits | 
+       61.11  kept           US               0038000282829   kcal=388.88888888889 | breakfast-cereals | 
+       60.30  kept           France           4008569008266   kcal=374.0 | breakfast-cereals,flakes,cereal-flakes | *Apport de référence pour un adulte-type (8 400 kJ/2
+       60.00  kept           Spain            8426633050168   kcal=464.0 | breakfast-cereals,mueslis | 
+       59.46  kept           US               0038000916106   kcal=351.351351351351 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes | Milled corn, sugar, malt flavor, salt, bht, vitamins and minerals (iro
+       59.46  kept           US               0041192100192   kcal=540.540540540541 | breakfast-cereals,breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements | Milled corn, sugar, malt flavor, salt, iron (ferric phosphate), niacin
+       58.33  kept           Canada/UK        5000108030539   kcal=378.0 | breakfast-cereals,cereals-with-fruits,porridge,porridge-with-fruits | Wholegrain Rolled Oats (77%), Sugar, Dried Apple Pieces (1%), Dried Bl
+       58.00  kept           France           3770001258294   kcal=522.0 | breakfast-cereals,chocolate-cereals,breakfast-chocolate-cereals-not-filled-and-not-fortifi | 
+       56.76  kept           US               0038000273384   kcal=540.540540540541 | breakfast-cereals,flakes,cereal-flakes,extruded-cereals,extruded-flakes,corn-flakes | Milled corn, sugar, malt flavor, salt, vegetable juice for color, natu
+       37.50  exceeds_energy US               00434645        kcal=0.0 | breakfast-cereals | 
+       36.00  exceeds_energy US               0769494200111   kcal=4.0 | breakfast-cereals | 
+       35.44  exceeds_energy Australia/France 9310055537194   kcal=117.0 | breakfast-cereals,puffed-grains,puffed-cereals,puffed-rice | whole white rice (59%), sugar, cocoa (3%), minerals (calcium carbonate
+       35.19  exceeds_energy US               0041268133079   kcal=18.518518518519 | breakfast-cereals | whole grain wheat, sugar, rice, raisins, wheat bran, corn syrup, whole
+       34.38  exceeds_energy US               0016000503618   kcal=3.125 | breakfast-cereals | Whole grain corn, sugar, corn meal, corn syrup, cocoa processed with a
+       33.33  exceeds_energy US               0041498220112   kcal=13.333333333333 | breakfast-cereals | 
+       33.00  exceeds_energy France           8858358002021   kcal=110.0 | breakfast-cereals,cereals-with-fruits,mueslis,mueslis-with-fruits | Banaani, riisiöljy
+--- sugar cakes (cap 80 g)
+      139.63  out_of_range   UK               5059697689444   kcal=1488.88888888889 | cakes | 
+       99.80  above_cap      France           11240556        kcal=399.0 | cakes | Sucre de canne roux
+       95.00  above_cap      France           3286790113961   kcal=396.0 | cakes | Sucre, blancs d'OEUFS issus de poules élevées en plein air, arômes, co
+       89.00  above_cap      Germany          20238971        kcal=387.0 | cakes | 35% farine de blé, sucre, préparation de matières grasses (huiles végé
+       88.49  above_cap      France           4711931010872   kcal=360.262784090909 | cakes,pastries,mochi | Maltose, sucre, tréhalose, riz gluant, hydroxypropyl phosphate de diam
+       85.00  above_cap      Germany          4002809025594   kcal=398.0 | cakes | Zucker*, Weizenstärke*, Kartoffelstärke*, Sonnenblumenöl*, Reismehl*, 
+       84.40  above_cap      Spain            8412505010118   kcal=391.0 | cakes | 
+       81.00  above_cap      France           8423236005571   kcal=351.0 | cakes | 
+       78.00  kept           France           3760205220005   kcal=414.0 | cakes,breton-cakes | Farine, sucre, _beurre_ 25 %, jaune d'_œuf_ et sel).
+       77.99  kept           France           4711931011343   kcal=339.541015625 | cakes,pastries,mochi | Maltose, sucre, riz gluant, amidon, huile végétale, pâte de _sésame_, 
+       76.00  kept           France           3760242621216   kcal=320.0 | cakes,filled-cakes | 
+       76.00  exceeds_energy France           80851776        kcal=3.0 | cakes,doughnuts | 
+       75.00  kept           France           7704635111188   kcal=400.0 | cakes | 
+       74.40  kept           France           4976977001295   kcal=325.0 | cakes | 
+       74.07  kept           Canada           0058336003325   kcal=407.40740740741 | cakes | SUGAR, CORN STARCH, MODIFIED CORN STARCH, CITRIC ACID, SALT, SIMULATED
+       73.60  kept           France           8720354784761   kcal=414.0 | cakes | Zucker, 20% MANDELN, Stabilisator E420, Invertzuckersirup, Verdickungs
+       68.00  kept           Canada           0065633180079   kcal=400.0 | biscuits,cakes,chocolate-biscuits,chocolate-cakes,brownies | FARINE DE BLÉ ENRICHIE, SIROP DE MAÏS, SUCRE, GRAINS À SAVEUR DE CHOCO
+       68.00  kept           UK               4088600031668   kcal=353.0 | cakes,fruit-cakes | Sultanas 26 %, brown sugar, soft icing 10 % (sugar, glucose syrup, wat
+       68.00  kept           France           8719831322855   kcal=345.0 | cakes,doughnuts | 
+       67.90  kept           US               4099100239164   kcal=382.978723404255 | cakes,muffins | SUGAR, ENRICHED FLOUR BLEACHED (WHEAT FLOUR, NIACIN, REDUCED IRON, THI
+       67.86  kept           Canada           0771856465335   kcal=378.57142857143 | cakes,doughnuts | 
+       67.00  kept           France           3488430006330   kcal=426.0 | cakes,breton-cakes | Sucre, amandes hachées 15%, farine de blé, écorces d'orange 7,5% (écor
+       66.70  kept           France           5000159460811   kcal=447.0 | cakes | sucre, sirop de glucose, lait écrémé en poudre, beurre de cacao, pâte 
+       66.58  kept           UK               00623599        kcal=476.68275 | cakes | Milk Chocolate (38%) (Sugar, Cocoa Butter, Dried Whole Milk, Cocoa Mas
+       66.00  kept           Spain            8412554000580   kcal=329.0 | fruits-and-vegetables-based-foods,fruits-based-foods,fruits,cakes,dates,soft-cake-with-nut | dates (88%),  walnuts  (12%),
+       65.40  kept           Italy            8009380231501   kcal=497.2 | biscuits,cakes | 
+       65.22  kept           US               0039978004734   kcal=391.304347826087 | cakes,baking-mix | Powdered Sugar (Sugar, Cornstarch), Flour Blend (Enriched Wheat Flour 
+       65.00  kept           Germany          4056489207146   kcal=335.0 | cakes,doughnuts | 
+       64.86  kept           Mexico           0039978414649   kcal=413.513513513513 | flours,cakes,chocolate-cakes,brownies | Azúcar, mezcla de harinas sin gluten (harina de arroz blanco dulce, ha
+       64.86  kept           Canada           0667888093472   kcal=432.432432432432 | cakes,filled-sponge-cake-rolls | Sugar (sugar, glucose-fructose syrup), Non-hydrogenated vegetable fat,
+--- sugar chips (cap 40 g)
+      100.00  above_cap      UK               50002184        kcal=15000.0 | crisps,corn-chips | 
+       71.00  above_cap      France           7006474410645   kcal=350.0 | crisps | 
+       69.60  above_cap      Spain            8713576001709   kcal=358.0 | crisps | 
+       69.00  above_cap      France           5600961110623   kcal=355.0 | crisps | 
+       68.00  above_cap      US               03813201        kcal=348.0 | crisps,potato-crisps | Dried potatoes, vegetable oil (contains one or more of the following: 
+       65.00  above_cap      Germany          4305615754307   kcal=415.0 | crisps | Jackfruchtstücke*, Kokosnussöl*. Laktosegehalt unter 0,1 g/100 g.
+       64.00  above_cap      France           3770001230702   kcal=327.0 | crisps | 
+       63.00  above_cap      France           7311310032081   kcal=466.0 | crisps,corn-chips | 
+       59.00  above_cap      France           4018077632006   kcal=536.0 | potatoes-and-their-products,crisps,salty-snacks-made-from-potato,potato-crisps,puffed-salt | Vegetable oils (sunflower, rapeseed), potato powder, potato starch, co
+       57.10  above_cap      France           8934743012131   kcal=457.0 | crisps | Fresh Jackfruit (98%) and vegetable oil.
+       56.00  above_cap      Germany          4260480782872   kcal=318.0 | crisps | 
+       56.00  above_cap      France           4901940111107   kcal=565.0 | crisps,corn-chips | CORN GRITS(NON-GMO), SUGAR, VEGETABLE OIL, PEANUT, MARGARINE, MALT SUG
+       54.00  above_cap      France           4255582803259   kcal=335.0 | crisps | 
+       54.00  above_cap      UK               5000328013343   kcal=513.0 | crisps,potatoes-and-their-products,potato-crisps | Potatoes, Vegetable Oils (Sunflower, Rapeseed, in varying proportions)
+       53.00  above_cap      UK               5000328035369   kcal=508.365200764818 | crisps | TYNICAL TRITIONAL VALUES PER 100g 2127kJ PER 25g(%*) PACK 532kJ(6%*)
+       52.00  above_cap      France           3770017991048   kcal=540.0 | crisps | Pommes de terre bio*, Huile de tournesol oléique bio*, Piment d'Espele
+       51.00  above_cap      France/Germany   4061462470981   kcal=299.0 | crisps | 
+       50.60  above_cap      UK               4901330407117   kcal=548.0 | potatoes-and-their-products,crisps,salty-snacks-made-from-potato,potato-crisps | 2HF38 名称 ポテトチップス 原材料名 じゃがいも(国産又はアメリ 力)、植物油、食塩、 こんぶエ キスパウダー / 調味料 (ア ミノ
+       48.70  above_cap      Germany          4260480782902   kcal=320.0 | crisps | Rote Beete (59%), Süßkartoffel (40%), Meersalz (1%).
+       48.00  above_cap      Indonesia        8886467100017   kcal=520.0 | potatoes-and-their-products,crisps,salty-snacks-made-from-potato,stacked-extruded-potato-c | RH.30
+       47.00  above_cap      UK               5060503504639   kcal=405.0 | crisps | What's inside me Organic maize flour 67%, Organic rice flour 12%, Orga
+       46.10  above_cap      UK               5010251757962   kcal=316.0 | crisps | 
+       46.00  above_cap      France           4549660884279   kcal=576.0 | crisps,corn-chips | 
+       46.00  above_cap      France           4550002874438   kcal=483.0 | crisps | 
+       45.20  above_cap      France           3770000910032   kcal=492.0 | crisps | Betterave (72 %) d'origine France et Espagne, huile végétale de tourne
+       45.00  above_cap      France           3541607000002   kcal=390.0 | crisps | pomme bio Vegan
+       45.00  above_cap      France/Spain     3770000910506   kcal=493.0 | crisps | 
+       45.00  above_cap      Germany          7613312209707   kcal=282.0 | crisps | 
+       44.44  above_cap      France/UK        5000328149035   kcal=485.185185185185 | crisps,corn-chips,flavoured-corn-crisps | Sunflower Oil, Breadcrumbs [Wheat flour, Salt, Yeast, Paprika, Colours
+       44.00  above_cap      France           3770010804574   kcal=513.0 | crisps,potato-crisps | Pommes de terre, huile de tournesol, poudre d'échalote (3,5%). arôme n
+--- sugar chocolate (cap 80 g)
+      587.50  out_of_range   UK               7610400096607   kcal=7029.75621414914 | chocolates | sugar, cocoa butter, cocoa mass, whole milk powder, almonds, coconut f
+      221.89  out_of_range   US               0034000190669   kcal=500.0 | chocolates,dark-chocolates,flavoured-chocolates,flavoured-dark-chocolates | sugar, chocolate, milk, cocoa butter, skim milk, milk fat, lecithin (s
+      155.56  out_of_range   Canada/France    0037466083377   kcal=533.333333333333 | chocolates,dark-chocolates,dark-chocolate-bar | Sugar, Cocoa mass, Cocoa butter, Milk ingredients, Soy lecithin, Chili
+       95.50  above_cap      France           6186000337613   kcal=600.0 | chocolates,dark-chocolates,dark-chocolates-with-cocoa-nibs | sucre roux
+       95.00  above_cap      UK               20675097        kcal=398.0 | chocolates | 
+       90.90  above_cap      Mexico           2548058630094   kcal=407.42 | chocolates | Azúcar, cocoa, maltodextrina, lecticina de soya y saborizantes artific
+       90.90  above_cap      Mexico           7501059297012   kcal=407.42 | chocolates | Azúcar, cocoa, maltodextrina, lecticina de soya y saborizantes artific
+       90.00  above_cap      France           3588400260721   kcal=373.0 | festive-foods,chocolate-candies,bonbons,chocolates,easter-food,chocolate-eggs,easter-eggs, | 
+       89.80  above_cap      France           3760027470206   kcal=526.0 | chocolates,dark-chocolates | Pâte de cacao*, Sucre de canne complet*, Beurre de cacao*, Vanille*. *
+       86.50  above_cap      France           8720354402221   kcal=423.0 | chocolates | 
+       83.33  above_cap      US               0071720539446   kcal=433.333333333333 | chocolate-candies,chocolates,dark-chocolates,filled-chocolates,dark-chocolate-filled-with- | SUGAR, SEMI-SWEET CHOCOLATE (SUGAR, CHOCOLATE PROCESSED WITH ALKALI, C
+       79.40  kept           Germany          2000000136304   kcal=453.0 | chocolates | Schokoladen-Dragees mit Schokolade 53% und Zuckerüberzug mit Pfeffermi
+       78.00  kept           Germany          4008468013477   kcal=403.0 | chocolates | azucar, chocolate amargo 16%(azucar, masa de cacao, manteca de cacao, 
+       77.68  kept           Canada/France    0059800200806   kcal=325.056818181818 | chocolates | Glucose syrup, Sugar, Modified milk ingredients, Cocoa mass, Cocoa but
+       77.10  kept           France           29100224        kcal=398.0 | chocolates | 
+       77.00  kept           Germany          8715700127941   kcal=460.09 | chocolates | Suiker, magere melkpoeder, cacaoboter', lactose, gefractioneerd melkve
+       76.10  kept           Italy            8006070055003   kcal=390.0 | chocolates,candies | 
+       75.50  kept           UK               5022259000117   kcal=402.0 | chocolates,dark-chocolates,filled-chocolates,dark-chocolate-filled-with-mint-confectionery | Sugar, Glucose Syrup, Water, Dark Chocolate (15%) (Cocoa Mass, Sugar, 
+       75.00  kept           US               0099482526740   kcal=500.0 | chocolates,dark-chocolates | DARK CHOCOLATE (chocolate liquor, sugar, cocoa butter, soy lecithin, v
+       75.00  kept           Mexico           09532227        kcal=451.7 | chocolates | Azúcar, pasta de cacao, lecticina de soya, grasa vegetal, saborizante 
+       75.00  kept           France           11434795        kcal=480.0 | bars,chocolates,milk-chocolates,chocolat | молочный шоколад (сахар, какао масло, какао тертое, сухое обезжиренное
+       75.00  kept           Mexico           7501058631213   kcal=478.72 | chocolates | Azúcar, pasta de cacao, grasa vegetal, lecticina de soya, saborizantes
+       75.00  kept           Mexico           7501059289444   kcal=451.7 | chocolates | 
+       74.00  kept           France           3564700812839   kcal=466.0 | festive-foods,chocolate-candies,bonbons,chocolates,easter-food,chocolate-eggs,easter-eggs, | V CHOCOLAT AU LAIT FOIhRAGE 4/ X ÉCLATS DE NOISETTES wGRÉ IENTS {h0C91
+       74.00  kept           France/Germany   4056489136026   kcal=454.0 | chocolates | GB IE 50% Milk chocolate in a colourful crisp sugar shell. Ingredients
+       73.33  kept           Spain            7750960000048   kcal=413.333333333333 | chocolates | Azúcar, Cacao en polvo, - Extracto de malta (CONTIENE GLUTEN), Emulsif
+       73.00  kept           UK               5034660021357   kcal=404.0 | chocolates | Sugar, cocoa powder, acidity regulator (potassium carbonates), flavour
+       72.50  kept           Canada           0059800322379   kcal=450.0 | chocolates | 
+       72.00  kept           Germany          4001518102527   kcal=396.0 | chocolates,filled-chocolates | Zucker, Wasser, Kakaomasse°, Kakaobutter°, Orangen - saftkonzentrat, M
+       72.00  kept           France           8718906618602   kcal=490.0 | chocolates,dark-chocolates | sucre de canne*, cacao maigre en poudre*, beurre de cacao*, émulsifian
+--- sugar flavoured_milk (cap 30 g)
+      180.00  out_of_range   France           3700278406135   kcal=1290.0 | dairy-drinks,flavoured-milks,milkshakes | Sucre, dextrose, cacao fortement dégraissé (11%), épaississant : carbo
+       80.00  above_cap      Australia        9300605120693   kcal=391.100295498001 | dairy-drinks,flavoured-milks | geed feed, geed life good to know nesquk chocolate makes milk fun and 
+       72.22  above_cap      US               0041483024343   kcal=452.77777777778 | dairy-drinks,flavoured-milks,chocolate-milks | Lowfat milk, sugar, less than 1% of: cocoa (processed with Alkali), co
+       67.70  above_cap      UK               4056489479222   kcal=313.0 | dairy-drinks,flavoured-milks,chocolate-milks,partially-skimmed-chocolate-milks,partially-s | Invert Sugar Syrup, Fat Reduced Cocoa Powder 9.7%
+       63.20  above_cap      Australia        9310631620814   kcal=392.2 | dairy-drinks,flavoured-milks | Sugar, cocoa powder (35%), milk solids, flavour, salt.
+       63.00  above_cap      France           3474340014466   kcal=386.0 | dairy-drinks,flavoured-milks,milkshakes | 
+       60.86  above_cap      US               0041900072827   kcal=372.0 | milks-liquid-and-powder,dairy-drinks,milks,flavoured-milks,chocolate-milks | nonfat milk, liquid sugar (sugar, water), less than 1% of cocoa (proce
+       58.00  above_cap      Spain            7622300373627   kcal=530.0 | dairy-drinks,flavoured-milks,chocolate-milks | 
+       57.00  above_cap      Germany          4036018496821   kcal=527.2 | dairy-drinks,flavoured-milks,chocolate-milks | 
+       56.70  above_cap      France/Spain     0034000190454   kcal=487.0 | dairy-drinks,flavoured-milks,chocolate-milks | hershey's - milk chocolate giant 1980 tablette de chocolat au lait - 1
+       55.33  above_cap      Australia        9300605130111   kcal=380.0 | dairy-drinks,flavoured-milks | 1.26 non fat milk solids (51%), sugar, maltodextrin, dutched cocna (6 
+       54.70  above_cap      India            8902433003707   kcal=539.0 | dairy-drinks,flavoured-milks,chocolate-milks | Sugar, Milk solids, Cocoa butter, Cocoa solids, Edible vegetable fats 
+       53.00  above_cap      France/Spain     7613379156723   kcal=550.0 | dairy-drinks,flavoured-milks,chocolate-milks | 
+       50.00  above_cap      US               0077741508331   kcal=400.0 | dairy-drinks,flavoured-milks,chocolate-milks | Whole milk, high fructose corn syrup, cocoa, processed with alkali, sa
+       49.40  above_cap      South Africa     6009644997176   kcal=392.0 | dairy-drinks,flavoured-milks,milkshakes | Reconstituted Milk, Sugar, Modified Starch, Vegetable fat, Stabilizers
+       45.00  above_cap      US               0072730264502   kcal=360.0 | dairy-drinks,flavoured-milks,chocolate-milks | MILK, SUGAR, COCOA PROCESSED WITH ALKALI, COCOA, CORNSTARCH, SALT, CAR
+       45.00  above_cap      Australia        9310232957593   kcal=390.0 | dairy-drinks,flavoured-milks,chocolate-milks | sugar, cocoa powder (1%). natural flavours, vegetable gum (carrageenan
+       42.30  above_cap      France           96097892        kcal=417.0 | dairy-drinks,flavoured-milks,milkshakes | 
+       36.36  above_cap      Indonesia        8998666001306   kcal=500.0 | dairy-drinks,flavoured-milks | Krimer Nabati, Gula, Kopi Instan (8,3%), Perisa Sintetik, Susu Bubuk S
+       35.00  above_cap      France           8016225287982   kcal=599.0 | dairy-drinks,flavoured-milks,chocolate-milks | 
+       33.40  exceeds_energy Spain            8437009625651   kcal=38.0 | dairy-drinks,flavoured-milks | 
+       32.60  above_cap      Australia        9311336030007   kcal=261.5 | dairy-drinks,flavoured-milks,chocolate-milks | reduces fat milk (95%), sugar, cocoa (0.5% minimum), flavours, vegetab
+       28.65  kept           India            8901058021950   kcal=125.85 | dairy-drinks,flavoured-milks | Milk solids and Sugar. Allergen Note: Contains Milk.
+       26.16  kept           Canada           0813993006573   kcal=181.434599156118 | dairy-drinks,flavoured-milks,ice-creams-and-sorbets,milkshakes | Modified milk ingredients, Water, Sugars (sugar, glucose), Cream, Modi
+       26.00  kept           Canada           0066800100685   kcal=160.0 | dairy-drinks,flavoured-milks,chocolate-milks,partially-skimmed-chocolate-milks | Partly skimmed milk, Sugars (sugar/glucose-fructose), Cocoa, Caramel, 
+       25.74  kept           Canada           0813993006511   kcal=189.873417721519 | dairy-drinks,flavoured-milks,milkshakes | Modified milk ingredients, Sugars (sugar, glucose), Water, Cream, Coco
+       25.74  kept           Canada           0813993006559   kcal=189.873417721519 | dairy-drinks,flavoured-milks,milkshakes | Modified milk ingredients, Water, Sugars (sugar, glucose), Cream, Choc
+       24.89  kept           Canada           0813993006535   kcal=177.215189873418 | dairy-drinks,flavoured-milks,milkshakes | Modified milk ingredients, Water, Sugars (sugar, glucose), Cream, Natu
+       24.89  kept           Canada           0813993006566   kcal=194.092827004219 | dairy-drinks,flavoured-milks,milkshakes | Modified milk ingredients, Water, Sugars (sugar, glucose), Cream, REES
+       23.50  kept           France           3033491764592   kcal=214.0 | dairy-drinks,flavoured-milks,chocolate-milks,milkshakes,sweetened-beverages | Lait partiellement écrémé (89,3%), sucre, amidon, chocolat (2,5%) (pât
+--- sugar ice_cream (cap 60 g)
+       88.00  above_cap      France           3179142065400   kcal=411.0 | ice-creams-and-sorbets,ice-creams | 
+       80.00  above_cap      Canada           0060383202620   kcal=400.0 | ice-creams-and-sorbets,ice-creams,ice-cream-tubs | enriched wheat flour, tapioca starch, sugar, canola oil, baking soda, 
+       64.00  above_cap      France           6111180003775   kcal=513.0 | ice-creams-and-sorbets,ice-creams,ice-cream-tubs | Sucre, sirop de glucose, graisse végétale non hydrogénée, esters acéti
+       63.36  above_cap      Germany          8033510399014   kcal=366.254947916667 | ice-creams-and-sorbets,ice-creams | Rehydriertes Magermilchpulver, Zucker, Glukosesirup, Eigelb, Sahne, Ma
+       63.30  above_cap      France           6111180003768   kcal=511.0 | ice-creams-and-sorbets,ice-creams | 
+       61.28  above_cap      France           8717729581698   kcal=261.253333333333 | ice-creams-and-sorbets,ice-creams | lait entier, sucre, glucose, dextrose, figues 15%, jaune d'oeuf, crème
+       57.30  kept           Germany          6111255771196   kcal=542.0 | chocolate-candies,ice-creams-and-sorbets,ice-creams | ماء، سكر، مسحوق الحليب غير مدسم، مادة دسمة نباتية،   شراب الكليكوز، مس
+       56.25  kept           US               0794711014998   kcal=343.75 | ice-creams-and-sorbets,bars,ice-creams,ice-cream-candy-chocolate-bars | Glucose syrup, sugar, modified corn starch, gelatin (beef), apple juic
+       55.50  kept           France           3770011851560   kcal=290.0 | ice-creams-and-sorbets,ice-creams,ice-cream-tubs,vanilla-ice-cream-tubs | 
+       53.00  kept           France           3701504412128   kcal=312.0 | ice-creams-and-sorbets,ice-creams,ice-cream-tubs | 
+       52.30  kept           Germany/US       4056489742623   kcal=342.0 | ice-creams-and-sorbets,ice-creams | 57% passievruchtmeringue (96,6% meringue (suiker, kippenei-eiwit*, kip
+       52.00  kept           France           7622201407223   kcal=560.0 | ice-creams-and-sorbets,ice-creams,sundae-ice-cream | Sucre, graisses végétales (palme, palmiste), lait écrémé en poudre, be
+       51.00  kept           France           3858889865466   kcal=403.0 | ice-creams-and-sorbets,ice-creams | Šećer, glukozni sirup, kakao masa, voda, banana kaša (3 %), kakao masl
+       50.00  exceeds_energy US               0070640025312   kcal=170.212765957447 | ice-creams-and-sorbets,ice-creams | ULTRAFILTERED SKIM MILK*, SKIM MILK, SUGAR, SOLUBLE CORN FIBER, WHEAT 
+       50.00  kept           Italy            8032891928424   kcal=394.0 | ice-creams-and-sorbets,ice-creams | 
+       49.00  kept           France           8719638163835   kcal=474.0 | ice-creams-and-sorbets,ice-creams | 
+       48.00  kept           Italy            8032505815874   kcal=370.0 | ice-creams-and-sorbets,ice-creams | 
+       47.49  kept           France           4779042357262   kcal=543.0 | ice-creams-and-sorbets,ice-creams | 
+       46.90  kept           Germany          4311501128077   kcal=456.0 | ice-creams-and-sorbets,ice-creams | Zucker, 18,0% Mandeln, Hühnerei-Eiweiß, Schlagsahne, Weiße Schokolade 
+       46.36  kept           Australia/France 9300657173418   kcal=581.218494698418 | bars,ice-creams-and-sorbets,ice-creams,chocolate-coated-ice-cream | vegetable oils [protected with antioxidant (319), sugar, cocoa powder 
+       45.00  kept           India            8906151991148   kcal=200.0 | ice-creams-and-sorbets,ice-creams | 
+       30.00  exceeds_energy France           8005840005941   kcal=6.5999999046326 | ice-creams-and-sorbets,ice-creams | 
+       28.20  exceeds_energy France           5400141119572   kcal=53.0 | ice-creams-and-sorbets,ice-creams | 
+       28.00  exceeds_energy Spain            8413080004998   kcal=7.0 | ice-creams-and-sorbets,ice-creams | 
+       28.00  exceeds_energy Spain            8414609031341   kcal=76.0 | ice-creams-and-sorbets,ice-creams,ice-cream-bars | zumos de fruta a base de concentrado (37%) (manzana, cereza y saúco), 
+       26.90  exceeds_energy UK               00919180        kcal=25.0 | ice-creams-and-sorbets,ice-creams | 
+       26.00  exceeds_energy France           3564706657854   kcal=12.0 | ice-creams-and-sorbets,ice-creams | 
+       25.93  exceeds_energy US               0744473492138   kcal=87.962962962963 | ice-creams-and-sorbets,ice-creams | non-dairy frozen dessert (almondmilk [filtered water, almonds], cane s
+       25.00  exceeds_energy Italy            4099200865393   kcal=72.0 | ice-creams-and-sorbets,ice-creams,ice-cream-sandwiches | 
+       25.00  exceeds_energy France/Germany/S 8711327373105   kcal=67.2413793103448 | ice-creams-and-sorbets,ice-creams,ice-cream-tubs,luxury-ice-cream-in-a-cup | Cream (MILK) (27%), water, condensed skimmed MILK sugar, WHEAT flour, 
+--- sugar instant_noodles (cap 40 g)
+       59.50  above_cap      France           4902105107102   kcal=346.0 | instant-noodles | 
+       57.00  above_cap      Germany          4976740902774   kcal=478.0 | instant-noodles | Nudeln (WEIZENmehl, Palmöl, Salz, modifizierte Stärke, Säureregulator 
+       52.30  above_cap      France           0719076020026   kcal=470.0 | instant-noodles | 
+       43.41  above_cap      Australia        4562214822893   kcal=367.441860465116 | instant-noodles | Wheat flour, vegetable protein, salt, flavor oil, pork extract, soy sa
+       39.60  kept           Germany          8711299017243   kcal=536.0 | instant-noodles | Reiscrackern mit Rindfleischnudelgeschmack 49% Erdnuss, 19% Reis, Sonn
+       32.20  kept           UK               6936381704395   kcal=131.0 | instant-noodles,spicy-potato-noodles | Potato Noodle (72%): Potato Starch, Water, Tapioca Starch, Corn Starch
+       17.00  exceeds_energy Italy            6971642210024   kcal=8.9 | instant-noodles | 
+--- sugar ketchup (cap 50 g)
+       62.00  above_cap      Spain            8435023450075   kcal=256.0 | sauces,tomato-sauces,ketchup | 
+       62.00  above_cap      Spain            8435023450099   kcal=256.0 | sauces,tomato-sauces,ketchup | 
+       62.00  above_cap      Spain            8435023450433   kcal=256.0 | sauces,tomato-sauces,ketchup | 
+       60.00  above_cap      France           0628251683119   kcal=266.666666666667 | sauces,tomato-sauces,ketchup,tomato-ketchup | 
+       59.00  above_cap      France           8715700401195   kcal=241.0 | sauces,tomato-sauces,ketchup | 
+       53.60  above_cap      France           3019898465171   kcal=None | sauces,tomato-sauces,ketchup | 
+       44.00  kept           Germany          4260523030038   kcal=210.0 | sauces,tomato-sauces,ketchup | 
+       41.00  kept           Germany          87157833        kcal=185.0 | sauces,tomato-sauces,ketchup | Sucre, eau, vinaigre, poivrons, purée de tomates mi-réduite, amidon mo
+       40.90  kept           Germany          4045178009642   kcal=178.0 | sauces,tomato-sauces,ketchup | 
+       40.60  kept           Germany          4260360271861   kcal=178.9 | sauces,tomato-sauces,ketchup | 
+       40.60  kept           Germany          4045178006535   kcal=178.89999389648 | sauces,tomato-sauces,ketchup | Tomaten (aus Konzentrat) (46%), Rohrohrzucker, Weinessig, _Tamari_ (_S
+       40.30  kept           UK               5037158002438   kcal=211.0 | sauces,tomato-sauces,ketchup | 
+       40.20  kept           Germany          4104560031637   kcal=221.0 | sauces,tomato-sauces,ketchup | 
+       40.00  kept           Canada           0776697010492   kcal=166.66666666667 | sauces,tomato-sauces,ketchup | 
+       40.00  kept           Canada           0812766008080   kcal=200.0 | sauces,tomato-sauces,ketchup | 
+       39.50  kept           France/Germany/S 4388844106086   kcal=186.0 | sauces,tomato-sauces,ketchup | 
+       38.00  kept           UK               00150139        kcal=171.0 | sauces,meal-sauces,tomato-sauces,vegetable-sauces,ketchup | Banana (67%), sugar, vinegar, ginger, turmeric, salt, garlic, chilli
+       38.00  kept           UK               5060183362901   kcal=198.0 | sauces,tomato-sauces,ketchup | Brown Sugar, Acetic Acid, Black Garlic (16%), Sugar, Onions, Balsamic 
+       38.00  kept           Italy            8056585160921   kcal=160.0 | sauces,tomato-sauces,ketchup | 
+       37.97  kept           Spain            0066200019259   kcal=316.455696202532 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | 
+       37.50  kept           Germany          29020690        kcal=176.0 | fruits-and-vegetables-based-foods,vegetable-based-foods-and-beverages,vegetables-based-foo | 30 % Tomatensaft, Wasser, Zucker, Glukose-Fruktose-Sirup, Branntweines
+       31.50  exceeds_energy France           5425021580167   kcal=75.0 | sauces,tomato-sauces,ketchup | 
+       29.41  exceeds_energy France           0751685000440   kcal=88.235294117647 | sauces,tomato-sauces,ketchup | 
+       26.67  exceeds_energy US               0769470003804   kcal=6.6666666666667 | sauces,tomato-sauces,ketchup | TOMATO CONCENTRATE MADE FROM VINE RIPENED TOMATOES, CANE SUGAR, DISTIL
+       25.00  exceeds_energy Germany          4250780324162   kcal=12.0 | sauces,tomato-sauces,ketchup | 
+       23.00  exceeds_energy Spain            8715700210889   kcal=33.0 | sauces,tomato-sauces,ketchup | 
+       22.80  exceeds_energy France           8715700421117   kcal=0.1 | sauces,tomato-sauces,ketchup | 
+       20.00  exceeds_energy Canada           0066086020905   kcal=66.666666666667 | sauces,tomato-sauces,ketchup | 
+       20.00  exceeds_energy Canada           0833280000206   kcal=66.6666666666667 | sauces,tomato-sauces,ketchup | Crushed tomatoes, tomato paste, white vinegar, organic and fair trade 
+       20.00  exceeds_energy Canada           0858361000098   kcal=66.666666666667 | sauces,tomato-sauces,ketchup | 
+--- sugar sauces (cap 90 g)
+     5555.00  out_of_range   France           5111000007649   kcal=6.0 | sauces | 
+      578.00  out_of_range   France           8718719365526   kcal=6860.0 | sauces,hot-sauces,sambal | 37% ground red pepper (salt), ground onions (sulphite), sugar, soft br
+      400.00  out_of_range   US               0072343000252   kcal=45.4545454545455 | sauces,tomato-sauces | Tomato Puree (Water, Tomato Paste), Sugar, Sea Salt, Olive Oil, Onions
+      400.00  out_of_range   US               0078742232195   kcal=151.85 | specific-products,products-for-specific-diets,products-without-gluten,sauces,mustards,dijo | 
+      196.00  out_of_range   France/Germany   8711200382347   kcal=245.0 | sauces,soy-sauces | Suiker, sojasaus 26,5% (water, SOJABOON, Zout, TARWE, conserveermiddel
+      177.78  out_of_range   Canada           0074261186063   kcal=666.666666666667 | sauces,hoisin-sauces | C USDA ORGANIC WAN JA SHAN ORGANIC HOISIN SAUCE 萬家香 GLUTEN-FREE NET WT
+      149.33  out_of_range   Mexico           7501052470436   kcal=1946.66666666667 | sauces | VINAGRE DE MANZANA (AGUA, VINAGRE DE ALCOHOL DE CAÑA, VINAGRE DE MANZA
+      147.95  out_of_range   Mexico           7503009765046   kcal=230.13698630137 | sauces | Agua, azúcar, sazonadores, vinagre de arroz, variedad de chiles rojos,
+      144.44  out_of_range   US               0711464507133   kcal=666.666666666667 | sauces,hot-sauces,sweet-chili-sauces | Water, Tapioca Syrup, Sugar, Red Chilies, Pickled Garlic (Garlic, Wate
+      133.33  out_of_range   France/US        01366103        kcal=666.666666666667 | sauces,sauces-with-mustard,burger-sauces | RELISH STOCK (CUCUMBERS, CABBAGE, SALT), HIGH FRUCTOSE CORN SYRUP, MUS
+      120.00  out_of_range   Brazil           7896048283771   kcal=60.0 | sauces | Tomate, vinagre, açúcar, molho inglês, especiarias, sal, alho, cebola,
+      111.11  out_of_range   US               0894263002020   kcal=500.0 | sauces | Soybean oil, water, sugar, corn syrup, egg yolks, distilled vinegar, s
+       99.00  above_cap      France/Germany   26020914        kcal=396.0 | sauces,burgundy-style-sauces | 
+       95.00  exceeds_energy Spain            8720589845275   kcal=353.0 | sauces,mayonnaises | Water, raapzaadolie, 8,4% gemalen rode pepers, suiker, gemodificeerd m
+       92.00  above_cap      France           3588400257462   kcal=389.0 | sauces | SA VIUM COLA Saveurs Cerise & Cola Sucettes avec Poudre qui Claque Poi
+       91.00  above_cap      Germany          4007835898488   kcal=369.0 | sauces | Zucker, 30% Feigenkompott (64% Feigen, Wasser, Zucker), Glukosesirup, 
+       88.89  exceeds_energy US               0021000081622   kcal=133.333333333333 | sauces,mayonnaises,light-mayonnaises | Water Vinegar Soybean oil Modified food starch High fructose corn syru
+       87.00  kept           Germany          4007835898402   kcal=359.0 | sauces,mustard-sauces | Zucker, 26% Feigenkompott (64% Feigen, Wasser, Zucker), Glukosesirup, 
+       85.00  exceeds_energy France           0071238056015   kcal=300.0 | sauces | 
+       84.40  kept           Germany          4003185232651   kcal=378.0 | sauces | 50 % purlerte kandlerte Orangenschalen (50 % Drangenschalen, Zucker, G
+       84.00  kept           France           3033710037445   kcal=392.0 | sauces,dessert-sauces | Sirop de sucre caramélisé (sucre, sirop de glucose-fructose, eau), LAI
+       82.20  kept           Germany          4003185016671   kcal=369.0 | sauces,mustards,mustard-sauces,sweet-mustards | 50% pürierte kandierte Feigen (50% Feigen, Zucker, Glukosesirup), Zuck
+       82.20  kept           Germany          4003185263877   kcal=369.0 | sauces | 
+       82.20  kept           Germany          4003185278543   kcal=369.0 | sauces,mustards | 50% pürierte kandierte Feigen (50% Feigen, Zucker, Glukosesirup). Zuck
+       82.00  kept           Germany          4260454910201   kcal=369.0 | sauces | 
+       82.00  kept           Spain            8437014994001   kcal=438.0 | sauces,soy-sauces | 
+       82.00  kept           Spain            8437014994094   kcal=438.0 | sauces,soy-sauces | 
+       81.00  kept           France           0711844110076   kcal=427.0 | sauces,soy-sauces | Sugar (78%) (Contains Sulphite (NS223)), Soy Extract (Contains Wheat, 
+       81.00  kept           France           3052911273766   kcal=332.0 | fruits-and-vegetables-based-foods,fruits-based-foods,sauces,compotes,dessert-sauces,fruit- | 
+       81.00  kept           France           3222474904425   kcal=391.0 | cooking-helpers,sauces,dessert-mixes,dessert-sauces,custards-and-pastry-creams,mixes-for-d | Sucre - amidon de maïs - amidon transformé de maïs - épaississant : go
+--- sugar soft_drinks (cap 25 g)
+     2400.00  out_of_range   France/US        0049000061062   kcal=9000.0 | sodas,sweetened-beverages | CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, NATURAL FLAVO
+      370.00  out_of_range   US               0012000240751   kcal=1400.0 | sodas,colas,cola-sodas-without-caffeine,cola-with-sugar,cola-with-sugar-and-without-caffei | Tins 0% Juice, Sodium 95mg, Total Carbohydrates 74g, Fructose, Corn Sy
+      310.50  out_of_range   France           5601151974162   kcal=13.0 | sodas | 
+      100.00  exceeds_energy US               0012000017513   kcal=363.63636363636 | sodas | CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, APPLE JUICE CONCENTRATE, M
+      100.00  exceeds_energy France           0049000072792   kcal=360.0 | sodas | 
+      100.00  above_cap      France           54493353        kcal=552.0 | sodas | CARBONATED WATER, SUGAR, ACIDULANT: CITRIC ACID (E330), STABILISERS: M
+       98.65  exceeds_energy US               0078000113402   kcal=364.86486486486 | plant-based-beverages,fruit-based-beverages,sodas,fruit-sodas,orange-soft-drinks | CONTAINS NO JUICE Amount/serving Nutrition % DV Total Fat 0g 0% Facts 
+       98.65  exceeds_energy Canada           0078000158403   kcal=364.86486486486 | sodas | carbonated water, high fructose corn syrup, sodium benzoate, preservat
+       94.44  above_cap      Canada           0055000893381   kcal=388.88888888889 | sodas,lemonade | 
+       94.00  above_cap      France           5022032133599   kcal=386.0 | sodas,lemonade | 
+       92.00  exceeds_energy Germany          4004768261518   kcal=39.0 | plant-based-beverages,fruit-based-beverages,sodas,fruit-sodas,orange-soft-drinks | Natürliches Mineralwasser, Orangensaft aus Orangensaftkonzentrat (12%)
+       88.00  exceeds_energy Germany          4013595318401   kcal=36.0 | sodas,colas | Wasser, Zucker, Kohlensäure, Säuerungsmittel (E 270, Citronensäure Pho
+       84.00  exceeds_energy Germany          4032549028265   kcal=34.0 | sodas | 
+       83.00  exceeds_energy France           4051913101311   kcal=35.0 | sodas,lemonade,sweetened-beverages | Natürliches Mineralwasser, Zucker, Rhabarbersaft aus Rhabarbersaftkonz
+       79.00  exceeds_energy Germany          4658655014666   kcal=34.0 | sodas,tonic-water | Wasser, Zucker, Kohlensäure, Säuerungsmittel Citronensäure, Pflanzen -
+       77.00  above_cap      Canada           0623682124217   kcal=320.0 | sodas | Carbonated water, Sugars (clementine juice concentrate, cane sugar), C
+       75.00  above_cap      Canada           0069000158715   kcal=290.0 | sodas | carbonated water, sugars (sugar/glucose-fructose), citric acid, sodium
+       69.00  exceeds_energy Canada           0069000009918   kcal=260.0 | sodas,colas,sweetened-beverages | carbonated water, sugars (sugar/giucose-fructose), phosphoric acid, ca
+       64.00  above_cap      France           6130093062853   kcal=263.0 | sodas,sweetened-beverages | Eau (92,4%), sucre (6,4%), agent de carbonatation : dioxyde de carbone
+       63.00  above_cap      France           5449000036957   kcal=270.0 | plant-based-beverages,fruit-based-beverages,artificially-sweetened-beverages,sodas,sweeten | apple bengha drink , contains sugars and sweeteners, ingredients: carb
+       61.00  exceeds_energy France           8712252683635   kcal=15.0 | sodas | 
+       60.30  above_cap      Germany          20277888        kcal=245.0 | sodas | 
+       56.00  above_cap      Canada           0742383974454   kcal=240.0 | sodas | Water, Sugar, Guava, Orange juice, Mango juice, Yuzu juice, Lime, Citr
+       54.00  above_cap      France           5000112558234   kcal=210.0 | sodas,colas | eau gazeifiée : sucre colorant: E150d; acidifiant: acide phosphorique 
+       51.11  above_cap      US               0070038610335   kcal=200.0 | sodas | HIGH FRUCTOSE CORN SYRUP, WATER, SUGAR SYRUP, concentrated lime juice,
+       51.00  exceeds_energy France           0049000049633   kcal=190.0 | sodas,sweetened-beverages | 
+       49.03  above_cap      US               0078000054408   kcal=187.09677419355 | sodas | carbonated water, high fructose corn syrup, sodium benzoate (preservat
+       49.00  above_cap      France           0076183003299   kcal=210.0 | sodas,lemonade,sweetened-beverages | 
+       48.00  above_cap      Italy            0005944200938   kcal=189.0 | sodas | 
+       48.00  above_cap      US               0042997330333   kcal=190.0 | sodas | Carbonate water, high fructose corn syrup, citric acid, artificial fla
+--- sugar yoghurt (cap 30 g)
+       67.50  above_cap      US               0846548060133   kcal=450.0 | yogurts | Yogurt coating [sugar, palm kernel / palm oils, whey powder (milk), dr
+       66.67  above_cap      US               0607926002738   kcal=511.0 | yogurts | Greek yogurt confectionary (sugar, vegetable fat (palm kernel and/or p
+       65.00  above_cap      US               0072488987111   kcal=450.0 | yogurts | Yogurt coating (sugar, palm kernel oil, nonfat dry milk, sweet whey [m
+       65.00  above_cap      Spain            20500078        kcal=368.0 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts | 
+       62.22  above_cap      UK               5060043224349   kcal=455.555555555556 | yogurts | Yogurt flavoured coating (60%): [Sugar, palm fat, whey powder (milk), 
+       60.00  above_cap      Canada/US        0034856198864   kcal=350.0 | yogurts,low-fat-yogurts | ars/Sucres Proteln/Protélnes o g Not a slgniflcant source of cholester
+       59.10  above_cap      UK               4088600539881   kcal=462.0 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts | yoghurt coating (sugar, palm fat, demineralised whey powder), yogurt p
+       58.00  above_cap      UK               5054795202083   kcal=342.0 | yogurts,curd | Sugar, Salted Butter (Milk, Salt), Free Range Whole Egg Lemon Juice Co
+       57.50  above_cap      US               0708820989177   kcal=475.0 | yogurts,greek-style-yogurts | Yogurt coating (sugar, palm kernel oil, milk protein concentrate, gree
+       57.14  above_cap      US               0036800389106   kcal=429.0 | yogurts | Cultured reduced fat milk, sugar, non-fat dry milk, tapioca starch, st
+       55.00  above_cap      US               0846548085266   kcal=400.0 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts,yogurt-with-fruits-and-sugar | Apple Strawberry Freit Cubes (Fruits [Apple Puree, Strawberry Puree, A
+       55.00  above_cap      US               0846548086522   kcal=400.0 | yogurts | Apple puree, apple juice concentrate, strawberry puree, blueberry pure
+       54.00  above_cap      UK               5054795171457   kcal=363.0 | yogurts,curd | Sugar, free range egg yolk, salted butter (milk salt), free range whol
+       51.00  above_cap      France           4772378875875   kcal=239.0 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts,coconut-yogurts | ORGANIC COCONUTMILK (WATER, ORGANIC COCONUT MEAT*), ORGANIC CANE SUGAR
+       42.86  above_cap      France           03553238        kcal=428.57142857143 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts | 
+       42.86  above_cap      US               0085239994993   kcal=428.571428571429 | yogurts | ORGANIC CULTURED REDUCED FAT MILK, ORGANIC NONFAT DRY MILK, ORGANIC ST
+       40.00  above_cap      US               0708820989191   kcal=475.0 | yogurts,greek-style-yogurts | Yogurt coating (sugar, palm kernel oil, milk protein concentrate, gree
+       37.90  above_cap      Germany          4056489273646   kcal=431.0 | yogurts | 
+       37.50  above_cap      US               0050428531785   kcal=475.0 | yogurts,greek-style-yogurts | Strawberry flavored greek yogurt (sugar, palm kernel oil, milk protein
+       36.00  above_cap      US               0681131277907   kcal=440.0 | yogurts | Sugar, cream cheese (milk, cream, bacterial culture, salt, carob bean 
+       33.33  above_cap      US               0078742329208   kcal=307.69230769231 | yogurts | Sugar, water, enriched bleached wheat flour (flour, niacin, reduced ir
+       33.33  above_cap      US               0402154540003   kcal=217.77777777778 | yogurts | cultured grade a lowfat milk, sugar, nonfat dry milk, stabilizer (carr
+       33.33  above_cap      US               0638102629869   kcal=400.0 | yogurts,vanilla-yogurt,greek-style-yogurts | Soy protein nuggets (isolated soy protein, tapioca starch, salt), corn
+       33.30  above_cap      India            8904057396883   kcal=186.0 | dairy-drinks,fermented-drinks,yogurts,fermented-milk-drinks,drinkable-yogurts | Milk Solids, Sugar, Mango Fruit Preparation (10 %) (Alphonso Mango, Su
+       32.35  above_cap      US               0070438481184   kcal=191.0 | yogurts,low-fat-yogurts | Sugar, corn syrup, nonfat dried milk, cream, chocolate chips (sugar, c
+       31.30  above_cap      France           15871374        kcal=264.0 | fermented-dairy-desserts-with-fruits,yogurts,fruit-yogurts,coconut-yogurts,cow-milk-yogurt | Yaourt au lait demi-écrémé, eau, sucre, 6,7 % noix de coco râpée, siro
+       31.00  above_cap      Mexico           7441014704172   kcal=191.0 | yogurts | 
+       30.56  above_cap      US               0077890373712   kcal=181.0 | yogurts,low-fat-yogurts | Skim milk, buttermilk, cultured skim milk*, corn syrup, milk, black ch
+       29.90  exceeds_energy US               0797734166958   kcal=95.0 | yogurts,vanilla-yogurt,greek-style-yogurts | Cultured pasteurized reduced fat milk, pure cane sugar, pasteurized cr
+       29.63  exceeds_energy South Africa     0788115416465   kcal=74.0 | yogurts | Low Fat Pasteurised Milk, Sugar, Modified Starch (E1442, E551) Skim Mi
+
+INDIA WITHOUT ITS LARGEST BRAND (brand_key groups spelling variants; no name written)
+- breakfast_cereals: packs 254, with a brand tag 237, brands 73, largest 55 of 254 (21.7%); sugar median 10.5 g (k 57) -> 6.7 g (k 44) without it; sugar in first 3: 49 of 148 -> 32 of 117; salt median 0.2 g (k 55) -> 0.2 g (k 42) without it
+- chocolate: packs 197, with a brand tag 149, brands 42, largest 61 of 197 (31.0%); sugar median 43.6 g (k 36) -> 40.9 g (k 25) without it; sugar in first 3: 78 of 101 -> 50 of 68
+- biscuits: packs 711, with a brand tag 619, brands 118, largest 152 of 711 (21.4%); sugar median 25.0 g (k 87) -> 27.4 g (k 69) without it; sugar in first 3: 266 of 338 -> 198 of 256; salt median 0.5 g (k 83) -> 0.5 g (k 65) without it
+- sauces: packs 247, with a brand tag 203, brands 85, largest 22 of 247 (8.9%); sugar median 14.1 g (k 32) -> 13.6 g (k 30) without it; sugar in first 3: 82 of 128 -> 78 of 118; salt median 1.9 g (k 30) -> 1.9 g (k 28) without it
+- chips: packs 286, with a brand tag 236, brands 84, largest 46 of 286 (16.1%); sugar median 3.2 g (k 55) -> 3.2 g (k 48) without it; sugar in first 3: 26 of 157 -> 22 of 131; salt median 1.7 g (k 54) -> 1.7 g (k 47) without it
+- ice_cream: packs 146, with a brand tag 125, brands 39, largest 36 of 146 (24.7%); sugar median 22.6 g (k 19) -> 22.6 g (k 12) without it; sugar in first 3: 67 of 93 -> 42 of 67
+- yoghurt: packs 135, with a brand tag 125, brands 50, largest 19 of 135 (14.1%); sugar median 5.2 g (k 88) -> 5.3 g (k 73) without it; sugar in first 3: 17 of 77 -> 14 of 63
+- ketchup: packs 78, with a brand tag 61, brands 24, largest 13 of 78 (16.7%); sugar median 20.2 g (k 8) -> 20.2 g (k 8) without it; sugar in first 3: 34 of 42 -> 29 of 35; salt median 2.0 g (k 5) -> 2.0 g (k 5) without it
+- cakes: packs 99, with a brand tag 81, brands 43, largest 18 of 99 (18.2%); sugar median 25.5 g (k 9) -> 30.7 g (k 6) without it; sugar in first 3: 43 of 53 -> 33 of 42
+- instant_noodles: packs 140, with a brand tag 134, brands 38, largest 35 of 140 (25.0%); sugar median 2.3 g (k 36) -> 2.2 g (k 24) without it; sugar in first 3: 4 of 97 -> 0 of 73; salt median 2.6 g (k 32) -> 2.8 g (k 22) without it
+- soft_drinks: packs 144, with a brand tag 118, brands 32, largest 39 of 144 (27.1%); sugar median 10.6 g (k 38) -> 10.9 g (k 21) without it; sugar in first 3: 62 of 81 -> 44 of 58
+- namkeen: packs 62, with a brand tag 53, brands 25, largest 15 of 62 (24.2%); sugar median 4.3 g (k 15) -> 4.0 g (k 12) without it; sugar in first 3: 6 of 42 -> 6 of 32; salt median 1.4 g (k 13) -> 2.0 g (k 10) without it
+- flavoured_milk: packs 66, with a brand tag 62, brands 37, largest 7 of 66 (10.6%); sugar median 16.1 g (k 14) -> 16.1 g (k 13) without it; sugar in first 3: 42 of 44 -> 36 of 38
