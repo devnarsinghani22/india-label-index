@@ -48,14 +48,14 @@
  "products_with_declared_added_sugar": 682,
  "categories": {
   "Yoghurt and curd": {
-   "tested": 90,
-   "pct_phase2_any": 37.8,
-   "pct_phase1_2plus": 3.3,
+   "tested": 76,
+   "pct_phase2_any": 34.2,
+   "pct_phase1_2plus": 2.6,
    "pct_all3": 0.0,
    "pct_by_nutrient": {
-    "sugar": 24.4,
-    "fat": 4.4,
-    "salt": 12.2
+    "sugar": 28.9,
+    "fat": 3.9,
+    "salt": 3.9
    }
   },
   "Sauces, ketchup and spreads": {
@@ -100,6 +100,17 @@
     "sugar": 34.1,
     "fat": 39.0,
     "salt": 26.8
+   }
+  },
+  "Dairy (milk, paneer, cheese)": {
+   "tested": 40,
+   "pct_phase2_any": 40.0,
+   "pct_phase1_2plus": 2.5,
+   "pct_all3": 0.0,
+   "pct_by_nutrient": {
+    "sugar": 20.0,
+    "fat": 2.5,
+    "salt": 20.0
    }
   },
   "Chips and crisps": {

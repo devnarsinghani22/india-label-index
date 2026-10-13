@@ -5,13 +5,15 @@ whitener, condensed milk, protein powders and an infant milk food. This splits t
 Rules, first match wins (hand-audited row by row on 13 Oct; every row lands where the audit put it):
   protein powder   name says whey, or the list starts with whey or a protein blend
   infant milk food name says infant
+  cheese or paneer tagged en:cheeses or en:paneer (since 13 Oct these two tags bucket here, not under yoghurt; item 4e)
   dairy sweet      peda/pedha, shrikhand, kheer, kulfi, rabdi, barfi, kalakand, rasgulla, rasmalai, sandesh, halwa
   whitener or condensed milk
   sweet milk drink a flavour or drink word in the name (flavoured milk, shake, lassi, kool, doodh, coffee, caramel,
                    chaas/taak, probiotic), or a sugar first or second in an unnamed product's list
   plain milk, cream, curd or milk powder: everything left
 Output: out/dairy_split.json (counts only, no brand or product names). Never changes analyse.py's buckets: 12 scripts
-import them and every published study would move.
+import them and every published study would move. (They changed once, on 13 Oct 2026, to move cheese and paneer out of
+yoghurt and curd; the pages carry a dated correction note.)
 Run: python -I dairy_split.py [--show]   (--show prints names for the local audit only; never publish them)"""
 import csv, json, re, sys
 from collections import defaultdict
@@ -29,15 +31,17 @@ WHITENER = re.compile(r"whitener|condensed|milkmaid", re.I)
 DRINK = re.compile(r"flavou?r|shake|lassi|\bkool\b|doodh|coffee|caramel|toffee|taak|chaa?ch|buttermilk|probiotic|yakult|"
                    r"choc|kesar|badam|elaichi", re.I)
 SUGAR_EARLY = re.compile(r"^[^,]*,\s*sugar|^\W*water,\s*sugar", re.I)
-ORDER = ["plain milk, cream, curd or milk powder", "sweet milk drink", "dairy sweet", "whitener or condensed milk",
+ORDER = ["plain milk, cream, curd or milk powder", "cheese or paneer", "sweet milk drink", "dairy sweet", "whitener or condensed milk",
          "protein powder", "infant milk food"]
 
 
-def kind(name, ing):
+def kind(name, ing, tags=""):
     if PROTEIN_NAME.search(name) or PROTEIN_LIST.search(ing):
         return "protein powder"
     if re.search(r"infant", name, re.I):
         return "infant milk food"
+    if {"en:cheeses", "en:paneer"} & set(tags.split(",")):  # before the drink words: a "pepper flavour" cheese spread is cheese
+        return "cheese or paneer"
     if SWEET.search(name) and not re.search(r"shake|lassi", name, re.I):  # a rabdi milkshake is a drink
         return "dairy sweet"
     if WHITENER.search(name):
@@ -62,7 +66,7 @@ def main():
             if not a:  # same base as analyse.py: an English ingredient list
                 continue
             name = row.get("product_name") or ""
-            rows.append({"name": name, "ing": ing, "kind": kind(name, ing), "sugar": a["n_sugar_names"] > 0,
+            rows.append({"name": name, "ing": ing, "kind": kind(name, ing, row.get("categories_tags", "")), "sugar": a["n_sugar_names"] > 0,
                          "top3": bool(a["sugar_in_top3"])})
     by = defaultdict(list)
     for r in rows:

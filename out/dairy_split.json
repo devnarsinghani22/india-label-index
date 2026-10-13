@@ -1,12 +1,17 @@
 {
  "source": "Open Food Facts, products tagged as sold in India (ODbL); base = analyse.py's 'Dairy (milk, paneer, cheese)' bucket, lists in English",
- "lists": 154,
- "name_added_sugar": 36,
+ "lists": 221,
+ "name_added_sugar": 37,
  "groups": {
   "plain milk, cream, curd or milk powder": {
    "lists": 97,
    "name_added_sugar": 0,
    "sugar_in_first_3": 0
+  },
+  "cheese or paneer": {
+   "lists": 67,
+   "name_added_sugar": 1,
+   "sugar_in_first_3": 1
   },
   "sweet milk drink": {
    "lists": 18,

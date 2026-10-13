@@ -257,6 +257,55 @@
     ]
    ]
   },
+  "Dairy (milk, paneer, cheese)": {
+   "products": 393,
+   "with_ingredient_list": 221,
+   "pct_any_added_sugar": 16.7,
+   "pct_sugar_in_top3": 16.3,
+   "pct_2plus_sugar_names": 3.2,
+   "pct_3plus_sugar_names": 0.5,
+   "max_sugar_names": 3,
+   "with_sugar_value": 61,
+   "median_sugar_g_per_100g": 4.7,
+   "median_sugar_tsp_per_100g": 1.2,
+   "with_salt_value": 62,
+   "median_salt_g_per_100g": 0.13,
+   "median_salt_pct_of_5g": 3,
+   "with_nova": 239,
+   "pct_nova4": 25.9,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     35,
+     15.8
+    ],
+    [
+     "Dextrose, glucose",
+     3,
+     1.4
+    ],
+    [
+     "Maltose, malt extract, malt syrup",
+     2,
+     0.9
+    ],
+    [
+     "Liquid glucose, glucose syrup",
+     2,
+     0.9
+    ],
+    [
+     "Sweetened condensed milk",
+     1,
+     0.5
+    ],
+    [
+     "Khandsari, khaand, bura, misri",
+     1,
+     0.5
+    ]
+   ]
+  },
   "Cakes and bakery": {
    "products": 333,
    "with_ingredient_list": 166,
@@ -350,104 +399,6 @@
     ],
     [
      "Liquid glucose, glucose syrup",
-     1,
-     0.6
-    ]
-   ]
-  },
-  "Yoghurt and curd": {
-   "products": 293,
-   "with_ingredient_list": 178,
-   "pct_any_added_sugar": 19.7,
-   "pct_sugar_in_top3": 15.2,
-   "pct_2plus_sugar_names": 3.9,
-   "pct_3plus_sugar_names": 0.0,
-   "max_sugar_names": 2,
-   "with_sugar_value": 124,
-   "median_sugar_g_per_100g": 4.6,
-   "median_sugar_tsp_per_100g": 1.1,
-   "with_salt_value": 129,
-   "median_salt_g_per_100g": 0.13,
-   "median_salt_pct_of_5g": 3,
-   "with_nova": 159,
-   "pct_nova4": 42.1,
-   "sugar_names": [
-    [
-     "Sugar, sucrose",
-     33,
-     18.5
-    ],
-    [
-     "Liquid glucose, glucose syrup",
-     2,
-     1.1
-    ],
-    [
-     "Honey",
-     2,
-     1.1
-    ],
-    [
-     "Dextrose, glucose",
-     2,
-     1.1
-    ],
-    [
-     "Invert sugar, invert syrup, golden syrup",
-     1,
-     0.6
-    ],
-    [
-     "Lactose",
-     1,
-     0.6
-    ]
-   ]
-  },
-  "Dairy (milk, paneer, cheese)": {
-   "products": 290,
-   "with_ingredient_list": 154,
-   "pct_any_added_sugar": 23.4,
-   "pct_sugar_in_top3": 22.7,
-   "pct_2plus_sugar_names": 3.9,
-   "pct_3plus_sugar_names": 0.6,
-   "max_sugar_names": 3,
-   "with_sugar_value": 40,
-   "median_sugar_g_per_100g": 4.96,
-   "median_sugar_tsp_per_100g": 1.2,
-   "with_salt_value": 38,
-   "median_salt_g_per_100g": 0.11,
-   "median_salt_pct_of_5g": 2,
-   "with_nova": 172,
-   "pct_nova4": 23.3,
-   "sugar_names": [
-    [
-     "Sugar, sucrose",
-     34,
-     22.1
-    ],
-    [
-     "Dextrose, glucose",
-     3,
-     1.9
-    ],
-    [
-     "Maltose, malt extract, malt syrup",
-     2,
-     1.3
-    ],
-    [
-     "Sweetened condensed milk",
-     1,
-     0.6
-    ],
-    [
-     "Liquid glucose, glucose syrup",
-     1,
-     0.6
-    ],
-    [
-     "Khandsari, khaand, bura, misri",
      1,
      0.6
     ]
@@ -687,6 +638,55 @@
     ],
     [
      "Invert sugar, invert syrup, golden syrup",
+     1,
+     0.9
+    ],
+    [
+     "Lactose",
+     1,
+     0.9
+    ]
+   ]
+  },
+  "Yoghurt and curd": {
+   "products": 190,
+   "with_ingredient_list": 111,
+   "pct_any_added_sugar": 30.6,
+   "pct_sugar_in_top3": 23.4,
+   "pct_2plus_sugar_names": 5.4,
+   "pct_3plus_sugar_names": 0.0,
+   "max_sugar_names": 2,
+   "with_sugar_value": 103,
+   "median_sugar_g_per_100g": 5.0,
+   "median_sugar_tsp_per_100g": 1.2,
+   "with_salt_value": 105,
+   "median_salt_g_per_100g": 0.12,
+   "median_salt_pct_of_5g": 2,
+   "with_nova": 92,
+   "pct_nova4": 48.9,
+   "sugar_names": [
+    [
+     "Sugar, sucrose",
+     32,
+     28.8
+    ],
+    [
+     "Honey",
+     2,
+     1.8
+    ],
+    [
+     "Dextrose, glucose",
+     2,
+     1.8
+    ],
+    [
+     "Invert sugar, invert syrup, golden syrup",
+     1,
+     0.9
+    ],
+    [
+     "Liquid glucose, glucose syrup",
      1,
      0.9
     ],

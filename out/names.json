@@ -57,18 +57,6 @@
   "salt": 24
  },
  "categories": {
-  "Yoghurt and curd": {
-   "health_word": {
-    "k": 0,
-    "n": 11,
-    "pct": 0.0
-   },
-   "no_health_word": {
-    "k": 31,
-    "n": 60,
-    "pct": 51.7
-   }
-  },
   "Breakfast cereals and muesli": {
    "health_word": {
     "k": 9,
@@ -103,12 +91,12 @@
  "category_adjusted": {
   "n": 56,
   "warned": 33,
-  "expected_at_own_category_rate": 44.3
+  "expected_at_own_category_rate": 44.5
  },
  "health_word_without_protein_adjusted": {
   "n": 33,
   "warned": 24,
-  "expected_at_own_category_rate": 27.4
+  "expected_at_own_category_rate": 27.5
  },
  "grain": {
   "all": {

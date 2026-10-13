@@ -26,6 +26,9 @@ BUCKETS = [
     ("Milk drinks and health drink powders", ["en:flavoured-milks", "en:milk-drinks", "en:cocoa-and-chocolate-powders",
                                               "en:malted-drinks", "en:chocolate-drink-powders", "en:instant-beverages"]),
     ("Ice cream and frozen desserts", ["en:ice-creams", "en:frozen-desserts", "en:ice-creams-and-sorbets"]),
+    # Cheese and paneer first (13 Oct 2026, item 4e): en:fermented-milk-products also tags cheese, so without this row
+    # 67 cheese lists sat in "Yoghurt and curd" and the dairy row held none.
+    ("Dairy (milk, paneer, cheese)", ["en:cheeses", "en:paneer"]),
     ("Yoghurt and curd", ["en:yogurts", "en:fermented-milk-products", "en:dahi"]),
     ("Chocolate and confectionery", ["en:chocolates", "en:candies", "en:confectioneries", "en:chocolate-candies", "en:sweets"]),
     ("Indian sweets (mithai)", ["en:indian-sweets", "en:mithai"]),
