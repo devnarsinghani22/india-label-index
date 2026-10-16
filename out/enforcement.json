@@ -1,0 +1,4843 @@
+{
+ "study": "India Label Index, study 10: the FSSAI test scoreboard",
+ "generated": "2026-10-16",
+ "population_basis": "Census 2011 (A-1 table, Office of the Registrar General). Telangana = its 10 districts of 2011 Andhra Pradesh; Ladakh = Leh and Kargil districts; Dadra & Nagar Haveli and Daman & Diu summed. Rates are per million 2011 residents, so they overstate today's per-head testing a little everywhere (India has grown about 17% since 2011).",
+ "rank_rule": "a state or UT is ranked on a share only if it analysed at least 1000 samples in the period",
+ "national": [
+  {
+   "fiscal_year": "2018-19",
+   "samples_analysed": 106459,
+   "non_conforming": 30415,
+   "non_conforming_pct": 28.6,
+   "source": "PIB 1945166 (Lok Sabha reply), 2 Aug 2023",
+   "civil_cases_launched": 18550,
+   "criminal_convictions": 701,
+   "split_source": "PIB 1945166 (criminal convictions column)",
+   "criminal_cases_launched": 2813,
+   "criminal_launched_source": "PIB 1945166",
+   "convictions_per_100_criminal_cases_launched_same_year": 24.9,
+   "convictions_per_100_non_conforming": 2.3
+  },
+  {
+   "fiscal_year": "2019-20",
+   "samples_analysed": 118775,
+   "non_conforming": 29589,
+   "non_conforming_pct": 24.9,
+   "source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "unsafe": 4526,
+   "substandard": 15671,
+   "labelling_defects": 8995,
+   "non_conforming_in_split_source": 29589,
+   "labelling_pct_of_non_conforming": 30.4,
+   "unsafe_pct_of_non_conforming": 15.3,
+   "unsafe_pct_of_samples": 3.8,
+   "civil_cases_decided_with_penalty": 16881,
+   "criminal_convictions": 821,
+   "penalty_rs": 593800000,
+   "split_source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "criminal_cases_launched": 4681,
+   "criminal_launched_source": "PIB 1945166",
+   "convictions_per_100_criminal_cases_launched_same_year": 17.5,
+   "convictions_per_100_non_conforming": 2.8
+  },
+  {
+   "fiscal_year": "2020-21",
+   "samples_analysed": 107829,
+   "non_conforming": 28347,
+   "non_conforming_pct": 26.3,
+   "source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "unsafe": 5220,
+   "substandard": 13394,
+   "labelling_defects": 9733,
+   "non_conforming_in_split_source": 28347,
+   "labelling_pct_of_non_conforming": 34.3,
+   "unsafe_pct_of_non_conforming": 18.4,
+   "unsafe_pct_of_samples": 4.8,
+   "civil_cases_decided_with_penalty": 14817,
+   "criminal_convictions": 506,
+   "penalty_rs": 507500000,
+   "split_source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "criminal_cases_launched": 3869,
+   "criminal_launched_source": "PIB 1945166",
+   "convictions_per_100_criminal_cases_launched_same_year": 13.1,
+   "convictions_per_100_non_conforming": 1.8
+  },
+  {
+   "fiscal_year": "2021-22",
+   "samples_analysed": 144345,
+   "non_conforming": 32935,
+   "non_conforming_pct": 22.8,
+   "source": "Lok Sabha UQ 1093, 24 Jul 2026",
+   "unsafe": 4890,
+   "substandard": 16582,
+   "labelling_defects": 11462,
+   "non_conforming_in_split_source": 32934,
+   "labelling_pct_of_non_conforming": 34.8,
+   "unsafe_pct_of_non_conforming": 14.8,
+   "unsafe_pct_of_samples": 3.4,
+   "civil_cases_decided_with_penalty": 19437,
+   "criminal_convictions": 671,
+   "penalty_rs": 547700000,
+   "split_source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "criminal_cases_launched": 4946,
+   "criminal_launched_source": "PIB 1945166",
+   "convictions_per_100_criminal_cases_launched_same_year": 13.6,
+   "convictions_per_100_non_conforming": 2.0
+  },
+  {
+   "fiscal_year": "2022-23",
+   "samples_analysed": 177511,
+   "non_conforming": 44626,
+   "non_conforming_pct": 25.1,
+   "source": "Lok Sabha UQ 1093, 24 Jul 2026",
+   "unsafe": 6579,
+   "substandard": 21917,
+   "labelling_defects": 16130,
+   "non_conforming_in_split_source": 44626,
+   "labelling_pct_of_non_conforming": 36.1,
+   "unsafe_pct_of_non_conforming": 14.7,
+   "unsafe_pct_of_samples": 3.7,
+   "civil_cases_decided_with_penalty": 28464,
+   "criminal_convictions": 1188,
+   "penalty_rs": 359800000,
+   "split_source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "criminal_cases_launched": 4817,
+   "criminal_launched_source": "PIB 1945166",
+   "convictions_per_100_criminal_cases_launched_same_year": 24.7,
+   "convictions_per_100_non_conforming": 2.7
+  },
+  {
+   "fiscal_year": "2023-24",
+   "samples_analysed": 170513,
+   "non_conforming": 33808,
+   "non_conforming_pct": 19.8,
+   "source": "Lok Sabha UQ 1093, 24 Jul 2026",
+   "unsafe": 6782,
+   "substandard": 22603,
+   "labelling_defects": 4423,
+   "non_conforming_in_split_source": 33808,
+   "labelling_pct_of_non_conforming": 13.1,
+   "unsafe_pct_of_non_conforming": 20.1,
+   "unsafe_pct_of_samples": 4.0,
+   "civil_cases_decided_with_penalty": 29586,
+   "criminal_convictions": 1161,
+   "penalty_rs": 767900000,
+   "split_source": "Lok Sabha SQ 361, 26 Mar 2025",
+   "criminal_cases_launched": 4737,
+   "criminal_launched_source": "PIB 2101739",
+   "convictions_per_100_criminal_cases_launched_same_year": 24.5,
+   "convictions_per_100_non_conforming": 3.4
+  },
+  {
+   "fiscal_year": "2024-25",
+   "samples_analysed": 170535,
+   "non_conforming": 34388,
+   "non_conforming_pct": 20.2,
+   "source": "Lok Sabha UQ 1093, 24 Jul 2026",
+   "civil_cases_decided_with_penalty": 30142,
+   "criminal_convictions": 1265,
+   "penalty_rs": 387700000,
+   "convictions_per_100_non_conforming": 3.7
+  },
+  {
+   "fiscal_year": "2025-26",
+   "samples_analysed": 223808,
+   "non_conforming": 40023,
+   "non_conforming_pct": 17.9,
+   "source": "Lok Sabha UQ 1093, 24 Jul 2026",
+   "civil_cases_decided_with_penalty": 31878,
+   "criminal_convictions": 1918,
+   "penalty_rs": 1148100000,
+   "convictions_per_100_non_conforming": 4.8,
+   "provisional": true
+  }
+ ],
+ "national_trend": {
+  "first": {
+   "fiscal_year": "2018-19",
+   "k": 30415,
+   "n": 106459,
+   "pct": 28.6
+  },
+  "last": {
+   "fiscal_year": "2025-26",
+   "k": 40023,
+   "n": 223808,
+   "pct": 17.9
+  },
+  "peak": [
+   "2018-19",
+   28.6
+  ],
+  "low": [
+   "2025-26",
+   17.9
+  ],
+  "samples_growth_pct": 110.2,
+  "eight_year_pooled": {
+   "k": 274131,
+   "n": 1219775,
+   "pct": 22.5
+  },
+  "five_year_pooled_2021_22_to_2025_26": {
+   "k": 185780,
+   "n": 886712,
+   "pct": 21.0
+  }
+ },
+ "states": {
+  "five_year_2021_22_to_2025_26": [
+   {
+    "state": "Andaman & Nicobar Islands",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 2860,
+    "non_conforming": 54,
+    "non_conforming_pct": 1.9,
+    "civil_cases_decided_with_penalty": 63,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 63,
+    "population_2011": 380581,
+    "samples_per_million_per_year": 1503.0,
+    "samples_per_10000_per_year": 15.03,
+    "rankable": true
+   },
+   {
+    "state": "Andhra Pradesh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 27118,
+    "non_conforming": 2262,
+    "non_conforming_pct": 8.3,
+    "civil_cases_decided_with_penalty": 2129,
+    "criminal_convictions": 50,
+    "convictions_per_100_non_conforming": 2.2,
+    "convictions_pct_of_punished_cases": 2.3,
+    "punished_cases": 2179,
+    "population_2011": 49386799,
+    "samples_per_million_per_year": 109.8,
+    "samples_per_10000_per_year": 1.1,
+    "rankable": true
+   },
+   {
+    "state": "Arunachal Pradesh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 1183,
+    "non_conforming": 43,
+    "non_conforming_pct": 3.6,
+    "civil_cases_decided_with_penalty": 10,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 10,
+    "population_2011": 1383727,
+    "samples_per_million_per_year": 171.0,
+    "samples_per_10000_per_year": 1.71,
+    "rankable": true
+   },
+   {
+    "state": "Assam",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 5410,
+    "non_conforming": 642,
+    "non_conforming_pct": 11.9,
+    "civil_cases_decided_with_penalty": 5,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 5,
+    "population_2011": 31205576,
+    "samples_per_million_per_year": 34.7,
+    "samples_per_10000_per_year": 0.35,
+    "rankable": true
+   },
+   {
+    "state": "Bihar",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 11009,
+    "non_conforming": 453,
+    "non_conforming_pct": 4.1,
+    "civil_cases_decided_with_penalty": 243,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 243,
+    "population_2011": 104099452,
+    "samples_per_million_per_year": 21.2,
+    "samples_per_10000_per_year": 0.21,
+    "rankable": true
+   },
+   {
+    "state": "Chandigarh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 2149,
+    "non_conforming": 259,
+    "non_conforming_pct": 12.1,
+    "civil_cases_decided_with_penalty": 361,
+    "criminal_convictions": 119,
+    "convictions_per_100_non_conforming": 45.9,
+    "convictions_pct_of_punished_cases": 24.8,
+    "punished_cases": 480,
+    "population_2011": 1055450,
+    "samples_per_million_per_year": 407.2,
+    "samples_per_10000_per_year": 4.07,
+    "rankable": true
+   },
+   {
+    "state": "Chhattisgarh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 8411,
+    "non_conforming": 927,
+    "non_conforming_pct": 11.0,
+    "civil_cases_decided_with_penalty": 638,
+    "criminal_convictions": 24,
+    "convictions_per_100_non_conforming": 2.6,
+    "convictions_pct_of_punished_cases": 3.6,
+    "punished_cases": 662,
+    "population_2011": 25545198,
+    "samples_per_million_per_year": 65.9,
+    "samples_per_10000_per_year": 0.66,
+    "rankable": true
+   },
+   {
+    "state": "Dadra & Nagar Haveli and Daman & Diu",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 790,
+    "non_conforming": 10,
+    "non_conforming_pct": 1.3,
+    "civil_cases_decided_with_penalty": 20,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 20,
+    "population_2011": 586956,
+    "samples_per_million_per_year": 269.2,
+    "samples_per_10000_per_year": 2.69,
+    "rankable": false
+   },
+   {
+    "state": "Delhi",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 12809,
+    "non_conforming": 862,
+    "non_conforming_pct": 6.7,
+    "civil_cases_decided_with_penalty": 261,
+    "criminal_convictions": 81,
+    "convictions_per_100_non_conforming": 9.4,
+    "convictions_pct_of_punished_cases": 23.7,
+    "punished_cases": 342,
+    "population_2011": 16787941,
+    "samples_per_million_per_year": 152.6,
+    "samples_per_10000_per_year": 1.53,
+    "rankable": true
+   },
+   {
+    "state": "Goa",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 5162,
+    "non_conforming": 528,
+    "non_conforming_pct": 10.2,
+    "civil_cases_decided_with_penalty": 53,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 53,
+    "population_2011": 1458545,
+    "samples_per_million_per_year": 707.8,
+    "samples_per_10000_per_year": 7.08,
+    "rankable": true
+   },
+   {
+    "state": "Gujarat",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 68356,
+    "non_conforming": 4437,
+    "non_conforming_pct": 6.5,
+    "civil_cases_decided_with_penalty": 4617,
+    "criminal_convictions": 259,
+    "convictions_per_100_non_conforming": 5.8,
+    "convictions_pct_of_punished_cases": 5.3,
+    "punished_cases": 4876,
+    "population_2011": 60439692,
+    "samples_per_million_per_year": 226.2,
+    "samples_per_10000_per_year": 2.26,
+    "rankable": true
+   },
+   {
+    "state": "Haryana",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 16733,
+    "non_conforming": 4686,
+    "non_conforming_pct": 28.0,
+    "civil_cases_decided_with_penalty": 3609,
+    "criminal_convictions": 278,
+    "convictions_per_100_non_conforming": 5.9,
+    "convictions_pct_of_punished_cases": 7.2,
+    "punished_cases": 3887,
+    "population_2011": 25351462,
+    "samples_per_million_per_year": 132.0,
+    "samples_per_10000_per_year": 1.32,
+    "rankable": true
+   },
+   {
+    "state": "Himachal Pradesh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 9259,
+    "non_conforming": 2052,
+    "non_conforming_pct": 22.2,
+    "civil_cases_decided_with_penalty": 1548,
+    "criminal_convictions": 12,
+    "convictions_per_100_non_conforming": 0.6,
+    "convictions_pct_of_punished_cases": 0.8,
+    "punished_cases": 1560,
+    "population_2011": 6864602,
+    "samples_per_million_per_year": 269.8,
+    "samples_per_10000_per_year": 2.7,
+    "rankable": true
+   },
+   {
+    "state": "Jammu & Kashmir",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 44169,
+    "non_conforming": 4995,
+    "non_conforming_pct": 11.3,
+    "civil_cases_decided_with_penalty": 7742,
+    "criminal_convictions": 84,
+    "convictions_per_100_non_conforming": 1.7,
+    "convictions_pct_of_punished_cases": 1.1,
+    "punished_cases": 7826,
+    "population_2011": 12267013,
+    "samples_per_million_per_year": 720.1,
+    "samples_per_10000_per_year": 7.2,
+    "rankable": true
+   },
+   {
+    "state": "Jharkhand",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 3147,
+    "non_conforming": 1241,
+    "non_conforming_pct": 39.4,
+    "civil_cases_decided_with_penalty": 270,
+    "criminal_convictions": 16,
+    "convictions_per_100_non_conforming": 1.3,
+    "convictions_pct_of_punished_cases": 5.6,
+    "punished_cases": 286,
+    "population_2011": 32988134,
+    "samples_per_million_per_year": 19.1,
+    "samples_per_10000_per_year": 0.19,
+    "rankable": true
+   },
+   {
+    "state": "Karnataka",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 37472,
+    "non_conforming": 1957,
+    "non_conforming_pct": 5.2,
+    "civil_cases_decided_with_penalty": 922,
+    "criminal_convictions": 96,
+    "convictions_per_100_non_conforming": 4.9,
+    "convictions_pct_of_punished_cases": 9.4,
+    "punished_cases": 1018,
+    "population_2011": 61095297,
+    "samples_per_million_per_year": 122.7,
+    "samples_per_10000_per_year": 1.23,
+    "rankable": true
+   },
+   {
+    "state": "Kerala",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 54693,
+    "non_conforming": 7089,
+    "non_conforming_pct": 13.0,
+    "civil_cases_decided_with_penalty": 3659,
+    "criminal_convictions": 713,
+    "convictions_per_100_non_conforming": 10.1,
+    "convictions_pct_of_punished_cases": 16.3,
+    "punished_cases": 4372,
+    "population_2011": 33406061,
+    "samples_per_million_per_year": 327.4,
+    "samples_per_10000_per_year": 3.27,
+    "rankable": true
+   },
+   {
+    "state": "Ladakh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 1841,
+    "non_conforming": 107,
+    "non_conforming_pct": 5.8,
+    "civil_cases_decided_with_penalty": 104,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 104,
+    "population_2011": 274289,
+    "samples_per_million_per_year": 1342.4,
+    "samples_per_10000_per_year": 13.42,
+    "rankable": true
+   },
+   {
+    "state": "Lakshadweep",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 0,
+    "non_conforming": 0,
+    "non_conforming_pct": null,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 64473,
+    "samples_per_million_per_year": 0.0,
+    "samples_per_10000_per_year": 0.0,
+    "rankable": false
+   },
+   {
+    "state": "Madhya Pradesh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 68932,
+    "non_conforming": 9406,
+    "non_conforming_pct": 13.6,
+    "civil_cases_decided_with_penalty": 10263,
+    "criminal_convictions": 243,
+    "convictions_per_100_non_conforming": 2.6,
+    "convictions_pct_of_punished_cases": 2.3,
+    "punished_cases": 10506,
+    "population_2011": 72626809,
+    "samples_per_million_per_year": 189.8,
+    "samples_per_10000_per_year": 1.9,
+    "rankable": true
+   },
+   {
+    "state": "Maharashtra",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 38841,
+    "non_conforming": 6553,
+    "non_conforming_pct": 16.9,
+    "civil_cases_decided_with_penalty": 4731,
+    "criminal_convictions": 25,
+    "convictions_per_100_non_conforming": 0.4,
+    "convictions_pct_of_punished_cases": 0.5,
+    "punished_cases": 4756,
+    "population_2011": 112374333,
+    "samples_per_million_per_year": 69.1,
+    "samples_per_10000_per_year": 0.69,
+    "rankable": true
+   },
+   {
+    "state": "Manipur",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 1269,
+    "non_conforming": 11,
+    "non_conforming_pct": 0.9,
+    "civil_cases_decided_with_penalty": 4,
+    "criminal_convictions": 1,
+    "convictions_per_100_non_conforming": 9.1,
+    "convictions_pct_of_punished_cases": 20.0,
+    "punished_cases": 5,
+    "population_2011": 2855794,
+    "samples_per_million_per_year": 88.9,
+    "samples_per_10000_per_year": 0.89,
+    "rankable": true
+   },
+   {
+    "state": "Meghalaya",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 1378,
+    "non_conforming": 80,
+    "non_conforming_pct": 5.8,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 2966889,
+    "samples_per_million_per_year": 92.9,
+    "samples_per_10000_per_year": 0.93,
+    "rankable": true
+   },
+   {
+    "state": "Mizoram",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 338,
+    "non_conforming": 3,
+    "non_conforming_pct": 0.9,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1097206,
+    "samples_per_million_per_year": 61.6,
+    "samples_per_10000_per_year": 0.62,
+    "rankable": false
+   },
+   {
+    "state": "Nagaland",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 835,
+    "non_conforming": 47,
+    "non_conforming_pct": 5.6,
+    "civil_cases_decided_with_penalty": 3,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 3,
+    "population_2011": 1978502,
+    "samples_per_million_per_year": 84.4,
+    "samples_per_10000_per_year": 0.84,
+    "rankable": false
+   },
+   {
+    "state": "Odisha",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 7931,
+    "non_conforming": 1213,
+    "non_conforming_pct": 15.3,
+    "civil_cases_decided_with_penalty": 126,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 126,
+    "population_2011": 41974218,
+    "samples_per_million_per_year": 37.8,
+    "samples_per_10000_per_year": 0.38,
+    "rankable": true
+   },
+   {
+    "state": "Puducherry",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 597,
+    "non_conforming": 86,
+    "non_conforming_pct": 14.4,
+    "civil_cases_decided_with_penalty": 2,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 2,
+    "population_2011": 1247953,
+    "samples_per_million_per_year": 95.7,
+    "samples_per_10000_per_year": 0.96,
+    "rankable": false
+   },
+   {
+    "state": "Punjab",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 32928,
+    "non_conforming": 5491,
+    "non_conforming_pct": 16.7,
+    "civil_cases_decided_with_penalty": 3664,
+    "criminal_convictions": 148,
+    "convictions_per_100_non_conforming": 2.7,
+    "convictions_pct_of_punished_cases": 3.9,
+    "punished_cases": 3812,
+    "population_2011": 27743338,
+    "samples_per_million_per_year": 237.4,
+    "samples_per_10000_per_year": 2.37,
+    "rankable": true
+   },
+   {
+    "state": "Rajasthan",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 73271,
+    "non_conforming": 18731,
+    "non_conforming_pct": 25.6,
+    "civil_cases_decided_with_penalty": 11051,
+    "criminal_convictions": 78,
+    "convictions_per_100_non_conforming": 0.4,
+    "convictions_pct_of_punished_cases": 0.7,
+    "punished_cases": 11129,
+    "population_2011": 68548437,
+    "samples_per_million_per_year": 213.8,
+    "samples_per_10000_per_year": 2.14,
+    "rankable": true
+   },
+   {
+    "state": "Sikkim",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 1248,
+    "non_conforming": 12,
+    "non_conforming_pct": 1.0,
+    "civil_cases_decided_with_penalty": 10,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 10,
+    "population_2011": 610577,
+    "samples_per_million_per_year": 408.8,
+    "samples_per_10000_per_year": 4.09,
+    "rankable": true
+   },
+   {
+    "state": "Tamil Nadu",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 121371,
+    "non_conforming": 20163,
+    "non_conforming_pct": 16.6,
+    "civil_cases_decided_with_penalty": 11688,
+    "criminal_convictions": 2865,
+    "convictions_per_100_non_conforming": 14.2,
+    "convictions_pct_of_punished_cases": 19.7,
+    "punished_cases": 14553,
+    "population_2011": 72147030,
+    "samples_per_million_per_year": 336.5,
+    "samples_per_10000_per_year": 3.36,
+    "rankable": true
+   },
+   {
+    "state": "Telangana",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 20965,
+    "non_conforming": 2942,
+    "non_conforming_pct": 14.0,
+    "civil_cases_decided_with_penalty": 942,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 942,
+    "population_2011": 35193978,
+    "samples_per_million_per_year": 119.1,
+    "samples_per_10000_per_year": 1.19,
+    "rankable": true
+   },
+   {
+    "state": "Tripura",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 576,
+    "non_conforming": 27,
+    "non_conforming_pct": 4.7,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 3673917,
+    "samples_per_million_per_year": 31.4,
+    "samples_per_10000_per_year": 0.31,
+    "rankable": false
+   },
+   {
+    "state": "Uttar Pradesh",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 149776,
+    "non_conforming": 84371,
+    "non_conforming_pct": 56.3,
+    "civil_cases_decided_with_penalty": 66170,
+    "criminal_convictions": 1089,
+    "convictions_per_100_non_conforming": 1.3,
+    "convictions_pct_of_punished_cases": 1.6,
+    "punished_cases": 67259,
+    "population_2011": 199812341,
+    "samples_per_million_per_year": 149.9,
+    "samples_per_10000_per_year": 1.5,
+    "rankable": true
+   },
+   {
+    "state": "Uttarakhand",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 9794,
+    "non_conforming": 1458,
+    "non_conforming_pct": 14.9,
+    "civil_cases_decided_with_penalty": 1520,
+    "criminal_convictions": 15,
+    "convictions_per_100_non_conforming": 1.0,
+    "convictions_pct_of_punished_cases": 1.0,
+    "punished_cases": 1535,
+    "population_2011": 10086292,
+    "samples_per_million_per_year": 194.2,
+    "samples_per_10000_per_year": 1.94,
+    "rankable": true
+   },
+   {
+    "state": "West Bengal",
+    "period": "2021-22 to 2025-26",
+    "samples_analysed": 44091,
+    "non_conforming": 2582,
+    "non_conforming_pct": 5.9,
+    "civil_cases_decided_with_penalty": 3079,
+    "criminal_convictions": 7,
+    "convictions_per_100_non_conforming": 0.3,
+    "convictions_pct_of_punished_cases": 0.2,
+    "punished_cases": 3086,
+    "population_2011": 91276115,
+    "samples_per_million_per_year": 96.6,
+    "samples_per_10000_per_year": 0.97,
+    "rankable": true
+   }
+  ],
+  "fy_2025_26_provisional": [
+   {
+    "state": "Andaman & Nicobar Islands",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 0,
+    "non_conforming": 0,
+    "non_conforming_pct": null,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 380581,
+    "samples_per_million_per_year": 0.0,
+    "samples_per_10000_per_year": 0.0,
+    "rankable": false
+   },
+   {
+    "state": "Andhra Pradesh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 5798,
+    "non_conforming": 429,
+    "non_conforming_pct": 7.4,
+    "civil_cases_decided_with_penalty": 196,
+    "criminal_convictions": 16,
+    "convictions_per_100_non_conforming": 3.7,
+    "convictions_pct_of_punished_cases": 7.5,
+    "punished_cases": 212,
+    "population_2011": 49386799,
+    "samples_per_million_per_year": 117.4,
+    "samples_per_10000_per_year": 1.17,
+    "rankable": true
+   },
+   {
+    "state": "Arunachal Pradesh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 191,
+    "non_conforming": 10,
+    "non_conforming_pct": 5.2,
+    "civil_cases_decided_with_penalty": 1,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 1,
+    "population_2011": 1383727,
+    "samples_per_million_per_year": 138.0,
+    "samples_per_10000_per_year": 1.38,
+    "rankable": false
+   },
+   {
+    "state": "Assam",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1444,
+    "non_conforming": 117,
+    "non_conforming_pct": 8.1,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 31205576,
+    "samples_per_million_per_year": 46.3,
+    "samples_per_10000_per_year": 0.46,
+    "rankable": true
+   },
+   {
+    "state": "Bihar",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1850,
+    "non_conforming": 94,
+    "non_conforming_pct": 5.1,
+    "civil_cases_decided_with_penalty": 25,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 25,
+    "population_2011": 104099452,
+    "samples_per_million_per_year": 17.8,
+    "samples_per_10000_per_year": 0.18,
+    "rankable": true
+   },
+   {
+    "state": "Chandigarh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 603,
+    "non_conforming": 53,
+    "non_conforming_pct": 8.8,
+    "civil_cases_decided_with_penalty": 71,
+    "criminal_convictions": 17,
+    "convictions_per_100_non_conforming": 32.1,
+    "convictions_pct_of_punished_cases": 19.3,
+    "punished_cases": 88,
+    "population_2011": 1055450,
+    "samples_per_million_per_year": 571.3,
+    "samples_per_10000_per_year": 5.71,
+    "rankable": false
+   },
+   {
+    "state": "Chhattisgarh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 2065,
+    "non_conforming": 214,
+    "non_conforming_pct": 10.4,
+    "civil_cases_decided_with_penalty": 200,
+    "criminal_convictions": 2,
+    "convictions_per_100_non_conforming": 0.9,
+    "convictions_pct_of_punished_cases": 1.0,
+    "punished_cases": 202,
+    "population_2011": 25545198,
+    "samples_per_million_per_year": 80.8,
+    "samples_per_10000_per_year": 0.81,
+    "rankable": true
+   },
+   {
+    "state": "Dadra & Nagar Haveli and Daman & Diu",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 151,
+    "non_conforming": 0,
+    "non_conforming_pct": 0.0,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 586956,
+    "samples_per_million_per_year": 257.3,
+    "samples_per_10000_per_year": 2.57,
+    "rankable": false
+   },
+   {
+    "state": "Delhi",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1684,
+    "non_conforming": 109,
+    "non_conforming_pct": 6.5,
+    "civil_cases_decided_with_penalty": 32,
+    "criminal_convictions": 16,
+    "convictions_per_100_non_conforming": 14.7,
+    "convictions_pct_of_punished_cases": 33.3,
+    "punished_cases": 48,
+    "population_2011": 16787941,
+    "samples_per_million_per_year": 100.3,
+    "samples_per_10000_per_year": 1.0,
+    "rankable": true
+   },
+   {
+    "state": "Goa",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 2492,
+    "non_conforming": 321,
+    "non_conforming_pct": 12.9,
+    "civil_cases_decided_with_penalty": 12,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 12,
+    "population_2011": 1458545,
+    "samples_per_million_per_year": 1708.6,
+    "samples_per_10000_per_year": 17.09,
+    "rankable": true
+   },
+   {
+    "state": "Gujarat",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 11903,
+    "non_conforming": 824,
+    "non_conforming_pct": 6.9,
+    "civil_cases_decided_with_penalty": 842,
+    "criminal_convictions": 65,
+    "convictions_per_100_non_conforming": 7.9,
+    "convictions_pct_of_punished_cases": 7.2,
+    "punished_cases": 907,
+    "population_2011": 60439692,
+    "samples_per_million_per_year": 196.9,
+    "samples_per_10000_per_year": 1.97,
+    "rankable": true
+   },
+   {
+    "state": "Haryana",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 2335,
+    "non_conforming": 723,
+    "non_conforming_pct": 31.0,
+    "civil_cases_decided_with_penalty": 1424,
+    "criminal_convictions": 116,
+    "convictions_per_100_non_conforming": 16.0,
+    "convictions_pct_of_punished_cases": 7.5,
+    "punished_cases": 1540,
+    "population_2011": 25351462,
+    "samples_per_million_per_year": 92.1,
+    "samples_per_10000_per_year": 0.92,
+    "rankable": true
+   },
+   {
+    "state": "Himachal Pradesh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1589,
+    "non_conforming": 321,
+    "non_conforming_pct": 20.2,
+    "civil_cases_decided_with_penalty": 359,
+    "criminal_convictions": 9,
+    "convictions_per_100_non_conforming": 2.8,
+    "convictions_pct_of_punished_cases": 2.4,
+    "punished_cases": 368,
+    "population_2011": 6864602,
+    "samples_per_million_per_year": 231.5,
+    "samples_per_10000_per_year": 2.31,
+    "rankable": true
+   },
+   {
+    "state": "Jammu & Kashmir",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 6546,
+    "non_conforming": 664,
+    "non_conforming_pct": 10.1,
+    "civil_cases_decided_with_penalty": 1368,
+    "criminal_convictions": 14,
+    "convictions_per_100_non_conforming": 2.1,
+    "convictions_pct_of_punished_cases": 1.0,
+    "punished_cases": 1382,
+    "population_2011": 12267013,
+    "samples_per_million_per_year": 533.6,
+    "samples_per_10000_per_year": 5.34,
+    "rankable": true
+   },
+   {
+    "state": "Jharkhand",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1281,
+    "non_conforming": 356,
+    "non_conforming_pct": 27.8,
+    "civil_cases_decided_with_penalty": 73,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 73,
+    "population_2011": 32988134,
+    "samples_per_million_per_year": 38.8,
+    "samples_per_10000_per_year": 0.39,
+    "rankable": true
+   },
+   {
+    "state": "Karnataka",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 13349,
+    "non_conforming": 537,
+    "non_conforming_pct": 4.0,
+    "civil_cases_decided_with_penalty": 248,
+    "criminal_convictions": 33,
+    "convictions_per_100_non_conforming": 6.1,
+    "convictions_pct_of_punished_cases": 11.7,
+    "punished_cases": 281,
+    "population_2011": 61095297,
+    "samples_per_million_per_year": 218.5,
+    "samples_per_10000_per_year": 2.18,
+    "rankable": true
+   },
+   {
+    "state": "Kerala",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 16746,
+    "non_conforming": 1863,
+    "non_conforming_pct": 11.1,
+    "civil_cases_decided_with_penalty": 1026,
+    "criminal_convictions": 330,
+    "convictions_per_100_non_conforming": 17.7,
+    "convictions_pct_of_punished_cases": 24.3,
+    "punished_cases": 1356,
+    "population_2011": 33406061,
+    "samples_per_million_per_year": 501.3,
+    "samples_per_10000_per_year": 5.01,
+    "rankable": true
+   },
+   {
+    "state": "Ladakh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 519,
+    "non_conforming": 26,
+    "non_conforming_pct": 5.0,
+    "civil_cases_decided_with_penalty": 12,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 12,
+    "population_2011": 274289,
+    "samples_per_million_per_year": 1892.2,
+    "samples_per_10000_per_year": 18.92,
+    "rankable": false
+   },
+   {
+    "state": "Lakshadweep",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 0,
+    "non_conforming": 0,
+    "non_conforming_pct": null,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 64473,
+    "samples_per_million_per_year": 0.0,
+    "samples_per_10000_per_year": 0.0,
+    "rankable": false
+   },
+   {
+    "state": "Madhya Pradesh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 12448,
+    "non_conforming": 757,
+    "non_conforming_pct": 6.1,
+    "civil_cases_decided_with_penalty": 1790,
+    "criminal_convictions": 32,
+    "convictions_per_100_non_conforming": 4.2,
+    "convictions_pct_of_punished_cases": 1.8,
+    "punished_cases": 1822,
+    "population_2011": 72626809,
+    "samples_per_million_per_year": 171.4,
+    "samples_per_10000_per_year": 1.71,
+    "rankable": true
+   },
+   {
+    "state": "Maharashtra",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 7694,
+    "non_conforming": 1335,
+    "non_conforming_pct": 17.4,
+    "civil_cases_decided_with_penalty": 2445,
+    "criminal_convictions": 8,
+    "convictions_per_100_non_conforming": 0.6,
+    "convictions_pct_of_punished_cases": 0.3,
+    "punished_cases": 2453,
+    "population_2011": 112374333,
+    "samples_per_million_per_year": 68.5,
+    "samples_per_10000_per_year": 0.68,
+    "rankable": true
+   },
+   {
+    "state": "Manipur",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 570,
+    "non_conforming": 0,
+    "non_conforming_pct": 0.0,
+    "civil_cases_decided_with_penalty": 1,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 1,
+    "population_2011": 2855794,
+    "samples_per_million_per_year": 199.6,
+    "samples_per_10000_per_year": 2.0,
+    "rankable": false
+   },
+   {
+    "state": "Meghalaya",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 388,
+    "non_conforming": 22,
+    "non_conforming_pct": 5.7,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 2966889,
+    "samples_per_million_per_year": 130.8,
+    "samples_per_10000_per_year": 1.31,
+    "rankable": false
+   },
+   {
+    "state": "Mizoram",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 198,
+    "non_conforming": 1,
+    "non_conforming_pct": 0.5,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1097206,
+    "samples_per_million_per_year": 180.5,
+    "samples_per_10000_per_year": 1.8,
+    "rankable": false
+   },
+   {
+    "state": "Nagaland",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 238,
+    "non_conforming": 13,
+    "non_conforming_pct": 5.5,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1978502,
+    "samples_per_million_per_year": 120.3,
+    "samples_per_10000_per_year": 1.2,
+    "rankable": false
+   },
+   {
+    "state": "Odisha",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1110,
+    "non_conforming": 61,
+    "non_conforming_pct": 5.5,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 41974218,
+    "samples_per_million_per_year": 26.4,
+    "samples_per_10000_per_year": 0.26,
+    "rankable": true
+   },
+   {
+    "state": "Puducherry",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 388,
+    "non_conforming": 84,
+    "non_conforming_pct": 21.6,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1247953,
+    "samples_per_million_per_year": 310.9,
+    "samples_per_10000_per_year": 3.11,
+    "rankable": false
+   },
+   {
+    "state": "Punjab",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 7809,
+    "non_conforming": 1031,
+    "non_conforming_pct": 13.2,
+    "civil_cases_decided_with_penalty": 723,
+    "criminal_convictions": 25,
+    "convictions_per_100_non_conforming": 2.4,
+    "convictions_pct_of_punished_cases": 3.3,
+    "punished_cases": 748,
+    "population_2011": 27743338,
+    "samples_per_million_per_year": 281.5,
+    "samples_per_10000_per_year": 2.81,
+    "rankable": true
+   },
+   {
+    "state": "Rajasthan",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 17325,
+    "non_conforming": 4594,
+    "non_conforming_pct": 26.5,
+    "civil_cases_decided_with_penalty": 2695,
+    "criminal_convictions": 31,
+    "convictions_per_100_non_conforming": 0.7,
+    "convictions_pct_of_punished_cases": 1.1,
+    "punished_cases": 2726,
+    "population_2011": 68548437,
+    "samples_per_million_per_year": 252.7,
+    "samples_per_10000_per_year": 2.53,
+    "rankable": true
+   },
+   {
+    "state": "Sikkim",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 418,
+    "non_conforming": 7,
+    "non_conforming_pct": 1.7,
+    "civil_cases_decided_with_penalty": 6,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 6,
+    "population_2011": 610577,
+    "samples_per_million_per_year": 684.6,
+    "samples_per_10000_per_year": 6.85,
+    "rankable": false
+   },
+   {
+    "state": "Tamil Nadu",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 44603,
+    "non_conforming": 3984,
+    "non_conforming_pct": 8.9,
+    "civil_cases_decided_with_penalty": 1359,
+    "criminal_convictions": 857,
+    "convictions_per_100_non_conforming": 21.5,
+    "convictions_pct_of_punished_cases": 38.7,
+    "punished_cases": 2216,
+    "population_2011": 72147030,
+    "samples_per_million_per_year": 618.2,
+    "samples_per_10000_per_year": 6.18,
+    "rankable": true
+   },
+   {
+    "state": "Telangana",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 3576,
+    "non_conforming": 398,
+    "non_conforming_pct": 11.1,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 35193978,
+    "samples_per_million_per_year": 101.6,
+    "samples_per_10000_per_year": 1.02,
+    "rankable": true
+   },
+   {
+    "state": "Tripura",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 304,
+    "non_conforming": 14,
+    "non_conforming_pct": 4.6,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 3673917,
+    "samples_per_million_per_year": 82.7,
+    "samples_per_10000_per_year": 0.83,
+    "rankable": false
+   },
+   {
+    "state": "Uttar Pradesh",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 39519,
+    "non_conforming": 20427,
+    "non_conforming_pct": 51.7,
+    "civil_cases_decided_with_penalty": 14890,
+    "criminal_convictions": 342,
+    "convictions_per_100_non_conforming": 1.7,
+    "convictions_pct_of_punished_cases": 2.2,
+    "punished_cases": 15232,
+    "population_2011": 199812341,
+    "samples_per_million_per_year": 197.8,
+    "samples_per_10000_per_year": 1.98,
+    "rankable": true
+   },
+   {
+    "state": "Uttarakhand",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 1937,
+    "non_conforming": 224,
+    "non_conforming_pct": 11.6,
+    "civil_cases_decided_with_penalty": 243,
+    "criminal_convictions": 5,
+    "convictions_per_100_non_conforming": 2.2,
+    "convictions_pct_of_punished_cases": 2.0,
+    "punished_cases": 248,
+    "population_2011": 10086292,
+    "samples_per_million_per_year": 192.0,
+    "samples_per_10000_per_year": 1.92,
+    "rankable": true
+   },
+   {
+    "state": "West Bengal",
+    "period": "2025-26 (provisional)",
+    "samples_analysed": 14737,
+    "non_conforming": 410,
+    "non_conforming_pct": 2.8,
+    "civil_cases_decided_with_penalty": 1837,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 1837,
+    "population_2011": 91276115,
+    "samples_per_million_per_year": 161.5,
+    "samples_per_10000_per_year": 1.61,
+    "rankable": true
+   }
+  ],
+  "fy_2024_25": [
+   {
+    "state": "Andaman & Nicobar Islands",
+    "period": "2024-25",
+    "samples_analysed": 810,
+    "non_conforming": 4,
+    "non_conforming_pct": 0.5,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 380581,
+    "samples_per_million_per_year": 2128.3,
+    "samples_per_10000_per_year": 21.28,
+    "rankable": false
+   },
+   {
+    "state": "Andhra Pradesh",
+    "period": "2024-25",
+    "samples_analysed": 5984,
+    "non_conforming": 514,
+    "non_conforming_pct": 8.6,
+    "civil_cases_decided_with_penalty": 464,
+    "criminal_convictions": 8,
+    "convictions_per_100_non_conforming": 1.6,
+    "convictions_pct_of_punished_cases": 1.7,
+    "punished_cases": 472,
+    "population_2011": 49386799,
+    "samples_per_million_per_year": 121.2,
+    "samples_per_10000_per_year": 1.21,
+    "rankable": true
+   },
+   {
+    "state": "Arunachal Pradesh",
+    "period": "2024-25",
+    "samples_analysed": 125,
+    "non_conforming": 9,
+    "non_conforming_pct": 7.2,
+    "civil_cases_decided_with_penalty": 7,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 7,
+    "population_2011": 1383727,
+    "samples_per_million_per_year": 90.3,
+    "samples_per_10000_per_year": 0.9,
+    "rankable": false
+   },
+   {
+    "state": "Assam",
+    "period": "2024-25",
+    "samples_analysed": 1705,
+    "non_conforming": 234,
+    "non_conforming_pct": 13.7,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 31205576,
+    "samples_per_million_per_year": 54.6,
+    "samples_per_10000_per_year": 0.55,
+    "rankable": true
+   },
+   {
+    "state": "Bihar",
+    "period": "2024-25",
+    "samples_analysed": 2863,
+    "non_conforming": 124,
+    "non_conforming_pct": 4.3,
+    "civil_cases_decided_with_penalty": 25,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 25,
+    "population_2011": 104099452,
+    "samples_per_million_per_year": 27.5,
+    "samples_per_10000_per_year": 0.28,
+    "rankable": true
+   },
+   {
+    "state": "Chandigarh",
+    "period": "2024-25",
+    "samples_analysed": 374,
+    "non_conforming": 65,
+    "non_conforming_pct": 17.4,
+    "civil_cases_decided_with_penalty": 116,
+    "criminal_convictions": 41,
+    "convictions_per_100_non_conforming": 63.1,
+    "convictions_pct_of_punished_cases": 26.1,
+    "punished_cases": 157,
+    "population_2011": 1055450,
+    "samples_per_million_per_year": 354.4,
+    "samples_per_10000_per_year": 3.54,
+    "rankable": false
+   },
+   {
+    "state": "Chhattisgarh",
+    "period": "2024-25",
+    "samples_analysed": 2069,
+    "non_conforming": 270,
+    "non_conforming_pct": 13.0,
+    "civil_cases_decided_with_penalty": 143,
+    "criminal_convictions": 6,
+    "convictions_per_100_non_conforming": 2.2,
+    "convictions_pct_of_punished_cases": 4.0,
+    "punished_cases": 149,
+    "population_2011": 25545198,
+    "samples_per_million_per_year": 81.0,
+    "samples_per_10000_per_year": 0.81,
+    "rankable": true
+   },
+   {
+    "state": "Dadra & Nagar Haveli and Daman & Diu",
+    "period": "2024-25",
+    "samples_analysed": 56,
+    "non_conforming": 0,
+    "non_conforming_pct": 0.0,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 586956,
+    "samples_per_million_per_year": 95.4,
+    "samples_per_10000_per_year": 0.95,
+    "rankable": false
+   },
+   {
+    "state": "Delhi",
+    "period": "2024-25",
+    "samples_analysed": 2624,
+    "non_conforming": 130,
+    "non_conforming_pct": 5.0,
+    "civil_cases_decided_with_penalty": 18,
+    "criminal_convictions": 16,
+    "convictions_per_100_non_conforming": 12.3,
+    "convictions_pct_of_punished_cases": 47.1,
+    "punished_cases": 34,
+    "population_2011": 16787941,
+    "samples_per_million_per_year": 156.3,
+    "samples_per_10000_per_year": 1.56,
+    "rankable": true
+   },
+   {
+    "state": "Goa",
+    "period": "2024-25",
+    "samples_analysed": 1172,
+    "non_conforming": 74,
+    "non_conforming_pct": 6.3,
+    "civil_cases_decided_with_penalty": 11,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 11,
+    "population_2011": 1458545,
+    "samples_per_million_per_year": 803.5,
+    "samples_per_10000_per_year": 8.04,
+    "rankable": true
+   },
+   {
+    "state": "Gujarat",
+    "period": "2024-25",
+    "samples_analysed": 12387,
+    "non_conforming": 901,
+    "non_conforming_pct": 7.3,
+    "civil_cases_decided_with_penalty": 859,
+    "criminal_convictions": 91,
+    "convictions_per_100_non_conforming": 10.1,
+    "convictions_pct_of_punished_cases": 9.6,
+    "punished_cases": 950,
+    "population_2011": 60439692,
+    "samples_per_million_per_year": 204.9,
+    "samples_per_10000_per_year": 2.05,
+    "rankable": true
+   },
+   {
+    "state": "Haryana",
+    "period": "2024-25",
+    "samples_analysed": 2233,
+    "non_conforming": 500,
+    "non_conforming_pct": 22.4,
+    "civil_cases_decided_with_penalty": 599,
+    "criminal_convictions": 59,
+    "convictions_per_100_non_conforming": 11.8,
+    "convictions_pct_of_punished_cases": 9.0,
+    "punished_cases": 658,
+    "population_2011": 25351462,
+    "samples_per_million_per_year": 88.1,
+    "samples_per_10000_per_year": 0.88,
+    "rankable": true
+   },
+   {
+    "state": "Himachal Pradesh",
+    "period": "2024-25",
+    "samples_analysed": 1587,
+    "non_conforming": 293,
+    "non_conforming_pct": 18.5,
+    "civil_cases_decided_with_penalty": 471,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 471,
+    "population_2011": 6864602,
+    "samples_per_million_per_year": 231.2,
+    "samples_per_10000_per_year": 2.31,
+    "rankable": true
+   },
+   {
+    "state": "Jammu & Kashmir",
+    "period": "2024-25",
+    "samples_analysed": 6955,
+    "non_conforming": 651,
+    "non_conforming_pct": 9.4,
+    "civil_cases_decided_with_penalty": 1239,
+    "criminal_convictions": 29,
+    "convictions_per_100_non_conforming": 4.5,
+    "convictions_pct_of_punished_cases": 2.3,
+    "punished_cases": 1268,
+    "population_2011": 12267013,
+    "samples_per_million_per_year": 567.0,
+    "samples_per_10000_per_year": 5.67,
+    "rankable": true
+   },
+   {
+    "state": "Jharkhand",
+    "period": "2024-25",
+    "samples_analysed": 364,
+    "non_conforming": 138,
+    "non_conforming_pct": 37.9,
+    "civil_cases_decided_with_penalty": 52,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 52,
+    "population_2011": 32988134,
+    "samples_per_million_per_year": 11.0,
+    "samples_per_10000_per_year": 0.11,
+    "rankable": false
+   },
+   {
+    "state": "Karnataka",
+    "period": "2024-25",
+    "samples_analysed": 9371,
+    "non_conforming": 662,
+    "non_conforming_pct": 7.1,
+    "civil_cases_decided_with_penalty": 283,
+    "criminal_convictions": 32,
+    "convictions_per_100_non_conforming": 4.8,
+    "convictions_pct_of_punished_cases": 10.2,
+    "punished_cases": 315,
+    "population_2011": 61095297,
+    "samples_per_million_per_year": 153.4,
+    "samples_per_10000_per_year": 1.53,
+    "rankable": true
+   },
+   {
+    "state": "Kerala",
+    "period": "2024-25",
+    "samples_analysed": 10767,
+    "non_conforming": 1635,
+    "non_conforming_pct": 15.2,
+    "civil_cases_decided_with_penalty": 1088,
+    "criminal_convictions": 206,
+    "convictions_per_100_non_conforming": 12.6,
+    "convictions_pct_of_punished_cases": 15.9,
+    "punished_cases": 1294,
+    "population_2011": 33406061,
+    "samples_per_million_per_year": 322.3,
+    "samples_per_10000_per_year": 3.22,
+    "rankable": true
+   },
+   {
+    "state": "Ladakh",
+    "period": "2024-25",
+    "samples_analysed": 417,
+    "non_conforming": 45,
+    "non_conforming_pct": 10.8,
+    "civil_cases_decided_with_penalty": 38,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 38,
+    "population_2011": 274289,
+    "samples_per_million_per_year": 1520.3,
+    "samples_per_10000_per_year": 15.2,
+    "rankable": false
+   },
+   {
+    "state": "Lakshadweep",
+    "period": "2024-25",
+    "samples_analysed": 0,
+    "non_conforming": 0,
+    "non_conforming_pct": null,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 64473,
+    "samples_per_million_per_year": 0.0,
+    "samples_per_10000_per_year": 0.0,
+    "rankable": false
+   },
+   {
+    "state": "Madhya Pradesh",
+    "period": "2024-25",
+    "samples_analysed": 13920,
+    "non_conforming": 1635,
+    "non_conforming_pct": 11.7,
+    "civil_cases_decided_with_penalty": 2597,
+    "criminal_convictions": 22,
+    "convictions_per_100_non_conforming": 1.3,
+    "convictions_pct_of_punished_cases": 0.8,
+    "punished_cases": 2619,
+    "population_2011": 72626809,
+    "samples_per_million_per_year": 191.7,
+    "samples_per_10000_per_year": 1.92,
+    "rankable": true
+   },
+   {
+    "state": "Maharashtra",
+    "period": "2024-25",
+    "samples_analysed": 5403,
+    "non_conforming": 1250,
+    "non_conforming_pct": 23.1,
+    "civil_cases_decided_with_penalty": 1147,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 1147,
+    "population_2011": 112374333,
+    "samples_per_million_per_year": 48.1,
+    "samples_per_10000_per_year": 0.48,
+    "rankable": true
+   },
+   {
+    "state": "Manipur",
+    "period": "2024-25",
+    "samples_analysed": 126,
+    "non_conforming": 1,
+    "non_conforming_pct": 0.8,
+    "civil_cases_decided_with_penalty": 2,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 2,
+    "population_2011": 2855794,
+    "samples_per_million_per_year": 44.1,
+    "samples_per_10000_per_year": 0.44,
+    "rankable": false
+   },
+   {
+    "state": "Meghalaya",
+    "period": "2024-25",
+    "samples_analysed": 388,
+    "non_conforming": 5,
+    "non_conforming_pct": 1.3,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 2966889,
+    "samples_per_million_per_year": 130.8,
+    "samples_per_10000_per_year": 1.31,
+    "rankable": false
+   },
+   {
+    "state": "Mizoram",
+    "period": "2024-25",
+    "samples_analysed": 0,
+    "non_conforming": 2,
+    "non_conforming_pct": null,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1097206,
+    "samples_per_million_per_year": 0.0,
+    "samples_per_10000_per_year": 0.0,
+    "rankable": false
+   },
+   {
+    "state": "Nagaland",
+    "period": "2024-25",
+    "samples_analysed": 223,
+    "non_conforming": 11,
+    "non_conforming_pct": 4.9,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1978502,
+    "samples_per_million_per_year": 112.7,
+    "samples_per_10000_per_year": 1.13,
+    "rankable": false
+   },
+   {
+    "state": "Odisha",
+    "period": "2024-25",
+    "samples_analysed": 2282,
+    "non_conforming": 273,
+    "non_conforming_pct": 12.0,
+    "civil_cases_decided_with_penalty": 27,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 27,
+    "population_2011": 41974218,
+    "samples_per_million_per_year": 54.4,
+    "samples_per_10000_per_year": 0.54,
+    "rankable": true
+   },
+   {
+    "state": "Puducherry",
+    "period": "2024-25",
+    "samples_analysed": 173,
+    "non_conforming": 0,
+    "non_conforming_pct": 0.0,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 1247953,
+    "samples_per_million_per_year": 138.6,
+    "samples_per_10000_per_year": 1.39,
+    "rankable": false
+   },
+   {
+    "state": "Punjab",
+    "period": "2024-25",
+    "samples_analysed": 4131,
+    "non_conforming": 748,
+    "non_conforming_pct": 18.1,
+    "civil_cases_decided_with_penalty": 333,
+    "criminal_convictions": 8,
+    "convictions_per_100_non_conforming": 1.1,
+    "convictions_pct_of_punished_cases": 2.3,
+    "punished_cases": 341,
+    "population_2011": 27743338,
+    "samples_per_million_per_year": 148.9,
+    "samples_per_10000_per_year": 1.49,
+    "rankable": true
+   },
+   {
+    "state": "Rajasthan",
+    "period": "2024-25",
+    "samples_analysed": 13840,
+    "non_conforming": 3788,
+    "non_conforming_pct": 27.4,
+    "civil_cases_decided_with_penalty": 3114,
+    "criminal_convictions": 30,
+    "convictions_per_100_non_conforming": 0.8,
+    "convictions_pct_of_punished_cases": 1.0,
+    "punished_cases": 3144,
+    "population_2011": 68548437,
+    "samples_per_million_per_year": 201.9,
+    "samples_per_10000_per_year": 2.02,
+    "rankable": true
+   },
+   {
+    "state": "Sikkim",
+    "period": "2024-25",
+    "samples_analysed": 254,
+    "non_conforming": 0,
+    "non_conforming_pct": 0.0,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": null,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 610577,
+    "samples_per_million_per_year": 416.0,
+    "samples_per_10000_per_year": 4.16,
+    "rankable": false
+   },
+   {
+    "state": "Tamil Nadu",
+    "period": "2024-25",
+    "samples_analysed": 18071,
+    "non_conforming": 2240,
+    "non_conforming_pct": 12.4,
+    "civil_cases_decided_with_penalty": 1536,
+    "criminal_convictions": 492,
+    "convictions_per_100_non_conforming": 22.0,
+    "convictions_pct_of_punished_cases": 24.3,
+    "punished_cases": 2028,
+    "population_2011": 72147030,
+    "samples_per_million_per_year": 250.5,
+    "samples_per_10000_per_year": 2.5,
+    "rankable": true
+   },
+   {
+    "state": "Telangana",
+    "period": "2024-25",
+    "samples_analysed": 3347,
+    "non_conforming": 324,
+    "non_conforming_pct": 9.7,
+    "civil_cases_decided_with_penalty": 125,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": 0.0,
+    "punished_cases": 125,
+    "population_2011": 35193978,
+    "samples_per_million_per_year": 95.1,
+    "samples_per_10000_per_year": 0.95,
+    "rankable": true
+   },
+   {
+    "state": "Tripura",
+    "period": "2024-25",
+    "samples_analysed": 123,
+    "non_conforming": 5,
+    "non_conforming_pct": 4.1,
+    "civil_cases_decided_with_penalty": 0,
+    "criminal_convictions": 0,
+    "convictions_per_100_non_conforming": 0.0,
+    "convictions_pct_of_punished_cases": null,
+    "punished_cases": 0,
+    "population_2011": 3673917,
+    "samples_per_million_per_year": 33.5,
+    "samples_per_10000_per_year": 0.33,
+    "rankable": false
+   },
+   {
+    "state": "Uttar Pradesh",
+    "period": "2024-25",
+    "samples_analysed": 30380,
+    "non_conforming": 16500,
+    "non_conforming_pct": 54.3,
+    "civil_cases_decided_with_penalty": 14920,
+    "criminal_convictions": 215,
+    "convictions_per_100_non_conforming": 1.3,
+    "convictions_pct_of_punished_cases": 1.4,
+    "punished_cases": 15135,
+    "population_2011": 199812341,
+    "samples_per_million_per_year": 152.0,
+    "samples_per_10000_per_year": 1.52,
+    "rankable": true
+   },
+   {
+    "state": "Uttarakhand",
+    "period": "2024-25",
+    "samples_analysed": 1509,
+    "non_conforming": 140,
+    "non_conforming_pct": 9.3,
+    "civil_cases_decided_with_penalty": 256,
+    "criminal_convictions": 4,
+    "convictions_per_100_non_conforming": 2.9,
+    "convictions_pct_of_punished_cases": 1.5,
+    "punished_cases": 260,
+    "population_2011": 10086292,
+    "samples_per_million_per_year": 149.6,
+    "samples_per_10000_per_year": 1.5,
+    "rankable": true
+   },
+   {
+    "state": "West Bengal",
+    "period": "2024-25",
+    "samples_analysed": 14502,
+    "non_conforming": 1217,
+    "non_conforming_pct": 8.4,
+    "civil_cases_decided_with_penalty": 672,
+    "criminal_convictions": 6,
+    "convictions_per_100_non_conforming": 0.5,
+    "convictions_pct_of_punished_cases": 0.9,
+    "punished_cases": 678,
+    "population_2011": 91276115,
+    "samples_per_million_per_year": 158.9,
+    "samples_per_10000_per_year": 1.59,
+    "rankable": true
+   }
+  ]
+ },
+ "rankings": {
+  "five_year_2021_22_to_2025_26": {
+   "non_conforming_share_high_to_low": [
+    {
+     "state": "Uttar Pradesh",
+     "non_conforming_pct": 56.3,
+     "k_n": "84371 of 149776"
+    },
+    {
+     "state": "Jharkhand",
+     "non_conforming_pct": 39.4,
+     "k_n": "1241 of 3147"
+    },
+    {
+     "state": "Haryana",
+     "non_conforming_pct": 28.0,
+     "k_n": "4686 of 16733"
+    },
+    {
+     "state": "Rajasthan",
+     "non_conforming_pct": 25.6,
+     "k_n": "18731 of 73271"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "non_conforming_pct": 22.2,
+     "k_n": "2052 of 9259"
+    },
+    {
+     "state": "Maharashtra",
+     "non_conforming_pct": 16.9,
+     "k_n": "6553 of 38841"
+    },
+    {
+     "state": "Punjab",
+     "non_conforming_pct": 16.7,
+     "k_n": "5491 of 32928"
+    },
+    {
+     "state": "Tamil Nadu",
+     "non_conforming_pct": 16.6,
+     "k_n": "20163 of 121371"
+    },
+    {
+     "state": "Odisha",
+     "non_conforming_pct": 15.3,
+     "k_n": "1213 of 7931"
+    },
+    {
+     "state": "Uttarakhand",
+     "non_conforming_pct": 14.9,
+     "k_n": "1458 of 9794"
+    },
+    {
+     "state": "Telangana",
+     "non_conforming_pct": 14.0,
+     "k_n": "2942 of 20965"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "non_conforming_pct": 13.6,
+     "k_n": "9406 of 68932"
+    },
+    {
+     "state": "Kerala",
+     "non_conforming_pct": 13.0,
+     "k_n": "7089 of 54693"
+    },
+    {
+     "state": "Chandigarh",
+     "non_conforming_pct": 12.1,
+     "k_n": "259 of 2149"
+    },
+    {
+     "state": "Assam",
+     "non_conforming_pct": 11.9,
+     "k_n": "642 of 5410"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "non_conforming_pct": 11.3,
+     "k_n": "4995 of 44169"
+    },
+    {
+     "state": "Chhattisgarh",
+     "non_conforming_pct": 11.0,
+     "k_n": "927 of 8411"
+    },
+    {
+     "state": "Goa",
+     "non_conforming_pct": 10.2,
+     "k_n": "528 of 5162"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "non_conforming_pct": 8.3,
+     "k_n": "2262 of 27118"
+    },
+    {
+     "state": "Delhi",
+     "non_conforming_pct": 6.7,
+     "k_n": "862 of 12809"
+    },
+    {
+     "state": "Gujarat",
+     "non_conforming_pct": 6.5,
+     "k_n": "4437 of 68356"
+    },
+    {
+     "state": "West Bengal",
+     "non_conforming_pct": 5.9,
+     "k_n": "2582 of 44091"
+    },
+    {
+     "state": "Ladakh",
+     "non_conforming_pct": 5.8,
+     "k_n": "107 of 1841"
+    },
+    {
+     "state": "Meghalaya",
+     "non_conforming_pct": 5.8,
+     "k_n": "80 of 1378"
+    },
+    {
+     "state": "Karnataka",
+     "non_conforming_pct": 5.2,
+     "k_n": "1957 of 37472"
+    },
+    {
+     "state": "Bihar",
+     "non_conforming_pct": 4.1,
+     "k_n": "453 of 11009"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "non_conforming_pct": 3.6,
+     "k_n": "43 of 1183"
+    },
+    {
+     "state": "Andaman & Nicobar Islands",
+     "non_conforming_pct": 1.9,
+     "k_n": "54 of 2860"
+    },
+    {
+     "state": "Sikkim",
+     "non_conforming_pct": 1.0,
+     "k_n": "12 of 1248"
+    },
+    {
+     "state": "Manipur",
+     "non_conforming_pct": 0.9,
+     "k_n": "11 of 1269"
+    }
+   ],
+   "samples_per_million_per_year_high_to_low": [
+    {
+     "state": "Andaman & Nicobar Islands",
+     "samples_per_million_per_year": 1503.0,
+     "k_n": "2860 samples over the period, population 380581"
+    },
+    {
+     "state": "Ladakh",
+     "samples_per_million_per_year": 1342.4,
+     "k_n": "1841 samples over the period, population 274289"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "samples_per_million_per_year": 720.1,
+     "k_n": "44169 samples over the period, population 12267013"
+    },
+    {
+     "state": "Goa",
+     "samples_per_million_per_year": 707.8,
+     "k_n": "5162 samples over the period, population 1458545"
+    },
+    {
+     "state": "Sikkim",
+     "samples_per_million_per_year": 408.8,
+     "k_n": "1248 samples over the period, population 610577"
+    },
+    {
+     "state": "Chandigarh",
+     "samples_per_million_per_year": 407.2,
+     "k_n": "2149 samples over the period, population 1055450"
+    },
+    {
+     "state": "Tamil Nadu",
+     "samples_per_million_per_year": 336.5,
+     "k_n": "121371 samples over the period, population 72147030"
+    },
+    {
+     "state": "Kerala",
+     "samples_per_million_per_year": 327.4,
+     "k_n": "54693 samples over the period, population 33406061"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "samples_per_million_per_year": 269.8,
+     "k_n": "9259 samples over the period, population 6864602"
+    },
+    {
+     "state": "Dadra & Nagar Haveli and Daman & Diu",
+     "samples_per_million_per_year": 269.2,
+     "k_n": "790 samples over the period, population 586956"
+    },
+    {
+     "state": "Punjab",
+     "samples_per_million_per_year": 237.4,
+     "k_n": "32928 samples over the period, population 27743338"
+    },
+    {
+     "state": "Gujarat",
+     "samples_per_million_per_year": 226.2,
+     "k_n": "68356 samples over the period, population 60439692"
+    },
+    {
+     "state": "Rajasthan",
+     "samples_per_million_per_year": 213.8,
+     "k_n": "73271 samples over the period, population 68548437"
+    },
+    {
+     "state": "Uttarakhand",
+     "samples_per_million_per_year": 194.2,
+     "k_n": "9794 samples over the period, population 10086292"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "samples_per_million_per_year": 189.8,
+     "k_n": "68932 samples over the period, population 72626809"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "samples_per_million_per_year": 171.0,
+     "k_n": "1183 samples over the period, population 1383727"
+    },
+    {
+     "state": "Delhi",
+     "samples_per_million_per_year": 152.6,
+     "k_n": "12809 samples over the period, population 16787941"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "samples_per_million_per_year": 149.9,
+     "k_n": "149776 samples over the period, population 199812341"
+    },
+    {
+     "state": "Haryana",
+     "samples_per_million_per_year": 132.0,
+     "k_n": "16733 samples over the period, population 25351462"
+    },
+    {
+     "state": "Karnataka",
+     "samples_per_million_per_year": 122.7,
+     "k_n": "37472 samples over the period, population 61095297"
+    },
+    {
+     "state": "Telangana",
+     "samples_per_million_per_year": 119.1,
+     "k_n": "20965 samples over the period, population 35193978"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "samples_per_million_per_year": 109.8,
+     "k_n": "27118 samples over the period, population 49386799"
+    },
+    {
+     "state": "West Bengal",
+     "samples_per_million_per_year": 96.6,
+     "k_n": "44091 samples over the period, population 91276115"
+    },
+    {
+     "state": "Puducherry",
+     "samples_per_million_per_year": 95.7,
+     "k_n": "597 samples over the period, population 1247953"
+    },
+    {
+     "state": "Meghalaya",
+     "samples_per_million_per_year": 92.9,
+     "k_n": "1378 samples over the period, population 2966889"
+    },
+    {
+     "state": "Manipur",
+     "samples_per_million_per_year": 88.9,
+     "k_n": "1269 samples over the period, population 2855794"
+    },
+    {
+     "state": "Nagaland",
+     "samples_per_million_per_year": 84.4,
+     "k_n": "835 samples over the period, population 1978502"
+    },
+    {
+     "state": "Maharashtra",
+     "samples_per_million_per_year": 69.1,
+     "k_n": "38841 samples over the period, population 112374333"
+    },
+    {
+     "state": "Chhattisgarh",
+     "samples_per_million_per_year": 65.9,
+     "k_n": "8411 samples over the period, population 25545198"
+    },
+    {
+     "state": "Mizoram",
+     "samples_per_million_per_year": 61.6,
+     "k_n": "338 samples over the period, population 1097206"
+    },
+    {
+     "state": "Odisha",
+     "samples_per_million_per_year": 37.8,
+     "k_n": "7931 samples over the period, population 41974218"
+    },
+    {
+     "state": "Assam",
+     "samples_per_million_per_year": 34.7,
+     "k_n": "5410 samples over the period, population 31205576"
+    },
+    {
+     "state": "Tripura",
+     "samples_per_million_per_year": 31.4,
+     "k_n": "576 samples over the period, population 3673917"
+    },
+    {
+     "state": "Bihar",
+     "samples_per_million_per_year": 21.2,
+     "k_n": "11009 samples over the period, population 104099452"
+    },
+    {
+     "state": "Jharkhand",
+     "samples_per_million_per_year": 19.1,
+     "k_n": "3147 samples over the period, population 32988134"
+    },
+    {
+     "state": "Lakshadweep",
+     "samples_per_million_per_year": 0.0,
+     "k_n": "0 samples over the period, population 64473"
+    }
+   ],
+   "convictions_per_100_non_conforming_high_to_low": [
+    {
+     "state": "Chandigarh",
+     "convictions_per_100_non_conforming": 45.9,
+     "k_n": "119 of 259"
+    },
+    {
+     "state": "Tamil Nadu",
+     "convictions_per_100_non_conforming": 14.2,
+     "k_n": "2865 of 20163"
+    },
+    {
+     "state": "Kerala",
+     "convictions_per_100_non_conforming": 10.1,
+     "k_n": "713 of 7089"
+    },
+    {
+     "state": "Delhi",
+     "convictions_per_100_non_conforming": 9.4,
+     "k_n": "81 of 862"
+    },
+    {
+     "state": "Manipur",
+     "convictions_per_100_non_conforming": 9.1,
+     "k_n": "1 of 11"
+    },
+    {
+     "state": "Haryana",
+     "convictions_per_100_non_conforming": 5.9,
+     "k_n": "278 of 4686"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_per_100_non_conforming": 5.8,
+     "k_n": "259 of 4437"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_per_100_non_conforming": 4.9,
+     "k_n": "96 of 1957"
+    },
+    {
+     "state": "Punjab",
+     "convictions_per_100_non_conforming": 2.7,
+     "k_n": "148 of 5491"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_per_100_non_conforming": 2.6,
+     "k_n": "24 of 927"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_per_100_non_conforming": 2.6,
+     "k_n": "243 of 9406"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_per_100_non_conforming": 2.2,
+     "k_n": "50 of 2262"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_per_100_non_conforming": 1.7,
+     "k_n": "84 of 4995"
+    },
+    {
+     "state": "Jharkhand",
+     "convictions_per_100_non_conforming": 1.3,
+     "k_n": "16 of 1241"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_per_100_non_conforming": 1.3,
+     "k_n": "1089 of 84371"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_per_100_non_conforming": 1.0,
+     "k_n": "15 of 1458"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_per_100_non_conforming": 0.6,
+     "k_n": "12 of 2052"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_per_100_non_conforming": 0.4,
+     "k_n": "25 of 6553"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_per_100_non_conforming": 0.4,
+     "k_n": "78 of 18731"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_per_100_non_conforming": 0.3,
+     "k_n": "7 of 2582"
+    },
+    {
+     "state": "Andaman & Nicobar Islands",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 54"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 43"
+    },
+    {
+     "state": "Assam",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 642"
+    },
+    {
+     "state": "Bihar",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 453"
+    },
+    {
+     "state": "Goa",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 528"
+    },
+    {
+     "state": "Ladakh",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 107"
+    },
+    {
+     "state": "Meghalaya",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 80"
+    },
+    {
+     "state": "Odisha",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 1213"
+    },
+    {
+     "state": "Sikkim",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 12"
+    },
+    {
+     "state": "Telangana",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 2942"
+    }
+   ],
+   "convictions_share_of_punished_cases_high_to_low": [
+    {
+     "state": "Chandigarh",
+     "convictions_pct_of_punished_cases": 24.8,
+     "k_n": "119 of 480"
+    },
+    {
+     "state": "Delhi",
+     "convictions_pct_of_punished_cases": 23.7,
+     "k_n": "81 of 342"
+    },
+    {
+     "state": "Manipur",
+     "convictions_pct_of_punished_cases": 20.0,
+     "k_n": "1 of 5"
+    },
+    {
+     "state": "Tamil Nadu",
+     "convictions_pct_of_punished_cases": 19.7,
+     "k_n": "2865 of 14553"
+    },
+    {
+     "state": "Kerala",
+     "convictions_pct_of_punished_cases": 16.3,
+     "k_n": "713 of 4372"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_pct_of_punished_cases": 9.4,
+     "k_n": "96 of 1018"
+    },
+    {
+     "state": "Haryana",
+     "convictions_pct_of_punished_cases": 7.2,
+     "k_n": "278 of 3887"
+    },
+    {
+     "state": "Jharkhand",
+     "convictions_pct_of_punished_cases": 5.6,
+     "k_n": "16 of 286"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_pct_of_punished_cases": 5.3,
+     "k_n": "259 of 4876"
+    },
+    {
+     "state": "Punjab",
+     "convictions_pct_of_punished_cases": 3.9,
+     "k_n": "148 of 3812"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_pct_of_punished_cases": 3.6,
+     "k_n": "24 of 662"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_pct_of_punished_cases": 2.3,
+     "k_n": "50 of 2179"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_pct_of_punished_cases": 2.3,
+     "k_n": "243 of 10506"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_pct_of_punished_cases": 1.6,
+     "k_n": "1089 of 67259"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_pct_of_punished_cases": 1.1,
+     "k_n": "84 of 7826"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_pct_of_punished_cases": 1.0,
+     "k_n": "15 of 1535"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_pct_of_punished_cases": 0.8,
+     "k_n": "12 of 1560"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_pct_of_punished_cases": 0.7,
+     "k_n": "78 of 11129"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_pct_of_punished_cases": 0.5,
+     "k_n": "25 of 4756"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_pct_of_punished_cases": 0.2,
+     "k_n": "7 of 3086"
+    },
+    {
+     "state": "Andaman & Nicobar Islands",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 63"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 10"
+    },
+    {
+     "state": "Assam",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 5"
+    },
+    {
+     "state": "Bihar",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 243"
+    },
+    {
+     "state": "Goa",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 53"
+    },
+    {
+     "state": "Ladakh",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 104"
+    },
+    {
+     "state": "Odisha",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 126"
+    },
+    {
+     "state": "Sikkim",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 10"
+    },
+    {
+     "state": "Telangana",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 942"
+    },
+    {
+     "state": "Meghalaya",
+     "convictions_pct_of_punished_cases": null,
+     "k_n": "0 of 0"
+    }
+   ],
+   "zero_convictions": [
+    "Andaman & Nicobar Islands",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Goa",
+    "Ladakh",
+    "Lakshadweep",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Sikkim",
+    "Telangana",
+    "Tripura"
+   ],
+   "zero_convictions_with_non_conforming_samples": [
+    "Andaman & Nicobar Islands",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Goa",
+    "Ladakh",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Sikkim",
+    "Telangana",
+    "Tripura"
+   ],
+   "not_ranked_small_n": [
+    "Dadra & Nagar Haveli and Daman & Diu (790 samples)",
+    "Lakshadweep (0 samples)",
+    "Mizoram (338 samples)",
+    "Nagaland (835 samples)",
+    "Puducherry (597 samples)",
+    "Tripura (576 samples)"
+   ]
+  },
+  "fy_2025_26_provisional": {
+   "non_conforming_share_high_to_low": [
+    {
+     "state": "Uttar Pradesh",
+     "non_conforming_pct": 51.7,
+     "k_n": "20427 of 39519"
+    },
+    {
+     "state": "Haryana",
+     "non_conforming_pct": 31.0,
+     "k_n": "723 of 2335"
+    },
+    {
+     "state": "Jharkhand",
+     "non_conforming_pct": 27.8,
+     "k_n": "356 of 1281"
+    },
+    {
+     "state": "Rajasthan",
+     "non_conforming_pct": 26.5,
+     "k_n": "4594 of 17325"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "non_conforming_pct": 20.2,
+     "k_n": "321 of 1589"
+    },
+    {
+     "state": "Maharashtra",
+     "non_conforming_pct": 17.4,
+     "k_n": "1335 of 7694"
+    },
+    {
+     "state": "Punjab",
+     "non_conforming_pct": 13.2,
+     "k_n": "1031 of 7809"
+    },
+    {
+     "state": "Goa",
+     "non_conforming_pct": 12.9,
+     "k_n": "321 of 2492"
+    },
+    {
+     "state": "Uttarakhand",
+     "non_conforming_pct": 11.6,
+     "k_n": "224 of 1937"
+    },
+    {
+     "state": "Kerala",
+     "non_conforming_pct": 11.1,
+     "k_n": "1863 of 16746"
+    },
+    {
+     "state": "Telangana",
+     "non_conforming_pct": 11.1,
+     "k_n": "398 of 3576"
+    },
+    {
+     "state": "Chhattisgarh",
+     "non_conforming_pct": 10.4,
+     "k_n": "214 of 2065"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "non_conforming_pct": 10.1,
+     "k_n": "664 of 6546"
+    },
+    {
+     "state": "Tamil Nadu",
+     "non_conforming_pct": 8.9,
+     "k_n": "3984 of 44603"
+    },
+    {
+     "state": "Assam",
+     "non_conforming_pct": 8.1,
+     "k_n": "117 of 1444"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "non_conforming_pct": 7.4,
+     "k_n": "429 of 5798"
+    },
+    {
+     "state": "Gujarat",
+     "non_conforming_pct": 6.9,
+     "k_n": "824 of 11903"
+    },
+    {
+     "state": "Delhi",
+     "non_conforming_pct": 6.5,
+     "k_n": "109 of 1684"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "non_conforming_pct": 6.1,
+     "k_n": "757 of 12448"
+    },
+    {
+     "state": "Odisha",
+     "non_conforming_pct": 5.5,
+     "k_n": "61 of 1110"
+    },
+    {
+     "state": "Bihar",
+     "non_conforming_pct": 5.1,
+     "k_n": "94 of 1850"
+    },
+    {
+     "state": "Karnataka",
+     "non_conforming_pct": 4.0,
+     "k_n": "537 of 13349"
+    },
+    {
+     "state": "West Bengal",
+     "non_conforming_pct": 2.8,
+     "k_n": "410 of 14737"
+    }
+   ],
+   "samples_per_million_per_year_high_to_low": [
+    {
+     "state": "Ladakh",
+     "samples_per_million_per_year": 1892.2,
+     "k_n": "519 samples over the period, population 274289"
+    },
+    {
+     "state": "Goa",
+     "samples_per_million_per_year": 1708.6,
+     "k_n": "2492 samples over the period, population 1458545"
+    },
+    {
+     "state": "Sikkim",
+     "samples_per_million_per_year": 684.6,
+     "k_n": "418 samples over the period, population 610577"
+    },
+    {
+     "state": "Tamil Nadu",
+     "samples_per_million_per_year": 618.2,
+     "k_n": "44603 samples over the period, population 72147030"
+    },
+    {
+     "state": "Chandigarh",
+     "samples_per_million_per_year": 571.3,
+     "k_n": "603 samples over the period, population 1055450"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "samples_per_million_per_year": 533.6,
+     "k_n": "6546 samples over the period, population 12267013"
+    },
+    {
+     "state": "Kerala",
+     "samples_per_million_per_year": 501.3,
+     "k_n": "16746 samples over the period, population 33406061"
+    },
+    {
+     "state": "Puducherry",
+     "samples_per_million_per_year": 310.9,
+     "k_n": "388 samples over the period, population 1247953"
+    },
+    {
+     "state": "Punjab",
+     "samples_per_million_per_year": 281.5,
+     "k_n": "7809 samples over the period, population 27743338"
+    },
+    {
+     "state": "Dadra & Nagar Haveli and Daman & Diu",
+     "samples_per_million_per_year": 257.3,
+     "k_n": "151 samples over the period, population 586956"
+    },
+    {
+     "state": "Rajasthan",
+     "samples_per_million_per_year": 252.7,
+     "k_n": "17325 samples over the period, population 68548437"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "samples_per_million_per_year": 231.5,
+     "k_n": "1589 samples over the period, population 6864602"
+    },
+    {
+     "state": "Karnataka",
+     "samples_per_million_per_year": 218.5,
+     "k_n": "13349 samples over the period, population 61095297"
+    },
+    {
+     "state": "Manipur",
+     "samples_per_million_per_year": 199.6,
+     "k_n": "570 samples over the period, population 2855794"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "samples_per_million_per_year": 197.8,
+     "k_n": "39519 samples over the period, population 199812341"
+    },
+    {
+     "state": "Gujarat",
+     "samples_per_million_per_year": 196.9,
+     "k_n": "11903 samples over the period, population 60439692"
+    },
+    {
+     "state": "Uttarakhand",
+     "samples_per_million_per_year": 192.0,
+     "k_n": "1937 samples over the period, population 10086292"
+    },
+    {
+     "state": "Mizoram",
+     "samples_per_million_per_year": 180.5,
+     "k_n": "198 samples over the period, population 1097206"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "samples_per_million_per_year": 171.4,
+     "k_n": "12448 samples over the period, population 72626809"
+    },
+    {
+     "state": "West Bengal",
+     "samples_per_million_per_year": 161.5,
+     "k_n": "14737 samples over the period, population 91276115"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "samples_per_million_per_year": 138.0,
+     "k_n": "191 samples over the period, population 1383727"
+    },
+    {
+     "state": "Meghalaya",
+     "samples_per_million_per_year": 130.8,
+     "k_n": "388 samples over the period, population 2966889"
+    },
+    {
+     "state": "Nagaland",
+     "samples_per_million_per_year": 120.3,
+     "k_n": "238 samples over the period, population 1978502"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "samples_per_million_per_year": 117.4,
+     "k_n": "5798 samples over the period, population 49386799"
+    },
+    {
+     "state": "Telangana",
+     "samples_per_million_per_year": 101.6,
+     "k_n": "3576 samples over the period, population 35193978"
+    },
+    {
+     "state": "Delhi",
+     "samples_per_million_per_year": 100.3,
+     "k_n": "1684 samples over the period, population 16787941"
+    },
+    {
+     "state": "Haryana",
+     "samples_per_million_per_year": 92.1,
+     "k_n": "2335 samples over the period, population 25351462"
+    },
+    {
+     "state": "Tripura",
+     "samples_per_million_per_year": 82.7,
+     "k_n": "304 samples over the period, population 3673917"
+    },
+    {
+     "state": "Chhattisgarh",
+     "samples_per_million_per_year": 80.8,
+     "k_n": "2065 samples over the period, population 25545198"
+    },
+    {
+     "state": "Maharashtra",
+     "samples_per_million_per_year": 68.5,
+     "k_n": "7694 samples over the period, population 112374333"
+    },
+    {
+     "state": "Assam",
+     "samples_per_million_per_year": 46.3,
+     "k_n": "1444 samples over the period, population 31205576"
+    },
+    {
+     "state": "Jharkhand",
+     "samples_per_million_per_year": 38.8,
+     "k_n": "1281 samples over the period, population 32988134"
+    },
+    {
+     "state": "Odisha",
+     "samples_per_million_per_year": 26.4,
+     "k_n": "1110 samples over the period, population 41974218"
+    },
+    {
+     "state": "Bihar",
+     "samples_per_million_per_year": 17.8,
+     "k_n": "1850 samples over the period, population 104099452"
+    },
+    {
+     "state": "Andaman & Nicobar Islands",
+     "samples_per_million_per_year": 0.0,
+     "k_n": "0 samples over the period, population 380581"
+    },
+    {
+     "state": "Lakshadweep",
+     "samples_per_million_per_year": 0.0,
+     "k_n": "0 samples over the period, population 64473"
+    }
+   ],
+   "convictions_per_100_non_conforming_high_to_low": [
+    {
+     "state": "Tamil Nadu",
+     "convictions_per_100_non_conforming": 21.5,
+     "k_n": "857 of 3984"
+    },
+    {
+     "state": "Kerala",
+     "convictions_per_100_non_conforming": 17.7,
+     "k_n": "330 of 1863"
+    },
+    {
+     "state": "Haryana",
+     "convictions_per_100_non_conforming": 16.0,
+     "k_n": "116 of 723"
+    },
+    {
+     "state": "Delhi",
+     "convictions_per_100_non_conforming": 14.7,
+     "k_n": "16 of 109"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_per_100_non_conforming": 7.9,
+     "k_n": "65 of 824"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_per_100_non_conforming": 6.1,
+     "k_n": "33 of 537"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_per_100_non_conforming": 4.2,
+     "k_n": "32 of 757"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_per_100_non_conforming": 3.7,
+     "k_n": "16 of 429"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_per_100_non_conforming": 2.8,
+     "k_n": "9 of 321"
+    },
+    {
+     "state": "Punjab",
+     "convictions_per_100_non_conforming": 2.4,
+     "k_n": "25 of 1031"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_per_100_non_conforming": 2.2,
+     "k_n": "5 of 224"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_per_100_non_conforming": 2.1,
+     "k_n": "14 of 664"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_per_100_non_conforming": 1.7,
+     "k_n": "342 of 20427"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_per_100_non_conforming": 0.9,
+     "k_n": "2 of 214"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_per_100_non_conforming": 0.7,
+     "k_n": "31 of 4594"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_per_100_non_conforming": 0.6,
+     "k_n": "8 of 1335"
+    },
+    {
+     "state": "Assam",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 117"
+    },
+    {
+     "state": "Bihar",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 94"
+    },
+    {
+     "state": "Goa",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 321"
+    },
+    {
+     "state": "Jharkhand",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 356"
+    },
+    {
+     "state": "Odisha",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 61"
+    },
+    {
+     "state": "Telangana",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 398"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 410"
+    }
+   ],
+   "convictions_share_of_punished_cases_high_to_low": [
+    {
+     "state": "Tamil Nadu",
+     "convictions_pct_of_punished_cases": 38.7,
+     "k_n": "857 of 2216"
+    },
+    {
+     "state": "Delhi",
+     "convictions_pct_of_punished_cases": 33.3,
+     "k_n": "16 of 48"
+    },
+    {
+     "state": "Kerala",
+     "convictions_pct_of_punished_cases": 24.3,
+     "k_n": "330 of 1356"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_pct_of_punished_cases": 11.7,
+     "k_n": "33 of 281"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_pct_of_punished_cases": 7.5,
+     "k_n": "16 of 212"
+    },
+    {
+     "state": "Haryana",
+     "convictions_pct_of_punished_cases": 7.5,
+     "k_n": "116 of 1540"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_pct_of_punished_cases": 7.2,
+     "k_n": "65 of 907"
+    },
+    {
+     "state": "Punjab",
+     "convictions_pct_of_punished_cases": 3.3,
+     "k_n": "25 of 748"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_pct_of_punished_cases": 2.4,
+     "k_n": "9 of 368"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_pct_of_punished_cases": 2.2,
+     "k_n": "342 of 15232"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_pct_of_punished_cases": 2.0,
+     "k_n": "5 of 248"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_pct_of_punished_cases": 1.8,
+     "k_n": "32 of 1822"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_pct_of_punished_cases": 1.1,
+     "k_n": "31 of 2726"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_pct_of_punished_cases": 1.0,
+     "k_n": "2 of 202"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_pct_of_punished_cases": 1.0,
+     "k_n": "14 of 1382"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_pct_of_punished_cases": 0.3,
+     "k_n": "8 of 2453"
+    },
+    {
+     "state": "Bihar",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 25"
+    },
+    {
+     "state": "Goa",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 12"
+    },
+    {
+     "state": "Jharkhand",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 73"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 1837"
+    },
+    {
+     "state": "Assam",
+     "convictions_pct_of_punished_cases": null,
+     "k_n": "0 of 0"
+    },
+    {
+     "state": "Odisha",
+     "convictions_pct_of_punished_cases": null,
+     "k_n": "0 of 0"
+    },
+    {
+     "state": "Telangana",
+     "convictions_pct_of_punished_cases": null,
+     "k_n": "0 of 0"
+    }
+   ],
+   "zero_convictions": [
+    "Andaman & Nicobar Islands",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Goa",
+    "Jharkhand",
+    "Ladakh",
+    "Lakshadweep",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Sikkim",
+    "Telangana",
+    "Tripura",
+    "West Bengal"
+   ],
+   "zero_convictions_with_non_conforming_samples": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Goa",
+    "Jharkhand",
+    "Ladakh",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Sikkim",
+    "Telangana",
+    "Tripura",
+    "West Bengal"
+   ],
+   "not_ranked_small_n": [
+    "Andaman & Nicobar Islands (0 samples)",
+    "Arunachal Pradesh (191 samples)",
+    "Chandigarh (603 samples)",
+    "Dadra & Nagar Haveli and Daman & Diu (151 samples)",
+    "Ladakh (519 samples)",
+    "Lakshadweep (0 samples)",
+    "Manipur (570 samples)",
+    "Meghalaya (388 samples)",
+    "Mizoram (198 samples)",
+    "Nagaland (238 samples)",
+    "Puducherry (388 samples)",
+    "Sikkim (418 samples)",
+    "Tripura (304 samples)"
+   ]
+  },
+  "fy_2024_25": {
+   "non_conforming_share_high_to_low": [
+    {
+     "state": "Uttar Pradesh",
+     "non_conforming_pct": 54.3,
+     "k_n": "16500 of 30380"
+    },
+    {
+     "state": "Rajasthan",
+     "non_conforming_pct": 27.4,
+     "k_n": "3788 of 13840"
+    },
+    {
+     "state": "Maharashtra",
+     "non_conforming_pct": 23.1,
+     "k_n": "1250 of 5403"
+    },
+    {
+     "state": "Haryana",
+     "non_conforming_pct": 22.4,
+     "k_n": "500 of 2233"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "non_conforming_pct": 18.5,
+     "k_n": "293 of 1587"
+    },
+    {
+     "state": "Punjab",
+     "non_conforming_pct": 18.1,
+     "k_n": "748 of 4131"
+    },
+    {
+     "state": "Kerala",
+     "non_conforming_pct": 15.2,
+     "k_n": "1635 of 10767"
+    },
+    {
+     "state": "Assam",
+     "non_conforming_pct": 13.7,
+     "k_n": "234 of 1705"
+    },
+    {
+     "state": "Chhattisgarh",
+     "non_conforming_pct": 13.0,
+     "k_n": "270 of 2069"
+    },
+    {
+     "state": "Tamil Nadu",
+     "non_conforming_pct": 12.4,
+     "k_n": "2240 of 18071"
+    },
+    {
+     "state": "Odisha",
+     "non_conforming_pct": 12.0,
+     "k_n": "273 of 2282"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "non_conforming_pct": 11.7,
+     "k_n": "1635 of 13920"
+    },
+    {
+     "state": "Telangana",
+     "non_conforming_pct": 9.7,
+     "k_n": "324 of 3347"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "non_conforming_pct": 9.4,
+     "k_n": "651 of 6955"
+    },
+    {
+     "state": "Uttarakhand",
+     "non_conforming_pct": 9.3,
+     "k_n": "140 of 1509"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "non_conforming_pct": 8.6,
+     "k_n": "514 of 5984"
+    },
+    {
+     "state": "West Bengal",
+     "non_conforming_pct": 8.4,
+     "k_n": "1217 of 14502"
+    },
+    {
+     "state": "Gujarat",
+     "non_conforming_pct": 7.3,
+     "k_n": "901 of 12387"
+    },
+    {
+     "state": "Karnataka",
+     "non_conforming_pct": 7.1,
+     "k_n": "662 of 9371"
+    },
+    {
+     "state": "Goa",
+     "non_conforming_pct": 6.3,
+     "k_n": "74 of 1172"
+    },
+    {
+     "state": "Delhi",
+     "non_conforming_pct": 5.0,
+     "k_n": "130 of 2624"
+    },
+    {
+     "state": "Bihar",
+     "non_conforming_pct": 4.3,
+     "k_n": "124 of 2863"
+    }
+   ],
+   "samples_per_million_per_year_high_to_low": [
+    {
+     "state": "Andaman & Nicobar Islands",
+     "samples_per_million_per_year": 2128.3,
+     "k_n": "810 samples over the period, population 380581"
+    },
+    {
+     "state": "Ladakh",
+     "samples_per_million_per_year": 1520.3,
+     "k_n": "417 samples over the period, population 274289"
+    },
+    {
+     "state": "Goa",
+     "samples_per_million_per_year": 803.5,
+     "k_n": "1172 samples over the period, population 1458545"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "samples_per_million_per_year": 567.0,
+     "k_n": "6955 samples over the period, population 12267013"
+    },
+    {
+     "state": "Sikkim",
+     "samples_per_million_per_year": 416.0,
+     "k_n": "254 samples over the period, population 610577"
+    },
+    {
+     "state": "Chandigarh",
+     "samples_per_million_per_year": 354.4,
+     "k_n": "374 samples over the period, population 1055450"
+    },
+    {
+     "state": "Kerala",
+     "samples_per_million_per_year": 322.3,
+     "k_n": "10767 samples over the period, population 33406061"
+    },
+    {
+     "state": "Tamil Nadu",
+     "samples_per_million_per_year": 250.5,
+     "k_n": "18071 samples over the period, population 72147030"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "samples_per_million_per_year": 231.2,
+     "k_n": "1587 samples over the period, population 6864602"
+    },
+    {
+     "state": "Gujarat",
+     "samples_per_million_per_year": 204.9,
+     "k_n": "12387 samples over the period, population 60439692"
+    },
+    {
+     "state": "Rajasthan",
+     "samples_per_million_per_year": 201.9,
+     "k_n": "13840 samples over the period, population 68548437"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "samples_per_million_per_year": 191.7,
+     "k_n": "13920 samples over the period, population 72626809"
+    },
+    {
+     "state": "West Bengal",
+     "samples_per_million_per_year": 158.9,
+     "k_n": "14502 samples over the period, population 91276115"
+    },
+    {
+     "state": "Delhi",
+     "samples_per_million_per_year": 156.3,
+     "k_n": "2624 samples over the period, population 16787941"
+    },
+    {
+     "state": "Karnataka",
+     "samples_per_million_per_year": 153.4,
+     "k_n": "9371 samples over the period, population 61095297"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "samples_per_million_per_year": 152.0,
+     "k_n": "30380 samples over the period, population 199812341"
+    },
+    {
+     "state": "Uttarakhand",
+     "samples_per_million_per_year": 149.6,
+     "k_n": "1509 samples over the period, population 10086292"
+    },
+    {
+     "state": "Punjab",
+     "samples_per_million_per_year": 148.9,
+     "k_n": "4131 samples over the period, population 27743338"
+    },
+    {
+     "state": "Puducherry",
+     "samples_per_million_per_year": 138.6,
+     "k_n": "173 samples over the period, population 1247953"
+    },
+    {
+     "state": "Meghalaya",
+     "samples_per_million_per_year": 130.8,
+     "k_n": "388 samples over the period, population 2966889"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "samples_per_million_per_year": 121.2,
+     "k_n": "5984 samples over the period, population 49386799"
+    },
+    {
+     "state": "Nagaland",
+     "samples_per_million_per_year": 112.7,
+     "k_n": "223 samples over the period, population 1978502"
+    },
+    {
+     "state": "Dadra & Nagar Haveli and Daman & Diu",
+     "samples_per_million_per_year": 95.4,
+     "k_n": "56 samples over the period, population 586956"
+    },
+    {
+     "state": "Telangana",
+     "samples_per_million_per_year": 95.1,
+     "k_n": "3347 samples over the period, population 35193978"
+    },
+    {
+     "state": "Arunachal Pradesh",
+     "samples_per_million_per_year": 90.3,
+     "k_n": "125 samples over the period, population 1383727"
+    },
+    {
+     "state": "Haryana",
+     "samples_per_million_per_year": 88.1,
+     "k_n": "2233 samples over the period, population 25351462"
+    },
+    {
+     "state": "Chhattisgarh",
+     "samples_per_million_per_year": 81.0,
+     "k_n": "2069 samples over the period, population 25545198"
+    },
+    {
+     "state": "Assam",
+     "samples_per_million_per_year": 54.6,
+     "k_n": "1705 samples over the period, population 31205576"
+    },
+    {
+     "state": "Odisha",
+     "samples_per_million_per_year": 54.4,
+     "k_n": "2282 samples over the period, population 41974218"
+    },
+    {
+     "state": "Maharashtra",
+     "samples_per_million_per_year": 48.1,
+     "k_n": "5403 samples over the period, population 112374333"
+    },
+    {
+     "state": "Manipur",
+     "samples_per_million_per_year": 44.1,
+     "k_n": "126 samples over the period, population 2855794"
+    },
+    {
+     "state": "Tripura",
+     "samples_per_million_per_year": 33.5,
+     "k_n": "123 samples over the period, population 3673917"
+    },
+    {
+     "state": "Bihar",
+     "samples_per_million_per_year": 27.5,
+     "k_n": "2863 samples over the period, population 104099452"
+    },
+    {
+     "state": "Jharkhand",
+     "samples_per_million_per_year": 11.0,
+     "k_n": "364 samples over the period, population 32988134"
+    },
+    {
+     "state": "Lakshadweep",
+     "samples_per_million_per_year": 0.0,
+     "k_n": "0 samples over the period, population 64473"
+    },
+    {
+     "state": "Mizoram",
+     "samples_per_million_per_year": 0.0,
+     "k_n": "0 samples over the period, population 1097206"
+    }
+   ],
+   "convictions_per_100_non_conforming_high_to_low": [
+    {
+     "state": "Tamil Nadu",
+     "convictions_per_100_non_conforming": 22.0,
+     "k_n": "492 of 2240"
+    },
+    {
+     "state": "Kerala",
+     "convictions_per_100_non_conforming": 12.6,
+     "k_n": "206 of 1635"
+    },
+    {
+     "state": "Delhi",
+     "convictions_per_100_non_conforming": 12.3,
+     "k_n": "16 of 130"
+    },
+    {
+     "state": "Haryana",
+     "convictions_per_100_non_conforming": 11.8,
+     "k_n": "59 of 500"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_per_100_non_conforming": 10.1,
+     "k_n": "91 of 901"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_per_100_non_conforming": 4.8,
+     "k_n": "32 of 662"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_per_100_non_conforming": 4.5,
+     "k_n": "29 of 651"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_per_100_non_conforming": 2.9,
+     "k_n": "4 of 140"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_per_100_non_conforming": 2.2,
+     "k_n": "6 of 270"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_per_100_non_conforming": 1.6,
+     "k_n": "8 of 514"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_per_100_non_conforming": 1.3,
+     "k_n": "22 of 1635"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_per_100_non_conforming": 1.3,
+     "k_n": "215 of 16500"
+    },
+    {
+     "state": "Punjab",
+     "convictions_per_100_non_conforming": 1.1,
+     "k_n": "8 of 748"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_per_100_non_conforming": 0.8,
+     "k_n": "30 of 3788"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_per_100_non_conforming": 0.5,
+     "k_n": "6 of 1217"
+    },
+    {
+     "state": "Assam",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 234"
+    },
+    {
+     "state": "Bihar",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 124"
+    },
+    {
+     "state": "Goa",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 74"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 293"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 1250"
+    },
+    {
+     "state": "Odisha",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 273"
+    },
+    {
+     "state": "Telangana",
+     "convictions_per_100_non_conforming": 0.0,
+     "k_n": "0 of 324"
+    }
+   ],
+   "convictions_share_of_punished_cases_high_to_low": [
+    {
+     "state": "Delhi",
+     "convictions_pct_of_punished_cases": 47.1,
+     "k_n": "16 of 34"
+    },
+    {
+     "state": "Tamil Nadu",
+     "convictions_pct_of_punished_cases": 24.3,
+     "k_n": "492 of 2028"
+    },
+    {
+     "state": "Kerala",
+     "convictions_pct_of_punished_cases": 15.9,
+     "k_n": "206 of 1294"
+    },
+    {
+     "state": "Karnataka",
+     "convictions_pct_of_punished_cases": 10.2,
+     "k_n": "32 of 315"
+    },
+    {
+     "state": "Gujarat",
+     "convictions_pct_of_punished_cases": 9.6,
+     "k_n": "91 of 950"
+    },
+    {
+     "state": "Haryana",
+     "convictions_pct_of_punished_cases": 9.0,
+     "k_n": "59 of 658"
+    },
+    {
+     "state": "Chhattisgarh",
+     "convictions_pct_of_punished_cases": 4.0,
+     "k_n": "6 of 149"
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "convictions_pct_of_punished_cases": 2.3,
+     "k_n": "29 of 1268"
+    },
+    {
+     "state": "Punjab",
+     "convictions_pct_of_punished_cases": 2.3,
+     "k_n": "8 of 341"
+    },
+    {
+     "state": "Andhra Pradesh",
+     "convictions_pct_of_punished_cases": 1.7,
+     "k_n": "8 of 472"
+    },
+    {
+     "state": "Uttarakhand",
+     "convictions_pct_of_punished_cases": 1.5,
+     "k_n": "4 of 260"
+    },
+    {
+     "state": "Uttar Pradesh",
+     "convictions_pct_of_punished_cases": 1.4,
+     "k_n": "215 of 15135"
+    },
+    {
+     "state": "Rajasthan",
+     "convictions_pct_of_punished_cases": 1.0,
+     "k_n": "30 of 3144"
+    },
+    {
+     "state": "West Bengal",
+     "convictions_pct_of_punished_cases": 0.9,
+     "k_n": "6 of 678"
+    },
+    {
+     "state": "Madhya Pradesh",
+     "convictions_pct_of_punished_cases": 0.8,
+     "k_n": "22 of 2619"
+    },
+    {
+     "state": "Bihar",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 25"
+    },
+    {
+     "state": "Goa",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 11"
+    },
+    {
+     "state": "Himachal Pradesh",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 471"
+    },
+    {
+     "state": "Maharashtra",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 1147"
+    },
+    {
+     "state": "Odisha",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 27"
+    },
+    {
+     "state": "Telangana",
+     "convictions_pct_of_punished_cases": 0.0,
+     "k_n": "0 of 125"
+    },
+    {
+     "state": "Assam",
+     "convictions_pct_of_punished_cases": null,
+     "k_n": "0 of 0"
+    }
+   ],
+   "zero_convictions": [
+    "Andaman & Nicobar Islands",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Goa",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Ladakh",
+    "Lakshadweep",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Sikkim",
+    "Telangana",
+    "Tripura"
+   ],
+   "zero_convictions_with_non_conforming_samples": [
+    "Andaman & Nicobar Islands",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Goa",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Ladakh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Telangana",
+    "Tripura"
+   ],
+   "not_ranked_small_n": [
+    "Andaman & Nicobar Islands (810 samples)",
+    "Arunachal Pradesh (125 samples)",
+    "Chandigarh (374 samples)",
+    "Dadra & Nagar Haveli and Daman & Diu (56 samples)",
+    "Jharkhand (364 samples)",
+    "Ladakh (417 samples)",
+    "Lakshadweep (0 samples)",
+    "Manipur (126 samples)",
+    "Meghalaya (388 samples)",
+    "Mizoram (0 samples)",
+    "Nagaland (223 samples)",
+    "Puducherry (173 samples)",
+    "Sikkim (254 samples)",
+    "Tripura (123 samples)"
+   ]
+  }
+ },
+ "under_one_sample_per_10000": {
+  "five_year_2021_22_to_2025_26": {
+   "k": 14,
+   "n": 36,
+   "states": [
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Jharkhand",
+    "Lakshadweep",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Tripura",
+    "West Bengal"
+   ],
+   "population_covered": 453347760,
+   "population_total_36": 1210854977,
+   "population_covered_pct": 37.4
+  },
+  "fy_2025_26_provisional": {
+   "k": 10,
+   "n": 36,
+   "states": [
+    "Andaman & Nicobar Islands",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Haryana",
+    "Jharkhand",
+    "Lakshadweep",
+    "Maharashtra",
+    "Odisha",
+    "Tripura"
+   ],
+   "population_covered": 377657344,
+   "population_total_36": 1210854977,
+   "population_covered_pct": 31.2
+  },
+  "fy_2024_25": {
+   "k": 14,
+   "n": 36,
+   "states": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Haryana",
+    "Jharkhand",
+    "Lakshadweep",
+    "Maharashtra",
+    "Manipur",
+    "Mizoram",
+    "Odisha",
+    "Telangana",
+    "Tripura"
+   ],
+   "population_covered": 418394424,
+   "population_total_36": 1210854977,
+   "population_covered_pct": 34.6
+  }
+ },
+ "national_samples_per_10000": {
+  "2018-19": 0.88,
+  "2019-20": 0.98,
+  "2020-21": 0.89,
+  "2021-22": 1.19,
+  "2022-23": 1.47,
+  "2023-24": 1.41,
+  "2024-25": 1.41,
+  "2025-26": 1.85
+ },
+ "uttar_pradesh_concentration": {
+  "2021-22": {
+   "up_non_conforming": 13153,
+   "all_non_conforming": 32935,
+   "up_pct_of_non_conforming": 39.9,
+   "up_samples": 21987,
+   "all_samples": 144345,
+   "up_pct_of_samples": 15.2,
+   "up_non_conforming_pct": 59.8,
+   "rest_of_india_non_conforming_pct": 16.2,
+   "rest_k": 19782,
+   "rest_n": 122358
+  },
+  "2022-23": {
+   "up_non_conforming": 18108,
+   "all_non_conforming": 44626,
+   "up_pct_of_non_conforming": 40.6,
+   "up_samples": 30140,
+   "all_samples": 177511,
+   "up_pct_of_samples": 17.0,
+   "up_non_conforming_pct": 60.1,
+   "rest_of_india_non_conforming_pct": 18.0,
+   "rest_k": 26518,
+   "rest_n": 147371
+  },
+  "2023-24": {
+   "up_non_conforming": 16183,
+   "all_non_conforming": 33808,
+   "up_pct_of_non_conforming": 47.9,
+   "up_samples": 27750,
+   "all_samples": 170513,
+   "up_pct_of_samples": 16.3,
+   "up_non_conforming_pct": 58.3,
+   "rest_of_india_non_conforming_pct": 12.3,
+   "rest_k": 17625,
+   "rest_n": 142763
+  },
+  "2024-25": {
+   "up_non_conforming": 16500,
+   "all_non_conforming": 34388,
+   "up_pct_of_non_conforming": 48.0,
+   "up_samples": 30380,
+   "all_samples": 170535,
+   "up_pct_of_samples": 17.8,
+   "up_non_conforming_pct": 54.3,
+   "rest_of_india_non_conforming_pct": 12.8,
+   "rest_k": 17888,
+   "rest_n": 140155
+  },
+  "2025-26": {
+   "up_non_conforming": 20427,
+   "all_non_conforming": 40023,
+   "up_pct_of_non_conforming": 51.0,
+   "up_samples": 39519,
+   "all_samples": 223808,
+   "up_pct_of_samples": 17.7,
+   "up_non_conforming_pct": 51.7,
+   "rest_of_india_non_conforming_pct": 10.6,
+   "rest_k": 19596,
+   "rest_n": 184289
+  }
+ },
+ "labelling_split": {
+  "2019-20": {
+   "states_with_split": 29,
+   "national": {
+    "labelling_defects": 8995,
+    "non_conforming": 29192,
+    "pct": 30.8,
+    "unsafe": 4526,
+    "substandard": 15671,
+    "note": "annual report total row (its non-conforming total 29,192 is below the 29,589 that its own state rows add to and that Parliament gives)"
+   },
+   "states_high_to_low_min100_non_conforming": [
+    {
+     "state": "Karnataka",
+     "labelling_defects": 249,
+     "non_conforming": 465,
+     "unsafe": 93,
+     "substandard": 123,
+     "samples_analysed": 4551,
+     "labelling_pct_of_non_conforming": 53.5,
+     "rankable": true
+    },
+    {
+     "state": "Andhra Pradesh",
+     "labelling_defects": 213,
+     "non_conforming": 458,
+     "unsafe": 67,
+     "substandard": 178,
+     "samples_analysed": 4044,
+     "labelling_pct_of_non_conforming": 46.5,
+     "rankable": true
+    },
+    {
+     "state": "Himachal Pradesh",
+     "labelling_defects": 60,
+     "non_conforming": 129,
+     "unsafe": 4,
+     "substandard": 65,
+     "samples_analysed": 675,
+     "labelling_pct_of_non_conforming": 46.5,
+     "rankable": true
+    },
+    {
+     "state": "Delhi",
+     "labelling_defects": 171,
+     "non_conforming": 374,
+     "unsafe": 109,
+     "substandard": 94,
+     "samples_analysed": 2114,
+     "labelling_pct_of_non_conforming": 45.7,
+     "rankable": true
+    },
+    {
+     "state": "Gujarat",
+     "labelling_defects": 414,
+     "non_conforming": 984,
+     "unsafe": 59,
+     "substandard": 511,
+     "samples_analysed": 13160,
+     "labelling_pct_of_non_conforming": 42.1,
+     "rankable": true
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "labelling_defects": 393,
+     "non_conforming": 950,
+     "unsafe": 28,
+     "substandard": 529,
+     "samples_analysed": 3688,
+     "labelling_pct_of_non_conforming": 41.4,
+     "rankable": true
+    },
+    {
+     "state": "Tamil Nadu",
+     "labelling_defects": 1200,
+     "non_conforming": 3155,
+     "unsafe": 991,
+     "substandard": 964,
+     "samples_analysed": 10528,
+     "labelling_pct_of_non_conforming": 38.0,
+     "rankable": true
+    },
+    {
+     "state": "Madhya Pradesh",
+     "labelling_defects": 934,
+     "non_conforming": 2575,
+     "unsafe": 132,
+     "substandard": 1509,
+     "samples_analysed": 15717,
+     "labelling_pct_of_non_conforming": 36.3,
+     "rankable": true
+    },
+    {
+     "state": "Assam",
+     "labelling_defects": 45,
+     "non_conforming": 129,
+     "unsafe": 6,
+     "substandard": 78,
+     "samples_analysed": 459,
+     "labelling_pct_of_non_conforming": 34.9,
+     "rankable": true
+    },
+    {
+     "state": "Bihar",
+     "labelling_defects": 158,
+     "non_conforming": 501,
+     "unsafe": 166,
+     "substandard": 177,
+     "samples_analysed": 5665,
+     "labelling_pct_of_non_conforming": 31.5,
+     "rankable": true
+    },
+    {
+     "state": "Kerala",
+     "labelling_defects": 237,
+     "non_conforming": 778,
+     "unsafe": 354,
+     "substandard": 187,
+     "samples_analysed": 5021,
+     "labelling_pct_of_non_conforming": 30.5,
+     "rankable": true
+    },
+    {
+     "state": "Uttar Pradesh",
+     "labelling_defects": 3576,
+     "non_conforming": 12568,
+     "unsafe": 1458,
+     "substandard": 7534,
+     "samples_analysed": 21193,
+     "labelling_pct_of_non_conforming": 28.5,
+     "rankable": true
+    },
+    {
+     "state": "West Bengal",
+     "labelling_defects": 87,
+     "non_conforming": 310,
+     "unsafe": 104,
+     "substandard": 119,
+     "samples_analysed": 1781,
+     "labelling_pct_of_non_conforming": 28.1,
+     "rankable": true
+    },
+    {
+     "state": "Haryana",
+     "labelling_defects": 132,
+     "non_conforming": 473,
+     "unsafe": 76,
+     "substandard": 265,
+     "samples_analysed": 2417,
+     "labelling_pct_of_non_conforming": 27.9,
+     "rankable": true
+    },
+    {
+     "state": "Rajasthan",
+     "labelling_defects": 479,
+     "non_conforming": 1834,
+     "unsafe": 409,
+     "substandard": 946,
+     "samples_analysed": 6455,
+     "labelling_pct_of_non_conforming": 26.1,
+     "rankable": true
+    },
+    {
+     "state": "Chhattisgarh",
+     "labelling_defects": 76,
+     "non_conforming": 305,
+     "unsafe": 42,
+     "substandard": 187,
+     "samples_analysed": 1550,
+     "labelling_pct_of_non_conforming": 24.9,
+     "rankable": true
+    },
+    {
+     "state": "Odisha",
+     "labelling_defects": 40,
+     "non_conforming": 183,
+     "unsafe": 44,
+     "substandard": 99,
+     "samples_analysed": 702,
+     "labelling_pct_of_non_conforming": 21.9,
+     "rankable": true
+    },
+    {
+     "state": "Punjab",
+     "labelling_defects": 258,
+     "non_conforming": 1394,
+     "unsafe": 80,
+     "substandard": 1056,
+     "samples_analysed": 7053,
+     "labelling_pct_of_non_conforming": 18.5,
+     "rankable": true
+    },
+    {
+     "state": "Maharashtra",
+     "labelling_defects": 126,
+     "non_conforming": 1030,
+     "unsafe": 216,
+     "substandard": 688,
+     "samples_analysed": 5962,
+     "labelling_pct_of_non_conforming": 12.2,
+     "rankable": true
+    },
+    {
+     "state": "Uttarakhand",
+     "labelling_defects": 20,
+     "non_conforming": 267,
+     "unsafe": 0,
+     "substandard": 247,
+     "samples_analysed": 1211,
+     "labelling_pct_of_non_conforming": 7.5,
+     "rankable": true
+    }
+   ],
+   "states_labelling_is_largest_bucket": [
+    "Andhra Pradesh",
+    "Delhi",
+    "Karnataka",
+    "Tamil Nadu"
+   ]
+  },
+  "2020-21": {
+   "states_with_split": 36,
+   "national": {
+    "labelling_defects": 9733,
+    "non_conforming": 28347,
+    "pct": 34.3,
+    "unsafe": 5220,
+    "substandard": 13394,
+    "note": "annual report total row"
+   },
+   "states_high_to_low_min100_non_conforming": [
+    {
+     "state": "Himachal Pradesh",
+     "labelling_defects": 304,
+     "non_conforming": 420,
+     "unsafe": 17,
+     "substandard": 99,
+     "samples_analysed": 1568,
+     "labelling_pct_of_non_conforming": 72.4,
+     "rankable": true
+    },
+    {
+     "state": "Delhi",
+     "labelling_defects": 119,
+     "non_conforming": 214,
+     "unsafe": 46,
+     "substandard": 49,
+     "samples_analysed": 1509,
+     "labelling_pct_of_non_conforming": 55.6,
+     "rankable": true
+    },
+    {
+     "state": "Tamil Nadu",
+     "labelling_defects": 1571,
+     "non_conforming": 3443,
+     "unsafe": 1221,
+     "substandard": 651,
+     "samples_analysed": 10766,
+     "labelling_pct_of_non_conforming": 45.6,
+     "rankable": true
+    },
+    {
+     "state": "Andhra Pradesh",
+     "labelling_defects": 170,
+     "non_conforming": 383,
+     "unsafe": 45,
+     "substandard": 168,
+     "samples_analysed": 2329,
+     "labelling_pct_of_non_conforming": 44.4,
+     "rankable": true
+    },
+    {
+     "state": "Karnataka",
+     "labelling_defects": 141,
+     "non_conforming": 319,
+     "unsafe": 77,
+     "substandard": 101,
+     "samples_analysed": 5217,
+     "labelling_pct_of_non_conforming": 44.2,
+     "rankable": true
+    },
+    {
+     "state": "Madhya Pradesh",
+     "labelling_defects": 946,
+     "non_conforming": 2162,
+     "unsafe": 92,
+     "substandard": 1124,
+     "samples_analysed": 10886,
+     "labelling_pct_of_non_conforming": 43.8,
+     "rankable": true
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "labelling_defects": 380,
+     "non_conforming": 871,
+     "unsafe": 48,
+     "substandard": 443,
+     "samples_analysed": 4094,
+     "labelling_pct_of_non_conforming": 43.6,
+     "rankable": true
+    },
+    {
+     "state": "Bihar",
+     "labelling_defects": 52,
+     "non_conforming": 144,
+     "unsafe": 66,
+     "substandard": 26,
+     "samples_analysed": 1224,
+     "labelling_pct_of_non_conforming": 36.1,
+     "rankable": true
+    },
+    {
+     "state": "Jharkhand",
+     "labelling_defects": 76,
+     "non_conforming": 216,
+     "unsafe": 97,
+     "substandard": 43,
+     "samples_analysed": 581,
+     "labelling_pct_of_non_conforming": 35.2,
+     "rankable": true
+    },
+    {
+     "state": "Haryana",
+     "labelling_defects": 236,
+     "non_conforming": 696,
+     "unsafe": 97,
+     "substandard": 363,
+     "samples_analysed": 2596,
+     "labelling_pct_of_non_conforming": 33.9,
+     "rankable": true
+    },
+    {
+     "state": "Uttar Pradesh",
+     "labelling_defects": 4045,
+     "non_conforming": 12479,
+     "unsafe": 1921,
+     "substandard": 6513,
+     "samples_analysed": 20613,
+     "labelling_pct_of_non_conforming": 32.4,
+     "rankable": true
+    },
+    {
+     "state": "Rajasthan",
+     "labelling_defects": 615,
+     "non_conforming": 2054,
+     "unsafe": 339,
+     "substandard": 1100,
+     "samples_analysed": 7343,
+     "labelling_pct_of_non_conforming": 29.9,
+     "rankable": true
+    },
+    {
+     "state": "Gujarat",
+     "labelling_defects": 297,
+     "non_conforming": 1056,
+     "unsafe": 71,
+     "substandard": 688,
+     "samples_analysed": 13284,
+     "labelling_pct_of_non_conforming": 28.1,
+     "rankable": true
+    },
+    {
+     "state": "Kerala",
+     "labelling_defects": 261,
+     "non_conforming": 1020,
+     "unsafe": 543,
+     "substandard": 216,
+     "samples_analysed": 6971,
+     "labelling_pct_of_non_conforming": 25.6,
+     "rankable": true
+    },
+    {
+     "state": "Chhattisgarh",
+     "labelling_defects": 41,
+     "non_conforming": 165,
+     "unsafe": 32,
+     "substandard": 92,
+     "samples_analysed": 834,
+     "labelling_pct_of_non_conforming": 24.8,
+     "rankable": true
+    },
+    {
+     "state": "Punjab",
+     "labelling_defects": 214,
+     "non_conforming": 873,
+     "unsafe": 77,
+     "substandard": 582,
+     "samples_analysed": 6721,
+     "labelling_pct_of_non_conforming": 24.5,
+     "rankable": true
+    },
+    {
+     "state": "Odisha",
+     "labelling_defects": 55,
+     "non_conforming": 272,
+     "unsafe": 53,
+     "substandard": 164,
+     "samples_analysed": 1037,
+     "labelling_pct_of_non_conforming": 20.2,
+     "rankable": true
+    },
+    {
+     "state": "Maharashtra",
+     "labelling_defects": 120,
+     "non_conforming": 874,
+     "unsafe": 227,
+     "substandard": 527,
+     "samples_analysed": 4733,
+     "labelling_pct_of_non_conforming": 13.7,
+     "rankable": true
+    },
+    {
+     "state": "Assam",
+     "labelling_defects": 13,
+     "non_conforming": 109,
+     "unsafe": 19,
+     "substandard": 77,
+     "samples_analysed": 672,
+     "labelling_pct_of_non_conforming": 11.9,
+     "rankable": true
+    },
+    {
+     "state": "West Bengal",
+     "labelling_defects": 13,
+     "non_conforming": 116,
+     "unsafe": 73,
+     "substandard": 30,
+     "samples_analysed": 1067,
+     "labelling_pct_of_non_conforming": 11.2,
+     "rankable": true
+    },
+    {
+     "state": "Uttarakhand",
+     "labelling_defects": 7,
+     "non_conforming": 255,
+     "unsafe": 9,
+     "substandard": 239,
+     "samples_analysed": 905,
+     "labelling_pct_of_non_conforming": 2.7,
+     "rankable": true
+    }
+   ],
+   "states_labelling_is_largest_bucket": [
+    "Andhra Pradesh",
+    "Delhi",
+    "Himachal Pradesh",
+    "Karnataka",
+    "Tamil Nadu"
+   ]
+  },
+  "2021-22": {
+   "states_with_split": 36,
+   "national": {
+    "labelling_defects": 11462,
+    "non_conforming": 32934,
+    "pct": 34.8,
+    "unsafe": 4890,
+    "substandard": 16582,
+    "note": "annual report total row"
+   },
+   "states_high_to_low_min100_non_conforming": [
+    {
+     "state": "Himachal Pradesh",
+     "labelling_defects": 206,
+     "non_conforming": 308,
+     "unsafe": 11,
+     "substandard": 91,
+     "samples_analysed": 1745,
+     "labelling_pct_of_non_conforming": 66.9,
+     "rankable": true
+    },
+    {
+     "state": "Tamil Nadu",
+     "labelling_defects": 2206,
+     "non_conforming": 3778,
+     "unsafe": 946,
+     "substandard": 626,
+     "samples_analysed": 16363,
+     "labelling_pct_of_non_conforming": 58.4,
+     "rankable": true
+    },
+    {
+     "state": "Madhya Pradesh",
+     "labelling_defects": 1476,
+     "non_conforming": 2900,
+     "unsafe": 109,
+     "substandard": 1315,
+     "samples_analysed": 16059,
+     "labelling_pct_of_non_conforming": 50.9,
+     "rankable": true
+    },
+    {
+     "state": "Delhi",
+     "labelling_defects": 108,
+     "non_conforming": 218,
+     "unsafe": 52,
+     "substandard": 58,
+     "samples_analysed": 1956,
+     "labelling_pct_of_non_conforming": 49.5,
+     "rankable": true
+    },
+    {
+     "state": "West Bengal",
+     "labelling_defects": 95,
+     "non_conforming": 207,
+     "unsafe": 42,
+     "substandard": 70,
+     "samples_analysed": 2701,
+     "labelling_pct_of_non_conforming": 45.9,
+     "rankable": true
+    },
+    {
+     "state": "Andhra Pradesh",
+     "labelling_defects": 238,
+     "non_conforming": 533,
+     "unsafe": 128,
+     "substandard": 167,
+     "samples_analysed": 5290,
+     "labelling_pct_of_non_conforming": 44.7,
+     "rankable": true
+    },
+    {
+     "state": "Punjab",
+     "labelling_defects": 440,
+     "non_conforming": 1059,
+     "unsafe": 81,
+     "substandard": 538,
+     "samples_analysed": 6768,
+     "labelling_pct_of_non_conforming": 41.5,
+     "rankable": true
+    },
+    {
+     "state": "Karnataka",
+     "labelling_defects": 61,
+     "non_conforming": 150,
+     "unsafe": 13,
+     "substandard": 76,
+     "samples_analysed": 5844,
+     "labelling_pct_of_non_conforming": 40.7,
+     "rankable": true
+    },
+    {
+     "state": "Haryana",
+     "labelling_defects": 469,
+     "non_conforming": 1182,
+     "unsafe": 113,
+     "substandard": 600,
+     "samples_analysed": 4235,
+     "labelling_pct_of_non_conforming": 39.7,
+     "rankable": true
+    },
+    {
+     "state": "Jammu & Kashmir",
+     "labelling_defects": 659,
+     "non_conforming": 1735,
+     "unsafe": 29,
+     "substandard": 1047,
+     "samples_analysed": 8109,
+     "labelling_pct_of_non_conforming": 38.0,
+     "rankable": true
+    },
+    {
+     "state": "Maharashtra",
+     "labelling_defects": 531,
+     "non_conforming": 1454,
+     "unsafe": 377,
+     "substandard": 546,
+     "samples_analysed": 9580,
+     "labelling_pct_of_non_conforming": 36.5,
+     "rankable": true
+    },
+    {
+     "state": "Gujarat",
+     "labelling_defects": 280,
+     "non_conforming": 824,
+     "unsafe": 62,
+     "substandard": 482,
+     "samples_analysed": 13663,
+     "labelling_pct_of_non_conforming": 34.0,
+     "rankable": true
+    },
+    {
+     "state": "Chhattisgarh",
+     "labelling_defects": 61,
+     "non_conforming": 180,
+     "unsafe": 16,
+     "substandard": 103,
+     "samples_analysed": 1436,
+     "labelling_pct_of_non_conforming": 33.9,
+     "rankable": true
+    },
+    {
+     "state": "Telangana",
+     "labelling_defects": 100,
+     "non_conforming": 353,
+     "unsafe": 72,
+     "substandard": 181,
+     "samples_analysed": 3077,
+     "labelling_pct_of_non_conforming": 28.3,
+     "rankable": true
+    },
+    {
+     "state": "Uttar Pradesh",
+     "labelling_defects": 3382,
+     "non_conforming": 13153,
+     "unsafe": 1842,
+     "substandard": 7929,
+     "samples_analysed": 21987,
+     "labelling_pct_of_non_conforming": 25.7,
+     "rankable": true
+    },
+    {
+     "state": "Rajasthan",
+     "labelling_defects": 735,
+     "non_conforming": 2891,
+     "unsafe": 409,
+     "substandard": 1747,
+     "samples_analysed": 10386,
+     "labelling_pct_of_non_conforming": 25.4,
+     "rankable": true
+    },
+    {
+     "state": "Kerala",
+     "labelling_defects": 227,
+     "non_conforming": 925,
+     "unsafe": 460,
+     "substandard": 238,
+     "samples_analysed": 7855,
+     "labelling_pct_of_non_conforming": 24.5,
+     "rankable": true
+    },
+    {
+     "state": "Odisha",
+     "labelling_defects": 59,
+     "non_conforming": 260,
+     "unsafe": 66,
+     "substandard": 135,
+     "samples_analysed": 1168,
+     "labelling_pct_of_non_conforming": 22.7,
+     "rankable": true
+    },
+    {
+     "state": "Uttarakhand",
+     "labelling_defects": 26,
+     "non_conforming": 560,
+     "unsafe": 17,
+     "substandard": 517,
+     "samples_analysed": 2511,
+     "labelling_pct_of_non_conforming": 4.6,
+     "rankable": true
+    }
+   ],
+   "states_labelling_is_largest_bucket": [
+    "Andhra Pradesh",
+    "Delhi",
+    "Himachal Pradesh",
+    "Madhya Pradesh",
+    "Tamil Nadu",
+    "West Bengal"
+   ]
+  }
+ },
+ "source_disagreements": [
+  {
+   "what": "2019-20 non-conforming (all India)",
+   "a": "29,589 (LS SQ 361; PIB 1945166; the FSSAI Annual Report 2019-20 state rows add to 29,589)",
+   "b": "29,192 (FSSAI Annual Report 2019-20 total row)"
+  },
+  {
+   "what": "2019-20 criminal convictions",
+   "a": "821 (LS SQ 361; Annual Report 'criminal cases decided')",
+   "b": "780 (PIB 1945166)"
+  },
+  {
+   "what": "2021-22 non-conforming",
+   "a": "32,934 (LS SQ 361; Annual Report 2021-22)",
+   "b": "32,935 (LS UQ 1093 state annexure total)"
+  },
+  {
+   "what": "2022-23 samples / non-conforming",
+   "a": "1,77,511 / 44,626 (LS SQ 361; LS UQ 1093)",
+   "b": "1,72,687 / 44,421 (PIB 1945166, Aug 2023, an earlier cut)"
+  },
+  {
+   "what": "2022-23 criminal convictions",
+   "a": "1,188 (LS SQ 361; LS UQ 1093)",
+   "b": "1,133 (PIB 1945166)"
+  },
+  {
+   "what": "2024-25 samples analysed",
+   "a": "1,70,535 (LS UQ 1093 and UQ 985, Jul 2026; PIB 2225750, Feb 2026)",
+   "b": "1,94,116 'lifted/analysed' (LS UQ 2076, 1 Aug 2025)"
+  },
+  {
+   "what": "2024-25 Maharashtra samples",
+   "a": "5,403 (LS UQ 1093)",
+   "b": "8,788 (LS UQ 2076, Aug 2025)"
+  },
+  {
+   "what": "2023-24 state table",
+   "a": "LS UQ 1093 / PIB 2225750 (sum 1,70,513 / 33,808)",
+   "b": "data.gov.in copy of RS UQ 902 (Nov 2024, provisional; sums 1,69,725 / 33,368)"
+  }
+ ],
+ "headline": {
+  "fy_2025_26_non_conforming": {
+   "k": 40023,
+   "n": 223808,
+   "pct": 17.9,
+   "provisional": true
+  },
+  "fy_2025_26_convictions": {
+   "k": 1918,
+   "n": 40023,
+   "pct": 4.8
+  },
+  "five_year_convictions": {
+   "k": 6203,
+   "n": 185780,
+   "pct": 3.3
+  },
+  "five_year_penalty_cases": {
+   "k": 139507,
+   "n": 185780,
+   "pct": 75.1
+  },
+  "labelling_2023_24": {
+   "k": 4423,
+   "n": 33808,
+   "pct": 13.1
+  },
+  "labelling_2022_23": {
+   "k": 16130,
+   "n": 44626,
+   "pct": 36.1
+  },
+  "labelling_five_years_2019_20_to_2023_24": {
+   "k": 50743,
+   "n": 169304,
+   "pct": 30.0
+  },
+  "unsafe_five_years_2019_20_to_2023_24": {
+   "k": 27997,
+   "n": 169304,
+   "pct": 16.5
+  },
+  "up_2025_26": {
+   "up_non_conforming": 20427,
+   "all_non_conforming": 40023,
+   "up_pct_of_non_conforming": 51.0,
+   "up_samples": 39519,
+   "all_samples": 223808,
+   "up_pct_of_samples": 17.7,
+   "up_non_conforming_pct": 51.7,
+   "rest_of_india_non_conforming_pct": 10.6,
+   "rest_k": 19596,
+   "rest_n": 184289
+  },
+  "under_one_per_10000_2025_26": {
+   "k": 10,
+   "n": 36,
+   "states": [
+    "Andaman & Nicobar Islands",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Haryana",
+    "Jharkhand",
+    "Lakshadweep",
+    "Maharashtra",
+    "Odisha",
+    "Tripura"
+   ],
+   "population_covered": 377657344,
+   "population_total_36": 1210854977,
+   "population_covered_pct": 31.2
+  },
+  "under_one_per_10000_2024_25": {
+   "k": 14,
+   "n": 36,
+   "states": [
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Dadra & Nagar Haveli and Daman & Diu",
+    "Haryana",
+    "Jharkhand",
+    "Lakshadweep",
+    "Maharashtra",
+    "Manipur",
+    "Mizoram",
+    "Odisha",
+    "Telangana",
+    "Tripura"
+   ],
+   "population_covered": 418394424,
+   "population_total_36": 1210854977,
+   "population_covered_pct": 34.6
+  },
+  "zero_convictions_2025_26": [
+   "Arunachal Pradesh",
+   "Assam",
+   "Bihar",
+   "Goa",
+   "Jharkhand",
+   "Ladakh",
+   "Meghalaya",
+   "Mizoram",
+   "Nagaland",
+   "Odisha",
+   "Puducherry",
+   "Sikkim",
+   "Telangana",
+   "Tripura",
+   "West Bengal"
+  ],
+  "zero_convictions_five_years": [
+   "Andaman & Nicobar Islands",
+   "Arunachal Pradesh",
+   "Assam",
+   "Bihar",
+   "Dadra & Nagar Haveli and Daman & Diu",
+   "Goa",
+   "Ladakh",
+   "Meghalaya",
+   "Mizoram",
+   "Nagaland",
+   "Odisha",
+   "Puducherry",
+   "Sikkim",
+   "Telangana",
+   "Tripura"
+  ],
+  "tamil_nadu_2025_26": {
+   "state": "Tamil Nadu",
+   "period": "2025-26 (provisional)",
+   "samples_analysed": 44603,
+   "non_conforming": 3984,
+   "non_conforming_pct": 8.9,
+   "civil_cases_decided_with_penalty": 1359,
+   "criminal_convictions": 857,
+   "convictions_per_100_non_conforming": 21.5,
+   "convictions_pct_of_punished_cases": 38.7,
+   "punished_cases": 2216,
+   "population_2011": 72147030,
+   "samples_per_million_per_year": 618.2,
+   "samples_per_10000_per_year": 6.18,
+   "rankable": true
+  },
+  "kerala_2025_26": {
+   "state": "Kerala",
+   "period": "2025-26 (provisional)",
+   "samples_analysed": 16746,
+   "non_conforming": 1863,
+   "non_conforming_pct": 11.1,
+   "civil_cases_decided_with_penalty": 1026,
+   "criminal_convictions": 330,
+   "convictions_per_100_non_conforming": 17.7,
+   "convictions_pct_of_punished_cases": 24.3,
+   "punished_cases": 1356,
+   "population_2011": 33406061,
+   "samples_per_million_per_year": 501.3,
+   "samples_per_10000_per_year": 5.01,
+   "rankable": true
+  },
+  "uttar_pradesh_2025_26": {
+   "state": "Uttar Pradesh",
+   "period": "2025-26 (provisional)",
+   "samples_analysed": 39519,
+   "non_conforming": 20427,
+   "non_conforming_pct": 51.7,
+   "civil_cases_decided_with_penalty": 14890,
+   "criminal_convictions": 342,
+   "convictions_per_100_non_conforming": 1.7,
+   "convictions_pct_of_punished_cases": 2.2,
+   "punished_cases": 15232,
+   "population_2011": 199812341,
+   "samples_per_million_per_year": 197.8,
+   "samples_per_10000_per_year": 1.98,
+   "rankable": true
+  },
+  "bihar_5y": {
+   "state": "Bihar",
+   "period": "2021-22 to 2025-26",
+   "samples_analysed": 11009,
+   "non_conforming": 453,
+   "non_conforming_pct": 4.1,
+   "civil_cases_decided_with_penalty": 243,
+   "criminal_convictions": 0,
+   "convictions_per_100_non_conforming": 0.0,
+   "convictions_pct_of_punished_cases": 0.0,
+   "punished_cases": 243,
+   "population_2011": 104099452,
+   "samples_per_million_per_year": 21.2,
+   "samples_per_10000_per_year": 0.21,
+   "rankable": true
+  },
+  "west_bengal_5y": {
+   "state": "West Bengal",
+   "period": "2021-22 to 2025-26",
+   "samples_analysed": 44091,
+   "non_conforming": 2582,
+   "non_conforming_pct": 5.9,
+   "civil_cases_decided_with_penalty": 3079,
+   "criminal_convictions": 7,
+   "convictions_per_100_non_conforming": 0.3,
+   "convictions_pct_of_punished_cases": 0.2,
+   "punished_cases": 3086,
+   "population_2011": 91276115,
+   "samples_per_million_per_year": 96.6,
+   "samples_per_10000_per_year": 0.97,
+   "rankable": true
+  },
+  "maharashtra_5y": {
+   "state": "Maharashtra",
+   "period": "2021-22 to 2025-26",
+   "samples_analysed": 38841,
+   "non_conforming": 6553,
+   "non_conforming_pct": 16.9,
+   "civil_cases_decided_with_penalty": 4731,
+   "criminal_convictions": 25,
+   "convictions_per_100_non_conforming": 0.4,
+   "convictions_pct_of_punished_cases": 0.5,
+   "punished_cases": 4756,
+   "population_2011": 112374333,
+   "samples_per_million_per_year": 69.1,
+   "samples_per_10000_per_year": 0.69,
+   "rankable": true
+  }
+ }
+}
