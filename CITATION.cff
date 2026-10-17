@@ -5,6 +5,7 @@ type: dataset
 authors:
   - family-names: Narsinghani
     given-names: Dev
+    orcid: "https://orcid.org/0009-0001-7941-6724"
     website: "https://devnarsinghani22.github.io/"
 date-released: 2026-10-01
 doi: 10.5281/zenodo.23245928

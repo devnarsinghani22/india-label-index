@@ -1,0 +1,20 @@
+{
+  "upload_type": "dataset",
+  "title": "India Label Index 2026: What 3,798 Indian food labels say about sugar and salt",
+  "creators": [
+    {
+      "name": "Narsinghani, Dev",
+      "orcid": "0009-0001-7941-6724"
+    }
+  ],
+  "license": "odc-odbl",
+  "keywords": [
+    "food labels",
+    "India",
+    "added sugar",
+    "salt",
+    "FSSAI",
+    "Open Food Facts"
+  ],
+  "notes": "If you use these numbers, please cite them like this."
+}
