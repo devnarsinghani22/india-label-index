@@ -1,0 +1,96 @@
+{
+ "source": "Open Food Facts India rows (data/off_india.csv, pulled 1 October 2026), hand-audited 17 October 2026",
+ "candidates_with_english_list": 68,
+ "verdicts": {
+  "food": 49,
+  "staple": 15,
+  "duplicate": 2,
+  "supplement": 1,
+  "unreadable": 1
+ },
+ "foods": 49,
+ "first_ingredient": {
+  "millet": {
+   "k": 30,
+   "n": 49,
+   "pct": 61.2
+  },
+  "wheat": {
+   "k": 7,
+   "n": 49,
+   "pct": 14.3
+  },
+  "oats": {
+   "k": 7,
+   "n": 49,
+   "pct": 14.3
+  },
+  "sugar": {
+   "k": 3,
+   "n": 49,
+   "pct": 6.1
+  },
+  "corn": {
+   "k": 1,
+   "n": 49,
+   "pct": 2.0
+  },
+  "peanut": {
+   "k": 1,
+   "n": 49,
+   "pct": 2.0
+  }
+ },
+ "millet_not_first": {
+  "k": 19,
+  "n": 49,
+  "pct": 38.8
+ },
+ "millet_pct_printed": {
+  "k": 28,
+  "n": 49,
+  "pct": 57.1
+ },
+ "millet_pct_not_printed": {
+  "k": 21,
+  "n": 49,
+  "pct": 42.9
+ },
+ "millet_pct_median": 25.0,
+ "millet_pct_min": 9.6,
+ "millet_pct_max": 54.0,
+ "half_millet_or_more": {
+  "k": 3,
+  "n": 28,
+  "pct": 10.7
+ },
+ "under_half_millet": {
+  "k": 25,
+  "n": 28,
+  "pct": 89.3
+ },
+ "sugar_named_before_first_millet": {
+  "k": 4,
+  "n": 49,
+  "pct": 8.2
+ },
+ "any_added_sugar": {
+  "k": 34,
+  "n": 49,
+  "pct": 69.4
+ },
+ "palm": {
+  "k": 12,
+  "n": 49,
+  "pct": 24.5
+ },
+ "hydrogenated_or_interesterified": {
+  "k": 3,
+  "n": 49,
+  "pct": 6.1
+ },
+ "examples": {
+  "ragi_named_wafer": "a choco wafer sold as 'ragi bites': millets 16.7% with ragi 0.4%; atta leads the flours",
+  "ragi_malt": "a malt drink mix printing '25% ragi' on the front lists sugar first, ragi 25% second"
+ }
+}

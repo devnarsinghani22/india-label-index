@@ -1,0 +1,69 @@
+code,verdict,first,millet_pct,note
+00009891,food,millet,,malt drink mix; millets first; no millet % printed
+0004444444389,food,millet,54,cereal squares; ragi flour 54% first
+0655257651613,food,wheat,,noodles; whole wheat flour first then a multi-millet flour; no millet % printed
+0784927149447,food,oats,9.6,muesli; rolled oats 47.55% first; millets 9.6%
+0946223490351,food,oats,13,muesli; rolled oats 37% first; ragi flakes 13%
+5900114490627,food,millet,27.3,cereal bites; ragi 25% first + jowar 2.3%; sugar second
+8901088722964,food,millet,24.8,extruded cones; cereal product led by ragi flour 24.8% then corn and rice
+8901088724197,food,millet,24.8,ragi chips; cereal product 60.1% led by ragi flour 24.8% then corn and rice
+8901088772433,food,millet,41.1,instant millet meal; millet 41.1% (sorghum + pearl millet) first in a multigrain mix; OCR partly garbled
+8901491100045,food,millet,27,puffs; jowar meal 27% then corn 26% and rice 18%
+8901499023742,food,corn,12,muesli; multigrain mix led by corn 24% then wheat 20% and rice 14%; ragi 12%
+8901725000899,staple,,,flour blend: five flours only
+8901725010805,food,millet,43.2,cookies; jowar flour 38.2% first; sugar + hydrogenated oil + palm oil before ragi flour 5.0%
+8901725013882,duplicate:8901725010805,,,same list as 8901725010805
+8902901027815,staple,,,single grain
+8902901027822,staple,,,single grain
+8902901027839,staple,,,single grain
+8902901027853,staple,,,single grain
+8902901225914,staple,,,single flour
+8903023006757,staple,,,single flour
+8903023289266,staple,,,single grain
+8903059406293,staple,,,single flour
+8903363007032,staple,,,single grain
+8904039704767,food,millet,,chips; pearl millet flour first; no millet % printed
+8904057716032,food,millet,,puffed snack; ragi flour and salt
+8904246935299,food,wheat,30.6,instant upma; precooked semolina 40% first; flaked millets 30.6%
+8904256727822,staple,,,porridge powder: sprouted ragi and salt (cooked like a flour)
+8904304778141,food,millet,,chikki; puffed millets first then peanut + jaggery + liquid glucose + sugar; no millet % printed
+8904335604150,food,millet,26,muesli; millets 26% (ragi 16% + jowar 10%) first inside whole grains 58%; rolled oats 22%
+8904422704992,food,wheat,15.65,digestive cookies; atta 42.8% first; palm oil second; ragi flour 15.65% third
+8906008350388,food,sugar,25,malt drink mix; sugar first; ragi 25% second (front prints 25% ragi; front + list photos checked)
+8906012230409,staple,,,single flour
+8906023491455,food,millet,,cookies; kodo millet 33% first; sorghum later with no %
+8906023493312,food,millet,,cookies; foxtail millet 29.49% first; sorghum later with no %
+8906032490456,staple,,,single flour
+8906042150074,food,millet,50,vermicelli; ragi flour 50% first; wheat flours 30% + 20%
+8906042150197,food,millet,50,vermicelli; foxtail millet flour 50% first; wheat flours after
+8906055441503,staple,,,single grain
+8906062600375,food,millet,,cookies; finger millet flour first then atta; no millet % printed
+8906071270293,food,millet,,khichdi mix; jowar first; no millet % printed
+8906074826640,food,millet,,biscuit; a seven-millet flour first then maida; no millet % printed
+8906075005037,food,sugar,16,cookies; jaggery powder 25% first; palm fat 18%; sorghum flour 16%
+8906077812213,food,millet,,fermented drink; foxtail millet first; no millet % printed
+8906079572962,staple,,,single grain
+8906106070263,food,sugar,,mug cake mix; raw cane sugar first; jowar second; no millet % printed
+8906113490337,food,oats,16,muesli; rolled oats 22% + brown rice flakes 18.9% before millets 16%
+8906113490801,food,oats,25,oats and millets; rolled oats 50% first; foxtail 20% + jowar 5%
+8906113490887,food,millet,26,muesli; millets 26% (jowar 13.6% + ragi 6.6% + bajra 5.8%) first; rolled oats 25%
+8906113490894,food,oats,16,muesli; rolled oats 35% + whole wheat flakes 20% before millets 16%
+8906113491587,food,wheat,16.7,choco wafers sold as ragi bites; mixed cereal flours 38.1% led by atta; millets 16.7% with ragi 0.4% (front + list photos checked)
+8906131682059,food,millet,38,puffs; millets 38% (jowar + foxtail) first; corn 21%; rice 15%
+8906131682189,food,millet,,puffs; grain blend 72% led by jowar then foxtail + corn + rice; no millet % printed
+8906131682417,food,wheat,,noodles; grain blend 83% led by atta then jowar; no millet % printed
+8906143891562,supplement,,,whey protein powder
+8906151230155,food,millet,,puffs; jowar flour first; no millet % printed
+8906151231862,food,millet,,chips; ragi flour first; no millet % printed
+8908002984958,food,oats,20.2,muesli; rolled oats 26.1% first; millets 20.2%
+8908002984965,food,oats,20.2,muesli; rolled oats 33.6% first; millets 20.2%
+8908002984972,duplicate:8906113490894,,,same list as 8906113490894
+8908006217090,food,millet,,pancake mix; grain blend 69% led by jowar (oat flour second); jaggery 12.5% + raw sugar 12.5%; no millet % printed
+8908014814984,food,wheat,11.7,bread; maida first then water; millet flour 11.7% (the blend also holds amaranth)
+8908015836114,unreadable,,,list starts with an unnamed 'Flour' (text cut)
+8908017693234,food,wheat,,cookie; whole wheat flour first; hydrogenated vegetable oil + jaggery before finger millet flour (4th)
+8908018906807,food,millet,,ribbons; jowar flour first; no millet % printed
+8908024057357,food,peanut,,millet namkeen; peanuts 27% first; the jowar and ragi crisps are part rice
+8939109952892,food,millet,,puffed snack; jowar flour and salt
+8939118280122,food,millet,35,dosa and idli batter; water first then ragi 35%
+8939997430236,food,millet,48,cookies; ragi flour 48% first; whole wheat flour 20%
