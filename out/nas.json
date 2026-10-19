@@ -10,9 +10,9 @@
   "duplicate": 2
  },
  "claim_photo_check_of_foods": {
-  "unchecked": 52,
+  "confirmed": 14,
   "tag_wrong": 2,
-  "confirmed": 4,
+  "unchecked": 42,
   "not_seen": 2
  },
  "foods_counted": 58,

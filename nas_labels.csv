@@ -1,22 +1,22 @@
 code,verdict,sugar,dates,polyol,intense,claim_photo,note
-0009999996994,food,,,,,,seed mix with soy sauce
-0046406414348,food,,,maltitol,,,vanilla ice cream
-0086502404300,food,,,erythritol,steviol glycosides,,tomato ketchup
+0009999996994,food,,,,,confirmed,seed mix with soy sauce
+0046406414348,food,,,maltitol,,confirmed,vanilla ice cream
+0086502404300,food,,,erythritol,steviol glycosides,confirmed,tomato ketchup
 0641837433199,food,jaggery,,,,tag_wrong,"protein oats; photos show '0 g added refined sugar' and 'sweetened with jaggery', not 'no added sugar'; raisins"
 0801541508556,supplement,,,,,,herbal powder
 0841541000025,single,,,,,,soy drink: soybean and water
-0946778200047,food,,,,,,vacuum-fried pineapple chips: pineapple and oil
-4906400744024,food,,,maltitol,,,kulfi
-4906409532363,food,,,maltitol,,,protein bar; dried cranberries
+0946778200047,food,,,,,confirmed,vacuum-fried pineapple chips: pineapple and oil
+4906400744024,food,,,maltitol,,confirmed,kulfi
+4906409532363,food,,,maltitol,,confirmed,protein bar; dried cranberries
 4908409918048,supplement,,,,,,whey protein powder
 6291100212606,single,,,,,,dates
-8901030824937,food,,,,acesulfame K,,malt drink powder; also hydrolysed corn solids and malted barley (not sugar names in the Index rules)
+8901030824937,food,,,,acesulfame K,confirmed,malt drink powder; also hydrolysed corn solids and malted barley (not sugar names in the Index rules)
 8901030825545,supplement,,,,,,protein drink powder
 8901220004804,supplement,,,,,,herbal juice tonic
-8901262152945,food,,,maltitol,steviol glycosides,,"protein lassi, mango"
-8901262153331,food,,,maltitol,steviol glycosides,,"protein milk shake, blueberry"
+8901262152945,food,,,maltitol,steviol glycosides,confirmed,"protein lassi, mango"
+8901262153331,food,,,maltitol,steviol glycosides,confirmed,"protein milk shake, blueberry"
 8901262153348,unreadable,,,,,,list is one stray word
-8901262153607,food,,,maltitol,steviol glycosides,,"protein lassi, plain"
+8901262153607,food,,,maltitol,steviol glycosides,confirmed,"protein lassi, plain"
 8901512144201,single,,,,,,"peanut butter, peanuts only"
 8901548310434,food,,,maltitol,steviol glycosides,,oat cookies
 8901725008307,single,,,,,,coconut water from concentrate
