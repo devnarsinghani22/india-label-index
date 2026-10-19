@@ -1,0 +1,76 @@
+{
+ "source": "Open Food Facts India rows (data/off_india.csv, pulled 1 October 2026), hand-audited 19 October 2026",
+ "status": "UNPUBLISHED: claim photo check incomplete",
+ "candidates_with_english_list": 107,
+ "verdicts": {
+  "food": 60,
+  "supplement": 17,
+  "single": 26,
+  "unreadable": 2,
+  "duplicate": 2
+ },
+ "claim_photo_check_of_foods": {
+  "unchecked": 52,
+  "tag_wrong": 2,
+  "confirmed": 4,
+  "not_seen": 2
+ },
+ "foods_counted": 58,
+ "sugar_name": {
+  "k": 6,
+  "n": 58,
+  "pct": 10.3
+ },
+ "dates_or_date_powder": {
+  "k": 13,
+  "n": 58,
+  "pct": 22.4
+ },
+ "non_sugar_sweetener": {
+  "k": 28,
+  "n": 58,
+  "pct": 48.3
+ },
+ "polyol": {
+  "k": 23,
+  "n": 58,
+  "pct": 39.7
+ },
+ "intense_sweetener": {
+  "k": 14,
+  "n": 58,
+  "pct": 24.1
+ },
+ "sugar_name_and_sweetener": {
+  "k": 3,
+  "n": 58,
+  "pct": 5.2
+ },
+ "none_of_these": {
+  "k": 14,
+  "n": 58,
+  "pct": 24.1
+ },
+ "sugar_names": {
+  "jaggery": 3,
+  "apple juice concentrate": 2,
+  "brown rice syrup": 2,
+  "unrefined sugar": 1,
+  "honey": 1,
+  "corn syrup": 1,
+  "corn syrup solids": 1
+ },
+ "polyols": {
+  "maltitol": 20,
+  "erythritol": 4,
+  "isomalt": 1,
+  "sorbitol": 1
+ },
+ "intense_sweeteners": {
+  "steviol glycosides": 10,
+  "sucralose": 2,
+  "acesulfame K": 1,
+  "monk fruit": 1
+ },
+ "single_foods_with_the_claim": 26
+}

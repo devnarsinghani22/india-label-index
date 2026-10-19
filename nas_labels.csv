@@ -1,0 +1,108 @@
+code,verdict,sugar,dates,polyol,intense,claim_photo,note
+0009999996994,food,,,,,,seed mix with soy sauce
+0046406414348,food,,,maltitol,,,vanilla ice cream
+0086502404300,food,,,erythritol,steviol glycosides,,tomato ketchup
+0641837433199,food,jaggery,,,,tag_wrong,"protein oats; photos show '0 g added refined sugar' and 'sweetened with jaggery', not 'no added sugar'; raisins"
+0801541508556,supplement,,,,,,herbal powder
+0841541000025,single,,,,,,soy drink: soybean and water
+0946778200047,food,,,,,,vacuum-fried pineapple chips: pineapple and oil
+4906400744024,food,,,maltitol,,,kulfi
+4906409532363,food,,,maltitol,,,protein bar; dried cranberries
+4908409918048,supplement,,,,,,whey protein powder
+6291100212606,single,,,,,,dates
+8901030824937,food,,,,acesulfame K,,malt drink powder; also hydrolysed corn solids and malted barley (not sugar names in the Index rules)
+8901030825545,supplement,,,,,,protein drink powder
+8901220004804,supplement,,,,,,herbal juice tonic
+8901262152945,food,,,maltitol,steviol glycosides,,"protein lassi, mango"
+8901262153331,food,,,maltitol,steviol glycosides,,"protein milk shake, blueberry"
+8901262153348,unreadable,,,,,,list is one stray word
+8901262153607,food,,,maltitol,steviol glycosides,,"protein lassi, plain"
+8901512144201,single,,,,,,"peanut butter, peanuts only"
+8901548310434,food,,,maltitol,steviol glycosides,,oat cookies
+8901725008307,single,,,,,,coconut water from concentrate
+8901725120672,food,,,,,,mixed fruit juice: apple juice 48% and fruit pulps
+8903236680003,supplement,,,,,,plant protein powder
+8904083302292,single,,,,,,plain greek yoghurt
+8904083302438,single,,,,,,plain greek yoghurt
+8904083525585,single,,,,,,peanuts
+8904109471490,unreadable,,,,,,list is garbled
+8904221694784,supplement,,,,,,whey protein powder (list is amino acid text)
+8904272600291,single,,,,,,coconut water from concentrate
+8904272601533,single,,,,,,sugarcane juice 99% with lemon and salt
+8904320007034,single,,,,,,honey
+8904320036683,single,,,,,,"peanut butter, peanuts only"
+8904320059668,single,,,,,,"peanut butter, peanuts only"
+8904327600863,single,,,,,,"peanut butter, peanuts only"
+8904327600917,single,,,,,,"peanut butter, peanuts only"
+8904335600657,food,,,,,,muesli
+8904335603894,food,,,maltitol,steviol glycosides,,protein cold coffee
+8904335604402,food,,,maltitol,steviol glycosides,,protein bar
+8904335604532,food,,,maltitol,steviol glycosides,,protein bar
+8904406116735,food,,,,,,garlic chips: garlic and oil
+8906008350050,food,,,,,,multigrain porridge mix
+8906009200866,single,,,,,,rolled oats
+8906009532158,food,,,maltitol,,,protein bar; cranberries and a 'no added sugar' strawberry preserve
+8906009532172,food,,,maltitol,,,protein bar
+8906009532356,food,,,maltitol,,,protein bar
+8906009532363,food,,,maltitol,,,protein bar; cranberries and a 'no added sugar' strawberry preserve
+8906009532998,food,,,maltitol,,,nutrition bar; black currants and cranberries
+8906009535159,food,,,,sucralose,,breakfast cookie
+8906009653235,duplicate:8906009532356,,,,,,"protein bar, same list"
+8906037150799,supplement,,,,,,herbal leaf juice tonic
+8906045140614,supplement,,,,,,whey protein powder
+8906045140843,supplement,,,,,,whey protein powder (no list)
+8906062129005,single,,,,,,mango juice 97% with mango pulp
+8906069402910,food,sugar; liquid glucose,,,,tag_wrong,"tomato ketchup; photos show 'no added preservatives', not 'no added sugar'"
+8906080604676,food,apple juice concentrate,,,,confirmed,mango fruit drink; apple juice concentrate 7% (printed as 49% apple juice reconstituted)
+8906081120434,single,,,,,,raisins
+8906082371545,food,,,,,,tender coconut ice cream; list says 'no added sucrose'
+8906095126651,single,,,,,,dates
+8906095126927,single,,,,,,dates
+8906098831286,food,,,,,,moong chips
+8906100690047,food,,,,,,sourdough bread
+8906105470071,single,,,,,,"date syrup, dates only"
+8906112662803,food,,,,,,muesli; freeze-dried fruit 2.3%
+8906127550850,food,,,,monk fruit,,"protein oats, chocolate; raisins"
+8906131680635,food,unrefined sugar; jaggery,,,,confirmed,breakfast cereal; unrefined sugar 19% third; front also says 'no refined sugar'
+8906133025700,supplement,,,,,,pea protein powder
+8906135451736,single,,,,,,apple cider vinegar
+8906136651456,single,,,,,,rolled oats
+8906143042445,food,,,,,,"protein oats, plain"
+8906143890008,food,,dates,,,,"muesli; dates, raisins, apricots"
+8906143890107,food,,dates,,,,chocolate peanut butter
+8906143890473,food,,date powder,,,,dark chocolate; date powder 29%
+8906143890480,food,,date powder,,,,dark chocolate; date powder 45%
+8906143890497,food,,dates,,,,"dark chocolate; dates 38%, raisins"
+8906143890503,food,,dates,,,,dark chocolate
+8906143890510,food,,dates,,,,dark chocolate; dates 38%
+8906143890527,food,,dates,,,,dark chocolate
+8906143891289,food,,dates,,,,protein bar
+8906143891296,food,,dates,,,,protein bar
+8906143892002,food,,dates,,,,protein bar; dates 24.6%
+8906161540251,food,honey,,,,confirmed,protein bar; also white and dark chocolate compound
+8906169991529,food,,,,,,ripe jackfruit chips: jackfruit and oil
+8906170520916,food,,,,sucralose,,protein oats; raisins
+8906672744810,food,,,erythritol; isomalt; sorbitol,steviol glycosides,,jamun jam
+8908006217953,food,,,,,,multigrain cereal mix
+8908010900384,single,,,,,,"peanut butter, peanuts only"
+8908013479092,duplicate:8906143891289,,,,,,"protein bar, same six ingredients in another order"
+8908017087439,supplement,,,,,,plant protein powder
+8908020710089,food,brown rice syrup; corn syrup; jaggery,,erythritol,,not_seen,"cake; jaggery in the filling; photos show '50% less sugar', claim badges cut off"
+8908020710102,food,brown rice syrup; corn syrup solids; jaggery,,maltitol; erythritol,,not_seen,"cake; jaggery in the filling; photos show '50% less sugar', claim badges cut off"
+8908022410192,single,,,,,,rolled oats
+8908024057098,food,,dates,,,,laddoos
+8908024057104,food,,dates,,,,laddoos
+8908024694002,food,apple juice concentrate,,,steviol glycosides,confirmed,strawberry greek yoghurt; concentrate inside the fruit preparation
+8908024977013,food,,,maltitol,,,protein wafer
+8908024977020,food,,,maltitol,,,protein wafer
+8908024977037,food,,,maltitol,,,protein wafer
+8908024977167,food,,,maltitol,,,protein wafer
+8908024977303,supplement,,,,,,yeast protein powder
+8909081006197,food,,,,,,coconut water with litchi pulp
+8916035452351,single,,,,,,apple cider vinegar
+8938555026263,single,,,,,,coconut water
+8939112781762,supplement,,,,,,whey protein powder
+8939116154906,supplement,,,,,,protein powder
+8939116155064,supplement,,,,,,collagen powder
+8939122245780,supplement,,,,,,whey protein powder
+8939999780988,supplement,,,,,,whey protein powder
