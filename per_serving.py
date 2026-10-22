@@ -152,6 +152,14 @@ def main():
         "categories": {k: block(v) for k, v in sorted(by_cat.items(), key=lambda kv: -len(kv[1])) if len(v) >= MIN_CAT},
         "categories_under_min": {k: len(v) for k, v in by_cat.items() if len(v) < MIN_CAT},
     }
+    # who changes under the current plan (the page names these: all lost are solids, median serving; the gained two)
+    lost = [p for p in recs if p["h100"] and not p["hs"]]
+    gained = [p for p in recs if p["hs"] and not p["h100"]]
+    res["changed_now_any1"] = {
+        "lost": {"n": len(lost), "median_serving": med([p["s"] for p in lost]),
+                 "solids": sum(not p["liquid"] for p in lost), "liquids": sum(p["liquid"] for p in lost)},
+        "gained": [{"cat": p["cat"], "liquid": p["liquid"], "serving": p["s"], "high_per_serving": sorted(p["hs"])}
+                   for p in sorted(gained, key=lambda p: p["s"], reverse=True)]}
     a = res["all"]
     n2 = a["n"] + ph["n"]
     res["sensitivity_placeholders_as_real_100"] = {

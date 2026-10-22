@@ -446,6 +446,32 @@
   "Ready meals and instant mixes": 5,
   "Cakes and bakery": 17
  },
+ "changed_now_any1": {
+  "lost": {
+   "n": 53,
+   "median_serving": 17.0,
+   "solids": 53,
+   "liquids": 0
+  },
+  "gained": [
+   {
+    "cat": "Soft drinks and energy drinks",
+    "liquid": true,
+    "serving": 250.0,
+    "high_per_serving": [
+     "salt"
+    ]
+   },
+   {
+    "cat": "Yoghurt and curd",
+    "liquid": false,
+    "serving": 200.0,
+    "high_per_serving": [
+     "fat"
+    ]
+   }
+  ]
+ },
  "sensitivity_placeholders_as_real_100": {
   "n": 424,
   "placeholders": 75,
