@@ -1,0 +1,86 @@
+measure,group,count,n,value,unit
+median_serving,all,,349,35.0,g or ml
+serving_under_100,all,262,349,75.1,%
+serving_over_100,all,84,349,24.1,%
+now_any1_warned_per_100,all,265,349,75.9,%
+now_any1_warned_per_serving,all,214,349,61.3,%
+now_any1_lost,all,53,349,,foods
+now_any1_gained,all,2,349,,foods
+old_2plus_warned_per_100,all,154,349,44.1,%
+old_2plus_warned_per_serving,all,61,349,17.5,%
+old_2plus_lost,all,97,349,,foods
+old_2plus_gained,all,4,349,,foods
+high_sugar_per_100,all,171,349,49.0,%
+high_sugar_per_serving,all,122,349,35.0,%
+high_fat_per_100,all,159,349,45.6,%
+high_fat_per_serving,all,106,349,30.4,%
+high_salt_per_100,all,121,349,34.7,%
+high_salt_per_serving,all,51,349,14.6,%
+median_serving,solids,,284,30.0,g or ml
+serving_under_100,solids,256,284,90.1,%
+serving_over_100,solids,25,284,8.8,%
+now_any1_warned_per_100,solids,216,284,76.1,%
+now_any1_warned_per_serving,solids,164,284,57.7,%
+now_any1_lost,solids,53,284,,foods
+now_any1_gained,solids,1,284,,foods
+old_2plus_warned_per_100,solids,147,284,51.8,%
+old_2plus_warned_per_serving,solids,50,284,17.6,%
+old_2plus_lost,solids,97,284,,foods
+old_2plus_gained,solids,0,284,,foods
+high_sugar_per_100,solids,125,284,44.0,%
+high_sugar_per_serving,solids,76,284,26.8,%
+high_fat_per_100,solids,155,284,54.6,%
+high_fat_per_serving,solids,102,284,35.9,%
+high_salt_per_100,solids,115,284,40.5,%
+high_salt_per_serving,solids,38,284,13.4,%
+median_serving,liquids,,65,200.0,ml
+serving_under_100,liquids,6,65,9.2,%
+serving_over_100,liquids,59,65,90.8,%
+now_any1_warned_per_100,liquids,49,65,75.4,%
+now_any1_warned_per_serving,liquids,50,65,76.9,%
+now_any1_lost,liquids,0,65,,foods
+now_any1_gained,liquids,1,65,,foods
+old_2plus_warned_per_100,liquids,7,65,10.8,%
+old_2plus_warned_per_serving,liquids,11,65,16.9,%
+old_2plus_lost,liquids,0,65,,foods
+old_2plus_gained,liquids,4,65,,foods
+high_sugar_per_100,liquids,46,65,70.8,%
+high_sugar_per_serving,liquids,46,65,70.8,%
+high_fat_per_100,liquids,4,65,6.2,%
+high_fat_per_serving,liquids,4,65,6.2,%
+high_salt_per_100,liquids,6,65,9.2,%
+high_salt_per_serving,liquids,13,65,20.0,%
+median_serving,"Sauces, ketchup and spreads",,42,21.0,g or ml
+serving_under_100,"Sauces, ketchup and spreads",41,42,97.6,%
+serving_over_100,"Sauces, ketchup and spreads",1,42,2.4,%
+now_any1_warned_per_100,"Sauces, ketchup and spreads",30,42,71.4,%
+now_any1_warned_per_serving,"Sauces, ketchup and spreads",22,42,52.4,%
+now_any1_lost,"Sauces, ketchup and spreads",8,42,,foods
+now_any1_gained,"Sauces, ketchup and spreads",0,42,,foods
+old_2plus_warned_per_100,"Sauces, ketchup and spreads",13,42,31.0,%
+old_2plus_warned_per_serving,"Sauces, ketchup and spreads",3,42,7.1,%
+old_2plus_lost,"Sauces, ketchup and spreads",10,42,,foods
+old_2plus_gained,"Sauces, ketchup and spreads",0,42,,foods
+high_sugar_per_100,"Sauces, ketchup and spreads",17,42,40.5,%
+high_sugar_per_serving,"Sauces, ketchup and spreads",6,42,14.3,%
+high_fat_per_100,"Sauces, ketchup and spreads",15,42,35.7,%
+high_fat_per_serving,"Sauces, ketchup and spreads",13,42,31.0,%
+high_salt_per_100,"Sauces, ketchup and spreads",15,42,35.7,%
+high_salt_per_serving,"Sauces, ketchup and spreads",6,42,14.3,%
+median_serving,Biscuits and cookies,,33,17.0,g or ml
+serving_under_100,Biscuits and cookies,33,33,100.0,%
+serving_over_100,Biscuits and cookies,0,33,0.0,%
+now_any1_warned_per_100,Biscuits and cookies,33,33,100.0,%
+now_any1_warned_per_serving,Biscuits and cookies,22,33,66.7,%
+now_any1_lost,Biscuits and cookies,11,33,,foods
+now_any1_gained,Biscuits and cookies,0,33,,foods
+old_2plus_warned_per_100,Biscuits and cookies,32,33,97.0,%
+old_2plus_warned_per_serving,Biscuits and cookies,10,33,30.3,%
+old_2plus_lost,Biscuits and cookies,22,33,,foods
+old_2plus_gained,Biscuits and cookies,0,33,,foods
+high_sugar_per_100,Biscuits and cookies,31,33,93.9,%
+high_sugar_per_serving,Biscuits and cookies,20,33,60.6,%
+high_fat_per_100,Biscuits and cookies,33,33,100.0,%
+high_fat_per_serving,Biscuits and cookies,12,33,36.4,%
+high_salt_per_100,Biscuits and cookies,16,33,48.5,%
+high_salt_per_serving,Biscuits and cookies,0,33,0.0,%

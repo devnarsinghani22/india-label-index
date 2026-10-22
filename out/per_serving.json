@@ -1,0 +1,477 @@
+{
+ "source": "Open Food Facts (https://world.openfoodfacts.org/), ODbL; off_india.csv read 1 Oct 2026.",
+ "rules": "ICMR-NIN DGI 2024 Table 15.1 limits as cited by FSSAI (affidavit 28 Aug 2026), applied once per 100 g / 100 ml (as published) and once to one declared serving (what-if). now_any1 = current single-nutrient plan (23 Sep 2026); old_2plus = the dropped 2-nutrient plan.",
+ "caveats": [
+  "The limits were set per 100 g / 100 ml; a per-serving test is a what-if.",
+  "The serving is what the pack or the Open Food Facts contributor typed; servings reading exactly 100 g / 100 ml are dropped as placeholders.",
+  "Volunteers fill Open Food Facts, so the foods are not a random sample.",
+  "FSSAI's plan is a proposal, not law; the Supreme Court order is reserved.",
+  "Fat is total fat when a fat or oil is listed (upper estimate), as in study 3."
+ ],
+ "base": {
+  "tested_per_100": 665,
+  "with_usable_serving": 349,
+  "dropped": {
+   "no_serving": 232,
+   "placeholder_100": 75,
+   "huge": 2,
+   "over_pack": 6,
+   "tiny": 1
+  },
+  "now_any1_all_665": {
+   "k": 474,
+   "n": 665,
+   "pct": 71.3
+  },
+  "old_2plus_all_665": {
+   "k": 272,
+   "n": 665,
+   "pct": 40.9
+  }
+ },
+ "all": {
+  "n": 349,
+  "median_serving": 35.0,
+  "serving_under_100": {
+   "k": 262,
+   "n": 349,
+   "pct": 75.1
+  },
+  "serving_over_100": {
+   "k": 84,
+   "n": 349,
+   "pct": 24.1
+  },
+  "now_any1": {
+   "per_100": {
+    "k": 265,
+    "n": 349,
+    "pct": 75.9
+   },
+   "per_serving": {
+    "k": 214,
+    "n": 349,
+    "pct": 61.3
+   },
+   "lost": 53,
+   "gained": 2
+  },
+  "old_2plus": {
+   "per_100": {
+    "k": 154,
+    "n": 349,
+    "pct": 44.1
+   },
+   "per_serving": {
+    "k": 61,
+    "n": 349,
+    "pct": 17.5
+   },
+   "lost": 97,
+   "gained": 4
+  },
+  "by_nutrient": {
+   "sugar": {
+    "per_100": {
+     "k": 171,
+     "n": 349,
+     "pct": 49.0
+    },
+    "per_serving": {
+     "k": 122,
+     "n": 349,
+     "pct": 35.0
+    }
+   },
+   "fat": {
+    "per_100": {
+     "k": 159,
+     "n": 349,
+     "pct": 45.6
+    },
+    "per_serving": {
+     "k": 106,
+     "n": 349,
+     "pct": 30.4
+    }
+   },
+   "salt": {
+    "per_100": {
+     "k": 121,
+     "n": 349,
+     "pct": 34.7
+    },
+    "per_serving": {
+     "k": 51,
+     "n": 349,
+     "pct": 14.6
+    }
+   }
+  }
+ },
+ "solids": {
+  "n": 284,
+  "median_serving": 30.0,
+  "serving_under_100": {
+   "k": 256,
+   "n": 284,
+   "pct": 90.1
+  },
+  "serving_over_100": {
+   "k": 25,
+   "n": 284,
+   "pct": 8.8
+  },
+  "now_any1": {
+   "per_100": {
+    "k": 216,
+    "n": 284,
+    "pct": 76.1
+   },
+   "per_serving": {
+    "k": 164,
+    "n": 284,
+    "pct": 57.7
+   },
+   "lost": 53,
+   "gained": 1
+  },
+  "old_2plus": {
+   "per_100": {
+    "k": 147,
+    "n": 284,
+    "pct": 51.8
+   },
+   "per_serving": {
+    "k": 50,
+    "n": 284,
+    "pct": 17.6
+   },
+   "lost": 97,
+   "gained": 0
+  },
+  "by_nutrient": {
+   "sugar": {
+    "per_100": {
+     "k": 125,
+     "n": 284,
+     "pct": 44.0
+    },
+    "per_serving": {
+     "k": 76,
+     "n": 284,
+     "pct": 26.8
+    }
+   },
+   "fat": {
+    "per_100": {
+     "k": 155,
+     "n": 284,
+     "pct": 54.6
+    },
+    "per_serving": {
+     "k": 102,
+     "n": 284,
+     "pct": 35.9
+    }
+   },
+   "salt": {
+    "per_100": {
+     "k": 115,
+     "n": 284,
+     "pct": 40.5
+    },
+    "per_serving": {
+     "k": 38,
+     "n": 284,
+     "pct": 13.4
+    }
+   }
+  }
+ },
+ "liquids": {
+  "n": 65,
+  "median_serving": 200.0,
+  "serving_under_100": {
+   "k": 6,
+   "n": 65,
+   "pct": 9.2
+  },
+  "serving_over_100": {
+   "k": 59,
+   "n": 65,
+   "pct": 90.8
+  },
+  "now_any1": {
+   "per_100": {
+    "k": 49,
+    "n": 65,
+    "pct": 75.4
+   },
+   "per_serving": {
+    "k": 50,
+    "n": 65,
+    "pct": 76.9
+   },
+   "lost": 0,
+   "gained": 1
+  },
+  "old_2plus": {
+   "per_100": {
+    "k": 7,
+    "n": 65,
+    "pct": 10.8
+   },
+   "per_serving": {
+    "k": 11,
+    "n": 65,
+    "pct": 16.9
+   },
+   "lost": 0,
+   "gained": 4
+  },
+  "by_nutrient": {
+   "sugar": {
+    "per_100": {
+     "k": 46,
+     "n": 65,
+     "pct": 70.8
+    },
+    "per_serving": {
+     "k": 46,
+     "n": 65,
+     "pct": 70.8
+    }
+   },
+   "fat": {
+    "per_100": {
+     "k": 4,
+     "n": 65,
+     "pct": 6.2
+    },
+    "per_serving": {
+     "k": 4,
+     "n": 65,
+     "pct": 6.2
+    }
+   },
+   "salt": {
+    "per_100": {
+     "k": 6,
+     "n": 65,
+     "pct": 9.2
+    },
+    "per_serving": {
+     "k": 13,
+     "n": 65,
+     "pct": 20.0
+    }
+   }
+  }
+ },
+ "categories": {
+  "Sauces, ketchup and spreads": {
+   "n": 42,
+   "median_serving": 21.0,
+   "serving_under_100": {
+    "k": 41,
+    "n": 42,
+    "pct": 97.6
+   },
+   "serving_over_100": {
+    "k": 1,
+    "n": 42,
+    "pct": 2.4
+   },
+   "now_any1": {
+    "per_100": {
+     "k": 30,
+     "n": 42,
+     "pct": 71.4
+    },
+    "per_serving": {
+     "k": 22,
+     "n": 42,
+     "pct": 52.4
+    },
+    "lost": 8,
+    "gained": 0
+   },
+   "old_2plus": {
+    "per_100": {
+     "k": 13,
+     "n": 42,
+     "pct": 31.0
+    },
+    "per_serving": {
+     "k": 3,
+     "n": 42,
+     "pct": 7.1
+    },
+    "lost": 10,
+    "gained": 0
+   },
+   "by_nutrient": {
+    "sugar": {
+     "per_100": {
+      "k": 17,
+      "n": 42,
+      "pct": 40.5
+     },
+     "per_serving": {
+      "k": 6,
+      "n": 42,
+      "pct": 14.3
+     }
+    },
+    "fat": {
+     "per_100": {
+      "k": 15,
+      "n": 42,
+      "pct": 35.7
+     },
+     "per_serving": {
+      "k": 13,
+      "n": 42,
+      "pct": 31.0
+     }
+    },
+    "salt": {
+     "per_100": {
+      "k": 15,
+      "n": 42,
+      "pct": 35.7
+     },
+     "per_serving": {
+      "k": 6,
+      "n": 42,
+      "pct": 14.3
+     }
+    }
+   }
+  },
+  "Biscuits and cookies": {
+   "n": 33,
+   "median_serving": 17.0,
+   "serving_under_100": {
+    "k": 33,
+    "n": 33,
+    "pct": 100.0
+   },
+   "serving_over_100": {
+    "k": 0,
+    "n": 33,
+    "pct": 0.0
+   },
+   "now_any1": {
+    "per_100": {
+     "k": 33,
+     "n": 33,
+     "pct": 100.0
+    },
+    "per_serving": {
+     "k": 22,
+     "n": 33,
+     "pct": 66.7
+    },
+    "lost": 11,
+    "gained": 0
+   },
+   "old_2plus": {
+    "per_100": {
+     "k": 32,
+     "n": 33,
+     "pct": 97.0
+    },
+    "per_serving": {
+     "k": 10,
+     "n": 33,
+     "pct": 30.3
+    },
+    "lost": 22,
+    "gained": 0
+   },
+   "by_nutrient": {
+    "sugar": {
+     "per_100": {
+      "k": 31,
+      "n": 33,
+      "pct": 93.9
+     },
+     "per_serving": {
+      "k": 20,
+      "n": 33,
+      "pct": 60.6
+     }
+    },
+    "fat": {
+     "per_100": {
+      "k": 33,
+      "n": 33,
+      "pct": 100.0
+     },
+     "per_serving": {
+      "k": 12,
+      "n": 33,
+      "pct": 36.4
+     }
+    },
+    "salt": {
+     "per_100": {
+      "k": 16,
+      "n": 33,
+      "pct": 48.5
+     },
+     "per_serving": {
+      "k": 0,
+      "n": 33,
+      "pct": 0.0
+     }
+    }
+   }
+  }
+ },
+ "categories_under_min": {
+  "Breakfast cereals and muesli": 25,
+  "Fruit juices and juice drinks": 10,
+  "Chocolate and confectionery": 25,
+  "Chips and crisps": 19,
+  "Milk drinks and health drink powders": 13,
+  "Soft drinks and energy drinks": 17,
+  "Namkeen and savoury snacks": 7,
+  "Dairy (milk, paneer, cheese)": 23,
+  "Ice cream and frozen desserts": 8,
+  "Yoghurt and curd": 28,
+  "Instant noodles and pasta": 12,
+  "Ready meals and instant mixes": 5,
+  "Cakes and bakery": 17
+ },
+ "sensitivity_placeholders_as_real_100": {
+  "n": 424,
+  "placeholders": 75,
+  "now_any1": {
+   "per_100": {
+    "k": 301,
+    "n": 424,
+    "pct": 71.0
+   },
+   "per_serving": {
+    "k": 250,
+    "n": 424,
+    "pct": 59.0
+   }
+  },
+  "old_2plus": {
+   "per_100": {
+    "k": 170,
+    "n": 424,
+    "pct": 40.1
+   },
+   "per_serving": {
+    "k": 77,
+    "n": 424,
+    "pct": 18.2
+   }
+  }
+ }
+}
