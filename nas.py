@@ -19,6 +19,8 @@ longer a candidate.
   polyol / intense = non-sugar sweeteners (sweeteners.py names)
   claim_photo = confirmed (the pack photo on Open Food Facts prints 'no added sugar'), tag_wrong (the photos show a
              different claim; the row is dropped), not_seen (the photos do not show the claim), blank (not checked yet)
+Base (23 Oct 2026): only confirmed foods are counted (56 of 60; 2 tag_wrong and 2 not_seen left out); the script fails
+while any food is unchecked. by_group sorts the counted foods by the hand note's product type (GROUPS).
 The script checks the hand columns against sugar.find_sugars and sweeteners.find and fails on any disagreement.
 Category level only: brand names are never output (nas_labels.csv holds barcodes and plain product types).
 Caveat: Open Food Facts is crowd-entered, not a random sample of what India buys; the claim tag itself is crowd-entered,
@@ -67,6 +69,18 @@ def candidates():
     return out
 
 
+GROUPS = (  # first match wins, on the hand note's plain product type
+    ("protein", re.compile(r"^(?:protein|nutrition bar)\b")),
+    ("dark_chocolate", re.compile(r"^dark chocolate\b")),
+    ("cereal", re.compile(r"^(?:breakfast cereal|muesli|multigrain (?:cereal|porridge))\b")),
+    ("chips", re.compile(r"\bchips\b")),
+)
+
+
+def group(note):
+    return next((g for g, rx in GROUPS if rx.search(note)), "other")
+
+
 def kn(k, n):
     return {"k": k, "n": n, "pct": round(100 * k / n, 1) if n else None}
 
@@ -98,8 +112,13 @@ def main():
     verdicts = Counter(r["verdict"].split(":")[0] for r in labels.values())
     foods_all = [r for r in labels.values() if r["verdict"] == "food"]
     claims = Counter(r["claim_photo"] or "unchecked" for r in foods_all)
-    foods = [r for r in foods_all if r["claim_photo"] != "tag_wrong"]
+    # 23 Oct 2026: the base is the foods whose pack photo prints the claim (confirmed). tag_wrong and not_seen are left
+    # out, and the script refuses to count while any food is still unchecked.
+    assert not claims.get("unchecked"), f"{claims['unchecked']} foods still need the claim photo check"
+    foods = [r for r in foods_all if r["claim_photo"] == "confirmed"]
     n = len(foods)
+    groups = Counter(group(r["note"]) for r in foods)
+    assert sum(groups.values()) == n
     sugar = [r for r in foods if r["sugar"]]
     dates = [r for r in foods if r["dates"]]
     poly = [r for r in foods if r["polyol"]]
@@ -112,7 +131,7 @@ def main():
 
     res = {
         "source": "Open Food Facts India rows (data/off_india.csv, pulled 1 October 2026), hand-audited 19 October 2026",
-        "status": "UNPUBLISHED: claim photo check incomplete" if claims.get("unchecked") else "claim photo check complete",
+        "status": "claim photo check complete; base = confirmed foods only",
         "candidates_with_english_list": len(cands),
         "verdicts": dict(verdicts),
         "claim_photo_check_of_foods": dict(claims),
@@ -124,6 +143,14 @@ def main():
         "intense_sweetener": kn(len(inten), n),
         "sugar_name_and_sweetener": kn(sum(1 for r in sugar if r["polyol"] or r["intense"]), n),
         "none_of_these": kn(len(none), n),
+        "something_sweet": kn(n - len(none), n),
+        "by_group": {g: {"n": groups[g],
+                         **{k: sum(1 for r in foods if group(r["note"]) == g and f(r)) for k, f in (
+                             ("sugar_name", lambda r: r["sugar"]), ("dates", lambda r: r["dates"]),
+                             ("polyol", lambda r: r["polyol"]), ("intense", lambda r: r["intense"]),
+                             ("non_sugar_sweetener", lambda r: r["polyol"] or r["intense"]),
+                             ("none", lambda r: not (r["sugar"] or r["dates"] or r["polyol"] or r["intense"])))}}
+                     for g in [g for g, _ in GROUPS] + ["other"]},
         "sugar_names": dict(sugar_names.most_common()),
         "polyols": dict(poly_names.most_common()),
         "intense_sweeteners": dict(int_names.most_common()),

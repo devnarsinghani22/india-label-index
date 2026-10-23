@@ -1,6 +1,6 @@
 {
  "source": "Open Food Facts India rows (data/off_india.csv, pulled 1 October 2026), hand-audited 19 October 2026",
- "status": "claim photo check complete",
+ "status": "claim photo check complete; base = confirmed foods only",
  "candidates_with_english_list": 107,
  "verdicts": {
   "food": 60,
@@ -14,54 +14,103 @@
   "tag_wrong": 2,
   "not_seen": 2
  },
- "foods_counted": 58,
+ "foods_counted": 56,
  "sugar_name": {
-  "k": 6,
-  "n": 58,
-  "pct": 10.3
+  "k": 4,
+  "n": 56,
+  "pct": 7.1
  },
  "dates_or_date_powder": {
   "k": 13,
-  "n": 58,
-  "pct": 22.4
+  "n": 56,
+  "pct": 23.2
  },
  "non_sugar_sweetener": {
-  "k": 28,
-  "n": 58,
-  "pct": 48.3
+  "k": 26,
+  "n": 56,
+  "pct": 46.4
  },
  "polyol": {
-  "k": 23,
-  "n": 58,
-  "pct": 39.7
+  "k": 21,
+  "n": 56,
+  "pct": 37.5
  },
  "intense_sweetener": {
   "k": 14,
-  "n": 58,
-  "pct": 24.1
+  "n": 56,
+  "pct": 25.0
  },
  "sugar_name_and_sweetener": {
-  "k": 3,
-  "n": 58,
-  "pct": 5.2
+  "k": 1,
+  "n": 56,
+  "pct": 1.8
  },
  "none_of_these": {
   "k": 14,
-  "n": 58,
-  "pct": 24.1
+  "n": 56,
+  "pct": 25.0
+ },
+ "something_sweet": {
+  "k": 42,
+  "n": 56,
+  "pct": 75.0
+ },
+ "by_group": {
+  "protein": {
+   "n": 23,
+   "sugar_name": 1,
+   "dates": 3,
+   "polyol": 16,
+   "intense": 8,
+   "non_sugar_sweetener": 18,
+   "none": 1
+  },
+  "dark_chocolate": {
+   "n": 6,
+   "sugar_name": 0,
+   "dates": 6,
+   "polyol": 0,
+   "intense": 0,
+   "non_sugar_sweetener": 0,
+   "none": 0
+  },
+  "cereal": {
+   "n": 6,
+   "sugar_name": 1,
+   "dates": 1,
+   "polyol": 0,
+   "intense": 0,
+   "non_sugar_sweetener": 0,
+   "none": 4
+  },
+  "chips": {
+   "n": 4,
+   "sugar_name": 0,
+   "dates": 0,
+   "polyol": 0,
+   "intense": 0,
+   "non_sugar_sweetener": 0,
+   "none": 4
+  },
+  "other": {
+   "n": 17,
+   "sugar_name": 2,
+   "dates": 3,
+   "polyol": 5,
+   "intense": 6,
+   "non_sugar_sweetener": 8,
+   "none": 5
+  }
  },
  "sugar_names": {
-  "jaggery": 3,
   "apple juice concentrate": 2,
-  "brown rice syrup": 2,
   "unrefined sugar": 1,
-  "honey": 1,
-  "corn syrup": 1,
-  "corn syrup solids": 1
+  "jaggery": 1,
+  "honey": 1
  },
  "polyols": {
-  "maltitol": 20,
-  "erythritol": 4,
+  "maltitol": 19,
+  "erythritol": 2,
   "isomalt": 1,
   "sorbitol": 1
  },
