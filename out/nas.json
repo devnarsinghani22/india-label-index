@@ -1,6 +1,6 @@
 {
  "source": "Open Food Facts India rows (data/off_india.csv, pulled 1 October 2026), hand-audited 19 October 2026",
- "status": "UNPUBLISHED: claim photo check incomplete",
+ "status": "claim photo check complete",
  "candidates_with_english_list": 107,
  "verdicts": {
   "food": 60,
@@ -10,9 +10,8 @@
   "duplicate": 2
  },
  "claim_photo_check_of_foods": {
-  "confirmed": 14,
+  "confirmed": 56,
   "tag_wrong": 2,
-  "unchecked": 42,
   "not_seen": 2
  },
  "foods_counted": 58,
