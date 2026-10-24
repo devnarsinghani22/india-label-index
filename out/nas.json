@@ -45,6 +45,16 @@
   "n": 56,
   "pct": 1.8
  },
+ "polyol_and_intense": {
+  "k": 9,
+  "n": 56,
+  "pct": 16.1
+ },
+ "maltodextrin": {
+  "k": 0,
+  "n": 56,
+  "pct": 0.0
+ },
  "none_of_these": {
   "k": 14,
   "n": 56,

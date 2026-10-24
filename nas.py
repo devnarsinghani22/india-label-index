@@ -48,6 +48,7 @@ NAME_RE = re.compile(r"\bno\s+(?:added\s+)?sugars?\s+added\b|\bno[\s-]+added[\s-
                      r"\bno\s+sugar\s+added\b", re.I)
 TAGS = {"en:no-added-sugar", "en:no-added-sugars", "en:no-sugar-added"}
 DATES_RE = re.compile(r"\bdates?\b(?!\s*(?:of|:))|\bkhajoor\b", re.I)
+MALTODEXTRIN_RE = re.compile(r"malto[\s-]*dextrin", re.I)
 VERDICTS = ("food", "single", "supplement", "unreadable", "duplicate")
 CLAIMS = ("confirmed", "tag_wrong", "not_seen", "")
 
@@ -142,6 +143,9 @@ def main():
         "polyol": kn(len(poly), n),
         "intense_sweetener": kn(len(inten), n),
         "sugar_name_and_sweetener": kn(sum(1 for r in sugar if r["polyol"] or r["intense"]), n),
+        "polyol_and_intense": kn(sum(1 for r in foods if r["polyol"] and r["intense"]), n),
+        # 24 Oct 2026: an FSSAI consumer advisory on 'no added sugar' labels (21 Sep 2026, as reported; primary not yet read) names maltodextrin
+        "maltodextrin": kn(sum(1 for r in foods if MALTODEXTRIN_RE.search(cands[r["code"]]["ing"])), n),
         "none_of_these": kn(len(none), n),
         "something_sweet": kn(n - len(none), n),
         "by_group": {g: {"n": groups[g],
