@@ -36,85 +36,99 @@
    "k": 83,
    "n": 1416,
    "pct": 5.9,
-   "top3": 6
+   "top3": 6,
+   "inside_a_bracket_only": 27
   },
   "Chips and crisps": {
    "k": 63,
    "n": 170,
    "pct": 37.1,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 31
   },
   "Biscuits and cookies": {
    "k": 42,
    "n": 373,
    "pct": 11.3,
-   "top3": 2
+   "top3": 2,
+   "inside_a_bracket_only": 11
   },
   "Instant noodles and pasta": {
    "k": 30,
    "n": 138,
    "pct": 21.7,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 6
   },
   "Namkeen and savoury snacks": {
    "k": 19,
    "n": 109,
    "pct": 17.4,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 11
   },
   "Ice cream and frozen desserts": {
    "k": 15,
    "n": 109,
    "pct": 13.8,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 4
   },
   "Breakfast cereals and muesli": {
    "k": 10,
    "n": 151,
    "pct": 6.6,
-   "top3": 1
+   "top3": 1,
+   "inside_a_bracket_only": 4
   },
   "Chocolate and confectionery": {
    "k": 9,
    "n": 247,
    "pct": 3.6,
-   "top3": 2
+   "top3": 2,
+   "inside_a_bracket_only": 0
   },
   "Milk drinks and health drink powders": {
    "k": 5,
    "n": 114,
    "pct": 4.4,
-   "top3": 1
+   "top3": 1,
+   "inside_a_bracket_only": 0
   },
   "Soft drinks and energy drinks": {
    "k": 2,
    "n": 138,
    "pct": 1.4,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 1
   },
   "Cakes and bakery": {
    "k": 1,
    "n": 169,
    "pct": 0.6,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 1
   },
   "Dairy (milk, paneer, cheese)": {
    "k": 1,
    "n": 201,
    "pct": 0.5,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 1
   },
   "Sauces, ketchup and spreads": {
    "k": 0,
    "n": 346,
    "pct": 0.0,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 0
   },
   "Yoghurt and curd": {
    "k": 0,
    "n": 113,
    "pct": 0.0,
-   "top3": 0
+   "top3": 0,
+   "inside_a_bracket_only": 0
   }
  },
  "spellings": {

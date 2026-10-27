@@ -168,7 +168,8 @@ def main():
     for p in base:
         by[p["bucket"]].append(p)
     cats = {c: {**share(sum(p["malto"] for p in ps), len(ps)),
-                "top3": sum(p["malto"] and p["top3"] for p in ps)}
+                "top3": sum(p["malto"] and p["top3"] for p in ps),
+                "inside_a_bracket_only": sum(p["malto"] and p["in_bracket"] and not p["top_level"] for p in ps)}
             for c, ps in sorted(by.items(), key=lambda kv: -sum(p["malto"] for p in kv[1])) if len(ps) >= MIN_N}
     spell = Counter(re.sub(r"\s+", " ", x.split("\t")[3]).lower() for x in audit if "\tRESISTANT\t" not in x)
     res = {
@@ -191,7 +192,7 @@ def main():
     print(json.dumps({x: res[x] for x in ("lists", "dropped", "maltodextrin", "resistant_maltodextrin_only", "maltodextrin_top3",
                                          "maltodextrin_inside_a_bracket_only", "maltodextrin_with_added_sugar_name")}, indent=1))
     for c, v in cats.items():
-        print(f"{c:40} {v['k']:4} of {v['n']:5} {v['pct']:5}%  top3 {v['top3']}")
+        print(f"{c:40} {v['k']:4} of {v['n']:5} {v['pct']:5}%  top3 {v['top3']}  bracket-only {v['inside_a_bracket_only']}")
     print(dict(spell.most_common()))
 
 
