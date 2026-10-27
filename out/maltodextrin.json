@@ -1,0 +1,132 @@
+{
+ "status": "UNPUBLISHED candidate (27 Oct 2026); every hit read by hand (maltodextrin_labels.csv)",
+ "base": "non-staple Indian English ingredient lists, baby food, supplements and protein-named products out",
+ "lists": 3919,
+ "dropped": {
+  "staple": 683,
+  "baby_or_supplement_tag": 198,
+  "protein_name": 30,
+  "hand_supplement": 14,
+  "hand_junk": 1
+ },
+ "maltodextrin": {
+  "k": 287,
+  "n": 3919,
+  "pct": 7.3
+ },
+ "resistant_maltodextrin_only": 0,
+ "maltodextrin_top3": {
+  "k": 16,
+  "n": 287,
+  "pct": 5.6
+ },
+ "maltodextrin_inside_a_bracket_only": {
+  "k": 97,
+  "n": 287,
+  "pct": 33.8
+ },
+ "maltodextrin_with_added_sugar_name": {
+  "k": 264,
+  "n": 287,
+  "pct": 92.0
+ },
+ "by_category_min_n": 100,
+ "by_category": {
+  "Uncategorised": {
+   "k": 83,
+   "n": 1416,
+   "pct": 5.9,
+   "top3": 6
+  },
+  "Chips and crisps": {
+   "k": 63,
+   "n": 170,
+   "pct": 37.1,
+   "top3": 0
+  },
+  "Biscuits and cookies": {
+   "k": 42,
+   "n": 373,
+   "pct": 11.3,
+   "top3": 2
+  },
+  "Instant noodles and pasta": {
+   "k": 30,
+   "n": 138,
+   "pct": 21.7,
+   "top3": 0
+  },
+  "Namkeen and savoury snacks": {
+   "k": 19,
+   "n": 109,
+   "pct": 17.4,
+   "top3": 0
+  },
+  "Ice cream and frozen desserts": {
+   "k": 15,
+   "n": 109,
+   "pct": 13.8,
+   "top3": 0
+  },
+  "Breakfast cereals and muesli": {
+   "k": 10,
+   "n": 151,
+   "pct": 6.6,
+   "top3": 1
+  },
+  "Chocolate and confectionery": {
+   "k": 9,
+   "n": 247,
+   "pct": 3.6,
+   "top3": 2
+  },
+  "Milk drinks and health drink powders": {
+   "k": 5,
+   "n": 114,
+   "pct": 4.4,
+   "top3": 1
+  },
+  "Soft drinks and energy drinks": {
+   "k": 2,
+   "n": 138,
+   "pct": 1.4,
+   "top3": 0
+  },
+  "Cakes and bakery": {
+   "k": 1,
+   "n": 169,
+   "pct": 0.6,
+   "top3": 0
+  },
+  "Dairy (milk, paneer, cheese)": {
+   "k": 1,
+   "n": 201,
+   "pct": 0.5,
+   "top3": 0
+  },
+  "Sauces, ketchup and spreads": {
+   "k": 0,
+   "n": 346,
+   "pct": 0.0,
+   "top3": 0
+  },
+  "Yoghurt and curd": {
+   "k": 0,
+   "n": 113,
+   "pct": 0.0,
+   "top3": 0
+  }
+ },
+ "spellings": {
+  "'maltodextrin'": 290,
+  "'maltodextrine'": 3,
+  "'malto-dextrin'": 3,
+  "'malto - dextrin'": 1,
+  "'maitodextrin'": 1,
+  "'maltrodextrin'": 1,
+  "'maltodextr'": 1,
+  "'maltodextri̇n'": 1,
+  "'malto dextrine'": 1,
+  "'maltodextin'": 1
+ }
+}
