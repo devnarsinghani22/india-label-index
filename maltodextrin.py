@@ -1,4 +1,5 @@
-"""Where maltodextrin sits on Indian ingredient lists (India Label Index study 15 candidate, 27 October 2026; UNPUBLISHED).
+"""Where maltodextrin sits on Indian ingredient lists (India Label Index study 15, 27 October 2026; live at
+/india-label-index/maltodextrin/).
 
 Why: FSSAI's own notice of June 2026 (its Instagram post DaE4buXIFmD) objected to a biscuit's 'No Added Sugar' claim
 because the biscuit contains maltodextrin and glucose syrup solids, and press reports (punenow, 21 Sep 2026) say an FSSAI
@@ -173,7 +174,7 @@ def main():
             for c, ps in sorted(by.items(), key=lambda kv: -sum(p["malto"] for p in kv[1])) if len(ps) >= MIN_N}
     spell = Counter(re.sub(r"\s+", " ", x.split("\t")[3]).lower() for x in audit if "\tRESISTANT\t" not in x)
     res = {
-        "status": "UNPUBLISHED candidate (27 Oct 2026); every hit read by hand (maltodextrin_labels.csv)",
+        "status": "every hit read by hand (maltodextrin_labels.csv); published 27 Oct 2026 as India Label Index study 15",
         "base": "non-staple Indian English ingredient lists, baby food, supplements and protein-named products out",
         "lists": n,
         "dropped": dict(dropped),
