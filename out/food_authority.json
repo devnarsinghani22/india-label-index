@@ -1,0 +1,283 @@
+{
+ "as_of": "2026-10-29",
+ "source": "FSSAI Food Authority minutes (43rd, 44th, 46th, 48th) and FSSAI's notifications list",
+ "lines_in_file": 41,
+ "rows_counted": 35,
+ "rows_not_counted": [
+  {
+   "line": "43.5-2.1B",
+   "why": "no: stage or content not clear"
+  },
+  {
+   "line": "43.5-2.1G",
+   "why": "no: stage or content not clear"
+  },
+  {
+   "line": "46.1-15",
+   "why": "no: stage or content not clear"
+  },
+  {
+   "line": "46.1-16",
+   "why": "no: stage or content not clear"
+  },
+  {
+   "line": "46.1-17",
+   "why": "no: stage or content not clear"
+  },
+  {
+   "line": "46.1-7",
+   "why": "no: procedure, not a standard"
+  }
+ ],
+ "all_meetings": {
+  "final": {
+   "approved": 41,
+   "final_on_list": 8,
+   "days_to_final": [
+    252,
+    263,
+    265,
+    453,
+    508,
+    532,
+    532,
+    787
+   ],
+   "median_days": 480.5
+  },
+  "draft": {
+   "approved": 44,
+   "draft_on_list": 18,
+   "days_to_draft": [
+    96,
+    96,
+    110,
+    140,
+    177,
+    220,
+    220,
+    234,
+    245,
+    246,
+    248,
+    248,
+    248,
+    248,
+    248,
+    248,
+    248,
+    356
+   ],
+   "median_days": 245.5,
+   "final_on_list": 2
+  }
+ },
+ "by_meeting": {
+  "43": {
+   "date": "2024-02-02",
+   "final": {
+    "approved": 5,
+    "final_on_list": 5,
+    "days_to_final": [
+     263,
+     508,
+     532,
+     532,
+     787
+    ],
+    "median_days": 532
+   },
+   "draft": {
+    "approved": 9,
+    "draft_on_list": 9,
+    "days_to_draft": [
+     140,
+     234,
+     248,
+     248,
+     248,
+     248,
+     248,
+     248,
+     248
+    ],
+    "median_days": 248,
+    "final_on_list": 1
+   },
+   "days_since_meeting": 1000
+  },
+  "44": {
+   "date": "2024-06-19",
+   "final": {
+    "approved": 0,
+    "final_on_list": 0,
+    "days_to_final": [],
+    "median_days": null
+   },
+   "draft": {
+    "approved": 6,
+    "draft_on_list": 5,
+    "days_to_draft": [
+     96,
+     96,
+     110,
+     246,
+     356
+    ],
+    "median_days": 110,
+    "final_on_list": 1
+   },
+   "days_since_meeting": 862
+  },
+  "46": {
+   "date": "2025-03-07",
+   "final": {
+    "approved": 34,
+    "final_on_list": 2,
+    "days_to_final": [
+     265,
+     453
+    ],
+    "median_days": 359.0
+   },
+   "draft": {
+    "approved": 24,
+    "draft_on_list": 3,
+    "days_to_draft": [
+     220,
+     220,
+     245
+    ],
+    "median_days": 220,
+    "final_on_list": 0
+   },
+   "days_since_meeting": 601
+  },
+  "48": {
+   "date": "2025-09-15",
+   "final": {
+    "approved": 2,
+    "final_on_list": 1,
+    "days_to_final": [
+     252
+    ],
+    "median_days": 252
+   },
+   "draft": {
+    "approved": 5,
+    "draft_on_list": 1,
+    "days_to_draft": [
+     177
+    ],
+    "median_days": 177,
+    "final_on_list": 0
+   },
+   "days_since_meeting": 409
+  }
+ },
+ "fpsfa_46th": {
+  "final_approved": 31,
+  "final_on_list": 0,
+  "draft_approved": 21,
+  "draft_on_list": 0,
+  "days_since_meeting": 601
+ },
+ "bold_per_serve_rule": {
+  "approved": "2024-06-19",
+  "draft_on_list": "2025-02-20",
+  "final_on_list": null,
+  "days_since_approval": 862
+ },
+ "cycles": [
+  {
+   "line": "43.4-1.1",
+   "change": "end of mandatory BIS/AGMARK certification",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2024-10-22",
+   "days": 263
+  },
+  {
+   "line": "43.5-1.2",
+   "change": "mead, craft beer, Indian liquors, RTD definitions",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2025-06-24",
+   "days": 508
+  },
+  {
+   "line": "43.5-1.3A",
+   "change": "meat sausages standard",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2025-07-18",
+   "days": 532
+  },
+  {
+   "line": "43.5-1.3B",
+   "change": "dehydrated tarragon standard",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2025-07-18",
+   "days": 532
+  },
+  {
+   "line": "43-3.6",
+   "change": "labelling: non-retail containers, minimally processed products, pan masala warning (tolerance clause held back)",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2026-03-30",
+   "days": 787
+  },
+  {
+   "line": "43.5-2.2",
+   "change": "ethyl acetate in fruit wine",
+   "meeting": "43",
+   "approved_for": "draft",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2025-11-27",
+   "days": 664
+  },
+  {
+   "line": "44.1-6",
+   "change": "sal seed fat restriction omitted",
+   "meeting": "44",
+   "approved_for": "draft",
+   "meeting_date": "2024-06-19",
+   "final_on_list": "2026-06-03",
+   "days": 714
+  },
+  {
+   "line": "46.1-9",
+   "change": "sal seed fat",
+   "meeting": "46",
+   "approved_for": "final",
+   "meeting_date": "2025-03-07",
+   "final_on_list": "2026-06-03",
+   "days": 453
+  },
+  {
+   "line": "46.1-10",
+   "change": "ester limit in fruit wine",
+   "meeting": "46",
+   "approved_for": "final",
+   "meeting_date": "2025-03-07",
+   "final_on_list": "2025-11-27",
+   "days": 265
+  },
+  {
+   "line": "48-2",
+   "change": "contaminant limits (metals, natural toxins, antibiotics)",
+   "meeting": "48",
+   "approved_for": "final",
+   "meeting_date": "2025-09-15",
+   "final_on_list": "2026-05-25",
+   "days": 252
+  }
+ ]
+}
