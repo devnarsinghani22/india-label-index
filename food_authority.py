@@ -83,14 +83,14 @@ def check(o):
     if o["as_of"] != "2026-10-29":
         return
     a = o["all_meetings"]
-    assert (a["final"]["final_on_list"], a["final"]["approved"]) == (8, 41)
-    assert a["final"]["days_to_final"] == [252, 263, 265, 453, 508, 532, 532, 787] and a["final"]["median_days"] == 480.5
+    assert (a["final"]["final_on_list"], a["final"]["approved"]) == (9, 42)
+    assert a["final"]["days_to_final"] == [252, 263, 265, 453, 508, 532, 532, 787, 852] and a["final"]["median_days"] == 508
     assert (a["draft"]["draft_on_list"], a["draft"]["approved"], a["draft"]["final_on_list"]) == (18, 44, 2)
     assert a["draft"]["median_days"] == 245.5
     f = o["fpsfa_46th"]
     assert (f["final_on_list"], f["final_approved"], f["draft_on_list"], f["draft_approved"], f["days_since_meeting"]) == (0, 31, 0, 21, 601)
     m = o["by_meeting"]
-    assert [(m[k]["final"]["final_on_list"], m[k]["final"]["approved"]) for k in m] == [(5, 5), (0, 0), (2, 34), (1, 2)]
+    assert [(m[k]["final"]["final_on_list"], m[k]["final"]["approved"]) for k in m] == [(6, 6), (0, 0), (2, 34), (1, 2)]
     assert [(m[k]["draft"]["draft_on_list"], m[k]["draft"]["approved"]) for k in m] == [(9, 9), (5, 6), (3, 24), (1, 5)]
     assert o["bold_per_serve_rule"]["days_since_approval"] == 862 and o["bold_per_serve_rule"]["final_on_list"] is None
 

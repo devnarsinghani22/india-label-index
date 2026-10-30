@@ -1,8 +1,8 @@
 {
  "as_of": "2026-10-29",
  "source": "FSSAI Food Authority minutes (43rd, 44th, 46th, 48th) and FSSAI's notifications list",
- "lines_in_file": 41,
- "rows_counted": 35,
+ "lines_in_file": 42,
+ "rows_counted": 36,
  "rows_not_counted": [
   {
    "line": "43.5-2.1B",
@@ -31,8 +31,8 @@
  ],
  "all_meetings": {
   "final": {
-   "approved": 41,
-   "final_on_list": 8,
+   "approved": 42,
+   "final_on_list": 9,
    "days_to_final": [
     252,
     263,
@@ -41,9 +41,10 @@
     508,
     532,
     532,
-    787
+    787,
+    852
    ],
-   "median_days": 480.5
+   "median_days": 508
   },
   "draft": {
    "approved": 44,
@@ -76,16 +77,17 @@
   "43": {
    "date": "2024-02-02",
    "final": {
-    "approved": 5,
-    "final_on_list": 5,
+    "approved": 6,
+    "final_on_list": 6,
     "days_to_final": [
      263,
      508,
      532,
      532,
-     787
+     787,
+     852
     ],
-    "median_days": 532
+    "median_days": 532.0
    },
    "draft": {
     "approved": 9,
@@ -233,6 +235,15 @@
    "meeting_date": "2024-02-02",
    "final_on_list": "2026-03-30",
    "days": 787
+  },
+  {
+   "line": "43-3.7",
+   "change": "vegan logo size specification",
+   "meeting": "43",
+   "approved_for": "final",
+   "meeting_date": "2024-02-02",
+   "final_on_list": "2026-06-03",
+   "days": 852
   },
   {
    "line": "43.5-2.2",
