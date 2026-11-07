@@ -15,6 +15,8 @@ Run with `python -I fssai.py` (the repo's warnings.py shadows the stdlib module,
                                          supplements dropped by name; writes out/fssai.json for the page
   python -I fssai.py --solid sugar=3,fat=4.2,salt_mg=625 --liquid sugar=2,fat=1.5,salt_mg=175 --any 2
   python -I fssai.py --weighted sugar=2,fat=1,salt=1 --cutoff 2 --drop-supplements
+  python -I fssai.py --photo-fixes photo_fixes.csv   the same rules with values read by eye from pack photos
+                                         (BACKLOG 15n, 6-7 Nov 2026); prints only unless --out
 Limits are per 100 g (solid) / 100 ml (liquid); salt in mg, or give sodium_mg and it is converted (x 2.5).
 Trigger: --any N = warned when N or more of the 3 are high; --weighted = each high nutrient adds its weight,
 warned when the total reaches --cutoff. Runs other than the default and --court print only, unless --out."""
@@ -104,6 +106,8 @@ def parse_args(argv):
     ap.add_argument("--cutoff", type=float, help="score needed under --weighted")
     ap.add_argument("--drop-supplements", action="store_true", help="leave out supplements found by name")
     ap.add_argument("--out", type=Path, help="where to write the JSON")
+    ap.add_argument("--photo-fixes", type=Path, help="CSV of label values read by eye from OFF pack photos "
+                    "(code,field,label_value,photo,checked,note); field _drop leaves a junk record out")
     a = ap.parse_args(argv)
     if a.weighted and a.cutoff is None:
         ap.error("--weighted needs --cutoff")
@@ -135,7 +139,8 @@ def config(a):
     if trig["type"] not in ("any", "weighted"):
         raise SystemExit("trigger type must be 'any' or 'weighted'")
     drop = drop or a.drop_supplements
-    legacy = (solid == SOLID and liquid == LIQUID and trig == DEFAULT_TRIGGER and not drop and not a.court)
+    legacy = (solid == SOLID and liquid == LIQUID and trig == DEFAULT_TRIGGER and not drop and not a.court
+              and not a.photo_fixes)
     out = a.out or ((HERE / "out" / "fssai.json") if (legacy or a.court) else None)
     return solid, liquid, trig, drop, label, out, legacy
 
@@ -173,10 +178,45 @@ def score(r, SOL, LIQ, trig, drop):
     return {"cat": b, "high": high, "src": src, "warned": warned(high, trig)}
 
 
+def load_fixes(path):
+    """-> {code: {field: value} or None (drop)}. Each row is one value read by eye from the pack's nutrition photo on
+    Open Food Facts (photo URL + date in the file); label_value '' = the label has no such row, so OFF's 0 is dropped
+    and the study's own fallback applies."""
+    fixes = {}
+    for f in csv.DictReader(path.open(encoding="utf-8")):
+        c, field = f["code"].strip(), f["field"].strip()
+        assert c and field and f["photo"].startswith("https://images.openfoodfacts.org/"), f"bad fix row {f}"
+        if field == "_drop":
+            assert c not in fixes, f"{c} is both dropped and fixed"
+            fixes[c] = None
+        else:
+            assert fixes.get(c, {}) is not None, f"{c} is both dropped and fixed"
+            fixes.setdefault(c, {})[field] = f["label_value"].strip()
+    return fixes
+
+
 def main(argv=None):
     a = parse_args(sys.argv[1:] if argv is None else argv)
     SOL, LIQ, trig, drop, label, out_path, legacy = config(a)
     rows = csv.DictReader((HERE / "data" / "off_india.csv").open(encoding="utf-8"), delimiter="\t")
+    fixes = load_fixes(a.photo_fixes) if a.photo_fixes else {}
+    seen = set()
+    if fixes:
+        raw = rows
+
+        def fixed():
+            for r in raw:
+                c = r.get("code")
+                if c in fixes:
+                    seen.add(c)
+                    if fixes[c] is None:
+                        continue
+                    bad = set(fixes[c]) - set(r)
+                    assert not bad, f"{c}: unknown field {bad}"
+                    r = dict(r)
+                    r.update(fixes[c])
+                yield r
+        rows = fixed()
     tested, by_cat = [], defaultdict(list)
     declared = 0
     dropped = Counter()
@@ -192,6 +232,9 @@ def main(argv=None):
         tested.append(p)
         if b and not b.startswith("excluded"):
             by_cat[b].append(p)
+
+    missing = sorted(set(fixes) - seen)
+    assert not missing, f"photo fixes for codes not in the data: {missing}"
 
     def summ(ps):
         n = len(ps)
@@ -214,6 +257,9 @@ def main(argv=None):
     non_staple = [p for p in tested if p["cat"] not in ADDED_SUGAR_RELEVANT_EXCLUDE]
     res = {"rules": DEFAULT_RULES if legacy else (label or f"{describe(trig)}; limits per 100 g / 100 ml below"),
            "thresholds": {"solid_per_100g": SOL, "liquid_per_100ml": LIQ}}
+    if fixes:
+        res["photo_fixes"] = {"file": a.photo_fixes.name, "codes": len(fixes),
+                              "dropped": sorted(c for c, v in fixes.items() if v is None)}
     if not legacy:
         res["trigger"] = trig
         res["supplements_excluded_by_name"] = dict(dropped) if drop else None
