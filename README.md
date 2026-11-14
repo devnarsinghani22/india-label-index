@@ -61,6 +61,96 @@ This study checks if grain words in food names (like 'whole wheat') go with fewe
 
 The lists come from Open Food Facts, entered by volunteers, not a random sample. FSSAI's warning is a proposal, not yet law, and the Supreme Court has not ruled. The fat count is an upper estimate. The numbers are small, so read the shares as rough. No brands are named. See the full study: https://devnarsinghani22.github.io/india-label-index/healthy-names/
 
+### Sugar and salt across borders (13 Oct 2026)
+This study checks how often added sugar and salt appear in food labels across countries. It uses a script called `sugar_world.py` and outputs files like `out/sugar_world.json` and `out/sugar_world_table.csv`.
+
+The lists come from Open Food Facts, entered by volunteers, not a random sample. Country figures show a gap, not its cause. No brands are named.
+
+- Indian packs list added sugar in the first 3 ingredients 42% of the time (1,679 of 3,964).
+- Indian sweetened soft drinks have 10.6 g sugar per 100 ml (34 packs).
+- UK packs list added sugar in the first 3 ingredients 30% of the time (16,463 of 54,616).
+- UK sweetened soft drinks have 4.6 g sugar per 100 ml (466 packs).
+
+See the full page: https://devnarsinghani22.github.io/india-label-index/sugar-salt-world/
+
+### The FSSAI test scoreboard (16 Oct 2026)
+This study checks how many food samples failed FSSAI tests and how many convictions followed. It uses the script `enforcement.py` and outputs `out/enforcement.json` and `out/enforcement_table.csv`.
+
+- 17.9% of samples failed in 2025-26 (40,023 of 223,808), down from 28.6% in 2018-19
+- 3.3 convictions per 100 failed samples over five years
+- 51.0% of India's failed samples in 2025-26 came from Uttar Pradesh
+- 15 of 36 states and union territories had failed samples but no conviction in 2025-26
+
+This study is not Open Food Facts data: every row comes from Lok Sabha answers, PIB releases and FSSAI annual reports. A high fail share can mean more bad food or more targeted sampling; a low one can mean clean food or less testing. No brands are named.
+
+See the full page: https://devnarsinghani22.github.io/india-label-index/fssai-scoreboard/
+
+### Sweeteners in soft drinks (18 Oct 2026)
+This study checks if Indian soft drinks list non-sugar sweeteners. It uses the script sweeteners.py and outputs out/sweeteners.json and out/sweeteners_table.csv.
+
+- 44 of 139 Indian soft drinks list a non-sugar sweetener (32%)
+- 20 of those 44 also list an added sugar
+- 21 of 72 packs named diet, zero or sugar free list a non-sugar sweetener
+
+The lists come from Open Food Facts, entered by volunteers, and are not a random sample. The count is of names on the ingredient list and makes no health claim about any sweetener or food. No brands are named. Open Food Facts data is under the ODbL.
+
+See the full page: https://devnarsinghani22.github.io/india-label-index/sweeteners/
+
+### Millet-named foods (18 Oct 2026)
+This study checks labels of foods named after millets, using the script `millet.py` which reads data from `data/off_india.csv` and `millet_labels.csv`, and writes output to `out/millet.json`.
+
+- 30 of 49 millet-named foods list a millet as the first ingredient
+- 28 of the 49 print how much millet is inside, with the middle value at 25%
+- 25 of those 28 print less than half millet
+- 34 of 49 name an added sugar, and 4 have sugar before the first millet
+
+The lists come from Open Food Facts, entered by volunteers, and are not a random sample. Open Food Facts data is under the ODbL, no brands are named, and the first ingredient is the most by weight, not half or more.
+See the full page: https://devnarsinghani22.github.io/india-label-index/millets/
+
+### 'No added sugar' packs (27 Oct 2026)
+This study checks whether the lists of foods that say 'no added sugar' name something that sweetens. It uses the script `nas.py`, which reads data from `data/off_india.csv` and `nas_labels.csv`, and writes output to `out/nas.json`.
+
+- 42 of 56 Indian packaged foods whose pack says 'no added sugar' list something that sweetens the food instead
+- 26 of the 56 list a non-sugar sweetener, such as maltitol or stevia
+- 13 of the 56 list dates or date powder
+- 14 of the 56 list none of these sweeteners
+
+The lists come from Open Food Facts, entered by volunteers, and are not a random sample. The count is of what the lists name; it does not judge any pack against FSSAI's rule and makes no health claim. No brands are named, and Open Food Facts data is under the ODbL.
+See the full page: https://devnarsinghani22.github.io/india-label-index/no-added-sugar/
+
+### Warnings per serving (23 Oct 2026)
+This study checks how many foods have warnings based on serving size, using the script `per_serving.py`. It runs the study 3 foods with the serving size typed into Open Food Facts and writes out `out/per_serving.json` and `out/per_serving_table.csv`.
+
+- 349 foods have a usable printed serving size
+- 265 of the 349 (76%) are warned under the per-100 g test
+- 214 of the 349 (61%) are warned when the same limits are put on one printed serving
+- 53 solid foods lose the warning under the per-serving test
+
+This study still runs on the 1 Oct 2026 set of foods, from before the 11 Nov 2026 photo fixes, and the page carries a dated base line. FSSAI's warning is a proposal, not yet law, and the Supreme Court reserved its order on 28 Sep 2026 and has not ruled. The per-serving test is a what-if, not FSSAI's rule. The lists come from Open Food Facts, entered by volunteers, not a random sample. No brands are named, and the data is under the ODbL.
+See the full page: https://devnarsinghani22.github.io/india-label-index/per-serving/
+
+### Maltodextrin (27 Oct 2026)
+This study checks how often maltodextrin appears on Indian packaged-food labels. It uses the script `maltodextrin.py` and produces the file `out/maltodextrin.json`.
+
+- 287 of 3,919 Indian packaged-food lists name maltodextrin
+- 63 of 170 chips and crisps lists name maltodextrin
+- 97 of the 287 name maltodextrin only inside brackets
+- 264 of the 287 also name an added sugar
+
+The count says nothing about safety or amounts; maltodextrin is a permitted ingredient, and the Label Checker does not count it as a sugar name. The lists come from Open Food Facts, entered by volunteers, not a random sample, and no brands are named. Open Food Facts data is under the ODbL.
+See the full page: https://devnarsinghani22.github.io/india-label-index/maltodextrin/
+
+### Food Authority approvals vs finals (30 Oct 2026)
+This study checks how many food standards changes approved by the Food Authority are listed as final on FSSAI's notifications list. It uses the script `food_authority.py` and outputs `out/food_authority.json`.
+
+- 31 food standards changes were approved for final notification on 7 March 2025
+- 0 of the 31 are on FSSAI's list as a final as of 29 October 2026, 601 days later
+- 9 of 42 changes approved for final notification across four meetings are on FSSAI's list as finals
+- 862 days since the bold per-serve label rule was approved, and no final is on FSSAI's list
+
+This study is not Open Food Facts data: it uses FSSAI's own Food Authority minutes and notifications list. The counts are of what FSSAI's notifications list shows as of 29 October 2026.
+See the full page: https://devnarsinghani22.github.io/india-label-index/food-authority/
+
 ## Data
 
 [Open Food Facts](https://world.openfoodfacts.org/), every product tagged as sold in India (21,189 products, read 1 October 2026). 4,656 have an English ingredient list. Baby food and supplements are left out. Open Food Facts is filled in by volunteers, so this is not a random sample of every pack in India.
@@ -90,6 +180,14 @@ python -I pull_multi.py   # slim multi-country extract for cross-country compari
 python world.py        # India vs the world: chips (crisps), instant noodles, additives -> out/world.json, out/world_table.csv (self-test first)
 python -I diwali.py    # the Diwali box: mithai and namkeen (reads festive_labels.csv) -> out/diwali.json, out/diwali_table.csv (self-test first)
 python -I names.py     # checks grain words in names vs fssai warnings, outputs out/names.json
+python -I sugar_world.py    # sugar_world.py: Compares sugar and salt in food labels across countries
+python -I enforcement.py    # Run enforcement.py to check FSSAI test failures and convictions
+python -I sweeteners.py     # sweeteners.py: checks for non-sugar sweeteners in Indian soft drinks
+python -I millet.py         # Run millet.py to check millet-named foods labels from Open Food Facts
+python -I nas.py            # nas.py: checks 'no added sugar' claims in Indian packaged foods
+python -I per_serving.py    # Run per_serving.py: checks warnings per serving using Open Food Facts data
+python -I maltodextrin.py   # maltodextrin.py: checks maltodextrin in Indian packaged-food labels
+python -I food_authority.py # food_authority.py: checks Food Authority approvals vs FSSAI finals
 ```
 
 Run the two `pull_*` scripts with `python -I`: this folder has a `warnings.py`, which shadows the standard-library module that `requests` needs.

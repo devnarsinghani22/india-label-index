@@ -7,8 +7,9 @@ authors:
     given-names: Dev
     orcid: "https://orcid.org/0009-0001-7941-6724"
     website: "https://devnarsinghani22.github.io/"
-date-released: 2026-10-01
-doi: 10.5281/zenodo.23245928
+version: "1.4"
+date-released: 2026-11-14
+doi: 10.5281/zenodo.23245061
 url: "https://devnarsinghani22.github.io/india-label-index/"
 repository-code: "https://github.com/devnarsinghani22/india-label-index"
 license: ODbL-1.0
